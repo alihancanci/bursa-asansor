@@ -88,39 +88,39 @@ export default function ServicePage() {
               <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
             </div>
 
-            <div className="bg-slate-50 dark:bg-navy-light rounded-3xl p-8 border border-border mb-16">
-              <h3 className="text-2xl font-display font-bold mb-6 flex items-center gap-3">
-                <Info className="text-primary h-6 w-6" />
+            <div className="bg-slate-50 dark:bg-navy-light rounded-3xl p-8 border border-border dark:border-white/10 mb-16">
+              <h3 className="text-2xl font-display font-bold mb-6 flex items-center gap-3 text-secondary dark:text-white">
+                <Info className="text-primary h-6 w-6 shrink-0" />
                 Hizmet Kurallarımız
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="h-6 w-6 text-primary shrink-0" />
-                  <span className="text-slate-700 dark:text-slate-300"><strong>7/24 Hizmet:</strong> Mesai saati gözetmeksizin, bize ihtiyaç duyduğunuz her an sahadayız.</span>
+                  <CheckCircle2 className="h-6 w-6 text-primary shrink-0 mt-0.5" />
+                  <span className="text-slate-700 dark:text-slate-100"><strong className="text-secondary dark:text-white">7/24 Hizmet:</strong> Mesai saati gözetmeksizin, bize ihtiyaç duyduğunuz her an sahadayız.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="h-6 w-6 text-primary shrink-0" />
-                  <span className="text-slate-700 dark:text-slate-300"><strong>15. Kata Kadar:</strong> Yüksek erişimli asansörlerimiz maksimum 15. kata kadar güvenli ulaşım sağlar.</span>
+                  <CheckCircle2 className="h-6 w-6 text-primary shrink-0 mt-0.5" />
+                  <span className="text-slate-700 dark:text-slate-100"><strong className="text-secondary dark:text-white">15. Kata Kadar:</strong> Yüksek erişimli asansörlerimiz maksimum 15. kata kadar güvenli ulaşım sağlar.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="h-6 w-6 text-primary shrink-0" />
-                  <span className="text-slate-700 dark:text-slate-300"><strong>Operatörlü Çalışma:</strong> Kurulum ve kullanım esnasında operatör her zaman asansörün başındadır.</span>
+                  <CheckCircle2 className="h-6 w-6 text-primary shrink-0 mt-0.5" />
+                  <span className="text-slate-700 dark:text-slate-100"><strong className="text-secondary dark:text-white">Operatörlü Çalışma:</strong> Kurulum ve kullanım esnasında operatör her zaman asansörün başındadır.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="h-6 w-6 text-primary shrink-0" />
-                  <span className="text-slate-700 dark:text-slate-300"><strong>Personel ve Araç Desteği:</strong> Gerekli durumlarda taşıma personeli (hamal) ve nakliye kamyonu desteği de verilir.</span>
+                  <CheckCircle2 className="h-6 w-6 text-primary shrink-0 mt-0.5" />
+                  <span className="text-slate-700 dark:text-slate-100"><strong className="text-secondary dark:text-white">Personel ve Araç Desteği:</strong> Gerekli durumlarda taşıma personeli (hamal) ve nakliye kamyonu desteği de verilir.</span>
                 </li>
               </ul>
             </div>
 
             {/* FAQs */}
             <div className="mb-16">
-              <h2 className="text-3xl font-display font-bold mb-8">Sıkça Sorulan Sorular</h2>
+              <h2 className="text-3xl font-display font-bold mb-8 text-secondary dark:text-white">Sıkça Sorulan Sorular</h2>
               <div className="space-y-4">
                 {service.faqs.map((faq, idx) => (
-                  <div key={idx} className="bg-white dark:bg-navy rounded-2xl p-6 shadow-sm border border-border">
+                  <div key={idx} className="bg-white dark:bg-navy-light rounded-2xl p-6 shadow-sm border border-border dark:border-white/10">
                     <h4 className="text-lg font-bold text-secondary dark:text-white mb-2">{faq.q}</h4>
-                    <p className="text-slate-600 dark:text-slate-400">{faq.a}</p>
+                    <p className="text-slate-600 dark:text-slate-200">{faq.a}</p>
                   </div>
                 ))}
               </div>
@@ -144,22 +144,22 @@ export default function ServicePage() {
           <div className="lg:col-span-1 space-y-8">
             
             {/* Sticky contact widget */}
-            <div className="sticky top-28 bg-white dark:bg-navy rounded-3xl p-6 border border-border shadow-xl">
-              <h3 className="font-display font-bold text-xl mb-4 pb-4 border-b border-border">Hızlı İletişim</h3>
+            <div className="sticky top-28 bg-white dark:bg-navy-light rounded-3xl p-6 border border-border dark:border-white/10 shadow-xl">
+              <h3 className="font-display font-bold text-xl mb-4 pb-4 border-b border-border dark:border-white/10 text-secondary dark:text-white">Hızlı İletişim</h3>
               <CTASection variant="vertical" />
-              <div className="mt-6 text-center text-sm text-slate-500 font-medium">
-                En uygun fiyat garantisiyle {district.name} bölgesinde hizmetinizdeyiz.
+              <div className="mt-6 text-center text-sm text-slate-600 dark:text-slate-300 font-medium">
+                {district.name} bölgesinde uygun fiyata profesyonel hizmet.
               </div>
             </div>
 
-            <div className="bg-slate-50 dark:bg-navy-light rounded-3xl p-6 border border-border">
-              <h3 className="font-display font-bold text-xl mb-4 pb-4 border-b border-border">{district.name} Diğer Hizmetler</h3>
+            <div className="bg-slate-50 dark:bg-navy-light rounded-3xl p-6 border border-border dark:border-white/10">
+              <h3 className="font-display font-bold text-xl mb-4 pb-4 border-b border-border dark:border-white/10 text-secondary dark:text-white">{district.name} Diğer Hizmetler</h3>
               <ul className="space-y-3">
                 {SERVICES.filter(s => s.slug !== service.slug).map(s => (
                   <li key={s.slug}>
                     <Link 
                       href={`/${district.slug}-${s.slug}`}
-                      className="flex items-center justify-between group text-slate-600 dark:text-slate-300 hover:text-primary transition-colors text-sm font-medium"
+                      className="flex items-center justify-between group text-slate-700 dark:text-slate-200 hover:text-primary transition-colors text-sm font-medium"
                     >
                       <span className="truncate pr-4">{s.name}</span>
                       <ArrowRight className="h-4 w-4 shrink-0 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-primary" />
@@ -169,19 +169,19 @@ export default function ServicePage() {
               </ul>
             </div>
 
-            <div className="bg-slate-50 dark:bg-navy-light rounded-3xl p-6 border border-border">
-              <h3 className="font-display font-bold text-xl mb-4 pb-4 border-b border-border">Yakın İlçeler</h3>
+            <div className="bg-slate-50 dark:bg-navy-light rounded-3xl p-6 border border-border dark:border-white/10">
+              <h3 className="font-display font-bold text-xl mb-4 pb-4 border-b border-border dark:border-white/10 text-secondary dark:text-white">Yakın İlçeler</h3>
               <div className="flex flex-wrap gap-2">
                 {DISTRICTS.filter(d => d.slug !== district.slug).slice(0, 8).map(d => (
                   <Link 
                     key={d.slug}
                     href={`/${d.slug}-${service.slug}`}
-                    className="inline-block px-3 py-1.5 bg-white dark:bg-navy border border-border hover:border-primary text-xs font-semibold rounded-lg text-slate-600 dark:text-slate-300 hover:text-primary transition-colors"
+                    className="inline-block px-3 py-1.5 bg-white dark:bg-navy border border-border dark:border-white/10 hover:bg-primary hover:border-primary text-xs font-semibold rounded-lg text-slate-700 dark:text-slate-200 hover:text-white transition-colors"
                   >
                     {d.name}
                   </Link>
                 ))}
-                <Link href="/" className="inline-block px-3 py-1.5 bg-primary/10 border border-primary/20 text-xs font-semibold rounded-lg text-primary hover:bg-primary/20 transition-colors">
+                <Link href="/" className="inline-block px-3 py-1.5 bg-primary/10 border border-primary/30 text-xs font-semibold rounded-lg text-primary hover:bg-primary hover:text-white transition-colors">
                   Tümünü Gör
                 </Link>
               </div>

@@ -17,7 +17,7 @@ export function Header() {
               <span className="font-display font-bold text-xl leading-tight text-secondary dark:text-white">
                 Bursa <span className="text-primary">Mobil Asansör</span>
               </span>
-              <span className="text-xs text-muted-foreground font-medium uppercase tracking-wider">
+              <span className="text-xs text-slate-500 dark:text-slate-300 font-medium uppercase tracking-wider">
                 Kiralama Hizmetleri
               </span>
             </div>

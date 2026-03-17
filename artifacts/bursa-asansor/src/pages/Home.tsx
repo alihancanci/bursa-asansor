@@ -74,7 +74,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">Hizmetlerimiz</h2>
-            <p className="text-slate-500 text-lg">İhtiyacınıza uygun mobil asansör çözümleriyle yanınızdayız.</p>
+            <p className="text-slate-600 dark:text-slate-300 text-lg">İhtiyacınıza uygun mobil asansör çözümleriyle yanınızdayız.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -88,15 +88,15 @@ export default function Home() {
               >
                 <Link 
                   href={`/bursa-merkez-${service.slug}`}
-                  className="block h-full bg-white dark:bg-navy rounded-3xl p-6 border border-border hover:border-primary/50 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group"
+                  className="block h-full bg-white dark:bg-navy-light rounded-3xl p-6 border border-border dark:border-white/10 hover:border-primary dark:hover:border-primary shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group"
                 >
-                  <div className="h-12 w-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                  <div className="h-12 w-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
                     <ArrowUpToLine className="h-6 w-6 text-primary group-hover:text-white" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">{service.name}</h3>
-                  <p className="text-slate-500 text-sm mb-6 line-clamp-3">{service.shortDesc}</p>
+                  <h3 className="text-xl font-bold mb-3 text-secondary dark:text-white group-hover:text-primary transition-colors">{service.name}</h3>
+                  <p className="text-slate-600 dark:text-slate-300 text-sm mb-6 line-clamp-3">{service.shortDesc}</p>
                   
-                  <div className="mt-auto flex items-center text-sm font-bold text-secondary dark:text-white group-hover:text-primary transition-colors">
+                  <div className="mt-auto flex items-center text-sm font-bold text-slate-700 dark:text-slate-200 group-hover:text-primary transition-colors">
                     Detaylı İncele <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </Link>
@@ -115,8 +115,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">Neden Bizi Tercih Etmelisiniz?</h2>
-              <div className="space-y-6 text-lg text-slate-600 dark:text-slate-300">
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-secondary dark:text-white">Neden Bizi Tercih Etmelisiniz?</h2>
+              <div className="space-y-6 text-lg text-slate-700 dark:text-slate-200">
                 <p>Bursa'da uzun yıllara dayanan lojistik ve taşıma tecrübemizle, müşterilerimize <strong>en sorunsuz ve profesyonel</strong> kiralık mobil asansör hizmetini sunuyoruz.</p>
                 <p>Klasik yöntemlerin aksine; eşyalarınızı merdiven dairesine sokmadan, duvarları çizmeden ve eşyalarınıza zarar vermeden doğrudan taşıma işlemini gerçekleştiriyoruz. Üstelik <strong>15. kata kadar çıkar</strong> kapasitemizle yüksek binalarda bile kolaylık sağlıyoruz.</p>
                 <p>İhtiyaç duymanız halinde sadece asansör değil, <strong>gerekli durumlarda taşıma personeli (hamal) ve nakliye kamyonu desteği de verilir</strong>. İşimizi ciddiye alıyoruz: Tam saatinde oluruz, özenli çalışırız, makinelerimiz bakımlıdır ve iş güvenliğine dikkat ederiz.</p>
@@ -127,19 +127,19 @@ export default function Home() {
             </div>
             
             <div className="grid grid-cols-2 gap-4">
-              <div className="bg-white dark:bg-navy p-6 rounded-3xl shadow-lg border border-border text-center transform translate-y-8">
+              <div className="bg-white dark:bg-navy-light p-6 rounded-3xl shadow-lg border border-border dark:border-white/10 text-center transform translate-y-8">
                 <div className="text-4xl font-display font-black text-primary mb-2">15.</div>
                 <div className="font-semibold text-secondary dark:text-white">Kata Kadar<br/>Erişim</div>
               </div>
-              <div className="bg-secondary p-6 rounded-3xl shadow-lg border border-secondary text-center">
+              <div className="bg-secondary p-6 rounded-3xl shadow-lg text-center">
                 <div className="text-4xl font-display font-black text-white mb-2">7/24</div>
-                <div className="font-semibold text-slate-300">Kesintisiz<br/>Hizmet</div>
+                <div className="font-semibold text-slate-100">Kesintisiz<br/>Hizmet</div>
               </div>
-              <div className="bg-primary p-6 rounded-3xl shadow-lg border border-primary text-center transform translate-y-8">
+              <div className="bg-primary p-6 rounded-3xl shadow-lg text-center transform translate-y-8">
                 <div className="text-4xl font-display font-black text-white mb-2">%100</div>
-                <div className="font-semibold text-primary-foreground">Operatör<br/>Kontrolü</div>
+                <div className="font-semibold text-white/90">Operatör<br/>Kontrolü</div>
               </div>
-              <div className="bg-white dark:bg-navy p-6 rounded-3xl shadow-lg border border-border text-center">
+              <div className="bg-white dark:bg-navy-light p-6 rounded-3xl shadow-lg border border-border dark:border-white/10 text-center">
                 <div className="text-4xl font-display font-black text-primary mb-2">18</div>
                 <div className="font-semibold text-secondary dark:text-white">İlçede<br/>Aktif Ağ</div>
               </div>
@@ -153,7 +153,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">Hizmet Bölgelerimiz</h2>
-            <p className="text-slate-500 text-lg">Bursa'nın tüm ilçelerine en kısa sürede mobil asansör ulaştırıyoruz.</p>
+            <p className="text-slate-600 dark:text-slate-300 text-lg">Bursa'nın tüm ilçelerine en kısa sürede mobil asansör ulaştırıyoruz.</p>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
@@ -161,7 +161,7 @@ export default function Home() {
               <Link 
                 key={district.slug} 
                 href={`/${district.slug}-kiralik-mobil-asansor`}
-                className="bg-white dark:bg-navy py-4 px-3 rounded-2xl text-center border border-border hover:border-primary hover:shadow-md hover:text-primary transition-all font-semibold text-sm sm:text-base"
+                className="bg-white dark:bg-navy-light text-secondary dark:text-white py-4 px-3 rounded-2xl text-center border border-border dark:border-white/10 hover:bg-primary hover:text-white hover:border-primary dark:hover:bg-primary dark:hover:border-primary hover:shadow-md transition-all font-semibold text-sm sm:text-base"
               >
                 {district.name}
               </Link>
