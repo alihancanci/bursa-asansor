@@ -1,0 +1,47 @@
+Sen üst düzey bir React/Vite Geliştiricisi ve Uzman bir SEO Yöneticisisin. Benim için "Bursa Mobil Asansör Kiralama" adında, Programmatic SEO mimarisine sahip, süper hızlı, mobil uyumlu ve Google algoritmalarıyla (E-E-A-T) %100 uyumlu modern bir web uygulaması (SPA) geliştirmeni istiyorum.
+
+Proje, 18 farklı bölge ve 8 farklı arama niyeti (keyword) üzerinden toplamda 144 adet dinamik, benzersiz ve SEO uyumlu sayfa üretecek.
+
+1. VERİ MİMARİSİ (MATRIX YAPISI)
+Lütfen projenin içine bir data.ts (veya .js) dosyası kur ve şu dizileri oluştur:
+
+Bölgeler (18 Adet): Bursa (Merkez), Osmangazi, Nilüfer, Yıldırım, İnegöl, Gemlik, Gürsu, Mudanya, Orhangazi, Karacabey, İznik, Mustafakemalpaşa, Yenişehir, Kestel, Orhaneli, Keles, Harmancık, Büyükorhan.
+
+Hizmetler/Anahtar Kelimeler (8 Adet): kiralik-mobil-asansor, evden-eve-asansorlu-nakliyat, saatlik-asansor-kiralama, insaat-cephe-asansoru, yuksek-kat-esya-tasima-asansoru, asansorlu-nakliye-araci, dis-cephe-esya-asansoru, asansorlu-ev-tasima.
+
+Dinamik Rota (Route): /:district-:service (Örn: /nilufer-kiralik-mobil-asansor) şeklinde çalışacak bir yapı kur. Hatalı url girilirse 404 yerine ana sayfaya yönlendirsin.
+
+2. KESİN VE ASLA İHLAL EDİLMEYECEK İŞLETME KURALLARI (NO HALLUCINATION)
+Üreteceğin tüm metinlerde, UI kartlarında, sıkça sorulan sorularda ve özellik listelerinde AŞAĞIDAKİ KURALLARA ZORUNLU OLARAK UYACAKSIN. Bunların dışına çıkmak, uydurma kampanya yapmak veya sahte pazarlama dilleri kullanmak KESİNLİKLE YASAKTIR:
+
+Çalışma Saati: Sadece "7/24 hizmet veriyoruz" denilecek. (Sabah indirimi, 7 dakikada cevap, gece tarifesi gibi uydurma sözler YASAKTIR).
+
+Kapasite: "15. kata kadar çıkar" denilecek. (45-48 metre gibi uydurma teknik detaylara girilmeyecek).
+
+Operatör: "Operatör her zaman asansörün başındadır, kurulum ve kullanımı o yapar." (Sistemi müşteriye bırakmayız).
+
+Sigorta (KRİTİK): SİGORTA YOKTUR. Metinlerin, ikonların veya FAQ kısmının hiçbir yerinde sigorta, güvence, kasko, garantili taşıma gibi kelimeler ASLA KULLANILMAYACAK.
+
+Ekip Desteği: Temel işimiz asansör kiralama olsa da "gerekli durumlarda taşıma personeli (hamal) ve nakliye kamyonu desteği de verilir" ibaresi eklenecek.
+
+Kalite ve Esnaf Ahlakı: "Tam saatinde oluruz, özenli çalışırız, makinelerimiz bakımlıdır, iş güvenliğine dikkat ederiz. Uygun fiyata kaliteli hizmet veren sözünün eri bir ekibiz." Rakipleri kötülemek yasaktır.
+
+3. GOOGLE SEO VE İÇERİK POLİTİKALARI
+
+Kopya İçerik (Duplicate Content) Koruması: 144 sayfanın hepsi birbirinin kopyası olmamalıdır. Hizmetlere özel (İnşaat için ayrı, Ev taşıma için ayrı) zengin, minimum 300 kelimelik dinamik içerik şablonları oluştur ve içine {district} değişkenini doğal bir dille yedir.
+
+Sayfa İçi SEO: Her sayfanın dinamik ve mantıklı bir <title>, <meta name="description"> ve tek bir <h1> etiketi olmalı.
+
+Yetim Sayfa (Orphan Page) Engelleme: Sitenin en altına (Footer) veya özel bir bölüme devasa ama çok şık, temiz bir CSS Grid yapısında "Hizmet Bölgelerimiz" ve "Hizmetlerimiz" menüsü (Mega Footer) yap. 18 bölge ve 8 hizmet birbiriyle çapraz (Internal Linking) linklensin ki Google botları tüm 144 sayfayı bulabilsin.
+
+Erişilebilirlik (A11y): Yazılar okunabilir olsun, kontrast oranları yüksek olsun, resimlerde alt etiketleri bulunsun.
+
+4. UI/UX TASARIMI (GÖRSELLİK)
+
+Tasarım koyu lacivert veya antrasit detaylarla kurumsal turuncu (güven ve inşaat/nakliye hissi veren) renk paletine sahip olsun.
+
+Modern, Tailwind CSS ile şekillendirilmiş, mobil cihazlarda kusursuz çalışan, büyük ve başparmakla basılması kolay CTA (Harekete Geçirici Mesaj) butonları ("Hemen Ara", "WhatsApp'tan Fiyat Al") ekle.
+
+Ana sayfada hizmetleri ve ilçeleri filtreleyebilecekleri küçük, şık bir arama/seçme modülü tasarla.
+
+Lütfen bana bu tam teşekküllü, SEO canavarı web uygulamasının React bileşenlerini, veri yapılarını ve Router kurgusunu hazırlayarak projeyi ayağa kaldır.
