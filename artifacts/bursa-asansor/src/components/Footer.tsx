@@ -72,28 +72,6 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Mega SEO Matrix Grid (Visually subdued but present) */}
-        <div className="pt-10 border-t border-white/5 mb-10">
-          <h4 className="text-slate-500 text-xs font-bold uppercase tracking-wider mb-6">Tüm Hizmet Ağımız</h4>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-9 gap-x-4 gap-y-8">
-            {DISTRICTS.map(district => (
-              <div key={district.slug} className="flex flex-col gap-2">
-                <span className="text-white text-sm font-semibold mb-1 border-b border-white/10 pb-1 inline-block">{district.name}</span>
-                {SERVICES.map(service => (
-                  <Link 
-                    key={`${district.slug}-${service.slug}`}
-                    href={`/${district.slug}-${service.slug}`}
-                    className="text-[11px] text-slate-500 hover:text-primary transition-colors block truncate"
-                    title={`${district.name} ${service.name}`}
-                  >
-                    {service.name}
-                  </Link>
-                ))}
-              </div>
-            ))}
-          </div>
-        </div>
-
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-500 text-sm">
             © {new Date().getFullYear()} Bursa Mobil Asansör. Tüm hakları saklıdır.
