@@ -296,6 +296,218 @@ export const SERVICES: Service[] = [
       { q: "Yeni evde de eşyaları yerleştiriyor musunuz?", a: "Evet, eşyalarınızın yeni evdeki odalarına yerleştirilmesinde de destek sağlıyoruz." },
       { q: "Taşınma günü iptal veya değişiklik yapabilir miyim?", a: "Randevu değişikliklerini önceden bildirmeniz yeterli. Esnek planlama anlayışımızla size uyum sağlarız." }
     ]
+  },
+
+  /* ───────── SPESİFİK MALZEME & ÖZEL TAŞIMA ───────── */
+  {
+    slug: "mobilya-tasima-asansoru",
+    name: "Mobilya Taşıma Asansörü",
+    shortDesc: "Koltuk takımı, kanepe, dolap ve büyük mobilyaların güvenli kat transferi.",
+    category: "asansor",
+    template: `
+      <p>Büyük ve ağır mobilyaların dar apartman merdivenlerinden çıkarılmaya ya da indirilmeye çalışılması çoğunlukla hem eşyaya hem de binanın ortak alanlarına zarar verir. {district} bölgesinde sunduğumuz <strong>mobilya taşıma asansörü</strong> hizmetinde koltuk takımları, üç kapılı gardıroplar, çift kişilik yatak kafesleri, raf sistemleri ve benzeri büyük parçalar doğrudan <strong>balkon veya pencereden, dış cephe asansörümüzle</strong> güvenle taşınır.</p>
+
+      <p>Sistemimiz <strong>15. kata kadar çıkar</strong>; yani kaçıncı katta olduğunuz fark etmeksizin mobilyanızı evinize ya da evinizden çıkarabiliyoruz. Uzaktan kumandalı hassas kontrol sistemi sayesinde kanepe veya dolap gibi geniş parçalar milimetrik hassasiyetle manüpüle edilir. İşlem boyunca <strong>operatör her zaman asansörün başındadır</strong>, yükleme ve indirme süreci tamamen profesyonel gözetim altında gerçekleşir.</p>
+
+      <p>{district} genelinde <strong>7/24 hizmet veriyoruz</strong>. Mobilya alışverişi sonrasında mağazadan teslim alan müşterilerimiz için de randevu sistemiyle tam zamanında adreslerinde oluruz. Anlaştığımız fiyat kesindir, iş bitince ek kalem çıkarmayız. Sözünün eri, dürüst ve uygun fiyatlı bir esnaf ekibi olarak çalışıyoruz.</p>
+
+      <p>Cam vitrin, ayna veya çok parçalı sistem mobilyalar gibi hassas eşyalar için özellikle özenli çalışır; bina girişindeki kapı söveleri ve korkulukların zarar görmemesine dikkat ederiz. Mobilyanın belirli bir odaya yerleştirilmesinde yardımcı olmamızı istiyorsanız, <strong>gerekli durumlarda taşıma personeli (hamal) desteği de verilir</strong>.</p>
+    `,
+    faqs: [
+      { q: "Çok büyük bir kanepe için cam sökmek gerekiyor mu?", a: "Balkon kapısı veya eşyanın boyutuna uygun bir pencere varsa genellikle cam sökmek gerekmez. Duruma göre uzmanlarımız en uygun çözümü belirler." },
+      { q: "Mobilyayı mağazadan eve kadar getirebiliyor musunuz?", a: "Gerekli durumlarda kapalı kasa nakliye aracı ve taşıma personeli desteği de verilmektedir." },
+      { q: "Asansör kurulum süresi ne kadar?", a: "Standart bir bina önü koşullarında kurulum dakikalar içinde tamamlanır." },
+      { q: "Gece saatlerinde mobilya taşıma hizmetiniz var mı?", a: "Evet, 7/24 hizmet veriyoruz; gece saatleri dahil randevu alabilirsiniz." }
+    ]
+  },
+  {
+    slug: "beyaz-esya-tasima-asansoru",
+    name: "Beyaz Eşya Taşıma Asansörü",
+    shortDesc: "Buzdolabı, çamaşır makinesi ve ankastre ürünlerin katlara güvenli transferi.",
+    category: "asansor",
+    template: `
+      <p>Buzdolabı, çamaşır makinesi, bulaşık makinesi, kurutma makinesi ya da ankastre ürünler gibi ağır ve hacimli beyaz eşyaların katlara taşınması insan gücüyle hem tehlikeli hem de çok zahmetlidir. {district} bölgesindeki <strong>beyaz eşya taşıma asansörü</strong> hizmetimiz bu sorunu hızla çözer. Eşyanız, bina içi merdivenle zorlanmadan doğrudan dış cephe asansörümüzle istediğiniz kata çıkarılır ya da indirilir.</p>
+
+      <p>Sistemlerimiz <strong>15. kata kadar çalışır</strong>. Beyaz eşyalar hassas elektronik ve mekanik parçalar içerdiğinden taşıma sırasında darbeye karşı korunmaları kritiktir; dış cephe asansörümüz bu eşyaları düz ve dengeli bir şekilde taşıyarak darbe riskini minimuma indirir. Tüm süreç boyunca <strong>operatör her zaman asansörün başındadır</strong>; eşyanın güvenli ve dengeli bir biçimde yüklenmesini ve indirilmesini sağlar.</p>
+
+      <p><strong>7/24 hizmet veriyoruz</strong>; yeni ev teslimi sonrası aynı gün hizmet alma gibi acil ihtiyaçlarınızda da yanınızdayız. {district} genelinde tam anlaştığımız saatte adresinizde olur, dürüst ve uygun fiyatlı çalışırız. Telefonda verilen fiyat taşıma bitiminde değişmez.</p>
+
+      <p>Mağazadan satın aldığınız beyaz eşyanın eve teslimi ve kata çıkarılmasını tek seferde çözmek istiyorsanız, <strong>gerekli durumlarda kapalı kasa nakliye aracı ve taşıma personeli (hamal) desteği de verilir</strong>. Eski beyaz eşyanızın indirilmesi ve yenisinin yerine kurulması için de aynı ekiple çalışma imkânı mevcuttur.</p>
+    `,
+    faqs: [
+      { q: "Buzdolabını 8. kattan indirmek için asansör gerekli mi?", a: "Bina merdiveninden indirilmesi güç veya riskli olan her beyaz eşya için dış cephe asansörümüzü kullanmanızı öneririz." },
+      { q: "Beyaz eşyayı mağazadan alıp eve kadar getiriyor musunuz?", a: "Gerekli durumlarda kapalı kasa nakliye aracı ve taşıma personeli desteği de sağlanmaktadır." },
+      { q: "Kaçıncı kata kadar hizmet veriyorsunuz?", a: "Sistemlerimiz maksimum 15. kata kadar güvenle ulaşabilmektedir." },
+      { q: "Aynı gün hizmet alabilir miyim?", a: "Müsaitlik durumuna göre aynı gün hizmet verebiliyoruz. 7/24 ulaşılabilir olduğumuz için bizi arayabilirsiniz." }
+    ]
+  },
+  {
+    slug: "piyano-tasima-asansoru",
+    name: "Piyano Taşıma Asansörü",
+    shortDesc: "Kuyruklu ve duvar piyanosu taşımada uzman asansör çözümü.",
+    category: "asansor",
+    template: `
+      <p>Piyano, taşınması en zorlu eşyalar arasında yer alır; hem çok ağırdır hem de hassas mekanik yapısı nedeniyle darbeye karşı son derece kırılgandır. {district} bölgesinde piyano taşıma konusundaki en doğru çözüm, dış cephe <strong>piyano taşıma asansörü</strong> kullanmaktır. Kuyruklu piyano, konsol piyano veya duvar piyanosu fark etmeksizin eşyanızı bina merdiveninde çıkmaya ya da inmeye zorlamadan güvenle taşıyoruz.</p>
+
+      <p>Asansörümüz <strong>15. kata kadar çıkar</strong>. Piyano balkon veya uygun bir pencereden alınarak, özel yükleme düzeneğiyle asansör sepetine yerleştirilir ve hedefe ulaştırılır. Tüm bu işlem boyunca <strong>operatör her zaman asansörün başındadır</strong>; hassas yük yönetimi ve denge kontrolü konusunda deneyimli personelimiz görevini kusursuz yerine getirir. {district} genelinde <strong>7/24 hizmet veriyoruz</strong>; gündüz veya gece randevuya uygun olabiliriz.</p>
+
+      <p>Piyano taşımada en sık yapılan hata, deneyimsiz ellerin ağır yükü merdivenlerden kaldırmaya çalışmasıdır. Bu hem piyanoyu hem de binanın merdiven korkuluklarını ve sıva yüzeylerini tahrip edebilir. Dış cephe asansörümüz bu riski tamamen ortadan kaldırır. Tam zamanında adresinizde olur, dürüst ve uygun fiyatlı hizmet sunarız.</p>
+
+      <p>Piyano taşımasında ilave insan gücü gerekli olduğu durumlarda, <strong>gerekli durumlarda taşıma personeli (hamal) desteği de verilir</strong>. Piyano konser salonu, müzik okulu veya okuldan ev gibi farklı noktalara da taşınabilir; taleplerinizi bize aktarmanız yeterlidir.</p>
+    `,
+    faqs: [
+      { q: "Kuyruklu piyano asansörle taşınabilir mi?", a: "Evet, kuyruklu piyano dahil her tip piyano için dış cephe asansörümüzü kullanarak güvenli taşıma yapabiliyoruz." },
+      { q: "Piyano taşıma fiyatı nasıl hesaplanıyor?", a: "Piyano tipi, bulunduğu kat ve taşıma mesafesine göre fiyat belirleniyor. Telefonda net rakamı öğrenebilirsiniz." },
+      { q: "Piyano taşınırken akort bozulur mu?", a: "Taşıma sonrası akort kontrolü yaptırılması önerilir; bu konuda müzik teknisyenine yönlendirebiliriz." },
+      { q: "Gece piyano taşıyabilir misiniz?", a: "Evet, 7/24 hizmet veriyoruz. Bina sakinlerini daha az rahatsız eden gece saatlerini tercih eden müşterilerimiz de oluyor." }
+    ]
+  },
+  {
+    slug: "moloz-indirme-asansoru",
+    name: "Moloz İndirme Asansörü",
+    shortDesc: "Tadilat ve yıkım molozlarının üst katlardan hızlı ve temiz indirilmesi.",
+    category: "asansor",
+    template: `
+      <p>Daire veya işyeri tadilatlarında kırılan duvarların, sökülen fayans ve seramiklerin, eski alçı ve beton parçalarının bina dışına çıkarılması hem yorucu hem de komşular için rahatsız edici bir süreçtir. {district} bölgesinde sunduğumuz <strong>moloz indirme asansörü</strong> hizmeti, bu süreci hızlı ve düzenli hale getirir. Moloz torbalar halinde hazırlandıktan sonra dış cephe asansörümüzle binanın önüne ya da konteynere saniyeler içinde indirilir.</p>
+
+      <p>Sistemimiz <strong>15. kata kadar çalışır</strong>; tadilat hangi katta olursa olsun molozları aşağıya indirmek için asansörümüzü kullanabilirsiniz. Bu yöntem bina merdiveninin kirlenmesini, ortak alanların toz ve kıymıkla dolmasını önler. Süreç boyunca <strong>operatör her zaman asansörün başındadır</strong>; yükün dengeli ve güvenli biçimde taşınmasını koordine eder. {district} ve çevresinde <strong>7/24 hizmet veriyoruz</strong>.</p>
+
+      <p>Tadilat firmalarının sıkça tercih ettiği bu hizmet, hem iş güvenliğini artırır hem de usta saatlerini verimli kullanmanızı sağlar. Kısa süreli kiralamalarda bile kalite standartlarımızdan ödün vermiyoruz. Ekibimiz tam zamanında gelir ve bakımlı makinesini işin süresi boyunca hazır tutar.</p>
+
+      <p>Birden fazla gün süren tadilat projelerinde günlük ya da günlük artışlı kiralama seçenekleri mevcuttur. Molozların konteynere yüklenmesine yardıma ihtiyacınız varsa, <strong>gerekli durumlarda taşıma personeli (hamal) desteği de verilir</strong>. {district} bölgesindeki inşaat ve tadilat firmalarına rekabetçi koşullarla hizmet veriyoruz.</p>
+    `,
+    faqs: [
+      { q: "Molozları torbalamak zorunda mıyım?", a: "Molozların asansör sepetine uygun torba veya kova gibi kaplara konulması gerekmektedir. Bu konuda personelimiz yönlendirme yapabilir." },
+      { q: "Asansör tadilat süresince bizde kalabilir mi?", a: "Evet, günlük kiralama seçeneklerimizle çalışma süreniz boyunca asansörü kiralamak mümkündür." },
+      { q: "Kaçıncı kattaki tadilatlar için uygundur?", a: "Zemin kat hariç, 1. kattan 15. kata kadar olan her kattaki tadilatlar için hizmet veriyoruz." },
+      { q: "Moloz dışında başka malzeme de indirebilir misiniz?", a: "Evet, eski mobilya, bozuk beyaz eşya veya diğer yıkım malzemeleri de indirilebilir." }
+    ]
+  },
+  {
+    slug: "insaat-malzemesi-tasima-asansoru",
+    name: "İnşaat Malzemesi Taşıma Asansörü",
+    shortDesc: "Kum, çimento, fayans, alçıpan ve yapı malzemelerinin katlara hızlı transferi.",
+    category: "asansor",
+    template: `
+      <p>{district} bölgesindeki tadilat ve inşaat projelerinde malzeme lojistiği çoğunlukla en fazla zaman kaybettiren aşamadır. Kum torbası, çimento, fayans, alçıpan, boru veya pencere kasası gibi ağır ve hacimli inşaat malzemelerinin ustalar tarafından katlara taşınması hem yorucu hem de verimsizdir. <strong>İnşaat malzemesi taşıma asansörü</strong> hizmetimizle bu sorunu kökten çözüyoruz.</p>
+
+      <p>Asansörümüz <strong>15. kata kadar çıkar</strong>. Dış cephe sistemi sayesinde malzemeler doğrudan cadde veya bahçeden yüklenip hedef kata birkaç dakika içinde ulaştırılır. Bina içi merdivende trafik oluşmaz, komşular rahatsız edilmez, iş güvenliği riski azalır. Tüm süreçte <strong>operatör her zaman asansörün başındadır</strong>; ağır yüklerin dengeli ve güvenli biçimde taşınmasını sağlar. {district} ve çevresinde <strong>7/24 hizmet veriyoruz</strong>.</p>
+
+      <p>Müteahhitler ve tadilat firmaları için proje süresince günlük veya çok günlü kiralama seçenekleri mevcuttur. Makinelerimiz periyodik bakımdan geçer; arıza riski minimuma indirilmiştir. Ekibimiz tam zamanında işbaşı yapar, dürüst ve uygun fiyatlı çalışır.</p>
+
+      <p>Malzemelerin asansörden indirilmesinde veya katlardaki odalara dağıtılmasında iş gücüne ihtiyaç duyulursa, <strong>gerekli durumlarda taşıma personeli (hamal) ve nakliye kamyonu desteği de verilir</strong>. Büyük şantiyelerde koordineli çalışma için önceden iletişime geçmenizi tavsiye ederiz.</p>
+    `,
+    faqs: [
+      { q: "Fayans ve seramik gibi kırılgan malzemeleri taşıyabiliyor musunuz?", a: "Evet, uygun ambalajlama ve yükleme teknikleriyle kırılgan inşaat malzemeleri de güvenle taşınabilmektedir." },
+      { q: "Günlük kiralama mümkün mü?", a: "Evet, proje sürenize göre günlük veya çok günlü kiralama seçeneklerimiz mevcuttur." },
+      { q: "Makine ne zaman kurulur?", a: "Randevu saatinde tam vaktinde adresinizde olur, kurulumu hızlıca tamamlarız." },
+      { q: "Bina önünde ne kadar alan gerekiyor?", a: "Araç ve asansörün konumlanabilmesi için bina önünde yeterli boşluk olması gereklidir. Keşif yaparak uygunluğu belirleyebiliriz." }
+    ]
+  },
+  {
+    slug: "cam-ve-pencere-tasima-asansoru",
+    name: "Cam ve Pencere Taşıma Asansörü",
+    shortDesc: "Büyük cam panel, pencere ve doğrama sistemlerinin katlara hasarsız taşınması.",
+    category: "asansor",
+    template: `
+      <p>Büyük cam paneller, pvc pencere doğramaları, balkon camları veya duvar boyutunda ayna gibi eşyalar hem çok kırılgandır hem de insan gücüyle katlara çıkarılması son derece risklidir. {district} bölgesinde sunduğumuz <strong>cam ve pencere taşıma asansörü</strong> hizmeti bu riski tamamen ortadan kaldırır. Cam parçalar özel sabitleme aparatlarıyla asansör sepetine yerleştirilerek, darbesiz ve düz bir taşıma yolculuğuyla hedef kata ulaştırılır.</p>
+
+      <p>Sistemimiz <strong>15. kata kadar çıkar</strong>. Pencere değişim projeleri, ofis bölme cam sistemleri, cephe giydirme uygulamaları veya büyük ayna montajı gibi işlerde asansörümüz en pratik çözümdür. Hassas yük söz konusu olduğunda dikkat ve özen iki katına çıkar; <strong>operatör her zaman asansörün başındadır</strong> ve taşıma boyunca gözetim kesintisiz sürer. {district} genelinde <strong>7/24 hizmet veriyoruz</strong>.</p>
+
+      <p>Cam taşımacılığında önemli olan hızdan önce kontrol ve denge. Uzaktan kumandalı sistemimizle sepet frenlenmeden, sarsılmadan hareket eder. Anlaştığımız saatte işbaşı yapar, dürüst ve uygun fiyatlı çalışırız. Telefonda belirlenen fiyat iş bitiminde değişmez.</p>
+
+      <p>Cam veya pencere doğramalarının kurulumunda ya da söküm aşamasında gerekirse, <strong>gerekli durumlarda taşıma personeli (hamal) desteği de verilir</strong>. İnşaat firmaları, cam atölyeleri ve dekorasyon şirketleri gibi kurumsal müşterilerimize de proje bazlı kiralama imkânı sunuyoruz.</p>
+    `,
+    faqs: [
+      { q: "Cam kırılmadan güvenle taşınabiliyor mu?", a: "Özel sabitleme ve yükleme teknikleriyle camlar son derece güvenli taşınmaktadır. Operatörümüz bu konuda deneyimlidir." },
+      { q: "Büyük ofis cam bölmelerini de taşıyabiliyor musunuz?", a: "Evet, ofis bölme sistemleri, cephe camları ve büyük aynalar dahil her türlü cam ürün için hizmet veriyoruz." },
+      { q: "Kaçıncı kata kadar ulaşabiliyorsunuz?", a: "15. kata kadar güvenli erişim sağlayan sistemlerimizle hizmet veriyoruz." },
+      { q: "Acil cam değişimi için aynı gün hizmet alabilir miyim?", a: "Müsaitlik durumuna göre aynı gün hizmet verebiliyoruz. 7/24 ulaşılabilir olduğumuz için bizi arayın." }
+    ]
+  },
+  {
+    slug: "kiralik-asansor-fiyatlari",
+    name: "Kiralık Asansör Fiyatları",
+    shortDesc: "Bursa'da mobil asansör kiralama ücretleri, fiyat etkileyen faktörler ve teklif alma.",
+    category: "asansor",
+    template: `
+      <p>{district} bölgesinde <strong>kiralık asansör fiyatları</strong>, birkaç temel faktöre göre belirlenir. Bunların başında taşınacak eşyanın türü ve ağırlığı, çalışma yapılacak binanın kat adedi ve fiziksel koşulları, ihtiyaç duyulan çalışma süresi ile ekstra hizmet talepleri gelir. Her iş birbirinden farklı olduğu için fiyatlandırmayı standart bir tabloya sıkıştırmak yerine, size özel ve net bir rakam sunmayı tercih ediyoruz.</p>
+
+      <p>Fiyatı etkileyen başlıca unsurlar şunlardır: <strong>kat yüksekliği</strong> (sistemimiz 15. kata kadar çalışır), <strong>çalışma süresi</strong> (saatlik veya günlük kiralama seçenekleri mevcuttur), <strong>eşyanın türü</strong> (mobilya, beyaz eşya, inşaat malzemesi, piyano gibi) ve <strong>bina önü koşulları</strong> (park imkânı ve yanaşma mesafesi). Tüm bu bilgileri telefonda paylaştığınızda birkaç dakika içinde net bir fiyat alırsınız.</p>
+
+      <p>Tüm kiralamalarda <strong>operatör her zaman asansörün başındadır</strong>; operatör ücreti fiyata dahildir. Sürpriz ek kalemler çıkarmayız; anlaştığımız rakam iş bittiğinde değişmez. {district} ve çevresinde <strong>7/24 hizmet veriyoruz</strong>; mesai dışı, hafta sonu ve tatil günlerinde de hizmet talep edebilirsiniz.</p>
+
+      <p>Uygun fiyatlı, sözünün eri ve dürüst bir esnaf ekibi olarak {district} bölgesinde çalışıyoruz. Rakipleri değil, kendi kalite standartlarımızı konuşuruz. İster kısa süreli taşıma için saatlik kira olsun, ister uzun vadeli şantiye kullanımı için günlük kira; her bütçeye ve işin büyüklüğüne göre çözüm üretiyoruz. Ücretsiz fiyat teklifi için hemen arayın.</p>
+    `,
+    faqs: [
+      { q: "Asansör saatlik mi, günlük mi kiralanıyor?", a: "Her ikisi de mümkündür. Kısa işler için saatlik, uzun projeler için günlük kiralama seçeneğimiz vardır." },
+      { q: "Fiyata operatör dahil mi?", a: "Evet, güvenlik gereği operatör her zaman asansörün başındadır ve ücreti hizmet bedeline dahildir." },
+      { q: "Fiyat teklifi nasıl alınıyor?", a: "Telefonda kat bilgisi, eşya türü ve süre gibi bilgileri paylaşmanız yeterli; birkaç dakika içinde net fiyat veriyoruz." },
+      { q: "Gece ve hafta sonu fiyatı daha mı yüksek?", a: "Ücretlendirmemiz hakkında net bilgi almak için bizi arayın; 7/24 hizmet verdiğimiz için esnek fiyatlama seçeneklerimiz mevcuttur." }
+    ]
+  },
+  {
+    slug: "fabrika-ve-depo-tasimaciligi",
+    name: "Fabrika ve Depo Taşımacılığı",
+    shortDesc: "Endüstriyel makine, ekipman ve depo içeriğinin profesyonel taşınması.",
+    category: "nakliyat",
+    template: `
+      <p>Fabrika taşıması veya depo nakli, ev veya ofis taşımalarından çok daha kapsamlı bir organizasyon gerektirir. Üretim makineleri, paletli mallar, raf sistemleri ve ağır endüstriyel ekipmanların doğru sırayla, güvenle ve üretim kesintisini minimuma indirerek yeni adrese taşınması kritik önem taşır. {district} bölgesinde sunduğumuz <strong>fabrika ve depo taşımacılığı</strong> hizmetinde <strong>kapalı kasa nakliye kamyonumuz, uzman taşıma personelimiz ve 15. kata çıkan mobil asansörümüzle</strong> anahtar teslim hizmet veriyoruz.</p>
+
+      <p>Endüstriyel taşımalarda yükleme-indirme operasyonunun doğru planlanması, araç seçiminin işe uygun yapılması ve personelin deneyimi belirleyicidir. Ekibimiz ağır yük taşımada deneyimlidir; <strong>operatör her zaman asansörün başındadır</strong> ve yüksek kat çalışmalarında güvenliği en üst düzeyde tutar. <strong>7/24 hizmet veriyoruz</strong>; üretim programınıza göre taşımayı hafta sonuna veya geceye planlayabiliriz.</p>
+
+      <p>{district} genelinde anlaştığımız saatte tam zamanında adresinizde oluruz. Sözünün eri, uygun fiyatlı ve dürüst çalışma biçimimizle kurumsal müşterilerimize güven veriyoruz. Taşıma öncesinde telefonda projenizin ayrıntılarını paylaşmanız, doğru ekip ve araç planlaması için büyük önem taşır.</p>
+
+      <p>Depo içeriğindeki paletli malların, büyük raf sistemlerinin veya üretim makinelerinin söküm, taşıma ve yeniden kurulum aşamalarında yeterli iş gücüne ihtiyaç duyulursa, <strong>gerekli durumlarda ek taşıma personeli (hamal) ve nakliye kamyonu desteği de verilir</strong>. Küçük atölye taşımalarından büyük fabrika nakliyelerine kadar her ölçekte çözüm üretiyoruz.</p>
+    `,
+    faqs: [
+      { q: "Üretim makinelerini söküp kurabilir misiniz?", a: "Taşıma ve yükleme konusunda hizmet veriyoruz; teknik söküm ve kurulum için alanında uzman bir firma ile koordineli çalışılmasını öneririz." },
+      { q: "Büyük depo taşımalarında ne kadar personel geliyor?", a: "Taşımanın büyüklüğüne göre ekip sayısı planlanır. Önceden projenizi paylaşmanız doğru planlama yapmamızı sağlar." },
+      { q: "Gece veya hafta sonu fabrika taşıması yapılabiliyor mu?", a: "Evet, üretim akışını bozmamak için hafta sonu ve gece saatlerinde de hizmet veriyoruz." },
+      { q: "Endüstriyel ekipmanlar için özel araç kullanılıyor mu?", a: "Taşınacak ekipmanın özelliklerine göre en uygun araç seçimi yapılır. Detaylar için önceden iletişime geçiniz." }
+    ]
+  },
+  {
+    slug: "ceyiz-tasima",
+    name: "Çeyiz Taşıma ve Nakliye",
+    shortDesc: "Düğün öncesi çeyiz sandığı, koltuk ve ev eşyalarının özenli nakliyesi.",
+    category: "nakliyat",
+    template: `
+      <p>Düğün hazırlıklarının en yoğun olduğu dönemde çeyizlerin yeni eve taşınması ayrı bir stres kaynağı olmamalı. {district} bölgesinde sunduğumuz <strong>çeyiz taşıma ve nakliye</strong> hizmetinde <strong>kapalı kasa nakliye kamyonumuz, uzman taşıma personelimiz ve 15. kata çıkan mobil asansörümüzle</strong> çeyizlerinizi yeni yuvanıza özenle ve hasarsız ulaştırıyoruz.</p>
+
+      <p>Çeyiz sandıkları, koltuk takımları, yatak odası takımı, beyaz eşyalar, halılar ve değerli hediyeler titizlikle taşınmayı hak eder. Bina merdivenlerinden çıkarılamayan büyük mobilyalar ve beyaz eşyalar için dış cephe asansörümüz devreye girer; <strong>operatör her zaman asansörün başındadır</strong> ve her parça güvenle yerine ulaşır. Yeni evin yüksek katta olması durumunda bu hizmet büyük kolaylık sağlar.</p>
+
+      <p>{district} genelinde <strong>7/24 hizmet veriyoruz</strong>; düğün günü öncesi veya sonrası, sabah erken veya gece geç — planınıza göre randevu ayarlıyoruz. Anlaştığımız saatte tam vaktinde gelir, dürüst ve uygun fiyatlı hizmet sunarız. Telefonda belirlenen fiyat değişmez; düğün gibi özel günlerde sürpriz ek ücret istemeyiz.</p>
+
+      <p>Değerli çeyiz eşyalarınızın zarar görmemesi için ekibimiz özellikle özenli çalışır; bina merdivenlerinde çerçeveleri, duvarları ve eşyaları koruyacak şekilde hareket eder. <strong>Gerekli durumlarda ek taşıma personeli (hamal) desteği de verilir</strong>. Yeni yuvanızı güzel bir başlangıçla açmak için güvenle bizi tercih edebilirsiniz.</p>
+    `,
+    faqs: [
+      { q: "Çeyiz eşyalarına özel dikkat gösteriyor musunuz?", a: "Evet, değerli ve yeni eşyalara ekstra özen göstererek, bina alanlarının ve eşyaların zarar görmemesine dikkat ediyoruz." },
+      { q: "Büyük mobilyaları yüksek kata nasıl çıkarıyorsunuz?", a: "15. kata kadar çıkabilen dış cephe asansörümüzle büyük eşyaları balkon veya pencereden güvenle çıkarıyoruz." },
+      { q: "Düğünden birkaç gün önce randevu alabilir miyim?", a: "Evet, tarih ve saati önceden ayarlayabiliriz. 7/24 hizmet verdiğimiz için esnek randevu imkânımız var." },
+      { q: "Fiyat nasıl belirleniyor?", a: "Eşya miktarı, kat bilgisi ve mesafeye göre net fiyat veriyoruz. Telefonda konuşurken kesin rakamı öğrenebilirsiniz." }
+    ]
+  },
+  {
+    slug: "villa-tasimaciligi",
+    name: "Villa Taşımacılığı",
+    shortDesc: "Büyük villa ve müstakil ev taşımalarında kapalı kasa araç ve asansör ile profesyonel hizmet.",
+    category: "nakliyat",
+    template: `
+      <p>Villa taşımacılığı, komple eşyaların çokluğu ve büyüklüğü nedeniyle dikkatli bir plan ve güçlü bir ekip gerektiren özel bir hizmet kategorisidir. {district} bölgesinde sunduğumuz <strong>villa taşımacılığı</strong> hizmetinde <strong>kapalı kasa nakliye kamyonumuz, uzman taşıma personelimiz ve 15. kata çıkan mobil asansörümüzle anahtar teslim ev taşıma yapıyoruz.</strong> Büyük hacimli mobilyalar, antika parçalar, büyük boy halılar ve çok sayıda kutu — hepsini titizlikle organize ediyor ve güvenle taşıyoruz.</p>
+
+      <p>Villalar genellikle iki veya üç katlı yapılardır; bazı büyük mobilyalar iç merdivenlerden geçemeyebilir. Bu gibi durumlarda dış cephe asansörümüz devreye girer ve penceleden ya da terasa açılan kapıdan güvenle eşya transferi yapılır. <strong>Operatör her zaman asansörün başındadır</strong>; ağır ve değerli parçalar özel gözetim altında taşınır. {district} genelinde <strong>7/24 hizmet veriyoruz</strong>.</p>
+
+      <p>Villa taşımacılığında zamanlama ve organizasyon kritiktir. Ekibimiz önceden yapılan plan çerçevesinde anlaştığımız saatte adresinizdedir; iş güvenliği kurallarından ödün vermeden çalışır. Dürüst ve uygun fiyatlı çalışma anlayışımızla telefonda verilen fiyat iş bitiminde değişmez. Sözümüzün arkasındayız.</p>
+
+      <p>Villa taşımalarının büyük bir kısmında birden fazla araç ve daha büyük ekip gerekebilir. <strong>Gerekli durumlarda ek nakliye kamyonu ve taşıma personeli (hamal) desteği de verilir</strong>. {district} ve çevre ilçelerden Bursa geneline villa taşımacılığı konusunda fiyat teklifi almak için bizi arayabilirsiniz.</p>
+    `,
+    faqs: [
+      { q: "Villa taşımacılığında kaç araç gerekiyor?", a: "Eşya hacmine göre bir veya birden fazla kapalı kasa araç kullanılabilir. Taşıma öncesinde detayları konuşarak doğru planlama yapıyoruz." },
+      { q: "Antika ve değerli eşyaları da taşıyor musunuz?", a: "Evet, değerli parçalara özellikle özenli davranılır. Taşıma öncesinde bilgi vermeniz ekibimizin daha dikkatli hazırlanmasını sağlar." },
+      { q: "Villa taşıması ne kadar sürer?", a: "Villa büyüklüğüne, eşya miktarına ve mesafeye göre değişir. Önceden taşıma planı yaparak süreyi optimize ediyoruz." },
+      { q: "Taşınma günü erken saatte başlayabiliyor musunuz?", a: "Evet, 7/24 hizmet veriyoruz; sabah çok erken saatlerde de işbaşı yapabiliriz." }
+    ]
   }
 ];
 
