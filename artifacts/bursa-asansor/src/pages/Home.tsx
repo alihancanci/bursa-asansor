@@ -14,7 +14,6 @@ export default function Home() {
         <title>Bursa Mobil Asansör Kiralama | 7/24 Asansörlü Nakliyat</title>
         <meta name="description" content="Bursa'da 7/24 mobil asansör kiralama hizmeti. 15. kata kadar ulaşım, uzman operatörlü. Evden eve asansörlü nakliyat ve saatlik kiralama için hemen arayın." />
       </Helmet>
-
       {/* Hero Section */}
       <section className="relative pt-24 pb-32 lg:pt-32 lg:pb-40 overflow-hidden">
         {/* Background Image & Overlay */}
@@ -59,16 +58,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Search Filter Module (Overlaps Hero) */}
       <div className="px-4 sm:px-6 lg:px-8 relative z-20">
         <SearchFilter />
       </div>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FeaturesBar />
       </div>
-
       {/* Services Section */}
       <section className="py-20 bg-slate-50 dark:bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -105,9 +101,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Trust Content Section */}
-      <section className="py-24 relative overflow-hidden">
+      <section className="py-24 relative overflow-hidden opacity-[1] bg-[#000000c9]">
         <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-full opacity-10 pointer-events-none">
            <img src={`${import.meta.env.BASE_URL}images/service-abstract.png`} alt="Abstract" className="w-full h-full object-cover" />
         </div>
@@ -147,7 +142,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Districts Grid */}
       <section className="py-20 bg-slate-50 dark:bg-navy/30 border-t border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
