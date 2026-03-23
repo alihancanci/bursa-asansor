@@ -9,6 +9,7 @@ export interface Service {
   shortDesc: string;
   template: string;
   faqs: { q: string; a: string }[];
+  category: "asansor" | "nakliyat";
 }
 
 export const PHONE_NUMBER = "0 (224) 444 00 00";
@@ -36,10 +37,12 @@ export const DISTRICTS: District[] = [
 ];
 
 export const SERVICES: Service[] = [
+  /* ───────── KİRALIK ASANSÖR HİZMETLERİ ───────── */
   {
     slug: "kiralik-mobil-asansor",
     name: "Kiralık Mobil Asansör",
     shortDesc: "Yüksek katlara malzeme ve eşya çıkarmanın en güvenli, en hızlı yolu.",
+    category: "asansor",
     template: `
       <p>{district} bölgesinde taşınma, tadilat veya ağır malzeme sevkiyatı işlerinizde <strong>kiralık mobil asansör</strong> hizmetimizle yanınızdayız. Geleneksel taşıma yöntemlerinin yetersiz kaldığı, bina içi asansörlerin kullanılamadığı veya merdivenlerin çok dar olduğu durumlarda mobil asansörlerimiz hayat kurtarır.</p>
       
@@ -58,6 +61,7 @@ export const SERVICES: Service[] = [
     slug: "evden-eve-asansorlu-nakliyat",
     name: "Evden Eve Asansörlü Nakliyat",
     shortDesc: "Bina içi merdivenleri dert etmeden, doğrudan balkon veya pencereden eşya transferi.",
+    category: "asansor",
     template: `
       <p>{district} sakinleri için taşınmak artık stresli bir süreç olmak zorunda değil. <strong>Evden eve asansörlü nakliyat</strong> hizmetimiz sayesinde eşyalarınız bina içindeki dar merdivenlere çarpıp zarar görme riski yaşamadan, doğrudan dairenizin balkonundan veya uygun bir penceresinden transfer edilir.</p>
       
@@ -76,6 +80,7 @@ export const SERVICES: Service[] = [
     slug: "saatlik-asansor-kiralama",
     name: "Saatlik Asansör Kiralama",
     shortDesc: "Kısa süreli işleriniz için esnek ve ekonomik saatlik kiralama çözümleri.",
+    category: "asansor",
     template: `
       <p>Bazen tüm gün sürecek bir nakliye işlemi yerine, sadece birkaç parça ağır eşyanın veya malzemenin yukarı çıkarılması gerekebilir. İşte bu noktada {district} bölgesine özel sunduğumuz <strong>saatlik asansör kiralama</strong> hizmetimiz devreye giriyor. Beyaz eşya, mobilya, inşaat malzemesi veya çatı gereçleri gibi spesifik yükleriniz için sadece kullandığınız süre kadar ödeme yaparsınız.</p>
       
@@ -94,6 +99,7 @@ export const SERVICES: Service[] = [
     slug: "insaat-cephe-asansoru",
     name: "İnşaat Cephe Asansörü",
     shortDesc: "Şantiyelerde tuğla, çimento, fayans ve diğer yapı malzemelerinin hızlı transferi.",
+    category: "asansor",
     template: `
       <p>{district} bölgesindeki inşaat ve şantiye alanlarında iş akışını hızlandırmanın en etkili yolu <strong>inşaat cephe asansörü</strong> kullanmaktır. Kum, çimento, tuğla, fayans, alçıpan, kapı ve pencere gibi ağır inşaat malzemelerinin insan gücüyle katlara çıkarılması hem çok maliyetli hem de zaman kaybettiren bir süreçtir. Mobil cephe asansörlerimiz bu zorluğu ortadan kaldırır.</p>
       
@@ -112,6 +118,7 @@ export const SERVICES: Service[] = [
     slug: "yuksek-kat-esya-tasima-asansoru",
     name: "Yüksek Kat Eşya Taşıma Asansörü",
     shortDesc: "Gökdelen, plaza ve yüksek binalara devasa eşyaların çıkarılması.",
+    category: "asansor",
     template: `
       <p>{district} bölgesinde yeni yapılan yüksek katlı rezidans ve apartmanlara eşya taşımak çoğu zaman zorlu bir operasyondur. Yeni alınan büyük bir koltuk takımı, çift kapılı buzdolabı, piyano veya yekpare bir yemek masası bina asansörlerine sığmayabilir. <strong>Yüksek kat eşya taşıma asansörü</strong> hizmetimiz, bu tür imkansız gibi görünen durumlarda kesin çözüm sunar.</p>
       
@@ -130,6 +137,7 @@ export const SERVICES: Service[] = [
     slug: "asansorlu-nakliye-araci",
     name: "Asansörlü Nakliye Aracı",
     shortDesc: "Hem yük taşıma hem de yukarı çıkarma işlevini bir arada sunan entegre araçlar.",
+    category: "asansor",
     template: `
       <p>Taşınma veya ağır yük lojistiği süreçlerinde farklı firmalardan hem araç hem de asansör aramak yorucu olabilir. {district} bölgesine sunduğumuz <strong>asansörlü nakliye aracı</strong> hizmeti ile entegre bir çözüm sunuyoruz. Bu sayede hem eşyanız kapınıza kadar güvenle getirilir hem de anında kurulan sistemle evinize çıkarılır.</p>
       
@@ -148,6 +156,7 @@ export const SERVICES: Service[] = [
     slug: "dis-cephe-esya-asansoru",
     name: "Dış Cephe Eşya Asansörü",
     shortDesc: "Dar merdivenlere ve küçük apartman asansörlerine alternatif dışarıdan taşıma.",
+    category: "asansor",
     template: `
       <p>{district} bölgesinde özellikle eski yapılaşmanın olduğu veya bina merdivenlerinin eşya dönüşlerine izin vermediği noktalarda <strong>dış cephe eşya asansörü</strong> kullanmak zorunluluk haline gelir. Eşyalarınızın sıkışarak deforme olmasını engellemek, duvarların ve bina ortak alanlarının çizilmesini önlemek için balkon veya pencerelerden taşıma yapıyoruz.</p>
       
@@ -166,6 +175,7 @@ export const SERVICES: Service[] = [
     slug: "asansorlu-ev-tasima",
     name: "Asansörlü Ev Taşıma",
     shortDesc: "Komple ev eşyalarının dış mekan asansörü ile hasarsız ve süratli transferi.",
+    category: "asansor",
     template: `
       <p>Hayatınızda yeni bir sayfa açarken taşınma yorgunluğunu üzerinizden alıyoruz. {district} lokasyonunda sunduğumuz <strong>asansörlü ev taşıma</strong> hizmeti, tüm ev eşyalarınızın klasik yöntemlere göre çok daha hızlı ve güvenli bir biçimde nakledilmesini sağlar. Bina içindeki apartman asansörünü meşgul etmeden, komşularınızı rahatsız etmeden sürecinizi tamamlıyoruz.</p>
       
@@ -179,5 +189,115 @@ export const SERVICES: Service[] = [
       { q: "Hamal ve taşıma aracı ayarlıyor musunuz?", a: "Evet, asansörün yanı sıra gerekli durumlarda taşıma personeli (hamal) ve nakliye kamyonu desteği de verilir." },
       { q: "Acil taşınmam gerekiyor, hemen gelebilir misiniz?", a: "Müsaitlik durumumuza göre en kısa sürede yardımcı olmak için 7/24 hizmet veriyoruz." }
     ]
+  },
+
+  /* ───────── NAKLİYAT VE TAŞIMA HİZMETLERİ ───────── */
+  {
+    slug: "evden-eve-nakliyat",
+    name: "Evden Eve Nakliyat",
+    shortDesc: "Kapalı kasa araç, uzman ekip ve asansörle anahtar teslim ev taşıma.",
+    category: "nakliyat",
+    template: `
+      <p>{district} bölgesinde evden eve taşınmak artık tek bir telefonla halloluyor. <strong>Evden eve nakliyat</strong> hizmetimizde sadece asansör değil; <strong>kapalı kasa nakliye kamyonumuz, uzman taşıma personelimiz ve 15. kata çıkan mobil asansörümüzle anahtar teslim taşıma yapıyoruz.</strong> Eşyalarınızı toplamaktan yeni adresinizde yerleştirmeye kadar tüm süreci biz yönetiyoruz.</p>
+
+      <p>Taşınma sürecinde en çok zarar gören eşyalar dar merdivenlerden geçerken ya da binanın içindeki asansöre sıkıştırılmaya çalışılırken zarar görür. Bizim yöntemimizde büyük ve ağır eşyalar doğrudan <strong>balkon veya pencereden, dış cephe asansörümüzle</strong> yükseltilir; böylece duvarlar, çerçeveler ve eşyaların kendisi korunmuş olur. Tüm yükleme ve indirme işlemlerinde <strong>operatör her zaman asansörün başındadır.</strong></p>
+
+      <p>{district} ve çevresinde <strong>7/24 hizmet veriyoruz.</strong> Anlaştığımız saatte kapınızdayız; randevuya geç kalmak gibi bir alışkanlığımız yoktur. Sözünün eri, uygun fiyatlı ve dürüst bir esnaf ekibi olarak çalışıyoruz. Fiyatımız telefonda konuşurken netleşir, sürpriz ek ücret talep etmeyiz. Eşya sayısına ve taşıma mesafesine göre size özel bir plan hazırlıyoruz.</p>
+
+      <p>Kapalı kasa aracımız hem eşyaları hava koşullarından korur hem de güvenli bir yükleme imkanı sunar. Taşıma personelimiz deneyimli ve özenli çalışır; kırılgan ve değerli eşyalara özellikle dikkat eder. Ev taşıma sürecinizi mümkün olan en az stresle tamamlamak için buradayız. {district} bölgesinde güvenilir nakliyat için bizi arayın.</p>
+    `,
+    faqs: [
+      { q: "Fiyat önceden belli oluyor mu?", a: "Evet, taşıma öncesinde eşya sayısı ve mesafeye göre net fiyat veriyoruz. Sürpriz ek ücret talep etmiyoruz." },
+      { q: "Kırılacak eşyalarımı nasıl taşıyorsunuz?", a: "Kırılgan eşyalarınıza özel dikkat gösteriyor, özenli ve yavaş çalışıyoruz. Eşyaların düzgün yüklenmesi için deneyimli personelimiz görev yapar." },
+      { q: "Asansör her binaya kurulabilir mi?", a: "Bina önünde araçlarımızın yanaşabileceği uygun alan olması gerekir. Ön keşifle uygunluğu belirleyebiliriz." },
+      { q: "Hafta sonu ve gece taşınma yapıyor musunuz?", a: "Evet, 7/24 hizmet veriyoruz. Cumartesi ve Pazar dahil her gün, her saatte hizmetinizdeyiz." }
+    ]
+  },
+  {
+    slug: "sehir-ici-nakliye",
+    name: "Şehir İçi Nakliye",
+    shortDesc: "Bursa içinde hızlı, güvenilir ve uygun fiyatlı şehir içi nakliye hizmeti.",
+    category: "nakliyat",
+    template: `
+      <p>{district} ve Bursa genelinde şehir içi taşıma ihtiyaçlarınız için profesyonel <strong>şehir içi nakliye</strong> hizmetimiz tam kapsamlıdır. Küçük ofis taşımalarından komple ev nakliyatına, parça eşya transferinden inşaat malzemesi lojistiğine kadar her ölçekteki işi titizlikle gerçekleştiriyoruz. <strong>Sadece asansör değil; kapalı kasa nakliye kamyonumuz, uzman taşıma personelimiz ve 15. kata çıkan mobil asansörümüzle anahtar teslim nakliye yapıyoruz.</strong></p>
+
+      <p>{district} içindeki kısa mesafeli taşımalarda bile araç kalitesinden ve ekip profesyonelliğinden ödün vermiyoruz. Kapalı kasalı araçlarımız eşyaları dış etkenlere karşı korurken deneyimli ekibimiz yükleme ve indirme işlemlerini özenle yürütür. Yüksek katlı binalarda ise devreye giren mobil asansörümüz ile birlikte <strong>operatör her zaman asansörün başındadır;</strong> hiçbir adım başıboş bırakılmaz.</p>
+
+      <p><strong>7/24 hizmet veriyoruz;</strong> mesai saati sınırı tanımadan, randevunuzu tam anlaştığımız saatte karşılıyoruz. Uygun fiyatlı ve dürüst çalışan bir esnaf ekibi olarak telefonda belirlenen fiyat, taşıma bittiğinde değişmez. {district} bölgesinden Bursa'nın her noktasına güvenle hizmet ulaştırıyoruz.</p>
+
+      <p>Özellikle son dakika taşınma kararları veya acil ofis taşımaları gibi zaman baskılı işlerde bize güvenebilirsiniz. Aracımız ve ekibimiz hazır olduğunda en kısa sürede adresinize ulaşıyoruz. Hem bireysel müşterilerimize hem de kurumsal iş ortaklarımıza Bursa genelinde kaliteli şehir içi nakliye çözümleri sunuyoruz.</p>
+    `,
+    faqs: [
+      { q: "Şehir içi nakliyede minimum mesafe var mı?", a: "Hayır, ilçe içi kısa mesafeli taşımalar da dahil olmak üzere her tür şehir içi nakliyeye hizmet veriyoruz." },
+      { q: "Kaç kişilik ekip geliyor?", a: "Eşya miktarı ve taşıma zorluğuna göre değişmekle birlikte standart taşımalarda deneyimli personelimiz görev yapar." },
+      { q: "Yüksek katlı binalar için asansör getiriyor musunuz?", a: "Evet, gerekli durumlarda 15. kata kadar çıkabilen mobil asansörümüzü de devreye alıyoruz." },
+      { q: "Hafta sonu da hizmet veriyor musunuz?", a: "Evet, 7/24 hizmet veriyoruz. Hafta sonu ve resmi tatillerde de çalışıyoruz." }
+    ]
+  },
+  {
+    slug: "ofis-tasimaciligi",
+    name: "Ofis ve Büro Taşımacılığı",
+    shortDesc: "İş yerinizi en kısa sürede, çalışma düzeninizi bozmadan yeni adresine taşıyoruz.",
+    category: "nakliyat",
+    template: `
+      <p>Bir ofis veya büroyu taşımak, ev taşımaktan çok farklı bir organizasyon gerektirir. Masalar, sandalyeler, dosya dolapları, bilgisayar ekipmanları, toplantı odası takımları ve onlarca kutu dosya; bunların hepsinin doğru sırayla, hasarsız ve minimum kayıp zamanla yeni adrese taşınması gerekir. {district} bölgesinde sunduğumuz <strong>ofis ve büro taşımacılığı</strong> hizmetinde <strong>sadece asansör değil; kapalı kasa nakliye kamyonumuz, uzman taşıma personelimiz ve 15. kata çıkan mobil asansörümüzle anahtar teslim ofis taşıma yapıyoruz.</strong></p>
+
+      <p>Yeni ofisiniz yüksek katlı bir iş merkezinde veya plaza binasında ise mobil dış cephe asansörümüz devreye girer. Bina içi asansörü meşgul etmeden, diğer kiracıları rahatsız etmeden taşıma işlemini gerçekleştiriyoruz. <strong>Operatör her zaman asansörün başındadır;</strong> güvenlik ve hız aynı anda sağlanır. Bilgisayar ve elektronik ekipmanlar dahil tüm ofis malzemeleri özenle paketlenip taşınır.</p>
+
+      <p><strong>7/24 hizmet veriyoruz;</strong> hafta sonu veya mesai saatleri dışında taşıma planlayanlar için bu büyük bir avantajdır. Çalışanlarınızın iş akışını en az düzeyde etkilemek adına akşam veya gece saatlerinde taşıma yapmayı da planlayabiliriz. {district} genelinde anlaştığımız saatte tam zamanında adresinizde olur, dürüst ve uygun fiyatlı hizmet sunarız.</p>
+
+      <p>Ofis taşımacılığında hız kadar güven de önemlidir. Ekibimiz değerli ekipmanlarınıza ve belgelerinize gereken özeni gösterir. Taşıma sonrasında eşyalarınızın yeni ofiste doğru konumlara yerleştirilmesi konusunda da destek sağlıyoruz. Küçük ofislerden büyük kurumsal taşımalara kadar her ölçekte planlı ve titiz çalışıyoruz.</p>
+    `,
+    faqs: [
+      { q: "Ofis taşıması ne kadar sürer?", a: "Ofis büyüklüğüne ve eşya miktarına göre değişir. Küçük bir büroyu birkaç saatte, orta büyüklükte bir ofisi ise yarım günde tamamlayabiliriz." },
+      { q: "Bilgisayar ve ekipmanları siz paketliyor musunuz?", a: "Talep etmeniz halinde taşıma personelimiz ekipmanların güvenli bir şekilde hazırlanmasına yardımcı olur." },
+      { q: "Hafta sonu veya gece taşıma yapıyor musunuz?", a: "Evet, çalışma düzeninizi bozmamak için hafta sonu ve gece saatlerinde de hizmet veriyoruz." },
+      { q: "Taşıma sırasında iş yerim açık kalabilir mi?", a: "İşinizin aksamaması için taşıma planını sizin programınıza göre esnekçe düzenliyoruz." }
+    ]
+  },
+  {
+    slug: "parca-esya-tasima",
+    name: "Parça Eşya Taşıma",
+    shortDesc: "Tek parça veya az sayıda eşyanın hızlı ve ekonomik taşınması.",
+    category: "nakliyat",
+    template: `
+      <p>Her taşıma işlemi komple bir ev veya ofis gerektirmez. Bazen yalnızca bir koltuk takımı, çamaşır makinesi, buzdolabı ya da birkaç parça mobilyanın başka bir adrese götürülmesi yeterlidir. {district} bölgesinde sunduğumuz <strong>parça eşya taşıma</strong> hizmetinde <strong>kapalı kasa nakliye kamyonumuz, uzman taşıma personelimiz ve gerektiğinde 15. kata çıkan mobil asansörümüzle</strong> sadece ihtiyacınız olan kadar hizmet alırsınız. Büyük nakliye paketleri için ödeme yapmak zorunda kalmadan işinizi çözüyoruz.</p>
+
+      <p>Tek parça büyük mobilya veya beyaz eşya taşımalarında en çok karşılaşılan sorun, eşyanın bulunduğu kata indirilmesi veya yeni adresin bulunduğu kata çıkarılmasıdır. Bina içi asansöre sığmayan ya da merdivenden dönemeyen eşyalar için dış cephe mobil asansörümüz devreye girer; <strong>operatör her zaman asansörün başındadır</strong> ve işlem güvenle tamamlanır.</p>
+
+      <p>{district} ve çevresinde <strong>7/24 hizmet veriyoruz.</strong> Randevunuzu sabah da akşam da planlayabilirsiniz; anlaştığımız saatte tam zamanında kapınızda oluruz. Uygun fiyatlı ve dürüst çalışan esnaf anlayışımızla telefonda belirlenen ücret kesindir, sürpriz ek kalem çıkarmayız. İster mağazadan satın aldığınız yeni bir eşyanın eve taşınması olsun, ister eski adresinizdeki birkaç parçanın getirilmesi; her işi titizlikle yapıyoruz.</p>
+
+      <p>Parça eşya taşımacılığında dikkat ettiğimiz en önemli nokta, eşyaların boyutuna ve hassasiyetine göre doğru araç ve ekip göndermektir. Personelimiz eşyaları kaldırırken, taşırken ve yerleştirirken özenli davranır. Köşe koruyucu ve gerekli malzemeleri kullanarak eşyanızın ve bina ortak alanlarının zarar görmesini engelliyoruz.</p>
+    `,
+    faqs: [
+      { q: "Tek parça beyaz eşya taşıyabilir misiniz?", a: "Evet, tek parça eşya taşıması da hizmetlerimiz arasındadır. Ekip ve araç kapasitesini eşyanıza göre düzenliyoruz." },
+      { q: "Eşya yüksek katta ise asansör geliyor mu?", a: "Evet, gerekli durumlarda 15. kata kadar çıkabilen mobil asansörümüzü devreye alıyoruz." },
+      { q: "Fiyatlandırma nasıl yapılıyor?", a: "Eşya sayısı, boyutu ve taşıma mesafesine göre net fiyat veriyoruz. Telefonda anlaşılan fiyat değişmez." },
+      { q: "Aynı gün taşıma yapabiliyor musunuz?", a: "Müsaitlik durumumuza göre aynı gün hizmet verebiliyoruz. 7/24 ulaşılabilir olduğumuz için acil talepler de karşılanmaktadır." }
+    ]
+  },
+  {
+    slug: "asansorlu-komple-ev-tasima",
+    name: "Asansörlü Komple Ev Taşıma",
+    shortDesc: "Tüm ev eşyalarınızı asansör, kapalı kasa araç ve uzman ekiple kapıdan kapıya taşıyoruz.",
+    category: "nakliyat",
+    template: `
+      <p>{district} bölgesinde komple ev taşımasını tek bir firmadan, tek bir fiyatla çözüyoruz. <strong>Asansörlü komple ev taşıma</strong> hizmetimizde <strong>sadece asansör değil; kapalı kasa nakliye kamyonumuz, uzman taşıma personelimiz ve 15. kata çıkan mobil asansörümüzle anahtar teslim taşıma yapıyoruz.</strong> Eski evinizden yenisine her şeyi eksiksiz ve özenle taşıyoruz.</p>
+
+      <p>Komple ev taşımalarında en kritik adım eşyaların binadan çıkarılması ve yeni binaya sokulmasıdır. Dar merdivenler, küçük apartman asansörleri ve büyük eşyalar çoğu zaman uyum sağlamaz. Dış cephe mobil asansörümüz bu sorunu kökten çözer: balkon veya pencereden, bina içini meşgul etmeden eşyalar güvenle indirilir ve çıkarılır. <strong>Operatör her zaman asansörün başındadır;</strong> hiçbir eşya gözetimsiz taşınmaz.</p>
+
+      <p><strong>7/24 hizmet veriyoruz.</strong> Taşınma gününüzü sabah erken de planlayabilir, gece geç de; programımızı sizin takviminize göre ayarlıyoruz. Anlaştığımız saatte tam vaktinde kapınızdayız; bu söz vermek değil, çalışma biçimimizdir. Uygun fiyatlı, sözünün eri ve dürüst bir esnaf ekibi olarak {district} bölgesinde hizmet veriyoruz.</p>
+
+      <p>Kapalı kasa nakliye aracımız eşyalarınızı hava koşullarından ve olası çarpmalardan korur. Personelimiz büyük mobilyaları taşırken ve yerleştirirken deneyimli ve özenlidir. Kırılgan eşyalara özellikle dikkat ederiz. Taşıma işlemi tamamlandıktan sonra eşyalarınızın yeni evinizdeki odalarına yerleştirilmesi konusunda da yardımcı oluyoruz. {district} ve Bursa genelinde komple ev taşıması için güvenle bizi tercih edebilirsiniz.</p>
+    `,
+    faqs: [
+      { q: "Komple ev taşıması fiyatı neye göre belirleniyor?", a: "Oda sayısı, eşya hacmi, taşıma mesafesi ve kat bilgisine göre net fiyat veriyoruz. Telefonda konuşurken kesin rakamı öğrenebilirsiniz." },
+      { q: "Eşyalar için ambalaj malzemesi kullanıyor musunuz?", a: "Kırılgan eşyalar için köşe koruyucu ve gerekli malzemeleri kullanıyoruz. Özel ambalaj ihtiyacı için önceden bilgi alabilirsiniz." },
+      { q: "Yeni evde de eşyaları yerleştiriyor musunuz?", a: "Evet, eşyalarınızın yeni evdeki odalarına yerleştirilmesinde de destek sağlıyoruz." },
+      { q: "Taşınma günü iptal veya değişiklik yapabilir miyim?", a: "Randevu değişikliklerini önceden bildirmeniz yeterli. Esnek planlama anlayışımızla size uyum sağlarız." }
+    ]
   }
 ];
+
+export const ELEVATOR_SERVICES = SERVICES.filter(s => s.category === "asansor");
+export const MOVING_SERVICES = SERVICES.filter(s => s.category === "nakliyat");

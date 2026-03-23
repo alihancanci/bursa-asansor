@@ -1,56 +1,59 @@
 import { Link } from "wouter";
-import { DISTRICTS, SERVICES, PHONE_NUMBER, WHATSAPP_LINK } from "@/data";
-import { ArrowUpSquare, Phone, MapPin, Clock } from "lucide-react";
+import { DISTRICTS, ELEVATOR_SERVICES, MOVING_SERVICES, PHONE_NUMBER, WHATSAPP_LINK } from "@/data";
+import { ArrowUpToLine, Phone, MapPin, Clock, Truck } from "lucide-react";
 
 export function Footer() {
   return (
     <footer className="bg-navy pt-16 pb-8 border-t border-white/10 relative overflow-hidden">
-      {/* Decorative gradient blob */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/10 blur-[120px] rounded-full pointer-events-none opacity-50" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-14">
+
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-6">
-              <div className="bg-primary/20 p-2 rounded-xl">
-                <ArrowUpSquare className="h-8 w-8 text-primary" />
+            <div className="flex items-center gap-2 mb-5">
+              <div className="bg-primary p-2 rounded-xl">
+                <ArrowUpToLine className="h-6 w-6 text-white" />
               </div>
               <div className="flex flex-col">
-                <span className="font-display font-bold text-xl leading-tight text-white">
+                <span className="font-display font-bold text-lg leading-tight text-white">
                   Bursa <span className="text-primary">Mobil Asansör</span>
                 </span>
               </div>
             </div>
-            <p className="text-slate-400 mb-6 leading-relaxed">
-              Bursa ve tüm ilçelerinde 7/24 mobil asansör kiralama hizmeti. 15. kata kadar ulaşım, uzman operatör desteği ile güvenilir taşıma çözümleri.
+            <p className="text-slate-400 text-sm mb-6 leading-relaxed">
+              Bursa ve tüm ilçelerinde 7/24 mobil asansör kiralama ve nakliyat hizmetleri. 15. kata kadar ulaşım, uzman ekip desteği.
             </p>
-            <div className="space-y-4">
+            <div className="space-y-3">
               <a href={`tel:${PHONE_NUMBER.replace(/\D/g,'')}`} className="flex items-center gap-3 text-slate-300 hover:text-primary transition-colors">
-                <div className="bg-white/5 p-2 rounded-lg"><Phone className="h-5 w-5" /></div>
-                <span className="font-semibold">{PHONE_NUMBER}</span>
+                <div className="bg-white/5 p-2 rounded-lg"><Phone className="h-4 w-4" /></div>
+                <span className="font-semibold text-sm">{PHONE_NUMBER}</span>
               </a>
               <div className="flex items-center gap-3 text-slate-300">
-                <div className="bg-white/5 p-2 rounded-lg"><Clock className="h-5 w-5 text-primary" /></div>
-                <span>7/24 Kesintisiz Hizmet</span>
+                <div className="bg-white/5 p-2 rounded-lg"><Clock className="h-4 w-4 text-primary" /></div>
+                <span className="text-sm">7/24 Kesintisiz Hizmet</span>
               </div>
               <div className="flex items-center gap-3 text-slate-300">
-                <div className="bg-white/5 p-2 rounded-lg"><MapPin className="h-5 w-5" /></div>
-                <span>Bursa ve Tüm İlçeleri</span>
+                <div className="bg-white/5 p-2 rounded-lg"><MapPin className="h-4 w-4" /></div>
+                <span className="text-sm">Bursa ve Tüm İlçeleri</span>
               </div>
             </div>
           </div>
 
-          {/* Quick Links Services */}
+          {/* Column 1: Kiralık Asansör Hizmetleri */}
           <div className="lg:col-span-1">
-            <h3 className="text-lg font-bold text-white mb-6 font-display">Hizmetlerimiz</h3>
-            <ul className="space-y-3">
-              {SERVICES.map(s => (
+            <div className="flex items-center gap-2 mb-5">
+              <ArrowUpToLine className="h-4 w-4 text-primary shrink-0" />
+              <h3 className="text-sm font-bold text-white uppercase tracking-wider font-display">Kiralık Asansör</h3>
+            </div>
+            <ul className="space-y-2.5">
+              {ELEVATOR_SERVICES.map(s => (
                 <li key={s.slug}>
                   <Link href={`/bursa-merkez-${s.slug}`} className="text-slate-400 hover:text-primary transition-colors text-sm flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-primary/50" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
                     {s.name}
                   </Link>
                 </li>
@@ -58,18 +61,37 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* District Quick Links */}
-          <div className="lg:col-span-2">
-             <h3 className="text-lg font-bold text-white mb-6 font-display">Hizmet Bölgelerimiz</h3>
-             <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-3 gap-x-4">
-               {DISTRICTS.map(d => (
-                 <Link key={d.slug} href={`/${d.slug}-kiralik-mobil-asansor`} className="text-slate-400 hover:text-primary transition-colors text-sm flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-slate-700" />
-                    {d.name}
-                 </Link>
-               ))}
-             </div>
+          {/* Column 2: Nakliyat Hizmetleri */}
+          <div className="lg:col-span-1">
+            <div className="flex items-center gap-2 mb-5">
+              <Truck className="h-4 w-4 text-primary shrink-0" />
+              <h3 className="text-sm font-bold text-white uppercase tracking-wider font-display">Nakliyat Hizmetleri</h3>
+            </div>
+            <ul className="space-y-2.5">
+              {MOVING_SERVICES.map(s => (
+                <li key={s.slug}>
+                  <Link href={`/bursa-merkez-${s.slug}`} className="text-slate-400 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
+                    {s.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
+
+          {/* District Links */}
+          <div className="lg:col-span-2">
+            <h3 className="text-sm font-bold text-white uppercase tracking-wider font-display mb-5">Hizmet Bölgelerimiz</h3>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-2.5 gap-x-4">
+              {DISTRICTS.map(d => (
+                <Link key={d.slug} href={`/${d.slug}-kiralik-mobil-asansor`} className="text-slate-400 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-slate-700 shrink-0" />
+                  {d.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+
         </div>
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">

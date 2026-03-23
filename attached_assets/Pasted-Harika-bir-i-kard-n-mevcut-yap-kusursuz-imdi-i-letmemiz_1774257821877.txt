@@ -1,0 +1,38 @@
+Harika bir iş çıkardın, mevcut yapı kusursuz. Şimdi işletmemizin hizmet kapasitesini genişletiyoruz ve "Asansör Kiralama" hizmetlerinin yanına tamamen yeni, paralel bir kategori olarak "Evden Eve Nakliyat / Nakliye Hizmetleri" (Full Paket Taşıma) ekliyoruz.
+
+Lütfen mevcut data.ts ve sayfa yapılarını KESİNLİKLE BOZMADAN şu eklemeleri yap:
+
+1. YENİ KATEGORİ VE YENİ ANAHTAR KELİMELER (NAKLİYAT ODAKLI)
+data.ts içindeki hizmetler listesine, nakliye sektörüne özel şu 5 yeni hizmeti ekle:
+
+evden-eve-nakliyat (Evden Eve Nakliyat)
+
+sehir-ici-nakliye (Şehir İçi Nakliye)
+
+ofis-tasimaciligi (Ofis ve Büro Taşımacılığı)
+
+parca-esya-tasima (Parça Eşya Taşıma)
+
+asansorlu-komple-ev-tasima (Asansörlü Komple Ev Taşıma)
+
+Bu 5 yeni hizmet, mevcut 18 ilçe ile eşleşerek yepyeni sayfalar oluşturacak (Örn: /nilufer-evden-eve-nakliyat, /osmangazi-ofis-tasimaciligi).
+
+2. UI/UX VE MENÜ AYRIMI (KATEGORİZASYON)
+Kullanıcının kafasının karışmaması için sitenin Navigasyon (Header) ve Mega Footer kısımlarını iki ana sütuna ayır:
+
+Sütun 1: Kiralık Asansör Hizmetleri (Önceki kiralama ve spesifik taşıma hizmetleri burada listelensin).
+
+Sütun 2: Nakliyat ve Taşıma Hizmetleri (Yeni eklediğimiz bu 5 nakliyat odaklı hizmet burada listelensin).
+
+3. YENİ SAYFALAR İÇİN İÇERİK ÜRETİMİ VE KATI KURALLAR (DİKKAT!)
+Yeni nakliyat sayfaları için SEO uyumlu, doyurucu (min. 300 kelime) metinler üretirken şu 6 KATI İŞLETME KURALINA harfiyen uyacaksın. AI halüsinasyonu (uydurma vaatler) İSTEMİYORUM:
+
+Nakliyatın Kapsamı: Bu metinlerde "Sadece asansör değil; kapalı kasa nakliye kamyonumuz, uzman taşıma personelimiz ve 15. kata çıkan asansörümüzle anahtar teslim taşıma yapıyoruz" vurgusu yap.
+
+SİGORTA KESİNLİKLE YOK: Nakliyat metinlerinde yapay zekalar genellikle "Sigortalı/Garantili taşıma" yazar. BUNU YAZMAK KESİNLİKLE YASAKTIR. Metnin hiçbir yerinde sigorta veya hasar garantisi kelimesi GEÇMEYECEK.
+
+Çalışma ve Kalite: "7/24 hizmet veriyoruz. Anlaştığımız tam saatte geliriz. Sözünün eri, uygun fiyatlı dürüst bir esnaf ekibiyiz." Rakipleri asla kötüleme.
+
+Operatör: "Asansörün başında daima uzman operatörümüz bulunur."
+
+Lütfen mevcut çalışan sistemi bozmadan, bu yeni "Nakliyat" ana kategorisini, 5 yeni hizmeti ve 18 ilçeyle çaprazlanan yepyeni dinamik sayfalarını sisteme kusursuzca entegre et.
