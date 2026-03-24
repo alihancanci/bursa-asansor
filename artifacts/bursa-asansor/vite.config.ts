@@ -2,28 +2,35 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
-import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
-const rawPort = process.env.PORT;
+// Allow running in Vercel (no PORT/BASE_PATH) as well as Replit (requires both)
+const isVercel = process.env.VERCEL === "1";
+const isReplit = process.env.REPL_ID !== undefined;
 
-if (!rawPort) {
-  throw new Error(
-    "PORT environment variable is required but was not provided.",
-  );
-}
+let port = 3000;
+let basePath = "/";
 
-const port = Number(rawPort);
+if (!isVercel) {
+  const rawPort = process.env.PORT;
+  if (!rawPort) {
+    if (isReplit) {
+      throw new Error("PORT environment variable is required but was not provided.");
+    }
+  } else {
+    port = Number(rawPort);
+    if (Number.isNaN(port) || port <= 0) {
+      throw new Error(`Invalid PORT value: "${rawPort}"`);
+    }
+  }
 
-if (Number.isNaN(port) || port <= 0) {
-  throw new Error(`Invalid PORT value: "${rawPort}"`);
-}
-
-const basePath = process.env.BASE_PATH;
-
-if (!basePath) {
-  throw new Error(
-    "BASE_PATH environment variable is required but was not provided.",
-  );
+  const envBasePath = process.env.BASE_PATH;
+  if (!envBasePath) {
+    if (isReplit) {
+      throw new Error("BASE_PATH environment variable is required but was not provided.");
+    }
+  } else {
+    basePath = envBasePath;
+  }
 }
 
 export default defineConfig({
@@ -31,10 +38,11 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-    runtimeErrorOverlay(),
-    ...(process.env.NODE_ENV !== "production" &&
-    process.env.REPL_ID !== undefined
+    ...(process.env.NODE_ENV !== "production" && isReplit
       ? [
+          await import("@replit/vite-plugin-runtime-error-modal").then((m) =>
+            m.default(),
+          ),
           await import("@replit/vite-plugin-cartographer").then((m) =>
             m.cartographer({
               root: path.resolve(import.meta.dirname, ".."),

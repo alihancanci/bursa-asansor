@@ -1,8 +1,7 @@
 {
+  "buildCommand": "cd ../.. && npx pnpm --filter @workspace/bursa-asansor run build",
+  "outputDirectory": "dist/public",
   "rewrites": [
-    {
-      "source": "/((?!assets/|images/|favicon.ico|sitemap.xml|robots.txt).*)",
-      "destination": "/index.html"
-    }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
