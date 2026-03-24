@@ -1,17 +1,20 @@
 /**
- * prerender.mjs — Puppeteer-free SSR prerendering for Vercel
+ * prerender.mjs v3 — Full SSG (Static Site Generation)
  *
- * Runs AFTER `vite build`. For each priority page + each language variant,
- * writes a dedicated index.html with clean, injected <head> tags so Google
- * gets meaningful HTML without JS execution.
+ * Generates a static index.html for EVERY valid URL in the sitemap:
+ *   • 18 districts × 23 services × 4 languages  = 1656 service pages
+ *   • 4 homepages (/, /en, /ar, /ru)             =    4
+ *   • 4 blog indexes                             =    4
+ *   • 8 blog posts (TR only)                     =    8
+ *   • Plus an additional 24 lang-prefixed blog    =   24
+ *   ─────────────────────────────────────────────────────
+ *   Total ≈ 1696 pre-rendered pages
  *
- * v2 changes:
- *   - Strips ALL existing <title>, <meta name="description">, <meta name="robots">,
- *     and <meta property="og:*"> tags from index.html BEFORE injecting fresh ones
- *     → eliminates duplicate meta tag warnings
- *   - Covers all 4 language variants (tr / en / ar / ru)
- *     → /en, /ar, /ru paths get their own prerendered index.html
- *   - All 18 district × kiralik-mobil-asansor pages for each language
+ * Each page gets:
+ *   - Stripped duplicate <title>/<meta>/<og>/<twitter>/<canonical>
+ *   - Injected page-specific title, description, canonical, hreflang
+ *   - Dynamic <html lang="xx"> and dir="rtl" for Arabic
+ *   - A static 404.html with noindex,nofollow
  */
 
 import fs from 'fs';
@@ -21,94 +24,128 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST      = path.resolve(__dirname, '../dist/public');
 const BASE_URL  = 'https://bursakiralikasansor.com';
+const YEAR      = new Date().getFullYear();
 
 const LANGS = [
-  { code: 'tr', prefix: '',    label: 'tr' },
-  { code: 'en', prefix: '/en', label: 'en' },
-  { code: 'ar', prefix: '/ar', label: 'ar' },
-  { code: 'ru', prefix: '/ru', label: 'ru' },
+  { code: 'tr', prefix: '' },
+  { code: 'en', prefix: '/en' },
+  { code: 'ar', prefix: '/ar' },
+  { code: 'ru', prefix: '/ru' },
 ];
 
-// ─── Parse slugs+names directly from data.ts ──────────────────────────────
+// ─── Parse data.ts ─────────────────────────────────────────────────────────
 const dataFile = fs.readFileSync(
   path.resolve(__dirname, '../src/data.ts'), 'utf8'
 );
 
-function extractNamedArray(arrayName) {
-  const blockMatch = dataFile.match(
-    new RegExp(`export const ${arrayName}[\\s\\S]*?^];`, 'm')
-  );
-  if (!blockMatch) return [];
+function extractBlock(arrayName) {
+  const m = dataFile.match(new RegExp(`export const ${arrayName}[\\s\\S]*?^];`, 'm'));
+  return m ? m[0] : '';
+}
+
+function extractNamedSlugs(arrayName) {
+  const block = extractBlock(arrayName);
   const re = /\{\s*\n?\s*slug:\s*["']([^"']+)["'][^}]*?name:\s*["']([^"']+)["']/gs;
   const out = [];
   let m;
-  while ((m = re.exec(blockMatch[0])) !== null) {
-    out.push({ slug: m[1], name: m[2] });
-  }
+  while ((m = re.exec(block)) !== null) out.push({ slug: m[1], name: m[2] });
   return out;
 }
 
-const DISTRICTS = extractNamedArray('DISTRICTS');
+function extractSlugs(arrayName) {
+  const block = extractBlock(arrayName);
+  const re = /slug:\s*["']([^"']+)["']/g;
+  const out = [];
+  let m;
+  while ((m = re.exec(block)) !== null) out.push(m[1]);
+  return out;
+}
 
-const BLOG_SLUGS = [
-  'asansorlu-tasimacilik-nasil-yapilir-kilavuz',
-  'asansor-kiralama-fiyatlari-2026',
-  'mobil-asansor-kacinci-kata-kadar-cikar',
-  'tasinirken-esyalar-nasil-paketlenir',
-  'mobil-asansor-vs-sepetli-vinc',
-];
+const DISTRICTS     = extractNamedSlugs('DISTRICTS');
+const SERVICE_SLUGS = extractSlugs('SERVICES');
 
-// ─── Localised page definitions ───────────────────────────────────────────
+// Blog slugs from blog.ts
+const blogFile = fs.readFileSync(
+  path.resolve(__dirname, '../src/data/blog.ts'), 'utf8'
+);
+const BLOG_SLUGS = [];
+{
+  const re = /slug:\s*["']([^"']+)["']/g;
+  let m;
+  while ((m = re.exec(blogFile)) !== null) BLOG_SLUGS.push(m[1]);
+}
+
+if (DISTRICTS.length === 0 || SERVICE_SLUGS.length === 0) {
+  console.error('❌ Could not parse slugs from data.ts');
+  process.exit(1);
+}
+
+// ─── Localised service name helpers ─────────────────────────────────────────
+// Simple service slug → localised name mapping for meta titles
+const serviceNameMap = {
+  tr: slug => slug.replace(/-/g, ' ').replace(/^./, c => c.toUpperCase()),
+  en: slug => slug.replace(/-/g, ' ').replace('kiralik', 'rental').replace('asansor', 'elevator')
+              .replace('nakliyat', 'moving').replace('mobil', 'mobile').replace('tasima', 'transport')
+              .replace('evden eve', 'door to door').replace(/^./, c => c.toUpperCase()),
+  ar: slug => `خدمة ${slug.replace(/-/g, ' ')}`,
+  ru: slug => `Услуга ${slug.replace(/-/g, ' ')}`,
+};
+
+// ─── Build ALL pages ──────────────────────────────────────────────────────
 function buildPages() {
   const pages = [];
 
   for (const lang of LANGS) {
-    const p = lang.prefix; // '' | '/en' | '/ar' | '/ru'
+    const p = lang.prefix;
+    const lc = lang.code;
 
     // Homepage
-    const homeTitles = {
+    const homeT = {
       tr: 'Bursa Mobil Asansör Kiralama | 7/24 Asansörlü Nakliyat',
       en: 'Bursa Mobile Elevator Rental | 24/7 Elevator Moving Service',
       ar: 'تأجير مصعد متنقل في بورصة | خدمة نقل 24/7',
       ru: 'Аренда мобильного лифта в Бурсе | Услуги переезда 24/7',
     };
-    const homeDescs = {
-      tr: "Bursa'da 7/24 mobil asansör kiralama. 15. kata kadar, uzman operatörlü hizmet. Hemen arayın: 05053297533",
-      en: 'Mobile elevator rental in Bursa 24/7. Up to 15th floor, expert operators. Call now: +905053297533',
-      ar: 'تأجير مصعد متنقل في بورصة على مدار 24/7. حتى الطابق 15، مشغلون محترفون. اتصل: +905053297533',
-      ru: 'Аренда мобильного лифта в Бурсе круглосуточно. До 15 этажа, опытные операторы. Звоните: +905053297533',
+    const homeD = {
+      tr: "Bursa'da 7/24 mobil asansör kiralama. 15. kata kadar, uzman operatörlü. Hemen arayın: 05053297533",
+      en: 'Mobile elevator rental in Bursa 24/7. Up to 15th floor, expert operators. Call: +905053297533',
+      ar: 'تأجير مصعد متنقل في بورصة. حتى الطابق 15. اتصل: +905053297533',
+      ru: 'Аренда мобильного лифта в Бурсе. До 15 этажа. Звоните: +905053297533',
     };
-    pages.push({ path: p || '/', title: homeTitles[lang.code], description: homeDescs[lang.code], lang: lang.code });
+    pages.push({ path: p || '/', title: homeT[lc], description: homeD[lc], lang: lc });
 
     // /blog
-    const blogTitles = {
-      tr: 'Blog | Bursa Mobil Asansör — Taşınma ve Asansör Rehberi',
-      en: 'Blog | Bursa Mobile Elevator — Moving & Elevator Guide',
+    const blogT = {
+      tr: 'Blog | Bursa Mobil Asansör — Taşınma Rehberi',
+      en: 'Blog | Bursa Mobile Elevator — Moving Guide',
       ar: 'المدونة | مصعد بورصة المتنقل',
-      ru: 'Блог | Мобильный лифт Бурса — Советы по переезду',
+      ru: 'Блог | Мобильный лифт Бурса',
     };
-    pages.push({ path: `${p}/blog`, title: blogTitles[lang.code], description: homeTitles[lang.code], lang: lang.code });
+    pages.push({ path: `${p}/blog`, title: blogT[lc], description: homeD[lc], lang: lc });
 
-    // District pages — only primary service for multi-lang (reduces build time)
+    // ── ALL district × service combinations ──────────────────────────────
     for (const d of DISTRICTS) {
-      const distTitles = {
-        tr: `${d.name} Kiralık Mobil Asansör | 2026 Fiyatları · Bursa Mobil Asansör`,
-        en: `${d.name} Mobile Elevator Rental | 2026 Prices · Bursa Mobile Elevator`,
-        ar: `تأجير مصعد متنقل في ${d.name} | أسعار 2026 · مصعد بورصة المتنقل`,
-        ru: `Аренда мобильного лифта ${d.name} | Цены 2026 · Мобильный лифт Бурса`,
-      };
-      const distDescs = {
-        tr: `${d.name} bölgesinde 7/24 kiralık mobil asansör. 15. kata kadar. Hemen arayın: 05053297533`,
-        en: `Mobile elevator rental in ${d.name} 24/7. Up to 15th floor. Call: +905053297533`,
-        ar: `تأجير مصعد متنقل في ${d.name} على مدار الساعة. اتصل: +905053297533`,
-        ru: `Аренда мобильного лифта ${d.name} круглосуточно. До 15 этажа. Звоните: +905053297533`,
-      };
-      pages.push({
-        path: `${p}/${d.slug}-kiralik-mobil-asansor`,
-        title: distTitles[lang.code],
-        description: distDescs[lang.code],
-        lang: lang.code,
-      });
+      for (const sSlug of SERVICE_SLUGS) {
+        const sName = serviceNameMap[lc](sSlug);
+        const titleMap = {
+          tr: `${d.name} ${sName} | ${YEAR} · Bursa Mobil Asansör`,
+          en: `${d.name} ${sName} | ${YEAR} · Bursa Mobile Elevator`,
+          ar: `${sName} في ${d.name} | ${YEAR} · مصعد بورصة`,
+          ru: `${sName} ${d.name} | ${YEAR} · Мобильный лифт Бурса`,
+        };
+        const descMap = {
+          tr: `${d.name} bölgesinde ${YEAR} ${sName.toLowerCase()} hizmeti. 15. kata kadar, 7/24. Arayın: 05053297533`,
+          en: `${sName} in ${d.name} ${YEAR}. Up to 15th floor, 24/7. Call: +905053297533`,
+          ar: `${sName} في ${d.name} ${YEAR}. اتصل: +905053297533`,
+          ru: `${sName} ${d.name} ${YEAR}. До 15 этажа. Звоните: +905053297533`,
+        };
+        pages.push({
+          path: `${p}/${d.slug}-${sSlug}`,
+          title: titleMap[lc],
+          description: descMap[lc],
+          lang: lc,
+        });
+      }
     }
   }
 
@@ -125,79 +162,116 @@ function buildPages() {
   return pages;
 }
 
-// ─── Strip duplicate meta from index.html ────────────────────────────────
+// ─── Strip existing meta from base HTML ──────────────────────────────────
 function stripExistingMeta(html) {
   return html
-    // Remove <title>...</title>
     .replace(/<title[^>]*>[\s\S]*?<\/title>/gi, '')
-    // Remove <meta name="description" ...>
     .replace(/<meta\s[^>]*name=["']description["'][^>]*\/?>/gi, '')
-    // Remove <meta name="robots" ...>
     .replace(/<meta\s[^>]*name=["']robots["'][^>]*\/?>/gi, '')
-    // Remove ALL <meta property="og:*" ...>
     .replace(/<meta\s[^>]*property=["']og:[^"']*["'][^>]*\/?>/gi, '')
-    // Remove ALL <meta name="twitter:*" ...>
     .replace(/<meta\s[^>]*name=["']twitter:[^"']*["'][^>]*\/?>/gi, '')
-    // Remove existing canonical links (prerender sets its own)
-    .replace(/<link\s[^>]*rel=["']canonical["'][^>]*\/?>/gi, '');
+    .replace(/<link\s[^>]*rel=["']canonical["'][^>]*\/?>/gi, '')
+    .replace(/<link\s[^>]*rel=["']alternate["'][^>]*\/?>/gi, '');
 }
 
-// ─── Inject clean meta ────────────────────────────────────────────────────
+// ─── Inject clean page-specific meta ──────────────────────────────────────
 function injectMeta(baseHtml, { title, description, path: pagePath, lang }) {
+  const esc = s => s.replace(/"/g, '&quot;');
   const canonical = `${BASE_URL}${pagePath === '/' ? '' : pagePath}`;
-  const dir = lang === 'ar' ? ' dir="rtl"' : '';
 
-  // hreflang alternates
-  const hreflangs = LANGS.map(l => {
-    const href = `${BASE_URL}${l.prefix}${pagePath.replace(/^\/?(en|ar|ru)/, '') || '/'}`;
-    return `<link rel="alternate" hreflang="${l.code}" href="${href}">`;
-  }).join('\n    ');
+  // Compute the base path (without lang prefix) for hreflang
+  const basePath = pagePath.replace(/^\/(en|ar|ru)/, '') || '/';
 
-  const metaBlock = `
+  const hreflangs = LANGS.map(l =>
+    `<link rel="alternate" hreflang="${l.code}" href="${BASE_URL}${l.prefix}${basePath}">`
+  ).join('\n    ');
+
+  const meta = `
     <title>${title}</title>
-    <meta name="description" content="${description.replace(/"/g, '&quot;')}">
+    <meta name="description" content="${esc(description)}">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="${canonical}">
     ${hreflangs}
-    <link rel="alternate" hreflang="x-default" href="${BASE_URL}${pagePath.replace(/^\/(en|ar|ru)/, '') || '/'}">
-    <meta property="og:title" content="${title.replace(/"/g, '&quot;')}">
-    <meta property="og:description" content="${description.replace(/"/g, '&quot;')}">
+    <link rel="alternate" hreflang="x-default" href="${BASE_URL}${basePath}">
+    <meta property="og:title" content="${esc(title)}">
+    <meta property="og:description" content="${esc(description)}">
     <meta property="og:url" content="${canonical}">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="${title.replace(/"/g, '&quot;')}">`;
+    <meta name="twitter:title" content="${esc(title)}">`;
 
-  const cleaned = stripExistingMeta(baseHtml);
+  let cleaned = stripExistingMeta(baseHtml);
 
-  // If RTL (Arabic), add dir attr to <html>
-  const withDir = dir
-    ? cleaned.replace(/<html([^>]*)>/, `<html$1${dir}>`)
-    : cleaned;
+  // Set <html lang="xx"> and optionally dir="rtl"
+  const dirAttr = lang === 'ar' ? ` dir="rtl"` : '';
+  cleaned = cleaned.replace(/<html([^>]*)lang=["'][^"']*["']/, `<html$1lang="${lang}"`);
+  // If no lang attr exists, add it
+  if (!cleaned.includes(`lang="${lang}"`)) {
+    cleaned = cleaned.replace(/<html/, `<html lang="${lang}"`);
+  }
+  // Handle dir for Arabic
+  if (lang === 'ar' && !cleaned.includes('dir="rtl"')) {
+    cleaned = cleaned.replace(/<html([^>]*)>/, `<html$1 dir="rtl">`);
+  } else if (lang !== 'ar') {
+    cleaned = cleaned.replace(/\s*dir=["']rtl["']/g, '');
+  }
 
-  return withDir.replace(/<\/head>/, `${metaBlock}\n  </head>`);
+  return cleaned.replace(/<\/head>/, `${meta}\n  </head>`);
+}
+
+// ─── Generate static 404.html ────────────────────────────────────────────
+function generate404(baseHtml) {
+  let html = stripExistingMeta(baseHtml);
+  // Set lang to Turkish as default
+  html = html.replace(/<html([^>]*)lang=["'][^"']*["']/, '<html$1lang="tr"');
+
+  const meta = `
+    <title>404 — Sayfa Bulunamadı | Bursa Mobil Asansör</title>
+    <meta name="description" content="Aradığınız sayfa mevcut değil.">
+    <meta name="robots" content="noindex, nofollow">`;
+
+  html = html.replace(/<\/head>/, `${meta}\n  </head>`);
+
+  // Inject a visible 404 message into the body for when JS doesn't load
+  const fallbackBody = `
+    <noscript>
+      <div style="text-align:center;padding:80px 20px;font-family:system-ui,sans-serif">
+        <h1 style="font-size:4rem;font-weight:900;color:#1e293b">404</h1>
+        <p style="font-size:1.2rem;color:#64748b;margin:1rem 0">Sayfa Bulunamadı</p>
+        <a href="/" style="color:#f97316;font-weight:700;text-decoration:none">Ana Sayfaya Dön →</a>
+      </div>
+    </noscript>`;
+
+  html = html.replace(/<div id="root">/, `<div id="root">${fallbackBody}`);
+  return html;
 }
 
 // ─── Main ─────────────────────────────────────────────────────────────────
+const t0 = Date.now();
 const baseIndexHtml = fs.readFileSync(path.join(DIST, 'index.html'), 'utf8');
 const PAGES = buildPages();
 let written = 0;
 
 for (const page of PAGES) {
   const html = injectMeta(baseIndexHtml, page);
-  const filePath = page.path === '/' ? '/' : page.path;
 
-  if (filePath === '/') {
+  if (page.path === '/') {
     fs.writeFileSync(path.join(DIST, 'index.html'), html, 'utf8');
   } else {
-    const dir = path.join(DIST, filePath);
+    const dir = path.join(DIST, page.path);
     fs.mkdirSync(dir, { recursive: true });
     fs.writeFileSync(path.join(dir, 'index.html'), html, 'utf8');
   }
-
   written++;
 }
 
+// Generate 404.html
+const html404 = generate404(baseIndexHtml);
+fs.writeFileSync(path.join(DIST, '404.html'), html404, 'utf8');
+
+const elapsed = ((Date.now() - t0) / 1000).toFixed(2);
 const langBreakdown = LANGS.map(l => `${l.code}: ${PAGES.filter(p => p.lang === l.code).length}`).join(', ');
-console.log(`✅ Prerendered ${written} pages`);
+console.log(`✅ Prerendered ${written} pages + 404.html in ${elapsed}s`);
+console.log(`   ${DISTRICTS.length} districts × ${SERVICE_SLUGS.length} services × ${LANGS.length} langs`);
+console.log(`   ${BLOG_SLUGS.length} blog posts (TR)`);
 console.log(`   Languages: ${langBreakdown}`);
-console.log(`   Blog posts (TR only): ${BLOG_SLUGS.length}`);
