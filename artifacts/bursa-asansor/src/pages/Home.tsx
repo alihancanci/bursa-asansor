@@ -130,16 +130,16 @@ export default function Home() {
             <p className="dark:text-slate-300 text-lg text-[#000000]">{t('home.services_desc', 'İhtiyacınıza uygun mobil asansör çözümleriyle yanınızdayız.')}</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {SERVICES.map((service, idx) => (
-              <motion.div 
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {SERVICES.slice(0, 6).map((service, idx) => (
+              <motion.div
                 key={service.slug}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: idx * 0.1 }}
               >
-                <Link 
+                <Link
                   href={`/bursa-merkez-${service.slug}`}
                   className="block h-full bg-white dark:bg-navy-light rounded-3xl p-6 border border-border dark:border-white/10 hover:border-primary dark:hover:border-primary shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group"
                 >
@@ -148,13 +148,25 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-secondary dark:text-white group-hover:text-primary transition-colors">{service.name}</h3>
                   <p className="text-slate-600 dark:text-slate-300 text-sm mb-6 line-clamp-3">{service.shortDesc}</p>
-                  
+
                   <div className="mt-auto flex items-center text-sm font-bold text-slate-700 dark:text-slate-200 group-hover:text-primary transition-colors">
                     {t('common.read_more', 'Detaylı İncele')} <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </Link>
               </motion.div>
             ))}
+          </div>
+
+          {/* Tüm hizmetleri gör */}
+          <div className="mt-10 text-center">
+            <Link
+              href="/bursa-merkez-kiralik-mobil-asansor"
+              className="inline-flex items-center gap-2 px-8 py-3 bg-primary hover:bg-orange-600 text-white font-bold rounded-xl transition-colors shadow-lg hover:shadow-primary/30"
+            >
+              Tüm Hizmetleri Gör
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <p className="mt-3 text-sm text-slate-500 dark:text-slate-400">{SERVICES.length} farklı hizmet · Bursa'nın tüm ilçelerine</p>
           </div>
         </div>
       </section>
