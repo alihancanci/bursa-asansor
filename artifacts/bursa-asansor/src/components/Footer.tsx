@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { useTranslation } from "react-i18next";
 import { DISTRICTS, ELEVATOR_SERVICES, MOVING_SERVICES, PHONE_NUMBER, WHATSAPP_LINK } from "@/data";
-import { ArrowUpToLine, Phone, MapPin, Clock, Truck } from "lucide-react";
+import { ArrowUpToLine, Phone, MapPin, Clock, Truck, ShieldCheck, CheckCircle2 } from "lucide-react";
 
 export function Footer() {
   const { t } = useTranslation();
@@ -41,6 +41,18 @@ export function Footer() {
               <div className="flex items-center gap-3 text-slate-300">
                 <div className="bg-white/5 p-2 rounded-lg"><MapPin className="h-4 w-4" /></div>
                 <span className="text-sm">Bursa ve Tüm İlçeleri</span>
+              </div>
+            </div>
+
+            {/* E-E-A-T Trust Badges */}
+            <div className="mt-6 flex flex-wrap gap-2">
+              <div className="bg-white/5 border border-white/10 px-3 py-2 rounded-lg flex items-center gap-2">
+                <ShieldCheck className="w-4 h-4 text-green-400" />
+                <span className="text-xs text-slate-200 font-medium">MYK Sertifikalı Operatör</span>
+              </div>
+              <div className="bg-white/5 border border-white/10 px-3 py-2 rounded-lg flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-blue-400" />
+                <span className="text-xs text-slate-200 font-medium">Resmi Ticari İşletme</span>
               </div>
             </div>
           </div>

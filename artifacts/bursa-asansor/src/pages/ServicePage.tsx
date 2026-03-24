@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { DISTRICTS, PHONE_NUMBER, SERVICES, WHATSAPP_LINK } from "@/data";
 import { CTASection } from "@/components/CTASection";
 import { FeaturesBar } from "@/components/FeaturesBar";
-import { ChevronRight, ArrowRight, CheckCircle2, Phone, MessageCircle, AlertTriangle } from "lucide-react";
+import { ChevronRight, ArrowRight, CheckCircle2, Phone, MessageCircle, AlertTriangle, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import { getAbsoluteAssetUrl, getCanonicalUrl } from "@/lib/seo";
 
@@ -92,6 +92,34 @@ export default function ServicePage() {
     ],
   };
 
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Bursa Mobil Asansör Kiralama",
+    "image": getAbsoluteAssetUrl("/images/hero-bg.jpg"),
+    "telephone": "+905053297533",
+    "url": getCanonicalUrl("/"),
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": district.name,
+      "addressRegion": "Bursa",
+      "addressCountry": "TR"
+    },
+    // Approximate coordinate for Bursa as a service area anchor
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "40.1828",
+      "longitude": "29.0667"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "priceRange": "₺₺"
+  };
+
   return (
     <>
       <SEO 
@@ -100,7 +128,7 @@ export default function ServicePage() {
         path={`/${fullSlug}`}
         ogImage={ogImage}
         type="article"
-        schema={[faqSchema, breadcrumbSchema]}
+        schema={[faqSchema, breadcrumbSchema, localBusinessSchema]}
       />
       {/* Breadcrumb strip */}
       <nav aria-label="Konum" className="bg-gray-100 dark:bg-navy border-b border-gray-300 dark:border-white/10 px-4 sm:px-6 py-3">
@@ -176,6 +204,23 @@ export default function ServicePage() {
             <div className="prose prose-lg dark:prose-invert prose-headings:font-display prose-headings:text-secondary dark:prose-headings:text-white prose-a:text-primary hover:prose-a:text-orange-600 prose-strong:text-secondary dark:prose-strong:text-white max-w-none mb-12">
               <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
             </div>
+
+            {/* Dynamic Local Content / Anti-Doorway Info Box */}
+            {district.localNote && (
+              <div className="bg-blue-50/50 dark:bg-blue-900/10 border border-blue-100 dark:border-blue-800/30 rounded-2xl p-6 mb-12 flex flex-col sm:flex-row gap-5 items-start">
+                <div className="h-12 w-12 shrink-0 bg-blue-100 dark:bg-blue-800/50 rounded-full flex items-center justify-center text-blue-600 dark:text-blue-400">
+                  <MapPin className="h-6 w-6" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-slate-800 dark:text-white mb-2">
+                    {district.name} Bölgesine Özel Not
+                  </h3>
+                  <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-medium">
+                    {t(`districts.${district.slug}.localNote`, district.localNote)}
+                  </p>
+                </div>
+              </div>
+            )}
 
             {/* District Specific Context (SEO) */}
             {district.seoParagraph && (
