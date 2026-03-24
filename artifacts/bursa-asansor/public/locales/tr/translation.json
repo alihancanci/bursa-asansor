@@ -25,7 +25,10 @@
     "f4_desc": "Garantili hizmet"
   },
   "footer": {
-    "desc": "Bursa ve çevre illerde profesyonel asansör kiralama ve evden eve nakliyat hizmetleri."
+    "desc": "Bursa ve çevre illerde profesyonel asansör kiralama ve evden eve nakliyat hizmetleri.",
+    "elevator_services": "Kiralık Asansör",
+    "moving_services": "Nakliyat Hizmetleri",
+    "rights": "Tüm hakları saklıdır."
   },
   "common": {
     "view_all": "Tümünü Gör",
@@ -41,5 +44,19 @@
     "category_moving_desc": "{{district}} lokasyonunda nakliye sürecini planlarken sadece eşya taşımıyor, bölgenin trafik saatlerini ve park yasaklarını da hesaba katıyoruz. Deneyimli ekibimizle eşyalarınızı paketliyor, asansörlü sistemimizle sıfır riskle yeni adresinize ulaştırıyoruz.",
     "regional_survey": "Bölgesel Keşif Dahil",
     "fast_fleet": "Hızlı Geniş Araç Filosu"
+  },
+  "home": {
+    "active_in_all": "Bursa ve Tüm İlçelerinde Aktif",
+    "services_desc": "İhtiyacınıza uygun mobil asansör çözümleriyle yanınızdayız.",
+    "why_choose_us": "Neden Bizi Tercih Etmelisiniz?",
+    "trust_p1": "Bursa'da uzun yıllara dayanan lojistik ve taşıma tecrübemizle, müşterilerimize <strong>en sorunsuz ve profesyonel</strong> kiralık mobil asansör hizmetini sunuyoruz.",
+    "trust_p2": "Klasik yöntemlerin aksine; eşyalarınızı merdiven dairesine sokmadan, duvarları çizmeden ve eşyalarınıza zarar vermeden doğrudan taşıma işlemini gerçekleştiriyoruz. Üstelik <strong>15. kata kadar çıkar</strong> kapasitemizle yüksek binalarda bile kolaylık sağlıyoruz.",
+    "trust_p3": "İhtiyaç duymanız halinde sadece asansör değil, <strong>gerekli durumlarda taşıma personeli (hamal) ve nakliye kamyonu desteği de verilir</strong>. İşimizi ciddiye alıyoruz: Tam saatinde oluruz, özenli çalışırız, makinelerimiz bakımlıdır ve iş güvenliğine dikkat ederiz.",
+    "up_to_floor": "Kata Kadar<br/>Erişim",
+    "operator_control": "Operatör<br/>Kontrolü",
+    "active_network": "İlçede<br/>Aktif Ağ",
+    "service_network": "Hizmet Ağımız",
+    "service_network_desc": "Türkiye'nin en aktif çalışan asansörlü nakliyat ağıyla, her noktadayız.",
+    "districts_desc": "Bursa'nın tüm ilçelerine en kısa sürede mobil asansör ulaştırıyoruz."
   }
 }

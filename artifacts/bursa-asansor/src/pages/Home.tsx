@@ -85,7 +85,7 @@ export default function Home() {
             >
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 border border-primary/30 text-primary-foreground mb-6">
                 <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                <span className="text-sm font-semibold tracking-wide">Bursa ve Tüm İlçelerinde Aktif</span>
+                <span className="text-sm font-semibold tracking-wide">{t('home.active_in_all', 'Bursa ve Tüm İlçelerinde Aktif')}</span>
               </div>
               
               <h1 className="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-white leading-[1.1] mb-6">
@@ -120,7 +120,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">{t('nav.services', 'Hizmetlerimiz')}</h2>
-            <p className="dark:text-slate-300 text-lg text-[#000000]">İhtiyacınıza uygun mobil asansör çözümleriyle yanınızdayız.</p>
+            <p className="dark:text-slate-300 text-lg text-[#000000]">{t('home.services_desc', 'İhtiyacınıza uygun mobil asansör çözümleriyle yanınızdayız.')}</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -160,11 +160,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-secondary dark:text-white">Neden Bizi Tercih Etmelisiniz?</h2>
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-secondary dark:text-white">{t('home.why_choose_us', 'Neden Bizi Tercih Etmelisiniz?')}</h2>
               <div className="space-y-6 text-lg text-slate-700 dark:text-slate-200">
-                <p>Bursa'da uzun yıllara dayanan lojistik ve taşıma tecrübemizle, müşterilerimize <strong>en sorunsuz ve profesyonel</strong> kiralık mobil asansör hizmetini sunuyoruz.</p>
-                <p>Klasik yöntemlerin aksine; eşyalarınızı merdiven dairesine sokmadan, duvarları çizmeden ve eşyalarınıza zarar vermeden doğrudan taşıma işlemini gerçekleştiriyoruz. Üstelik <strong>15. kata kadar çıkar</strong> kapasitemizle yüksek binalarda bile kolaylık sağlıyoruz.</p>
-                <p>İhtiyaç duymanız halinde sadece asansör değil, <strong>gerekli durumlarda taşıma personeli (hamal) ve nakliye kamyonu desteği de verilir</strong>. İşimizi ciddiye alıyoruz: Tam saatinde oluruz, özenli çalışırız, makinelerimiz bakımlıdır ve iş güvenliğine dikkat ederiz.</p>
+                <p dangerouslySetInnerHTML={{ __html: t('home.trust_p1', "Bursa'da uzun yıllara dayanan lojistik ve taşıma tecrübemizle, müşterilerimize <strong>en sorunsuz ve profesyonel</strong> kiralık mobil asansör hizmetini sunuyoruz.") }} />
+                <p dangerouslySetInnerHTML={{ __html: t('home.trust_p2', "Klasik yöntemlerin aksine; eşyalarınızı merdiven dairesine sokmadan, duvarları çizmeden ve eşyalarınıza zarar vermeden doğrudan taşıma işlemini gerçekleştiriyoruz. Üstelik <strong>15. kata kadar çıkar</strong> kapasitemizle yüksek binalarda bile kolaylık sağlıyoruz.") }} />
+                <p dangerouslySetInnerHTML={{ __html: t('home.trust_p3', "İhtiyaç duymanız halinde sadece asansör değil, <strong>gerekli durumlarda taşıma personeli (hamal) ve nakliye kamyonu desteği de verilir</strong>. İşimizi ciddiye alıyoruz: Tam saatinde oluruz, özenli çalışırız, makinelerimiz bakımlıdır ve iş güvenliğine dikkat ederiz.") }} />
               </div>
               <div className="mt-10">
                 <CTASection />
@@ -174,7 +174,7 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white dark:bg-navy-light p-6 rounded-3xl shadow-lg border border-border dark:border-white/10 text-center transform translate-y-8">
                 <div className="text-4xl font-display font-black text-primary mb-2">15.</div>
-                <div className="font-semibold text-secondary dark:text-white">Kata Kadar<br/>Erişim</div>
+                <div className="font-semibold text-secondary dark:text-white" dangerouslySetInnerHTML={{ __html: t('home.up_to_floor', 'Kata Kadar<br/>Erişim') }} />
               </div>
               <div className="bg-secondary p-6 rounded-3xl shadow-lg text-center">
                 <div className="text-4xl font-display font-black text-white mb-2">7/24</div>
@@ -182,11 +182,11 @@ export default function Home() {
               </div>
               <div className="bg-primary p-6 rounded-3xl shadow-lg text-center transform translate-y-8">
                 <div className="text-4xl font-display font-black text-white mb-2">%100</div>
-                <div className="font-semibold text-white/90">Operatör<br/>Kontrolü</div>
+                <div className="font-semibold text-white/90" dangerouslySetInnerHTML={{ __html: t('home.operator_control', 'Operatör<br/>Kontrolü') }} />
               </div>
               <div className="bg-white dark:bg-navy-light p-6 rounded-3xl shadow-lg border border-border dark:border-white/10 text-center">
                 <div className="text-4xl font-display font-black text-primary mb-2">18</div>
-                <div className="font-semibold text-secondary dark:text-white">İlçede<br/>Aktif Ağ</div>
+                <div className="font-semibold text-secondary dark:text-white" dangerouslySetInnerHTML={{ __html: t('home.active_network', 'İlçede<br/>Aktif Ağ') }} />
               </div>
             </div>
           </div>
@@ -197,8 +197,8 @@ export default function Home() {
       <section className="py-20 bg-white dark:bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">Hizmet Ağımız</h2>
-            <p className="dark:text-slate-300 text-lg text-slate-700">Türkiye'nin en aktif çalışan asansörlü nakliyat ağıyla, her noktadayız.</p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">{t('home.service_network', 'Hizmet Ağımız')}</h2>
+            <p className="dark:text-slate-300 text-lg text-slate-700">{t('home.service_network_desc', "Türkiye'nin en aktif çalışan asansörlü nakliyat ağıyla, her noktadayız.")}</p>
           </div>
           <ServiceMap />
         </div>
@@ -209,7 +209,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">{t('nav.districts', 'Hizmet Bölgelerimiz')}</h2>
-            <p className="dark:text-slate-300 text-lg text-[#ffffff]">Bursa'nın tüm ilçelerine en kısa sürede mobil asansör ulaştırıyoruz.</p>
+            <p className="dark:text-slate-300 text-lg text-[#ffffff]">{t('home.districts_desc', "Bursa'nın tüm ilçelerine en kısa sürede mobil asansör ulaştırıyoruz.")}</p>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">

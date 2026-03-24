@@ -29,30 +29,29 @@ function Router() {
 
 const SUPPORTED_LANGS = ["tr", "en", "ar", "ru"];
 
+const initialPath = typeof window !== 'undefined' ? window.location.pathname : '/';
+const pathSegments = initialPath.split('/').filter(Boolean);
+const potentialLang = pathSegments[0] || 'tr';
+const initialActiveLang = SUPPORTED_LANGS.includes(potentialLang) && potentialLang !== 'tr' ? potentialLang : 'tr';
+
 function LanguageRouter({ children }: { children: React.ReactNode }) {
   const { i18n } = useTranslation();
-  const [basePath, setBasePath] = useState(import.meta.env.BASE_URL.replace(/\/$/, ""));
+  
+  // Calculate base synchronously for first render
+  const path = typeof window !== 'undefined' ? window.location.pathname : '/';
+  const segments = path.split('/').filter(Boolean);
+  const pLang = segments[0] || 'tr';
+  const aLang = SUPPORTED_LANGS.includes(pLang) && pLang !== 'tr' ? pLang : 'tr';
+  
+  const envBase = import.meta.env.BASE_URL.replace(/\/$/, "");
+  const [basePath, setBasePath] = useState(aLang === 'tr' ? envBase : `${envBase}/${aLang}`);
 
   useEffect(() => {
-    // Determine language from URL path
-    const path = window.location.pathname;
-    const segments = path.split('/').filter(Boolean);
-    const potentialLang = segments[0] || "tr";
-
-    let activeLang = "tr";
-    let newBase = import.meta.env.BASE_URL.replace(/\/$/, "");
-
-    if (SUPPORTED_LANGS.includes(potentialLang) && potentialLang !== "tr") {
-      activeLang = potentialLang;
-      newBase = `${newBase}/${activeLang}`;
+    // If language doesn't match the URL, update i18n
+    if (i18n.resolvedLanguage !== aLang) {
+      i18n.changeLanguage(aLang);
     }
-
-    if (i18n.language !== activeLang) {
-      i18n.changeLanguage(activeLang);
-    }
-    
-    setBasePath(newBase);
-  }, [i18n]);
+  }, [i18n, aLang]);
 
   return (
     <WouterRouter base={basePath}>

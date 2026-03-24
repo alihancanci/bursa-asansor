@@ -49,7 +49,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-5">
               <ArrowUpToLine className="h-4 w-4 text-primary shrink-0" />
-              <h3 className="text-sm font-bold text-white uppercase tracking-wider font-display">Kiralık Asansör</h3>
+              <h3 className="text-sm font-bold text-white uppercase tracking-wider font-display">{t('footer.elevator_services', 'Kiralık Asansör')}</h3>
             </div>
             <ul className="space-y-2.5">
               {ELEVATOR_SERVICES.map(s => (
@@ -67,7 +67,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-5">
               <Truck className="h-4 w-4 text-primary shrink-0" />
-              <h3 className="text-sm font-bold text-white uppercase tracking-wider font-display">Nakliyat Hizmetleri</h3>
+              <h3 className="text-sm font-bold text-white uppercase tracking-wider font-display">{t('footer.moving_services', 'Nakliyat Hizmetleri')}</h3>
             </div>
             <ul className="space-y-2.5">
               {MOVING_SERVICES.map(s => (
@@ -83,7 +83,7 @@ export function Footer() {
 
           {/* District Links */}
           <div className="lg:col-span-2">
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider font-display mb-5">Hizmet Bölgelerimiz</h3>
+            <h3 className="text-sm font-bold text-white uppercase tracking-wider font-display mb-5">{t('nav.districts', 'Hizmet Bölgelerimiz')}</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-2.5 gap-x-4">
               {DISTRICTS.map(d => (
                 <Link key={d.slug} href={`/${d.slug}-kiralik-mobil-asansor`} className="text-slate-400 hover:text-primary transition-colors text-sm flex items-center gap-2">
@@ -98,7 +98,7 @@ export function Footer() {
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-500 text-sm">
-            © {new Date().getFullYear()} Bursa Mobil Asansör. Tüm hakları saklıdır.
+            © {new Date().getFullYear()} Bursa Mobil Asansör. {t('footer.rights', 'Tüm hakları saklıdır.')}
           </p>
           <div className="flex gap-4 text-sm text-slate-500">
             <span>{t('features.f3_title', 'Uzman Operatör')}</span>

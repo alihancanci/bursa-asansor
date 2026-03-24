@@ -27,7 +27,10 @@
     "f4_desc": "Guaranteed service"
   },
   "footer": {
-    "desc": "Professional elevator rental and moving services in Bursa and surrounding provinces."
+    "desc": "Professional elevator rental and moving services in Bursa and surrounding provinces.",
+    "elevator_services": "Elevator Rental",
+    "moving_services": "Moving Services",
+    "rights": "All rights reserved."
   },
   "common": {
     "view_all": "View All",
@@ -600,5 +603,19 @@
         }
       ]
     }
+  },
+  "home": {
+    "active_in_all": "Active in Bursa & All Districts",
+    "services_desc": "We are here with mobile elevator solutions that suit your needs.",
+    "why_choose_us": "Why Choose Us?",
+    "trust_p1": "With our long-standing logistics and transportation experience in Bursa, we offer our customers the <strong>smoothest and most professional</strong> rental mobile elevator service.",
+    "trust_p2": "Unlike traditional methods; we perform the moving directly from the exterior without taking your belongings to the stairwell, scratching the walls or damaging your belongings. Moreover, with our capacity to <strong>reach up to the 15th floor</strong>, we provide convenience even in high buildings.",
+    "trust_p3": "If needed, not only an elevator, but also <strong>moving staff (porters) and moving truck support are provided when necessary</strong>. We take our job seriously: We are on time, act carefully, our machines are well-maintained and we pay attention to occupational safety.",
+    "up_to_floor": "Up to Floor<br/>Access",
+    "operator_control": "Operator<br/>Control",
+    "active_network": "Active Network<br/>in Districts",
+    "service_network": "Our Service Network",
+    "service_network_desc": "We are at every point with Turkey's most active elevator transportation network.",
+    "districts_desc": "We deliver mobile elevators to all districts of Bursa as soon as possible."
   }
 }
