@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "districts": "Service Areas",
+    "blog": "Blog & Guide",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title1": "Bursa's Leading",
+    "title2": "Mobile Elevator",
+    "title3": "Rental Company",
+    "subtitle": "Narrow streets and high buildings are not a problem! We offer safe, fast, and insured mobile elevator rental and moving solutions up to the 15th floor.",
+    "cta_call": "Call for Pricing",
+    "cta_whatsapp": "Get Quote via WhatsApp"
+  },
+  "features": {
+    "f1_title": "Up to 15th Floor",
+    "f1_desc": "Safe height reach",
+    "f2_title": "24/7 Service",
+    "f2_desc": "Uninterrupted support",
+    "f3_title": "Expert Operator",
+    "f3_desc": "Zero accidents",
+    "f4_title": "Affordable Price",
+    "f4_desc": "Guaranteed quality"
+  },
+  "footer": {
+    "desc": "Professional elevator rental and home moving services in Bursa and surrounding provinces."
+  },
+  "common": {
+    "view_all": "View All",
+    "call_now": "Call Now",
+    "whatsapp_message": "Message via WhatsApp",
+    "service_rules": "Our Service Rules",
+    "faq": "Frequently Asked Questions",
+    "tags": "Tags",
+    "read_more": "Read More"
+  }
+}

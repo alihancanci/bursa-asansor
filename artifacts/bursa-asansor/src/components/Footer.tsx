@@ -1,8 +1,10 @@
 import { Link } from "wouter";
+import { useTranslation } from "react-i18next";
 import { DISTRICTS, ELEVATOR_SERVICES, MOVING_SERVICES, PHONE_NUMBER, WHATSAPP_LINK } from "@/data";
 import { ArrowUpToLine, Phone, MapPin, Clock, Truck } from "lucide-react";
 
 export function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className="bg-navy pt-16 pb-8 border-t border-white/10 relative overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/10 blur-[120px] rounded-full pointer-events-none opacity-50" />
@@ -25,7 +27,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-slate-400 text-sm mb-6 leading-relaxed">
-              Bursa ve tüm ilçelerinde 7/24 mobil asansör kiralama ve nakliyat hizmetleri. 15. kata kadar ulaşım, uzman ekip desteği.
+              {t('footer.desc', 'Bursa ve tüm ilçelerinde 7/24 mobil asansör kiralama ve nakliyat hizmetleri. 15. kata kadar ulaşım, uzman ekip desteği.')}
             </p>
             <div className="space-y-3">
               <a href={`tel:${PHONE_NUMBER.replace(/\D/g,'')}`} className="flex items-center gap-3 text-slate-300 hover:text-primary transition-colors">
@@ -34,7 +36,7 @@ export function Footer() {
               </a>
               <div className="flex items-center gap-3 text-slate-300">
                 <div className="bg-white/5 p-2 rounded-lg"><Clock className="h-4 w-4 text-primary" /></div>
-                <span className="text-sm">7/24 Kesintisiz Hizmet</span>
+                <span className="text-sm">{t('features.f2_title', '7/24 Kesintisiz Hizmet')}</span>
               </div>
               <div className="flex items-center gap-3 text-slate-300">
                 <div className="bg-white/5 p-2 rounded-lg"><MapPin className="h-4 w-4" /></div>
@@ -99,11 +101,11 @@ export function Footer() {
             © {new Date().getFullYear()} Bursa Mobil Asansör. Tüm hakları saklıdır.
           </p>
           <div className="flex gap-4 text-sm text-slate-500">
-            <span>Operatörlü Hizmet</span>
+            <span>{t('features.f3_title', 'Uzman Operatör')}</span>
             <span>•</span>
-            <span>15. Kata Kadar</span>
+            <span>{t('features.f1_title', '15. Kata Kadar')}</span>
             <span>•</span>
-            <span>7/24 Açık</span>
+            <span>{t('features.f2_title', '7/24 Açık')}</span>
           </div>
         </div>
 

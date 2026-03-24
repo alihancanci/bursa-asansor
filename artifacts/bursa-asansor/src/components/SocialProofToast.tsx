@@ -1,18 +1,21 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
-const NOTIFICATIONS = [
-  "📍 Bugün Nilüfer'de 12. kata asansör kuruldu.",
-  "📞 Yıldırım'dan yeni bir fiyat teklifi istendi.",
-  "👥 Sitede 10 kişi aktif.",
-  "🗓️ Kestel Cuma günü için yeni bir randevu ayarlandı.",
-  "📸 Mudanya operasyonuna ait yeni fotoğraflar eklendi.",
-  "✅ Osmangazi 7. kat eşya taşıma işlemi başarıyla tamamlandı.",
-  "🚚 Gürsu'ya acil nakliye asansörü yönlendirildi.",
-  "⚡ İnegöl bölgesinden hızlı asansör talebi alındı."
-];
+import { useTranslation } from "react-i18next";
 
 export function SocialProofToast() {
+  const { t } = useTranslation();
+  
+  const NOTIFICATIONS = [
+    t('toasts.msg0', "📍 Bugün Nilüfer'de 12. kata asansör kuruldu."),
+    t('toasts.msg1', "📞 Yıldırım'dan yeni bir fiyat teklifi istendi."),
+    t('toasts.msg2', "👥 Sitede 10 kişi aktif."),
+    t('toasts.msg3', "🗓️ Kestel Cuma günü için yeni bir randevu ayarlandı."),
+    t('toasts.msg4', "📸 Mudanya operasyonuna ait yeni fotoğraflar eklendi."),
+    t('toasts.msg5', "✅ Osmangazi 7. kat eşya taşıma işlemi başarıyla tamamlandı."),
+    t('toasts.msg6', "🚚 Gürsu'ya acil nakliye asansörü yönlendirildi."),
+    t('toasts.msg7', "⚡ İnegöl bölgesinden hızlı asansör talebi alındı.")
+  ];
+
   const [currentMessage, setCurrentMessage] = useState<string | null>(null);
 
   useEffect(() => {
@@ -62,7 +65,7 @@ export function SocialProofToast() {
               {currentMessage}
             </p>
             <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-              Şimdi
+              {t('common.now', 'Şimdi')}
             </p>
           </div>
         </motion.div>

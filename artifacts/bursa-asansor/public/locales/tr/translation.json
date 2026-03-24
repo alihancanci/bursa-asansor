@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetlerimiz",
+    "districts": "Hizmet Bölgeleri",
+    "blog": "Blog & Rehber",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title1": "Bursa'nın Lider",
+    "title2": "Mobil Asansör",
+    "title3": "Kiralama Firması",
+    "subtitle": "Dar sokaklar, yüksek binalar dert değil! 15. kata kadar güvenli, hızlı ve sigortalı mobil asansör kiralama ve nakliyat çözümleri sunuyoruz.",
+    "cta_call": "Hemen Ara Fiyat Al",
+    "cta_whatsapp": "WhatsApp'tan Teklif İste"
+  },
+  "features": {
+    "f1_title": "15. Kata Kadar",
+    "f1_desc": "Güvenli yükseklik",
+    "f2_title": "7/24 Hizmet",
+    "f2_desc": "Kesintisiz destek",
+    "f3_title": "Uzman Operatör",
+    "f3_desc": "Sıfır iş kazası",
+    "f4_title": "Uygun Fiyat",
+    "f4_desc": "Garantili hizmet"
+  },
+  "footer": {
+    "desc": "Bursa ve çevre illerde profesyonel asansör kiralama ve evden eve nakliyat hizmetleri."
+  },
+  "common": {
+    "view_all": "Tümünü Gör",
+    "call_now": "Hemen Ara",
+    "whatsapp_message": "WhatsApp'tan Yaz",
+    "service_rules": "Hizmet Kurallarımız",
+    "faq": "Sıkça Sorulan Sorular",
+    "tags": "Etiketler",
+    "read_more": "Devamını Oku"
+  }
+}

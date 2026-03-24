@@ -1,16 +1,18 @@
-import { Helmet } from "react-helmet-async";
+import { SEO } from "@/components/SEO";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
+import { useTranslation } from "react-i18next";
 import { CTASection } from "@/components/CTASection";
 import { SearchFilter } from "@/components/SearchFilter";
 import { FeaturesBar } from "@/components/FeaturesBar";
 import { ServiceMap } from "@/components/ServiceMap";
 import { DISTRICTS, PHONE_NUMBER, SERVICES, WHATSAPP_LINK } from "@/data";
 import { ArrowRight, CheckCircle2, ArrowUpToLine } from "lucide-react";
-import { getAbsoluteAssetUrl, getCanonicalUrl } from "@/lib/seo";
+import { getAbsoluteAssetUrl } from "@/lib/seo";
 
 export default function Home() {
-  const canonicalUrl = getCanonicalUrl("/");
+  const { t } = useTranslation();
+
   const ogImage = getAbsoluteAssetUrl("/opengraph.jpg");
 
   const localBusinessSchema = {
@@ -19,7 +21,7 @@ export default function Home() {
     name: "Bursa Mobil Asansör",
     areaServed: DISTRICTS.map((district) => district.name),
     telephone: PHONE_NUMBER,
-    url: canonicalUrl,
+    url: "https://bursakiralikasansor.com/",
     image: ogImage,
     sameAs: [WHATSAPP_LINK],
     address: {
@@ -49,32 +51,19 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Bursa Mobil Asansör",
-    url: canonicalUrl,
+    url: "https://bursakiralikasansor.com/",
     inLanguage: "tr-TR",
   };
 
   return (
     <>
-      <Helmet>
-        <title>Bursa Mobil Asansör Kiralama | 7/24 Asansörlü Nakliyat</title>
-        <meta name="description" content="Bursa'da 7/24 mobil asansör kiralama hizmeti. 15. kata kadar ulaşım, uzman operatörlü. Evden eve asansörlü nakliyat ve saatlik kiralama için hemen arayın." />
-        <meta name="keywords" content="Bursa mobil asansör, asansör kiralama Bursa, evden eve asansörlü nakliyat, saatlik asansör kiralama, dış cephe asansörü" />
-        <meta name="robots" content="index,follow,max-image-preview:large" />
-        <link rel="canonical" href={canonicalUrl} />
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="tr_TR" />
-        <meta property="og:site_name" content="Bursa Mobil Asansör" />
-        <meta property="og:title" content="Bursa Mobil Asansör Kiralama | 7/24 Asansörlü Nakliyat" />
-        <meta property="og:description" content="Bursa'da 7/24 mobil asansör kiralama hizmeti. 15. kata kadar ulaşım, uzman operatörlü. Evden eve asansörlü nakliyat ve saatlik kiralama için hemen arayın." />
-        <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:image" content={ogImage} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Bursa Mobil Asansör Kiralama | 7/24 Asansörlü Nakliyat" />
-        <meta name="twitter:description" content="Bursa'da 7/24 mobil asansör kiralama hizmeti. 15. kata kadar ulaşım, uzman operatörlü." />
-        <meta name="twitter:image" content={ogImage} />
-        <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
-        <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
-      </Helmet>
+      <SEO 
+        title={t('meta.home_title', 'Bursa Mobil Asansör Kiralama | 7/24 Asansörlü Nakliyat')}
+        description={t('meta.home_desc', 'Bursa\'da 7/24 mobil asansör kiralama hizmeti. 15. kata kadar ulaşım, uzman operatörlü. Evden eve asansörlü nakliyat ve saatlik kiralama için hemen arayın.')}
+        path="/"
+        ogImage={ogImage}
+        schema={[localBusinessSchema, websiteSchema]}
+      />
       {/* Hero Section */}
       <section className="relative pt-24 pb-32 lg:pt-32 lg:pb-40 overflow-hidden">
         {/* Background Image & Overlay */}
@@ -100,20 +89,20 @@ export default function Home() {
               </div>
               
               <h1 className="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-white leading-[1.1] mb-6">
-                Bursa'da Profesyonel <br/>
-                <span className="text-gradient">Mobil Asansör</span> Kiralama
+                {t('hero.title1', "Bursa'nın Lider")} <br/>
+                <span className="text-gradient">{t('hero.title2', "Mobil Asansör")}</span> {t('hero.title3', "Kiralama Firması")}
               </h1>
               
               <p className="text-lg sm:text-xl text-slate-300 mb-10 leading-relaxed max-w-2xl">
-                Bina içi merdivenlere takılmadan, 15. kata kadar eşya ve malzemelerinizi saniyeler içinde taşıyoruz. Operatörümüz makinenin başında, yükünüz güvende.
+                {t('hero.subtitle', "Dar sokaklar, yüksek binalar dert değil! 15. kata kadar güvenli, hızlı ve sigortalı mobil asansör kiralama ve nakliyat çözümleri sunuyoruz.")}
               </p>
 
               <CTASection className="max-w-xl" />
               
               <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-400 font-medium">
-                <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> 7/24 Kesintisiz Hizmet</div>
-                <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> 15. Kata Kadar</div>
-                <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> Uzman Operatörlü</div>
+                <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> {t('features.f2_title', '7/24 Hizmet')}</div>
+                <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> {t('features.f1_title', '15. Kata Kadar')}</div>
+                <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> {t('features.f3_title', 'Uzman Operatör')}</div>
               </div>
             </motion.div>
           </div>
@@ -130,7 +119,7 @@ export default function Home() {
       <section className="py-20 bg-slate-50 dark:bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">Hizmetlerimiz</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">{t('nav.services', 'Hizmetlerimiz')}</h2>
             <p className="dark:text-slate-300 text-lg text-[#000000]">İhtiyacınıza uygun mobil asansör çözümleriyle yanınızdayız.</p>
           </div>
 
@@ -154,7 +143,7 @@ export default function Home() {
                   <p className="text-slate-600 dark:text-slate-300 text-sm mb-6 line-clamp-3">{service.shortDesc}</p>
                   
                   <div className="mt-auto flex items-center text-sm font-bold text-slate-700 dark:text-slate-200 group-hover:text-primary transition-colors">
-                    Detaylı İncele <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                    {t('common.read_more', 'Detaylı İncele')} <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </Link>
               </motion.div>
@@ -189,7 +178,7 @@ export default function Home() {
               </div>
               <div className="bg-secondary p-6 rounded-3xl shadow-lg text-center">
                 <div className="text-4xl font-display font-black text-white mb-2">7/24</div>
-                <div className="font-semibold text-slate-100">Kesintisiz<br/>Hizmet</div>
+                <div className="font-semibold text-slate-100">{t('features.f2_title', 'Kesintisiz')}<br/>Hizmet</div>
               </div>
               <div className="bg-primary p-6 rounded-3xl shadow-lg text-center transform translate-y-8">
                 <div className="text-4xl font-display font-black text-white mb-2">%100</div>
@@ -219,7 +208,7 @@ export default function Home() {
       <section className="py-20 bg-slate-50 dark:bg-navy/30 border-t border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">Hizmet Bölgelerimiz</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">{t('nav.districts', 'Hizmet Bölgelerimiz')}</h2>
             <p className="dark:text-slate-300 text-lg text-[#ffffff]">Bursa'nın tüm ilçelerine en kısa sürede mobil asansör ulaştırıyoruz.</p>
           </div>
 
