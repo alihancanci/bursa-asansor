@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import { CTASection } from "@/components/CTASection";
 import { SearchFilter } from "@/components/SearchFilter";
 import { FeaturesBar } from "@/components/FeaturesBar";
+import { ServiceMap } from "@/components/ServiceMap";
 import { DISTRICTS, PHONE_NUMBER, SERVICES, WHATSAPP_LINK } from "@/data";
 import { ArrowRight, CheckCircle2, ArrowUpToLine } from "lucide-react";
 import { getAbsoluteAssetUrl, getCanonicalUrl } from "@/lib/seo";
@@ -202,6 +203,18 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Service Map Section */}
+      <section className="py-20 bg-white dark:bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">Hizmet Ağımız</h2>
+            <p className="dark:text-slate-300 text-lg text-slate-700">Türkiye'nin en aktif çalışan asansörlü nakliyat ağıyla, her noktadayız.</p>
+          </div>
+          <ServiceMap />
+        </div>
+      </section>
+
       {/* Districts Grid */}
       <section className="py-20 bg-slate-50 dark:bg-navy/30 border-t border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

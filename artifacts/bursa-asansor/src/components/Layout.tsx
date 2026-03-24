@@ -3,6 +3,7 @@ import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { useLocation } from "wouter";
 import { installGlobalClickTracking, trackPageView } from "@/lib/analytics";
+import { SocialProofToast } from "./SocialProofToast";
 
 export function Layout({ children }: { children: ReactNode }) {
   const [pathname] = useLocation();
@@ -30,6 +31,7 @@ export function Layout({ children }: { children: ReactNode }) {
         {children}
       </main>
       <Footer />
+      <SocialProofToast />
     </div>
   );
 }
