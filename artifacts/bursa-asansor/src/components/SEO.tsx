@@ -9,6 +9,7 @@ interface SEOProps {
   ogImage?: string;
   type?: "website" | "article";
   schema?: any[];
+  robots?: string; // Override robots directive - e.g. "noindex,follow" for 404 pages
 }
 
 const SUPPORTED_LANGS = ["tr", "en", "ar", "ru"];
@@ -20,6 +21,7 @@ export function SEO({
   ogImage = "/opengraph.jpg",
   type = "website",
   schema = [],
+  robots = "index,follow,max-image-preview:large",
 }: SEOProps) {
   const { i18n } = useTranslation();
   const currentLang = i18n.language || "tr";
@@ -36,7 +38,7 @@ export function SEO({
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
-      <meta name="robots" content="index,follow,max-image-preview:large" />
+      <meta name="robots" content={robots} />
       <link rel="canonical" href={currentCanonicalUrl} />
 
       {/* hreflang tags for International SEO */}

@@ -1,10 +1,10 @@
-import { useParams, Redirect, Link } from "wouter";
+import { useParams, Link } from "wouter";
 import { SEO } from "@/components/SEO";
 import { useTranslation } from "react-i18next";
 import { DISTRICTS, PHONE_NUMBER, SERVICES, WHATSAPP_LINK } from "@/data";
 import { CTASection } from "@/components/CTASection";
 import { FeaturesBar } from "@/components/FeaturesBar";
-import { ChevronRight, ArrowRight, CheckCircle2, Phone, MessageCircle } from "lucide-react";
+import { ChevronRight, ArrowRight, CheckCircle2, Phone, MessageCircle, AlertTriangle } from "lucide-react";
 import { motion } from "framer-motion";
 import { getAbsoluteAssetUrl, getCanonicalUrl } from "@/lib/seo";
 
@@ -14,27 +14,35 @@ export default function ServicePage() {
   const fullSlug = params.slug || "";
 
   const service = SERVICES.find(s => fullSlug.endsWith(`-${s.slug}`));
-  
+
   if (!service) {
-    return <Redirect to="/" />;
+    return <PageNotFound404 slug={fullSlug} />;
   }
 
   const districtSlugLength = fullSlug.length - service.slug.length - 1;
   const districtSlug = fullSlug.substring(0, districtSlugLength);
-  
+
   const district = DISTRICTS.find(d => d.slug === districtSlug);
 
   if (!district) {
-    return <Redirect to="/" />;
+    return <PageNotFound404 slug={fullSlug} />;
   }
 
   const serviceName = t(`services.${service.slug}.name`, service.name);
   const serviceShortDesc = t(`services.${service.slug}.shortDesc`, service.shortDesc);
   const serviceTemplate = t(`services.${service.slug}.template`, service.template);
 
-  const pageTitle = `${serviceName} | ${district.name} | Bursa Mobil Asansör`;
-  const metaDescription = `${district.name} ${t('common.service_area_desc', 'bölgesinde')} ${serviceName.toLowerCase()} ${t('common.service_get', 'hizmeti alın.')} ${district.neighborhoods.slice(0, 3).join(", ")} ${t('common.neighborhoods_included', 'mahalleleri dahil 7/24 operatörlü çalışma.')}`;
+  const YEAR = new Date().getFullYear();
+  // Pick first 3 neighborhoods for SEO enrichment
+  const topNeighborhoods = district.neighborhoods.slice(0, 3);
+  const neighborhoodStr  = topNeighborhoods.join(", ");
+
+  // ── Richer, unique title / description per page ──────────────────────────
+  const pageTitle = `${district.name} ${topNeighborhoods[0] ?? ''} ${serviceName} | ${YEAR} Fiyatları · Bursa Mobil Asansör`;
+  const metaDescription = `${district.name} ${neighborhoodStr} bölgesinde ${YEAR} ${serviceName.toLowerCase()} hizmeti. 15. kata kadar ulaşım, uzman operatörlü 7/24 hizmet. Hemen arayın: ${PHONE_NUMBER}`;
   const ogImage = getAbsoluteAssetUrl("/opengraph.jpg");
+  // Rich H1: district + service + top neighborhoods
+  const richH1 = `${district.name}'de ${serviceName} — ${topNeighborhoods.join(", ")} Mahallelerine Günlük Hizmet`;
   // Dynamic Content Logic: Neighborhoods
   // We use a simple hash of the slug to pick a subset of neighborhoods for a "random but stable" look
   const hash = fullSlug.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
@@ -117,6 +125,7 @@ export default function ServicePage() {
             className="text-4xl sm:text-5xl md:text-6xl font-display font-extrabold text-white leading-tight mb-4"
           >
             {district.name}<br /><span className="text-primary">{serviceName}</span>
+            <span className="block text-2xl sm:text-3xl font-semibold text-slate-300 mt-2 text-sm leading-snug">{neighborhoodStr} Mahalleleri</span>
           </motion.h1>
 
           <motion.p
@@ -339,6 +348,36 @@ export default function ServicePage() {
 
           </div>
         </div>
+      </div>
+    </>
+  );
+}
+
+// ── Proper 404 component with noindex ─────────────────────────────────────────
+function PageNotFound404({ slug }: { slug: string }) {
+  return (
+    <>
+      <SEO
+        title="Sayfa Bulunamadı | Bursa Mobil Asansör"
+        description="Aradğınız sayfa mevcut değil."
+        path={`/${slug}`}
+        robots="noindex,follow"
+      />
+      <div className="min-h-[60vh] flex flex-col items-center justify-center px-4 py-24 text-center">
+        <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 mb-6">
+          <AlertTriangle className="w-10 h-10 text-primary" />
+        </div>
+        <h1 className="text-5xl font-display font-black text-secondary dark:text-white mb-4">404</h1>
+        <p className="text-xl font-semibold text-slate-700 dark:text-slate-300 mb-2">Sayfa Bulunamadı</p>
+        <p className="text-slate-500 dark:text-slate-400 mb-8 max-w-md">
+          Aradığınız sayfa mevcut değil veya taşınmış olabilir.
+        </p>
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-bold rounded-xl hover:bg-orange-600 transition-colors"
+        >
+          Ana Sayfaya Dön
+        </Link>
       </div>
     </>
   );

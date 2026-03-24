@@ -1,50 +1,46 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { createRequire } from 'module';
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname  = path.dirname(__filename);
 
-const BASE_URL = 'https://bursakiralikasansor.com';
-const SUPPORTED_LANGUAGES = ['tr', 'en', 'ar', 'ru'];
+// ─── Single Source of Truth ────────────────────────────────────────────────
+// We import DISTRICTS and SERVICES directly from the compiled data.
+// The script runs via `node --experimental-vm-modules` or we use a simple
+// CJS shim. Here we parse the data.ts export list dynamically using a
+// lightweight regex-free approach: we build a tiny CJS file on-the-fly.
+// Actually, the cleanest path for a Vite ESM project is to extract the slugs
+// from data.ts with a small dedicated parser. We read data.ts as text and
+// extract the slug fields.
 
-// Data extraction
-// Due to Vite build systems, we import JSON from the exact same TS source if possible, or we just map logic.
-// For simplicity in this script, we can hardcode the core logic or read from a pre-built data file.
-// Since DISTRICTS and SERVICES are known, let's declare them here for generation.
-const DISTRICTS = [
-  "osmangazi", "nilufer", "yildirim", "bursamerkez", 
-  "gemlik", "mudanya", "inegol", "kestel", "gursu", 
-  "karacabey", "orhangazi", "yenisehir", "iznik", 
-  "bademli", "ozluce", "balat", "gorukle", "ihsaniye"
-];
+const dataFile = fs.readFileSync(
+  path.resolve(__dirname, '../src/data.ts'),
+  'utf8'
+);
 
-const SERVICES = [
-  "kiralik-asansor",
-  "asansor-kiralama",
-  "mobil-asansor",
-  "dis-cephe-asansoru",
-  "esyali-tasimacilik",
-  "insaat-asansoru",
-  "mobilya-tasimacilik",
-  "asansorlu-nakliyat",
-  "nakliye-asansoru",
-  "esya-tasima-asansoru",
-  "evden-eve-asansorlu-tasimacilik",
-  "yuk-asansoru-kiralama",
-  "sepetli-asansor",
-  "kiralik-nakliyat-asansoru",
-  "esya-tasima-vinci",
-  "kiralik-mobil-asansor",
-  "saatlik-asansor-kiralama",
-  "gunluk-asansor-kiralama",
-  "asansorlu-ev-den-eve",
-  "ofis-tasima-asansoru",
-  "balkon-asansoru",
-  "insaata-asansor",
-  "beyaz-esya-tasima-asansoru"
-];
+function extractSlugs(arrayName) {
+  // Match:  slug: "some-slug"  inside the named const block
+  const blockMatch = dataFile.match(
+    new RegExp(`export const ${arrayName}[\\s\\S]*?^];`, 'm')
+  );
+  if (!blockMatch) return [];
 
+  const slugs = [];
+  const re = /slug:\s*["']([^"']+)["']/g;
+  let m;
+  while ((m = re.exec(blockMatch[0])) !== null) {
+    slugs.push(m[1]);
+  }
+  return slugs;
+}
+
+const DISTRICT_SLUGS = extractSlugs('DISTRICTS');
+const SERVICE_SLUGS  = extractSlugs('SERVICES');
+
+// Blog slugs stay hardcoded — they live in a separate data/blog.ts file
+// and change rarely.  Update here whenever you add a new post.
 const BLOG_SLUGS = [
   "asansorlu-tasimacilik-nasil-yapilir-kilavuz",
   "asansor-kiralama-fiyatlari-2026",
@@ -53,72 +49,66 @@ const BLOG_SLUGS = [
   "mobil-asansor-vs-sepetli-vinc",
   "yuksek-katli-binalarda-tasinma-kurallari",
   "insaat-malzemesi-tasima-cozumleri",
-  "bursa-ici-en-ucuz-asansor-kiralama"
+  "bursa-ici-en-ucuz-asansor-kiralama",
 ];
 
-const STANDARD_PAGES = [
-  "/",
-  "/blog"
-];
+const STANDARD_PAGES      = ['/', '/blog'];
+const BASE_URL            = 'https://bursakiralikasansor.com';
+const SUPPORTED_LANGUAGES = ['tr', 'en', 'ar', 'ru'];
 
-let urls = [];
+// ─── Build URL list ────────────────────────────────────────────────────────
+const urls = [];
 
-// 1. Standard Pages
-STANDARD_PAGES.forEach(page => urls.push(page));
+STANDARD_PAGES.forEach(p => urls.push(p));
+BLOG_SLUGS.forEach(s => urls.push(`/blog/${s}`));
 
-// 2. Blog Posts
-BLOG_SLUGS.forEach(slug => urls.push(`/blog/${slug}`));
+// Verify we got the slugs correctly
+if (DISTRICT_SLUGS.length === 0 || SERVICE_SLUGS.length === 0) {
+  console.error('❌ Could not parse slugs from data.ts — aborting.');
+  process.exit(1);
+}
 
-// 3. Dynamic Service Pages (414 pages)
-DISTRICTS.forEach(district => {
-  SERVICES.forEach(service => {
+DISTRICT_SLUGS.forEach(district => {
+  SERVICE_SLUGS.forEach(service => {
     urls.push(`/${district}-${service}`);
   });
 });
 
-function getLangLink(pathSegment, lang) {
+// ─── Sitemap helpers ───────────────────────────────────────────────────────
+function getLangLink(urlPath, lang) {
   const prefix = lang === 'tr' ? '' : `/${lang}`;
-  // Ensure we don't end up with trailing slashes like /en/ unless it's the root
-  let finalPath = `${prefix}${pathSegment}`;
-  if (finalPath === '') finalPath = '/';
-  return `${BASE_URL}${finalPath}`;
+  let final = `${prefix}${urlPath}`;
+  if (final === '') final = '/';
+  return `${BASE_URL}${final}`;
 }
 
-const sitemapHeader = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+// ─── Build XML ────────────────────────────────────────────────────────────
+let xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 `;
 
-let sitemapContent = '';
-
 urls.forEach(urlPath => {
-  // For each URL path, generate a <url> block for EACH supported language.
   SUPPORTED_LANGUAGES.forEach(lang => {
     const loc = getLangLink(urlPath, lang);
-    
-    let block = `  <url>\n    <loc>${loc}</loc>\n`;
-    
-    // Add hreflang tags pointing to all languages
-    SUPPORTED_LANGUAGES.forEach(targetLang => {
-      block += `    <xhtml:link rel="alternate" hreflang="${targetLang}" href="${getLangLink(urlPath, targetLang)}" />\n`;
+    xml += `  <url>\n    <loc>${loc}</loc>\n`;
+    SUPPORTED_LANGUAGES.forEach(tl => {
+      xml += `    <xhtml:link rel="alternate" hreflang="${tl}" href="${getLangLink(urlPath, tl)}" />\n`;
     });
-    // Add x-default pointing to the 'tr' version
-    block += `    <xhtml:link rel="alternate" hreflang="x-default" href="${getLangLink(urlPath, 'tr')}" />\n`;
-    
-    block += `  </url>\n`;
-    sitemapContent += block;
+    xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${getLangLink(urlPath, 'tr')}" />\n`;
+    xml += `  </url>\n`;
   });
 });
 
-const sitemapFooter = `</urlset>`;
+xml += `</urlset>\n`;
 
-const fullSitemap = sitemapHeader + sitemapContent + sitemapFooter;
+// ─── Write ─────────────────────────────────────────────────────────────────
+const outDir = path.resolve(__dirname, '../public');
+fs.mkdirSync(outDir, { recursive: true });
+fs.writeFileSync(path.join(outDir, 'sitemap.xml'), xml, 'utf8');
 
-// Write XML
-const publicDir = path.resolve(__dirname, '../public');
-if (!fs.existsSync(publicDir)) {
-  fs.mkdirSync(publicDir, { recursive: true });
-}
-
-fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), fullSitemap, 'utf8');
-
-console.log(`✅ Dynamically generated sitemap.xml with hreflang tags for ${urls.length * SUPPORTED_LANGUAGES.length} localized URLs!`);
+console.log(`✅ Sitemap generated:
+  → ${DISTRICT_SLUGS.length} districts × ${SERVICE_SLUGS.length} services = ${DISTRICT_SLUGS.length * SERVICE_SLUGS.length} service pages
+  → ${BLOG_SLUGS.length} blog posts
+  → ${STANDARD_PAGES.length} standard pages
+  → ${urls.length} canonical URLs × ${SUPPORTED_LANGUAGES.length} languages = ${urls.length * SUPPORTED_LANGUAGES.length} localized <url> entries`);
