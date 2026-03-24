@@ -2,6 +2,7 @@ import { ReactNode, useEffect } from "react";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { useLocation } from "wouter";
+import { installGlobalClickTracking, trackPageView } from "@/lib/analytics";
 
 export function Layout({ children }: { children: ReactNode }) {
   const [pathname] = useLocation();
@@ -9,6 +10,17 @@ export function Layout({ children }: { children: ReactNode }) {
   // Scroll to top on route change
   useEffect(() => {
     window.scrollTo(0, 0);
+  }, [pathname]);
+
+  // Install once: global click tracking for tel:/wa.me links
+  useEffect(() => {
+    const cleanup = installGlobalClickTracking();
+    return cleanup;
+  }, []);
+
+  // Track SPA route changes as page_view
+  useEffect(() => {
+    trackPageView(pathname);
   }, [pathname]);
 
   return (
