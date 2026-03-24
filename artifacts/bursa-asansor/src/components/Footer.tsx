@@ -16,12 +16,12 @@ export function Footer() {
 
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-5">
-              <div className="bg-white/95 rounded-xl p-2.5 shadow-sm inline-block">
+            <div className="flex items-center gap-2 mb-6">
+              <div className="bg-white/95 rounded-2xl p-3 md:p-4 shadow-sm inline-block">
                 <img 
                   src="/images/logo.png" 
                   alt="Bursa Mobil Asansör Logo" 
-                  className="h-10 w-auto object-contain"
+                  className="h-16 md:h-20 w-auto object-contain"
                 />
               </div>
             </div>
