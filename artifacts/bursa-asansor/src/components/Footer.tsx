@@ -17,13 +17,12 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-5">
-              <div className="bg-primary p-2 rounded-xl">
-                <ArrowUpToLine className="h-6 w-6 text-white" />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-display font-bold text-lg leading-tight text-white">
-                  Bursa <span className="text-primary">Mobil Asansör</span>
-                </span>
+              <div className="bg-white/95 rounded-xl p-2.5 shadow-sm inline-block">
+                <img 
+                  src="/images/logo.png" 
+                  alt="Bursa Mobil Asansör Logo" 
+                  className="h-10 w-auto object-contain"
+                />
               </div>
             </div>
             <p className="text-slate-400 text-sm mb-6 leading-relaxed">

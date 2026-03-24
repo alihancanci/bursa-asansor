@@ -84,17 +84,11 @@ export function Header() {
         <div className="flex justify-between items-center h-16">
           
           <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="bg-primary p-2 rounded-xl group-hover:bg-orange-600 transition-colors">
-              <ArrowUpToLine className="h-6 w-6 text-white" />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-display font-bold text-lg leading-tight text-secondary dark:text-white">
-                Bursa <span className="text-primary">Mobil Asansör</span>
-              </span>
-              <span className="text-xs text-slate-500 dark:text-slate-300 font-medium uppercase tracking-wider">
-                {t('nav.subtitle', 'Kiralama Hizmetleri')}
-              </span>
-            </div>
+            <img 
+              src="/images/logo.png" 
+              alt="Bursa Mobil Asansör Logo" 
+              className="h-10 md:h-12 w-auto object-contain drop-shadow-sm rounded-lg hover:scale-105 transition-transform"
+            />
           </Link>
 
           <div className="flex items-center gap-2 md:gap-4">
