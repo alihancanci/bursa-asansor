@@ -6,6 +6,7 @@ import { CTASection } from "@/components/CTASection";
 import { SearchFilter } from "@/components/SearchFilter";
 import { FeaturesBar } from "@/components/FeaturesBar";
 import { ServiceMap } from "@/components/ServiceMap";
+import { Testimonials } from "@/components/Testimonials";
 import { DISTRICTS, PHONE_NUMBER, SERVICES, WHATSAPP_LINK } from "@/data";
 import { ArrowRight, CheckCircle2, ArrowUpToLine } from "lucide-react";
 import { getAbsoluteAssetUrl } from "@/lib/seo";
@@ -57,7 +58,7 @@ export default function Home() {
 
   return (
     <>
-      <SEO 
+      <SEO
         title={t('meta.home_title', 'Bursa Mobil Asansör Kiralama | 7/24 Asansörlü Nakliyat')}
         description={t('meta.home_desc', 'Bursa\'da 7/24 mobil asansör kiralama hizmeti. 15. kata kadar ulaşım, uzman operatörlü. Evden eve asansörlü nakliyat ve saatlik kiralama için hemen arayın.')}
         path="/"
@@ -65,7 +66,7 @@ export default function Home() {
         schema={[localBusinessSchema, websiteSchema]}
       />
       {/* Hero Section */}
-      <section className="relative pt-32 pb-32 lg:pt-40 lg:pb-40 overflow-hidden">
+      <section className="relative pt-24 pb-32 lg:pt-32 lg:pb-40 overflow-hidden">
         {/* Background Image & Overlay */}
         <div className="absolute inset-0 z-0">
           <picture>
@@ -94,18 +95,18 @@ export default function Home() {
                 <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
                 <span className="text-sm font-semibold tracking-wide">{t('home.active_in_all', 'Bursa ve Tüm İlçelerinde Aktif')}</span>
               </div>
-              
+
               <h1 className="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-white leading-[1.1] mb-6">
-                {t('hero.title1', "Bursa'nın Lider")} <br/>
+                {t('hero.title1', "Bursa'nın Lider")} <br />
                 <span className="text-gradient">{t('hero.title2', "Mobil Asansör")}</span> {t('hero.title3', "Kiralama Firması")}
               </h1>
-              
+
               <p className="text-lg sm:text-xl text-slate-300 mb-10 leading-relaxed max-w-2xl">
                 {t('hero.subtitle', "Dar sokaklar, yüksek binalar dert değil! 15. kata kadar güvenli ve hızlı mobil asansör kiralama ve nakliyat çözümleri sunuyoruz.")}
               </p>
 
               <CTASection className="max-w-xl" />
-              
+
               <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-400 font-medium">
                 <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> {t('features.f2_title', '7/24 Hizmet')}</div>
                 <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> {t('features.f1_title', '15. Kata Kadar')}</div>
@@ -178,7 +179,7 @@ export default function Home() {
             <img src={`${import.meta.env.BASE_URL}images/service-abstract.png`} alt="Bursa mobil asansör hizmeti için soyut görsel" loading="lazy" decoding="async" className="w-full h-full object-cover" />
           </picture>
         </div>
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -192,7 +193,7 @@ export default function Home() {
                 <CTASection />
               </div>
             </div>
-            
+
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white dark:bg-navy-light p-6 rounded-3xl shadow-lg border border-border dark:border-white/10 text-center transform translate-y-8">
                 <div className="text-4xl font-display font-black text-primary mb-2">15.</div>
@@ -200,7 +201,7 @@ export default function Home() {
               </div>
               <div className="bg-secondary p-6 rounded-3xl shadow-lg text-center">
                 <div className="text-4xl font-display font-black text-white mb-2">7/24</div>
-                <div className="font-semibold text-slate-100">{t('features.f2_title', 'Kesintisiz')}<br/>Hizmet</div>
+                <div className="font-semibold text-slate-100">{t('features.f2_title', 'Kesintisiz')}<br />Hizmet</div>
               </div>
               <div className="bg-primary p-6 rounded-3xl shadow-lg text-center transform translate-y-8">
                 <div className="text-4xl font-display font-black text-white mb-2">%100</div>
@@ -226,6 +227,8 @@ export default function Home() {
         </div>
       </section>
 
+      <Testimonials />
+
       {/* Districts Grid */}
       <section className="py-20 bg-slate-50 dark:bg-navy/30 border-t border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -236,8 +239,8 @@ export default function Home() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {DISTRICTS.map(district => (
-              <Link 
-                key={district.slug} 
+              <Link
+                key={district.slug}
                 href={`/${district.slug}-kiralik-mobil-asansor`}
                 className="bg-white dark:bg-navy-light text-secondary dark:text-white py-4 px-3 rounded-2xl text-center border border-border dark:border-white/10 hover:bg-primary hover:text-white hover:border-primary dark:hover:bg-primary dark:hover:border-primary hover:shadow-md transition-all font-semibold text-sm sm:text-base"
               >
