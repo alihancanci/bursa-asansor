@@ -149,14 +149,31 @@ function buildPages() {
     }
   }
 
-  // Blog posts — TR only (content is Turkish)
-  for (const s of BLOG_SLUGS) {
-    pages.push({
-      path: `/blog/${s}`,
-      title: `${s.replace(/-/g, ' ')} | Blog · Bursa Mobil Asansör`,
-      description: 'Bursa mobil asansör hakkında detaylı rehber yazısı.',
-      lang: 'tr',
-    });
+  // Blog posts — ALL languages (to match sitemap 1:1)
+  for (const lang of LANGS) {
+    const p = lang.prefix;
+    const lc = lang.code;
+    for (const s of BLOG_SLUGS) {
+      const humanTitle = s.replace(/-/g, ' ').replace(/^./, c => c.toUpperCase());
+      const titleMap = {
+        tr: `${humanTitle} | Blog · Bursa Mobil Asansör`,
+        en: `${humanTitle} | Blog · Bursa Mobile Elevator`,
+        ar: `${humanTitle} | المدونة · مصعد بورصة`,
+        ru: `${humanTitle} | Блог · Мобильный лифт Бурса`,
+      };
+      const descMap = {
+        tr: 'Bursa mobil asansör hakkında detaylı rehber yazısı.',
+        en: 'Detailed guide about mobile elevator services in Bursa.',
+        ar: 'دليل مفصل حول خدمات المصاعد المتنقلة في بورصة.',
+        ru: 'Подробное руководство по мобильным лифтам в Бурсе.',
+      };
+      pages.push({
+        path: `${p}/blog/${s}`,
+        title: titleMap[lc],
+        description: descMap[lc],
+        lang: lc,
+      });
+    }
   }
 
   return pages;

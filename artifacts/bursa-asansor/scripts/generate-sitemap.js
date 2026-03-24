@@ -39,18 +39,16 @@ function extractSlugs(arrayName) {
 const DISTRICT_SLUGS = extractSlugs('DISTRICTS');
 const SERVICE_SLUGS  = extractSlugs('SERVICES');
 
-// Blog slugs stay hardcoded — they live in a separate data/blog.ts file
-// and change rarely.  Update here whenever you add a new post.
-const BLOG_SLUGS = [
-  "asansorlu-tasimacilik-nasil-yapilir-kilavuz",
-  "asansor-kiralama-fiyatlari-2026",
-  "mobil-asansor-kacinci-kata-kadar-cikar",
-  "tasinirken-esyalar-nasil-paketlenir",
-  "mobil-asansor-vs-sepetli-vinc",
-  "yuksek-katli-binalarda-tasinma-kurallari",
-  "insaat-malzemesi-tasima-cozumleri",
-  "bursa-ici-en-ucuz-asansor-kiralama",
-];
+// Blog slugs — parsed from blog.ts (single source of truth)
+const blogFile = fs.readFileSync(
+  path.resolve(__dirname, '../src/data/blog.ts'), 'utf8'
+);
+const BLOG_SLUGS = [];
+{
+  const re = /slug:\s*["']([^"']+)["']/g;
+  let m;
+  while ((m = re.exec(blogFile)) !== null) BLOG_SLUGS.push(m[1]);
+}
 
 const STANDARD_PAGES      = ['/', '/blog'];
 const BASE_URL            = 'https://bursakiralikasansor.com';
