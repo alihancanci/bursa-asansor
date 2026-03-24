@@ -65,7 +65,7 @@ export default function Home() {
         schema={[localBusinessSchema, websiteSchema]}
       />
       {/* Hero Section */}
-      <section className="relative pt-24 pb-32 lg:pt-32 lg:pb-40 overflow-hidden">
+      <section className="relative pt-32 pb-32 lg:pt-40 lg:pb-40 overflow-hidden">
         {/* Background Image & Overlay */}
         <div className="absolute inset-0 z-0">
           <picture>

@@ -142,7 +142,7 @@ export default function ServicePage() {
       </nav>
 
       {/* Page Hero */}
-      <div className="bg-[#071320] py-12 md:py-16 border-b-4 border-primary/40 relative overflow-hidden">
+      <div className="bg-[#071320] pt-32 pb-12 md:pt-40 md:pb-16 border-b-4 border-primary/40 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <picture>
             <source srcSet={`${import.meta.env.BASE_URL}images/service-abstract.webp`} type="image/webp" />
