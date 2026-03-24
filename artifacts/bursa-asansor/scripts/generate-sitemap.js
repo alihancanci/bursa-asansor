@@ -76,6 +76,10 @@ DISTRICT_SLUGS.forEach(district => {
 function getLangLink(urlPath, lang) {
   const prefix = lang === 'tr' ? '' : `/${lang}`;
   let final = `${prefix}${urlPath}`;
+  // Strip trailing slash unless it's exactly "/"
+  if (final !== '/' && final.endsWith('/')) {
+    final = final.slice(0, -1);
+  }
   if (final === '') final = '/';
   return `${BASE_URL}${final}`;
 }

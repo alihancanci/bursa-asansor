@@ -233,6 +233,15 @@ function injectMeta(baseHtml, { title, description, path: pagePath, lang }) {
     cleaned = cleaned.replace(/\s*dir=["']rtl["']/g, '');
   }
 
+  // Inject a basic HTML skeleton for non-JS crawlers (True SSR-lite)
+  const fallbackBody = `
+    <main style="padding:20px;font-family:system-ui,sans-serif;opacity:0.01;position:absolute;z-index:-1;height:1px;overflow:hidden;">
+      <h1>${esc(title)}</h1>
+      <p>${esc(description)}</p>
+    </main>`;
+  
+  cleaned = cleaned.replace(/<div id="root">/, `<div id="root">${fallbackBody}`);
+
   return cleaned.replace(/<\/head>/, `${meta}\n  </head>`);
 }
 
