@@ -26,7 +26,7 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Bursa Mobil Asansör Ekibi",
     image: "/images/hero-bg.png",
     metaDescription: "2026 evden eve nakliyat fiyatları ne kadar? Taşınırken maliyeti düşürmenin yolları ve asansörlü taşımacılığın avantajları. Detaylı nakliyat rehberi.",
-    keywords: ["evden eve nakliyat", "nakliyat fiyatları 2026", "asansörlü nakliyat", "taşınma rehberi", "bursa evden eve nakliyat", "paketleme", "sigortalı taşıma"],
+    keywords: ["evden eve nakliyat", "nakliyat fiyatları 2026", "asansörlü nakliyat", "taşınma rehberi", "bursa evden eve nakliyat", "paketleme", "güvenilir taşıma"],
     content: `
       <h2>2026 Yılında Ev Taşımanın Zorlukları ve Çözümleri</h2>
       <p>Yeni bir eve taşınmak hayatımızdaki en stresli süreçlerden biridir. Eşyaların toplanması, paketlenmesi, doğru nakil aracının bulunması ve yerleştirilmesi ciddi bir organizasyon gerektirir. 2026 yılı itibarıyla, şehirleşmenin hızlanması ve çok katlı binaların artması, geleneksel <strong>evden eve nakliyat</strong> yöntemlerini yetersiz kılmaktadır.</p>
@@ -42,7 +42,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <li><strong>Ek Hizmetler (Paketleme ve Montaj):</strong> Eşyaların güvenli bir şekilde de-monte edilip, köpüklü patpat (ambalajlama vb. LSI) malzemelerle sarılması taşımanın seyrini değiştirir. Özellikle beyaz eşya ve mobilyalar (gardırop vb.) için profesyonel marangoz desteği almanız faydalı olacaktır.</li>
       </ul>
 
-      <h3>Neden Sigortalı ve Kurumsal Firmalarla Çalışmalısınız?</h3>
+      <h3>Neden Sözleşmeli ve Kurumsal Firmalarla Çalışmalısınız?</h3>
       <p>Merdiven altı firmalarla çalışmak, kısa vadede tasarruf sağlasa da eşyalarınızın (%100 hasarsız taşıma vaadine rağmen) hasar görmesi durumunda karşınızda muhatap bulamamanıza neden olabilir. Sitemizin ana sayfasındaki <a href="/#map" class="text-primary font-semibold hover:underline">Hizmet Ağımız</a> haritasından da görebileceğiniz üzere, Bursa'nın tüm ilçelerine profesyonel ve sözleşmeli hizmet veriyoruz. Değerli elektronik eşyalarınız ve mobilyalarınız uzman ellere emanet.</p>
 
       <h2>Paketleme Konusunda Altın Kurallar</h2>

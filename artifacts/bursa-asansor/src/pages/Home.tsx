@@ -94,7 +94,7 @@ export default function Home() {
               </h1>
               
               <p className="text-lg sm:text-xl text-slate-300 mb-10 leading-relaxed max-w-2xl">
-                {t('hero.subtitle', "Dar sokaklar, yüksek binalar dert değil! 15. kata kadar güvenli, hızlı ve sigortalı mobil asansör kiralama ve nakliyat çözümleri sunuyoruz.")}
+                {t('hero.subtitle', "Dar sokaklar, yüksek binalar dert değil! 15. kata kadar güvenli ve hızlı mobil asansör kiralama ve nakliyat çözümleri sunuyoruz.")}
               </p>
 
               <CTASection className="max-w-xl" />

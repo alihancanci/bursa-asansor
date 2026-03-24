@@ -94,7 +94,7 @@ export const DISTRICTS: District[] = [
     slug: "yenisehir", 
     name: "Yenişehir",
     neighborhoods: ["Yenigün", "Kurtuluş", "Çayır", "Tabakhane", "Ulucami", "Yolören"],
-    seoParagraph: "Yenişehir ovasının ve havalimanı bölgesinin getirdiği ticari hareketlilik, hem ofis taşımacılığını hem de ev nakliyesini canlandırmıştır. İşletmelerin kıymetli ofis mobilyalarını veya ev eşyalarınızı, Yenişehir'de her sokağa uyum sağlayan teleskopik asansörlerimizle güvenle ve sigortalı kalitesinde katlara çıkarıyoruz."
+    seoParagraph: "Yenişehir ovasının ve havalimanı bölgesinin getirdiği ticari hareketlilik, hem ofis taşımacılığını hem de ev nakliyesini canlandırmıştır. İşletmelerin kıymetli ofis mobilyalarını veya ev eşyalarınızı, Yenişehir'de her sokağa uyum sağlayan teleskopik asansörlerimizle güvenle ve profesyonel kalitede katlara çıkarıyoruz."
   },
   { 
     slug: "kestel", 
