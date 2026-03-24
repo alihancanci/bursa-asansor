@@ -68,11 +68,18 @@ export default function Home() {
       <section className="relative pt-24 pb-32 lg:pt-32 lg:pb-40 overflow-hidden">
         {/* Background Image & Overlay */}
         <div className="absolute inset-0 z-0">
-          <img 
-            src={`${import.meta.env.BASE_URL}images/hero-bg.png`} 
-            alt="Bursa Mobil Asansör" 
-            className="w-full h-full object-cover"
-          />
+          <picture>
+            <source srcSet={`${import.meta.env.BASE_URL}images/hero-bg.webp`} type="image/webp" />
+            <img
+              src={`${import.meta.env.BASE_URL}images/hero-bg.png`}
+              alt="Bursa Mobil Asansör — Kiralık Mobil Asansör Hizmeti"
+              width={1920}
+              height={1080}
+              fetchPriority="high"
+              decoding="async"
+              className="w-full h-full object-cover"
+            />
+          </picture>
           <div className="absolute inset-0 hero-overlay" />
         </div>
 

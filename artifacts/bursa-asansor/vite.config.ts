@@ -66,11 +66,23 @@ export default defineConfig({
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
     chunkSizeWarningLimit: 1000,
+    // Minification — esbuild is fastest and produces very compact output
+    minify: "esbuild",
+    cssMinify: true,
+    // No source maps in production (reduces bundle size & hides source)
+    sourcemap: false,
+    // Inline small assets (<4 KB) as base64 to save round-trips
+    assetsInlineLimit: 4096,
     rollupOptions: {
       output: {
+        // Content-hash filenames → safe for "immutable" Cache-Control
+        entryFileNames:  "assets/[name]-[hash].js",
+        chunkFileNames:  "assets/[name]-[hash].js",
+        assetFileNames:  "assets/[name]-[hash][extname]",
         manualChunks: {
           leaflet: ["leaflet"],
-          vendor: ["react", "react-dom", "framer-motion", "lucide-react"],
+          i18n: ["i18next", "react-i18next", "i18next-browser-languagedetector", "i18next-http-backend"],
+          vendor: ["react", "react-dom", "framer-motion", "lucide-react", "wouter"],
         },
       },
     },
