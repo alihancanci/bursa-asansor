@@ -6,8 +6,10 @@ import { CTASection } from "@/components/CTASection";
 import { SearchFilter } from "@/components/SearchFilter";
 import { FeaturesBar } from "@/components/FeaturesBar";
 import { ServiceMap } from "@/components/ServiceMap";
+import { OperationCard } from "@/components/OperationCard";
+import { useOperations } from "@/hooks/useOperations";
 import { DISTRICTS, PHONE_NUMBER, SERVICES, WHATSAPP_LINK } from "@/data";
-import { ArrowRight, CheckCircle2, ArrowUpToLine } from "lucide-react";
+import { ArrowRight, CheckCircle2, ArrowUpToLine, Loader2 } from "lucide-react";
 import { getAbsoluteAssetUrl } from "@/lib/seo";
 
 export default function Home() {
@@ -151,6 +153,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Son Operasyonlar Section */}
+      <LastOperationsSection />
+
       {/* Trust Content Section */}
       <section className="py-24 relative overflow-hidden opacity-[1] bg-[#000000c9]">
         <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-full opacity-10 pointer-events-none">
@@ -226,5 +232,73 @@ export default function Home() {
         </div>
       </section>
     </>
+  );
+}
+
+// ─── Son Operasyonlar Section ───────────────────────────────────────────────
+function LastOperationsSection() {
+  const { data, isLoading } = useOperations({ limit: 3 });
+  const ops = data?.records ?? [];
+
+  if (!isLoading && ops.length === 0) return null;
+
+  return (
+    <section className="py-20 bg-white dark:bg-background">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-end justify-between mb-12">
+          <div>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold mb-4">
+              <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+              Gerçek İşlerimiz
+            </div>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-secondary dark:text-white">
+              Bursa'da Son Operasyonlar
+            </h2>
+            <p className="text-slate-600 dark:text-slate-300 mt-2">
+              Tamamladığımız son asansör kurulumları ve nakliyat işlerinden örnekler.
+            </p>
+          </div>
+          <Link
+            href="/operasyonlar"
+            className="hidden sm:flex items-center gap-2 text-sm font-bold text-primary hover:text-orange-600 transition-colors shrink-0 ml-4"
+          >
+            Tüm Operasyonları Gör
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+
+        {isLoading ? (
+          <div className="flex justify-center py-16">
+            <Loader2 className="w-8 h-8 text-primary animate-spin" />
+          </div>
+        ) : (
+          <>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {ops.map((op, i) => (
+                <motion.div
+                  key={op.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: i * 0.1 }}
+                >
+                  <OperationCard operation={op} compact />
+                </motion.div>
+              ))}
+            </div>
+
+            <div className="mt-10 text-center sm:hidden">
+              <Link
+                href="/operasyonlar"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-bold rounded-xl hover:bg-orange-600 transition-colors"
+              >
+                Tüm Operasyonları Gör
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </>
+        )}
+      </div>
+    </section>
   );
 }

@@ -4,6 +4,8 @@ import { useTranslation } from "react-i18next";
 import { DISTRICTS, PHONE_NUMBER, SERVICES, WHATSAPP_LINK } from "@/data";
 import { CTASection } from "@/components/CTASection";
 import { FeaturesBar } from "@/components/FeaturesBar";
+import { OperationCard } from "@/components/OperationCard";
+import { useOperations } from "@/hooks/useOperations";
 import { ChevronRight, ArrowRight, CheckCircle2, Phone, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 import { getAbsoluteAssetUrl, getCanonicalUrl } from "@/lib/seo";
@@ -337,9 +339,43 @@ export default function ServicePage() {
               </div>
             </div>
 
+            {/* District recent operations */}
+            <DistrictOperations districtSlug={district.slug} districtName={district.name} />
+
           </div>
         </div>
       </div>
     </>
+  );
+}
+
+// ─── District Operations Widget ─────────────────────────────────────────────
+function DistrictOperations({ districtSlug, districtName }: { districtSlug: string; districtName: string }) {
+  const { data, isLoading } = useOperations({ limit: 3, districtSlug });
+  const ops = data?.records ?? [];
+
+  if (isLoading || ops.length === 0) return null;
+
+  return (
+    <div className="bg-white dark:bg-navy-light rounded-2xl p-5 border-2 border-primary/20 dark:border-primary/20">
+      <h3 className="font-display font-bold text-base text-gray-900 dark:text-white mb-1 flex items-center gap-2">
+        <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+        {districtName}'daki Son İşlerimiz
+      </h3>
+      <p className="text-xs text-slate-500 dark:text-slate-400 mb-4">
+        Bu bölgede tamamladığımız son operasyonlar
+      </p>
+      <div className="space-y-4">
+        {ops.map(op => (
+          <OperationCard key={op.id} operation={op} compact />
+        ))}
+      </div>
+      <Link
+        href="/operasyonlar"
+        className="mt-4 flex items-center gap-1 text-xs font-bold text-primary hover:text-orange-600 transition-colors"
+      >
+        Tüm operasyonları gör →
+      </Link>
+    </div>
   );
 }

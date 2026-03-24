@@ -8,6 +8,7 @@ import Home from "@/pages/Home";
 import ServicePage from "@/pages/ServicePage";
 import BlogIndex from "@/pages/BlogIndex";
 import BlogPost from "@/pages/BlogPost";
+import Operations from "@/pages/Operations";
 import NotFound from "@/pages/not-found";
 
 const queryClient = new QueryClient();
@@ -19,6 +20,7 @@ function Router() {
         <Route path="/" component={Home} />
         <Route path="/blog" component={BlogIndex} />
         <Route path="/blog/:slug" component={BlogPost} />
+        <Route path="/operasyonlar" component={Operations} />
         {/* Dynamic catch-all for /:district-:service */}
         <Route path="/:slug" component={ServicePage} />
         <Route component={NotFound} />
