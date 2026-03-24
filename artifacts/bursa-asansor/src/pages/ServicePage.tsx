@@ -49,12 +49,12 @@ export default function ServicePage() {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: service.faqs.map((faq) => ({
+    mainEntity: service.faqs.map((faq, idx) => ({
       "@type": "Question",
-      name: faq.q,
+      name: t(`services.${service.slug}.faqs.${idx}.q`, faq.q),
       acceptedAnswer: {
         "@type": "Answer",
-        text: faq.a,
+        text: t(`services.${service.slug}.faqs.${idx}.a`, faq.a),
       },
     })),
   };
@@ -198,16 +198,16 @@ export default function ServicePage() {
                 </h3>
                 <p className="text-slate-100 dark:text-slate-300 leading-relaxed text-lg mb-6">
                   {service.category === 'asansor' 
-                    ? `${district.name} bölgesindeki yapıların çoğunlukla dar balkon girişlerine veya yüksek katlı mimariye sahip olduğunun bilincindeyiz. Bu yüzden asansör kurulumu öncesinde çevre güvenliğini sağlıyor ve mobilyalarınızın binanın iç asansörüne sığmadığı durumlarda dış cepheden %100 güvenli transfer gerçekleştiriyoruz.`
-                    : `${district.name} lokasyonunda nakliye sürecini planlarken sadece eşya taşımıyor, bölgenin trafik saatlerini ve park yasaklarını da hesaba katıyoruz. Deneyimli ekibimizle eşyalarınızı paketliyor, asansörlü sistemimizle sıfır riskle yeni adresinize ulaştırıyoruz.`
+                    ? t('service_page.category_elevator_desc', `${district.name} bölgesindeki yapıların çoğunlukla dar balkon girişlerine veya yüksek katlı mimariye sahip olduğunun bilincindeyiz. Bu yüzden asansör kurulumu öncesinde çevre güvenliğini sağlıyor ve mobilyalarınızın binanın iç asansörüne sığmadığı durumlarda dış cepheden %100 güvenli transfer gerçekleştiriyoruz.`, { district: district.name })
+                    : t('service_page.category_moving_desc', `${district.name} lokasyonunda nakliye sürecini planlarken sadece eşya taşımıyor, bölgenin trafik saatlerini ve park yasaklarını da hesaba katıyoruz. Deneyimli ekibimizle eşyalarınızı paketliyor, asansörlü sistemimizle sıfır riskle yeni adresinize ulaştırıyoruz.`, { district: district.name })
                   }
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <div className="bg-white/10 px-4 py-2 rounded-lg text-sm font-semibold backdrop-blur-sm border border-white/20">
-                    Bölgesel Keşif Dahil
+                    {t('service_page.regional_survey', 'Bölgesel Keşif Dahil')}
                   </div>
                   <div className="bg-white/10 px-4 py-2 rounded-lg text-sm font-semibold backdrop-blur-sm border border-white/20">
-                    {district.name} Hızlı Geniş Araç Filosu
+                    {district.name} {t('service_page.fast_fleet', 'Hızlı Geniş Araç Filosu')}
                   </div>
                 </div>
               </div>
@@ -308,7 +308,7 @@ export default function ServicePage() {
                       href={`/${district.slug}-${s.slug}`}
                       className="flex items-center justify-between group py-1.5 text-gray-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium"
                     >
-                      <span className="truncate pr-4">{s.name}</span>
+                      <span className="truncate pr-4">{t(`services.${s.slug}.name`, s.name)}</span>
                       <ArrowRight className="h-4 w-4 shrink-0 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-primary" />
                     </Link>
                   </li>

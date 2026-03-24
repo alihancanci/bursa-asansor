@@ -35,5 +35,11 @@
     "faq": "Sıkça Sorulan Sorular",
     "tags": "Etiketler",
     "read_more": "Devamını Oku"
+  },
+  "service_page": {
+    "category_elevator_desc": "{{district}} bölgesindeki yapıların çoğunlukla dar balkon girişlerine veya yüksek katlı mimariye sahip olduğunun bilincindeyiz. Bu yüzden asansör kurulumu öncesinde çevre güvenliğini sağlıyor ve mobilyalarınızın binanın iç asansörüne sığmadığı durumlarda dış cepheden %100 güvenli transfer gerçekleştiriyoruz.",
+    "category_moving_desc": "{{district}} lokasyonunda nakliye sürecini planlarken sadece eşya taşımıyor, bölgenin trafik saatlerini ve park yasaklarını da hesaba katıyoruz. Deneyimli ekibimizle eşyalarınızı paketliyor, asansörlü sistemimizle sıfır riskle yeni adresinize ulaştırıyoruz.",
+    "regional_survey": "Bölgesel Keşif Dahil",
+    "fast_fleet": "Hızlı Geniş Araç Filosu"
   }
 }
