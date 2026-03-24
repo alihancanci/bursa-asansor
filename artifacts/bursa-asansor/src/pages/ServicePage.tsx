@@ -116,7 +116,10 @@ export default function ServicePage() {
       {/* Page Hero */}
       <div className="bg-[#071320] py-12 md:py-16 border-b-4 border-primary/40 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <img src={`${import.meta.env.BASE_URL}images/service-abstract.png`} alt="" className="w-full h-full object-cover" />
+          <picture>
+            <source srcSet={`${import.meta.env.BASE_URL}images/service-abstract.webp`} type="image/webp" />
+            <img src={`${import.meta.env.BASE_URL}images/service-abstract.png`} alt="" loading="lazy" decoding="async" className="w-full h-full object-cover" />
+          </picture>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.h1

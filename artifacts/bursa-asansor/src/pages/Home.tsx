@@ -161,7 +161,10 @@ export default function Home() {
       {/* Trust Content Section */}
       <section className="py-24 relative overflow-hidden opacity-[1] bg-[#000000c9]">
         <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-full opacity-10 pointer-events-none">
-           <img src={`${import.meta.env.BASE_URL}images/service-abstract.png`} alt="Bursa mobil asansör hizmeti için soyut görsel" className="w-full h-full object-cover" />
+          <picture>
+            <source srcSet={`${import.meta.env.BASE_URL}images/service-abstract.webp`} type="image/webp" />
+            <img src={`${import.meta.env.BASE_URL}images/service-abstract.png`} alt="Bursa mobil asansör hizmeti için soyut görsel" loading="lazy" decoding="async" className="w-full h-full object-cover" />
+          </picture>
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
