@@ -4,15 +4,75 @@ import { Link } from "wouter";
 import { CTASection } from "@/components/CTASection";
 import { SearchFilter } from "@/components/SearchFilter";
 import { FeaturesBar } from "@/components/FeaturesBar";
-import { DISTRICTS, SERVICES } from "@/data";
+import { DISTRICTS, PHONE_NUMBER, SERVICES, WHATSAPP_LINK } from "@/data";
 import { ArrowRight, CheckCircle2, ArrowUpToLine } from "lucide-react";
+import { getAbsoluteAssetUrl, getCanonicalUrl } from "@/lib/seo";
 
 export default function Home() {
+  const canonicalUrl = getCanonicalUrl("/");
+  const ogImage = getAbsoluteAssetUrl("/opengraph.jpg");
+
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "MovingCompany",
+    name: "Bursa Mobil Asansör",
+    areaServed: DISTRICTS.map((district) => district.name),
+    telephone: PHONE_NUMBER,
+    url: canonicalUrl,
+    image: ogImage,
+    sameAs: [WHATSAPP_LINK],
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Bursa",
+      addressCountry: "TR",
+    },
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday",
+        ],
+        opens: "00:00",
+        closes: "23:59",
+      },
+    ],
+  };
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Bursa Mobil Asansör",
+    url: canonicalUrl,
+    inLanguage: "tr-TR",
+  };
+
   return (
     <>
       <Helmet>
         <title>Bursa Mobil Asansör Kiralama | 7/24 Asansörlü Nakliyat</title>
         <meta name="description" content="Bursa'da 7/24 mobil asansör kiralama hizmeti. 15. kata kadar ulaşım, uzman operatörlü. Evden eve asansörlü nakliyat ve saatlik kiralama için hemen arayın." />
+        <meta name="keywords" content="Bursa mobil asansör, asansör kiralama Bursa, evden eve asansörlü nakliyat, saatlik asansör kiralama, dış cephe asansörü" />
+        <meta name="robots" content="index,follow,max-image-preview:large" />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="tr_TR" />
+        <meta property="og:site_name" content="Bursa Mobil Asansör" />
+        <meta property="og:title" content="Bursa Mobil Asansör Kiralama | 7/24 Asansörlü Nakliyat" />
+        <meta property="og:description" content="Bursa'da 7/24 mobil asansör kiralama hizmeti. 15. kata kadar ulaşım, uzman operatörlü. Evden eve asansörlü nakliyat ve saatlik kiralama için hemen arayın." />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:image" content={ogImage} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Bursa Mobil Asansör Kiralama | 7/24 Asansörlü Nakliyat" />
+        <meta name="twitter:description" content="Bursa'da 7/24 mobil asansör kiralama hizmeti. 15. kata kadar ulaşım, uzman operatörlü." />
+        <meta name="twitter:image" content={ogImage} />
+        <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
       </Helmet>
       {/* Hero Section */}
       <section className="relative pt-24 pb-32 lg:pt-32 lg:pb-40 overflow-hidden">
@@ -104,7 +164,7 @@ export default function Home() {
       {/* Trust Content Section */}
       <section className="py-24 relative overflow-hidden opacity-[1] bg-[#000000c9]">
         <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-full opacity-10 pointer-events-none">
-           <img src={`${import.meta.env.BASE_URL}images/service-abstract.png`} alt="Abstract" className="w-full h-full object-cover" />
+           <img src={`${import.meta.env.BASE_URL}images/service-abstract.png`} alt="Bursa mobil asansör hizmeti için soyut görsel" className="w-full h-full object-cover" />
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

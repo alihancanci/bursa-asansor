@@ -5,6 +5,7 @@ import { CTASection } from "@/components/CTASection";
 import { FeaturesBar } from "@/components/FeaturesBar";
 import { ChevronRight, ArrowRight, CheckCircle2, Phone, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
+import { getAbsoluteAssetUrl, getCanonicalUrl } from "@/lib/seo";
 
 export default function ServicePage() {
   const params = useParams<{ slug: string }>();
@@ -27,14 +28,68 @@ export default function ServicePage() {
 
   const pageTitle = `${service.name} | ${district.name} | Bursa Mobil Asansör`;
   const metaDescription = `${district.name} bölgesinde ${service.name.toLowerCase()} hizmeti alın. 7/24 hizmet, 15. kata kadar, operatörlü çalışma. Hemen arayın!`;
+  const canonicalUrl = getCanonicalUrl(`/${fullSlug}`);
+  const ogImage = getAbsoluteAssetUrl("/opengraph.jpg");
   
   const htmlContent = service.template.replace(/{district}/g, district.name);
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: service.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.a,
+      },
+    })),
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Ana Sayfa",
+        item: getCanonicalUrl("/"),
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: district.name,
+        item: canonicalUrl,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: service.name,
+        item: canonicalUrl,
+      },
+    ],
+  };
 
   return (
     <>
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content={metaDescription} />
+        <meta name="robots" content="index,follow,max-image-preview:large" />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="tr_TR" />
+        <meta property="og:site_name" content="Bursa Mobil Asansör" />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:image" content={ogImage} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={metaDescription} />
+        <meta name="twitter:image" content={ogImage} />
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
       {/* Breadcrumb strip */}

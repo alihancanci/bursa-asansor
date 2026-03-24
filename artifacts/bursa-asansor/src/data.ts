@@ -12,8 +12,8 @@ export interface Service {
   category: "asansor" | "nakliyat";
 }
 
-export const PHONE_NUMBER = "0 (224) 444 00 00";
-export const WHATSAPP_LINK = "https://wa.me/902244440000";
+export const PHONE_NUMBER = "05053297533";
+export const WHATSAPP_LINK = "https://wa.me/905053297533";
 
 export const DISTRICTS: District[] = [
   { slug: "bursa-merkez", name: "Bursa (Merkez)" },
