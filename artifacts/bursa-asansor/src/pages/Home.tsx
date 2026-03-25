@@ -2,6 +2,7 @@ import { SEO } from "@/components/SEO";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
 import { CTASection } from "@/components/CTASection";
 import { SearchFilter } from "@/components/SearchFilter";
 import { FeaturesBar } from "@/components/FeaturesBar";
@@ -14,6 +15,11 @@ import { getAbsoluteAssetUrl } from "@/lib/seo";
 
 export default function Home() {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    console.log("HOMEPAGE LOADED V2.2");
+    // window.alert("Bursa Asansör V2.2 Yüklendi!");
+  }, []);
 
   const ogImage = getAbsoluteAssetUrl("/opengraph.jpg");
 
@@ -66,6 +72,9 @@ export default function Home() {
         ogImage={ogImage}
         schema={[localBusinessSchema, websiteSchema]}
       />
+      <div className="bg-red-600 text-white p-4 text-center font-bold z-[9999] relative">
+        SISTEM GÜNCELLENDI V2.2 - BU YAZIYI GÖREBILIYORSANIZ LÜTFEN ASAGI KAYDIRIN
+      </div>
       {/* Hero Section */}
       <section className="relative pt-24 pb-32 lg:pt-32 lg:pb-40 overflow-hidden">
         {/* Background Image & Overlay */}
@@ -98,6 +107,7 @@ export default function Home() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-white leading-[1.1] mb-6">
+                TEST: BURSA ASANSÖR V2.1 <br />
                 {t('hero.title1', "Bursa'nın Lider")} <br />
                 <span className="text-gradient">{t('hero.title2', "Mobil Asansör")}</span> {t('hero.title3', "Kiralama Firması")}
               </h1>
