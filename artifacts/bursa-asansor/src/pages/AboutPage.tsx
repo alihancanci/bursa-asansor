@@ -70,7 +70,7 @@ export default function AboutPage() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h2 className="text-3xl lg:text-4xl font-display font-bold text-secondary dark:text-white mb-6">
+            <h2 className="text-3xl lg:text-4xl font-display font-bold text-slate-900 dark:text-white mb-6">
               Biz Kimiz?
             </h2>
             <div className="prose prose-lg dark:prose-invert prose-p:text-slate-600 dark:prose-p:text-slate-400">
@@ -93,7 +93,7 @@ export default function AboutPage() {
               <div className="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center mb-6 shadow-lg shadow-primary/30">
                 <ArrowUpToLine className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-bold text-secondary dark:text-white mb-3">Misyonumuz</h3>
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">Misyonumuz</h3>
               <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">
                 Bursa'nın her noktasına, eşyalara sıfır zarar garantisiyle, en hızlı ve yenilikçi asansörlü taşıma hizmetini sunmak.
               </p>
@@ -103,7 +103,7 @@ export default function AboutPage() {
               <div className="w-12 h-12 rounded-2xl bg-secondary dark:bg-slate-700 text-white flex items-center justify-center mb-6 shadow-lg shadow-black/10">
                 <Globe className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-bold text-secondary dark:text-white mb-3">Vizyonumuz</h3>
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">Vizyonumuz</h3>
               <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">
                 Marmara bölgesinde nakliyat ve asansör kiralama denilince akla gelen ilk, en teknolojik ve en güvenilir marka olmak.
               </p>
@@ -116,7 +116,7 @@ export default function AboutPage() {
       <section className="py-16 lg:py-24 bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl lg:text-4xl font-display font-bold text-secondary dark:text-white mb-4">
+            <h2 className="text-3xl lg:text-4xl font-display font-bold text-slate-900 dark:text-white mb-4">
               Neden <span className="text-primary">CNC?</span>
             </h2>
             <p className="text-lg text-slate-600 dark:text-slate-400">
@@ -136,7 +136,7 @@ export default function AboutPage() {
                 <div className="w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                   <feature.icon className="w-7 h-7" />
                 </div>
-                <h3 className="text-xl font-bold text-secondary dark:text-white mb-3">
+                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">
                   {feature.title}
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">

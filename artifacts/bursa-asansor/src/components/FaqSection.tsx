@@ -92,7 +92,7 @@ export function FaqSection() {
           {/* FAQ Accordion */}
           <div>
             <div className="mb-10">
-              <h2 className="text-3xl md:text-5xl font-display font-bold text-secondary dark:text-white mb-4">
+              <h2 className="text-3xl md:text-5xl font-display font-bold text-slate-900 dark:text-white mb-4">
                 Sıkça Sorulan <span className="text-primary">Sorular</span>
               </h2>
               <p className="text-slate-600 dark:text-slate-400 text-lg">
@@ -111,7 +111,7 @@ export function FaqSection() {
                     className="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none"
                     aria-expanded={openIndex === idx}
                   >
-                    <span className="font-semibold text-secondary dark:text-white pr-8 text-sm sm:text-base">
+                    <span className="font-semibold text-slate-900 dark:text-white pr-8 text-sm sm:text-base">
                       {faq.q}
                     </span>
                     <ChevronDown className={`w-5 h-5 text-primary flex-shrink-0 transition-transform duration-300 ${openIndex === idx ? 'rotate-180' : ''}`} />
