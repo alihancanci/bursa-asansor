@@ -70,7 +70,7 @@ export default function AboutPage() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h2 className="text-3xl lg:text-5xl font-display font-black text-black dark:text-white mb-6">
+            <h2 className="text-3xl lg:text-5xl font-display font-black text-slate-900 mb-6">
               Biz Kimiz?
             </h2>
             <div className="prose prose-lg dark:prose-invert prose-p:text-black dark:prose-p:text-slate-300 font-medium">
@@ -93,18 +93,18 @@ export default function AboutPage() {
               <div className="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center mb-6 shadow-lg shadow-primary/30">
                 <Target className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">Misyonumuz</h3>
-              <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-sm">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Misyonumuz</h3>
+              <p className="text-slate-700 leading-relaxed text-sm">
                 Bursa'nın her noktasına, eşyalara sıfır zarar garantisiyle, en hızlı ve yenilikçi asansörlü taşıma hizmetini sunmak.
               </p>
             </div>
             
-            <div className="bg-slate-50 dark:bg-slate-800/50 rounded-3xl p-8 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 transition-colors mt-0 sm:mt-8">
+            <div className="bg-slate-100 dark:bg-slate-800/50 rounded-3xl p-8 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 transition-colors mt-0 sm:mt-8">
               <div className="w-12 h-12 rounded-2xl bg-secondary dark:bg-slate-700 text-white flex items-center justify-center mb-6 shadow-lg shadow-black/10">
                 <Compass className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">Vizyonumuz</h3>
-              <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-sm">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Vizyonumuz</h3>
+              <p className="text-slate-700 leading-relaxed text-sm">
                 Marmara bölgesinde nakliyat ve asansör kiralama denilince akla gelen ilk, en teknolojik ve en güvenilir marka olmak.
               </p>
             </div>
@@ -136,10 +136,10 @@ export default function AboutPage() {
                 <div className="w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                   <feature.icon className="w-7 h-7" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">
+                <h3 className="text-xl font-bold text-slate-900 mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
+                <p className="text-slate-700 text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </motion.div>

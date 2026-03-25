@@ -92,7 +92,7 @@ export function FaqSection() {
           {/* FAQ Accordion */}
           <div>
             <div className="mb-10">
-              <h2 className="text-3xl md:text-5xl font-display font-black text-black dark:text-white mb-4">
+              <h2 className="text-3xl md:text-5xl font-display font-black text-slate-900 mb-4">
                 Sıkça Sorulan <span className="text-primary">Sorular</span>
               </h2>
               <p className="text-slate-600 dark:text-slate-400 text-lg">
