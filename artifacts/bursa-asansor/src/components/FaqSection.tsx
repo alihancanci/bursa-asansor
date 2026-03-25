@@ -71,7 +71,6 @@ export function FaqSection() {
           <div className="relative sticky top-32">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl group">
               <picture>
-                <source srcSet="/images/asansorlu-nakliyat-faq.webp" type="image/webp" />
                 <img 
                   src="/images/asansorlu-nakliyat-faq.png" 
                   alt="Sıkça Sorulan Sorular - Asansörlü Nakliyat" 

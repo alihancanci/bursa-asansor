@@ -394,7 +394,7 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Bursa Mobil Asansör Ekibi",
     readTime: "6 dk okuma",
     category: "Taşınma Rehberi",
-    image: "/images/blog/home-moving.jpg",
+    image: "/images/mutlu-aile-tasinma.png",
     metaDescription: "Bursa evden eve nakliyat rehberi. Asansörlü taşımacılık, sigortalı nakliyat ve pratik kolileme ipuçlarıyla stressiz taşının.",
     keywords: ["bursa evden eve nakliyat", "asansörlü evden eve", "bursa ev taşıma", "stressiz taşınma rehberi", "bursa nakliyat firmaları"],
     content: `
