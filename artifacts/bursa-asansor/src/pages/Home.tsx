@@ -10,7 +10,7 @@ import { ServiceMap } from "@/components/ServiceMap";
 import { Testimonials } from "@/components/Testimonials";
 import { FaqSection } from "@/components/FaqSection";
 import { DISTRICTS, PHONE_NUMBER, SERVICES, WHATSAPP_LINK } from "@/data";
-import { ArrowRight, CheckCircle2, ArrowUpToLine } from "lucide-react";
+import { ArrowRight, CheckCircle2, ArrowUpToLine, Home as HomeIcon, Sofa, Truck, HardHat, Package } from "lucide-react";
 import { getAbsoluteAssetUrl } from "@/lib/seo";
 
 export default function Home() {
@@ -56,6 +56,15 @@ export default function Home() {
     name: "Bursa Mobil Asansör",
     url: "https://bursakiralikasansor.com/",
     inLanguage: "tr-TR",
+  };
+
+  const getServiceIcon = (slug: string) => {
+    if (slug.includes('evden-eve') || slug.includes('ofis')) return HomeIcon;
+    if (slug.includes('esya') || slug.includes('mobilya') || slug.includes('beyaz')) return Sofa;
+    if (slug.includes('nakliyat') || slug.includes('nakliye') || slug.includes('kamyon')) return Truck;
+    if (slug.includes('insaat') || slug.includes('moloz') || slug.includes('tuğla')) return HardHat;
+    if (slug.includes('asansor')) return ArrowUpToLine;
+    return Package;
   };
 
   return (
@@ -134,21 +143,23 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {SERVICES.slice(0, 6).map((service, idx) => (
-              <motion.div
-                key={service.slug}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: idx * 0.1 }}
-              >
-                <Link
-                  href={`/bursa-merkez-${service.slug}`}
-                  className="block h-full bg-white dark:bg-navy-light rounded-3xl p-6 border border-border dark:border-white/10 hover:border-primary dark:hover:border-primary shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group"
+            {SERVICES.slice(0, 6).map((service, idx) => {
+              const Icon = getServiceIcon(service.slug);
+              return (
+                <motion.div
+                  key={service.slug}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: idx * 0.1 }}
                 >
-                  <div className="h-12 w-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                    <ArrowUpToLine className="h-6 w-6 text-primary group-hover:text-white" />
-                  </div>
+                  <Link
+                    href={`/bursa-merkez-${service.slug}`}
+                    className="block h-full bg-white dark:bg-navy-light rounded-3xl p-6 border border-border dark:border-white/10 hover:border-primary dark:hover:border-primary shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group"
+                  >
+                    <div className="h-12 w-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                      <Icon className="h-6 w-6 text-primary group-hover:text-white" />
+                    </div>
                   <h3 className="text-xl font-bold mb-3 text-secondary dark:text-white group-hover:text-primary transition-colors">{service.name}</h3>
                   <p className="text-slate-600 dark:text-slate-300 text-sm mb-6 line-clamp-3">{service.shortDesc}</p>
 
@@ -157,7 +168,8 @@ export default function Home() {
                   </div>
                 </Link>
               </motion.div>
-            ))}
+            );
+          })}
           </div>
 
           {/* Tüm hizmetleri gör */}
@@ -246,7 +258,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">{t('nav.districts', 'Hizmet Bölgelerimiz')}</h2>
-            <p className="dark:text-slate-300 text-lg text-[#ffffff]">{t('home.districts_desc', "Bursa'nın tüm ilçelerine en kısa sürede mobil asansör ulaştırıyoruz.")}</p>
+            <p className="dark:text-slate-300 text-lg text-slate-700">{t('home.districts_desc', "Bursa'nın tüm ilçelerine en kısa sürede mobil asansör ulaştırıyoruz.")}</p>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
