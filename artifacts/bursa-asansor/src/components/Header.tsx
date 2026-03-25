@@ -89,7 +89,7 @@ export function Header() {
             </div>
             <div className="flex flex-col">
               <span className="font-display font-black text-xl md:text-2xl tracking-tight leading-none text-secondary dark:text-white">
-                Bursa <span className="text-primary">Mobil Asansör</span> (v2)
+                Bursa <span className="text-primary">Mobil Asansör</span>
               </span>
               <span className="text-[0.65rem] text-slate-500 dark:text-slate-400 font-bold uppercase tracking-[0.2em] mt-1">
                 {t('nav.subtitle', 'Profesyonel Nakliye Ağı')}

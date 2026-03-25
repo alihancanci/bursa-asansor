@@ -16,11 +16,6 @@ import { getAbsoluteAssetUrl } from "@/lib/seo";
 export default function Home() {
   const { t } = useTranslation();
 
-  useEffect(() => {
-    console.log("HOMEPAGE LOADED V2.2");
-    // window.alert("Bursa Asansör V2.2 Yüklendi!");
-  }, []);
-
   const ogImage = getAbsoluteAssetUrl("/opengraph.jpg");
 
   const localBusinessSchema = {
@@ -72,9 +67,6 @@ export default function Home() {
         ogImage={ogImage}
         schema={[localBusinessSchema, websiteSchema]}
       />
-      <div className="bg-red-600 text-white p-4 text-center font-bold z-[9999] relative">
-        SISTEM GÜNCELLENDI V2.2 - BU YAZIYI GÖREBILIYORSANIZ LÜTFEN ASAGI KAYDIRIN
-      </div>
       {/* Hero Section */}
       <section className="relative pt-24 pb-32 lg:pt-32 lg:pb-40 overflow-hidden">
         {/* Background Image & Overlay */}
