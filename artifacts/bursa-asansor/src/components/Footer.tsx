@@ -118,42 +118,16 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 4: Popüler Bölgeler */}
-          <div className="lg:col-span-1">
+          {/* District Links */}
+          <div className="lg:col-span-2">
             <h3 className="text-sm font-bold text-white uppercase tracking-wider font-display mb-5">{t('nav.districts', 'Hizmet Bölgelerimiz')}</h3>
-            <ul className="space-y-2.5">
-              {DISTRICTS.slice(0, 7).map(d => (
-                <li key={d.slug}>
-                  <Link href={`/${d.slug}-kiralik-mobil-asansor`} className="text-slate-400 hover:text-primary transition-colors text-sm flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-slate-700 shrink-0" />
-                    {d.name}
-                  </Link>
-                </li>
-              ))}
-              <li>
-                <Link href="/" className="text-primary hover:underline text-xs font-bold uppercase tracking-widest mt-2 block">
-                  Tüm İlçeler +
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-2.5 gap-x-4">
+              {DISTRICTS.map(d => (
+                <Link key={d.slug} href={`/${d.slug}-kiralik-mobil-asansor`} className="text-slate-400 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-slate-700 shrink-0" />
+                  {d.name}
                 </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 5: İletişim */}
-          <div className="lg:col-span-1">
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider font-display mb-5">Hızlı İletişim</h3>
-            <div className="space-y-4">
-              <a href={`tel:${PHONE_NUMBER.replace(/\D/g,'')}`} className="group block">
-                <span className="text-[10px] text-slate-500 uppercase font-bold tracking-widest block mb-1">Telefon</span>
-                <span className="text-white font-bold group-hover:text-primary transition-colors">{PHONE_NUMBER}</span>
-              </a>
-              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="group block">
-                <span className="text-[10px] text-slate-500 uppercase font-bold tracking-widest block mb-1">WhatsApp</span>
-                <span className="text-[#25D366] font-bold group-hover:underline">7/24 Destek Hattı</span>
-              </a>
-              <div className="block">
-                <span className="text-[10px] text-slate-500 uppercase font-bold tracking-widest block mb-1">Adres</span>
-                <span className="text-slate-400 text-xs">Osmangazi, Bursa (Tüm İlçelere Mobil Ekip)</span>
-              </div>
+              ))}
             </div>
           </div>
 
