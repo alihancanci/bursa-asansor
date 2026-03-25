@@ -9,6 +9,7 @@ import ServicePage from "@/pages/ServicePage";
 import BlogIndex from "@/pages/BlogIndex";
 import BlogPost from "@/pages/BlogPost";
 import AboutPage from "@/pages/AboutPage";
+import WorksPage from "@/pages/WorksPage";
 import NotFound from "@/pages/not-found";
 
 const queryClient = new QueryClient();
@@ -21,6 +22,7 @@ function Router() {
         <Route path="/blog" component={BlogIndex} />
         <Route path="/blog/:slug" component={BlogPost} />
         <Route path="/hakkimizda" component={AboutPage} />
+        <Route path="/calismalarimiz" component={WorksPage} />
         {/* Dynamic catch-all for /:district-:service */}
         <Route path="/:slug" component={ServicePage} />
         <Route component={NotFound} />

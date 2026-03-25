@@ -138,6 +138,21 @@ function buildPages() {
     };
     pages.push({ path: `${p}/hakkimizda`, title: aboutT[lc], description: aboutD[lc], lang: lc });
 
+    // /calismalarimiz
+    const worksT = {
+      tr: 'Çalışmalarımız | Bursa Mobil Asansör',
+      en: 'Our Works | Bursa Mobile Elevator',
+      ar: 'أعمالنا | مصعد بورصة',
+      ru: 'Наши Работы | Мобильный лифт Бурса',
+    };
+    const worksD = {
+      tr: "Bursa'nın her noktasında gerçekleştirdiğimiz asansörlü nakliyat ve kiralık asansör çalışmalarımıza ait fotoğraflar.",
+      en: 'Photos of our elevator moving and rental elevator works carried out at every point of Bursa.',
+      ar: 'صور لأعمالنا في نقل المصاعد وتأجير المصاعد التي تم تنفيذها في كل نقطة في بورصة.',
+      ru: 'Фотографии наших работ по перевозке и аренде лифтов, выполненных в любой точке Бурсы.',
+    };
+    pages.push({ path: `${p}/calismalarimiz`, title: worksT[lc], description: worksD[lc], lang: lc });
+
     // ── ALL district × service combinations ──────────────────────────────
     for (const d of DISTRICTS) {
       for (const sSlug of SERVICE_SLUGS) {

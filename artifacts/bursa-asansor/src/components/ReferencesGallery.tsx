@@ -63,9 +63,9 @@ export function ReferencesGallery() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-3xl md:text-5xl font-display font-black text-secondary dark:text-white mb-4 italic"
+              className="text-3xl md:text-5xl font-display font-black text-black dark:text-white mb-4 italic"
             >
-              {t('references.title', 'Referanslarımız')}
+              {t('references.title', 'Çalışmalarımız')}
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -84,7 +84,7 @@ export function ReferencesGallery() {
             viewport={{ once: true }}
           >
             <Link 
-              href="/hakkimizda" 
+              href="/calismalarimiz" 
               className="inline-flex items-center gap-2 text-primary font-bold border-b-2 border-primary/20 hover:border-primary transition-all pb-1 group"
             >
               {t('references.view_all', 'Tüm Çalışmalarımızı Gör')}
