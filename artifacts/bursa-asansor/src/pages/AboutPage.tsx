@@ -70,10 +70,10 @@ export default function AboutPage() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h2 className="text-3xl lg:text-4xl font-display font-bold text-slate-900 dark:text-white mb-6">
+            <h2 className="text-3xl lg:text-5xl font-display font-black text-black dark:text-white mb-6">
               Biz Kimiz?
             </h2>
-            <div className="prose prose-lg dark:prose-invert prose-p:text-slate-800 dark:prose-p:text-slate-300">
+            <div className="prose prose-lg dark:prose-invert prose-p:text-black dark:prose-p:text-slate-300 font-medium">
               <p>
                 <strong>CNC Bursa Evden Eve Nakliyat ve Kiralık Asansör</strong> olarak, Bursa'nın zorlu ve dar sokaklarında evden eve taşımacılık sektörüne yenilikçi bir nefes getirdik. Klasik "sırtta taşıma" dönemini kapatarak, hem eşya güvenliğini hem de zaman tasarrufunu odağımıza aldık.
               </p>
