@@ -123,6 +123,21 @@ function buildPages() {
     };
     pages.push({ path: `${p}/blog`, title: blogT[lc], description: homeD[lc], lang: lc });
 
+    // /hakkimizda
+    const aboutT = {
+      tr: 'Hakkımızda | CNC Bursa Evden Eve Nakliyat',
+      en: 'About Us | CNC Bursa Mobile Elevator',
+      ar: 'معلومات عنا | مصعد بورصة',
+      ru: 'О нас | Мобильный лифт Бурса',
+    };
+    const aboutD = {
+      tr: 'CNC Bursa evden eve nakliyat ve kiralık mobil asansör hizmetleri. Güvenilir taşımacılık anlayışımız.',
+      en: 'CNC Bursa mobile elevator and moving services. Our reliable transportation approach.',
+      ar: 'خدمات مصاعد النقل من CNC في بورصة. نهجنا الموثوق في النقل.',
+      ru: 'Услуги переезда и мобильного лифта CNC Бурса. Наш надежный подход.',
+    };
+    pages.push({ path: `${p}/hakkimizda`, title: aboutT[lc], description: aboutD[lc], lang: lc });
+
     // ── ALL district × service combinations ──────────────────────────────
     for (const d of DISTRICTS) {
       for (const sSlug of SERVICE_SLUGS) {

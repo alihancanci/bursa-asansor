@@ -50,7 +50,7 @@ const BLOG_SLUGS = [];
   while ((m = re.exec(blogFile)) !== null) BLOG_SLUGS.push(m[1]);
 }
 
-const STANDARD_PAGES      = ['/', '/blog'];
+const STANDARD_PAGES      = ['/', '/blog', '/hakkimizda'];
 const BASE_URL            = 'https://bursakiralikasansor.com';
 const SUPPORTED_LANGUAGES = ['tr', 'en', 'ar', 'ru'];
 

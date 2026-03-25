@@ -101,6 +101,13 @@ export function Header() {
             <LanguageSwitcher />
 
             <Link
+              href="/hakkimizda"
+              className="hidden md:flex items-center text-sm font-bold text-slate-700 dark:text-slate-200 hover:text-primary transition-colors pr-2"
+            >
+              Hakkımızda
+            </Link>
+            
+            <Link
               href="/blog"
               className="hidden md:flex items-center text-sm font-bold text-slate-700 dark:text-slate-200 hover:text-primary transition-colors pr-2"
             >
