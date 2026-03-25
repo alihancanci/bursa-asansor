@@ -57,13 +57,13 @@ export function ReferencesGallery() {
               className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary mb-4"
             >
               <ImageIcon className="w-4 h-4" />
-              <span className="text-xs font-bold uppercase tracking-wider">{t('references.title', 'Referanslarımız')}</span>
+              <span className="text-xs font-bold uppercase tracking-wider">{t('references.title', 'Çalışmalarımız')}</span>
             </motion.div>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-3xl md:text-5xl font-display font-black text-black dark:text-white mb-4 italic"
+              className="text-3xl md:text-5xl font-display font-black text-black mb-4 italic"
             >
               {t('references.title', 'Çalışmalarımız')}
             </motion.h2>

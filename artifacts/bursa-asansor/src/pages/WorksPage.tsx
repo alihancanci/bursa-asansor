@@ -70,7 +70,7 @@ export default function WorksPage() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-6xl font-display font-black text-black dark:text-white mb-6 italic"
+            className="text-4xl md:text-6xl font-display font-black text-black mb-6 italic"
           >
             {t('references.title', 'Çalışmalarımız')}
           </motion.h1>
