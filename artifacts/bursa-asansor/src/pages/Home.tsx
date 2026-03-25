@@ -10,8 +10,9 @@ import { ServiceMap } from "@/components/ServiceMap";
 import { Testimonials } from "@/components/Testimonials";
 import { FaqSection } from "@/components/FaqSection";
 import { DISTRICTS, PHONE_NUMBER, SERVICES, WHATSAPP_LINK } from "@/data";
-import { ArrowRight, CheckCircle2, ArrowUpToLine, Home as HomeIcon, Sofa, Truck, HardHat, Package } from "lucide-react";
+import { ArrowRight, CheckCircle2, ArrowUpToLine, Home as HomeIcon, Sofa, Truck, HardHat, Package, ImageIcon } from "lucide-react";
 import { getAbsoluteAssetUrl } from "@/lib/seo";
+import { ReferencesGallery } from "@/components/ReferencesGallery";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -185,6 +186,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* References Gallery Section */}
+      <ReferencesGallery />
+
       {/* Trust Content Section */}
       <section className="py-24 relative overflow-hidden opacity-[1] bg-[#000000c9]">
         <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-full opacity-10 pointer-events-none">

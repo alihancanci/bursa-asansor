@@ -620,5 +620,20 @@
     "service_network": "Service Network",
     "service_network_desc": "We are at every point with Turkey's most active elevator transportation network.",
     "districts_desc": "We deliver mobile elevators to all districts of Bursa as soon as possible."
+  },
+  "references": {
+    "title": "Our References",
+    "subtitle": "Dozens of happy customers and successful moves every day in every corner of Bursa.",
+    "view_all": "View All Our Work",
+    "items": {
+      "ref1_title": "High Floor Elevator Installation",
+      "ref1_desc": "Our safe mobile elevator installation for up to 12 floors in the Nilüfer region.",
+      "ref2_title": "Night Elevator Transportation",
+      "ref2_desc": "Night transfer carried out without traffic congestion in Osmangazi.",
+      "ref3_title": "Sensitive Goods Moving Elevator",
+      "ref3_desc": "Our furniture transfer application from narrow balconies in the Yıldırım district.",
+      "ref4_title": "Corporate and Secure Service",
+      "ref4_desc": "Elevator-assisted transport service we proudly offer with our flag in Bursa center."
+    }
   }
 }
