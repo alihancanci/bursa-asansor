@@ -160,7 +160,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <h2>Mobil Kurulum ve Taşıma Aşaması</h2>
       <p>Dış cephe sisteminin balkona veya sökülmüş bir pencere kasasına sıfır açıyla yanaştırılması özel bir ustalık ister. Asansörün taşıyıcı kızakları binaya <em>değmez</em>, aralarında birkaç santimetrelik kritik bir boşluk (emniyet payı) bırakılarak binanın boyasına, camlarına ve mantolamasına (yalıtımına) kesinlikle zarar verilmez.</p>
       
-      <p>Yükleme yapacak ekibiniz veya <a href="/bursa-merkez-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">evden eve nakliyat</a> personelimiz, eşyaları sepete güvenlik kuralları dahilinde dizer. Genellikle sepetin taşıma kapasitesi (modeline göre değişmekle birlikte) 300 ile 400 kg arasındadır. Kırılacak eşyalar için önceden muhakkak <strong>eşya taşıma sigortası</strong> (LSI) detaylarını görüşmenizi tavsiye ederiz.</p>
+      <p>Yükleme yapacak ekibiniz veya <a href="/bursa-merkez-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">evden eve nakliyat</a> personelimiz, eşyaları sepete güvenlik kuralları dahilinde dizer. Genellikle sepetin taşıma kapasitesi (modeline göre değişmekle birlikte) 300 ile 400 kg arasındadır. Kırılacak eşyalar için önceden muhakkak <strong>taşıma güvenliği (paketleme)</strong> detaylarını görüşmenizi tavsiye ederiz.</p>
     `
   },
   {
@@ -259,7 +259,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </table>
       </div>
 
-      <h3>Hasar İhtimali ve Eşya Taşıma Sigortası</h3>
+      <h3>Hasar İhtimali ve Sorumluluk</h3>
       <p>Özellikle cephe camı, ağır dolaplar veya <a href="/yildirim-piyano-tasima-asansoru" class="text-primary font-semibold hover:underline">piyano gibi hassas ürünler</a> taşınırken denge mekanizması hayati önem taşır. Vinç halatının rüzgarla hafif bir salınım yapması, yükün binanın cephesine gürültüyle çarpmasına sebep olabilir. Ancak dış cephe asansörünün alüminyum rayları üzerinde hareket eden sepeti, milimetrik kontrol sağlar.</p>
 
       <p>Sonuç olarak; kaba inşaatta demir bağlamları, beton blokların konulması gibi <em>tonajlı</em> işlerde vinç hala kraldır. Ancak alçıpan, tuğla, çimento sevkinde veya (<a href="/kestel-moloz-indirme-asansoru" class="text-primary font-semibold hover:underline">katlardan moloz indirme</a>) işlerinde asansörler kıyaslanamaz bir verimlilik sağlar.</p>
@@ -298,7 +298,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <h2>Tek Çözüm Yolu: Dış Cephe Asansörü Kiralama</h2>
       <p>Tüm bu krizleri yaşamadan atlatmanın tek meşru ve stressiz yolu <a href="/nilufer-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">mobil asansör kiralamak</a>tır. Apartman yönetiminden izin almak için çırpınmak yerine, balkonunuza sessiz sedasız (mobil kurulum) ile uzanan sistemimiz sizi tüm kavgalardan kurtarır.</p>
       
-      <p>Maliyet olarak bakıldığında, "Taşımacılar elle merdivenden çıkarsın" diyebilirsiniz. Ancak bu sefer de 10. kattaki dairenize çıkartılan bir eşyanın çarpıp kırılması muhtemeldir. Eşya Taşıma Sigortası bu gibi kullanıcı (hamal) hatalarını kapsamayabilir. Kendi yatırımınızı korumak için dış cephe sisteminin sağladığı güvenliğe sığınmak, uzun vadede daima "ucuz" bir yatırımdır.</p>
+      <p>Maliyet olarak bakıldığında, "Taşımacılar elle merdivenden çıkarsın" diyebilirsiniz. Ancak bu sefer de 10. kattaki dairenize çıkartılan bir eşyanın çarpıp kırılması muhtemeldir. Dış cephe asansörü bu gibi kullanıcı (hamal) hatalarını engeller. Kendi yatırımınızı korumak için dış cephe sisteminin sağladığı güvenliğe sığınmak, uzun vadede daima "ucuz" bir yatırımdır.</p>
     `
   },
   {
@@ -316,7 +316,7 @@ export const BLOG_POSTS: BlogPost[] = [
     faqs: [
       { q: "Telefonda verilen fiyat sonradan değişir mi?", a: "Kurumsal firmalarda (bizim gibi) keşif sonrası anlaşılan fiyat nettir. Merdiven altı şirketlerde ise eşya kapıdan çıkınca 'buna asansör lazım, ek 2000 TL' denilir." },
       { q: "Sadece asansör değil, komple nakliye hizmeti yapıyor musunuz?", a: "Elbette. Kamyon, personel, ambalajlama ve mobil asansör dahil anahtar teslim taşıma yapıyoruz." },
-      { q: "En ucuz hizmeti seçmek mantıklı mıdır?", a: "Piyasa ortalamasının çok altına fiyat çeken firmalar genelde eşyalarınızı sigortasız ve eğitimsiz personellerle (yabancı kaçak uyruklu vb.) taşıtarak sizi riske atarlar." }
+      { q: "En ucuz hizmeti seçmek mantıklı mıdır?", a: "Piyasa ortalamasının çok altına fiyat çeken firmalar genelde eşyalarınızı kalitesiz donanım ve eğitimsiz personellerle (yabancı kaçak uyruklu vb.) taşıtarak sizi riske atarlar." }
     ],
     content: `
       <h2>Ucuz Etin Yahnisi: Nakliyat Sektöründeki Tuzaklar</h2>
@@ -336,7 +336,7 @@ export const BLOG_POSTS: BlogPost[] = [
       
       <ol class="list-decimal pl-5 mt-4 space-y-2">
         <li><strong>Saha Keşfi:</strong> İyi bir firma asansör kurmak için Google üzerinden bile olsa konumunuzu inceler.</li>
-        <li><strong>Sözleşme ve Sigorta:</strong> "Eşya Taşıma Sigortası" yapılıp yapılmadığını sorgulayın. Fiyat ucuzlasa bile eşyanız kaybolduğunda arkanıza yaslanabilmelisiniz.</li>
+        <li><strong>Sözleşme ve Güvenlik:</strong> "Güvenli Taşıma Sözleşmesi" yapılıp yapılmadığını sorgulayın. Fiyat ucuzlasa bile eşyanız kaybolduğunda arkanıza yaslanabilmelisiniz.</li>
         <li><strong>Kendi Ekipmanı:</strong> Firmanın, sağdan soldan kiraladığı araçla değil, özmal araçlarla hizmet vermesi genel hizmet fiyatını aşağı çeken bir organizasyon gücüdür. Biz kendi bünyemizdeki sistemlerimizle çalıştığımız için gerçekçi ve dürüst fiyatlar sunarız.</li>
       </ol>
 
@@ -378,7 +378,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <ul class="list-disc pl-5 mt-4 space-y-2">
         <li><strong>Zaman Tasarrufu:</strong> Taşınma günü asansör nereye kurulacak sokağı kim kapatacak kargaşası yaşanmaz, operasyon en hızlı şekilde başlar.</li>
-        <li><strong>Eşya Güvenliği Sigortası:</strong> Eksperimiz değerli ve kırılgan eşyalarınızı not ederek özel paketleme ekibimizi yönlendirir.</li>
+        <li><strong>Uzman Paketleme Ekibi:</strong> Eksperimiz değerli ve kırılgan eşyalarınızı not ederek özel paketleme ekibimizi yönlendirir.</li>
         <li><strong>%100 Memnuniyet:</strong> Amacımız süreci başından sonuna şeffaf bir şekilde yönetip, yeni evinizin anahtarını gülümseyerek açmanızı sağlamaktır.</li>
       </ul>
 
@@ -395,7 +395,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: "6 dk okuma",
     category: "Taşınma Rehberi",
     image: "/images/mutlu-aile-tasinma.png",
-    metaDescription: "Bursa evden eve nakliyat rehberi. Asansörlü taşımacılık, sigortalı nakliyat ve pratik kolileme ipuçlarıyla stressiz taşının.",
+    metaDescription: "Bursa evden eve nakliyat rehberi. Asansörlü taşımacılık, güvenli nakliyat ve pratik kolileme ipuçlarıyla stressiz taşının.",
     keywords: ["bursa evden eve nakliyat", "asansörlü evden eve", "bursa ev taşıma", "stressiz taşınma rehberi", "bursa nakliyat firmaları"],
     content: `
       <h2>Evden Eve Taşınma Sürecini Nasıl Kolaylaştırırsınız?</h2>
@@ -407,8 +407,8 @@ export const BLOG_POSTS: BlogPost[] = [
       <h3>2. Asansörlü Evden Eve Nakliyatın Avantajını Kullanın</h3>
       <p>Eski usul "sırtta taşıma" yöntemi hem eşyalarınızın apartman merdivenlerinde çizilmesine neden olur hem de süreci saatlerce uzatır. Bursa'da özellikle yüksek katlı sitelerde veya dar merdivenli binalarda kesinlikle <strong>asansörlü evden eve nakliyat</strong> hizmeti almalısınız. Dış cepheye kurulan mobil asansör sistemleri sayesinde eşyalarınız 15. kata kadar balkon veya pencereden doğrudan eve alınır. Bu "sıfır hasar" garantisi demektir.</p>
 
-      <h3>3. Sigortalı Taşımacılık Tercih Edin</h3>
-      <p>Ne kadar dikkat edilirse edilsin, trafikte veya taşıma esnasında öngörülemeyen kazalar yaşanabilir. Kurumsal bir firma ile çalışıyorsanız, eşyalarınızın A noktasından B noktasına varana kadar <strong>Nakliyat Sigortası</strong> kapsamında olduğundan emin olun.</p>
+      <h3>3. Referanslı ve Kurumsal Firmaları Seçin</h3>
+      <p>Ne kadar dikkat edilirse edilsin, trafikte veya taşıma esnasında öngörülemeyen kazalar yaşanabilir. Kurumsal bir firma ile çalışıyorsanız, eşyalarınızın A noktasından B noktasına varana kadar profesyonel güvenlik standartları kapsamında olduğundan emin olun.</p>
 
       <h3>4. Profesyonel Paketleme Desteği Alın</h3>
       <p>Beyaz eşyalarınızın havalı naylonlarla sarılması, mobilyalarınızın sökülüp yeni evde tekrar monte edilmesi (demonte-monte işlemi) uzmanlık gerektirir. "Her şeyi biz hallederiz" diyen güvenilir firmalarla çalışarak bu yükten kurtulabilirsiniz.</p>

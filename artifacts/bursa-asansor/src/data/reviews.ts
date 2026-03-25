@@ -35,7 +35,7 @@ export const REVIEWS = [
   { id: 34, name: 'Volkan B.', district: 'Orhangazi', rating: 5, text: 'Günün her saati telefonlarınıza çıkan ilgili bir marka. Gece yarısı acil kiralık asansör talebimizi geri çevirmediler.' },
   { id: 35, name: 'Yasin V.', district: 'Gürsu', rating: 5, text: '18. kata klima motoru çıkarılması gerekiyordu. 3 firma yapamayız dedi, Bursa Mobil Asansör tık diye çıkardı halletti.' },
   { id: 36, name: 'Selma Y.', district: 'Yıldırım', rating: 5, text: 'Yıldırım’ın eski ve dar sokaklarında o asansörü nasıl kurduklarına gerçekten inanamadım. Operatörler tam bir usta.' },
-  { id: 37, name: 'Tolga A.', district: 'Kestel', rating: 5, text: 'Sigortalı taşımacılık sunmaları içimi çok rahatlattı. Değerli antika eşyalarım sıfır hatayla taşındı.' },
+  { id: 37, name: 'Tolga A.', district: 'Kestel', rating: 5, text: 'Hızlı ve sorunsuz bir süreç yönettiler. Değerli antika eşyalarım sıfır hatayla taşındı.' },
   { id: 38, name: 'Hande B.', district: 'Osmangazi', rating: 5, text: 'İlgi, alaka, hız, profesyonellik her şey dört dörtlüktü. Başka asansör firması aramaya gerek yok Bursa\'da.' },
   { id: 39, name: 'Nuri Ş.', district: 'Mudanya', rating: 5, text: 'Yazlığa eşya yolladık. Hızlı ve pratik bir nakliye istiyorsanız kesinlikle tavsiye edeceğim tek firma.' },
   { id: 40, name: 'Merve S.', district: 'Nilüfer', rating: 5, text: 'Otopark engelinden ötürü baya uzaktan kurulum yapmak zorunda kaldılar ama asansörleri çok açılır kapanır olduğu için hiç sıkıntı çıkmadı.' },

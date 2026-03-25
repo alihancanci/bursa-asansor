@@ -31,8 +31,8 @@ const FAQS = [
     a: "Yağmurlu havalarda eşyalarınız özel brandalarla korunduğu için taşıma yapılabilir. Ancak saatte 10-12 metreyi aşan şiddetli lodos ve fırtınalarda iş güvenliği kuralları gereği (rüzgar sensörü uyarısıyla) işlem ertelenir."
   },
   {
-    q: "Eşyalar taşıma sırasında sigortalanıyor mu?",
-    a: "Kurumsal evden eve nakliyat hizmetlerimizin tamamında eşyalarınız paketleme anından yeni evinize yerleşene kadar hasar riskine karşı Nakliyat Sigortası güvencesi altındadır."
+    q: "Eşyaların güvenliğini nasıl sağlıyorsunuz?",
+    a: "Düzenli bakımı yapılan son teknoloji asansörlerimiz ve deneyimli operatörlerimiz sayesinde taşıma esnasında insan gücüne dayalı hasar riski sıfıra indirilmekte, eşyalarınız özenle taşınmaktadır."
   },
   {
     q: "Moloz indirme veya inşaat malzemesi taşıma için asansör kiralanır mı?",

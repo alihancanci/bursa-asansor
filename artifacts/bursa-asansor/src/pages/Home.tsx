@@ -99,7 +99,6 @@ export default function Home() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-white leading-[1.1] mb-6">
-                TEST: BURSA ASANSÖR V2.1 <br />
                 {t('hero.title1', "Bursa'nın Lider")} <br />
                 <span className="text-gradient">{t('hero.title2', "Mobil Asansör")}</span> {t('hero.title3', "Kiralama Firması")}
               </h1>
