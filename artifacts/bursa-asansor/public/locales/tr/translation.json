@@ -60,6 +60,12 @@
     "customer_sat": "Hasar<br/>Garantisi",
     "service_network": "Hizmet Ağımız",
     "service_network_desc": "Türkiye'nin en aktif çalışan asansörlü nakliyat ağıyla, her noktadayız.",
-    "districts_desc": "Bursa'nın tüm ilçelerine en kısa sürede mobil asansör ulaştırıyoruz."
+    "districts_desc": "Bursa'nın tüm ilçelerine en kısa sürede mobil asansör ulaştırıyoruz.",
+    "free_appraisal_now": "₺0 Ücretsiz Ekspertiz Fırsatı",
+    "limited_offer": "Sınırlı Kontenjan"
+  },
+  "cta": {
+    "asansor_kirala": "Asansör Kirala",
+    "evden_eve": "Evden Eve Nakliyat"
   }
 }

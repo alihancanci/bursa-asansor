@@ -112,11 +112,39 @@ export default function Home() {
                 <span className="text-gradient">{t('hero.title2', "Mobil Asansör")}</span> {t('hero.title3', "Kiralama Firması")}
               </h1>
 
+              {/* Free Appraisal Pulse Badge */}
+              <div className="flex items-center gap-3 mb-8">
+                <div className="px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl flex items-center gap-2 group hover:bg-white/20 transition-all cursor-default">
+                  <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse shadow-[0_0_12px_rgba(34,197,94,0.6)]" />
+                  <span className="text-white font-bold text-sm md:text-base tracking-tight">
+                    {t('home.free_appraisal_now', '₺0 Ücretsiz Ekspertiz Fırsatı')}
+                  </span>
+                </div>
+                <div className="hidden sm:block text-slate-400 text-xs font-medium uppercase tracking-widest bg-white/5 px-3 py-2 rounded-xl">
+                  {t('home.limited_offer', 'Sınırlı Kontenjan')}
+                </div>
+              </div>
+
               <p className="text-lg sm:text-xl text-slate-300 mb-10 leading-relaxed max-w-2xl">
                 {t('hero.subtitle', "Dar sokaklar, yüksek binalar dert değil! 15. kata kadar güvenli ve hızlı mobil asansör kiralama ve nakliyat çözümleri sunuyoruz.")}
               </p>
 
-              <CTASection className="max-w-xl" />
+              <div className="flex flex-col sm:flex-row gap-4 max-w-2xl">
+                <Link
+                  href="/bursa-merkez-kiralik-mobil-asansor"
+                  className="flex-1 flex items-center justify-center gap-3 bg-primary hover:bg-orange-600 text-white px-8 py-5 rounded-2xl font-bold text-lg shadow-2xl shadow-primary/40 hover:-translate-y-1 transition-all duration-300"
+                >
+                  <ArrowUpToLine className="h-6 w-6" />
+                  {t('cta.asansor_kirala', 'Asansör Kirala')}
+                </Link>
+                <Link
+                  href="/bursa-merkez-evden-eve-tasimacilik"
+                  className="flex-1 flex items-center justify-center gap-3 bg-white hover:bg-slate-50 text-secondary px-8 py-5 rounded-2xl font-bold text-lg shadow-xl shadow-black/10 hover:-translate-y-1 transition-all duration-300"
+                >
+                  <Truck className="h-6 w-6" />
+                  {t('cta.evden_eve', 'Evden Eve Nakliyat')}
+                </Link>
+              </div>
 
               <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-400 font-medium">
                 <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> {t('features.f2_title', '7/24 Hizmet')}</div>
@@ -246,6 +274,78 @@ export default function Home() {
             <p className="dark:text-slate-300 text-lg text-slate-700">{t('home.service_network_desc', "Türkiye'nin en aktif çalışan asansörlü nakliyat ağıyla, her noktadayız.")}</p>
           </div>
           <ServiceMap />
+        </div>
+      </section>
+
+      {/* Uygulamalarımız / Galeri Section */}
+      <section className="py-24 bg-slate-50 dark:bg-navy/10 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+            <div className="max-w-2xl">
+              <h2 className="text-3xl md:text-5xl font-display font-bold text-slate-900 dark:text-white mb-6">
+                Sizden Kareler: <span className="text-primary">Uygulamalarımız</span>
+              </h2>
+              <p className="text-lg text-slate-600 dark:text-slate-400">
+                Bursa'nın dört bir yanında her gün onlarca aileyi ve işletmeyi güvenle taşıyoruz. İşte operasyonlarımızdan bazı kesitler.
+              </p>
+            </div>
+            <Link 
+              href="/blog" 
+              className="inline-flex items-center gap-2 text-primary font-bold hover:underline"
+            >
+              Tüm Çalışmalarımızı Gör
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                img: "/images/uygulama-asansor.png",
+                title: "Yüksek Katlı Asansör Kurulumu",
+                location: "Nilüfer / Özlüce",
+                desc: "12. kata ulaştırdığımız teleskopik asansörümüz ile mobilya taşıma operasyonu."
+              },
+              {
+                img: "/images/uygulama-paketleme.png",
+                title: "Profesyonel Paketleme",
+                location: "Osmangazi / Kükürtlü",
+                desc: "Hassas mobilyalar için çift katmanlı balonlu naylon ve köşe koruma uygulaması."
+              },
+              {
+                img: "/images/uygulama-kamyon.png",
+                title: "Evden Eve Nakliyat Filomuz",
+                location: "Yıldırım / Millet",
+                desc: "Günlük dezenfekte edilen, eşya taşıma için özel tasarlanmış kapalı kasa araçlarımız."
+              }
+            ].map((item, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                className="group relative"
+              >
+                <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl mb-6">
+                  <img 
+                    src={item.img} 
+                    alt={item.title} 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute bottom-6 left-6 right-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                    <span className="inline-block px-3 py-1 bg-primary text-white text-xs font-bold rounded-full mb-2 uppercase tracking-wider">
+                      {item.location}
+                    </span>
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{item.title}</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">{item.desc}</p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 

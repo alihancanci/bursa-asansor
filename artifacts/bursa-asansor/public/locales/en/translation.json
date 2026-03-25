@@ -68,7 +68,9 @@
   },
   "cta": {
     "title": "Get a Quote Now",
-    "district_desc": "get clear pricing and availability within 5 minutes for your elevator requests in the region."
+    "district_desc": "get clear pricing and availability within 5 minutes for your elevator requests in the region.",
+    "asansor_kirala": "Rent Elevator",
+    "evden_eve": "Home Moving"
   },
   "meta": {
     "home_title": "Bursa Mobile Elevator Rental | 24/7 Elevator Moving",
@@ -619,6 +621,8 @@
     "customer_sat": "Zero Damage<br/>Guarantee",
     "service_network": "Service Network",
     "service_network_desc": "We are at every point with Turkey's most active elevator transportation network.",
-    "districts_desc": "We deliver mobile elevators to all districts of Bursa as soon as possible."
+    "districts_desc": "We deliver mobile elevators to all districts of Bursa as soon as possible.",
+    "free_appraisal_now": "₺0 Free Appraisal Offer",
+    "limited_offer": "Limited Availability"
   }
 }
