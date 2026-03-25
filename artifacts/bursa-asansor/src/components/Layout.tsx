@@ -4,6 +4,7 @@ import { Footer } from "./Footer";
 import { useLocation } from "wouter";
 import { installGlobalClickTracking, trackPageView } from "@/lib/analytics";
 import { SocialProofToast } from "./SocialProofToast";
+import { WhatsAppButton } from "./WhatsAppButton";
 
 export function Layout({ children }: { children: ReactNode }) {
   const [pathname] = useLocation();
@@ -32,6 +33,7 @@ export function Layout({ children }: { children: ReactNode }) {
       </main>
       <Footer />
       <SocialProofToast />
+      <WhatsAppButton />
     </div>
   );
 }

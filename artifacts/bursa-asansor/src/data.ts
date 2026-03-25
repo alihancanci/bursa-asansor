@@ -16,7 +16,7 @@ export interface Service {
 }
 
 export const PHONE_NUMBER = "05053297533";
-export const WHATSAPP_LINK = "https://wa.me/905053297533";
+export const WHATSAPP_LINK = "https://wa.me/905053297533?text=Merhaba,%20mobil%20asansör%20kiralama%20hizmetiniz%20hakkında%20bilgi%20alabilir%20miyim?";
 
 export const DISTRICTS: District[] = [
   { 
