@@ -35,7 +35,7 @@ export default function ServicePage() {
   const YEAR = new Date().getFullYear();
   // Pick first 3 neighborhoods for SEO enrichment
   const topNeighborhoods = district.neighborhoods.slice(0, 3);
-  const neighborhoodStr  = topNeighborhoods.join(", ");
+  const neighborhoodStr = topNeighborhoods.join(", ");
 
   // ── Richer, unique title / description per page ──────────────────────────
   const pageTitle = `${district.name} ${topNeighborhoods[0] ?? ''} ${serviceName} | ${YEAR} Fiyatları · Bursa Mobil Asansör`;
@@ -122,7 +122,7 @@ export default function ServicePage() {
 
   return (
     <>
-      <SEO 
+      <SEO
         title={pageTitle}
         description={metaDescription}
         path={`/${fullSlug}`}
@@ -142,7 +142,7 @@ export default function ServicePage() {
       </nav>
 
       {/* Page Hero */}
-      <div className="bg-[#071320] pt-32 pb-12 md:pt-40 md:pb-16 border-b-4 border-primary/40 relative overflow-hidden">
+      <div className="bg-[#071320] py-12 md:py-16 border-b-4 border-primary/40 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <picture>
             <source srcSet={`${import.meta.env.BASE_URL}images/service-abstract.webp`} type="image/webp" />
@@ -195,7 +195,7 @@ export default function ServicePage() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
-          
+
           {/* Main Content Column */}
           <div className="lg:col-span-2">
             <FeaturesBar />
@@ -215,7 +215,7 @@ export default function ServicePage() {
                   <h3 className="text-lg font-bold text-slate-800 dark:text-white mb-2">
                     {district.name} Bölgesine Özel Not
                   </h3>
-                  <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-medium">
+                  <p className="text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
                     {t(`districts.${district.slug}.localNote`, district.localNote)}
                   </p>
                 </div>
@@ -239,7 +239,7 @@ export default function ServicePage() {
               <h2 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-3">
                 {district.name} {t('service_page.coverage_info', 'Hizmet Bölgesi Bilgilendirmesi')}
               </h2>
-              <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+              <p className="text-slate-700 dark:text-slate-400 leading-relaxed">
                 {t('service_page.coverage_desc_1', 'Firmamız')} {district.name} {t('service_page.coverage_desc_2', 'merkez ilçesinin tamamı ile birlikte özellikle')} <strong>{selectedNeighborhoods.join(", ")}</strong> {t('service_page.coverage_desc_3', 've çevresindeki mahallelerde haftanın 7 günü kesintisiz hizmet vermektedir.')} {district.name} {t('service_page.coverage_desc_4', 'lokasyonuna özel geliştirdiğimiz dar sokak manevra kabiliyeti yüksek mobil asansörlerimizle, bina içi asansörlerin yetersiz kaldığı her noktada yanınızdayız.')}
               </p>
             </section>
@@ -254,7 +254,7 @@ export default function ServicePage() {
                   {t('service_page.why_us', 'Neden', { district: district.name })} {district.name}'de {t('service_page.why_us_suffix', 'Bizimle Çalışmalısınız?')}
                 </h3>
                 <p className="text-slate-100 dark:text-slate-300 leading-relaxed text-lg mb-6">
-                  {service.category === 'asansor' 
+                  {service.category === 'asansor'
                     ? t('service_page.category_elevator_desc', `${district.name} bölgesindeki yapıların çoğunlukla dar balkon girişlerine veya yüksek katlı mimariye sahip olduğunun bilincindeyiz. Bu yüzden asansör kurulumu öncesinde çevre güvenliğini sağlıyor ve mobilyalarınızın binanın iç asansörüne sığmadığı durumlarda dış cepheden %100 güvenli transfer gerçekleştiriyoruz.`, { district: district.name })
                     : t('service_page.category_moving_desc', `${district.name} lokasyonunda nakliye sürecini planlarken sadece eşya taşımıyor, bölgenin trafik saatlerini ve park yasaklarını da hesaba katıyoruz. Deneyimli ekibimizle eşyalarınızı paketliyor, asansörlü sistemimizle sıfır riskle yeni adresinize ulaştırıyoruz.`, { district: district.name })
                   }
@@ -327,7 +327,7 @@ export default function ServicePage() {
 
           {/* Sidebar */}
           <div className="lg:col-span-1 space-y-6">
-            
+
             {/* Sticky contact widget — dark, high-contrast */}
             <div className="sticky top-24 bg-[#071320] rounded-2xl p-6 border-2 border-primary/30 shadow-2xl">
               <h3 className="font-display font-bold text-lg text-white mb-1">{t('common.quick_contact', 'Hızlı İletişim')}</h3>
@@ -361,7 +361,7 @@ export default function ServicePage() {
               <ul className="space-y-2">
                 {SERVICES.filter(s => s.slug !== service.slug).map(s => (
                   <li key={s.slug}>
-                    <Link 
+                    <Link
                       href={`/${district.slug}-${s.slug}`}
                       className="flex items-center justify-between group py-1.5 text-gray-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium"
                     >
@@ -380,7 +380,7 @@ export default function ServicePage() {
               </h3>
               <div className="flex flex-wrap gap-2">
                 {DISTRICTS.filter(d => d.slug !== district.slug).slice(0, 8).map(d => (
-                  <Link 
+                  <Link
                     key={d.slug}
                     href={`/${d.slug}-${service.slug}`}
                     className="inline-block px-3 py-1.5 bg-gray-50 dark:bg-navy border-2 border-gray-200 dark:border-white/10 hover:bg-primary hover:border-primary text-xs font-semibold rounded-lg text-gray-700 dark:text-slate-300 hover:text-white transition-colors"

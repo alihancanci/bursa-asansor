@@ -12,7 +12,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 mb-14">
 
           {/* Brand */}
           <div className="lg:col-span-1">
@@ -58,6 +58,28 @@ export function Footer() {
                 <span className="text-xs text-slate-200 font-medium">Resmi Ticari İşletme</span>
               </div>
             </div>
+          </div>
+
+          {/* Column 0: Kurumsal */}
+          <div className="lg:col-span-1">
+            <div className="flex items-center gap-2 mb-5">
+              <CheckCircle2 className="h-4 w-4 text-primary shrink-0" />
+              <h3 className="text-sm font-bold text-white uppercase tracking-wider font-display">Kurumsal</h3>
+            </div>
+            <ul className="space-y-2.5">
+              <li>
+                <Link href="/hakkimizda" className="text-slate-400 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
+                  Hakkımızda
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" className="text-slate-400 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
+                  Blog / Rehber
+                </Link>
+              </li>
+            </ul>
           </div>
 
           {/* Column 1: Kiralık Asansör Hizmetleri */}

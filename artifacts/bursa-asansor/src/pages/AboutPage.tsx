@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
-import { ShieldCheck, Clock, ArrowUpToLine, Users, ArrowRight, Globe } from "lucide-react";
+import { ShieldCheck, Clock, ArrowUpToLine, Users, ArrowRight, Compass, Target } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { getAbsoluteAssetUrl } from "@/lib/seo";
 
@@ -73,7 +73,7 @@ export default function AboutPage() {
             <h2 className="text-3xl lg:text-4xl font-display font-bold text-slate-900 dark:text-white mb-6">
               Biz Kimiz?
             </h2>
-            <div className="prose prose-lg dark:prose-invert prose-p:text-slate-600 dark:prose-p:text-slate-400">
+            <div className="prose prose-lg dark:prose-invert prose-p:text-slate-800 dark:prose-p:text-slate-300">
               <p>
                 <strong>CNC Bursa Evden Eve Nakliyat ve Kiralık Asansör</strong> olarak, Bursa'nın zorlu ve dar sokaklarında evden eve taşımacılık sektörüne yenilikçi bir nefes getirdik. Klasik "sırtta taşıma" dönemini kapatarak, hem eşya güvenliğini hem de zaman tasarrufunu odağımıza aldık.
               </p>
@@ -91,20 +91,20 @@ export default function AboutPage() {
           >
             <div className="bg-primary/5 dark:bg-primary/10 rounded-3xl p-8 border border-primary/10 hover:border-primary/30 transition-colors">
               <div className="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center mb-6 shadow-lg shadow-primary/30">
-                <ArrowUpToLine className="w-6 h-6" />
+                <Target className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">Misyonumuz</h3>
-              <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">
+              <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-sm">
                 Bursa'nın her noktasına, eşyalara sıfır zarar garantisiyle, en hızlı ve yenilikçi asansörlü taşıma hizmetini sunmak.
               </p>
             </div>
             
             <div className="bg-slate-50 dark:bg-slate-800/50 rounded-3xl p-8 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 transition-colors mt-0 sm:mt-8">
               <div className="w-12 h-12 rounded-2xl bg-secondary dark:bg-slate-700 text-white flex items-center justify-center mb-6 shadow-lg shadow-black/10">
-                <Globe className="w-6 h-6" />
+                <Compass className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">Vizyonumuz</h3>
-              <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">
+              <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-sm">
                 Marmara bölgesinde nakliyat ve asansör kiralama denilince akla gelen ilk, en teknolojik ve en güvenilir marka olmak.
               </p>
             </div>
@@ -139,7 +139,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                <p className="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </motion.div>
