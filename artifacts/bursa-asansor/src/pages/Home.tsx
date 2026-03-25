@@ -7,6 +7,7 @@ import { SearchFilter } from "@/components/SearchFilter";
 import { FeaturesBar } from "@/components/FeaturesBar";
 import { ServiceMap } from "@/components/ServiceMap";
 import { Testimonials } from "@/components/Testimonials";
+import { FaqSection } from "@/components/FaqSection";
 import { DISTRICTS, PHONE_NUMBER, SERVICES, WHATSAPP_LINK } from "@/data";
 import { ArrowRight, CheckCircle2, ArrowUpToLine } from "lucide-react";
 import { getAbsoluteAssetUrl } from "@/lib/seo";
@@ -236,6 +237,8 @@ export default function Home() {
       </section>
 
       <Testimonials />
+
+      <FaqSection />
 
       {/* Districts Grid */}
       <section className="py-20 bg-slate-50 dark:bg-navy/30 border-t border-border">
