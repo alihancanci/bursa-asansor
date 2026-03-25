@@ -384,5 +384,37 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <p class="mt-6 border-l-4 border-primary pl-4 py-2 bg-slate-50 dark:bg-slate-800/50 italic text-slate-700 dark:text-slate-300">Stres dolu bir güne "Hayır" demek ve bütçenizi önceden garantilemek istiyorsanız, taşıma gününden en az 5-7 gün önce bizleri arayıp ücretsiz ekspertiz randevunuzu hemen oluşturabilirsiniz. Bursa'nın her ilçesine keşif ağımız aktiftir!</p>
     `
+  },
+  {
+    id: "evden-eve-tasinma-rehberi",
+    slug: "bursa-evden-eve-tasinma-rehberi-stressiz-nakliyat",
+    title: "Bursa Evden Eve Taşınma Rehberi: Stressiz Bir Nakliyat İçin İpuçları",
+    excerpt: "Ev değiştirmek yorucu mu geliyor? Bursa'da evden eve nakliyat sürecini sıfır hasar ve sıfır stresle atlatmanın en pratik yollarını ve dikkat etmeniz gerekenleri derledik.",
+    date: "2024-03-25",
+    author: "Bursa Mobil Asansör Ekibi",
+    readTime: "6 dk okuma",
+    category: "Taşınma Rehberi",
+    image: "/images/blog/home-moving.jpg",
+    metaDescription: "Bursa evden eve nakliyat rehberi. Asansörlü taşımacılık, sigortalı nakliyat ve pratik kolileme ipuçlarıyla stressiz taşının.",
+    keywords: ["bursa evden eve nakliyat", "asansörlü evden eve", "bursa ev taşıma", "stressiz taşınma rehberi", "bursa nakliyat firmaları"],
+    content: `
+      <h2>Evden Eve Taşınma Sürecini Nasıl Kolaylaştırırsınız?</h2>
+      <p>Bursa gibi kalabalık, trafiği yoğun ve binaların giderek yükseldiği bir şehirde <strong>evden eve taşınma</strong> süreci pek çok aile için kabusa dönüşebiliyor. Eşyaların kırılması, zamanın uzaması veya ekstra masraflar en sık karşılaşılan sorunlar arasında. Ancak doğru bir planlama ve profesyonel destekle bu süreci keyifli bir yeni başlangıca dönüştürmek elinizde.</p>
+
+      <h3>1. Taşınma Planınızı Erkenden Yapın</h3>
+      <p>Nakliye gününden en az 2 hafta önce hazırlıklara başlamalısınız. Kullanmadığınız eşyaları ayıklamak, kolileme stratejisi belirlemek ve en önemlisi doğru nakliyat firmasını seçmek için zaman kazanmış olursunuz.</p>
+
+      <h3>2. Asansörlü Evden Eve Nakliyatın Avantajını Kullanın</h3>
+      <p>Eski usul "sırtta taşıma" yöntemi hem eşyalarınızın apartman merdivenlerinde çizilmesine neden olur hem de süreci saatlerce uzatır. Bursa'da özellikle yüksek katlı sitelerde veya dar merdivenli binalarda kesinlikle <strong>asansörlü evden eve nakliyat</strong> hizmeti almalısınız. Dış cepheye kurulan mobil asansör sistemleri sayesinde eşyalarınız 15. kata kadar balkon veya pencereden doğrudan eve alınır. Bu "sıfır hasar" garantisi demektir.</p>
+
+      <h3>3. Sigortalı Taşımacılık Tercih Edin</h3>
+      <p>Ne kadar dikkat edilirse edilsin, trafikte veya taşıma esnasında öngörülemeyen kazalar yaşanabilir. Kurumsal bir firma ile çalışıyorsanız, eşyalarınızın A noktasından B noktasına varana kadar <strong>Nakliyat Sigortası</strong> kapsamında olduğundan emin olun.</p>
+
+      <h3>4. Profesyonel Paketleme Desteği Alın</h3>
+      <p>Beyaz eşyalarınızın havalı naylonlarla sarılması, mobilyalarınızın sökülüp yeni evde tekrar monte edilmesi (demonte-monte işlemi) uzmanlık gerektirir. "Her şeyi biz hallederiz" diyen güvenilir firmalarla çalışarak bu yükten kurtulabilirsiniz.</p>
+
+      <h2>Bursa Mobil Asansör Farkı</h2>
+      <p>Bursa Mobil Asansör olarak evden eve taşınma sürecinizde size sadece yeni evinizin keyfini sürmeyi bırakıyoruz. Ücretsiz ekspertiz hizmetimizle eşyalarınızı yerinde inceliyor, size en uygun asansör ve araç büyüklüğünü tahsis ediyor, deneyimli personelimizle eşyalarınızı yeni yuvanıza aynı gün içinde güvenle ulaştırıyoruz.</p>
+    `
   }
 ];
