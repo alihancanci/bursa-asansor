@@ -211,6 +211,14 @@ export default function Home() {
                 <div className="text-4xl font-display font-black text-primary mb-2">18</div>
                 <div className="font-semibold text-secondary dark:text-white" dangerouslySetInnerHTML={{ __html: t('home.active_network', 'İlçede<br/>Aktif Ağ') }} />
               </div>
+              <div className="bg-white dark:bg-navy-light p-6 rounded-3xl shadow-lg border border-border dark:border-white/10 text-center transform translate-y-8">
+                <div className="text-4xl font-display font-black text-primary mb-2">₺0</div>
+                <div className="font-semibold text-secondary dark:text-white" dangerouslySetInnerHTML={{ __html: t('home.free_appraisal', 'Ücretsiz<br/>Ekspertiz') }} />
+              </div>
+              <div className="bg-secondary p-6 rounded-3xl shadow-lg text-center">
+                <div className="text-4xl font-display font-black text-white mb-2">Sıfır</div>
+                <div className="font-semibold text-slate-100" dangerouslySetInnerHTML={{ __html: t('home.customer_sat', 'Hasar<br/>Garantisi') }} />
+              </div>
             </div>
           </div>
         </div>
