@@ -614,8 +614,10 @@
     "trust_p3": "If needed, not only an elevator, but also <strong>moving staff (porters) and moving truck support are provided when necessary</strong>. We take our job seriously: We are on time, act carefully, our machines are well-maintained and we pay attention to occupational safety.",
     "up_to_floor": "Up to Floor<br/>Access",
     "operator_control": "Operator<br/>Control",
-    "active_network": "Active Network<br/>in Districts",
-    "service_network": "Our Service Network",
+    "active_network": "Active District<br/>Network",
+    "free_appraisal": "Free<br/>Appraisal",
+    "customer_sat": "Zero Damage<br/>Guarantee",
+    "service_network": "Service Network",
     "service_network_desc": "We are at every point with Turkey's most active elevator transportation network.",
     "districts_desc": "We deliver mobile elevators to all districts of Bursa as soon as possible."
   }
