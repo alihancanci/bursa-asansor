@@ -10,8 +10,8 @@ export function FeaturesBar() {
           <Clock className="w-6 h-6 text-orange-600 dark:text-primary" />
         </div>
         <div>
-          <h4 className="font-bold text-gray-900 dark:text-white text-base mb-0.5">{t('features.f2_title', '7/24 Kesintisiz Hizmet')}</h4>
-          <p className="text-sm text-gray-600 dark:text-slate-300">{t('features.f2_desc', 'Gece veya gündüz, her an ulaşabilirsiniz.')}</p>
+          <h3 className="font-bold text-gray-900 dark:text-white text-base mb-0.5">{t('features.f2_title', '7/24 Kesintisiz Hizmet')}</h3>
+          <p className="text-sm text-gray-700 dark:text-slate-200">{t('features.f2_desc', 'Gece veya gündüz, her an ulaşabilirsiniz.')}</p>
         </div>
       </div>
       
@@ -20,8 +20,8 @@ export function FeaturesBar() {
           <ArrowUpToLine className="w-6 h-6 text-orange-600 dark:text-primary" />
         </div>
         <div>
-          <h4 className="font-bold text-gray-900 dark:text-white text-base mb-0.5">{t('features.f1_title', '15. Kata Kadar Çıkar')}</h4>
-          <p className="text-sm text-gray-600 dark:text-slate-300">{t('features.f1_subdesc', 'Yüksek katlara güvenli erişim.')}</p>
+          <h3 className="font-bold text-gray-900 dark:text-white text-base mb-0.5">{t('features.f1_title', '15. Kata Kadar Çıkar')}</h3>
+          <p className="text-sm text-gray-700 dark:text-slate-200">{t('features.f1_subdesc', 'Yüksek katlara güvenli erişim.')}</p>
         </div>
       </div>
 
@@ -30,8 +30,8 @@ export function FeaturesBar() {
           <ShieldCheck className="w-6 h-6 text-orange-600 dark:text-primary" />
         </div>
         <div>
-          <h4 className="font-bold text-gray-900 dark:text-white text-base mb-0.5">{t('features.f3_title', 'Operatör Kontrolü')}</h4>
-          <p className="text-sm text-gray-600 dark:text-slate-300">{t('features.f3_subdesc', 'Uzman personel her zaman asansörün başında.')}</p>
+          <h3 className="font-bold text-gray-900 dark:text-white text-base mb-0.5">{t('features.f3_title', 'Operatör Kontrolü')}</h3>
+          <p className="text-sm text-gray-700 dark:text-slate-200">{t('features.f3_subdesc', 'Uzman personel her zaman asansörün başında.')}</p>
         </div>
       </div>
     </div>

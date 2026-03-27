@@ -72,7 +72,7 @@ export function ReferencesGallery() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-lg text-slate-600 dark:text-slate-400"
+              className="text-lg text-gray-700 dark:text-slate-300"
             >
               {t('references.subtitle', "Bursa'nın her köşesinde, her gün onlarca mutlu müşteri ve başarılı taşıma.")}
             </motion.p>
@@ -128,7 +128,7 @@ export function ReferencesGallery() {
               {/* Mobile/Default Visible Info (if preferred) */}
               <div className="mt-4 px-2 lg:hidden">
                 <h3 className="font-bold text-secondary dark:text-white">{t(item.titleKey)}</h3>
-                <p className="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">{t(item.descKey)}</p>
+                <p className="text-sm text-gray-700 dark:text-slate-300 line-clamp-2">{t(item.descKey)}</p>
               </div>
             </motion.div>
           ))}

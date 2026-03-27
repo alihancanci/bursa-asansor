@@ -67,6 +67,7 @@ function LanguageSwitcher() {
             <button
               key={lng.code}
               onClick={() => changeLanguage(lng.code)}
+              aria-label={`${lng.name} diline geç`}
               className={`w-full text-left px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors
                 ${i18n.resolvedLanguage === lng.code ? 'text-primary font-bold bg-orange-50/50 dark:bg-orange-500/10' : 'text-slate-600 dark:text-slate-300'}`}
             >

@@ -54,6 +54,8 @@ export function SocialProofToast() {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: 20, scale: 0.9 }}
           transition={{ type: "spring", stiffness: 400, damping: 25 }}
+          role="status"
+          aria-live="polite"
           className="fixed z-[100] left-4 right-4 top-24 md:top-auto md:bottom-8 md:left-8 md:right-auto md:w-[350px] shadow-2xl rounded-2xl bg-white dark:bg-navy-light border border-slate-100 dark:border-white/10 p-4 flex items-center gap-4 cursor-default"
         >
           <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center relative overflow-hidden">

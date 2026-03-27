@@ -113,7 +113,7 @@ export default function AboutPage() {
                 <Target className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3">Misyonumuz</h3>
-              <p className="text-slate-700 leading-relaxed text-sm">
+              <p className="text-gray-800 leading-relaxed text-sm">
                 Bursa'nın her noktasına, eşyalara sıfır zarar garantisiyle, en hızlı ve yenilikçi asansörlü taşıma hizmetini sunmak.
               </p>
             </div>
@@ -123,7 +123,7 @@ export default function AboutPage() {
                 <Compass className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3">Vizyonumuz</h3>
-              <p className="text-slate-700 leading-relaxed text-sm">
+              <p className="text-gray-800 leading-relaxed text-sm">
                 Marmara bölgesinde nakliyat ve asansör kiralama denilince akla gelen ilk, en teknolojik ve en güvenilir marka olmak.
               </p>
             </div>
@@ -138,7 +138,7 @@ export default function AboutPage() {
             <h2 className="text-3xl lg:text-4xl font-display font-bold text-slate-900 dark:text-white mb-4">
               Neden <span className="text-primary">CNC?</span>
             </h2>
-            <p className="text-lg text-slate-600 dark:text-slate-400">
+            <p className="text-lg text-gray-700 dark:text-slate-400">
               Modern operasyon anlayışımızla rakiplerimizden ayrılıyor, güveni standart olarak sunuyoruz.
             </p>
           </div>
@@ -158,7 +158,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-bold text-slate-900 mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-slate-700 text-sm leading-relaxed">
+                <p className="text-gray-700 text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </motion.div>

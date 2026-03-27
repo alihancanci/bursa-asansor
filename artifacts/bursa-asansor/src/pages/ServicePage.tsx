@@ -220,6 +220,7 @@ export default function ServicePage() {
 
           {/* Main Content Column */}
           <div className="lg:col-span-2">
+            <h2 className="sr-only">Hizmet Özellikleri</h2>
             <FeaturesBar />
 
             {/* Prose content */}
@@ -237,7 +238,7 @@ export default function ServicePage() {
                   <h3 className="text-lg font-bold text-slate-800 dark:text-white mb-2">
                     {district.name} Bölgesine Özel Not
                   </h3>
-                  <p className="text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
+                  <p className="text-gray-800 dark:text-slate-200 leading-relaxed font-medium">
                     {t(`districts.${district.slug}.localNote`, district.localNote)}
                   </p>
                 </div>
@@ -250,7 +251,7 @@ export default function ServicePage() {
                 <h3 className="text-xl md:text-2xl font-display font-bold text-secondary dark:text-white mb-4 flex items-center gap-2">
                   <span className="text-primary">{district.name}</span> {t('service_page.special_solutions', 'Bölgesine Özel Çözümler')}
                 </h3>
-                <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-lg">
+                <p className="text-gray-800 dark:text-slate-300 leading-relaxed text-lg">
                   {district.seoParagraph}
                 </p>
               </div>
@@ -275,7 +276,7 @@ export default function ServicePage() {
                 <h3 className="text-2xl font-display font-bold mb-4">
                   {t('service_page.why_us', 'Neden', { district: district.name })} {district.name}'de {t('service_page.why_us_suffix', 'Bizimle Çalışmalısınız?')}
                 </h3>
-                <p className="text-slate-100 dark:text-slate-300 leading-relaxed text-lg mb-6">
+                <p className="text-gray-100 dark:text-slate-300 leading-relaxed text-lg mb-6">
                   {service.category === 'asansor'
                     ? t('service_page.category_elevator_desc', `${district.name} bölgesindeki yapıların çoğunlukla dar balkon girişlerine veya yüksek katlı mimariye sahip olduğunun bilincindeyiz. Bu yüzden asansör kurulumu öncesinde çevre güvenliğini sağlıyor ve mobilyalarınızın binanın iç asansörüne sığmadığı durumlarda dış cepheden %100 güvenli transfer gerçekleştiriyoruz.`, { district: district.name })
                     : t('service_page.category_moving_desc', `${district.name} lokasyonunda nakliye sürecini planlarken sadece eşya taşımıyor, bölgenin trafik saatlerini ve park yasaklarını da hesaba katıyoruz. Deneyimli ekibimizle eşyalarınızı paketliyor, asansörlü sistemimizle sıfır riskle yeni adresinize ulaştırıyoruz.`, { district: district.name })

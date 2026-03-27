@@ -88,11 +88,13 @@ export default function WorksPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-xl text-slate-600 dark:text-slate-400 max-w-3xl"
+            className="text-xl text-gray-800 dark:text-slate-300 max-w-3xl"
           >
             {t('references.subtitle', "Bursa'nın her köşesinde, her gün onlarca mutlu müşteri ve başarılı taşıma.")}
           </motion.p>
         </div>
+
+        <h2 className="sr-only">Çalışma Örneklerimiz</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {WORKS.map((item, idx) => (
@@ -115,7 +117,7 @@ export default function WorksPage() {
                 />
                 <div className="p-6">
                   <h3 className="font-bold text-xl text-black dark:text-white mb-2">{t(item.titleKey)}</h3>
-                  <p className="text-slate-600 dark:text-slate-400 text-sm">{t(item.descKey)}</p>
+                  <p className="text-gray-700 dark:text-slate-300 text-sm">{t(item.descKey)}</p>
                 </div>
               </div>
             </motion.div>

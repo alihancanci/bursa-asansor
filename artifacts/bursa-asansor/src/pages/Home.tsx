@@ -129,7 +129,7 @@ export default function Home() {
 
               <CTASection className="max-w-xl" />
 
-              <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-400 font-medium">
+              <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-gray-300 font-medium">
                 <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> {t('features.f2_title', '7/24 Hizmet')}</div>
                 <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> {t('features.f1_title', '15. Kata Kadar')}</div>
                 <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> {t('features.f3_title', 'Uzman Operatör')}</div>
@@ -143,6 +143,7 @@ export default function Home() {
         <SearchFilter />
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="sr-only">Hizmet Özelliklerimiz</h2>
         <FeaturesBar />
       </div>
       {/* Services Section */}
@@ -192,7 +193,7 @@ export default function Home() {
               {t('home.view_all_services', 'Tüm Asansörlü Nakliyat Hizmetlerimizi Gör')}
               <ArrowRight className="w-4 h-4" />
             </Link>
-            <p className="mt-3 text-sm text-slate-500 dark:text-slate-400">{SERVICES.length} farklı hizmet · Bursa'nın tüm ilçelerine</p>
+            <p className="mt-3 text-sm text-gray-600 dark:text-slate-300">{SERVICES.length} farklı hizmet · Bursa'nın tüm ilçelerine</p>
           </div>
         </div>
       </section>

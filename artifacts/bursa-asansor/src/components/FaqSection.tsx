@@ -95,7 +95,7 @@ export function FaqSection() {
               <h2 className="text-3xl md:text-5xl font-display font-black text-slate-900 mb-4">
                 Sıkça Sorulan <span className="text-primary">Sorular</span>
               </h2>
-              <p className="text-slate-600 dark:text-slate-400 text-lg">
+              <p className="text-gray-700 dark:text-slate-300 text-lg">
                 Mobil asansör kiralama ve taşımacılık hizmetlerimiz hakkında Bursa'daki müşterilerimizin en çok sorduğu soruların yanıtları.
               </p>
             </div>
@@ -110,6 +110,7 @@ export function FaqSection() {
                     onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
                     className="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none"
                     aria-expanded={openIndex === idx}
+                    aria-controls={`faq-answer-${idx}`}
                   >
                     <span className="font-semibold text-slate-900 dark:text-white pr-8 text-sm sm:text-base">
                       {faq.q}
@@ -118,10 +119,12 @@ export function FaqSection() {
                   </button>
                   
                   <div 
+                    id={`faq-answer-${idx}`}
+                    role="region"
                     className={`grid transition-all duration-300 ease-in-out ${openIndex === idx ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}
                   >
                     <div className="overflow-hidden">
-                      <p className="px-6 pb-5 text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
+                      <p className="px-6 pb-5 text-gray-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
                         {faq.a}
                       </p>
                     </div>

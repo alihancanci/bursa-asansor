@@ -24,26 +24,26 @@ export function Footer() {
                 <span className="font-display font-black text-2xl tracking-tight leading-none text-white">
                   Bursa <span className="text-primary">Mobil Asansör</span>
                 </span>
-                <span className="text-[0.65rem] text-slate-400 font-bold uppercase tracking-[0.2em] mt-1">
+                <span className="text-[0.65rem] text-gray-400 font-bold uppercase tracking-[0.2em] mt-1">
                   {t('nav.subtitle', 'Profesyonel Nakliye Ağı')}
                 </span>
               </div>
             </Link>
-            <p className="text-slate-400 text-sm mb-6 leading-relaxed">
+            <p className="text-gray-300 text-sm mb-6 leading-relaxed">
               {t('footer.desc', 'Bursa ve tüm ilçelerinde 7/24 mobil asansör kiralama ve nakliyat hizmetleri. 15. kata kadar ulaşım, uzman ekip desteği.')}
             </p>
             <div className="space-y-3">
-              <a href={`tel:${PHONE_NUMBER.replace(/\D/g,'')}`} className="flex items-center gap-3 text-slate-300 hover:text-primary transition-colors">
+              <a href={`tel:${PHONE_NUMBER.replace(/\D/g,'')}`} className="flex items-center gap-3 text-gray-200 hover:text-primary transition-colors">
                 <div className="bg-white/5 p-2 rounded-lg"><Phone className="h-4 w-4" /></div>
                 <span className="font-semibold text-sm">{PHONE_NUMBER}</span>
               </a>
-              <div className="flex items-center gap-3 text-slate-300">
+               <div className="flex items-center gap-3 text-gray-300">
                 <div className="bg-white/5 p-2 rounded-lg"><Clock className="h-4 w-4 text-primary" /></div>
-                <span className="text-sm">{t('features.f2_title', '7/24 Kesintisiz Hizmet')}</span>
+                <span className="text-sm text-gray-300">{t('features.f2_title', '7/24 Kesintisiz Hizmet')}</span>
               </div>
-              <div className="flex items-center gap-3 text-slate-300">
+              <div className="flex items-center gap-3 text-gray-300">
                 <div className="bg-white/5 p-2 rounded-lg"><MapPin className="h-4 w-4" /></div>
-                <span className="text-sm">Bursa ve Tüm İlçeleri</span>
+                <span className="text-sm text-gray-200">Bursa ve Tüm İlçeleri</span>
               </div>
             </div>
 
@@ -68,13 +68,13 @@ export function Footer() {
             </div>
             <ul className="space-y-2.5">
               <li>
-                <Link href="/hakkimizda" className="text-slate-400 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                <Link href="/hakkimizda" className="text-gray-400 hover:text-primary transition-colors text-sm flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
                   Hakkımızda
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-slate-400 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                <Link href="/blog" className="text-gray-400 hover:text-primary transition-colors text-sm flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
                   Blog / Rehber
                 </Link>
@@ -91,7 +91,7 @@ export function Footer() {
             <ul className="space-y-2.5">
               {ELEVATOR_SERVICES.map(s => (
                 <li key={s.slug}>
-                  <Link href={`/bursa-merkez-${s.slug}`} className="text-slate-400 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                  <Link href={`/bursa-merkez-${s.slug}`} className="text-gray-400 hover:text-primary transition-colors text-sm flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
                     {s.name}
                   </Link>
@@ -109,7 +109,7 @@ export function Footer() {
             <ul className="space-y-2.5">
               {MOVING_SERVICES.map(s => (
                 <li key={s.slug}>
-                  <Link href={`/bursa-merkez-${s.slug}`} className="text-slate-400 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                  <Link href={`/bursa-merkez-${s.slug}`} className="text-gray-400 hover:text-primary transition-colors text-sm flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
                     {s.name}
                   </Link>
@@ -123,8 +123,8 @@ export function Footer() {
             <h3 className="text-sm font-bold text-white uppercase tracking-wider font-display mb-5">{t('nav.districts', 'Hizmet Bölgelerimiz')}</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-2.5 gap-x-4">
               {DISTRICTS.map(d => (
-                <Link key={d.slug} href={`/${d.slug}-kiralik-mobil-asansor`} className="text-slate-400 hover:text-primary transition-colors text-sm flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-slate-700 shrink-0" />
+                <Link key={d.slug} href={`/${d.slug}-kiralik-mobil-asansor`} className="text-gray-400 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0" />
                   {d.name}
                 </Link>
               ))}
@@ -134,10 +134,10 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-slate-500 text-sm">
+          <p className="text-gray-400 text-sm">
             © {new Date().getFullYear()} Bursa Mobil Asansör. {t('footer.rights', 'Tüm hakları saklıdır.')}
           </p>
-          <div className="flex gap-4 text-sm text-slate-500">
+          <div className="flex gap-4 text-sm text-gray-400">
             <span>{t('features.f3_title', 'Uzman Operatör')}</span>
             <span>•</span>
             <span>{t('features.f1_title', '15. Kata Kadar')}</span>
