@@ -2,7 +2,7 @@ import { SEO } from "@/components/SEO";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { useTranslation } from "react-i18next";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import { CTASection } from "@/components/CTASection";
 import { SearchFilter } from "@/components/SearchFilter";
 import { FeaturesBar } from "@/components/FeaturesBar";
@@ -19,6 +19,33 @@ export default function Home() {
   const { t } = useTranslation();
 
   const ogImage = getAbsoluteAssetUrl("/opengraph.jpg");
+  const [shouldLoadMap, setShouldLoadMap] = useState(false);
+  const mapSentinelRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (shouldLoadMap) return;
+    const el = mapSentinelRef.current;
+    if (!el) return;
+
+    if (typeof IntersectionObserver === "undefined") {
+      // Eski tarayıcılarda haritayı hemen yükle.
+      setShouldLoadMap(true);
+      return;
+    }
+
+    const obs = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          setShouldLoadMap(true);
+          obs.disconnect();
+        }
+      },
+      { rootMargin: "400px 0px" }
+    );
+
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [shouldLoadMap]);
 
   const localBusinessSchema = {
     "@context": "https://schema.org",
@@ -91,9 +118,9 @@ export default function Home() {
         {/* Background Image & Overlay */}
         <div className="absolute inset-0 z-0">
           <picture>
-            <source srcSet={`${import.meta.env.BASE_URL}images/hero-bg.webp`} type="image/webp" />
+            <source srcSet="/images/hero-bg.webp" type="image/webp" />
               <img
-                src={`${import.meta.env.BASE_URL}images/hero-bg.png`}
+                src="/images/hero-bg.png"
                 alt={t('hero.image_alt', 'Bursa Mobil Asansör Kiralama Hizmeti')}
                 className="w-full h-full object-cover"
                 width="1408"
@@ -261,9 +288,15 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">{t('home.service_network', 'Hizmet Ağımız')}</h2>
             <p className="dark:text-slate-300 text-lg text-slate-700">{t('home.service_network_desc', "Türkiye'nin en aktif çalışan asansörlü nakliyat ağıyla, her noktadayız.")}</p>
           </div>
-          <Suspense fallback={<div className="h-[500px] w-full bg-slate-100 animate-pulse rounded-3xl" />}>
-            <ServiceMap />
-          </Suspense>
+          <div ref={mapSentinelRef}>
+            {shouldLoadMap ? (
+              <Suspense fallback={<div className="h-[500px] w-full bg-slate-100 animate-pulse rounded-3xl" />}>
+                <ServiceMap />
+              </Suspense>
+            ) : (
+              <div className="h-[500px] w-full bg-slate-100 animate-pulse rounded-3xl" />
+            )}
+          </div>
         </div>
       </section>
 
