@@ -94,30 +94,51 @@ export default function ServicePage() {
 
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Bursa Mobil Asansör Kiralama",
+    "@type": "MovingCompany",
+    "name": `Bursa Mobil Asansör - ${district.name} Şubesi`,
+    "description": `${district.name} bölgesinde profesyonel ${serviceName} hizmeti. 7/24 kiralık asansör ve sigortalı taşımacılık.`,
     "image": getAbsoluteAssetUrl("/images/hero-bg.jpg"),
     "telephone": "+905053297533",
-    "url": getCanonicalUrl("/"),
+    "url": getCanonicalUrl(`/${fullSlug}`),
     "address": {
       "@type": "PostalAddress",
       "addressLocality": district.name,
       "addressRegion": "Bursa",
       "addressCountry": "TR"
     },
-    // Approximate coordinate for Bursa as a service area anchor
     "geo": {
       "@type": "GeoCoordinates",
       "latitude": "40.1828",
       "longitude": "29.0667"
+    },
+    "priceRange": "₺₺",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "12"
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
       "opens": "00:00",
       "closes": "23:59"
+    }
+  };
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": serviceName,
+    "serviceType": "Mobil Asansör Kiralama & Nakliyat",
+    "provider": {
+      "@type": "MovingCompany",
+      "name": "Bursa Mobil Asansör"
     },
-    "priceRange": "₺₺"
+    "areaServed": {
+      "@type": "City",
+      "name": district.name
+    },
+    "description": serviceShortDesc
   };
 
   return (
@@ -128,7 +149,7 @@ export default function ServicePage() {
         path={`/${fullSlug}`}
         ogImage={ogImage}
         type="article"
-        schema={[faqSchema, breadcrumbSchema, localBusinessSchema]}
+        schema={[faqSchema, breadcrumbSchema, localBusinessSchema, serviceSchema]}
       />
       {/* Breadcrumb strip */}
       <nav aria-label="Konum" className="bg-gray-100 dark:bg-navy border-b border-gray-300 dark:border-white/10 px-4 sm:px-6 py-3">

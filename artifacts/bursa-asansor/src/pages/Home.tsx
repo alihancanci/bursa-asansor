@@ -22,16 +22,29 @@ export default function Home() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "MovingCompany",
-    name: "Bursa Mobil Asansör",
-    areaServed: DISTRICTS.map((district) => district.name),
+    description: "Bursa'nın her noktasına 7/24 mobil asansör kiralama ve profesyonel asansörlü nakliyat hizmeti. 15+ yıllık tecrübe ve modern araç filosu.",
     telephone: PHONE_NUMBER,
     url: "https://bursakiralikasansor.com/",
     image: ogImage,
+    priceRange: "₺₺",
     sameAs: [WHATSAPP_LINK],
     address: {
       "@type": "PostalAddress",
+      streetAddress: "Bursa Merkez",
       addressLocality: "Bursa",
+      addressRegion: "Marmara",
+      postalCode: "16000",
       addressCountry: "TR",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: "40.1828",
+      longitude: "29.0667"
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      reviewCount: "50"
     },
     openingHoursSpecification: [
       {

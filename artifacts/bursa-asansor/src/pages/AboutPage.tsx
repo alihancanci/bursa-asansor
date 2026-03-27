@@ -45,7 +45,15 @@ export default function AboutPage() {
           "@type": "AboutPage",
           "name": "Bursa Mobil Asansör Hakkımızda",
           "description": "CNC Bursa evden eve nakliyat ve kiralık mobil asansör hizmetleri hakkında kurumsal bilgiler.",
-          "url": getAbsoluteAssetUrl("/hakkimizda")
+          "url": getAbsoluteAssetUrl("/hakkimizda"),
+          "mainEntity": {
+            "@type": "MovingCompany",
+            "name": "Bursa Mobil Asansör",
+            "foundingDate": "2010",
+            "description": "Bursa'da 15 yılı aşkın tecrübe ile asansörlü nakliyat ve kiralık mobil asansör hizmetleri sunan öncü kuruluş.",
+            "knowsAbout": ["Asansörlü Nakliyat", "Mobil Asansör Kiralama", "Yüksek Kat Taşımacılığı"],
+            "areaServed": "Bursa ve çevre iller"
+          }
         }]}
       />
 

@@ -30,6 +30,14 @@ export default function BlogPost() {
         name: post.author,
     }],
     abstract: post.excerpt,
+    publisher: {
+      "@type": "Organization",
+      name: "Bursa Mobil Asansör",
+      logo: {
+        "@type": "ImageObject",
+        url: getAbsoluteAssetUrl("/logo.png")
+      }
+    }
   };
 
   let faqSchema = null;

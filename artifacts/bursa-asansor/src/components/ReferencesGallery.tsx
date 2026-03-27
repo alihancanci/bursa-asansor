@@ -107,8 +107,9 @@ export function ReferencesGallery() {
                 <img
                   src={`${import.meta.env.BASE_URL}${item.image.startsWith('/') ? item.image.substring(1) : item.image}`}
                   alt={t(item.titleKey)}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  decoding="async"
                 />
                 
                 {/* Overlay on hover */}
