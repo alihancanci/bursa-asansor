@@ -23,8 +23,8 @@ export default function BlogPost() {
     "@type": "Article",
     headline: post.title,
     image: [ogImage],
-    datePublished: "2026-03-24T08:00:00+08:00",
-    dateModified: "2026-03-24T08:00:00+08:00",
+    datePublished: "2026-03-24T09:00:00+03:00",
+    dateModified: new Date().toISOString(),
     author: [{
         "@type": "Person",
         name: post.author,
@@ -106,7 +106,15 @@ export default function BlogPost() {
             transition={{ delay: 0.2 }}
             className="mb-12 rounded-3xl overflow-hidden shadow-lg h-[400px]"
           >
-            <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
+            <img 
+              src={post.image} 
+              alt={post.title} 
+              className="w-full h-full object-cover" 
+              loading="lazy"
+              decoding="async"
+              width="1200"
+              height="400"
+            />
           </motion.div>
 
           <article 

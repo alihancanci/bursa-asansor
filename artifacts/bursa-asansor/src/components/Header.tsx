@@ -12,7 +12,7 @@ const LANGUAGES = [
 ];
 
 function LanguageSwitcher() {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -51,7 +51,10 @@ function LanguageSwitcher() {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-1.5 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-700 dark:text-slate-200 font-medium text-sm"
+        className="flex items-center gap-1.5 px-3 py-2.5 min-h-[44px] rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-700 dark:text-slate-200 font-medium text-sm"
+        aria-label={t('common.select_language', 'Dil Seçin')}
+        aria-expanded={isOpen}
+        aria-haspopup="true"
       >
         <Globe className="w-4 h-4" />
         <span className="uppercase">{i18n.resolvedLanguage || 'TR'}</span>
@@ -83,7 +86,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20 md:h-24">
 
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-3 group" aria-label="Bursa Mobil Asansör - Ana Sayfa">
             <div className="bg-gradient-to-br from-primary to-orange-600 p-2.5 rounded-2xl shadow-lg shadow-primary/30 group-hover:shadow-primary/50 transition-all duration-300 group-hover:-translate-y-0.5">
               <ArrowUpToLine className="h-7 w-7 text-white stroke-[2.5]" />
             </div>

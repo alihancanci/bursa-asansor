@@ -16,7 +16,7 @@ export function Footer() {
 
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-6">
+            <Link href="/" className="flex items-center gap-3 mb-6" aria-label="Ana Sayfa">
               <div className="bg-gradient-to-br from-primary to-orange-600 p-2.5 rounded-2xl shadow-lg shadow-primary/20">
                 <ArrowUpToLine className="h-7 w-7 text-white stroke-[2.5]" />
               </div>
@@ -28,7 +28,7 @@ export function Footer() {
                   {t('nav.subtitle', 'Profesyonel Nakliye Ağı')}
                 </span>
               </div>
-            </div>
+            </Link>
             <p className="text-slate-400 text-sm mb-6 leading-relaxed">
               {t('footer.desc', 'Bursa ve tüm ilçelerinde 7/24 mobil asansör kiralama ve nakliyat hizmetleri. 15. kata kadar ulaşım, uzman ekip desteği.')}
             </p>

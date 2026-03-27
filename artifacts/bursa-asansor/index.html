@@ -24,10 +24,38 @@
       gtag("js", new Date());
       gtag("config", "G-J2E99G4FY2", { send_page_view: false });
     </script>
+    <link rel="preload" as="image" href="/images/hero-bg.webp" fetchpriority="high" type="image/webp">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      .hero-overlay { background: linear-gradient(to right, #0a192f f2 0%, #0a192f b3 100%); position: absolute; inset: 0; }
+      .pt-24 { padding-top: 6rem; }
+      .pb-32 { padding-bottom: 8rem; }
+      @media (min-width: 1024px) { .lg\:pt-32 { padding-top: 8rem; } .lg\:pb-40 { padding-bottom: 10rem; } }
+      .bg-navy { background-color: #0a192f; }
+    </style>
+    <script type="speculationrules">
+    {
+      "prerender": [
+        {
+          "source": "list",
+          "urls": ["/", "/hakkimizda", "/blog", "/calismalarimiz"]
+        },
+        {
+          "source": "document",
+          "where": {
+            "and": [
+              { "href_matches": "/*" },
+              { "not": { "href_matches": ["/logout", "/admin/*"] } }
+            ]
+          },
+          "eagerness": "moderate"
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

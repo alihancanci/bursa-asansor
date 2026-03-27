@@ -112,11 +112,6 @@ export default function ServicePage() {
       "longitude": "29.0667"
     },
     "priceRange": "₺₺",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "reviewCount": "12"
-    },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
@@ -167,7 +162,13 @@ export default function ServicePage() {
         <div className="absolute inset-0 opacity-10">
           <picture>
             <source srcSet={`${import.meta.env.BASE_URL}images/service-abstract.webp`} type="image/webp" />
-            <img src={`${import.meta.env.BASE_URL}images/service-abstract.png`} alt="" loading="lazy" decoding="async" className="w-full h-full object-cover" />
+            <img
+                  src={`${import.meta.env.BASE_URL}images/service-abstract.webp`}
+                  alt={t('services.abstract_alt', 'Profesyonel Asansörlü Nakliyat Hizmeti')}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
           </picture>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

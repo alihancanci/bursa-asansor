@@ -4,6 +4,7 @@ import { HelmetProvider } from "react-helmet-async";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Layout } from "@/components/Layout";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
 import Home from "@/pages/Home";
 import ServicePage from "@/pages/ServicePage";
 import BlogIndex from "@/pages/BlogIndex";
@@ -69,7 +70,9 @@ function App() {
     <HelmetProvider>
       <QueryClientProvider client={queryClient}>
         <LanguageRouter>
-          <Router />
+          <ErrorBoundary>
+            <Router />
+          </ErrorBoundary>
         </LanguageRouter>
       </QueryClientProvider>
     </HelmetProvider>

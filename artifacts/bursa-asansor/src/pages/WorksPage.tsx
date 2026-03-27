@@ -108,6 +108,10 @@ export default function WorksPage() {
                   src={`${import.meta.env.BASE_URL}${item.image.startsWith('/') ? item.image.substring(1) : item.image}`}
                   alt={t(item.titleKey)}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                  decoding="async"
+                  width="800"
+                  height="600"
                 />
                 <div className="p-6">
                   <h3 className="font-bold text-xl text-black dark:text-white mb-2">{t(item.titleKey)}</h3>

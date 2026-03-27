@@ -110,6 +110,8 @@ export function ReferencesGallery() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
                   decoding="async"
+                  width="600"
+                  height="800"
                 />
                 
                 {/* Overlay on hover */}

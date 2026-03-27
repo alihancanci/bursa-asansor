@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { DISTRICTS, PHONE_NUMBER } from "@/data";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ShieldCheck, Clock, ArrowUpToLine, Users, ArrowRight, Compass, Target } from "lucide-react";
@@ -177,7 +178,7 @@ export default function AboutPage() {
             Eski usul taşımacılığın risklerine veda edin. Teknolojik asansörlerimiz ve uzman kadromuzla taşınmak artık çok kolay.
           </p>
           <a
-            href="tel:+905321234567" // Placeholder, will use global logic if needed
+            href={`tel:${PHONE_NUMBER.replace(/\s+/g, '')}`}
             className="inline-flex items-center gap-2 bg-white text-primary hover:bg-slate-50 px-8 py-4 rounded-xl font-bold text-lg transition-all hover:scale-105 shadow-xl shadow-black/10 mx-auto"
           >
             Hemen Teklif Alın

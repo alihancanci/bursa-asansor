@@ -30,21 +30,16 @@ export default function Home() {
     sameAs: [WHATSAPP_LINK],
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Bursa Merkez",
+      streetAddress: "Kükürtlü Mah. Mudanya Yolu",
       addressLocality: "Bursa",
-      addressRegion: "Marmara",
-      postalCode: "16000",
+      addressRegion: "Bursa",
+      postalCode: "16080",
       addressCountry: "TR",
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: "40.1828",
-      longitude: "29.0667"
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5",
-      reviewCount: "50"
+      latitude: "40.2014",
+      longitude: "29.0436",
     },
     openingHoursSpecification: [
       {
@@ -96,15 +91,16 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <picture>
             <source srcSet={`${import.meta.env.BASE_URL}images/hero-bg.webp`} type="image/webp" />
-            <img
-              src={`${import.meta.env.BASE_URL}images/hero-bg.png`}
-              alt="Bursa Mobil Asansör — Kiralık Mobil Asansör Hizmeti"
-              width={1920}
-              height={1080}
-              fetchPriority="high"
-              decoding="async"
-              className="w-full h-full object-cover"
-            />
+              <img
+                src={`${import.meta.env.BASE_URL}images/hero-bg.png`}
+                alt={t('hero.image_alt', 'Bursa Mobil Asansör Kiralama Hizmeti')}
+                className="w-full h-full object-cover"
+                width="1408"
+                height="768"
+                fetchPriority="high"
+                loading="eager"
+                decoding="async"
+              />
           </picture>
           <div className="absolute inset-0 hero-overlay" />
         </div>

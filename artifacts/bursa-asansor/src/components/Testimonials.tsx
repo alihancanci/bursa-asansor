@@ -7,7 +7,7 @@ export function Testimonials() {
   const marqueeItems = [...REVIEWS, ...REVIEWS, ...REVIEWS];
 
   return (
-    <section className="py-24 bg-slate-50 dark:bg-navy/30 overflow-hidden relative border-y border-slate-200 dark:border-white/5">
+    <section className="py-20 bg-white dark:bg-background overflow-hidden content-visibility-auto relative border-y border-slate-200 dark:border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
         <h2 className="text-3xl md:text-5xl font-display font-bold text-secondary dark:text-white mb-4">
           Bizi Tercih Eden <span className="text-primary">Müşterilerimiz</span>
