@@ -9,9 +9,11 @@ const SERVICE_GROUPS = [
 ];
 
 function ServiceSelect({
+  id,
   value,
   onChange,
 }: {
+  id: string;
   value: string;
   onChange: (slug: string) => void;
 }) {
@@ -32,6 +34,7 @@ function ServiceSelect({
   return (
     <div ref={ref} className="relative">
       <button
+        id={id}
         type="button"
         onClick={() => setOpen(o => !o)}
         className="w-full h-14 pl-4 pr-10 rounded-xl bg-slate-50 dark:bg-navy border-2 border-transparent dark:border-white/10 hover:border-primary/30 focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all font-medium text-secondary dark:text-white text-left flex items-center justify-between"
@@ -104,11 +107,12 @@ export function SearchFilter() {
       <div className="flex flex-col md:flex-row gap-4 items-end">
 
         <div className="w-full flex-1 space-y-2">
-          <label className="text-sm font-semibold text-secondary dark:text-slate-200 flex items-center gap-2 ml-1">
+          <label htmlFor="district-select" className="text-sm font-semibold text-secondary dark:text-slate-200 flex items-center gap-2 ml-1">
             <MapPin className="h-4 w-4 text-primary" /> İlçe Seçin
           </label>
           <div className="relative">
             <select
+              id="district-select"
               value={district}
               onChange={(e) => setDistrict(e.target.value)}
               className="w-full h-14 pl-4 pr-10 rounded-xl bg-slate-50 dark:bg-navy border-2 border-transparent dark:border-white/10 hover:border-primary/30 focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all appearance-none font-medium text-secondary dark:text-white"
@@ -124,10 +128,10 @@ export function SearchFilter() {
         </div>
 
         <div className="w-full flex-1 space-y-2">
-          <label className="text-sm font-semibold text-secondary dark:text-slate-200 flex items-center gap-2 ml-1">
+          <label htmlFor="service-select" className="text-sm font-semibold text-secondary dark:text-slate-200 flex items-center gap-2 ml-1">
             <Truck className="h-4 w-4 text-primary" /> Hizmet Seçin
           </label>
-          <ServiceSelect value={service} onChange={setService} />
+          <ServiceSelect id="service-select" value={service} onChange={setService} />
         </div>
 
         <button
