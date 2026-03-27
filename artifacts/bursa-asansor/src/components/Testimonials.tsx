@@ -2,9 +2,10 @@ import { Star } from "lucide-react";
 import { REVIEWS } from "@/data/reviews";
 
 export function Testimonials() {
-  // We duplicate the reviews array 3 times to ensure the marquee 
-  // never runs out of content visually before it loops back seamlessly.
-  const marqueeItems = [...REVIEWS, ...REVIEWS, ...REVIEWS];
+  // DOM boyutunu kontrol altında tutmak için yalnızca ilk 20 yorumu gösteriyoruz
+  // ve görsel süreklilik için diziyi 2 kez tekrar ediyoruz.
+  const baseItems = REVIEWS.slice(0, 20);
+  const marqueeItems = [...baseItems, ...baseItems];
 
   return (
     <section className="py-20 bg-white dark:bg-background overflow-hidden content-visibility-auto relative border-y border-slate-200 dark:border-white/5">
@@ -19,7 +20,7 @@ export function Testimonials() {
 
       {/* Marquee Container */}
       <div className="relative flex w-full flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-        <div className="flex w-max animate-marquee gap-6 py-4 hover:[animation-play-state:paused] px-6">
+        <div className="flex w-max animate-marquee gap-6 py-4 hover:[animation-play-state:paused] px-6" aria-hidden="true">
           {marqueeItems.map((review, idx) => (
             <div 
               key={`${review.id}-${idx}`}

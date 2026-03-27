@@ -8,12 +8,12 @@ import { SearchFilter } from "@/components/SearchFilter";
 import { FeaturesBar } from "@/components/FeaturesBar";
 import { Suspense, lazy } from "react";
 const ServiceMap = lazy(() => import("@/components/ServiceMap"));
-import { Testimonials } from "@/components/Testimonials";
-import { FaqSection } from "@/components/FaqSection";
+const Testimonials = lazy(() => import("@/components/Testimonials").then(m => ({ default: m.Testimonials })));
+const FaqSection = lazy(() => import("@/components/FaqSection").then(m => ({ default: m.FaqSection })));
 import { DISTRICTS, PHONE_NUMBER, SERVICES, WHATSAPP_LINK } from "@/data";
 import { ArrowRight, CheckCircle2, ArrowUpToLine, Home as HomeIcon, Sofa, Truck, HardHat, Package, ImageIcon } from "lucide-react";
 import { getAbsoluteAssetUrl } from "@/lib/seo";
-import { ReferencesGallery } from "@/components/ReferencesGallery";
+const ReferencesGallery = lazy(() => import("@/components/ReferencesGallery").then(m => ({ default: m.ReferencesGallery })));
 
 export default function Home() {
   const { t } = useTranslation();
@@ -140,7 +140,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 border border-primary/30 text-primary-foreground mb-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/90 border border-primary/30 text-primary mb-6 shadow-sm">
                 <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
                 <span className="text-sm font-semibold tracking-wide">{t('home.active_in_all', 'Bursa ve Tüm İlçelerinde Aktif')}</span>
               </div>
@@ -226,7 +226,9 @@ export default function Home() {
       </section>
 
       {/* References Gallery Section */}
-      <ReferencesGallery />
+      <Suspense fallback={<div className="py-20 bg-white dark:bg-background"><div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div className="h-64 bg-slate-100 dark:bg-navy-light rounded-3xl animate-pulse" /></div></div>}>
+        <ReferencesGallery />
+      </Suspense>
 
       {/* Trust Content Section */}
       <section className="py-24 relative overflow-hidden opacity-[1] bg-[#000000c9]">
@@ -300,9 +302,13 @@ export default function Home() {
         </div>
       </section>
 
-      <Testimonials />
+      <Suspense fallback={<div className="py-20 bg-white dark:bg-background"><div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div className="h-40 bg-slate-100 dark:bg-navy-light rounded-3xl animate-pulse" /></div></div>}>
+        <Testimonials />
+      </Suspense>
 
-      <FaqSection />
+      <Suspense fallback={<div className="py-20 bg-slate-50 dark:bg-background"><div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div className="h-40 bg-slate-100 dark:bg-navy-light rounded-3xl animate-pulse" /></div></div>}>
+        <FaqSection />
+      </Suspense>
 
       {/* Districts Grid */}
       <section className="py-20 bg-slate-50 dark:bg-navy/30 border-t border-border">

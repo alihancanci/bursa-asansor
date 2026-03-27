@@ -1,33 +1,36 @@
 import { Switch, Route, Router as WouterRouter } from "wouter";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HelmetProvider } from "react-helmet-async";
-import { useEffect, useState } from "react";
+import { Suspense, lazy, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Layout } from "@/components/Layout";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
-import Home from "@/pages/Home";
-import ServicePage from "@/pages/ServicePage";
-import BlogIndex from "@/pages/BlogIndex";
-import BlogPost from "@/pages/BlogPost";
-import AboutPage from "@/pages/AboutPage";
-import WorksPage from "@/pages/WorksPage";
-import NotFound from "@/pages/not-found";
+
+const Home = lazy(() => import("@/pages/Home"));
+const ServicePage = lazy(() => import("@/pages/ServicePage"));
+const BlogIndex = lazy(() => import("@/pages/BlogIndex"));
+const BlogPost = lazy(() => import("@/pages/BlogPost"));
+const AboutPage = lazy(() => import("@/pages/AboutPage"));
+const WorksPage = lazy(() => import("@/pages/WorksPage"));
+const NotFound = lazy(() => import("@/pages/not-found"));
 
 const queryClient = new QueryClient();
 
 function Router() {
   return (
     <Layout>
-      <Switch>
-        <Route path="/" component={Home} />
-        <Route path="/blog" component={BlogIndex} />
-        <Route path="/blog/:slug" component={BlogPost} />
-        <Route path="/hakkimizda" component={AboutPage} />
-        <Route path="/calismalarimiz" component={WorksPage} />
-        {/* Dynamic catch-all for /:district-:service */}
-        <Route path="/:slug" component={ServicePage} />
-        <Route component={NotFound} />
-      </Switch>
+      <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Yükleniyor...</div>}>
+        <Switch>
+          <Route path="/" component={Home} />
+          <Route path="/blog" component={BlogIndex} />
+          <Route path="/blog/:slug" component={BlogPost} />
+          <Route path="/hakkimizda" component={AboutPage} />
+          <Route path="/calismalarimiz" component={WorksPage} />
+          {/* Dynamic catch-all for /:district-:service */}
+          <Route path="/:slug" component={ServicePage} />
+          <Route component={NotFound} />
+        </Switch>
+      </Suspense>
     </Layout>
   );
 }
