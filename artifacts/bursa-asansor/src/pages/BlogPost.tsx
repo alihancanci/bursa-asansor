@@ -5,6 +5,7 @@ import { BLOG_POSTS } from "@/data/blog";
 import NotFound from "./not-found";
 import { Calendar, Clock, User, ChevronRight, MessageCircle } from "lucide-react";
 import { getCanonicalUrl, getAbsoluteAssetUrl } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
@@ -58,17 +59,14 @@ export default function BlogPost() {
         schema={faqSchema ? [articleSchema, faqSchema] : [articleSchema]}
       />
 
+      <Breadcrumbs items={[
+        { name: "Blog", path: "/blog" },
+        { name: post.title, path: `/blog/${post.slug}` }
+      ]} />
+
       {/* Article Header */}
       <header className="pt-32 pb-12 bg-slate-50 dark:bg-navy/30 border-b border-slate-200 dark:border-white/10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="flex items-center text-sm font-medium text-slate-500 mb-8">
-            <Link href="/" className="hover:text-primary transition-colors">Ana Sayfa</Link>
-            <ChevronRight className="w-4 h-4 mx-2" />
-            <Link href="/blog" className="hover:text-primary transition-colors">Blog</Link>
-            <ChevronRight className="w-4 h-4 mx-2" />
-            <span className="text-slate-800 dark:text-slate-300 truncate">{post.title}</span>
-          </nav>
-
           <div className="flex items-center gap-3 mb-6">
             <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-bold">
               {post.category}

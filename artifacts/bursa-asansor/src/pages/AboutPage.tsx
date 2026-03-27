@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ShieldCheck, Clock, ArrowUpToLine, Users, ArrowRight, Compass, Target } from "lucide-react";
 import { SEO } from "@/components/SEO";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { getAbsoluteAssetUrl } from "@/lib/seo";
 
 export default function AboutPage() {
@@ -39,7 +40,16 @@ export default function AboutPage() {
         description={t('meta.about_desc', 'CNC Bursa evden eve nakliyat ve kiralık mobil asansör hizmetleri. Misyonumuz, vizyonumuz ve güvenilir taşımacılık anlayışımız hakkında bilgi edinin.')}
         path="/hakkimizda"
         ogImage={ogImage}
+        schema={[{
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": "Bursa Mobil Asansör Hakkımızda",
+          "description": "CNC Bursa evden eve nakliyat ve kiralık mobil asansör hizmetleri hakkında kurumsal bilgiler.",
+          "url": getAbsoluteAssetUrl("/hakkimizda")
+        }]}
       />
+
+      <Breadcrumbs items={[{ name: "Hakkımızda", path: "/hakkimizda" }]} />
 
       {/* Hero Section */}
       <section className="relative py-20 lg:py-28 overflow-hidden bg-slate-900 border-b-4 border-primary">
@@ -53,7 +63,7 @@ export default function AboutPage() {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
-              Hakkımızda
+              Hakkımızda | <span className="text-primary">Bursa Mobil Asansör & Nakliyat</span>
             </h1>
             <p className="text-xl text-slate-300 max-w-2xl mx-auto font-light">
               <span className="text-primary font-semibold">CNC Bursa</span> Evden Eve Nakliyat & Kiralık Asansör

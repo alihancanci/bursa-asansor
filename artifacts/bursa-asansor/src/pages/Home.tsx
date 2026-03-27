@@ -139,8 +139,8 @@ export default function Home() {
       <section className="py-20 bg-slate-50 dark:bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">{t('nav.services', 'Hizmetlerimiz')}</h2>
-            <p className="dark:text-slate-300 text-lg text-[#000000]">{t('home.services_desc', 'İhtiyacınıza uygun mobil asansör çözümleriyle yanınızdayız.')}</p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">{t('home.services_title', 'Bursa Mobil Asansör ve Nakliyat Hizmetleri')}</h2>
+            <p className="dark:text-slate-300 text-lg text-[#000000]">{t('home.services_desc', 'İhtiyacınıza uygun profesyonel mobil asansör çözümleriyle yanınızdayız.')}</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -179,7 +179,7 @@ export default function Home() {
               href="/bursa-merkez-kiralik-mobil-asansor"
               className="inline-flex items-center gap-2 px-8 py-3 bg-primary hover:bg-orange-600 text-white font-bold rounded-xl transition-colors shadow-lg hover:shadow-primary/30"
             >
-              Tüm Hizmetleri Gör
+              {t('home.view_all_services', 'Tüm Asansörlü Nakliyat Hizmetlerimizi Gör')}
               <ArrowRight className="w-4 h-4" />
             </Link>
             <p className="mt-3 text-sm text-slate-500 dark:text-slate-400">{SERVICES.length} farklı hizmet · Bursa'nın tüm ilçelerine</p>

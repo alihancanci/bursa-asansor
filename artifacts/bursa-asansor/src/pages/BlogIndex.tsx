@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { BLOG_POSTS } from "@/data/blog";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { getCanonicalUrl } from "@/lib/seo";
 
 export default function BlogIndex() {
@@ -12,7 +13,16 @@ export default function BlogIndex() {
         title="Blog & Nakliyat Rehberi | Bursa Mobil Asansör"
         description="Evden eve nakliyat, asansör kiralama fiyatları ve taşınma rehberi hakkında güncel sektörel haberler ve faydalı bilgiler."
         path="/blog"
+        schema={[{
+          "@context": "https://schema.org",
+          "@type": "Blog",
+          "name": "Bursa Mobil Asansör Nakliyat Rehberi",
+          "description": "Taşınma ve asansör kiralama ipuçları.",
+          "url": getCanonicalUrl("/blog")
+        }]}
       />
+
+      <Breadcrumbs items={[{ name: "Blog", path: "/blog" }]} />
 
       {/* Hero Header */}
       <section className="pt-32 pb-16 bg-slate-50 dark:bg-navy/30 border-b border-slate-200 dark:border-white/10">

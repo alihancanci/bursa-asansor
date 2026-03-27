@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { SEO } from "@/components/SEO";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { getAbsoluteAssetUrl } from "@/lib/seo";
 import { ArrowLeft, ImageIcon } from "lucide-react";
 import { Link } from "wouter";
@@ -50,7 +51,16 @@ export default function WorksPage() {
         description={t('meta.works_desc', "Bursa'nın her noktasında gerçekleştirdiğimiz asansörlü nakliyat ve kiralık asansör çalışmalarımıza ait fotoğraflar.")}
         path="/calismalarimiz"
         ogImage={ogImage}
+        schema={[{
+          "@context": "https://schema.org",
+          "@type": "ImageGallery",
+          "name": "Bursa Mobil Asansör Çalışmaları",
+          "description": "Gerçek iş referanslarımızdan oluşan fotoğraf galerisi.",
+          "url": getAbsoluteAssetUrl("/calismalarimiz")
+        }]}
       />
+
+      <Breadcrumbs items={[{ name: "Çalışmalarımız", path: "/calismalarimiz" }]} />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <Link href="/" className="inline-flex items-center gap-2 text-slate-500 hover:text-primary transition-colors mb-8 group">
