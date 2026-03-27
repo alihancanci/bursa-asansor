@@ -30,7 +30,7 @@ const TOOLTIP_MESSAGES = [
 
 const getRandomMessage = () => TOOLTIP_MESSAGES[Math.floor(Math.random() * TOOLTIP_MESSAGES.length)];
 
-export function ServiceMap() {
+export default function ServiceMap() {
   const mapRef = useRef<HTMLDivElement>(null);
   const [mapInstance, setMapInstance] = useState<L.Map | null>(null);
 

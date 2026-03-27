@@ -6,7 +6,8 @@ import { useEffect } from "react";
 import { CTASection } from "@/components/CTASection";
 import { SearchFilter } from "@/components/SearchFilter";
 import { FeaturesBar } from "@/components/FeaturesBar";
-import { ServiceMap } from "@/components/ServiceMap";
+import { Suspense, lazy } from "react";
+const ServiceMap = lazy(() => import("@/components/ServiceMap"));
 import { Testimonials } from "@/components/Testimonials";
 import { FaqSection } from "@/components/FaqSection";
 import { DISTRICTS, PHONE_NUMBER, SERVICES, WHATSAPP_LINK } from "@/data";
@@ -259,7 +260,9 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">{t('home.service_network', 'Hizmet Ağımız')}</h2>
             <p className="dark:text-slate-300 text-lg text-slate-700">{t('home.service_network_desc', "Türkiye'nin en aktif çalışan asansörlü nakliyat ağıyla, her noktadayız.")}</p>
           </div>
-          <ServiceMap />
+          <Suspense fallback={<div className="h-[500px] w-full bg-slate-100 animate-pulse rounded-3xl" />}>
+            <ServiceMap />
+          </Suspense>
         </div>
       </section>
 
