@@ -1,18 +1,12 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   trailingSlash: false,
   images: {
     unoptimized: false,
   },
-  // Vercel 1GB RAM (OOM) Hatasını Önlemek İçin Bellek Optimizasyonları
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  // @ts-ignore - eslint is a valid Next.js config property
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+  // Vercel build-time optimizations
+  typescript: { ignoreBuildErrors: true },
+  eslint: { ignoreDuringBuilds: true },
 
   async headers() {
     return [
