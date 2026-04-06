@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import { ClientProviders } from "./providers";
 
@@ -37,22 +38,24 @@ export default function RootLayout({
   return (
     <html lang="tr" suppressHydrationWarning>
       <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-J2E99G4FY2" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-J2E99G4FY2');
-            `,
-          }}
-        />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
       </head>
       <body suppressHydrationWarning>
         <ClientProviders>
           {children}
         </ClientProviders>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-J2E99G4FY2"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-J2E99G4FY2');
+          `}
+        </Script>
       </body>
     </html>
   );
