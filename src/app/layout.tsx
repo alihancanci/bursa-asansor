@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   },
   description: "Bursa'da 7/24 mobil asansör kiralama ve asansörlü nakliyat hizmeti. 15. kata kadar operatörlü güvenli taşıma çözümleri.",
   metadataBase: new URL("https://bursakiralikasansor.com"),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     type: "website",
     locale: "tr_TR",

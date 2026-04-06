@@ -13,17 +13,20 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const resolvedParams = await params;
-  const post = BLOG_POSTS.find(p => p.slug === resolvedParams.slug);
+  const { slug: paramsSlug } = await params;
+  const post = BLOG_POSTS.find(p => p.slug === paramsSlug);
   
   if (!post) {
-    return { title: 'Sayfa Bulunamadı' };
+    return { title: 'Yazı Bulunamadı | Blog' };
   }
 
   return {
     title: `${post.title} | Blog`,
     description: post.excerpt,
     keywords: post.keywords,
+    alternates: {
+      canonical: `/blog/${paramsSlug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,

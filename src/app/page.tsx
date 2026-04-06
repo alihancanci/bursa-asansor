@@ -4,6 +4,9 @@ import HomePageClient from './HomePageClient';
 export const metadata: Metadata = {
   title: 'Bursa Kiralık Asansör & Evden Eve Nakliyat | Mobil Asansör',
   description: 'Bursa genelinde 15. kata kadar güvenli ve profesyonel mobil asansör kiralama hizmeti. Evden eve asansörlü nakliyat, inşaat asansörü, saatlik kiralama hizmetleri için 7/24 ulaşın.',
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: 'Bursa Kiralık Asansör & Evden Eve Nakliyat | Mobil Asansör',
     description: 'Bursa genelinde 15. kata kadar güvenli ve profesyonel mobil asansör kiralama hizmeti. Evden eve asansörlü nakliyat, inşaat asansörü, saatlik kiralama hizmetleri için 7/24 ulaşın.',

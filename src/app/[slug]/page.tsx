@@ -16,8 +16,8 @@ export async function generateStaticParams() {
 
 // SEO: Her sayfa için eşsiz ve dinamik Title + Meta Description
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const resolvedParams = await params;
-  const fullSlug = resolvedParams.slug || "";
+  const { slug: paramsSlug } = await params;
+  const fullSlug = paramsSlug || "";
   
   const service = SERVICES.find(s => fullSlug.endsWith(`-${s.slug}`));
   
@@ -42,6 +42,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description,
+    alternates: {
+      canonical: `/${fullSlug}`,
+    },
     openGraph: {
       title,
       description,
