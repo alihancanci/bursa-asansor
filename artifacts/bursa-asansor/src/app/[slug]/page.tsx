@@ -6,18 +6,12 @@ type Props = {
   params: Promise<{ slug: string }>
 }
 
-// SSG: Bütün ilçe-hizmet kombinasyonlarını build anında oluştur
-// 18 ilçe * 14 hizmet = 252 statik sayfa oluşturulur. TTFB inanılmaz hızlanır.
+// Vercel Free Tier (1GB RAM) sınırlarına takılmamak ve Build süresinde
+// "Out of Memory" hatası almamak için sayfaları On-Demand ISR olarak ayarlıyoruz.
+// Böylece sayfalar Build anında değil, Google veya kullanıcı ilk girdiğinde
+// arka planda statik HTML'e dönüştürülüp hafızaya alınır (Sonsuza dek hızlı açılır).
 export async function generateStaticParams() {
-  const params: { slug: string }[] = [];
-  
-  DISTRICTS.forEach(district => {
-    SERVICES.forEach(service => {
-      params.push({ slug: `${district.slug}-${service.slug}` });
-    });
-  });
-  
-  return params;
+  return [];
 }
 
 // SEO: Her sayfa için eşsiz ve dinamik Title + Meta Description
