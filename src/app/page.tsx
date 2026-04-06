@@ -12,5 +12,63 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  return <HomePageClient />;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://bursakiralikasansor.com/#website",
+        "url": "https://bursakiralikasansor.com",
+        "name": "Bursa Mobil Asansör",
+        "description": "Bursa'nın Lider Mobil Asansör ve Evden Eve Nakliyat Şirketi",
+        "publisher": {
+          "@id": "https://bursakiralikasansor.com/#organization"
+        }
+      },
+      {
+        "@type": "MovingCompany",
+        "@id": "https://bursakiralikasansor.com/#organization",
+        "name": "Bursa Mobil Asansör & Nakliyat",
+        "url": "https://bursakiralikasansor.com",
+        "logo": "https://bursakiralikasansor.com/images/hero-bg.png",
+        "image": "https://bursakiralikasansor.com/images/hero-bg.png",
+        "telephone": "+905053297533",
+        "priceRange": "₺₺",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Bursa Merkez",
+          "addressLocality": "Bursa",
+          "addressRegion": "Bursa",
+          "addressCountry": "TR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "40.1828",
+          "longitude": "29.0667"
+        },
+        "areaServed": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": "40.1828",
+            "longitude": "29.0667"
+          },
+          "geoRadius": "50000"
+        },
+        "sameAs": [
+          "https://bursakiralikasansor.com"
+        ]
+      }
+    ]
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <HomePageClient />
+    </>
+  );
 }
