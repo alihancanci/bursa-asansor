@@ -22,14 +22,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${post.title} | Blog`,
-    description: post.excerpt,
+    description: post.excerpt.length > 155 ? `${post.excerpt.substring(0, 155)}...` : post.excerpt,
     keywords: post.keywords,
     alternates: {
       canonical: `/blog/${paramsSlug}`,
     },
     openGraph: {
       title: post.title,
-      description: post.excerpt,
+      description: post.excerpt.length > 155 ? `${post.excerpt.substring(0, 155)}...` : post.excerpt,
       type: 'article',
       url: `/blog/${post.slug}`,
       publishedTime: post.date,

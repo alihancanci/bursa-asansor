@@ -36,8 +36,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // Dinamik benzersiz başlık (Örn: Nilüfer Evden Eve Nakliyat | Profesyonel)
   const title = `${district.name} ${service.name} | Profesyonel`;
   
-  // Dinamik benzersiz açıklama
-  const description = `${district.name} bölgesinde asansör ihtiyacınız için yanınızdayız. 15. kata kadar çıkan mobil asansörlerimizle ${service.name} hizmeti. Haftanın 7 günü 24 saat hizmet veriyoruz.`;
+  // Dinamik benzersiz açıklama (Max 160 karakter)
+  const description = `Bursa ${district.name} ${service.name} hizmeti. 15. kata kadar kiralık mobil asansörlerle 7/24 güvenli, hızlı taşıma ve nakliye desteği.`;
 
   return {
     title,
