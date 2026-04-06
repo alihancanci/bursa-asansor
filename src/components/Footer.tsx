@@ -16,7 +16,21 @@ export function Footer() {
         {/* Top Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 mb-14">
 
-          {/* Brand */}
+          {/* Hizmet Bölgelerimiz (SEO Link Ağı) */}
+          <div className="col-span-1">
+            <h3 className="text-white font-display font-bold text-lg mb-6">{t('footer.districts', 'Hizmet Bölgelerimiz')}</h3>
+            <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+              {DISTRICTS.slice(0, 14).map((d) => (
+                <li key={d.slug}>
+                  <Link href={`/${d.slug}-kiralik-mobil-asansor`} className="text-gray-400 hover:text-primary transition-colors">
+                    {d.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* İletişim */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-6" aria-label="Ana Sayfa">
               <div className="bg-gradient-to-br from-primary to-orange-600 p-2.5 rounded-2xl shadow-lg shadow-primary/20">

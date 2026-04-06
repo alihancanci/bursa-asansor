@@ -19,13 +19,20 @@ export const metadata: Metadata = {
     siteName: "Bursa Kiralık Asansör ve Evden Eve Nakliyat",
     title: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Hizmetleri",
     description: "Bursa'da 7/24 mobil asansör kiralama ve asansörlü nakliyat hizmeti.",
-    images: ["/opengraph.jpg"],
+    images: [
+      {
+        url: "https://bursakiralikasansor.com/opengraph.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Bursa Kiralık Asansör ve Evden Eve Nakliyat",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Hizmetleri",
     description: "Bursa'da 7/24 mobil asansör kiralama ve asansörlü nakliyat hizmeti.",
-    images: ["/opengraph.jpg"],
+    images: ["https://bursakiralikasansor.com/opengraph.jpg"],
   },
   robots: "index,follow,max-image-preview:large",
   icons: {
