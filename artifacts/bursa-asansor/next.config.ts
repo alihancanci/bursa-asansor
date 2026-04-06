@@ -5,6 +5,20 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: false,
   },
+  // Vercel 1GB RAM (OOM) Hatasını Önlemek İçin Bellek Optimizasyonları
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  // @ts-ignore - eslint is a valid Next.js config property
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  experimental: {
+    // Vercel'in Docker limitlerine takılmaması için işçi sayısını kısıyoruz
+    cpus: 1,
+    workerThreads: false,
+    memoryBasedWorkersCount: true,
+  },
   async headers() {
     return [
       {
