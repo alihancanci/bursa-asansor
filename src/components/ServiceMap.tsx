@@ -93,6 +93,16 @@ export default function ServiceMap() {
 
       markers.addTo(map);
 
+      // Fix Lighthouse SEO errors caused by Leaflet's anchor tags
+      setTimeout(() => {
+        const leafletLinks = document.querySelectorAll('.leaflet-control-zoom a');
+        leafletLinks.forEach((link) => {
+          link.removeAttribute('href');
+          link.setAttribute('role', 'button');
+          link.setAttribute('tabindex', '0');
+        });
+      }, 500);
+
       mapInstanceRef.current = map;
       setIsLoaded(true);
     };
