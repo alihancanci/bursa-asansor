@@ -1,7 +1,9 @@
+"use client";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { ArrowRight, ImageIcon } from "lucide-react";
-import { Link } from "wouter";
+import Link from "next/link";
+import Image from "next/image";
 
 interface ReferenceItem {
   id: number;
@@ -103,15 +105,13 @@ export function ReferencesGallery() {
               transition={{ delay: idx * 0.1, duration: 0.5 }}
               className="group relative"
             >
-              <div className="aspect-[3/4] overflow-hidden rounded-3xl border border-border dark:border-white/10 bg-slate-100 dark:bg-navy shadow-lg group-hover:shadow-2xl transition-all duration-500">
-                <img
-                  src={`${import.meta.env.BASE_URL}${item.image.startsWith('/') ? item.image.substring(1) : item.image}`}
+              <div className="aspect-[3/4] relative overflow-hidden rounded-3xl border border-border dark:border-white/10 bg-slate-100 dark:bg-navy shadow-lg group-hover:shadow-2xl transition-all duration-500">
+                <Image
+                  src={item.image}
                   alt={t(item.titleKey)}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  loading="lazy"
-                  decoding="async"
-                  width="600"
-                  height="800"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
                 
                 {/* Overlay on hover */}

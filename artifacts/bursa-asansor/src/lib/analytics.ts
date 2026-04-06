@@ -1,3 +1,5 @@
+"use client";
+
 export const GA_MEASUREMENT_ID = "G-J2E99G4FY2";
 
 type GtagParams = Record<string, string | number | boolean | undefined>;

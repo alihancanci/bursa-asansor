@@ -1,3 +1,4 @@
+"use client";
 import { Star } from "lucide-react";
 import { REVIEWS } from "@/data/reviews";
 

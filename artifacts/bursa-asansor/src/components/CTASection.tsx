@@ -1,3 +1,5 @@
+"use client";
+
 import { PhoneCall, MessageCircle } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { PHONE_NUMBER, WHATSAPP_LINK } from "@/data";

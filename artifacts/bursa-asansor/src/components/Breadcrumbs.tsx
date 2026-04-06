@@ -1,7 +1,7 @@
-import { Link } from "wouter";
+"use client";
+
+import Link from "next/link";
 import { ChevronRight, Home } from "lucide-react";
-import { useTranslation } from "react-i18next";
-import { getCanonicalUrl } from "@/lib/seo";
 
 interface BreadcrumbItem {
   name: string;
@@ -13,60 +13,30 @@ interface BreadcrumbsProps {
 }
 
 export function Breadcrumbs({ items }: BreadcrumbsProps) {
-  const { t } = useTranslation();
-
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": t('nav.home', 'Ana Sayfa'),
-        "item": getCanonicalUrl("/")
-      },
-      ...items.map((item, idx) => ({
-        "@type": "ListItem",
-        "position": idx + 2,
-        "name": item.name,
-        "item": getCanonicalUrl(item.path)
-      }))
-    ]
-  };
-
   return (
-    <nav aria-label="Breadcrumb" className="bg-slate-50 dark:bg-navy/30 py-3 border-b border-border dark:border-white/10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <ol className="flex items-center gap-2 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
-          <li className="flex items-center">
-            <Link href="/" className="flex items-center gap-1 hover:text-primary transition-colors">
+    <nav aria-label="Breadcrumb" className="bg-gray-100 dark:bg-navy border-b border-gray-300 dark:border-white/10 px-4 sm:px-6 py-3">
+      <div className="max-w-7xl mx-auto">
+        <ol className="flex items-center gap-1.5 text-sm text-gray-600 dark:text-slate-400">
+          <li>
+            <Link href="/" className="hover:text-primary transition-colors flex items-center gap-1">
               <Home className="w-3.5 h-3.5" />
-              <span className="sr-only">{t('nav.home', 'Ana Sayfa')}</span>
+              <span>Ana Sayfa</span>
             </Link>
           </li>
-          
-          {items.map((item, idx) => {
-            const isLast = idx === items.length - 1;
-            return (
-              <li key={item.path} className="flex items-center gap-2">
-                <ChevronRight className="w-3.5 h-3.5 shrink-0 opacity-50" />
-                {isLast ? (
-                  <span className="font-semibold text-slate-900 dark:text-white" aria-current="page">
-                    {item.name}
-                  </span>
-                ) : (
-                  <Link href={item.path} className="hover:text-primary transition-colors">
-                    {item.name}
-                  </Link>
-                )}
-              </li>
-            );
-          })}
+          {items.map((item, idx) => (
+            <li key={item.path} className="flex items-center gap-1.5">
+              <ChevronRight className="h-4 w-4" aria-hidden="true" />
+              {idx === items.length - 1 ? (
+                <span className="text-gray-900 dark:text-white font-semibold" aria-current="page">{item.name}</span>
+              ) : (
+                <Link href={item.path} className="hover:text-primary underline underline-offset-2 transition-colors">
+                  {item.name}
+                </Link>
+              )}
+            </li>
+          ))}
         </ol>
       </div>
-      <script type="application/ld+json">
-        {JSON.stringify(schema)}
-      </script>
     </nav>
   );
 }

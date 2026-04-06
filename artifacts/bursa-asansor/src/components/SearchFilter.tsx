@@ -1,5 +1,7 @@
+"use client";
+
 import { useState, useRef, useEffect } from "react";
-import { useLocation } from "wouter";
+import { useRouter } from "next/navigation";
 import { DISTRICTS, ELEVATOR_SERVICES, MOVING_SERVICES, SERVICES } from "@/data";
 import { Search, MapPin, Truck, ChevronDown, ArrowUpToLine, Check } from "lucide-react";
 
@@ -94,12 +96,12 @@ function ServiceSelect({
 }
 
 export function SearchFilter() {
-  const [, setLocation] = useLocation();
+  const router = useRouter();
   const [district, setDistrict] = useState(DISTRICTS[0].slug);
   const [service, setService] = useState(SERVICES[0].slug);
 
   const handleNavigate = () => {
-    setLocation(`/${district}-${service}`);
+    router.push(`/${district}-${service}`);
   };
 
   return (

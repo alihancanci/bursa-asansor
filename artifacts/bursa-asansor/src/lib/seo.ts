@@ -5,7 +5,7 @@ function normalizeSiteUrl(url: string) {
 }
 
 function getSiteUrl() {
-  const envUrl = import.meta.env.VITE_SITE_URL;
+  const envUrl = process.env.NEXT_PUBLIC_SITE_URL;
   if (envUrl && typeof envUrl === "string") {
     return normalizeSiteUrl(envUrl);
   }
@@ -17,22 +17,12 @@ function getSiteUrl() {
   return DEFAULT_SITE_URL;
 }
 
-function withBasePath(pathname: string) {
-  const cleanPath = pathname.startsWith("/") ? pathname : `/${pathname}`;
-  const base = import.meta.env.BASE_URL || "/";
-  const normalizedBase = base.endsWith("/") ? base.slice(0, -1) : base;
-
-  if (!normalizedBase) {
-    return cleanPath;
-  }
-
-  return cleanPath === "/" ? normalizedBase : `${normalizedBase}${cleanPath}`;
-}
-
 export function getCanonicalUrl(pathname: string) {
-  return `${getSiteUrl()}${withBasePath(pathname)}`;
+  const cleanPath = pathname.startsWith("/") ? pathname : `/${pathname}`;
+  return `${getSiteUrl()}${cleanPath}`;
 }
 
 export function getAbsoluteAssetUrl(assetPath: string) {
-  return `${getSiteUrl()}${withBasePath(assetPath)}`;
+  const cleanPath = assetPath.startsWith("/") ? assetPath : `/${assetPath}`;
+  return `${getSiteUrl()}${cleanPath}`;
 }

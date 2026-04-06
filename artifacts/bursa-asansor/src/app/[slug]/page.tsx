@@ -1,0 +1,68 @@
+import { Metadata } from 'next';
+import { DISTRICTS, SERVICES } from '@/data';
+import ServicePageClient from './ServicePageClient';
+
+type Props = {
+  params: Promise<{ slug: string }>
+}
+
+// SSG: Bütün ilçe-hizmet kombinasyonlarını build anında oluştur
+// 18 ilçe * 14 hizmet = 252 statik sayfa oluşturulur. TTFB inanılmaz hızlanır.
+export async function generateStaticParams() {
+  const params: { slug: string }[] = [];
+  
+  DISTRICTS.forEach(district => {
+    SERVICES.forEach(service => {
+      params.push({ slug: `${district.slug}-${service.slug}` });
+    });
+  });
+  
+  return params;
+}
+
+// SEO: Her sayfa için eşsiz ve dinamik Title + Meta Description
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const resolvedParams = await params;
+  const fullSlug = resolvedParams.slug || "";
+  
+  const service = SERVICES.find(s => fullSlug.endsWith(`-${s.slug}`));
+  
+  if (!service) {
+    return { title: 'Sayfa Bulunamadı | Bursa Mobil Asansör' };
+  }
+
+  const districtSlugLength = fullSlug.length - service.slug.length - 1;
+  const districtSlug = fullSlug.substring(0, districtSlugLength);
+  const district = DISTRICTS.find(d => d.slug === districtSlug);
+
+  if (!district) {
+    return { title: 'Sayfa Bulunamadı | Bursa Mobil Asansör' };
+  }
+
+  // Dinamik benzersiz başlık (Örn: Nilüfer Evden Eve Nakliyat | Profesyonel Hizmet)
+  const title = `${district.name} ${service.name} | Bursa Kiralık Asansör`;
+  
+  // Dinamik benzersiz açıklama
+  const description = `${district.name} bölgesinde asansör ihtiyacınız için yanınızdayız. 15. kata kadar çıkan mobil asansörlerimizle ${service.name} hizmeti. Haftanın 7 günü 24 saat hizmet veriyoruz.`;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: 'website',
+      url: `/${fullSlug}`,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+    }
+  };
+}
+
+export default async function ServicePage() {
+  // İstemci tarafı kodlarını içeren (framer-motion, i18next vs) dosyayı çağırıyoruz
+  return <ServicePageClient />;
+}

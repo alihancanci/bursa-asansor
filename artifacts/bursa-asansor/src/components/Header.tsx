@@ -1,5 +1,7 @@
+"use client";
+
 import { useState, useRef, useEffect } from "react";
-import { Link } from "wouter";
+import Link from "next/link";
 import { PhoneCall, MessageCircle, ArrowUpToLine, Globe, ChevronDown } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { PHONE_NUMBER, WHATSAPP_LINK } from "@/data";
@@ -31,18 +33,12 @@ function LanguageSwitcher() {
     const segments = currentPath.split('/').filter(Boolean);
     const firstSegment = segments[0];
 
-    // Check if the first segment is already a known language (but not 'tr' as it's default)
     const isLangPrefixed = ['en', 'ar', 'ru'].includes(firstSegment);
-
-    // Calculate base path (everything after language prefix if it exists)
     const pathWithoutLang = isLangPrefixed ? '/' + segments.slice(1).join('/') : currentPath;
-
-    // Construct new path
     const newPath = lng === 'tr' ? pathWithoutLang : `/${lng}${pathWithoutLang === '/' ? '' : pathWithoutLang}`;
 
     setIsOpen(false);
     i18n.changeLanguage(lng).then(() => {
-      // Hard navigation to correctly kick off wouter base routing and server state
       window.location.href = newPath;
     });
   };

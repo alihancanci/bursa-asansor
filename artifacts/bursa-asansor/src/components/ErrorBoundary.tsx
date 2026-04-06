@@ -1,6 +1,7 @@
+"use client";
 import React, { Component, ErrorInfo, ReactNode } from "react";
 import { AlertTriangle, Home, RefreshCcw } from "lucide-react";
-import { Link } from "wouter";
+import Link from "next/link";
 
 interface Props {
   children?: ReactNode;
@@ -51,11 +52,9 @@ export class ErrorBoundary extends Component<Props, State> {
                 Sayfayı Yenile
               </button>
               
-              <Link href="/">
-                <a className="flex items-center justify-center gap-2 bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-700 dark:text-slate-200 font-bold py-3 px-6 rounded-xl transition-all">
+              <Link href="/" className="flex items-center justify-center gap-2 bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-700 dark:text-slate-200 font-bold py-3 px-6 rounded-xl transition-all">
                   <Home className="w-4 h-4" />
                   Ana Sayfaya Dön
-                </a>
               </Link>
             </div>
 

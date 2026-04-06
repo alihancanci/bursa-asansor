@@ -1,4 +1,6 @@
-import { Link } from "wouter";
+"use client";
+
+import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import { DISTRICTS, ELEVATOR_SERVICES, MOVING_SERVICES, PHONE_NUMBER, WHATSAPP_LINK } from "@/data";
 import { ArrowUpToLine, Phone, MapPin, Clock, Truck, ShieldCheck, CheckCircle2 } from "lucide-react";

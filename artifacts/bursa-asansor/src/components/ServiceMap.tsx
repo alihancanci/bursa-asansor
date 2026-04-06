@@ -1,11 +1,11 @@
+"use client";
+
 import { useEffect, useRef, useState } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
-// Fix Leaflet container size issues on initial load
 const mapStyle = { height: "100%", width: "100%", borderRadius: "1.5rem" };
 
-// Random point generation within a bounding box
 const generateRandomPoints = (count: number, bbox: { minLat: number, maxLat: number, minLng: number, maxLng: number }) => {
   const points = [];
   for (let i = 0; i < count; i++) {
@@ -16,7 +16,6 @@ const generateRandomPoints = (count: number, bbox: { minLat: number, maxLat: num
   return points;
 };
 
-// Simulated messages for the tooltips
 const TOOLTIP_MESSAGES = [
   "7. Kata Kurulum Tamamlandı",
   "Nilüfer Asansör Kiralama",
@@ -70,7 +69,6 @@ export default function ServiceMap() {
         iconAnchor: [12, 12],
       });
 
-      // Lighthouse'ı etkileyen DOM/paint maliyetini düşürmek için marker sayısını azaltıyoruz.
       const osmangaziPoints = generateRandomPoints(70, { minLat: 40.18, maxLat: 40.23, minLng: 28.98, maxLng: 29.08 });
       const niluferPoints = generateRandomPoints(60, { minLat: 40.20, maxLat: 40.25, minLng: 28.88, maxLng: 28.98 });
       const yildirimPoints = generateRandomPoints(40, { minLat: 40.17, maxLat: 40.21, minLng: 29.08, maxLng: 29.15 });
@@ -84,7 +82,6 @@ export default function ServiceMap() {
           title: "Asansör Kurulum Noktası",
         });
 
-        // Popup/bind işlemi pahalı olabildiği için sadece az sayıda markerde gösteriyoruz.
         if (idx < 25) {
           marker.bindPopup(
             `<div class="font-sans text-sm font-semibold text-slate-800 p-1">${getRandomMessage()}</div>`

@@ -1,5 +1,7 @@
+"use client";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import Image from "next/image";
 
 const FAQS = [
   {
@@ -69,15 +71,14 @@ export function FaqSection() {
           
           {/* FAQ Image and Trust Badges */}
           <div className="relative sticky top-32">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl group">
-              <picture>
-                <img 
-                  src="/images/asansorlu-nakliyat-faq.png" 
-                  alt="Sıkça Sorulan Sorular - Asansörlü Nakliyat" 
-                  className="w-full h-full object-cover aspect-square md:aspect-[4/3] transform group-hover:scale-105 transition-transform duration-700"
-                  loading="lazy"
-                />
-              </picture>
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl group aspect-square md:aspect-[4/3]">
+              <Image 
+                src="/images/asansorlu-nakliyat-faq.png" 
+                alt="Sıkça Sorulan Sorular - Asansörlü Nakliyat" 
+                fill
+                className="object-cover transform group-hover:scale-105 transition-transform duration-700"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent pointer-events-none" />
               
               <div className="absolute bottom-6 left-6 right-6">
