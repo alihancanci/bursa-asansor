@@ -13,12 +13,7 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  experimental: {
-    // Vercel'in Docker limitlerine takılmaması için işçi sayısını kısıyoruz
-    cpus: 1,
-    workerThreads: false,
-    memoryBasedWorkersCount: true,
-  },
+
   async headers() {
     return [
       {
