@@ -150,7 +150,7 @@ export default function ServicePageClient() {
             <FeaturesBar />
 
             {/* Prose content */}
-            <div className="prose prose-lg dark:prose-invert prose-headings:font-display prose-headings:text-secondary dark:prose-headings:text-white prose-a:text-primary hover:prose-a:text-orange-600 prose-strong:text-secondary dark:prose-strong:text-white max-w-none mb-12">
+            <div className="prose prose-lg max-w-none mb-12 text-[#334155] dark:text-slate-300 prose-headings:text-[#0f172a] dark:prose-headings:text-white prose-strong:text-[#0f172a] dark:prose-strong:text-white prose-a:text-primary hover:prose-a:text-orange-600">
               <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
             </div>
 
