@@ -156,34 +156,34 @@ export default function ServicePageClient() {
 
             {/* Dynamic Local Content */}
             {district.localNote && (
-              <div className="bg-blue-50/50 dark:bg-blue-900/10 border border-blue-100 dark:border-blue-800/30 rounded-2xl p-6 mb-12 flex flex-col sm:flex-row gap-5 items-start">
-                <div className="h-12 w-12 shrink-0 bg-blue-100 dark:bg-blue-800/50 rounded-full flex items-center justify-center text-blue-600 dark:text-blue-400">
+              <div className="bg-[#eff6ff] dark:bg-[#1e3a5f]/40 border border-[#bfdbfe] dark:border-[#1e3a5f] rounded-2xl p-6 mb-12 flex flex-col sm:flex-row gap-5 items-start">
+                <div className="h-12 w-12 shrink-0 bg-[#dbeafe] dark:bg-[#1e3a5f] rounded-full flex items-center justify-center text-[#2563eb] dark:text-[#60a5fa]">
                   <MapPin className="h-6 w-6" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-slate-800 dark:text-white mb-2">{district.name} Bölgesine Özel Not</h3>
-                  <p className="text-gray-800 dark:text-slate-200 leading-relaxed font-medium">{t(`districts.${district.slug}.localNote`, district.localNote)}</p>
+                  <h3 className="text-lg font-bold text-[#1e293b] dark:text-white mb-2">{district.name} Bölgesine Özel Not</h3>
+                  <p className="text-[#334155] dark:text-slate-200 leading-relaxed font-medium">{t(`districts.${district.slug}.localNote`, district.localNote)}</p>
                 </div>
               </div>
             )}
 
             {/* District Specific Context (SEO) */}
             {district.seoParagraph && (
-              <div className="mb-12 p-6 md:p-8 bg-gradient-to-br from-primary/5 to-transparent dark:from-primary/10 dark:to-transparent border-l-4 border-primary rounded-r-2xl shadow-sm">
-                <h3 className="text-xl md:text-2xl font-display font-bold text-secondary dark:text-white mb-4 flex items-center gap-2">
-                  <span className="text-primary">{district.name}</span> {t('service_page.special_solutions', 'Bölgesine Özel Çözümler')}
+              <div className="mb-12 p-6 md:p-8 bg-[#fff7ed] dark:bg-[#1e293b] border-l-4 border-primary rounded-r-2xl shadow-sm">
+                <h3 className="text-xl md:text-2xl font-display font-bold text-[#0f172a] dark:text-white mb-4 flex items-center gap-2">
+                  <span className="text-primary">{district.name}</span> <span className="text-[#0f172a] dark:text-white">{t('service_page.special_solutions', 'Bölgesine Özel Çözümler')}</span>
                 </h3>
-                <p className="text-gray-800 dark:text-slate-300 leading-relaxed text-lg">{district.seoParagraph}</p>
+                <p className="text-[#334155] dark:text-slate-300 leading-relaxed text-lg">{district.seoParagraph}</p>
               </div>
             )}
 
             {/* Neighborhoods Context Box */}
-            <section className="mb-14 p-6 bg-slate-50 dark:bg-navy-light/30 border-2 border-dashed border-slate-300 dark:border-white/10 rounded-2xl">
-              <h2 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-3">
+            <section className="mb-14 p-6 bg-[#f8fafc] dark:bg-[#0f172a] border-2 border-dashed border-[#cbd5e1] dark:border-[#334155] rounded-2xl">
+              <h2 className="text-xl font-display font-bold text-[#0f172a] dark:text-white mb-3">
                 {district.name} {t('service_page.coverage_info', 'Hizmet Bölgesi Bilgilendirmesi')}
               </h2>
-              <p className="text-slate-700 dark:text-slate-400 leading-relaxed">
-                {t('service_page.coverage_desc_1', 'Firmamız')} {district.name} {t('service_page.coverage_desc_2', 'merkez ilçesinin tamamı ile birlikte özellikle')} <strong>{selectedNeighborhoods.join(", ")}</strong> {t('service_page.coverage_desc_3', 've çevresindeki mahallelerde haftanın 7 günü kesintisiz hizmet vermektedir.')} {district.name} {t('service_page.coverage_desc_4', 'lokasyonuna özel geliştirdiğimiz dar sokak manevra kabiliyeti yüksek mobil asansörlerimizle, bina içi asansörlerin yetersiz kaldığı her noktada yanınızdayız.')}
+              <p className="text-[#334155] dark:text-slate-300 leading-relaxed">
+                {t('service_page.coverage_desc_1', 'Firmamız')} {district.name} {t('service_page.coverage_desc_2', 'merkez ilçesinin tamamı ile birlikte özellikle')} <strong className="text-[#0f172a] dark:text-white">{selectedNeighborhoods.join(", ")}</strong> {t('service_page.coverage_desc_3', 've çevresindeki mahallelerde haftanın 7 günü kesintisiz hizmet vermektedir.')} {district.name} {t('service_page.coverage_desc_4', 'lokasyonuna özel geliştirdiğimiz dar sokak manevra kabiliyeti yüksek mobil asansörlerimizle, bina içi asansörlerin yetersiz kaldığı her noktada yanınızdayız.')}
               </p>
             </section>
 
