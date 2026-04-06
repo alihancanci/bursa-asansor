@@ -5,9 +5,15 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpBackend from 'i18next-http-backend';
 
+const isBrowser = typeof window !== 'undefined';
+
+if (isBrowser) {
+  i18n
+    .use(HttpBackend)
+    .use(LanguageDetector);
+}
+
 i18n
-  .use(HttpBackend)
-  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     fallbackLng: 'tr',
@@ -25,7 +31,12 @@ i18n
     detection: {
       order: ['localStorage', 'navigator'],
       caches: ['localStorage'],
-    }
+    },
+    
+    // SSR/SSG sırasında donmayı engellemek için senkron bekleme
+    react: {
+      useSuspense: false,
+    },
   });
 
 // Setup dynamic RTL direction change
