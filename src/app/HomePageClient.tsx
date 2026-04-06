@@ -4,15 +4,15 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
-import { useEffect, useRef, useState, Suspense, lazy } from "react";
+import { useEffect, useRef, useState, Suspense } from "react";
 import { CTASection } from "@/components/CTASection";
 import { SearchFilter } from "@/components/SearchFilter";
 import { FeaturesBar } from "@/components/FeaturesBar";
 import dynamic from "next/dynamic";
 const ServiceMap = dynamic(() => import("@/components/ServiceMap"), { ssr: false, loading: () => <div className="h-[500px] w-full bg-slate-100 animate-pulse rounded-3xl" /> });
-const Testimonials = lazy(() => import("@/components/Testimonials").then(m => ({ default: m.Testimonials })));
-const FaqSection = lazy(() => import("@/components/FaqSection").then(m => ({ default: m.FaqSection })));
-const ReferencesGallery = lazy(() => import("@/components/ReferencesGallery").then(m => ({ default: m.ReferencesGallery })));
+const Testimonials = dynamic(() => import("@/components/Testimonials").then(m => m.Testimonials as any));
+const FaqSection = dynamic(() => import("@/components/FaqSection").then(m => m.FaqSection as any));
+const ReferencesGallery = dynamic(() => import("@/components/ReferencesGallery").then(m => m.ReferencesGallery as any));
 import { DISTRICTS, PHONE_NUMBER, SERVICES, WHATSAPP_LINK } from "@/data";
 import { ArrowRight, CheckCircle2, ArrowUpToLine, Home as HomeIcon, Sofa, Truck, HardHat, Package } from "lucide-react";
 import { getAbsoluteAssetUrl } from "@/lib/seo";
@@ -67,6 +67,7 @@ export default function HomePageClient() {
             className="w-full h-full object-cover"
             fill
             priority
+            quality={60}
             sizes="100vw"
           />
           <div className="absolute inset-0 hero-overlay" />
