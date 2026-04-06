@@ -87,7 +87,7 @@ export default function HomePageClient() {
 
               <h1 className="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-white leading-[1.1] mb-6">
                 {t('hero.title1', "Bursa'nın Lider")} <br />
-                <span className="text-gradient">{t('hero.title2', "Mobil Asansör")}</span> {t('hero.title3', "Kiralama Firması")}
+                <span className="text-gradient">{t('hero.title2', "Mobil Asansör")}</span> {t('hero.title3', "Firması")}
               </h1>
 
               <p className="text-lg sm:text-xl text-slate-300 mb-10 leading-relaxed max-w-2xl">
