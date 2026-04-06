@@ -40,7 +40,7 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://www.googletagmanager.com" />
       </head>
-      <body suppressHydrationWarning>
+      <body suppressHydrationWarning className="bg-white dark:bg-[#071320] text-slate-900 dark:text-slate-200">
         <ClientProviders>
           {children}
         </ClientProviders>

@@ -209,7 +209,7 @@ export default function ServicePageClient() {
 
             {/* Service Rules */}
             <section className="mb-14">
-              <h2 className="text-2xl font-display font-bold text-gray-900 dark:text-white mb-5 pb-3 border-b-2 border-gray-200 dark:border-white/10">{t('service_page.service_rules', 'Hizmet Kurallarımız')}</h2>
+              <h2 className="text-2xl font-display font-bold text-[#0f172a] dark:text-white mb-5 pb-3 border-b-2 border-gray-200 dark:border-white/10">{t('service_page.service_rules', 'Hizmet Kurallarımız')}</h2>
               <ul className="space-y-4">
                 {[
                   { title: t('features.f2_title', "7/24 Hizmet"), desc: t('features.f2_desc', "Mesai saati gözetmeksizin, bize ihtiyaç duyduğunuz her an sahadayız.") },
@@ -217,11 +217,11 @@ export default function ServicePageClient() {
                   { title: t('features.f3_title', "Operatörlü Çalışma"), desc: t('features.f3_desc', "Kurulum ve kullanım esnasında operatör her zaman asansörün başındadır.") },
                   { title: t('features.f4_title', "Personel & Araç Desteği"), desc: t('features.f4_desc', "Gerekli durumlarda taşıma personeli (hamal) ve nakliye kamyonu desteği de verilir.") },
                 ].map(r => (
-                  <li key={r.title} className="flex items-start gap-4 p-5 bg-gray-50 dark:bg-navy-light border-2 border-gray-200 dark:border-white/10 rounded-2xl">
+                  <li key={r.title} className="flex items-start gap-4 p-5 bg-[#f8fafc] dark:bg-[#1e293b] border-2 border-[#cbd5e1] dark:border-[#334155] rounded-2xl">
                     <CheckCircle2 className="w-7 h-7 text-primary shrink-0 mt-0.5" />
                     <div>
-                      <div className="font-bold text-gray-900 dark:text-white text-base mb-1">{r.title}</div>
-                      <div className="text-gray-700 dark:text-slate-300">{r.desc}</div>
+                      <div className="font-bold text-[#0f172a] dark:text-white text-base mb-1">{r.title}</div>
+                      <div className="text-[#334155] dark:text-slate-300">{r.desc}</div>
                     </div>
                   </li>
                 ))}
@@ -230,15 +230,15 @@ export default function ServicePageClient() {
 
             {/* FAQs */}
             <section className="mb-14">
-              <h2 className="text-2xl font-display font-bold text-gray-900 dark:text-white mb-5 pb-3 border-b-2 border-gray-200 dark:border-white/10">{t('common.faq', 'Sıkça Sorulan Sorular')}</h2>
+              <h2 className="text-2xl font-display font-bold text-[#0f172a] dark:text-white mb-5 pb-3 border-b-2 border-[#e2e8f0] dark:border-white/10">{t('common.faq', 'Sıkça Sorulan Sorular')}</h2>
               <div className="space-y-4">
                 {service.faqs.map((faq, idx) => {
                   const q = t(`services.${service.slug}.faqs.${idx}.q`, faq.q);
                   const a = t(`services.${service.slug}.faqs.${idx}.a`, faq.a);
                   return (
-                    <div key={idx} className="bg-gray-50 dark:bg-navy-light border-2 border-gray-200 dark:border-white/10 rounded-2xl p-6">
-                      <h3 className="text-base font-bold text-gray-900 dark:text-white mb-2">{q}</h3>
-                      <p className="text-gray-700 dark:text-slate-300 leading-relaxed">{a}</p>
+                    <div key={idx} className="bg-[#f8fafc] dark:bg-[#1e293b] border-2 border-[#cbd5e1] dark:border-[#334155] rounded-2xl p-6">
+                      <h3 className="text-base font-bold text-[#0f172a] dark:text-white mb-2">{q}</h3>
+                      <p className="text-[#334155] dark:text-slate-300 leading-relaxed">{a}</p>
                     </div>
                   );
                 })}
