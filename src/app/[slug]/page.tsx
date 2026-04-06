@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = SERVICES.find(s => fullSlug.endsWith(`-${s.slug}`));
   
   if (!service) {
-    return { title: 'Sayfa Bulunamadı | Bursa Kiralık Asansör ve Evden Eve Nakliyat' };
+    return { title: 'Sayfa Bulunamadı | Bursa Kiralık Asansör' };
   }
 
   const districtSlugLength = fullSlug.length - service.slug.length - 1;
@@ -30,11 +30,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const district = DISTRICTS.find(d => d.slug === districtSlug);
 
   if (!district) {
-    return { title: 'Sayfa Bulunamadı | Bursa Kiralık Asansör ve Evden Eve Nakliyat' };
+    return { title: 'Sayfa Bulunamadı' };
   }
 
-  // Dinamik benzersiz başlık (Örn: Nilüfer Evden Eve Nakliyat | Profesyonel Hizmet)
-  const title = `${district.name} ${service.name} | Bursa Kiralık Asansör`;
+  // Dinamik benzersiz başlık (Örn: Nilüfer Evden Eve Nakliyat | Profesyonel)
+  const title = `${district.name} ${service.name} | Profesyonel`;
   
   // Dinamik benzersiz açıklama
   const description = `${district.name} bölgesinde asansör ihtiyacınız için yanınızdayız. 15. kata kadar çıkan mobil asansörlerimizle ${service.name} hizmeti. Haftanın 7 günü 24 saat hizmet veriyoruz.`;

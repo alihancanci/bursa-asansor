@@ -5,8 +5,8 @@ import { ClientProviders } from "./providers";
 
 export const metadata: Metadata = {
   title: {
-    default: "Bursa Kiralık Asansör ve Evden Eve Nakliyat | 7/24 Asansörlü Nakliyat",
-    template: "%s | Bursa Kiralık Asansör ve Evden Eve Nakliyat",
+    default: "Bursa Kiralık Asansör & Evden Eve Nakliyat | Mobil Asansör",
+    template: "%s | Bursa Kiralık Asansör",
   },
   description: "Bursa'da 7/24 mobil asansör kiralama ve asansörlü nakliyat hizmeti. 15. kata kadar operatörlü güvenli taşıma çözümleri.",
   metadataBase: new URL("https://bursakiralikasansor.com"),
