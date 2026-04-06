@@ -4,9 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: false,
   },
-  // Vercel build-time optimizations
+  // Vercel build-time optimizations (TypeScript)
   typescript: { ignoreBuildErrors: true },
-  eslint: { ignoreDuringBuilds: true },
 
   async headers() {
     return [

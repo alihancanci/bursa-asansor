@@ -90,7 +90,7 @@ export default function ServicePageClient() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "MovingCompany",
-            name: `Bursa Mobil Asansör - ${district.name} Şubesi`,
+            name: `Bursa Kiralık Asansör ve Nakliyat - ${district.name} Şubesi`,
             description: `${district.name} bölgesinde profesyonel ${serviceName} hizmeti. 7/24 kiralık asansör ve sigortalı taşımacılık.`,
             image: getAbsoluteAssetUrl("/images/hero-bg.jpg"),
             telephone: "+905053297533",

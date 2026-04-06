@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${post.title} | Bursa Mobil Asansör Blog`,
+    title: `${post.title} | Bursa Kiralık Asansör ve Nakliyat Blog`,
     description: post.excerpt,
     keywords: post.keywords,
     openGraph: {

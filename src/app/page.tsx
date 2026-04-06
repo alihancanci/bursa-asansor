@@ -19,7 +19,7 @@ export default function HomePage() {
         "@type": "WebSite",
         "@id": "https://bursakiralikasansor.com/#website",
         "url": "https://bursakiralikasansor.com",
-        "name": "Bursa Mobil Asansör",
+        "name": "Bursa Kiralık Asansör ve Nakliyat",
         "description": "Bursa'nın Lider Mobil Asansör ve Evden Eve Nakliyat Şirketi",
         "publisher": {
           "@id": "https://bursakiralikasansor.com/#organization"
@@ -28,7 +28,7 @@ export default function HomePage() {
       {
         "@type": "MovingCompany",
         "@id": "https://bursakiralikasansor.com/#organization",
-        "name": "Bursa Mobil Asansör & Nakliyat",
+        "name": "Bursa Kiralık Asansör ve Nakliyat",
         "url": "https://bursakiralikasansor.com",
         "logo": "https://bursakiralikasansor.com/images/hero-bg.png",
         "image": "https://bursakiralikasansor.com/images/hero-bg.png",

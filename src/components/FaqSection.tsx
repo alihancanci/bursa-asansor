@@ -14,7 +14,7 @@ const FAQS = [
   },
   {
     q: "Dış cephe asansörleriniz en fazla kaçıncı kata ulaşabiliyor?",
-    a: "Bursa Mobil Asansör filomuzda bulunan son teknoloji teleskopik araçlarımız sayesinde 15. kata kadar (yaklaşık 45-50 metre) güvenle ve sarsıntısız bir şekilde ulaşabilmekteyiz."
+    a: "Bursa Kiralık Asansör ve Nakliyat filomuzda bulunan son teknoloji teleskopik araçlarımız sayesinde 15. kata kadar (yaklaşık 45-50 metre) güvenle ve sarsıntısız bir şekilde ulaşabilmekteyiz."
   },
   {
     q: "Saatlik asansör kiralama hizmetiniz var mı?",

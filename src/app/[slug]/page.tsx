@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = SERVICES.find(s => fullSlug.endsWith(`-${s.slug}`));
   
   if (!service) {
-    return { title: 'Sayfa Bulunamadı | Bursa Mobil Asansör' };
+    return { title: 'Sayfa Bulunamadı | Bursa Kiralık Asansör ve Nakliyat' };
   }
 
   const districtSlugLength = fullSlug.length - service.slug.length - 1;
@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const district = DISTRICTS.find(d => d.slug === districtSlug);
 
   if (!district) {
-    return { title: 'Sayfa Bulunamadı | Bursa Mobil Asansör' };
+    return { title: 'Sayfa Bulunamadı | Bursa Kiralık Asansör ve Nakliyat' };
   }
 
   // Dinamik benzersiz başlık (Örn: Nilüfer Evden Eve Nakliyat | Profesyonel Hizmet)
