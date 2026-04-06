@@ -137,7 +137,7 @@ export function Footer() {
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} Bursa Kiralık Asansör ve Nakliyat. {t('footer.rights', 'Tüm hakları saklıdır.')}
+            © {new Date().getFullYear()} Bursa Kiralık Asansör ve Evden Eve Nakliyat. {t('footer.rights', 'Tüm hakları saklıdır.')}
           </p>
           <div className="flex gap-4 text-sm text-gray-400">
             <span>{t('features.f3_title', 'Uzman Operatör')}</span>

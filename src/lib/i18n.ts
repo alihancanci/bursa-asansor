@@ -17,12 +17,12 @@ const trTranslations = {
   },
   hero: {
     title1: "Bursa'nın Lider",
-    title2: "Kiralık Asansör ve Nakliyat",
+    title2: "Kiralık Asansör ve Evden Eve Nakliyat",
     title3: "Kiralama Firması",
     subtitle: "Dar sokaklar, yüksek binalar dert değil! 15. kata kadar güvenli ve hızlı mobil asansör kiralama ve nakliyat çözümleri sunuyoruz.",
     cta_call: "Hemen Ara Fiyat Al",
     cta_whatsapp: "WhatsApp'tan Teklif İste",
-    image_alt: "Bursa Kiralık Asansör ve Nakliyat Kiralama Hizmeti"
+    image_alt: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Kiralama Hizmeti"
   },
   features: {
     f1_title: "15. Kata Kadar",
@@ -60,7 +60,7 @@ const trTranslations = {
   },
   home: {
     active_in_all: "Bursa ve Tüm İlçelerinde Aktif",
-    services_title: "Bursa Kiralık Asansör ve Nakliyat Hizmetleri",
+    services_title: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Hizmetleri",
     services_desc: "İhtiyacınıza uygun mobil asansör çözümleriyle yanınızdayız.",
     why_choose_us: "Neden Bizi Tercih Etmelisiniz?",
     trust_p1: "Bursa'da uzun yıllara dayanan lojistik ve taşıma tecrübemizle, müşterilerimize <strong>en sorunsuz ve profesyonel</strong> kiralık mobil asansör hizmetini sunuyoruz.",

@@ -83,7 +83,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20 md:h-24">
 
-          <Link href="/" className="flex items-center gap-3 group" aria-label="Bursa Kiralık Asansör ve Nakliyat - Ana Sayfa">
+          <Link href="/" className="flex items-center gap-3 group" aria-label="Bursa Kiralık Asansör ve Evden Eve Nakliyat - Ana Sayfa">
             <div className="bg-gradient-to-br from-primary to-orange-600 p-2.5 rounded-2xl shadow-lg shadow-primary/30 group-hover:shadow-primary/50 transition-all duration-300 group-hover:-translate-y-0.5">
               <ArrowUpToLine className="h-7 w-7 text-white stroke-[2.5]" />
             </div>

@@ -23,7 +23,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "24 Mart 2026",
     readTime: "6 dk okuma",
     category: "Nakliyat Rehberi",
-    author: "Bursa Kiralık Asansör ve Nakliyat Ekibi",
+    author: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Ekibi",
     image: "/images/hero-bg.png",
     metaDescription: "2026 evden eve nakliyat fiyatları ne kadar? Taşınırken maliyeti düşürmenin yolları ve asansörlü taşımacılığın avantajları. Detaylı nakliyat rehberi.",
     keywords: ["evden eve nakliyat", "nakliyat fiyatları 2026", "asansörlü nakliyat", "taşınma rehberi", "bursa evden eve nakliyat", "paketleme", "güvenilir taşıma"],
@@ -64,7 +64,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "25 Mart 2026",
     readTime: "5 dk okuma",
     category: "Lojistik & Teknoloji",
-    author: "Bursa Kiralık Asansör ve Nakliyat Ekibi",
+    author: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Ekibi",
     image: "/images/service-abstract.png",
     metaDescription: "Asansörlü taşımacılık nedir? Kiralık asansör fiyatları maliyetli mi? Dış cephe asansör kurulumunun zaman tasarrufu ve güvenlik avantajları hakkında detaylar.",
     keywords: ["asansörlü taşımacılık", "kiralık asansör fiyatları", "mobil asansör kiralama", "dış cephe asansörü", "bina merdiven koruması", "eşya taşıma güvenliği"],
@@ -99,7 +99,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "26 Mart 2026",
     readTime: "4 dk okuma",
     category: "Taşınma Planlaması",
-    author: "Bursa Kiralık Asansör ve Nakliyat Ekibi",
+    author: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Ekibi",
     image: "/images/hero-bg.png",
     metaDescription: "Taşınma telaşından kurtulmak için en iyi kontrol listesi. Abonelik işlemleri, eşya paketleme taktikleri ve kurumsal nakliyat firması bulma rehberi.",
     keywords: ["taşınma işlemleri", "abonelik taşıma", "eşya paketleme listesi", "stres olmadan taşınmak", "ofis taşıma ipuçları", "yeni eve taşınırken"],
@@ -135,7 +135,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "27 Mart 2026",
     readTime: "7 dk okuma",
     category: "Lojistik & Teknoloji",
-    author: "Bursa Kiralık Asansör ve Nakliyat Ekibi",
+    author: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Ekibi",
     image: "/images/service-abstract.png",
     metaDescription: "Asansör kiralama nasıl yapılır? Dış cephe asansörü kurulumu, operatör belgesi ve güvenlik adımları. Bursa'da hızlı kiralama rehberi.",
     keywords: ["asansör kiralama nasıl yapılır", "operatör belgesi", "dış cephe asansörü", "mobil asansör kurulumu", "bursa asansör kiralama"],
@@ -171,7 +171,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "28 Mart 2026",
     readTime: "7 dk okuma",
     category: "Lojistik & Teknoloji",
-    author: "Bursa Kiralık Asansör ve Nakliyat Ekibi",
+    author: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Ekibi",
     image: "/images/hero-bg.png",
     metaDescription: "Mobil asansörler kaçıncı kata çıkar? Yüksek kat eşya taşıma asansörlerinin erişim limitleri, 15-20-25 kat kuralları ve rüzgar güvenliği.",
     keywords: ["kaçıncı kata kadar çıkar", "yüksek kat eşya taşıma asansörü", "teleskopik asansör", "asansör kiralama sınırları", "rüzgar güvenliği"],
@@ -208,7 +208,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "29 Mart 2026",
     readTime: "8 dk okuma",
     category: "Lojistik & Teknoloji",
-    author: "Bursa Kiralık Asansör ve Nakliyat Ekibi",
+    author: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Ekibi",
     image: "/images/service-abstract.png",
     metaDescription: "Asansör mü vinç mi? İnşaat lojistiğinde dış cephe asansörlerinin hız, maliyet ve iş güvenliği avantajları. Kapsamlı mobil asansör vs vinç karşılaştırması.",
     keywords: ["asansör vs vinç", "inşaat asansörü", "dış cephe asansörü", "moloz indirme asansörü", "eşya taşıma vinç fiyatları", "cephe camı taşıma"],
@@ -273,7 +273,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "30 Mart 2026",
     readTime: "6 dk okuma",
     category: "Taşınma Planlaması",
-    author: "Bursa Kiralık Asansör ve Nakliyat Ekibi",
+    author: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Ekibi",
     image: "/images/hero-bg.png",
     metaDescription: "Taşınırken asansör zorunlu mu? Site yönetimi bina içi asansörü yasaklayabilir mi? Dış cephe asansörü kiralama ve apartman kuralları hakkında bilmeniz gerekenler.",
     keywords: ["taşınırken asansör zorunlu mu", "bina içi asansör yasakları", "site yönetimi kuralları", "dış cephe asansörü kurulumu", "mobilya asansörü kiralamak", "apartman kuralları"],
@@ -309,7 +309,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "01 Nisan 2026",
     readTime: "6 dk okuma",
     category: "Nakliyat Rehberi",
-    author: "Bursa Kiralık Asansör ve Nakliyat Ekibi",
+    author: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Ekibi",
     image: "/images/hero-bg.png",
     metaDescription: "Bursa'nın en ucuz ve en kaliteli nakliyat asansörü hizmetleri. Evden eve taşımacılıkta gizli maliyetlerden nasıl kurtulursunuz? Profesyonel hizmet rehberi.",
     keywords: ["bursa ucuz asansör kiralama", "kaliteli nakliyat hizmeti bursa", "gizli taşıma maliyetleri", "asansörlü ev taşıma fiyatları", "profesyonel evden eve nakliyat"],
@@ -332,7 +332,7 @@ export const BLOG_POSTS: BlogPost[] = [
       </ul>
 
       <h2>Kaliteyi Ucuza Değil, 'Değerine' Alın</h2>
-      <p>Gerçekten kaliteli ve sürdürülebilir bir fiyat/performans istiyorsanız, kurumsal işleyişi olan firmalarla (Bkz: hizmet kalitemiz <a href="/bursa-merkez-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Bursa Kiralık Asansör ve Nakliyat</a>) masaya oturmalısınız.</p>
+      <p>Gerçekten kaliteli ve sürdürülebilir bir fiyat/performans istiyorsanız, kurumsal işleyişi olan firmalarla (Bkz: hizmet kalitemiz <a href="/bursa-merkez-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Bursa Kiralık Asansör ve Evden Eve Nakliyat</a>) masaya oturmalısınız.</p>
       
       <ol class="list-decimal pl-5 mt-4 space-y-2">
         <li><strong>Saha Keşfi:</strong> İyi bir firma asansör kurmak için Google üzerinden bile olsa konumunuzu inceler.</li>
@@ -351,19 +351,19 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "02 Nisan 2026",
     readTime: "5 dk okuma",
     category: "Taşınma Planlaması",
-    author: "Bursa Kiralık Asansör ve Nakliyat Ekibi",
+    author: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Ekibi",
     image: "/images/mutlu-aile-tasinma.png",
     metaDescription: "Bursa ücretsiz ekspertiz, yerinde keşif hizmeti ile asansörlü nakliyatta sürpriz fiyatlarla karşılaşmayın. Eşyalarınızı güvenle taşımak için uzman eksper isteyin.",
     keywords: ["ücretsiz ekspertiz", "ücretsiz keşif", "yerinde keşif bursa", "asansörlü evden eve nakliyat keşif", "sürpriz maliyet yok", "stres olmadan taşınmak"],
     faqs: [
       { q: "Ücretsiz ekspertiz ne işe yarar?", a: "Uzman personelimiz adresinize gelerek eşyalarınızın hacmini, asansörün kurulacağı cepheyi ve rüzgar durumunu inceler. Böylece taşınma günü aksilik ve ekstra fiyat çıkmaz." },
-      { q: "Ekspertiz için ücret talep ediliyor mu?", a: "Hayır. Bursa Kiralık Asansör ve Nakliyat olarak tüm Bursa ilçelerinde ekspertiz hizmetimizi %100 ücretsiz olarak sunuyoruz." }
+      { q: "Ekspertiz için ücret talep ediliyor mu?", a: "Hayır. Bursa Kiralık Asansör ve Evden Eve Nakliyat olarak tüm Bursa ilçelerinde ekspertiz hizmetimizi %100 ücretsiz olarak sunuyoruz." }
     ],
     content: `
       <h2>Taşınma Stresini Sıfıra İndirmenin Sırrı: Ücretsiz Ekspertiz</h2>
       <p>Yeni bir eve geçerken en büyük korkulardan biri, nakliye günü kapıya gelen ekibin anlaştığınız fiyattan çok daha fazlasını istemesidir. "<em>Abla eşyanız çokmuş</em>", "<em>Bu sokağa asansör kurulmazmış</em>" gibi bahanelerle mağdur olmamak için tek ve en kesin çözüm <strong>ücretsiz ekspertiz (yerinde keşif)</strong> hizmetidir.</p>
       
-      <p><a href="/bursa-merkez-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Bursa Kiralık Asansör ve Nakliyat</a> olarak, taşınmanın sadece eşyaların yer değiştirmesi değil, güven üzerine kurulu bir lojistik operasyon olduğuna inanıyoruz. Ekspertiz hizmetimiz sayesinde yüzü gülen mutlu ailelerin yeni evlerine stres olmadan adım atmalarını sağlıyoruz.</p>
+      <p><a href="/bursa-merkez-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Bursa Kiralık Asansör ve Evden Eve Nakliyat</a> olarak, taşınmanın sadece eşyaların yer değiştirmesi değil, güven üzerine kurulu bir lojistik operasyon olduğuna inanıyoruz. Ekspertiz hizmetimiz sayesinde yüzü gülen mutlu ailelerin yeni evlerine stres olmadan adım atmalarını sağlıyoruz.</p>
 
       <h3>Yerinde Ücretsiz Keşif (Ekspertiz) Nasıl İşler?</h3>
       <ol class="list-decimal pl-5 mt-4 space-y-3">
@@ -391,7 +391,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Bursa Evden Eve Taşınma Rehberi: Stressiz Bir Nakliyat İçin İpuçları",
     excerpt: "Ev değiştirmek yorucu mu geliyor? Bursa'da evden eve nakliyat sürecini sıfır hasar ve sıfır stresle atlatmanın en pratik yollarını ve dikkat etmeniz gerekenleri derledik.",
     date: "2024-03-25",
-    author: "Bursa Kiralık Asansör ve Nakliyat Ekibi",
+    author: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Ekibi",
     readTime: "6 dk okuma",
     category: "Taşınma Rehberi",
     image: "/images/mutlu-aile-tasinma.png",
@@ -413,8 +413,8 @@ export const BLOG_POSTS: BlogPost[] = [
       <h3>4. Profesyonel Paketleme Desteği Alın</h3>
       <p>Beyaz eşyalarınızın havalı naylonlarla sarılması, mobilyalarınızın sökülüp yeni evde tekrar monte edilmesi (demonte-monte işlemi) uzmanlık gerektirir. "Her şeyi biz hallederiz" diyen güvenilir firmalarla çalışarak bu yükten kurtulabilirsiniz.</p>
 
-      <h2>Bursa Kiralık Asansör ve Nakliyat Farkı</h2>
-      <p>Bursa Kiralık Asansör ve Nakliyat olarak evden eve taşınma sürecinizde size sadece yeni evinizin keyfini sürmeyi bırakıyoruz. Ücretsiz ekspertiz hizmetimizle eşyalarınızı yerinde inceliyor, size en uygun asansör ve araç büyüklüğünü tahsis ediyor, deneyimli personelimizle eşyalarınızı yeni yuvanıza aynı gün içinde güvenle ulaştırıyoruz.</p>
+      <h2>Bursa Kiralık Asansör ve Evden Eve Nakliyat Farkı</h2>
+      <p>Bursa Kiralık Asansör ve Evden Eve Nakliyat olarak evden eve taşınma sürecinizde size sadece yeni evinizin keyfini sürmeyi bırakıyoruz. Ücretsiz ekspertiz hizmetimizle eşyalarınızı yerinde inceliyor, size en uygun asansör ve araç büyüklüğünü tahsis ediyor, deneyimli personelimizle eşyalarınızı yeni yuvanıza aynı gün içinde güvenle ulaştırıyoruz.</p>
     `
   }
 ];

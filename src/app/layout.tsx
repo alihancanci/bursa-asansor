@@ -5,22 +5,22 @@ import { ClientProviders } from "./providers";
 
 export const metadata: Metadata = {
   title: {
-    default: "Bursa Kiralık Asansör ve Nakliyat | 7/24 Asansörlü Nakliyat",
-    template: "%s | Bursa Kiralık Asansör ve Nakliyat",
+    default: "Bursa Kiralık Asansör ve Evden Eve Nakliyat | 7/24 Asansörlü Nakliyat",
+    template: "%s | Bursa Kiralık Asansör ve Evden Eve Nakliyat",
   },
   description: "Bursa'da 7/24 mobil asansör kiralama ve asansörlü nakliyat hizmeti. 15. kata kadar operatörlü güvenli taşıma çözümleri.",
   metadataBase: new URL("https://bursakiralikasansor.com"),
   openGraph: {
     type: "website",
     locale: "tr_TR",
-    siteName: "Bursa Kiralık Asansör ve Nakliyat",
-    title: "Bursa Kiralık Asansör ve Nakliyat Hizmetleri",
+    siteName: "Bursa Kiralık Asansör ve Evden Eve Nakliyat",
+    title: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Hizmetleri",
     description: "Bursa'da 7/24 mobil asansör kiralama ve asansörlü nakliyat hizmeti.",
     images: ["/opengraph.jpg"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bursa Kiralık Asansör ve Nakliyat Hizmetleri",
+    title: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Hizmetleri",
     description: "Bursa'da 7/24 mobil asansör kiralama ve asansörlü nakliyat hizmeti.",
     images: ["/opengraph.jpg"],
   },
