@@ -97,7 +97,7 @@ export function FaqSection() {
                 Sıkça Sorulan <span className="text-primary">Sorular</span>
               </h2>
               <p className="text-gray-700 dark:text-slate-300 text-lg">
-                Mobil asansör kiralama ve taşımacılık hizmetlerimiz hakkında Bursa'daki müşterilerimizin en çok sorduğu soruların yanıtları.
+                Mobil asansör kiralama ve taşımacılık hizmetlerimiz hakkında Bursa&apos;daki müşterilerimizin en çok sorduğu soruların yanıtları.
               </p>
             </div>
 

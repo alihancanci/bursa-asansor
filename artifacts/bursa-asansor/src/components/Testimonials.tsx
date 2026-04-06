@@ -15,7 +15,7 @@ export function Testimonials() {
           Bizi Tercih Eden <span className="text-primary">Müşterilerimiz</span>
         </h2>
         <p className="text-gray-700 dark:text-slate-300 max-w-2xl mx-auto font-medium">
-          Müşteri memnuniyetini %100 oranında tutmayı hedefliyoruz. İşimizi şansa bırakmıyoruz, Bursa'nın her noktasına kaliteyi asansörle ulaştırıyoruz.
+          Müşteri memnuniyetini %100 oranında tutmayı hedefliyoruz. İşimizi şansa bırakmıyoruz, Bursa&apos;nın her noktasına kaliteyi asansörle ulaştırıyoruz.
         </p>
       </div>
 
@@ -36,7 +36,7 @@ export function Testimonials() {
               
               {/* Text - SEO friendly plain HTML (no schema) */}
               <p className="text-slate-700 dark:text-slate-300 text-sm md:text-base leading-relaxed flex-1 italic mb-6">
-                "{review.text}"
+                &quot;{review.text}&quot;
               </p>
               
               {/* Author & Context */}

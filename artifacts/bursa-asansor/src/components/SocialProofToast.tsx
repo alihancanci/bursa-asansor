@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
@@ -19,6 +19,17 @@ export function SocialProofToast() {
 
   const [currentMessage, setCurrentMessage] = useState<string | null>(null);
 
+  const triggerToast = () => {
+    // Pick a random message
+    const randomMsg = NOTIFICATIONS[Math.floor(Math.random() * NOTIFICATIONS.length)];
+    setCurrentMessage(randomMsg);
+
+    // Hide after 5 seconds
+    setTimeout(() => {
+      setCurrentMessage(null);
+    }, 5000);
+  };
+
   useEffect(() => {
     // Initial delay to avoid interrupting initial load
     const startTimeout = setTimeout(() => {
@@ -36,16 +47,7 @@ export function SocialProofToast() {
     return () => clearTimeout(startTimeout);
   }, []);
 
-  const triggerToast = () => {
-    // Pick a random message
-    const randomMsg = NOTIFICATIONS[Math.floor(Math.random() * NOTIFICATIONS.length)];
-    setCurrentMessage(randomMsg);
 
-    // Hide after 5 seconds
-    setTimeout(() => {
-      setCurrentMessage(null);
-    }, 5000);
-  };
 
   return (
     <AnimatePresence>

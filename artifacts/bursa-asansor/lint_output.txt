@@ -1,0 +1,77 @@
+
+> bursa-asansor-nextjs@0.1.0 lint
+> eslint
+
+
+/Users/alihancancihm/Desktop/yedek/artifacts/bursa-asansor/src/app/HomePageClient.tsx
+  16:21  warning  'PHONE_NUMBER' is defined but never used      @typescript-eslint/no-unused-vars
+  16:45  warning  'WHATSAPP_LINK' is defined but never used     @typescript-eslint/no-unused-vars
+  23:9   warning  'ogImage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/alihancancihm/Desktop/yedek/artifacts/bursa-asansor/src/app/[slug]/ServicePageClient.tsx
+    4:10  warning  'notFound' is defined but never used       @typescript-eslint/no-unused-vars
+   39:9   warning  'YEAR' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  304:28  warning  'slug' is defined but never used           @typescript-eslint/no-unused-vars
+
+/Users/alihancancihm/Desktop/yedek/artifacts/bursa-asansor/src/app/blog/[slug]/BlogPostClient.tsx
+   9:10  warning  'getCanonicalUrl' is defined but never used   @typescript-eslint/no-unused-vars
+  21:9   warning  'ogImage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/alihancancihm/Desktop/yedek/artifacts/bursa-asansor/src/app/calismalarimiz/WorksPageClient.tsx
+  6:10  warning  'getAbsoluteAssetUrl' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/alihancancihm/Desktop/yedek/artifacts/bursa-asansor/src/app/hakkimizda/AboutPageClient.tsx
+   4:10  warning  'DISTRICTS' is defined but never used            @typescript-eslint/no-unused-vars
+   5:8   warning  'Link' is defined but never used                 @typescript-eslint/no-unused-vars
+   9:10  warning  'getAbsoluteAssetUrl' is defined but never used  @typescript-eslint/no-unused-vars
+  12:11  warning  't' is assigned a value but never used           @typescript-eslint/no-unused-vars
+
+/Users/alihancancihm/Desktop/yedek/artifacts/bursa-asansor/src/app/layout.tsx
+  40:9  warning  Prefer `GoogleTagManager` component from `@next/third-parties/google` when using the inline script for Google Tag Manager. See: https://nextjs.org/docs/messages/next-script-for-ga  @next/next/next-script-for-ga
+
+/Users/alihancancihm/Desktop/yedek/artifacts/bursa-asansor/src/components/Footer.tsx
+  5:71  warning  'WHATSAPP_LINK' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/alihancancihm/Desktop/yedek/artifacts/bursa-asansor/src/components/SocialProofToast.tsx
+  23:36  error    Compilation Skipped: Existing memoization could not be preserved
+
+React Compiler has skipped optimizing this component because the existing manual memoization could not be preserved. The inferred dependencies did not match the manually specified dependencies, which could cause the value to change more or less frequently than expected. The inferred dependency was `NOTIFICATIONS`, but the source dependencies were []. Inferred dependency not present in source.
+
+/Users/alihancancihm/Desktop/yedek/artifacts/bursa-asansor/src/components/SocialProofToast.tsx:23:36
+  21 |
+  22 |   // Use useCallback to keep reference stable
+> 23 |   const triggerToast = useCallback(() => {
+     |                                    ^^^^^^^
+> 24 |     // Pick a random message
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 25 |     const randomMsg = NOTIFICATIONS[Math.floor(Math.random() * NOTIFICATIONS.length)];
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 26 |     setCurrentMessage(randomMsg);
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 27 |
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 28 |     // Hide after 5 seconds
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 29 |     setTimeout(() => {
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 30 |       setCurrentMessage(null);
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 31 |     }, 5000);
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 32 |   }, []);
+     | ^^^^ Could not preserve existing manual memoization
+  33 |
+  34 |   useEffect(() => {
+  35 |     // Initial delay to avoid interrupting initial load  react-hooks/preserve-manual-memoization
+  32:6   warning  React Hook useCallback has a missing dependency: 'NOTIFICATIONS'. Either include it or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              react-hooks/exhaustive-deps
+  49:6   warning  React Hook useEffect has a missing dependency: 'triggerToast'. Either include it or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 react-hooks/exhaustive-deps
+
+/Users/alihancancihm/Desktop/yedek/artifacts/bursa-asansor/src/components/ui/sidebar.tsx
+  612:5  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/exhaustive-deps')
+
+/Users/alihancancihm/Desktop/yedek/artifacts/bursa-asansor/src/hooks/use-toast.ts
+  18:7  warning  'actionTypes' is assigned a value but only used as a type  @typescript-eslint/no-unused-vars
+
+✖ 20 problems (1 error, 19 warnings)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+

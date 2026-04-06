@@ -30,7 +30,7 @@ export default function HomePageClient() {
     if (!el) return;
 
     if (typeof IntersectionObserver === "undefined") {
-      setShouldLoadMap(true);
+      setTimeout(() => setShouldLoadMap(true), 0);
       return;
     }
 
