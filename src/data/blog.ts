@@ -423,7 +423,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Bursa Asansörlü Evden Eve Nakliyat: Kolay ve Güvenli Taşıma",
     excerpt: "Yüksek katlı binalarda asansörlü evden eve nakliyat ile eşyalarınızı güvenle taşıyın. Profesyonel hizmetle stres ve masrafları azaltın!",
     date: "07 Nisan 2026",
-    author: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Ekibi",
+    author: "Atakan",
     readTime: "8 dk okuma",
     category: "Lojistik & Teknoloji",
     image: "https://v3b.fal.media/files/b/0a953a49/ma9HxRsien4gbbaLiSF--_TiuqXOkT.png",

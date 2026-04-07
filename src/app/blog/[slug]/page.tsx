@@ -60,7 +60,7 @@ export default async function BlogPost({ params }: Props) {
         "url": `https://bursakiralikasansor.com/blog/${post.slug}`,
         "headline": post.title,
         "description": post.metaDescription,
-        "author": { "@type": "Person", "name": "Alihan Çancı" },
+        "author": { "@type": "Person", "name": "Atakan" },
         "publisher": { 
           "@type": "Organization", 
           "name": "Bursa Kiralık Asansör ve Evden Eve Nakliyat",
