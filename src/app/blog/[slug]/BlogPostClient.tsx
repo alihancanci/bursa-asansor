@@ -10,14 +10,9 @@ import { getCanonicalUrl, getAbsoluteAssetUrl } from "@/lib/seo";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { notFound } from "next/navigation";
 
-export default function BlogPostClient() {
-  const params = useParams<{ slug: string }>();
-  const post = BLOG_POSTS.find(p => p.slug === params.slug);
+import { BlogPost } from "@/data/blog";
 
-  if (!post) {
-    notFound();
-  }
-
+export default function BlogPostClient({ post }: { post: BlogPost }) {
   const ogImage = getAbsoluteAssetUrl(post.image);
 
   return (
