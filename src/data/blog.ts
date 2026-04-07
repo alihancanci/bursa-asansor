@@ -420,14 +420,14 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: "frase-asansorlu-nakliyat",
     slug: "asansorlu-evden-eve-nakliyat",
-    title: "Asansörlü Evden Eve Nakliyat: Avantajlar ve Kat Sınırları",
+    title: "Bursa Asansörlü Evden Eve Nakliyat: Kolay ve Güvenli Taşıma",
     excerpt: "Yüksek katlı binalarda asansörlü evden eve nakliyat ile eşyalarınızı güvenle taşıyın. Profesyonel hizmetle stres ve masrafları azaltın!",
     date: "07 Nisan 2026",
     author: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Ekibi",
     readTime: "8 dk okuma",
     category: "Lojistik & Teknoloji",
     image: "https://v3b.fal.media/files/b/0a953a49/ma9HxRsien4gbbaLiSF--_TiuqXOkT.png",
-    metaDescription: "Asansörlü evden eve nakliyat nedir? Yüksek katlara taşınırken eşya güvenliği, fiyatları etkileyen faktörler ve dış cephe teleskopik asansör kiralama rehberi.",
+    metaDescription: "Yüksek katlı binalarda asansörlü evden eve nakliyat ile eşyalarınızı güvenle taşıyın. Profesyonel hizmetle stres ve masrafları azaltın!",
     keywords: ["asansörlü evden eve nakliyat", "teleskopik asansör", "bursa kiralık asansör", "asansörlü taşıma fiyatları", "yüksek kat nakliyat"],
     faqs: [
       { q: "Asansörlü nakliyat her binada kullanılabilir mi?", a: "Hayır. Binanın cephesine yeterli mesafe, zemin sağlamlığı ve park alanı gibi teknik koşullar gereklidir. Taşıma öncesinde firma yerinde keşif yaparak uygunluğu değerlendirir." },
