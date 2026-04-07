@@ -426,7 +426,7 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Atakan",
     readTime: "8 dk okuma",
     category: "Lojistik & Teknoloji",
-    image: "https://v3b.fal.media/files/b/0a953a49/ma9HxRsien4gbbaLiSF--_TiuqXOkT.png",
+    image: "/images/asansorlu-tasima-bursa-hero.jpg",
     metaDescription: "Yüksek katlı binalarda asansörlü evden eve nakliyat ile eşyalarınızı güvenle taşıyın. Profesyonel hizmetle stres ve masrafları azaltın!",
     keywords: ["asansörlü evden eve nakliyat", "teleskopik asansör", "bursa kiralık asansör", "asansörlü taşıma fiyatları", "yüksek kat nakliyat"],
     faqs: [
