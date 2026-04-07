@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
-import { DISTRICTS, ELEVATOR_SERVICES, MOVING_SERVICES, PHONE_NUMBER, WHATSAPP_LINK } from "@/data";
+import { ELEVATOR_SERVICES, MOVING_SERVICES, PHONE_NUMBER, WHATSAPP_LINK } from "@/data";
 import { ArrowUpToLine, Phone, MapPin, Clock, Truck, ShieldCheck, CheckCircle2 } from "lucide-react";
 
 export function Footer() {
@@ -14,21 +14,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 mb-14">
-
-          {/* Hizmet Bölgelerimiz (SEO Link Ağı) */}
-          <div className="col-span-1">
-            <h3 className="text-white font-display font-bold text-lg mb-6">{t('footer.districts', 'Hizmet Bölgelerimiz')}</h3>
-            <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
-              {DISTRICTS.slice(0, 14).map((d) => (
-                <li key={d.slug}>
-                  <Link href={`/${d.slug}-kiralik-mobil-asansor`} className="text-slate-300 hover:text-primary transition-colors">
-                    {d.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 mb-14">
 
           {/* İletişim */}
           <div className="lg:col-span-1">
@@ -132,19 +118,6 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
-
-          {/* District Links */}
-          <div className="lg:col-span-2">
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider font-display mb-5">{t('nav.districts', 'Hizmet Bölgelerimiz')}</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-2.5 gap-x-4">
-              {DISTRICTS.map(d => (
-                <Link key={d.slug} href={`/${d.slug}-kiralik-mobil-asansor`} className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0" />
-                  {d.name}
-                </Link>
-              ))}
-            </div>
           </div>
 
         </div>

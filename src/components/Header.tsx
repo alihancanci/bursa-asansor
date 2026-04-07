@@ -2,8 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { PhoneCall, MessageCircle, Globe, ChevronDown } from "lucide-react";
+import { PhoneCall, MessageCircle, ArrowUpToLine, Globe, ChevronDown } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { PHONE_NUMBER, WHATSAPP_LINK } from "@/data";
 
@@ -85,16 +84,8 @@ export function Header() {
         <div className="flex justify-between items-center h-20 md:h-24">
 
           <Link href="/" className="flex items-center gap-3 group" aria-label="Bursa Kiralık Asansör ve Evden Eve Nakliyat - Ana Sayfa">
-            <div className="relative bg-gradient-to-br from-primary to-orange-600 p-0.5 rounded-2xl shadow-lg shadow-primary/30 group-hover:shadow-primary/50 transition-all duration-300 group-hover:-translate-y-0.5 overflow-hidden">
-              <div className="bg-white dark:bg-slate-900 rounded-[14px] p-2">
-                <Image 
-                  src="/images/logo-symbol.png" 
-                  alt="Bursa Kiralık Asansör Logo" 
-                  width={32} 
-                  height={32} 
-                  className="h-8 w-8 object-contain"
-                />
-              </div>
+            <div className="bg-gradient-to-br from-primary to-orange-600 p-2.5 rounded-2xl shadow-lg shadow-primary/30 group-hover:shadow-primary/50 transition-all duration-300 group-hover:-translate-y-0.5">
+              <ArrowUpToLine className="h-7 w-7 text-white stroke-[2.5]" />
             </div>
             <div className="flex flex-col">
               <span className="font-display font-black text-xl md:text-2xl tracking-tight leading-none text-secondary dark:text-white">
