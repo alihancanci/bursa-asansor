@@ -74,7 +74,12 @@ const trTranslations = {
     service_network: "Hizmet Ağımız",
     service_network_desc: "Türkiye'nin en aktif çalışan asansörlü nakliyat ağıyla, her noktadayız.",
     districts_desc: "Bursa'nın tüm ilçelerine en kısa sürede mobil asansör ulaştırıyoruz.",
-    view_all_services: "Tüm Asansörlü Nakliyat Hizmetlerimizi Gör"
+    view_all_services: "Tüm Asansörlü Nakliyat Hizmetlerimizi Gör",
+    guide_title: "Bursa Asansör Kiralama Rehberi: Nelere Dikkat Etmeli?",
+    guide_desc: "Bursa'nın dar sokakları ve yüksek binalarında asansör kurulumu teknik uzmanlık gerektirir. Kurulum öncesi balkon genişliği, ağaç engelleri ve elektrik tellerinin konumu profesyonel ekibimiz tarafından incelenir. Eşyalarınızın güvenliği için rüzgar hassasiyeti yüksek, periyodik bakımlı mobil asansörleri tercih etmelisiniz. Site ve apartman yönetimlerinden gerekli izinleri alarak sürecinizi hızlandırabilirsiniz.",
+    pricing_title: "Bursa Kiralık Asansör Fiyatları ve Hizmet Detayları",
+    pricing_desc: "Kiralık mobil asansör ücretlerimiz; kurulum yapılacak katın yüksekliği (15. kata kadar), kiralama süresi (saatlik/günlük) ve taşınacak eşyanın hacmine göre değişkenlik gösterir. Şeffaf fiyatlandırma ve size en uygun çözümü sunabilmemiz için ücretsiz ekspertiz hizmetimizden yararlanabilirsiniz. 7/24 operatörlü ve sigortalı taşıma desteği ile Bursa'nın her noktasındayız.",
+    call_for_exact_price: "Net fiyat teklifi ve ücretsiz yerinde keşif için bizi arayın."
   },
   references: {
     title: "Çalışmalarımız",

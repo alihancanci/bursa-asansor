@@ -61,6 +61,28 @@ export default function HomePage() {
         "sameAs": [
           "https://bursakiralikasansor.com"
         ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://bursakiralikasansor.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Bursa kiralık asansör fiyatları neye göre belirlenir?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bursa'da kiralık asansör fiyatları; kurulum yapılacak katın yüksekliği (15. kata kadar), kiralama süresi (saatlik veya günlük) ve eşya hacmine göre belirlenir. Net fiyat ve ücretsiz ekspertiz için profesyonel ekibimizle iletişime geçebilirsiniz."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Bursa'da asansör kiralarken nelere dikkat edilmelidir?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kurulum öncesi sokağın genişliği, balkon mesafesi, ağaçlar ve elektrik telleri kontrol edilmelidir. Ayrıca operatörün deneyimi, aracın periyodik bakımı ve rüzgar hassasiyeti güvenli taşıma için kritik öneme sahiptir."
+            }
+          }
+        ]
       }
     ]
   };

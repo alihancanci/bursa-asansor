@@ -14,7 +14,7 @@ const Testimonials = dynamic(() => import("@/components/Testimonials").then(m =>
 const FaqSection = dynamic(() => import("@/components/FaqSection").then(m => m.FaqSection as any));
 const ReferencesGallery = dynamic(() => import("@/components/ReferencesGallery").then(m => m.ReferencesGallery as any));
 import { DISTRICTS, PHONE_NUMBER, SERVICES, WHATSAPP_LINK } from "@/data";
-import { ArrowRight, CheckCircle2, ArrowUpToLine, Home as HomeIcon, Sofa, Truck, HardHat, Package } from "lucide-react";
+import { ArrowRight, CheckCircle2, ArrowUpToLine, Home as HomeIcon, Sofa, Truck, HardHat, Package, Phone } from "lucide-react";
 import { getAbsoluteAssetUrl } from "@/lib/seo";
 
 export default function HomePageClient() {
@@ -224,7 +224,67 @@ export default function HomePageClient() {
         </div>
       </section>
 
-      <section className="py-20 bg-white dark:bg-background">
+      <section className="py-16 md:py-24 bg-white dark:bg-background overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+            {/* Guide Section */}
+            <motion.div 
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="bg-slate-50 dark:bg-navy-light/30 p-8 md:p-10 rounded-[2.5rem] border border-slate-200 dark:border-white/10 shadow-sm hover:shadow-md transition-shadow relative group"
+            >
+              <div className="absolute top-0 right-0 p-8 opacity-[0.03] group-hover:opacity-[0.05] transition-opacity">
+                <ArrowUpToLine className="w-32 h-32" />
+              </div>
+              <div className="relative z-10">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-6">
+                   {t('nav.blog', 'Uzman Rehberi')}
+                </div>
+                <h3 className="text-2xl md:text-3xl font-display font-bold text-secondary dark:text-white mb-6 leading-tight">
+                  {t('home.guide_title', 'Bursa Asansör Kiralama Rehberi: Nelere Dikkat Etmeli?')}
+                </h3>
+                <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-lg italic border-l-4 border-primary/30 pl-6">
+                  {t('home.guide_desc', "Bursa'nın dar sokakları ve yüksek binalarında asansör kurulumu teknik uzmanlık gerektirir...")}
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Pricing Section */}
+            <motion.div 
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="bg-orange-50/30 dark:bg-primary/5 p-8 md:p-10 rounded-[2.5rem] border border-primary/20 dark:border-primary/10 shadow-sm hover:shadow-md transition-shadow relative group"
+            >
+              <div className="absolute top-0 right-0 p-8 opacity-[0.03] group-hover:opacity-[0.05] transition-opacity text-primary">
+                <Truck className="w-32 h-32" />
+              </div>
+              <div className="relative z-10">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-100 dark:bg-green-500/10 text-green-700 dark:text-green-400 text-xs font-bold uppercase tracking-wider mb-6">
+                  {t('features.f4_title', 'Fiyatlandırma & Detaylar')}
+                </div>
+                <h3 className="text-2xl md:text-3xl font-display font-bold text-secondary dark:text-white mb-6 leading-tight">
+                  {t('home.pricing_title', 'Bursa Kiralık Asansör Fiyatları ve Hizmet Detayları')}
+                </h3>
+                <div className="space-y-6">
+                  <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-lg">
+                    {t('home.pricing_desc', "Kiralık mobil asansör ücretlerimiz; kurulum yapılacak katın yüksekliği (15. kata kadar)...")}
+                  </p>
+                  <div className="bg-white dark:bg-navy-light p-5 rounded-2xl border border-primary/20 shadow-sm">
+                    <p className="text-primary font-bold text-base flex items-center gap-3">
+                      <Phone className="w-5 h-5" />
+                      {t('home.call_for_exact_price', 'Net fiyat teklifi ve ücretsiz yerinde keşif için bizi arayın.')}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-slate-50 dark:bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">{t('home.service_network', 'Hizmet Ağımız')}</h2>
