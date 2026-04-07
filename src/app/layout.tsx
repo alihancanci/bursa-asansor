@@ -36,7 +36,14 @@ export const metadata: Metadata = {
   },
   robots: "index,follow,max-image-preview:large",
   icons: {
-    icon: "/favicon.svg",
+    icon: [
+      { url: "/icon.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: "/icon.png",
   },
 };
 
