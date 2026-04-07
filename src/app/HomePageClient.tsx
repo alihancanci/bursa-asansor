@@ -90,7 +90,7 @@ export default function HomePageClient() {
                 <span className="text-gradient">{t('hero.title2', "Mobil Asansör")}</span> {t('hero.title3', "Firması")}
               </h1>
 
-              <p className="text-lg sm:text-xl text-slate-300 mb-10 leading-relaxed max-w-2xl">
+              <p className="text-lg sm:text-xl text-slate-100/90 mb-10 leading-relaxed max-w-2xl">
                 {t('hero.subtitle', "Dar sokaklar, yüksek binalar dert değil! 15. kata kadar güvenli ve hızlı mobil asansör kiralama ve nakliyat çözümleri sunuyoruz.")}
               </p>
 
@@ -141,7 +141,7 @@ export default function HomePageClient() {
                       <Icon className="h-6 w-6 text-primary group-hover:text-white" />
                     </div>
                   <h3 className="text-xl font-bold mb-3 text-secondary dark:text-white group-hover:text-primary transition-colors">{service.name}</h3>
-                  <p className="text-slate-600 dark:text-slate-300 text-sm mb-6 line-clamp-3">{service.shortDesc}</p>
+                  <p className="text-slate-700 dark:text-slate-300 text-sm mb-6 line-clamp-3">{service.shortDesc}</p>
 
                   <div className="mt-auto flex items-center text-sm font-bold text-slate-700 dark:text-slate-200 group-hover:text-primary transition-colors">
                     {t('common.read_more', 'Detaylı İncele')} <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />

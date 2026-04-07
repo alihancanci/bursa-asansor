@@ -16,7 +16,7 @@ export default function BlogIndexClient() {
           <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-4xl md:text-5xl font-display font-bold mb-6 text-secondary dark:text-white">
             Nakliyat & <span className="text-primary">Taşınma Rehberi</span>
           </motion.h1>
-          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
+          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-lg text-slate-700 dark:text-slate-300 max-w-2xl mx-auto">
             Türkiye&apos;nin en kapsamlı asansörlü taşımacılık ve evden eve nakliyat bilgi arşivi. Sorunsuz bir taşınma süreci için uzman tavsiyeleri.
           </motion.p>
         </div>
@@ -41,7 +41,7 @@ export default function BlogIndexClient() {
                   <Link href={`/blog/${post.slug}`}>
                     <h2 className="text-xl font-bold mb-3 text-secondary dark:text-white group-hover:text-primary transition-colors line-clamp-2">{post.title}</h2>
                   </Link>
-                  <p className="text-slate-600 dark:text-slate-400 text-sm mb-6 line-clamp-3">{post.excerpt}</p>
+                  <p className="text-slate-800 dark:text-slate-400 text-sm mb-6 line-clamp-3">{post.excerpt}</p>
                   <div className="mt-auto pt-4 border-t border-slate-100 dark:border-white/10 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
                     <div className="flex items-center gap-4">
                       <span className="flex items-center gap-1"><Calendar className="w-3 h-3" /> {post.date}</span>

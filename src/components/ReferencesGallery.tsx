@@ -142,7 +142,7 @@ export function ReferencesGallery() {
           className="mt-16 text-center"
         >
           <div className="inline-block p-1 rounded-2xl bg-slate-50 dark:bg-navy-light border border-dashed border-border dark:border-white/10">
-            <div className="px-6 py-4 flex items-center gap-3 text-slate-400">
+            <div className="px-6 py-4 flex items-center gap-3 text-slate-700 dark:text-slate-300">
               <div className="w-10 h-10 rounded-full border-2 border-dashed border-slate-300 dark:border-slate-600 flex items-center justify-center font-bold text-xl">+</div>
               <span className="text-sm font-medium">{t('references.more_coming', 'Yeni referanslarımız yakında eklenecektir...')}</span>
             </div>

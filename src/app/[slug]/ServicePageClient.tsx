@@ -128,7 +128,7 @@ export default function ServicePageClient() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.h1 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="text-4xl sm:text-5xl md:text-6xl font-display font-extrabold text-white leading-tight mb-4">
             {district.name}<br /><span className="text-primary">{serviceName}</span>
-            <span className="block text-2xl sm:text-3xl font-semibold text-slate-300 mt-2 text-sm leading-snug">{neighborhoodStr} Mahalleleri</span>
+            <span className="block text-2xl sm:text-3xl font-semibold text-slate-600 dark:text-slate-300 mt-2 text-sm leading-snug">{neighborhoodStr} Mahalleleri</span>
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-xl text-slate-200 leading-relaxed max-w-2xl mb-8">{serviceShortDesc}</motion.p>
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="flex flex-col sm:flex-row gap-4 max-w-lg">
@@ -249,7 +249,7 @@ export default function ServicePageClient() {
             <div className="bg-gradient-to-br from-navy to-secondary rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden shadow-2xl">
               <div className="relative z-10">
                 <h2 className="text-3xl font-display font-bold text-white mb-4">{t('cta.title', 'Hemen Fiyat Alın')}</h2>
-                <p className="text-slate-300 mb-8 max-w-xl mx-auto">{district.name} {t('cta.district_desc', 'bölgesindeki asansör talepleriniz için 5 dakika içinde net fiyat ve araç durum bilgisi alın.')}</p>
+                <p className="text-slate-200 mb-8 max-w-xl mx-auto">{district.name} {t('cta.district_desc', 'bölgesindeki asansör talepleriniz için 5 dakika içinde net fiyat ve araç durum bilgisi alın.')}</p>
                 <CTASection className="justify-center max-w-2xl mx-auto" />
               </div>
             </div>
@@ -259,7 +259,7 @@ export default function ServicePageClient() {
           <div className="lg:col-span-1 space-y-6">
             <div className="sticky top-24 bg-[#071320] rounded-2xl p-6 border-2 border-primary/30 shadow-2xl">
               <h3 className="font-display font-bold text-lg text-white mb-1">{t('common.quick_contact', 'Hızlı İletişim')}</h3>
-              <p className="text-slate-400 text-sm mb-5">{district.name} {t('common.quick_contact_desc', 'bölgesinde uygun fiyata profesyonel hizmet.')}</p>
+              <p className="text-slate-300 text-sm mb-5">{district.name} {t('common.quick_contact_desc', 'bölgesinde uygun fiyata profesyonel hizmet.')}</p>
               <div className="space-y-3">
                 <a href={`tel:${PHONE_NUMBER.replace(/\\D/g, '')}`} className="w-full bg-primary hover:bg-orange-600 focus:ring-4 focus:ring-primary/40 focus:outline-none text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-colors text-base">
                   <Phone className="w-5 h-5" /> {PHONE_NUMBER}

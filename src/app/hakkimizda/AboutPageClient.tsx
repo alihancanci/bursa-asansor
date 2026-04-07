@@ -30,7 +30,7 @@ export default function AboutPageClient() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
               Hakkımızda | <span className="text-primary">Bursa Kiralık Asansör ve Evden Eve Nakliyat</span>
             </h1>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto font-light">
+            <p className="text-xl text-slate-200 max-w-2xl mx-auto font-light">
               <span className="text-primary font-semibold">CNC Bursa</span> Evden Eve Nakliyat & Kiralık Asansör
             </p>
           </motion.div>
