@@ -49,7 +49,7 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
             />
           </motion.div>
 
-          <article className="prose prose-lg dark:prose-invert max-w-none prose-headings:font-display prose-headings:font-bold prose-headings:text-secondary dark:prose-headings:text-white prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4 prose-p:text-slate-700 dark:prose-p:text-slate-300 prose-p:leading-relaxed prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:text-secondary dark:prose-strong:text-white prose-li:text-slate-700 dark:prose-li:text-slate-300 prose-img:rounded-2xl prose-img:shadow-md" dangerouslySetInnerHTML={{ __html: post.content }} />
+          <article className="prose prose-lg dark:prose-invert max-w-none prose-headings:font-display prose-headings:font-bold prose-headings:text-secondary dark:prose-headings:text-white prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4 [&_p]:text-slate-800 dark:[&_p]:text-slate-200 [&_li]:text-slate-800 dark:[&_li]:text-slate-200 prose-p:leading-relaxed prose-a:text-primary hover:prose-a:underline prose-strong:text-secondary dark:prose-strong:text-white prose-img:rounded-2xl prose-img:shadow-md" dangerouslySetInnerHTML={{ __html: post.content }} />
 
           <div className="mt-16 bg-gradient-to-br from-slate-50 to-primary/5 dark:from-navy-light/50 dark:to-primary/10 border border-primary/20 rounded-3xl p-8 md:p-12 text-center shadow-lg">
             <h3 className="text-2xl md:text-3xl font-bold text-secondary dark:text-white mb-4">Profesyonel Çözüm İçin Hemen Teklif Alın</h3>
