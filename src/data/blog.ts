@@ -450,8 +450,8 @@ export const BLOG_POSTS: BlogPost[] = [
       <ul class="list-disc pl-5 mt-4 space-y-3">
         <li><strong>Eşya güvenliği:</strong> Koltuk, beyaz eşya ve antika gibi hacimli objeler, dar merdiven boşluklarında taşınmak yerine dışarıdan güvenli biçimde yüklenir. Bu sayede çizilme ve kırılma riski belirgin şekilde azalır.</li>
         <figure class="my-8">
-          <img src="https://v3b.fal.media/files/0a4023ca/C_H-hF9Z9pEnZ_mF4Z9f6.png" alt="Bursa Asansörlü Taşımacılık - Mobilya ve Ağır Eşya Taşıma Operasyonu" class="rounded-2xl shadow-xl border border-slate-200">
-          <figcaption class="text-sm text-center text-slate-500 mt-3 italic">Görsel: Mobil asansör ile yüksek katlara mobilya taşıma işlemi. Hassas eşyalarınız dar merdivenlere girmeden doğrudan balkondan evinize ulaştırılır.</figcaption>
+          <img src="/images/asansorlu-tasima-bursa.png" alt="Bursa Asansörlü Taşımacılık - Mobilya ve Ağır Eşya Taşıma Operasyonu" class="rounded-2xl shadow-xl border border-slate-200">
+          <figcaption class="text-sm text-center text-slate-500 mt-3 italic">Görsel: Bursa'da yüksek katlı binalara asansörlü mobilya taşıma işlemi. Hassas eşyalarınız dar merdivenlere girmeden doğrudan balkondan evinize ulaştırılır.</figcaption>
         </figure>
         <li><strong>Hız ve verimlilik:</strong> Pratik bir <a href="/blog/bursa-evden-eve-tasinma-rehberi-stressiz-nakliyat" class="text-primary font-semibold hover:underline">taşınma süreci</a> için asansörlü yöntem, klasik taşımaya kıyasla iş gücünü ve süreyi önemli ölçüde düşürür.</li>
         <li><strong>İşçi güvenliği:</strong> Ağır yüklerin merdivenden indirilmesi sırasında yaşanan iş kazaları, bu sistemle büyük ölçüde önlenir.</li>
