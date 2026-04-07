@@ -183,11 +183,11 @@ export default function HomePageClient() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-secondary dark:text-white">{t('home.why_choose_us', 'Neden Bizi Tercih Etmelisiniz?')}</h2>
-              <div className="space-y-6 text-lg text-slate-700 dark:text-slate-200">
-                <p dangerouslySetInnerHTML={{ __html: t('home.trust_p1', "Bursa'da uzun yıllara dayanan lojistik ve taşıma tecrübemizle, müşterilerimize <strong>en sorunsuz ve profesyonel</strong> kiralık mobil asansör hizmetini sunuyoruz.") }} />
-                <p dangerouslySetInnerHTML={{ __html: t('home.trust_p2', "Klasik yöntemlerin aksine; eşyalarınızı merdiven dairesine sokmadan, duvarları çizmeden ve eşyalarınıza zarar vermeden doğrudan taşıma işlemini gerçekleştiriyoruz. Üstelik <strong>15. kata kadar çıkar</strong> kapasitemizle yüksek binalarda bile kolaylık sağlıyoruz.") }} />
-                <p dangerouslySetInnerHTML={{ __html: t('home.trust_p3', "İhtiyaç duymanız halinde sadece asansör değil, <strong>gerekli durumlarda taşıma personeli (hamal) ve nakliye kamyonu desteği de verilir</strong>. İşimizi ciddiye alıyoruz: Tam saatinde oluruz, özenli çalışırız, makinelerimiz bakımlıdır ve iş güvenliğine dikkat ederiz.") }} />
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-white">{t('home.why_choose_us', 'Neden Bizi Tercih Etmelisiniz?')}</h2>
+              <div className="space-y-6 text-lg text-slate-200">
+                <p dangerouslySetInnerHTML={{ __html: t('home.trust_p1', "Bursa'da uzun yıllara dayanan lojistik ve taşıma tecrübemizle, müşterilerimize <strong class='text-white'>en sorunsuz ve profesyonel</strong> kiralık mobil asansör hizmetini sunuyoruz.") }} />
+                <p dangerouslySetInnerHTML={{ __html: t('home.trust_p2', "Klasik yöntemlerin aksine; eşyalarınızı merdiven dairesine sokmadan, duvarları çizmeden ve eşyalarınıza zarar vermeden doğrudan taşıma işlemini gerçekleştiriyoruz. Üstelik <strong class='text-white'>15. kata kadar çıkar</strong> kapasitemizle yüksek binalarda bile kolaylık sağlıyoruz.") }} />
+                <p dangerouslySetInnerHTML={{ __html: t('home.trust_p3', "İhtiyaç duymanız halinde sadece asansör değil, <strong class='text-white'>gerekli durumlarda taşıma personeli (hamal) ve nakliye kamyonu desteği de verilir</strong>. İşimizi ciddiye alıyoruz: Tam saatinde oluruz, özenli çalışırız, makinelerimiz bakımlıdır ve iş güvenliğine dikkat ederiz.") }} />
               </div>
               <div className="mt-10">
                 <CTASection />
