@@ -94,6 +94,14 @@
   @apply bg-white/80 dark:bg-navy/80 backdrop-blur-md border border-white/20 dark:border-white/5 shadow-xl;
 }
 
+/* Force blog post readability */
+.prose p, .prose li, .prose span {
+  color: #1e293b !important;
+}
+.dark .prose p, .dark .prose li, .dark .prose span {
+  color: #cbd5e1 !important;
+}
+
 .text-gradient {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-orange-400;
 }
