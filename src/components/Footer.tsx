@@ -19,7 +19,7 @@ export function Footer() {
           {/* İletişim */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-6" aria-label="Ana Sayfa">
-              <div className="bg-gradient-to-br from-primary to-orange-600 p-2.5 rounded-2xl shadow-lg shadow-primary/20">
+              <div className="bg-linear-to-br from-primary to-orange-600 p-2.5 rounded-2xl shadow-lg shadow-primary/20">
                 <ArrowUpToLine className="h-7 w-7 text-white stroke-[2.5]" />
               </div>
               <div className="flex flex-col">
