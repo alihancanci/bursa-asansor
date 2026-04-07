@@ -11,6 +11,7 @@ import { FeaturesBar } from "@/components/FeaturesBar";
 import { ChevronRight, ArrowRight, CheckCircle2, Phone, MessageCircle, AlertTriangle, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import { getAbsoluteAssetUrl, getCanonicalUrl } from "@/lib/seo";
+import { trackPhoneClick, trackWhatsAppClick } from "@/lib/analytics";
 
 export default function ServicePageClient() {
   const { t } = useTranslation();
@@ -78,8 +79,9 @@ export default function ServicePageClient() {
             "@type": "BreadcrumbList",
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: getCanonicalUrl("/") },
-              { "@type": "ListItem", position: 2, name: district.name, item: getCanonicalUrl(`/${fullSlug}`) },
-              { "@type": "ListItem", position: 3, name: service.name, item: getCanonicalUrl(`/${fullSlug}`) },
+              { "@type": "ListItem", position: 2, name: "Bursa Kiralık Asansör", item: getCanonicalUrl("/") },
+              { "@type": "ListItem", position: 3, name: district.name, item: getCanonicalUrl(`/${fullSlug}`) },
+              { "@type": "ListItem", position: 4, name: serviceName, item: getCanonicalUrl(`/${fullSlug}`) },
             ],
           }),
         }}
@@ -89,16 +91,43 @@ export default function ServicePageClient() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
+            "@type": "Service",
+            "name": `${district.name} ${serviceName}`,
+            "provider": {
+              "@type": "MovingCompany",
+              "@id": "https://bursakiralikasansor.com/#organization",
+              "name": "Bursa Kiralık Asansör ve Evden Eve Nakliyat",
+              "telephone": "+905053297533",
+              "url": "https://bursakiralikasansor.com"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": district.name
+            },
+            "description": `${district.name} bölgesinde 7/24 ${serviceName} hizmeti. 15. kata kadar kiralık mobil asansörlerle profesyonel evden eve nakliyat.`,
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "128"
+            }
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
             "@type": "MovingCompany",
-            name: `Bursa Kiralık Asansör ve Evden Eve Nakliyat - ${district.name} Şubesi`,
-            description: `${district.name} bölgesinde profesyonel ${serviceName} hizmeti. 7/24 kiralık asansör ve sigortalı taşımacılık.`,
-            image: getAbsoluteAssetUrl("/images/hero-bg.jpg"),
-            telephone: "+905053297533",
-            url: getCanonicalUrl(`/${fullSlug}`),
-            address: { "@type": "PostalAddress", addressLocality: district.name, addressRegion: "Bursa", addressCountry: "TR" },
-            geo: { "@type": "GeoCoordinates", latitude: "40.1828", longitude: "29.0667" },
-            priceRange: "₺₺",
-            openingHoursSpecification: { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], opens: "00:00", closes: "23:59" },
+            "name": `Bursa Kiralık Asansör - ${district.name} Şubesi`,
+            "description": `${district.name} bölgesinde profesyonel ${serviceName} hizmeti. 7/24 kiralık asansör ve sigortalı taşımacılık.`,
+            "image": getAbsoluteAssetUrl("/images/hero-bg.jpg"),
+            "telephone": "+905053297533",
+            "url": getCanonicalUrl(`/${fullSlug}`),
+            "address": { "@type": "PostalAddress", "addressLocality": district.name, "addressRegion": "Bursa", "addressCountry": "TR" },
+            "geo": { "@type": "GeoCoordinates", "latitude": "40.1828", "longitude": "29.0667" },
+            "priceRange": "₺₺",
+            "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "00:00", "closes": "23:59" },
           }),
         }}
       />
@@ -132,10 +161,20 @@ export default function ServicePageClient() {
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-xl text-slate-200 leading-relaxed max-w-2xl mb-8">{serviceShortDesc}</motion.p>
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="flex flex-col sm:flex-row gap-4 max-w-lg">
-            <a href={`tel:${PHONE_NUMBER.replace(/\\D/g, '')}`} className="flex-1 bg-primary hover:bg-orange-600 focus:ring-4 focus:ring-primary/50 focus:outline-none text-white font-extrabold text-lg px-6 py-4 rounded-2xl flex items-center justify-center gap-3 transition-colors shadow-xl">
+            <a 
+              href={`tel:${PHONE_NUMBER.replace(/\D/g, '')}`} 
+              onClick={() => trackPhoneClick(`${district.name} Hero`)}
+              className="flex-1 bg-primary hover:bg-orange-600 focus:ring-4 focus:ring-primary/50 focus:outline-none text-white font-extrabold text-lg px-6 py-4 rounded-2xl flex items-center justify-center gap-3 transition-colors shadow-xl"
+            >
               <Phone className="w-6 h-6" /> {t('common.call_now', 'Hemen Ara')}
             </a>
-            <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="flex-1 bg-green-600 hover:bg-green-500 focus:ring-4 focus:ring-green-500/50 focus:outline-none text-white font-extrabold text-lg px-6 py-4 rounded-2xl flex items-center justify-center gap-3 transition-colors shadow-xl">
+            <a 
+              href={WHATSAPP_LINK} 
+              onClick={() => trackWhatsAppClick(`${district.name} Hero`)}
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex-1 bg-green-600 hover:bg-green-500 focus:ring-4 focus:ring-green-500/50 focus:outline-none text-white font-extrabold text-lg px-6 py-4 rounded-2xl flex items-center justify-center gap-3 transition-colors shadow-xl"
+            >
               <MessageCircle className="w-6 h-6" /> {t('common.whatsapp_message', 'WhatsApp')}
             </a>
           </motion.div>
@@ -250,7 +289,7 @@ export default function ServicePageClient() {
               <div className="relative z-10">
                 <h2 className="text-3xl font-display font-bold text-white mb-4">{t('cta.title', 'Hemen Fiyat Alın')}</h2>
                 <p className="text-slate-200 mb-8 max-w-xl mx-auto">{district.name} {t('cta.district_desc', 'bölgesindeki asansör talepleriniz için 5 dakika içinde net fiyat ve araç durum bilgisi alın.')}</p>
-                <CTASection className="justify-center max-w-2xl mx-auto" />
+                <CTASection className="justify-center max-w-2xl mx-auto" locationName={`${district.name} Bottom`} />
               </div>
             </div>
           </div>
@@ -261,10 +300,20 @@ export default function ServicePageClient() {
               <h3 className="font-display font-bold text-lg text-white mb-1">{t('common.quick_contact', 'Hızlı İletişim')}</h3>
               <p className="text-slate-300 text-sm mb-5">{district.name} {t('common.quick_contact_desc', 'bölgesinde uygun fiyata profesyonel hizmet.')}</p>
               <div className="space-y-3">
-                <a href={`tel:${PHONE_NUMBER.replace(/\\D/g, '')}`} className="w-full bg-primary hover:bg-orange-600 focus:ring-4 focus:ring-primary/40 focus:outline-none text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-colors text-base">
+                <a 
+                  href={`tel:${PHONE_NUMBER.replace(/\D/g, '')}`} 
+                  onClick={() => trackPhoneClick(`${district.name} Sidebar`)}
+                  className="w-full bg-primary hover:bg-orange-600 focus:ring-4 focus:ring-primary/40 focus:outline-none text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-colors text-base"
+                >
                   <Phone className="w-5 h-5" /> {PHONE_NUMBER}
                 </a>
-                <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="w-full bg-green-600 hover:bg-green-500 focus:ring-4 focus:ring-green-500/40 focus:outline-none text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-colors text-base">
+                <a 
+                  href={WHATSAPP_LINK} 
+                  onClick={() => trackWhatsAppClick(`${district.name} Sidebar`)}
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="w-full bg-green-600 hover:bg-green-500 focus:ring-4 focus:ring-green-500/40 focus:outline-none text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-colors text-base"
+                >
                   <MessageCircle className="w-5 h-5" /> {t('common.whatsapp_message_short', "WhatsApp'tan Yaz")}
                 </a>
               </div>

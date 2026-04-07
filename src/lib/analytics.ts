@@ -1,57 +1,44 @@
-"use client";
-
-export const GA_MEASUREMENT_ID = "G-J2E99G4FY2";
-
-type GtagParams = Record<string, string | number | boolean | undefined>;
-
-function send(eventOrCommand: string, nameOrParams?: string | GtagParams, params?: GtagParams) {
-  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
-
-  if (typeof nameOrParams === "string") {
-    window.gtag(eventOrCommand, nameOrParams, params);
-    return;
+export const trackEvent = (action: string, category: string, label: string, value?: number) => {
+  if (typeof window !== 'undefined' && (window as any).gtag) {
+    (window as any).gtag('event', action, {
+      event_category: category,
+      event_label: label,
+      value: value,
+    });
   }
+};
 
-  window.gtag(eventOrCommand, nameOrParams as GtagParams);
-}
+export const trackPageView = (url: string) => {
+  if (typeof window !== 'undefined' && (window as any).gtag) {
+    (window as any).gtag('config', 'G-J2E99G4FY2', {
+      page_path: url,
+    });
+  }
+};
 
-export function trackPageView(pathname: string) {
-  send("event", "page_view", {
-    page_title: document.title,
-    page_location: window.location.href,
-    page_path: pathname,
-  });
-}
+export const trackPhoneClick = (location: string) => {
+  trackEvent('phone_click', 'Conversion', location);
+};
 
-export function installGlobalClickTracking() {
-  const onClick = (event: MouseEvent) => {
-    const target = event.target as Element | null;
-    const link = target?.closest("a[href]") as HTMLAnchorElement | null;
-    if (!link) return;
+export const trackWhatsAppClick = (location: string) => {
+  trackEvent('whatsapp_click', 'Conversion', location);
+};
 
-    const href = (link.getAttribute("href") || "").trim().toLowerCase();
-    const text = (link.textContent || "").trim();
+export const installGlobalClickTracking = () => {
+  if (typeof window === 'undefined') return () => {};
 
-    if (href.startsWith("tel:")) {
-      send("event", "telefon_tıklandı", {
-        link_url: link.href,
-        link_text: text,
-      });
-      return;
-    }
+  const handleGlobalClick = (e: MouseEvent) => {
+    const target = (e.target as HTMLElement).closest('a');
+    if (!target) return;
 
-    if (
-      href.includes("wa.me") ||
-      href.includes("api.whatsapp.com") ||
-      href.includes("whatsapp.com/send")
-    ) {
-      send("event", "whatsapp_tıklandı", {
-        link_url: link.href,
-        link_text: text,
-      });
+    const href = target.getAttribute('href') || '';
+    if (href.startsWith('tel:')) {
+      trackPhoneClick('Global Link');
+    } else if (href.includes('wa.me') || href.includes('whatsapp.com')) {
+      trackWhatsAppClick('Global Link');
     }
   };
 
-  document.addEventListener("click", onClick, true);
-  return () => document.removeEventListener("click", onClick, true);
-}
+  window.addEventListener('click', handleGlobalClick);
+  return () => window.removeEventListener('click', handleGlobalClick);
+};

@@ -6,12 +6,19 @@ type Props = {
   params: Promise<{ slug: string }>
 }
 
-// Vercel Free Tier (1GB RAM) sınırlarına takılmamak ve Build süresinde
-// "Out of Memory" hatası almamak için sayfaları On-Demand ISR olarak ayarlıyoruz.
-// Böylece sayfalar Build anında değil, Google veya kullanıcı ilk girdiğinde
-// arka planda statik HTML'e dönüştürülüp hafızaya alınır (Sonsuza dek hızlı açılır).
+// En önemli ilçeleri Build aşamasında önceden oluşturuyoruz (Pre-rendering).
+// Bu hem SEO botları için hem de kullanıcı deneyimi için hızı garanti eder.
 export async function generateStaticParams() {
-  return [];
+  const mainDistricts = ["bursa-merkez", "osmangazi", "nilufer", "yildirim"];
+  const params = [];
+  
+  for (const d of mainDistricts) {
+    for (const s of SERVICES) {
+      params.push({ slug: `${d}-${s.slug}` });
+    }
+  }
+  
+  return params;
 }
 
 // SEO: Her sayfa için eşsiz ve dinamik Title + Meta Description
@@ -33,11 +40,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return { title: 'Sayfa Bulunamadı' };
   }
 
-  // Dinamik benzersiz başlık (Örn: Nilüfer Evden Eve Nakliyat | Profesyonel)
-  const title = `${district.name} ${service.name} | Profesyonel`;
+  // Dinamik benzersiz başlık (Örn: Nilüfer Evden Eve Nakliyat & Kiralık Asansör | 7/24)
+  const title = `${district.name} ${service.name} & Kiralık Asansör | 7/24 Güvenli`;
   
   // Dinamik benzersiz açıklama (Max 160 karakter)
-  const description = `Bursa ${district.name} ${service.name} hizmeti. 15. kata kadar kiralık mobil asansörlerle 7/24 güvenli, hızlı taşıma ve nakliye desteği.`;
+  const description = `${district.name} bölgesinde 7/24 ${service.name} hizmeti. 15. kata kadar kiralık mobil asansörlerle profesyonel evden eve nakliyat ve güvenli taşıma çözümleri.`;
 
   return {
     title,

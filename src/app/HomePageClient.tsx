@@ -255,16 +255,41 @@ export default function HomePageClient() {
             <p className="dark:text-slate-300 text-lg text-slate-700">{t('home.districts_desc', "Bursa'nın tüm ilçelerine en kısa sürede mobil asansör ulaştırıyoruz.")}</p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {DISTRICTS.map(district => (
-              <Link
-                key={district.slug}
-                href={`/${district.slug}-kiralik-mobil-asansor`}
-                className="bg-white dark:bg-navy-light text-secondary dark:text-white py-4 px-3 rounded-2xl text-center border border-border dark:border-white/10 hover:bg-primary hover:text-white hover:border-primary dark:hover:bg-primary dark:hover:border-primary hover:shadow-md transition-all font-semibold text-sm sm:text-base"
-              >
-                {district.name}
-              </Link>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+              <h3 className="text-xl font-bold mb-6 flex items-center gap-2 text-secondary dark:text-white">
+                <ArrowUpToLine className="w-5 h-5 text-primary" />
+                Asansör Kiralama Bölgelerimiz
+              </h3>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                {DISTRICTS.map(district => (
+                  <Link
+                    key={`${district.slug}-asansor`}
+                    href={`/${district.slug}-kiralik-mobil-asansor`}
+                    className="bg-white dark:bg-navy-light text-secondary dark:text-white py-3 px-2 rounded-xl text-center border border-border dark:border-white/10 hover:border-primary hover:text-primary transition-all font-medium text-xs sm:text-sm shadow-sm"
+                  >
+                    {district.name} Asansör
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold mb-6 flex items-center gap-2 text-secondary dark:text-white">
+                <Truck className="w-5 h-5 text-primary" />
+                Evden Eve Nakliyat Bölgelerimiz
+              </h3>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                {DISTRICTS.map(district => (
+                  <Link
+                    key={`${district.slug}-nakliyat`}
+                    href={`/${district.slug}-evden-eve-nakliyat`}
+                    className="bg-white dark:bg-navy-light text-secondary dark:text-white py-3 px-2 rounded-xl text-center border border-border dark:border-white/10 hover:border-primary hover:text-primary transition-all font-medium text-xs sm:text-sm shadow-sm"
+                  >
+                    {district.name} Nakliyat
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>

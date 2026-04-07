@@ -23,42 +23,42 @@ export const DISTRICTS: District[] = [
     slug: "bursa-merkez", 
     name: "Bursa (Merkez)",
     neighborhoods: ["Heykel", "Setbaşı", "Altıparmak", "Çekirge", "Kükürtlü", "Muradiye", "Demirtaş"],
-    seoParagraph: "Bursa merkezinde artan trafik yoğunluğu ve kentsel dönüşüm projeleri, geleneksel eşya taşıma yöntemlerini zorlaştırmaktadır. Özellikle dar alanlarda ve ana arterlerde, eşyalarınızın zarar görmeden hızla üst katlara çıkarılabilmesi için profesyonel asansör ağımızla vakit kaybettirmeden çözüm üretiyoruz.",
+    seoParagraph: "Bursa'nın kalbi Heykel ve Setbaşı gibi tarihi dokusu yüksek bölgelerde, dar sokaklar ve yoğun trafik eşya taşımayı bir kabusa dönüştürebilir. Bursa Merkez kiralık asansör hizmetimiz, bu zorlu lokasyonlarda binanın iç merdivenlerini kullanmadan, mobilyalarınızı doğrudan balkondan güvenle indirip çıkarmanızı sağlar. Şehrin her noktasında 7/24 aktif operatörlü araçlarımızla yanınızdayız.",
     localNote: "Trafiğe kapalı çarşı caddeleri ve dar sokaklarda, belediye izinli ve yaya güvenliği odaklı özel kurulum yapıyoruz."
   },
   { 
     slug: "osmangazi", 
     name: "Osmangazi",
     neighborhoods: ["Hüdavendigar", "Dikkaldırım", "Altıparmak", "Hamitler", "Yunuseli", "Emek", "Geçit"],
-    seoParagraph: "Osmangazi ilçesinin tarihi dokusu, Altıparmak ve Çekirge gibi semtlerindeki dar sokaklar eşya taşıma sürecinde büyük zorluklar yaratır. Bu bölgelerdeki katlı binalara geleneksel yöntemlerle hasarsız mobilya çıkarmak neredeyse imkansızken, dar şaseli dış cephe asansörlerimizle sokak trafiğini aksatmadan eşyalarınızı güvenle taşıyoruz.",
+    seoParagraph: "Bursa'nın en büyük ilçesi Osmangazi'de, özellikle Altıparmak, Çekirge ve Hamitler gibi farklı yapılaşmaların olduğu bölgelerde asansörlü nakliyat hayat kurtarır. Tarihi binaların dar merdivenleri veya yeni yapılan sitelerin yüksek katları fark etmeksizin, Osmangazi kiralık mobil asansör çözümlerimizle eşyalarınızı sıfır riskle taşıyoruz. Komşularınızı rahatsız etmeden, hızlı ve profesyonel hizmet için bize güvenin.",
     localNote: "Tarihi dokunun yoğun olduğu dar sokaklarda küçük şaseli araçlarımızla binalara zarar vermeden hizmet veriyoruz."
   },
   { 
     slug: "nilufer", 
     name: "Nilüfer",
     neighborhoods: ["Özlüce", "Görükle", "İhsaniye", "Beşevler", "Ataevler", "Fethiye", "Balat"],
-    seoParagraph: "Nilüfer'de, özellikle Özlüce, Görükle ve İhsaniye gibi gelişen mahallelerdeki yüksek katlı lüks siteler ve rezidanslar asansörlü nakliyatı zorunlu kılmaktadır. Geniş pencereler ve balkonlar mobil asansör kurulumu için ideal bir ortam sağlarken, eşyalarınız lüks binaların iç yapısına ve asansörlerine zarar vermeden direkt dairenize ulaştırılır.",
+    seoParagraph: "Modern mimarinin ve lüks rezidansların merkezi Nilüfer'de, Özlüce, Balat ve İhsaniye gibi bölgelerde taşınmak zarafet gerektirir. Nilüfer evden eve asansörlü nakliyat hizmetimiz, yüksek katlı binaların asansörlerine sığmayan büyük eşyalarınızı dış cepheden, bina yapısına zarar vermeden dairenize ulaştırır. Nilüfer'in prestijli sitelerinde yönetmeliklere uygun, sessiz ve güvenli çalışma prensibiyle hareket ediyoruz.",
     localNote: "Yüksek katlı lüks rezidans ve yeni sitelerde, site yönetimi kurallarına tam uyumlu ve çevreye duyarlı taşıma sağlıyoruz."
   },
   { 
     slug: "yildirim", 
     name: "Yıldırım",
     neighborhoods: ["Millet", "Yavuzselim", "Ertuğrulgazi", "Mesken", "Teleferik", "Siteler", "Bağlaraltı"],
-    seoParagraph: "Yıldırım ilçesinde hızla devam eden kentsel dönüşüm projeleri ve teleferik çevresindeki dik, dar sokaklı mahalleler nakliye araçlarının yanaşmasını güçleştirir. Uzman operatörlerimiz, bu zorlu arazi koşullarında bile asansör açısını milimetrik ayarlayarak, Yıldırım'daki yeni evinize sorunsuz bir başlangıç yapmanızı sağlar.",
+    seoParagraph: "Yıldırım ilçesinin engebeli coğrafyası ve Teleferik çevresindeki dik yamaçlar, standart nakliye kamyonlarının işini zorlaştırır. Yıldırım mobil asansör kiralama servisimiz, Millet ve Mesken gibi kentsel dönüşüm alanlarında yüksek erişimli merdivenleriyle eşyalarınızı dakikalar içinde güvenle transfer eder. Yıldırım'ın en zorlu sokaklarında bile milimetrik hesaplamalarla hizmet veriyoruz.",
     localNote: "Eğimli ve dar sokaklı Teferrüç/Teleferik mahallelerinde özel denge ayaklarına sahip asansörlerimizle sarsıntısız kurulum garanti ediyoruz."
   },
   { 
     slug: "inegol", 
     name: "İnegöl",
     neighborhoods: ["Alanyurt", "Mesudiye", "Kemalpaşa", "Mahmudiye", "Hamidiye", "Yenice", "Akhisar"],
-    seoParagraph: "İnegöl, Türkiye'nin mobilya başkenti olarak yoğun bir mobilya transfer trafiğine sahiptir. Gerek üretim tesislerinden mağazalara gerekse yeni evlenecek çiftlerin lüks gardırop ve koltuk takımlarının yüksek katlara sevkiyatında, İnegöl'de asansörlü taşımacılık eşyaların sıfır çizik ile teslimatı için en büyük güvencemizdir.",
+    seoParagraph: "Türkiye'nin mobilya başkenti İnegöl'de, üretilen değerli mobilyaların çiziksiz bir şekilde katlara çıkarılması büyük önem taşır. İnegöl kiralık asansör hizmetimiz, hem bireysel ev taşımalarında hem de mobilya mağazalarının yüksek kat sevkiyatlarında en büyük yardımcınızdır. Alanyurt ve Mesudiye gibi bölgelerde hızlı kurulum ve profesyonel operatör desteğiyle eşyalarınızı sigortalı ve garantili taşıyoruz.",
     localNote: "Mobilya üretim merkezlerine özel, sıfır çizik garantili geniş sepetli asansörlerimizle mağaza ve depo sevkiyatları yapıyoruz."
   },
   { 
     slug: "gemlik", 
     name: "Gemlik",
     neighborhoods: ["Manastır", "Eşrefzade", "Kumla", "Kurşunlu", "Umurbey", "Hisar", "Cumhuriyet"],
-    seoParagraph: "Gemlik körfezinin rüzgarlı yapısı ve sahile inen dar, eğimli yollarında dış cephe asansörü kurmak özel bir uzmanlık gerektirir. Rüzgar sensörlü ve ekstra dengeleyicilere sahip teleskopik araçlarımızla, Manastır (Umurbey) gibi yüksek rakımlı sitelere en sert lodoslarda dahi iş güvenliğinden ödün vermeden güvenilir taşıma sağlıyoruz.",
+    seoParagraph: "Gemlik Körfezi'nin rüzgarlı sahil şeridi ve Manastır gibi yüksek rakımlı yerleşimlerinde asansör kurmak uzmanlık ister. Gemlik kiralık asansörlü nakliyat araçlarımız, rüzgar dengeleyici sistemleri ve hidrolik ayaklarıyla en zorlu hava koşullarında bile güvenli çalışma sağlar. Deniz manzaralı evinize taşınırken eşyalarınızın rüzgardan veya dar alanlardan etkilenmemesi için profesyonel çözümler sunuyoruz.",
     localNote: "Körfez sahil şeridi ve rüzgarlı yamaçlarda, rüzgar sensörlü ve ekstra güvenlikli donanımlarımızla taşıma gerçekleştiriyoruz."
   },
   { 
@@ -155,11 +155,11 @@ export const SERVICES: Service[] = [
     shortDesc: "Yüksek katlara malzeme ve eşya çıkarmanın en güvenli, en hızlı yolu.",
     category: "asansor",
     template: `
-      <p>{district} bölgesinde taşınma, tadilat veya ağır malzeme sevkiyatı işlerinizde <strong>kiralık mobil asansör</strong> hizmetimizle yanınızdayız. Geleneksel taşıma yöntemlerinin yetersiz kaldığı, bina içi asansörlerin kullanılamadığı veya merdivenlerin çok dar olduğu durumlarda mobil asansörlerimiz hayat kurtarır.</p>
+      <p>{district} bölgesinde taşınma, tadilat veya ağır malzeme sevkiyatı işlerinizde <strong>kiralık mobil asansör</strong> hizmetimizle yanınızdayız. Geleneksel taşıma yöntemlerinin yetersiz kaldığı, bina içi asansörlerin kullanılamadığı veya merdivenlerin çok dar olduğu durumlarda profesyonel mobil asansörlerimiz hayat kurtarır.</p>
       
-      <p>Sistemimiz <strong>15. kata kadar</strong> güvenle ulaşabilmekte ve ağır yüklerinizi saniyeler içinde hedeflenen kata taşıyabilmektedir. Üstelik tüm süreç boyunca <strong>operatör her zaman asansörün başındadır</strong>; yani makine kullanımını tamamen uzman personelimiz yönetir ve iş güvenliğini en üst düzeyde tutar. {district} ve çevresi için <strong>7/24 hizmet veriyoruz</strong>; mesai saatleri dışındaki acil işlerinizde de bizimle iletişime geçebilirsiniz.</p>
+      <p>Sistemimiz <strong>15. kata kadar</strong> güvenle ulaşabilmekte ve ağır yüklerinizi saniyeler içinde hedeflenen kata ulaştırabilmektedir. {district} mahalleri olan {neighborhoods} ve çevresinde, tüm süreç boyunca <strong>uzman operatörümüz asansörün başındadır</strong>; yani makine kullanımını tamamen biz yönetir ve iş güvenliğini en üst düzeyde tutarız. <strong>7/24 hizmet veriyoruz</strong>; acil taşınma ihtiyaçlarınızda bir telefon kadar uzağınızdayız.</p>
 
-      <p>Firmamız, bakımlı makine parkuru ve tecrübeli operatörleriyle zaman kaybını önler. Tam anlaştığımız saatte adresinizde oluruz ve özenli çalışırız. İhtiyaç duymanız halinde, sadece makine kiralama ile kalmayıp <strong>gerekli durumlarda taşıma personeli (hamal) ve nakliye kamyonu desteği de verilir</strong>. {district} bölgesindeki en uygun fiyatlı ve profesyonel mobil asansör çözümleri için hemen bizi arayabilirsiniz.</p>
+      <p>Bakımlı makine parkuru ve tecrübeli ekibimizle {district} lokasyonunda zaman kaybını önler, tam anlaştığımız saatte adresinizde oluruz. İhtiyaç duymanız halinde, sadece makine kiralama ile kalmayıp <strong>hamal (taşıma personeli) ve nakliye kamyonu desteği de sağlıyoruz</strong>. Profesyonel ve uygun fiyatlı çözümler için hemen iletişime geçebilirsiniz.</p>
     `,
     faqs: [
       { q: "Mobil asansör kaçıncı kata kadar ulaşıyor?", a: "Sistemlerimiz maksimum 15. kata kadar güvenle ulaşabilmektedir." },

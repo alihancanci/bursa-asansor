@@ -4,13 +4,15 @@ import { PhoneCall, MessageCircle } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { PHONE_NUMBER, WHATSAPP_LINK } from "@/data";
 import { cn } from "@/lib/utils";
+import { trackPhoneClick, trackWhatsAppClick } from "@/lib/analytics";
 
 interface CTASectionProps {
   className?: string;
   variant?: "horizontal" | "vertical";
+  locationName?: string;
 }
 
-export function CTASection({ className, variant = "horizontal" }: CTASectionProps) {
+export function CTASection({ className, variant = "horizontal", locationName = "Global" }: CTASectionProps) {
   const { t } = useTranslation();
   return (
     <div className={cn(
@@ -20,6 +22,7 @@ export function CTASection({ className, variant = "horizontal" }: CTASectionProp
     )}>
       <a
         href={`tel:${PHONE_NUMBER.replace(/\D/g,'')}`}
+        onClick={() => trackPhoneClick(locationName)}
         className="flex-1 flex items-center justify-center gap-3 bg-primary hover:bg-orange-600 text-white px-6 py-4 rounded-2xl font-bold text-lg shadow-xl shadow-primary/20 hover:shadow-primary/40 hover:-translate-y-1 transition-all duration-300"
       >
         <PhoneCall className="h-6 w-6 animate-pulse" />
@@ -28,6 +31,7 @@ export function CTASection({ className, variant = "horizontal" }: CTASectionProp
       
       <a
         href={WHATSAPP_LINK}
+        onClick={() => trackWhatsAppClick(locationName)}
         target="_blank"
         rel="noopener noreferrer"
         className="flex-1 flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-white px-6 py-4 rounded-2xl font-bold text-lg shadow-xl shadow-[#25D366]/20 hover:shadow-[#25D366]/40 hover:-translate-y-1 transition-all duration-300"
