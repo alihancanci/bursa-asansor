@@ -23,127 +23,127 @@ export const DISTRICTS: District[] = [
     slug: "bursa-merkez", 
     name: "Bursa (Merkez)",
     neighborhoods: ["Heykel", "Setbaşı", "Altıparmak", "Çekirge", "Kükürtlü", "Muradiye", "Demirtaş"],
-    seoParagraph: "Bursa'nın kalbi Heykel ve Setbaşı gibi tarihi dokusu yüksek bölgelerde, dar sokaklar ve yoğun trafik eşya taşımayı bir kabusa dönüştürebilir. Bursa Merkez kiralık asansör hizmetimiz, bu zorlu lokasyonlarda binanın iç merdivenlerini kullanmadan, mobilyalarınızı doğrudan balkondan güvenle indirip çıkarmanızı sağlar. Şehrin her noktasında 7/24 aktif operatörlü araçlarımızla yanınızdayız.",
-    localNote: "Trafiğe kapalı çarşı caddeleri ve dar sokaklarda, belediye izinli ve yaya güvenliği odaklı özel kurulum yapıyoruz."
+    seoParagraph: "Bursa'nın tarihi kalbi olan Heykel, Muradiye ve Setbaşı gibi bölgeler, dar sokakları ve bitişik nizam yapıları nedeniyle taşınma süreçlerinde ciddi lojistik engeller barındırır. Bursa Merkez asansörlü nakliyat hizmetimiz, bu tarihi dokuda binanın iç merdivenlerini ve dar asansör boşluklarını kullanmadan, eşyalarınızı doğrudan geniş pencerelerden veya balkonlardan transfer etmenizi sağlar. Özellikle Demirtaş ve Kükürtlü gibi yoğun nüfuslu yerleşimlerde, nakliye kamyonunun trafiği aksatmadan asansör sistemini kurması uzmanlık gerektirir. Profesyonel ekibimiz, belediye ve trafik izinleri konusunda deneyimli olup, eşyalarınızı sıfır çizik garantisiyle taşır.",
+    localNote: "Tarihi çarşı ve çevresindeki dar sokaklarda, yayaların güvenliğini ön planda tutan, duba ve emniyet şeritli özel kurulum planları uyguluyoruz."
   },
   { 
     slug: "osmangazi", 
     name: "Osmangazi",
     neighborhoods: ["Hüdavendigar", "Dikkaldırım", "Altıparmak", "Hamitler", "Yunuseli", "Emek", "Geçit"],
-    seoParagraph: "Bursa'nın en büyük ilçesi Osmangazi'de, özellikle Altıparmak, Çekirge ve Hamitler gibi farklı yapılaşmaların olduğu bölgelerde asansörlü nakliyat hayat kurtarır. Tarihi binaların dar merdivenleri veya yeni yapılan sitelerin yüksek katları fark etmeksizin, Osmangazi kiralık mobil asansör çözümlerimizle eşyalarınızı sıfır riskle taşıyoruz. Komşularınızı rahatsız etmeden, hızlı ve profesyonel hizmet için bize güvenin.",
-    localNote: "Tarihi dokunun yoğun olduğu dar sokaklarda küçük şaseli araçlarımızla binalara zarar vermeden hizmet veriyoruz."
+    seoParagraph: "Bursa'nın en büyük ve kozmopolit ilçesi Osmangazi'de, Hamitler ve Yunuseli'ndeki yeni yapılan sitelerden Çekirge'nin dik yokuşlu binalarına kadar geniş bir sahada hizmet veriyoruz. Osmangazi kiralık mobil asansör çözümlerimiz, özellikle asansörlü taşıma kurallarının katı olduğu sitelerde, bina yönetimini ve komşuları rahatsız etmeden hızlı transfer imkanı sunar. Geçit ve Emek bölgelerindeki trafik yoğunluğunu hesaba katarak planladığımız taşıma takvimimiz, sizin için zaman tasarrufu sağlar. 15. kata kadar erişim kapasitemizle, Osmangazi'nin en yüksek rezidanslarında bile dış cepheden eşya transferi sağlıyoruz.",
+    localNote: "Hamitler ve Yunuseli gibi rüzgara açık yeni yerleşim bölgelerinde, rüzgar sensörlü ve denge ayakları güçlendirilmiş araçlarımızı tercih ediyoruz."
   },
   { 
     slug: "nilufer", 
     name: "Nilüfer",
     neighborhoods: ["Özlüce", "Görükle", "İhsaniye", "Beşevler", "Ataevler", "Fethiye", "Balat"],
-    seoParagraph: "Modern mimarinin ve lüks rezidansların merkezi Nilüfer'de, Özlüce, Balat ve İhsaniye gibi bölgelerde taşınmak zarafet gerektirir. Nilüfer evden eve asansörlü nakliyat hizmetimiz, yüksek katlı binaların asansörlerine sığmayan büyük eşyalarınızı dış cepheden, bina yapısına zarar vermeden dairenize ulaştırır. Nilüfer'in prestijli sitelerinde yönetmeliklere uygun, sessiz ve güvenli çalışma prensibiyle hareket ediyoruz.",
-    localNote: "Yüksek katlı lüks rezidans ve yeni sitelerde, site yönetimi kurallarına tam uyumlu ve çevreye duyarlı taşıma sağlıyoruz."
+    seoParagraph: "Modern mimari ve lüks yaşamın merkezi Nilüfer'de, Özlüce, Balat ve Fethiye gibi prestijli bölgelerde taşınmak profesyonel bir yaklaşım gerektirir. Nilüfer evden eve asansörlü nakliyat hizmetimiz, yüksek katlı rezidansların iç asansörlerinin eşya taşımaya kapalı olduğu durumlarda devreye girerek, en değerli eşyalarınızı dış dünyadan dairenize ulaştırır. İhsaniye ve Beşevler'deki dar sokaklarda araç manevra kabiliyeti yüksek asansörlerimizle hizmet veriyoruz. Görükle bölgesindeki öğrenci ve genç profesyonel hareketliliğine uygun, ekonomik saatlik kiralama seçeneklerimizle Nilüfer'in her köşesindeyiz. Site yönetimleriyle koordineli çalışarak, site huzurunu bozmadan operasyonumuzu tamamlıyoruz.",
+    localNote: "Nilüfer'in geniş site bahçelerinde çim ve peyzaja zarar vermeyen, kauçuk tabanlı denge ayakları kullanarak mülkünüzü koruyoruz."
   },
   { 
     slug: "yildirim", 
     name: "Yıldırım",
     neighborhoods: ["Millet", "Yavuzselim", "Ertuğrulgazi", "Mesken", "Teleferik", "Siteler", "Bağlaraltı"],
-    seoParagraph: "Yıldırım ilçesinin engebeli coğrafyası ve Teleferik çevresindeki dik yamaçlar, standart nakliye kamyonlarının işini zorlaştırır. Yıldırım mobil asansör kiralama servisimiz, Millet ve Mesken gibi kentsel dönüşüm alanlarında yüksek erişimli merdivenleriyle eşyalarınızı dakikalar içinde güvenle transfer eder. Yıldırım'ın en zorlu sokaklarında bile milimetrik hesaplamalarla hizmet veriyoruz.",
-    localNote: "Eğimli ve dar sokaklı Teferrüç/Teleferik mahallelerinde özel denge ayaklarına sahip asansörlerimizle sarsıntısız kurulum garanti ediyoruz."
+    seoParagraph: "Yıldırım ilçesinin Teleferik, Teferrüç ve Mesken gibi engebeli yamaçlara sahip bölgeleri, standart nakliyat araçları için büyük bir sınavdır. Yıldırım mobil asansör kiralama servisimiz, dik açılı yollarda dahi hidrolik denge ayaklarıyla sarsıntısız bir platform kurulumu gerçekleştirir. Millet Mahallesi gibi kentsel dönüşümün hızlandığı ve dikey yapılaşmanın arttığı bölgelerde, inşaat malzemelerinin katlara verilmesinde de aktif rol alıyoruz. Ertuğrulgazi ve Bağlaraltı'ndaki dar sokaklarda küçük kasa ancak yüksek erişimli asansörlerimizle eşya taşıma süresini %50 oranında kısaltıyoruz. Yamaçlara kurulan binalarda, eşyaların eğimden etkilenmemesi için özel sabitleme aparatları kullanıyoruz.",
+    localNote: "Yıldırım'ın dik yamaçlarında, aracın kaymasını önleyen özel takozlama ve hidrolik kilit sistemlerini her kurulumda titizlikle uyguluyoruz."
   },
   { 
     slug: "inegol", 
     name: "İnegöl",
     neighborhoods: ["Alanyurt", "Mesudiye", "Kemalpaşa", "Mahmudiye", "Hamidiye", "Yenice", "Akhisar"],
-    seoParagraph: "Türkiye'nin mobilya başkenti İnegöl'de, üretilen değerli mobilyaların çiziksiz bir şekilde katlara çıkarılması büyük önem taşır. İnegöl kiralık asansör hizmetimiz, hem bireysel ev taşımalarında hem de mobilya mağazalarının yüksek kat sevkiyatlarında en büyük yardımcınızdır. Alanyurt ve Mesudiye gibi bölgelerde hızlı kurulum ve profesyonel operatör desteğiyle eşyalarınızı sigortalı ve garantili taşıyoruz.",
-    localNote: "Mobilya üretim merkezlerine özel, sıfır çizik garantili geniş sepetli asansörlerimizle mağaza ve depo sevkiyatları yapıyoruz."
+    seoParagraph: "Türkiye'nin mobilya başkenti İnegöl'de eşya taşımak, ürünlerin değerini bilmeyi gerektirir. İnegöl kiralık asansör hizmetimizle, Mahmudiye ve Kemalpaşa gibi mobilya üretim merkezlerindeki atölyelerden çıkan yeni ürünleri, çizilme veya çarpma riski olmadan doğrudan yüksek katlardaki showroomlara veya evlere çekiyoruz. Alanyurt bölgesindeki yeni yerleşim projelerinde, bina içine sığmayan modüler mobilyaların transferinde asansörlü sistemlerimiz bir standart haline gelmiştir. Mobilya fuarı dönemlerinde artan sevkiyat taleplerine hızlı yanıt vererek, İnegöl esnafının ve halkının yanındayız. Akhisar ve Yenice'deki bireysel nakliye ihtiyaçlarında da her bütçeye uygun profesyonel çözümler sunuyoruz.",
+    localNote: "Mobilya hassasiyeti olan İnegöl'de, asansör sepetini kadife yüzeyli koruma battaniyeleriyle kaplayarak 'Sıfır Çizik' mottosuyla çalışıyoruz."
   },
   { 
     slug: "gemlik", 
     name: "Gemlik",
     neighborhoods: ["Manastır", "Eşrefzade", "Kumla", "Kurşunlu", "Umurbey", "Hisar", "Cumhuriyet"],
-    seoParagraph: "Gemlik Körfezi'nin rüzgarlı sahil şeridi ve Manastır gibi yüksek rakımlı yerleşimlerinde asansör kurmak uzmanlık ister. Gemlik kiralık asansörlü nakliyat araçlarımız, rüzgar dengeleyici sistemleri ve hidrolik ayaklarıyla en zorlu hava koşullarında bile güvenli çalışma sağlar. Deniz manzaralı evinize taşınırken eşyalarınızın rüzgardan veya dar alanlardan etkilenmemesi için profesyonel çözümler sunuyoruz.",
-    localNote: "Körfez sahil şeridi ve rüzgarlı yamaçlarda, rüzgar sensörlü ve ekstra güvenlikli donanımlarımızla taşıma gerçekleştiriyoruz."
+    seoParagraph: "Gemlik Körfezi'nin sert rüzgarları ve Manastır gibi yüksek rakımlı yerleşimlerin coğrafi zorlukları, asansör kurulumunda teknik bilgi ve dikkat gerektirir. Gemlik kiralık asansörlü nakliyat araçlarımız, rüzgar hızını ölçen sensörleri ve deniz havasına dayanıklı paslanmaz mekanizmalarıyla sahil şeridinde güvenli çalışma imkanı sunar. Kumla ve Kurşunlu gibi yazlık bölgelerde, dar sokaklara ve bahçeli evlere uygun manevra kabiliyeti yüksek mobil ünitelerimizle hizmet veriyoruz. Gemlik'in dik yamaçlarına kurulu sitelerinde, eşyalarınızın deniz manzaralı yeni evinize hasarsız ulaşması için profesyonel operatör desteğimiz şarttır. Liman ve sanayi bölgelerindeki ağır malzeme nakil ihtiyaçlarında da yanınızdayız.",
+    localNote: "Gemlik'in aşındırıcı deniz havası ve sert poyraz rüzgarları sebebiyle, her operasyon öncesi halat geri gerilim ve rüzgar direnci testlerini yapıyoruz."
   },
   { 
     slug: "gursu", 
     name: "Gürsu",
     neighborhoods: ["Kurtuluş", "Yenidoğan", "İstiklal", "Zafer", "Adaköy", "Hasanköy"],
-    seoParagraph: "Gürsu ilçesinin hem tarım hem de hızla gelişen yeni konut projeleriyle harmanlanmış yapısında, fabrikalara veya yeni yapılan sitelere seri şekilde malzeme sevkiyatı yapmak önemlidir. Gürsu'da özellikle sanayi kurulumları veya ev taşımalarında saatlik esnek asansör kiralama modelimiz sıkça tercih edilmektedir.",
-    localNote: "Sanayi ve depolama alanları çevresinde, fabrika çatılarına ağırlık kapasitesi yüksek asansörlerle malzeme ulaştırıyoruz."
+    seoParagraph: "Gürsu sanayi bölgesindeki fabrikalar ile yeni yapılan Yenidoğan ve Kurtuluş siteleri arasında mekik dokuyan bir hizmet anlayışımız var. Gürsu'da özellikle fabrikaların çatı katlarına makine parçası verilmesi veya alçıpan gibi ağır inşaat malzemelerinin sevkiyatında kapasitesi yüksek asansörlerimizle fark yaratıyoruz. Tarım alanlarının çevresindeki bahçeli evlerden, ilçe merkezindeki apartman dairelerine taşınırken asansörlü nakliyat hem işçilikten hem de zamandan tasarruf etmenizi sağlar. Gürsu'nun her mahallesinde, planlanan saatte hazır olan araçlarımızla, komşularınızı rahatsız etmeden hızlı bir şekilde yerleşmenize yardımcı oluyoruz.",
+    localNote: "Gürsu'daki fabrika ve depo kurulumlarında, tonajlı yükler için sepetteki yük dağılımını dengeleyen lazerli terazi sistemleri kullanıyoruz."
   },
   { 
     slug: "mudanya", 
     name: "Mudanya",
     neighborhoods: ["Güzelyalı", "Burgaz", "Halitpaşa", "Ömerbey", "Bademli", "Trilye", "Aydınpınar"],
-    seoParagraph: "Mudanya'nın Güzelyalı ve Burgaz gibi mahallelerinde, deniz manzaralı ancak yamaçlara kurulu siteler taşınma krizlerine yol açabilir. Eğimli arazilere hidrolik ayaklarıyla mükemmel tutunan mobil asansörlerimiz, Mudanya'nın rüzgarlı günlerinde bile eşyalarınızı güvenli bir şekilde evinize ulaştırır.",
-    localNote: "Dar sahil yolları ve yamaçlı yüksek sitelerde hidrolik sistemlerimizle en zorlu açılarda bile güvenli taşıma sağlıyoruz."
+    seoParagraph: "Mudanya'nın Güzelyalı ve Burgaz gibi sahile paralel ancak yamaçlara yaslanmış mahallelerinde taşınmak, rüzgar ve eğimle baş etmeyi gerektirir. Mudanya kiralık asansör servisimiz, Halitpaşa ve Bademli'deki geniş arazili sitelerde, ağaçlara ve peyzaja zarar vermeden kurulum yapabilen teleskopik sistemlere sahiptir. Trilye'nin dar ve tarihi sokaklarında küçük şaseli araçlarımızla nostaljik yapıları koruyarak hizmet veriyoruz. Deniz havasının verdiği nemli ve rüzgarlı günlerde, eşyalarınızın rüzgardan savrulmasını engelleyen yan korkuluk sistemli sepetlerimizle Mudanya'da güvenliğin markasıyız. Şehir içinden sahile doğru olan nakliye süreçlerinizi tek bir telefonla organize edebilirsiniz.",
+    localNote: "Güzelyalı ve Bademli gibi aşırı eğimli yamaçlarda, aracın şasisini yere sabitleyen hidrolik kilit sistemlerimizi devreye alıyoruz."
   },
   { 
     slug: "orhangazi", 
     name: "Orhangazi",
     neighborhoods: ["Arapzade", "Muradiye", "Fatih", "Hürriyet", "Gedelek", "Yenisölöz"],
-    seoParagraph: "Orhangazi ilçesinde ana arterler üzerindeki binalara veya İznik gölü sapağındaki yeni yapılanmalara hızlı malzeme ulaştırmak kritik önemdedir. Gerek sanayi firmaları gerekse bireysel evden eve nakliyat taleplerinde Orhangazi'ye hızlı yönlendirdiğimiz araç filomuzla nakliye süreçlerini hızlandırıyoruz.",
-    localNote: "İznik gölü çevresi ve ana otoyol arterlerinde, trafiği aksatmayan hızlı kurulumlu araçlarımızla pratik çözümler sunuyoruz."
+    seoParagraph: "Orhangazi'nin stratejik konumu, İznik Gölü çevresindeki turistik tesisler ve Gedelek gibi gıda üretim merkezleri için ağır malzeme sevkiyatını zorunlu kılar. Orhangazi kiralık asansör hizmetimiz, hem bireysel ev taşımalarında hem de sanayi tesislerinin yüksek katlarındaki depo sevkiyatlarında aktif rol alır. Arapzade ve Hürriyet mahallelerindeki trafiği yoğun caddelerde, hızlı kurulum ve seri indirme-bindirme özelliğine sahip araçlarımızla trafiği aksatmadan operasyon yapıyoruz. Orhangazi'nin her mahallesine 24 saat kesintisiz sevk ettiğimiz araçlarımızla, nakliye ve asansör kiralama ihtiyaçlarınızda en hızlı çözüm ortağınızız.",
+    localNote: "Ana otoyol arterine yakın olan Orhangazi'de, trafiği aksatmayan yoldışı (off-road) kurulum kabiliyetine sahip araçlarımızı görevlendiriyoruz."
   },
   { 
     slug: "karacabey", 
     name: "Karacabey",
     neighborhoods: ["Emirsultan", "Rungushpaşa", "Tabaklar", "Yenice", "Esentepe", "Bayramdere"],
-    seoParagraph: "Karacabey'in yatay mimariden yavaş yavaş çok katlı binalara geçtiği bu dönemde, özellikle yeni yapılan 5-6 katlı binalarda asansör boşluklarının darlığı veya henüz bina asansörünün devreye girmemesi kaynaklı sorunları, dışarıdan kurduğumuz evden eve nakliyat asansörleriyle pratik bir şekilde çözüyoruz.",
-    localNote: "Yeni gelişen konut bölgelerinde, henüz bina asansörü aktif olmayan yapıların tüm katlarına dış cepheden ulaşıyoruz."
+    seoParagraph: "Karacabey'in hızla gelişen dikey mimarisi, özellikle yeni yapılan 5-7 katlı binalarda asansör boşluklarının darlığı veya bina asansörünün henüz tescil edilmemesi gibi sorunları da beraberinde getirmektedir. Karacabey asansörlü taşıma servisimiz, Yenice ve Esentepe gibi yeni mahallelerde eşyalarınızı dış cepheden binalara ulaştırarak mağduriyetleri önler. Bayramdere ve sahil şeridindeki yazlıkların dar girişlerinde, mobil kurulan asansörlerimizle eşyalarınızı balkonlardan içeri alıyoruz. Karacabey'in tarıma dayalı sanayi kuruluşlarında da ağır malzeme sevkiyatı için yüksek kapasiteli platformlarımızla 7/24 hizmetinizdeyiz.",
+    localNote: "Karacabey'in yeni ve dar sokaklı mahallelerinde, asansörümüzü 'dar açı/yüksek erişim' modunda kullanarak binalara sıfır yanaşma sağlıyoruz."
   },
   { 
     slug: "iznik", 
     name: "İznik",
     neighborhoods: ["Selçuk Mah.", "Eşrefzade Mah.", "Mahmut Çelebi Mah.", "Sur Dışı", "Boyalıca", "Elbeyli"],
-    seoParagraph: "İznik'in eşsiz tarihi dokusu ve sur içi mahallelerindeki nostaljik sokak yapılanmaları, büyük nakliye kamyonlarının girmesini engeller. Bu gibi durumlarda eşyalarınızı daha küçük araçlarla sokağa getiriyor ve sokak yapısını ihlal etmeden, hızlı kurulan kiralık asansörlerimizle tarihi evlere özenle taşıyoruz.",
-    localNote: "Tarihi sur içi ve arkeolojik sit alanlarında, kültürel dokuya zarar vermeyecek hafif tonajlı araçlarımızla özenli hizmet veriyoruz."
+    seoParagraph: "İznik'in 2000 yıllık tarihi dokusunda ve sur içi mahallelerinde taşınma işlemi yapmak büyük bir hassasiyet gerektirir. İznik kiralık asansör çözümlerimizle, dar Selçuklu ve Osmanlı sokaklarında tarihi binalara ve surlara kesinlikle temas etmeden, eşyalarınızı havadan transfer ediyoruz. Boyalıca ve Elbeyli gibi göl kıyısındaki yerleşimlerde, rüzgarı hesaba katan güvenli kurulum teknikleri uyguluyoruz. İznik'teki antik dokunun korunması bizim için önceliktir; bu yüzden titreşimi minimize edilmiş asansör motorlarımızla tarihi yapılara zarar vermeden mülkünüzü taşıyoruz. İznik'in her noktasına 7/24 operatörlü destek sağlıyoruz.",
+    localNote: "Tarihi Surlar ve sit alanlarında, hafif tonajlı ve çevre dostu motorlara sahip 'Kompakt' asansör serimizi kullanarak tarihi koruyoruz."
   },
   { 
     slug: "mustafakemalpasa", 
     name: "Mustafakemalpaşa",
     neighborhoods: ["Tatvap", "Yalıntaş", "Hamzabey", "Barış", "Fevzipaşa", "Lalaşahin"],
-    seoParagraph: "Mustafakemalpaşa ilçesinde gelişen sanayi ve artan nüfusla birlikte, yeni konutlara geçiş hızlanmıştır. Özellikle ilçe merkezindeki işlek caddelerde eşya indirip bindirmek trafiği kilitleyebileceği için, mobil asansör kullanarak işlemi ortalama taşıma süresinin yarısında, kimseyi rahatsız etmeden tamamlıyoruz.",
-    localNote: "İşlek ilçe merkezi caddelerinde, çevreye rahatsızlık vermeyen sessiz motorlu asansörlerimizle mesai saatlerinde bile hızlı sevkiyat yapıyoruz."
+    seoParagraph: "Mustafakemalpaşa ilçesinin dinamik ticaret hayatı ve Lalşahin gibi tarihi kökleri olan mahallelerinde, evden eve nakliyatın hızı kritik önemdedir. Mustafakemalpaşa mobil asansör kiralama hizmetimiz, ilçe merkezindeki işlek caddelerde trafiği kilitlemeden, eşyalarınızı binanın arkasından veya balkon cephesinden seri bir şekilde indirmenizi sağlar. Yalıntaş ve Hamzabey'deki yeni yapılanmalarda, inşaat malzemelerinin ve mobilyaların katlara verilmesinde en teknolojik makinelerimizi görevlendiriyoruz. Mustafakemalpaşa halkının dürüst esnaf anlayışı beklentisine, şeffaf fiyatlandırma ve tam zamanında hizmet ilkemizle yanıt veriyoruz. Her türlü parça eşyadan komple villaya kadar taşıma kapasitemiz mevcuttur.",
+    localNote: "İşlek ilçe merkezlerinde, operatörümüz çevre güvenliğini sağlayan bariyerlerle çalışarak yayaların güvenliğini garanti altına alır."
   },
   { 
     slug: "yenisehir", 
     name: "Yenişehir",
     neighborhoods: ["Yenigün", "Kurtuluş", "Çayır", "Tabakhane", "Ulucami", "Yolören"],
-    seoParagraph: "Yenişehir ovasının ve havalimanı bölgesinin getirdiği ticari hareketlilik, hem ofis taşımacılığını hem de ev nakliyesini canlandırmıştır. İşletmelerin kıymetli ofis mobilyalarını veya ev eşyalarınızı, Yenişehir'de her sokağa uyum sağlayan teleskopik asansörlerimizle güvenle ve profesyonel kalitede katlara çıkarıyoruz.",
-    localNote: "Ova köyleri ve tarım-sanayi geçiş bölgelerinde, geniş balkonlu yapılara uygun özel teleskopik açılı asansör kurulumu gerçekleştiriyoruz."
+    seoParagraph: "Yenişehir Havalimanı bölgesi ve buna bağlı gelişen lojistik ağlar, Yenişehir'de profesyonel ofis ve depo taşımacılığı ihtiyacını artırmıştır. Yenişehir asansörlü nakliye ekibimiz, havalimanı çevresindeki kurumsal ofislerden Kurtuluş Mahallesi'ndeki aile apartmanlarına kadar her türlü dikey transfer ihtiyacını karşılar. Ova rüzgarlarının etkili olduğu Yenişehir'de, asansörün halat ve bom gerginliğini rüzgarın yönüne göre ayarlayan tecrübeli operatörlerimizle riskleri sıfırlıyoruz. Yolören ve Tabakhane gibi bölgelerde, traktör ve tarım trafiğini aksatmayacak pratiklikte kurulum yaparak zamanı verimli kullanıyoruz. Yenişehir'in gelişimine profesyonel taşıma desteğimizle katkı sağlıyoruz.",
+    localNote: "Yenişehir'in geniş düzlüklerinde ve rüzgara açık mevkilerinde, asansörü binalara çelik gergi halatlarıyla ek olarak sabitleyerek güvenliği ikiye katlıyoruz."
   },
   { 
     slug: "kestel", 
     name: "Kestel",
     neighborhoods: ["Vani Mehmet", "Yeni Mahalle", "Kale", "Esentepe", "Barakfakih", "Saitabat"],
-    seoParagraph: "Kestel sanayi bölgesindeki yoğunluk ve Bursa'nın doğu yakasındaki yeni yüksek yapılaşma, nakliye asansörlerine olan talebi artırmıştır. Özellikle organize sanayi bölgesindeki fabrikaların çatı katlarına makine parçası veya ofislere eşya aktarımı, Kestel'de saatlik mobil vincimiz veya asansörlerimizle hızlıca halledilmektedir.",
-    localNote: "Sanayi bölgesi (OSB) ve fabrika sahalarında, sanayi tipi makine parçaları gibi ağır yükleri yüksek katlara güvenle çıkarıyoruz."
+    seoParagraph: "Bursa'nın doğu girişinde sanayinin kalbi olan Kestel'de, Vani Mehmet ve Kale Mahallesi gibi tepeye kurulu bölgelerde nakliye işlemleri özel ekipman gerektirir. Kestel kiralık asansör servisimiz, sanayi bölgesindeki (OSB) fabrikaların çatı katlarına makine parçası ulaştırmaktan, Saitabat'taki villalara hassas mobilya taşımaya kadar her türlü göreve hazırdır. Kestel'in hızla yükselen toplu konut alanlarında, bina içindeki ortak kullanım alanlarını yıpratmamak için dış cephe asansörü kullanımını teşvik ediyoruz. Barakfakih sanayi hattındaki ağır yük transferlerinde, güvenlik sertifikalı operatörlerimizle 7/24 hizmetinizdeyiz. Kestel'de dürüst ticaret ve kaliteli işçiliğin adresiyiz.",
+    localNote: "Kestel Organize Sanayi Bölgesi (OSB) operasyonlarında, fabrika iç disiplini ve İSG kurallarına tam uyumlu ekip ve ekipmanlarla çalışıyoruz."
   },
   { 
     slug: "orhaneli", 
     name: "Orhaneli",
     neighborhoods: ["İsmetpaşa", "Fevzipaşa", "Karasi", "Göre", "Sırıl", "Başköy"],
-    seoParagraph: "Orhaneli'nin dağlık coğrafyası ve eğimli yerleşim alanlarında eşya taşımanın fiziksel yorgunluğu ve riski çok yüksektir. Geleneksel hamaliye masrafları yerine, Orhaneli şartlarında bile kurulumu mümkün olan asansör sistemlerimizle eşyalarınızı sarsmadan evinize ulaştırarak maliyet ve zaman avantajı sağlıyoruz.",
-    localNote: "Dağlık ve eğimli arazi şartlarında, dört çeker araçlarımızın üzerine kurulu özel ayaklı sistemlerle sarsıntısız taşıma yapıyoruz."
+    seoParagraph: "Orhaneli'nin dağlık ve engebeli yollarında eşya taşımak için aracı adresin tam önüne yanaştırmak ve asansörü kurmak büyük ustalık ister. Orhaneli mobil asansör kiralama hizmetimizle, dağ yöresinin zorlu arazi şartlarına uygun güçlendirilmiş motorlara sahip araçlarımızla geliyoruz. İsmetpaşa mahallesindeki çok katlı binalardan, köylerdeki müstakil evlere kadar taşınma zahmetini teknolojiyle çözüyoruz. Eşyalarınızın yokuşlarda sarsılmaması ve merdivenlerde yorulmadan dakikalar içinde evinize yerleşmesi için Orhaneli'nin her sokağına hakimiz. Uzun mesafeli yolculuktan gelen eşyalarınızı, yorgun personelin hata yapmasına fırsat vermeden asansörümüzle hasarsız bir şekilde teslim ediyoruz.",
+    localNote: "Dağ yollarının eğimine özel, aracın dengesini milimetrik sağlayan ve her zemine uyum sağlayan teleskopik hidrolik ayaklar kullanıyoruz."
   },
   { 
     slug: "keles", 
     name: "Keles",
     neighborhoods: ["Cuma Mah.", "Sofular", "Kocakovacık", "Gököz", "Dağdibi"],
-    seoParagraph: "Keles ilçesindeki kırsal yapıdan modern çok katlı binalara geçiş sürecinde firmamız eşya taşıma standartlarını yükseltmektedir. Eşyalarınızın araçtan indirilip, zarar görmeyeceği şekilde sabitlendiği sepet asansörlerimizle Keles'teki yeni yuvanıza %100 güvenle yerleşmenize yardımcı oluyoruz.",
-    localNote: "Kırsal kesimden modern yapılara geçişte, standart dışı engebeli yollara bile uyum sağlayan kompakt asansör taşıtlarıyla geliyoruz."
+    seoParagraph: "Uludağ'ın eteklerinde, Bursa'nın en yüksek ilçelerinden biri olan Keles'te, kış şartlarında bile nakliye hizmetimizi aksatmadan sürdürüyoruz. Keles kiralık asansörlü nakliyat araçlarımız, engebeli araziye ve dar köy yollarına uygun boyutlarda seçilmiştir. Cuma Mahallesi başta olmak üzere Keles ilçe merkezindeki yeni binalarda, eşyalarınızı dış cepheden güvenle dairenize sevk ediyoruz. Dağdibi ve Gököz gibi kırsal turizmin canlandığı bölgelerde bungalov evlerin ve butik otellerin malzeme transferinde de çözüm ortağınızız. Keles'in temiz havasında, eşyalarınızı hiç yorulmadan yeni adresine yerleştirmeniz için biz hazırız. Her türlü tayin ve taşınma durumunda yanınızdayız.",
+    localNote: "Keles'in zorlu kış şartlarında ve buzlanma riskli yamaçlarında, aracın zemin tutuşunu artıran donanımlarla (zincir/takoz) güvenli kurulum yapıyoruz."
   },
   { 
     slug: "harmancik", 
     name: "Harmancık",
     neighborhoods: ["Merkez Mah.", "Ece Mah.", "Çakmak", "Gökçedağ", "Ilıcaksu"],
-    seoParagraph: "Harmancık'ın sakin dokusunda, dışarıdan gelen memur veya öğretmen tayinleri sebebiyle oluşan ev değiştirme süreçlerinde bölgeye özel nakliye asansörü hizmetimiz devredetir. Yol yorgunluğuyla gelen eşyalarınızın son aşamada merdivenlerde hasar görememesi için Harmancık'a özel hızlı çözümler üretiyoruz.",
-    localNote: "Bölgeye atanan memur ve kamu görevlilerimizin eşyalarını, uzun yolculuk sonrası bina içi merdiven riski olmadan direk evlerine alıyoruz."
+    seoParagraph: "Harmancık ilçesinde özellikle kamu görevlilerinin tayin dönemlerinde yoğunlaşan nakliye taleplerine, hızlı ve profesyonel asansör kiralama çözümlerimizle cevap veriyoruz. Uzun yoldan gelen kıymetli eşyalarınızın Harmancık'taki yeni evinize girerken merdivenlerde veya kapı girişlerinde hasar görmemesi için asansör kullanımı en mantıklı seçimdir. Ece Mahallesi ve Çakmak çevresindeki lojmanlarda, sessiz çalışan asansör motorlarımızla çevreyi rahatsız etmeden hızlıca taşımanızı bitiriyoruz. Uygun fiyatlı saatlik kiralama seçeneklerimizle, Harmancık esnafına ve halkına dürüst bir hizmet anlayışıyla 7/24 ulaşıyoruz. Harmancık'ta güvenli taşınmanın adresi olarak, her türlü beyaz eşya ve mobilya transferinizde operatörlü destek sağlıyoruz.",
+    localNote: "Harmancık'taki kamu konutlarında, çalışma saatlerini aksatmadan en sessiz ve hızlı şekilde mobil kurulum yapıp süreci tamamlıyoruz."
   },
   { 
     slug: "buyukorhan", 
     name: "Büyükorhan",
     neighborhoods: ["Orhan Mah.", "Cumhuriyet Mah.", "Kınık", "Piribeyler", "Gedikler"],
-    seoParagraph: "Büyükorhan bölgesinde gerek inşaat malzemesi gerekse ev eşyası taşımak için harcanan uzun beden gücü sürelerini mobil asansörlerimizle sıfırlıyoruz. Yüksek katlara malzeme sevkiyatını dakikalara sığdırarak, Büyükorhan sakinlerine stresten uzak, teknolojik ve modern bir taşıma deneyimi sunuyoruz.",
-    localNote: "İnşaat malzemesi ve ev eşyalarını yüksek katlara taşıyarak, dağ yöresi halkı için fiziksel yorgunluğu ve nakliye süresini sıfırlıyoruz."
+    seoParagraph: "Büyükorhan'ın sakin yaşam alanlarında ve yeni gelişen Cumhuriyet Mahallesi'nde eşya taşımak için harcanan insan gücü eforunu, asansör teknolojisiyle minimize ediyoruz. Büyükorhan genelindeki 2-4 katlı binalarda asansör yokluğu nedeniyle yaşanan taşıma zorluklarını, dışarıdan kurduğumuz sepet asansörlerle tarihe karıştırıyoruz. Piribeyler ve Kınık gibi mahallelerde inşaat halindeki yapılara alçıpan, tuğla ve fayans malzemelerinizi beden gücü kullanmadan katlara ulaştırıyoruz. İlçe merkezindeki nakliye krizlerini, uzman operatörümüz ve her şarta uygun mobil asansörümüzle anında çözüyoruz. Büyükorhan sakinlerinin alın teri dökmeden, eşyaları çizilmeden yerleşmeleri bizim en büyük ödülümüzdür. 7/24 hizmetimizle Büyükorhan'dayız.",
+    localNote: "Büyükorhan'ın engebeli arazi yapısında, asansör platformunun eğimini sıfırlayan akıllı dengeleyicilerimizle sarsıntısız taşıma sunuyoruz."
   }
 ];
 

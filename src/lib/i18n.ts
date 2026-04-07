@@ -81,14 +81,14 @@ const trTranslations = {
     subtitle: "Bursa'nın her köşesinde, her gün onlarca mutlu müşteri ve başarılı taşıma.",
     view_all: "Tüm Çalışmalarımızı Gör",
     items: {
-      ref1_title: "Yüksek Kat Asansör Kurulumu",
-      ref1_desc: "Nilüfer bölgesinde 12. kata kadar uzanan güvenli mobil asansör kurulumumuz.",
-      ref2_title: "Gece Asansörlü Taşımacılık",
-      ref2_desc: "Osmangazi'de trafik yoğunluğu olmadan gerçekleştirilen gece transferi.",
-      ref3_title: "Hassas Eşya Taşıma Asansörü",
-      ref3_desc: "Yıldırım ilçesinde dar balkonlardan mobilya transferi uygulamamız.",
-      ref4_title: "Kurumsal ve Güvenli Hizmet",
-      ref4_desc: "Bursa merkezde bayrağımızla gururla sunduğumuz asansörlü nakliyat hizmeti."
+      ref1_title: "Nilüfer Beşevler Asansör Kurulumu",
+      ref1_desc: "Beşevler bölgesindeki dar sokaklı sitelerde 12. kata kadar uzanan güvenli mobil asansör kurulumumuz.",
+      ref2_title: "Osmangazi Gece Asansörlü Taşımacılık",
+      ref2_desc: "Osmangazi trafiğinin en yoğun olduğu Fevzi Çakmak caddesinde gece gerçekleştirdiğimiz profesyonel transfer.",
+      ref3_title: "Yıldırım Hassas Eşya Taşıma",
+      ref3_desc: "Yıldırım Millet mahallesindeki yüksek katlı rezidanslarda dar balkonlardan mobilya transferi uygulamamız.",
+      ref4_title: "Bursa Merkez Kurumsal Hizmet",
+      ref4_desc: "Heykel ve Altıparmak çevresindeki tarihi binalarda bayrağımızla gururla sunduğumuz asansörlü nakliyat hizmeti."
     }
   }
 };

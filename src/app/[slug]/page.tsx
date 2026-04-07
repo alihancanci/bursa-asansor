@@ -9,12 +9,11 @@ type Props = {
 // En önemli ilçeleri Build aşamasında önceden oluşturuyoruz (Pre-rendering).
 // Bu hem SEO botları için hem de kullanıcı deneyimi için hızı garanti eder.
 export async function generateStaticParams() {
-  const mainDistricts = ["bursa-merkez", "osmangazi", "nilufer", "yildirim"];
   const params = [];
   
-  for (const d of mainDistricts) {
+  for (const d of DISTRICTS) {
     for (const s of SERVICES) {
-      params.push({ slug: `${d}-${s.slug}` });
+      params.push({ slug: `${d.slug}-${s.slug}` });
     }
   }
   
