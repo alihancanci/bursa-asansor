@@ -3,13 +3,5 @@
     "x-nextjs-stale-time": "300",
     "x-nextjs-prerender": "1",
     "x-next-cache-tags": "_N_T_/layout,_N_T_/[slug]/layout,_N_T_/[slug]/page,_N_T_/yenisehir-asansorlu-komple-ev-tasima"
-  },
-  "segmentPaths": [
-    "/_tree",
-    "/_full",
-    "/$d$slug/__PAGE__",
-    "/$d$slug",
-    "/_index",
-    "/_head"
-  ]
+  }
 }

@@ -1,3 +1,0 @@
-module.exports=[78161,a=>{"use strict";let b=(0,a.i(33990).default)("chevron-right",[["path",{d:"m9 18 6-6-6-6",key:"mthhwq"}]]);a.s(["ChevronRight",0,b],78161)},69606,a=>{"use strict";let b=(0,a.i(33990).default)("arrow-right",[["path",{d:"M5 12h14",key:"1ays0h"}],["path",{d:"m12 5 7 7-7 7",key:"xquz4c"}]]);a.s(["ArrowRight",0,b],69606)},65322,a=>{"use strict";function b(){let a=process.env.NEXT_PUBLIC_SITE_URL;if(a&&"string"==typeof a)return a.endsWith("/")?a.slice(0,-1):a;return"https://bursakiralikasansor.com"}a.s(["getAbsoluteAssetUrl",0,function(a){let c=a.startsWith("/")?a:`/${a}`;return`${b()}${c}`},"getCanonicalUrl",0,function(a){let c=a.startsWith("/")?a:`/${a}`;return`${b()}${c}`}])}];
-
-//# sourceMappingURL=Desktop_yedek_0j8k3q4._.js.map
