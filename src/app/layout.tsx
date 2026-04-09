@@ -59,6 +59,11 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="anonymous" />
+        
+        {/* PageSpeed Optimization: Preload Critical Fonts */}
+        <link rel="preload" href="/fonts/dm-sans.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/outfit.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        
         <link rel="alternate" type="application/vnd.google-earth.kml+xml" href="https://bursakiralikasansor.com/locations.kml" />
       </head>
       <body suppressHydrationWarning className="bg-white dark:bg-[#071320] text-slate-900 dark:text-slate-200">
