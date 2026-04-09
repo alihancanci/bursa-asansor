@@ -504,5 +504,130 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <p class="mt-6 border-l-4 border-primary pl-4 py-2 bg-slate-50 dark:bg-slate-800/50 italic text-slate-700 dark:text-slate-300"><strong>Pratik öneri:</strong> Avize ve benzeri elektrikli aksesuarları taşınmadan en az bir gün önce söktürün; böylece nakliyat günü zaman kaybı yaşanmaz. Unutmayın iyi planlama, doğru firma seçimi ve önceden netleştirilen hizmet kapsamı, taşınma sürecini stressiz hâle getirir.</p>
     `
+    `
+  },
+  {
+    id: "7",
+    slug: "ucuz-nakliyat-tuzagi-bursa-evden-eve-tasinirken-yapilan-hatalar",
+    title: "Ucuz Nakliyat Tuzağı: Bursa'da Ev Taşırken Yapılan 5 Büyük Hata",
+    excerpt: "2.000 TL kâr edeyim derken eşyalarınızın nasıl 50.000 TL zarar gördüğünü biliyor musunuz? Bursa evden eve nakliyatta son dakika asansör sürprizleri ve bait-and-switch kurnazlıklarını deşifre ediyoruz.",
+    date: "10 Nisan 2026",
+    readTime: "6 dk okuma",
+    category: "Nakliyat Rehberi",
+    author: "Bursa Kiralık Asansör SüperSEO Editörü",
+    image: "/images/service-abstract.png",
+    metaDescription: "Bursa'da en ucuz nakliyat firmalarını seçmenin gizli maliyetleri. Sürpriz asansör ücreti, çizilen eşyalar ve acemi nakliyeci tuzaklarından nasıl korunursunuz?",
+    keywords: ["en ucuz nakliyat bursa", "ucuz nakliyat fiyatları", "bursa ev taşıma hataları", "asansör ekstra ücret", "sigortalı nakliyat bursa", "ucuz evden eve", "sürpriz nakliye ücreti"],
+    content: `
+      <h2>"Telefonda Ucuz, Kapıda Pahalı" Tuzağına Düşmeyin</h2>
+      <p>Yeni bir eve taşınmanın heyecanı, kapınıza gelen amatör bir nakliye ekibiyle kâbusa dönüşebilir. İnternette "<strong>Bursa en ucuz evden eve nakliyat</strong>" araması yaptığınızda karşınıza çıkan rakamlar cezbedici görünebilir. Ancak sektörün acı bir gerçeği var: <em>Ucuz etin yahnisi yavan olur, ucuz nakliyatın maliyeti ise paramparça olmuş mobilyalardır.</em></p>
+
+      <p>Bursa Kiralık Asansör ve CNC Nakliyat olarak yıllardır sahada karşılaştığımız ve müşterilerin en çok mağdur olduğu 5 büyük hatayı sizin için derledik.</p>
+
+      <h3>1. Son Dakika "Asansör Gerekliymiş" Sürprizi (Bait-and-Switch)</h3>
+      <p>En sık rastlanan taktik, telefonda eşyalarınızı listeleyip size piyasanın %30 altında fiyat verilmesidir. Anlaşma sağlanır, taşınma günü kamyon kapıya yanaşır ve nakliye sorumlusu evi gezdikten sonra şu cümleyi kurar: <em>"Abla / Abi bu merdivenler çok dar, bu koltuk buradan dönmez. Eşyanız çizilir. Bizim acil asansör çağırmamız lazım ama o da fiyata dahil değil, ekstra x Bin TL tutar."</em></p>
+      <p>O an eşyalar toplanmış ve eski evi boşaltmak zorunda olduğunuz için o astronomik rakamı çaresizce ödersiniz. Bizim sistemimizde ise <a href="/bursa-merkez-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">kiralık mobil asansörümüz</a> zaten işin merkezindedir ve fiyatlarımız sözleşmeyle tamamen sabittir.</p>
+
+      <h3>2. Sigorta Yalanı ve Çizilen Beyaz Eşyalar</h3>
+      <p>"Taşıma sigortamız var" demek, eşyanın koliden çıkarken düşüp kırılmasını kapsamaz. Gerçek bir firma, profesyonel <a href="/osmangazi-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Osmangazi evden eve nakliyat</a> veya <a href="/nilufer-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Nilüfer nakliyat</a> operasyonlarında, tüm beyaz eşyaları (Buzdolabı, çamaşır makinesi) koruyucu balonlu naylonlarla sarar. Sokak arası hamallarla çalışan "ucuz firmalar", koruma malzemesi kullanmadığı için 2.000 TL tasarruf edeyim derken 40.000 TL'lik buzdolabınızdan olursunuz.</p>
+
+      <h3>3. Sözleşmesiz ve Belgesiz İş Yapmak</h3>
+      <p>Taşınma günü yaşanabilecek bir anlaşmazlıkta elinizde resmi bir belge yoksa hiçbir hak iddia edemezsiniz. Profesyonel nakliyat şirketleri taşıma başından sonuna kadar sizi yasal olarak garanti altına alan evraklarla çalışır.</p>
+
+      <h2>Ucuz İşçilik, Kötü Montaj Demektir</h2>
+      <p>Nakliyat sadece "eşyayı kamyona taşımak" değildir. Özellikle yatak odası dolabı ve TV üniteleri gibi modüler parçaların sökülüp yeni evde terazide tekrar kurulması marangozluk becerisi gerektirir. Piyasadan günlük toplanan personeller, mobilyalarınızın menteşe kısımlarını yalama yapar, dolap kapaklarınız bir daha asla tam kapanmaz.</p>
+
+      <div class="bg-primary/10 border-l-4 border-primary p-6 rounded-r-xl mt-8 mb-6">
+        <h4 class="text-lg font-bold text-secondary dark:text-white mb-2">Peki Ne Yapmalısınız?</h4>
+        <p class="text-slate-700 dark:text-slate-300">
+          Riski sıfırlamak için, işlemi başından sonuna kadar <a href="/bursa-merkez-kiralik-asansor-fiyatlari" class="text-primary font-semibold hover:underline">fiks fiyat garantisi</a> ile sunan ve <strong>kendine ait asansör filosu bulunan</strong> kurumsal firmalarla çalışmalısınız. Detaylı keşif ve %100 güvenli taşıma sözü için hemen <a href="https://wa.me/905053297533" class="text-primary font-bold hover:underline">WhatsApp Üzerinden Teklif Alın (0505 329 75 33)</a>.
+        </p>
+      </div>
+    `
+  },
+  {
+    id: "8",
+    slug: "bursa-nakliye-kapora-dolandiriciligi-guvenilir-nakliyat-firmasi",
+    title: "Nakliye Kapora Dolandırıcılığı: Güvenilir Nakliyat Firması Nasıl Anlaşılır?",
+    excerpt: "Sarı sitelerde ve aracı platformlarda ucuza ilan verip, müşteriden kapora aldıktan sonra ortadan kaybolan sahte nakliyeci kabusu. Bursa'da güvenilir bir asansör kiralama veya nakliye firması ararken dikkat etmeniz gereken hayati işaretler.",
+    date: "11 Nisan 2026",
+    readTime: "7 dk okuma",
+    category: "Güvenlik & İnternet",
+    author: "Bursa Kiralık Asansör SüperSEO Editörü",
+    image: "/images/references/bursa-mobil-asansor-kiralama-referans-1.jpg",
+    metaDescription: "Armut ve benzeri aracı ilan sitelerinde kapora dolandırıcılığına dikkat! Bursa evden eve nakliyat firması seçerken güvenilirliği anlama yöntemleri ve kesin çözümler.",
+    keywords: ["nakliye dolandırıcılığı", "kapora dolandırıcıları", "armut nakliyat şikayet", "güvenilir nakliyat firması bursa", "bursa kiralık asansör şikayet", "nakliyat tavsiye bursa"],
+    content: `
+      <h2>Taşınma Gününüzü Mahveden Kâbus: Hayalet Firmalar</h2>
+      <p>Bir sabah uyandınız, eski evinizi o gün boşaltmanız gerekiyor, kolileriniz hazır. Günler öncesinden anlaştığınız o "çok uygun fiyatlı" nakliyeciyi arıyorsunuz ama telefon kapalı! Ya da numara tamamen kullanım dışı... Tebrikler, internetteki en popüler <strong>Nakliye Kapora Dolandırıcılığına</strong> kurban gittiniz.</p>
+
+      <p>Özellikle ikinci el ilan sitelerinde veya taşeron bulma platformlarında kendine "X Nakliyat" veya "Y Asansör Kiralama" gibi sahte isimler açan yüzlerce sistemsiz hesap bulunuyor. Bu hesaplar rakiplerinden çok daha düşük fiyatlar verir, <em>"Abi/Abla randevuyu kesinleştirmek için yarı ücretini veya kaporayı at"</em> derler. Taşıma günü geldiğinde ise asla kapınızı çalmazlar.</p>
+
+      <h3>Gerçek Bir Firmayı Sahtesinden Ayırmanın Kesin Yolları</h3>
+      <p>Vaktinizin ve bütçenizin değerli olduğu bu süreçte, nakliyat ve <a href="/osmangazi-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">kiralık asansör</a> hizmeti alacağınız firmanın gerçekliğini şu 4 adımla doğrulayabilirsiniz:</p>
+
+      <ul class="list-decimal pl-5 mt-4 mb-8 space-y-4">
+        <li><strong>Sabit Kurum Web Sitesi:</strong> Firmanın `.com` veya `.com.tr` uzantılı, hizmet bölgelerini (Örn: <a href="/yildirim-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Yıldırım Nakliyat</a>, <a href="/gorukle-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Görükle Nakliyat</a>) teknik verilerle sunan bir sitesi var mı? Bursa Kiralık Asansör CNC Nakliyat olarak dijital kimliğimiz ve referanslarımız açıkça ortadadır.</li>
+        <li><strong>Kendi Araç Filosu:</strong> Gerçek firmaların kendi araçları, kendi mobil cephe asansörleri ve kendi personeli vardır. Komisyoncular telefonu kapatır, sağdan soldan araç ayarlamaya çalışır. Araç bulamazlarsa sizi ortada bırakırlar.</li>
+        <li><strong>Referans Görselleri İnceleyin:</strong> Firmanın daha önce yaptığı asansör kurumlarına ait görseller gerçekçi mi, yoksa internetten kopyalanmış stok görseller mi? (Dilerseniz sitemizin <a href="/calismalarimiz" class="text-primary font-semibold hover:underline">Çalışmalarımız</a> sayfasından bizzat Bursa sokaklarında yaptığımız asansörlü taşımaları inceleyebilirsiniz).</li>
+        <li><strong>Saha Keşfi:</strong> Sadece telefondan ezbere fiyat verenlerden uzak durun. Gerçek bir firma, evin veya ofisin fizibilitesini yapar; asansör nereye yanaşacak, cadde uygun mu diye bölgesel faktörleri inceler.</li>
+      </ul>
+
+      <h2>İçiniz Rahat Olsun: Nasıl Çalışıyoruz?</h2>
+      <p>Bizim sistemimizde sürprize ve mağduriyete yer yoktur. Her müşteri için süreç nettir:</p>
+      <ol class="list-disc pl-5 mt-2 space-y-2">
+        <li>Bize <a href="https://wa.me/905053297533" class="text-primary font-semibold hover:underline">+90 505 329 75 33</a> numarasından ulaşırsınız.</li>
+        <li>Kat sayınız ve eşya yoğunluğunuz dinlenir / gerekirse online fizibilite yapılır.</li>
+        <li>Taşıma tarihi belirlenir ve o gün için size dev <a href="/bursa-merkez-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">mobil asansörümüz</a> ile kendi uzman ekibimiz tahsis edilir.</li>
+        <li>İş bittiğinde, eşyalarınız yeni eve sapasağlam monte edildiğinde mutabık kalınan ücret alınır. Aracı, komisyoncu veya son dakika ekstra bedelleri yoktur.</li>
+      </ol>
+
+      <p class="mt-8">Özellikle Bursa gibi yokuşlu ve dar sokaklı bölgelerde, sahtekar nakliyeciler asansör kurmayı zaten beceremezler. İşi şansa bırakmak yerine doğrudan ana merkezden, gerçek asansör sahiplerinden hizmet alın.</p>
+    `
+  },
+  {
+    id: "9",
+    slug: "merdivenden-ev-tasima-devri-bitti-dis-cephe-asansoru-avantajlari",
+    title: "Merdivenden Ev Taşıma Devri Bitti: Eşyalarınız Neden Dış Cephe Asansörü ile Taşınmalı?",
+    excerpt: "Hamal gücüyle merdivenden çıkartılan eşyalarınızın %90'ının neden çizildiğini hiç düşündünüz mü? Eski tip nakliyeyi unutturacak devrim: Dış Cephe (Mobil) Asansörleriyle %100 Hasarsız Taşımacılık.",
+    date: "12 Nisan 2026",
+    readTime: "5 dk okuma",
+    category: "Lojistik & Teknoloji",
+    author: "Bursa Kiralık Asansör SüperSEO Editörü",
+    image: "/images/references/yuksek-kat-esya-tasima-asansoru-referans-3.jpg",
+    metaDescription: "Merdivenden ev taşımanın zararları. Beyaz eşya çizikleri ve mobilya kırıklarını engelleyen en kesin yöntem: Bursa mobil dış cephe kiralık asansörleri.",
+    keywords: ["merdivenden ev taşıma", "cephe asansörü faydaları", "eşyalar neden çizilir", "sıfır hasar nakliyat", "asansörlü evden eve bursa", "eşya taşıma teknikleri"],
+    content: `
+      <h2>Merdiven Dairesinde Yankılanan "Dikkat Et Çarptı!" Sesine Son</h2>
+      <p>Daha önce hiç eski yöntemlerle taşındıysanız o kaosu gayet iyi bilirsiniz. Apartman kapısından 8. kata kadar yankılanan sesler: <em>"Aman köşeyi kurtar", "Az bekle dinlenelim", "Dikkat et duvara vurdu!"</em></p>
+      
+      <p>Ne kadar dikkat edilirse edilsin insan anatomisi, 100 kiloluk bir yatak odası dolabını veya 150 kiloluk çift kapılı bir buzdolabını dar merdiven boşluklarında kusursuzca döndürmeye müsait değildir. Fizik kurallarına göre bir yerden taviz verilir: Eşyanın en güzel köşesi duvar sıvasına sürtünür, çizilir. Sonuç? Yenisini almak için harcayacağınız binlerce lira ekstra bütçe.</p>
+
+      <h3>Göz Ardı Edilen 3 Gizli Tehlike (Geleneksel Taşıma)</h3>
+      <ul class="space-y-4 mt-4 mb-6 list-disc pl-5">
+        <li><strong>Binanın Ortak Kullanım Alanlarının Hasar Görmesi:</strong> Eşyaların çıkarılırken apartmanın duvar boyasını, merdiven mermerlerini veya trabzanlarını kırması durumunda bina yönetimi ile davalık olabilirsiniz. Tüm masraf şahsınıza kesilir.</li>
+        <li><strong>Gizli Beyaz Eşya Arızaları:</strong> Bir çamaşır makinesi veya buzdolabı merdivenlerde kat kat taşınırken sarsıntının ve sert yere bırakmaların etkisiyle kompresör gaz borusu çatlayabilir, motor denge amortisörleri kırılabilir. Siz taşındığınızda makinenin neden sesli çalıştığını aylarca anlamazsınız bile.</li>
+        <li><strong>Zaman Kaybı:</strong> Hamal gücüyle 4 katlı bir binanın taşınması tüm gününüzü yutarken, kapı önünde trafiği saatlerce tıkadığınız için komşularınızla husumet yaşarsınız.</li>
+      </ul>
+
+      <h2>Çözüm: Bursa Mobil Asansör ve Dış Cephe Sistemleri</h2>
+      <p>Eski usul "ter döken" sistemleri unutun. Bizler eşyanızı binanın içinden değil, <strong>balkonunuzdan veya geniş bir salon camınızdan doğrudan gökyüzü rotasıyla dışarıdan</strong> nakil ediyoruz.</p>
+
+      <p><a href="/bursa-merkez-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Bursa kiralık asansör</a> sistemlerinin devrimi şurada başlar:</p>
+      <ul class="list-decimal pl-5 mt-4 mb-6 space-y-2">
+        <li>Sokağınıza yanaşan aracımızdan çıkan teleskopik kol, tam <strong>15. kata kadar (yaklaşık 45 metre)</strong> uzanabilir.</li>
+        <li>Devasa büyüklükteki eşya sepeti, bir kerede bütün bir koltuk takımını hiç sarsmadan aşağıya, kamyonetin yanına indirir.</li>
+        <li>Duvara sürtünme ihtimali fiziksel olarak <strong>%0'a düşer</strong>.</li>
+        <li>Taşıma süresi 8 saatten, yaklaşık <strong>2-3 saate</strong> kadar iner.</li>
+        <li>Komşularınızı apartman boşluğunda işgal etmezsiniz.</li>
+      </ul>
+
+      <div class="bg-slate-100 dark:bg-slate-800 p-6 rounded-2xl border-l-8 border-primary my-8">
+        <p class="text-lg text-secondary dark:text-white font-medium mb-0">Eğer "Bizim sokak biraz dar, asansör yanaşır mı?" diye endişeleriniz varsa, teknolojiyi hafife alıyorsunuz. CNC uzman ekibimiz en zorlu ve dar Bursa Mahallesi konfigürasyonlarında (Örn: <a href="/osmangazi-evden-eve-asansorlu-nakliyat" class="text-primary font-semibold hover:underline">Osmangazi'nin</a> dik yokuşlarında) bile konumlanıp, milimetrik hesaplamalarla operasyonu başarıyla yürütebilmektedir.</p>
+      </div>
+
+      <h2>Bizi Hemen Arayın, Kafanız Rahat Taşının</h2>
+      <p>Ev taşımak yeterince stresli bir iştir, bırakın ağır yükü dış cephe asansörlerimiz çeksin. Hasarsız, sigortalı, asansörlü ve profesyonel taşıma güvencesi için işi şansa bırakmayın. Bize <strong><a href="https://wa.me/905053297533" class="text-primary font-semibold hover:underline">0505 329 75 33</a></strong> adresinden anında ulaşın ve modern taşımacılığın keyfini çıkarın.</p>
+    `
   }
 ];
