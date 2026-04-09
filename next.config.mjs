@@ -31,6 +31,12 @@ const nextConfig = {
           { key: "Cache-Control", value: "public, max-age=2592000, stale-while-revalidate=86400" },
         ],
       },
+      {
+        source: "/locations.kml",
+        headers: [
+          { key: "Content-Type", value: "application/vnd.google-earth.kml+xml" },
+        ],
+      },
     ];
   },
 };
