@@ -175,6 +175,18 @@ export default async function ServicePage({ params }: Props) {
             "item": `https://bursakiralikasansor.com/${fullSlug}`
           }
         ]
+      },
+      // 4. SSS (FAQ) Şeması (İnsanlar Bunu da Sordu - People Also Ask Optimizasyonu)
+      {
+        "@type": "FAQPage",
+        "mainEntity": service.faqs.map((faq) => ({
+          "@type": "Question",
+          "name": `${district.name} bölgesinde ${faq.q.charAt(0).toLowerCase() + faq.q.slice(1)}`,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.a
+          }
+        }))
       }
     ]
   };
