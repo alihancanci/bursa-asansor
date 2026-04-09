@@ -65,7 +65,98 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function ServicePage() {
-  // İstemci tarafı kodlarını içeren (framer-motion, i18next vs) dosyayı çağırıyoruz
-  return <ServicePageClient />;
+export default async function ServicePage({ params }: Props) {
+  const { slug: paramsSlug } = await params;
+  const fullSlug = paramsSlug || "";
+  
+  const service = SERVICES.find(s => fullSlug.endsWith(`-${s.slug}`));
+  const districtSlugLength = service ? fullSlug.length - service.slug.length - 1 : 0;
+  const districtSlug = service ? fullSlug.substring(0, districtSlugLength) : "";
+  const district = DISTRICTS.find(d => d.slug === districtSlug);
+
+  if (!district || !service) {
+    return <ServicePageClient />;
+  }
+
+  // JSON-LD Şemaları (SEO için kritik)
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      // 1. Hizmet Bölgesi Şeması (Ofis gerektirmeyen model)
+      {
+        "@type": "MovingCompany",
+        "@id": `https://bursakiralikasansor.com/#organization`,
+        "name": "CNC Bursa Evden Eve Nakliyat & Kiralık Asansör",
+        "image": "https://bursakiralikasansor.com/opengraph.jpg",
+        "telePhone": "+905053297533",
+        "url": "https://bursakiralikasansor.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bursa",
+          "addressRegion": "Bursa",
+          "addressCountry": "TR"
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Bursa"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": district.name
+          }
+        ],
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": district.latitude,
+          "longitude": district.longitude
+        }
+      },
+      // 2. Spesifik Hizmet Şeması
+      {
+        "@type": "Service",
+        "name": `${district.name} ${service.name}`,
+        "description": `${district.name} bölgesinde profesyonel ${service.name} hizmeti.`,
+        "provider": { "@id": `https://bursakiralikasansor.com/#organization` },
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": district.name
+        }
+      },
+      // 3. Breadcrumb (Navigasyon) Şeması
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Ana Sayfa",
+            "item": "https://bursakiralikasansor.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": service.name,
+            "item": `https://bursakiralikasansor.com/#services`
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": district.name,
+            "item": `https://bursakiralikasansor.com/${fullSlug}`
+          }
+        ]
+      }
+    ]
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <ServicePageClient />
+    </>
+  );
 }

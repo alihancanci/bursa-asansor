@@ -53,7 +53,7 @@ export default function ServicePageClient() {
 
   return (
     <>
-      {/* JSON-LD Schemas */}
+      {/* FAQ Şeması (İstemci tarafında bırakıyoruz) */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -68,70 +68,6 @@ export default function ServicePageClient() {
                 text: t(`services.${service.slug}.faqs.${idx}.a`, faq.a),
               },
             })),
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: getCanonicalUrl("/") },
-              { "@type": "ListItem", position: 2, name: "Bursa Kiralık Asansör", item: getCanonicalUrl("/") },
-              { "@type": "ListItem", position: 3, name: district.name, item: getCanonicalUrl(`/${fullSlug}`) },
-              { "@type": "ListItem", position: 4, name: serviceName, item: getCanonicalUrl(`/${fullSlug}`) },
-            ],
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "name": `${district.name} ${serviceName}`,
-            "provider": {
-              "@type": "MovingCompany",
-              "@id": "https://bursakiralikasansor.com/#organization",
-              "name": "Bursa Kiralık Asansör ve Evden Eve Nakliyat",
-              "telephone": "+905053297533",
-              "url": "https://bursakiralikasansor.com"
-            },
-            "areaServed": {
-              "@type": "City",
-              "name": district.name
-            },
-            "description": `${district.name} bölgesinde 7/24 ${serviceName} hizmeti. 15. kata kadar kiralık mobil asansörlerle profesyonel evden eve nakliyat.`,
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": (4.8 + (district.name.length % 3) * 0.1).toFixed(1),
-              "reviewCount": (100 + district.name.length * 12).toString()
-            }
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "MovingCompany",
-            "name": `Bursa Kiralık Asansör - ${district.name} Şubesi`,
-            "description": `${district.name} bölgesinde profesyonel ${serviceName} hizmeti. 7/24 kiralık asansör ve sigortalı taşımacılık.`,
-            "image": getAbsoluteAssetUrl("/images/hero-bg.jpg"),
-            "telephone": "+905053297533",
-            "url": getCanonicalUrl(`/${fullSlug}`),
-            "address": { "@type": "PostalAddress", "addressLocality": district.name, "addressRegion": "Bursa", "addressCountry": "TR" },
-            "geo": { 
-              "@type": "GeoCoordinates", 
-              "latitude": district.latitude.toString(), 
-              "longitude": district.longitude.toString() 
-            },
-            "priceRange": "₺₺",
-            "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "00:00", "closes": "23:59" },
           }),
         }}
       />
@@ -220,13 +156,24 @@ export default function ServicePageClient() {
               </div>
             )}
 
-            {/* Neighborhoods Context Box */}
+            {/* Neighborhoods Context Box (SEO Otoritesi) */}
             <section className="mb-14 p-6 bg-[#f8fafc] dark:bg-[#0f172a] border-2 border-dashed border-[#cbd5e1] dark:border-[#334155] rounded-2xl">
-              <h2 className="text-xl font-display font-bold text-[#0f172a] dark:text-white mb-3">
-                {district.name} {t('service_page.coverage_info', 'Hizmet Bölgesi Bilgilendirmesi')}
+              <h2 className="text-xl font-display font-bold text-[#0f172a] dark:text-white mb-3 flex items-center gap-2">
+                <MapPin className="h-5 w-5 text-primary" />
+                {district.name} {t('service_page.coverage_info', 'Hizmet Bölgesi Detayları')}
               </h2>
-              <p className="text-[#334155] dark:text-slate-300 leading-relaxed">
-                {t('service_page.coverage_desc_1', 'Firmamız')} {district.name} {t('service_page.coverage_desc_2', 'merkez ilçesinin tamamı ile birlikte özellikle')} <strong className="text-[#0f172a] dark:text-white">{selectedNeighborhoods.join(", ")}</strong> {t('service_page.coverage_desc_3', 've çevresindeki mahallelerde haftanın 7 günü kesintisiz hizmet vermektedir.')} {district.name} {t('service_page.coverage_desc_4', 'lokasyonuna özel geliştirdiğimiz dar sokak manevra kabiliyeti yüksek mobil asansörlerimizle, bina içi asansörlerin yetersiz kaldığı her noktada yanınızdayız.')}
+              <p className="text-[#334155] dark:text-slate-300 leading-relaxed mb-4">
+                {t('service_page.coverage_desc_1', 'Firmamız')} {district.name} {t('service_page.coverage_desc_2', 'merkez ilçesinin tamamı ile birlikte özellikle aşağıdaki mahallelerde kesintisiz mobil asansör ve nakliye çözümleri sunar:')}
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {district.neighborhoods.map((n) => (
+                  <span key={n} className="px-3 py-1 bg-white dark:bg-navy border border-gray-200 dark:border-white/10 rounded-lg text-sm font-medium text-gray-700 dark:text-slate-300">
+                    {n}
+                  </span>
+                ))}
+              </div>
+              <p className="text-[#334155] dark:text-slate-300 leading-relaxed mt-4 italic text-sm">
+                * {district.name} {t('service_page.coverage_desc_4', 'lokasyonunun dar sokaklarına ve yüksek binalarına özel asansör kurulum planlarımız mevcuttur.')}
               </p>
             </section>
 

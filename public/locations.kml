@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bursa Kiralık Asansör &amp; Nakliyat Hizmet Bölgeleri</name>
+    <description>Bursa ve tüm ilçelerinde 7/24 asansörlü nakliyat ve kiralık mobil asansör hizmet alanları koordinatları.</description>
+    
+    <Style id="icon-1899-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+
+    <Placemark>
+      <name>Bursa (Merkez) Kiralık Asansör</name>
+      <description>Bursa (Merkez) bölgesinde 7/24 asansörlü nakliyat ve kiralık mobil asansör hizmeti.</description>
+      <Point>
+        <coordinates>29.0667,40.1828,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Osmangazi Kiralık Asansör</name>
+      <description>Osmangazi bölgesinde 7/24 asansörlü nakliyat ve kiralık mobil asansör hizmeti.</description>
+      <Point>
+        <coordinates>29.0611,40.1917,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Nilüfer Kiralık Asansör</name>
+      <description>Nilüfer bölgesinde 7/24 asansörlü nakliyat ve kiralık mobil asansör hizmeti.</description>
+      <Point>
+        <coordinates>28.9481,40.2185,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Yıldırım Kiralık Asansör</name>
+      <description>Yıldırım bölgesinde 7/24 asansörlü nakliyat ve kiralık mobil asansör hizmeti.</description>
+      <Point>
+        <coordinates>29.1235,40.1834,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>İnegöl Kiralık Asansör</name>
+      <description>İnegöl bölgesinde 7/24 asansörlü nakliyat ve kiralık mobil asansör hizmeti.</description>
+      <Point>
+        <coordinates>29.5161,40.0778,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Gemlik Kiralık Asansör</name>
+      <description>Gemlik bölgesinde 7/24 asansörlü nakliyat ve kiralık mobil asansör hizmeti.</description>
+      <Point>
+        <coordinates>29.1578,40.43,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Gürsu Kiralık Asansör</name>
+      <description>Gürsu bölgesinde 7/24 asansörlü nakliyat ve kiralık mobil asansör hizmeti.</description>
+      <Point>
+        <coordinates>29.1956,40.2185,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Mudanya Kiralık Asansör</name>
+      <description>Mudanya bölgesinde 7/24 asansörlü nakliyat ve kiralık mobil asansör hizmeti.</description>
+      <Point>
+        <coordinates>28.8821,40.3756,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Orhangazi Kiralık Asansör</name>
+      <description>Orhangazi bölgesinde 7/24 asansörlü nakliyat ve kiralık mobil asansör hizmeti.</description>
+      <Point>
+        <coordinates>29.3103,40.4878,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Karacabey Kiralık Asansör</name>
+      <description>Karacabey bölgesinde 7/24 asansörlü nakliyat ve kiralık mobil asansör hizmeti.</description>
+      <Point>
+        <coordinates>28.3585,40.2133,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>İznik Kiralık Asansör</name>
+      <description>İznik bölgesinde 7/24 asansörlü nakliyat ve kiralık mobil asansör hizmeti.</description>
+      <Point>
+        <coordinates>29.7214,40.4286,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Mustafakemalpaşa Kiralık Asansör</name>
+      <description>Mustafakemalpaşa bölgesinde 7/24 asansörlü nakliyat ve kiralık mobil asansör hizmeti.</description>
+      <Point>
+        <coordinates>28.4117,40.0356,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Yenişehir Kiralık Asansör</name>
+      <description>Yenişehir bölgesinde 7/24 asansörlü nakliyat ve kiralık mobil asansör hizmeti.</description>
+      <Point>
+        <coordinates>29.6528,40.2644,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Kestel Kiralık Asansör</name>
+      <description>Kestel bölgesinde 7/24 asansörlü nakliyat ve kiralık mobil asansör hizmeti.</description>
+      <Point>
+        <coordinates>29.2156,40.2017,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Orhaneli Kiralık Asansör</name>
+      <description>Orhaneli bölgesinde 7/24 asansörlü nakliyat ve kiralık mobil asansör hizmeti.</description>
+      <Point>
+        <coordinates>28.9856,39.9056,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Keles Kiralık Asansör</name>
+      <description>Keles bölgesinde 7/24 asansörlü nakliyat ve kiralık mobil asansör hizmeti.</description>
+      <Point>
+        <coordinates>29.2317,39.9133,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Harmancık Kiralık Asansör</name>
+      <description>Harmancık bölgesinde 7/24 asansörlü nakliyat ve kiralık mobil asansör hizmeti.</description>
+      <Point>
+        <coordinates>29.1556,39.6833,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Büyükorhan Kiralık Asansör</name>
+      <description>Büyükorhan bölgesinde 7/24 asansörlü nakliyat ve kiralık mobil asansör hizmeti.</description>
+      <Point>
+        <coordinates>28.8833,39.7717,0</coordinates>
+      </Point>
+    </Placemark>
+
+  </Document>
+</kml>

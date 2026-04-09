@@ -56,13 +56,26 @@ async function bulkIndex() {
     const turkishUrls = urls.filter(url => !url.includes('/en') && !url.includes('/ru') && !url.includes('/ar'));
     console.log(`🇹🇷 Türkçe URL sayısı: ${turkishUrls.length} (Indexleme bu URL'ler ile yapılacak)\n`);
 
-    // Google API limiti günlük 200. Eğer 200'den azsa hepsini yapabiliriz.
-    const limit = Math.min(200, turkishUrls.length);
+    // Google API limiti günlük 200. Argümanlardan başlangıç ve limit alıyoruz.
+    const startIndex = parseInt(process.argv[2]) || 0;
+    const limitArg = parseInt(process.argv[3]) || 200;
     
+    // İşlenecek URL aralığını belirle
+    const endIndex = Math.min(startIndex + limitArg, turkishUrls.length);
+    const urlsToProcess = turkishUrls.slice(startIndex, endIndex);
+    
+    console.log(`🚀 İşlem Aralığı: [${startIndex} - ${endIndex}] (Toplam: ${urlsToProcess.length} URL)\n`);
+
+    if (urlsToProcess.length === 0) {
+        console.log('⚠️ İşlenecek URL bulunamadı. Lütfen başlangıç indeksini kontrol edin.');
+        return;
+    }
+
     let successCount = 0;
     
-    for (let i = 0; i < limit; i++) {
-        const url = turkishUrls[i];
+    for (let i = 0; i < urlsToProcess.length; i++) {
+        const url = urlsToProcess[i];
+        const currentCount = startIndex + i + 1;
         try {
             const options = {
                 url: 'https://indexing.googleapis.com/v3/urlNotifications:publish',
@@ -72,17 +85,17 @@ async function bulkIndex() {
             };
 
             const res = await jwtClient.request(options);
-            console.log(`[${i + 1}/${limit}] 🚀 Gönderildi: ${url} -> Durum: ${res.status}`);
+            console.log(`[${currentCount}/${turkishUrls.length}] 🚀 Gönderildi: ${url} -> Durum: ${res.status}`);
             successCount++;
         } catch (error) {
-            console.log(`[${i + 1}/${limit}] ❌ Hata: ${url} -> ${error.message}`);
+            console.log(`[${currentCount}/${turkishUrls.length}] ❌ Hata: ${url} -> ${error.message}`);
         }
         
-        // Hızlı istek atıp API'yi yormamak için her istek arası 50ms bekle
-        await new Promise(resolve => setTimeout(resolve, 50));
+        // Hızlı istek atıp API'yi yormamak için her istek arası 100ms bekle (Biraz yavaşlattım limitlere takılmamak için)
+        await new Promise(resolve => setTimeout(resolve, 100));
     }
 
-    console.log(`\n✨ İşlem bitti! ${successCount}/${limit} URL Google'a bildirildi.`);
+    console.log(`\n✨ İşlem bitti! ${successCount}/${urlsToProcess.length} URL Google'a bildirildi.`);
   } catch (error) {
     console.error('❌ Kritik Hata:', error.message);
   }

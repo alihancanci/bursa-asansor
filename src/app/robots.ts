@@ -10,6 +10,9 @@ export default function robots(): MetadataRoute.Robots {
         "/_next/*",  // Build dosyalarını taramalarına gerek yok
       ],
     },
-    sitemap: "https://bursakiralikasansor.com/sitemap.xml",
+    sitemap: [
+      "https://bursakiralikasansor.com/sitemap.xml",
+      "https://bursakiralikasansor.com/locations.kml"
+    ],
   };
 }
