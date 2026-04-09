@@ -80,6 +80,20 @@ export default function ServiceAreasPage() {
             </div>
           ))}
         </div>
+
+        {/* Teknik Kaynaklar / Geo-SEO Alt Bölümü */}
+        <div className="mt-20 pt-10 border-t border-slate-200 dark:border-slate-800 text-center">
+          <p className="text-slate-400 text-sm mb-4">
+            Bursa Kiralık Asansör olarak hizmet bölgelerimizi teknik harita verisi (KML) olarak yayınlıyoruz.
+          </p>
+          <Link 
+            href="/locations.kml" 
+            className="inline-flex items-center gap-2 text-xs font-semibold text-primary hover:underline"
+          >
+            <MapPin className="w-3 h-3" />
+            Coğrafi Hizmet Alanı Verisi (KML)
+          </Link>
+        </div>
       </div>
     </main>
   );

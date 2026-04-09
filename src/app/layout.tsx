@@ -56,6 +56,7 @@ export default function RootLayout({
     <html lang="tr" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="alternate" type="application/vnd.google-earth.kml+xml" href="https://bursakiralikasansor.com/locations.kml" />
       </head>
       <body suppressHydrationWarning className="bg-white dark:bg-[#071320] text-slate-900 dark:text-slate-200">
         <ClientProviders>
