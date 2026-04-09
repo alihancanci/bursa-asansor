@@ -49,47 +49,39 @@ export default async function BlogPost({ params }: Props) {
 
   if (!post) return null;
 
-  // Eğer bu makale ise özel zengin şema ekleyelim
-  const isAsansorluNakliyat = post.slug === "asansorlu-evden-eve-nakliyat";
-  
-  const richSchema = isAsansorluNakliyat ? {
+  // Tüm yazılar için Zengin Şema (Topical Authority)
+  const graph: any[] = [
+    {
+      "@type": ["Article", "BlogPosting"],
+      "url": `https://bursakiralikasansor.com/blog/${post.slug}`,
+      "headline": post.title,
+      "description": post.metaDescription || post.excerpt,
+      "author": { "@type": "Person", "name": post.author },
+      "publisher": { 
+        "@type": "Organization", 
+        "name": "Bursa Kiralık Asansör CNC Evden Eve Nakliyat",
+        "logo": { "@type": "ImageObject", "url": "https://bursakiralikasansor.com/favicon.ico" }
+      },
+      "datePublished": post.date ? new Date(post.date).toISOString() : new Date().toISOString(),
+      "image": post.image
+    }
+  ];
+
+  if (post.faqs && post.faqs.length > 0) {
+    graph.push({
+      "@type": "FAQPage",
+      "mainEntity": post.faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.q,
+        "acceptedAnswer": { "@type": "Answer", "text": faq.a }
+      }))
+    });
+  }
+
+  const richSchema = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Article",
-        "url": `https://bursakiralikasansor.com/blog/${post.slug}`,
-        "headline": post.title,
-        "description": post.metaDescription,
-        "author": { "@type": "Person", "name": "Atakan" },
-        "publisher": { 
-          "@type": "Organization", 
-          "name": "Bursa Kiralık Asansör ve Evden Eve Nakliyat",
-          "logo": { "@type": "ImageObject", "url": "https://bursakiralikasansor.com/favicon.svg" }
-        },
-        "datePublished": "2026-04-06T23:39:19Z",
-        "image": post.image
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": post.faqs?.map(faq => ({
-          "@type": "Question",
-          "name": faq.q,
-          "acceptedAnswer": { "@type": "Answer", "text": faq.a }
-        }))
-      },
-      {
-        "@type": "HowTo",
-        "name": "Asansörlü Evden Eve Nakliyat Süreci",
-        "description": post.excerpt,
-        "step": [
-          { "@type": "HowToStep", "position": 1, "text": "Ücretsiz keşif ile taşıma planı oluşturulması." },
-          { "@type": "HowToStep", "position": 2, "text": "Eşyaların profesyonel paketleme malzemeleriyle korunması." },
-          { "@type": "HowToStep", "position": 3, "text": "Mobil asansörün bina cephesine güvenli kurulumu." },
-          { "@type": "HowToStep", "position": 4, "text": "Eşyaların asansörle hasarsız şekilde sevkiyatı." }
-        ]
-      }
-    ]
-  } : null;
+    "@graph": graph
+  };
 
   return (
     <>
