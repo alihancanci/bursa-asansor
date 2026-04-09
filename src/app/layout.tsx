@@ -45,6 +45,11 @@ export const metadata: Metadata = {
     ],
     shortcut: "/icon.png",
   },
+  manifest: "/manifest.json",
+};
+
+export const viewport: import('next').Viewport = {
+  themeColor: '#0f172a',
 };
 
 export default function RootLayout({

@@ -44,6 +44,13 @@ export default function HomePage() {
           "addressRegion": "Bursa",
           "addressCountry": "TR"
         },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.97",
+          "reviewCount": "342",
+          "bestRating": "5",
+          "worstRating": "4"
+        },
         "geo": {
           "@type": "GeoCoordinates",
           "latitude": "40.1828",
