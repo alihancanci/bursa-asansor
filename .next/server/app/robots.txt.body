@@ -4,3 +4,4 @@ Disallow: /api/*
 Disallow: /_next/*
 
 Sitemap: https://bursakiralikasansor.com/sitemap.xml
+Sitemap: https://bursakiralikasansor.com/locations.kml

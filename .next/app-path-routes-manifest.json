@@ -1,15 +1,15 @@
 {
   "/_not-found/page": "/_not-found",
-  "/apple-icon.png/route": "/apple-icon.png",
-  "/robots.txt/route": "/robots.txt",
-  "/icon.png/route": "/icon.png",
-  "/sitemap.xml/route": "/sitemap.xml",
   "/favicon.ico/route": "/favicon.ico",
-  "/blog/[slug]/page": "/blog/[slug]",
-  "/[slug]/page": "/[slug]",
-  "/calismalarimiz/page": "/calismalarimiz",
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/icon.png/route": "/icon.png",
+  "/apple-icon.png/route": "/apple-icon.png",
   "/blog/page": "/blog",
-  "/hakkimizda/page": "/hakkimizda",
+  "/calismalarimiz/page": "/calismalarimiz",
+  "/[slug]/page": "/[slug]",
+  "/blog/[slug]/page": "/blog/[slug]",
   "/page": "/",
-  "/hizmet-bolgelerimiz/page": "/hizmet-bolgelerimiz"
+  "/hizmet-bolgelerimiz/page": "/hizmet-bolgelerimiz",
+  "/hakkimizda/page": "/hakkimizda"
 }

@@ -58,6 +58,16 @@
         }
       ],
       "regex": "^/images(?:/(.*))(?:/)?$"
+    },
+    {
+      "source": "/locations.kml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/vnd.google-earth.kml+xml"
+        }
+      ],
+      "regex": "^/locations\\.kml(?:/)?$"
     }
   ],
   "rewrites": {

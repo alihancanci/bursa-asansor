@@ -281,6 +281,25 @@ export default function ServicePageClient() {
                 }
               </div>
             </section>
+
+            {/* Ninja SEO: Map Entity Stacking (Google Iframe Hack) */}
+            <section className="mt-8 pt-8 border-t border-gray-200 dark:border-white/10">
+              <h3 className="text-xl font-display font-bold text-[#0f172a] dark:text-white mb-6 flex items-center gap-2">
+                <MapPin className="h-5 w-5 text-primary" />
+                {district.name} {serviceName} Haritası
+              </h3>
+              <div className="w-full h-[400px] rounded-2xl overflow-hidden border-4 border-[#e2e8f0] dark:border-[#334155] shadow-lg">
+                <iframe
+                  title={`${district.name} ${serviceName} Haritası`}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  src={`https://maps.google.com/maps?q=${encodeURIComponent(district.name + " " + serviceName)}&t=&z=13&ie=UTF8&iwloc=&output=embed`}
+                ></iframe>
+              </div>
+            </section>
           </div>
 
           {/* Sidebar */}

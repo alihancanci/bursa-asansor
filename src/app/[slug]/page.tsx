@@ -96,6 +96,13 @@ export default async function ServicePage({ params }: Props) {
           district.wikidataId ? `https://www.wikidata.org/wiki/${district.wikidataId}` : "",
           "https://www.facebook.com/bursakiralikasansor"
         ].filter(Boolean),
+        "department": {
+          "@type": "MovingCompany",
+          "name": `CNC ${district.name} ${service.name} Şubesi`,
+          "areaServed": district.name,
+          "url": `https://bursakiralikasansor.com/${fullSlug}`,
+          "telephone": "+905053297533"
+        },
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Bursa",

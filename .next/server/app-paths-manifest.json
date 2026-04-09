@@ -1,15 +1,15 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/apple-icon.png/route": "app/apple-icon.png/route.js",
-  "/robots.txt/route": "app/robots.txt/route.js",
-  "/icon.png/route": "app/icon.png/route.js",
-  "/sitemap.xml/route": "app/sitemap.xml/route.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/blog/[slug]/page": "app/blog/[slug]/page.js",
-  "/[slug]/page": "app/[slug]/page.js",
-  "/calismalarimiz/page": "app/calismalarimiz/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/icon.png/route": "app/icon.png/route.js",
+  "/apple-icon.png/route": "app/apple-icon.png/route.js",
   "/blog/page": "app/blog/page.js",
-  "/hakkimizda/page": "app/hakkimizda/page.js",
+  "/calismalarimiz/page": "app/calismalarimiz/page.js",
+  "/[slug]/page": "app/[slug]/page.js",
+  "/blog/[slug]/page": "app/blog/[slug]/page.js",
   "/page": "app/page.js",
-  "/hizmet-bolgelerimiz/page": "app/hizmet-bolgelerimiz/page.js"
+  "/hizmet-bolgelerimiz/page": "app/hizmet-bolgelerimiz/page.js",
+  "/hakkimizda/page": "app/hakkimizda/page.js"
 }
