@@ -504,7 +504,6 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <p class="mt-6 border-l-4 border-primary pl-4 py-2 bg-slate-50 dark:bg-slate-800/50 italic text-slate-700 dark:text-slate-300"><strong>Pratik öneri:</strong> Avize ve benzeri elektrikli aksesuarları taşınmadan en az bir gün önce söktürün; böylece nakliyat günü zaman kaybı yaşanmaz. Unutmayın iyi planlama, doğru firma seçimi ve önceden netleştirilen hizmet kapsamı, taşınma sürecini stressiz hâle getirir.</p>
     `
-    `
   },
   {
     id: "7",
