@@ -45,6 +45,11 @@ export const metadata: Metadata = {
     ],
     shortcut: "/icon.png",
   },
+  appleWebApp: {
+    capable: true,
+    title: "Bursa Asansör",
+    statusBarStyle: "black-translucent",
+  },
   manifest: "/manifest.json",
 };
 
