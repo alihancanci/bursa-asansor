@@ -84,6 +84,20 @@ export default async function ServicePage({ params }: Props) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
+      // 0. Speakable (Sesli Arama & Siri Optimizasyonu) Şeması
+      {
+        "@type": "WebPage",
+        "@id": `https://bursakiralikasansor.com/${fullSlug}#webpage`,
+        "url": `https://bursakiralikasansor.com/${fullSlug}`,
+        "name": `${district.name} ${service.name} | Bursa Kiralık Asansör CNC Evden Eve Nakliyat`,
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "xpath": [
+            "/html/head/title",
+            "/html/head/meta[@name='description']/@content"
+          ]
+        }
+      },
       // 1. Hizmet Bölgesi Şeması (Ofis gerektirmeyen model)
       {
         "@type": "MovingCompany",
