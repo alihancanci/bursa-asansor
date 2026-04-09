@@ -31,7 +31,7 @@ export default function AboutPageClient() {
               Hakkımızda | <span className="text-primary">Bursa Kiralık Asansör ve Evden Eve Nakliyat</span>
             </h1>
             <p className="text-xl text-slate-200 max-w-2xl mx-auto font-light">
-              <span className="text-primary font-semibold">CNC Bursa</span> Evden Eve Nakliyat & Kiralık Asansör
+              <span className="text-primary font-semibold">Bursa Kiralık Asansör</span> CNC Evden Eve Nakliyat
             </p>
           </motion.div>
         </div>
@@ -42,7 +42,7 @@ export default function AboutPageClient() {
           <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5, delay: 0.2 }}>
             <h2 className="text-3xl lg:text-5xl font-display font-black text-slate-900 mb-6">Biz Kimiz?</h2>
             <div className="prose prose-lg dark:prose-invert prose-p:text-black dark:prose-p:text-slate-300 font-medium">
-              <p><strong>CNC Bursa Evden Eve Nakliyat ve Kiralık Asansör</strong> olarak, Bursa&apos;nın zorlu ve dar sokaklarında evden eve taşımacılık sektörüne yenilikçi bir nefes getirdik. Klasik &quot;sırtta taşıma&quot; dönemini kapatarak, hem eşya güvenliğini hem de zaman tasarrufunu odağımıza aldık.</p>
+              <p><strong>Bursa Kiralık Asansör CNC Evden Eve Nakliyat</strong> olarak, Bursa&apos;nın zorlu ve dar sokaklarında evden eve taşımacılık sektörüne yenilikçi bir nefes getirdik. Klasik &quot;sırtta taşıma&quot; dönemini kapatarak, hem eşya güvenliğini hem de zaman tasarrufunu odağımıza aldık.</p>
               <p>Yılların getirdiği sektör tecrübemizle, bugün 18 ilçenin tamamında aktif hizmet asansörlü nakliyat ağına sahibiz. İster parça eşya, ister yüksek katlı lüks rezidans taşımacılığı olsun; teknolojik altyapımız ve güler yüzlü ekibimizle nakliyatı &quot;stresli bir gün&quot; olmaktan çıkarıp, &quot;keyifli bir başlangıca&quot; dönüştürüyoruz.</p>
             </div>
           </motion.div>

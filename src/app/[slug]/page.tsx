@@ -88,7 +88,7 @@ export default async function ServicePage({ params }: Props) {
       {
         "@type": "MovingCompany",
         "@id": `https://bursakiralikasansor.com/#organization`,
-        "name": "CNC Bursa Evden Eve Nakliyat & Kiralık Asansör",
+        "name": "Bursa Kiralık Asansör CNC Evden Eve Nakliyat",
         "image": "https://bursakiralikasansor.com/opengraph.jpg",
         "telePhone": "+905053297533",
         "url": "https://bursakiralikasansor.com",
