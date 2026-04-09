@@ -63,7 +63,7 @@ export default function HomePageClient() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/hero-bg.png"
-            alt={t('hero.image_alt', 'Bursa Mobil Asansör Kiralama Hizmeti')}
+            alt={t('hero.image_alt', 'Bursa Kiralık Asansör ve Mobil Asansör Hizmetleri - 7/24 Güvenli Taşıma')}
             className="w-full h-full object-cover"
             fill
             priority

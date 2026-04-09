@@ -88,7 +88,7 @@ export default function ServicePageClient() {
         <div className="absolute inset-0 opacity-10">
           <Image
             src="/images/service-abstract.webp"
-            alt={t('services.abstract_alt', 'Profesyonel Asansörlü Nakliyat Hizmeti')}
+            alt={`${district.name} ${serviceName} - Bursa Kiralık Asansör`}
             fill
             className="object-cover"
             sizes="100vw"
