@@ -49,6 +49,15 @@ export default async function BlogPost({ params }: Props) {
 
   if (!post) return null;
 
+  // Güvenli Tarih Çevirici (Vercel Build Hatasını Engeller)
+  let isoDate = new Date().toISOString();
+  if (post.date) {
+    const d = new Date(post.date);
+    if (!isNaN(d.getTime())) {
+      isoDate = d.toISOString();
+    }
+  }
+
   // Tüm yazılar için Zengin Şema (Topical Authority)
   const graph: any[] = [
     {
@@ -62,7 +71,7 @@ export default async function BlogPost({ params }: Props) {
         "name": "Bursa Kiralık Asansör CNC Evden Eve Nakliyat",
         "logo": { "@type": "ImageObject", "url": "https://bursakiralikasansor.com/favicon.ico" }
       },
-      "datePublished": post.date ? new Date(post.date).toISOString() : new Date().toISOString(),
+      "datePublished": isoDate,
       "image": post.image
     }
   ];
