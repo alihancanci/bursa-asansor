@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import { PHONE_NUMBER, WHATSAPP_LINK } from "@/data";
 import { cn } from "@/lib/utils";
 import { trackPhoneClick, trackWhatsAppClick } from "@/lib/analytics";
+import { BorderBeam } from "./ui/border-beam";
 
 interface CTASectionProps {
   className?: string;
@@ -23,8 +24,9 @@ export function CTASection({ className, variant = "horizontal", locationName = "
       <a
         href={`tel:${PHONE_NUMBER.replace(/\D/g,'')}`}
         onClick={() => trackPhoneClick(locationName)}
-        className="flex-1 flex items-center justify-center gap-3 bg-primary hover:bg-orange-600 text-white px-6 py-4 rounded-2xl font-bold text-lg shadow-xl shadow-primary/20 hover:shadow-primary/40 hover:-translate-y-1 transition-all duration-300"
+        className="relative flex-1 flex items-center justify-center gap-3 bg-primary hover:bg-orange-600 text-white px-6 py-4 rounded-2xl font-bold text-lg shadow-xl shadow-primary/20 hover:shadow-primary/40 hover:-translate-y-1 transition-all duration-300 overflow-hidden"
       >
+        <BorderBeam size={100} duration={8} borderWidth={3} colorFrom="#ffffff" colorTo="#38bdf8" />
         <PhoneCall className="h-6 w-6 animate-pulse" />
         {t('common.call_now', 'Hemen Ara')}
       </a>
@@ -42,3 +44,4 @@ export function CTASection({ className, variant = "horizontal", locationName = "
     </div>
   );
 }
+

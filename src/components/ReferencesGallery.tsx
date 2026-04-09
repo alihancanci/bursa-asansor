@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { ArrowRight, ImageIcon } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import Marquee from "./ui/marquee";
 
 interface ReferenceItem {
   id: number;
@@ -49,8 +50,8 @@ export function ReferencesGallery() {
 
   return (
     <section className="py-24 bg-white dark:bg-background overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="max-w-2xl">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -65,7 +66,7 @@ export function ReferencesGallery() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-3xl md:text-5xl font-display font-black text-black mb-4 italic"
+              className="text-3xl md:text-5xl font-display font-black text-black dark:text-white mb-4 italic"
             >
               {t('references.title', 'Çalışmalarımız')}
             </motion.h2>
@@ -94,56 +95,45 @@ export function ReferencesGallery() {
             </Link>
           </motion.div>
         </div>
+      </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {REFERENCES.map((item, idx) => (
-            <motion.div
+      <div className="relative flex flex-col items-center justify-center overflow-hidden">
+        <Marquee pauseOnHover className="[--duration:40s]">
+          {REFERENCES.map((item) => (
+            <div
               key={item.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: idx * 0.1, duration: 0.5 }}
-              className="group relative"
+              className="relative w-72 md:w-96 aspect-[3/4] overflow-hidden rounded-3xl border border-border dark:border-white/10 bg-slate-100 dark:bg-navy shadow-lg hover:shadow-2xl transition-all duration-500 group"
             >
-              <div className="aspect-[3/4] relative overflow-hidden rounded-3xl border border-border dark:border-white/10 bg-slate-100 dark:bg-navy shadow-lg group-hover:shadow-2xl transition-all duration-500">
-                <Image
-                  src={item.image}
-                  alt={t(item.titleKey)}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                />
-                
-                {/* Overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-secondary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                  <h3 className="text-white font-bold text-lg mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                    {t(item.titleKey)}
-                  </h3>
-                  <p className="text-slate-200 text-sm transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">
-                    {t(item.descKey)}
-                  </p>
-                </div>
+              <Image
+                src={item.image}
+                alt={t(item.titleKey)}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-secondary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                <h3 className="text-white font-bold text-lg mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                  {t(item.titleKey)}
+                </h3>
+                <p className="text-slate-200 text-sm transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">
+                  {t(item.descKey)}
+                </p>
               </div>
-
-              {/* Mobile/Default Visible Info (if preferred) */}
-              <div className="mt-4 px-2 lg:hidden">
-                <h3 className="font-bold text-secondary dark:text-white">{t(item.titleKey)}</h3>
-                <p className="text-sm text-gray-700 dark:text-slate-300 line-clamp-2">{t(item.descKey)}</p>
-              </div>
-            </motion.div>
+            </div>
           ))}
-        </div>
-        
-        {/* Extension Hint */}
+        </Marquee>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
         <motion.div 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mt-16 text-center"
+          className="text-center"
         >
           <div className="inline-block p-1 rounded-2xl bg-slate-50 dark:bg-navy-light border border-dashed border-border dark:border-white/10">
             <div className="px-6 py-4 flex items-center gap-3 text-slate-700 dark:text-slate-300">
-              <div className="w-10 h-10 rounded-full border-2 border-dashed border-slate-300 dark:border-slate-600 flex items-center justify-center font-bold text-xl">+</div>
+              <div className="w-10 h-10 rounded-full border-2 border-dashed border-slate-300 dark:border-slate-600 flex items-center justify-center font-bold text-xl text-primary font-display">+</div>
               <span className="text-sm font-medium">{t('references.more_coming', 'Yeni referanslarımız yakında eklenecektir...')}</span>
             </div>
           </div>
@@ -152,3 +142,4 @@ export function ReferencesGallery() {
     </section>
   );
 }
+
