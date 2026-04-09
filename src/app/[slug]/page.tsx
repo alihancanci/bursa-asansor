@@ -131,13 +131,14 @@ export default async function ServicePage({ params }: Props) {
           "worstRating": "4"
         },
         "areaServed": {
-          "@type": "GeoCircle",
-          "geoMidpoint": {
-            "@type": "GeoCoordinates",
-            "latitude": district.latitude,
-            "longitude": district.longitude
+          "@type": "GeoShape",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bursa",
+            "addressRegion": "Bursa",
+            "addressCountry": "TR"
           },
-          "geoRadius": "15000"
+          "polygon": "40.58,28.50 40.60,29.30 40.30,30.10 39.90,30.00 39.65,29.40 39.60,28.80 39.80,28.20 40.20,28.10 40.58,28.50"
         },
         "geo": {
           "@type": "GeoCoordinates",
