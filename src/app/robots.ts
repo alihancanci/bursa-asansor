@@ -2,14 +2,18 @@ import type { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: {
-      userAgent: "*",
-      allow: "/",
-      disallow: [
-        "/api/*",    // API sayfalarını taramalarına gerek yok
-        "/_next/*",  // Build dosyalarını taramalarına gerek yok
-      ],
-    },
+    rules: [
+      {
+        userAgent: "*",
+        allow: "/",
+        disallow: ["/api/*", "/_next/*"],
+      },
+      // Yapay Zeka (AI) Modelleri için VIP Geçiş İzni (GEO Taktik)
+      {
+        userAgent: ["GPTBot", "ChatGPT-User", "Google-Extended", "Claude-Web", "PerplexityBot", "anthropic-ai", "OmgiliBot"],
+        allow: "/",
+      }
+    ],
     sitemap: [
       "https://bursakiralikasansor.com/sitemap.xml",
       "https://bursakiralikasansor.com/locations.kml"
