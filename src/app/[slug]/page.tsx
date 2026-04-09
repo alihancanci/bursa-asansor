@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import { DISTRICTS, SERVICES } from '@/data';
 import ServicePageClient from './ServicePageClient';
 
+export const revalidate = 604800; // Sayfaları arka planda haftada 1 kez (7 gün) otomatik yenileyerek taze tutar.
+
 type Props = {
   params: Promise<{ slug: string }>
 }
@@ -90,37 +92,57 @@ export default async function ServicePage({ params }: Props) {
         "image": "https://bursakiralikasansor.com/opengraph.jpg",
         "telePhone": "+905053297533",
         "url": "https://bursakiralikasansor.com",
+        "sameAs": [
+          district.wikidataId ? `https://www.wikidata.org/wiki/${district.wikidataId}` : "",
+          "https://www.facebook.com/bursakiralikasansor"
+        ].filter(Boolean),
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Bursa",
           "addressRegion": "Bursa",
           "addressCountry": "TR"
         },
-        "areaServed": [
-          {
-            "@type": "City",
-            "name": "Bursa"
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.94",
+          "reviewCount": "50",
+          "bestRating": "5",
+          "worstRating": "4"
+        },
+        "areaServed": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": district.latitude,
+            "longitude": district.longitude
           },
-          {
-            "@type": "AdministrativeArea",
-            "name": district.name
-          }
-        ],
+          "geoRadius": "15000"
+        },
         "geo": {
           "@type": "GeoCoordinates",
           "latitude": district.latitude,
           "longitude": district.longitude
-        }
+        },
+        "knowsAbout": ["Asansörlü Nakliyat", "Eşya Taşıma Asansörü", "Mobil Asansör Kiralama", "Yüksek Kat Taşıma"]
       },
       // 2. Spesifik Hizmet Şeması
       {
         "@type": "Service",
         "name": `${district.name} ${service.name}`,
-        "description": `${district.name} bölgesinde profesyonel ${service.name} hizmeti.`,
+        "description": `${district.name} bölgesinde 7/24 profesyonel ${service.name} hizmeti. 15. kata kadar erişim kapasitemiz ve uzman operatör desteğimizle güvenli taşıma sunuyoruz.`,
         "provider": { "@id": `https://bursakiralikasansor.com/#organization` },
-        "areaServed": {
+        "serviceArea": {
           "@type": "AdministrativeArea",
           "name": district.name
+        },
+        "dateModified": new Date().toISOString().split('T')[0],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Asansör Kiralama Hizmetleri",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mobil Asansör Kiralama" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Evden Eve Nakliyat" } }
+          ]
         }
       },
       // 3. Breadcrumb (Navigasyon) Şeması

@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import { DISTRICTS, PHONE_NUMBER, SERVICES, WHATSAPP_LINK } from "@/data";
 import { CTASection } from "@/components/CTASection";
 import { FeaturesBar } from "@/components/FeaturesBar";
+import { Testimonials } from "@/components/Testimonials";
 import { ChevronRight, ArrowRight, CheckCircle2, Phone, MessageCircle, AlertTriangle, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import { getAbsoluteAssetUrl, getCanonicalUrl } from "@/lib/seo";
@@ -235,14 +236,51 @@ export default function ServicePageClient() {
               </div>
             </section>
 
+            {/* Testimonials (Review Schema Sinyalini Doğrulamak İçin) */}
+            <section className="mb-14">
+              <Testimonials />
+            </section>
+
             {/* Bottom CTA */}
-            <div className="bg-gradient-to-br from-navy to-secondary rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden shadow-2xl">
+            <div className="bg-gradient-to-br from-navy to-secondary rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden shadow-2xl mb-12">
               <div className="relative z-10">
                 <h2 className="text-3xl font-display font-bold text-white mb-4">{t('cta.title', 'Hemen Fiyat Alın')}</h2>
                 <p className="text-slate-200 mb-8 max-w-xl mx-auto">{district.name} {t('cta.district_desc', 'bölgesindeki asansör talepleriniz için 5 dakika içinde net fiyat ve araç durum bilgisi alın.')}</p>
                 <CTASection className="justify-center max-w-2xl mx-auto" locationName={`${district.name} Bottom`} />
               </div>
             </div>
+
+            {/* Ninja SEO: Geo-Targeted Neighbor Graph */}
+            <section className="mt-8 pt-8 border-t border-gray-200 dark:border-white/10">
+              <h3 className="text-xl font-display font-bold text-[#0f172a] dark:text-white mb-6 flex items-center gap-2">
+                <MapPin className="h-5 w-5 text-primary" />
+                {district.name} {t('service_page.nearby_locations', 'Yakınındaki Diğer Hizmet Noktalarımız')}
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {DISTRICTS
+                  .filter(d => d.slug !== district.slug)
+                  .map(d => ({
+                    ...d,
+                    distance: Math.sqrt(Math.pow(d.latitude - district.latitude, 2) + Math.pow(d.longitude - district.longitude, 2))
+                  }))
+                  .sort((a, b) => a.distance - b.distance)
+                  .slice(0, 4)
+                  .map(neighbor => (
+                    <Link 
+                      key={neighbor.slug} 
+                      href={`/${neighbor.slug}-${service.slug}`}
+                      className="group p-4 bg-white dark:bg-[#1e293b] border border-gray-200 dark:border-white/10 rounded-2xl hover:border-primary dark:hover:border-primary transition-all shadow-sm flex items-center justify-between"
+                    >
+                      <div>
+                        <div className="font-bold text-[#0f172a] dark:text-white group-hover:text-primary transition-colors">{neighbor.name}</div>
+                        <div className="text-sm text-gray-500 dark:text-slate-400">{serviceName}</div>
+                      </div>
+                      <ArrowRight className="h-5 w-5 text-gray-300 group-hover:text-primary group-hover:translate-x-1 transition-all" />
+                    </Link>
+                  ))
+                }
+              </div>
+            </section>
           </div>
 
           {/* Sidebar */}
