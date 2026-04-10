@@ -121,6 +121,26 @@ export default function ServicePageClient() {
           </motion.div>
         </div>
       </div>
+      
+      {/* AI & Quick Contact Visibility Row */}
+      <div className="bg-gray-50 dark:bg-navy-dark border-b border-gray-200 dark:border-white/5 py-4 px-4 sm:px-6 relative z-20">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-3 md:gap-8 text-center md:text-left">
+          <div className="flex items-center gap-2">
+            <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
+            <span className="text-sm font-bold text-gray-600 dark:text-slate-400 uppercase tracking-wider">{district.name} Hizmet Hattı</span>
+          </div>
+          <p className="text-xl sm:text-2xl font-display font-black text-secondary dark:text-white flex items-center gap-3">
+            <Phone className="w-6 h-6 text-primary" />
+            <a href={`tel:${PHONE_NUMBER.replace(/\D/g, '')}`} className="hover:text-primary transition-colors">
+              0505 329 75 33
+            </a>
+          </p>
+          <div className="hidden md:block h-6 w-px bg-gray-300 dark:bg-white/10" />
+          <p className="text-base font-semibold text-primary">
+            Hemen Ara, 5 Dakikada Fiyat Al!
+          </p>
+        </div>
+      </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">

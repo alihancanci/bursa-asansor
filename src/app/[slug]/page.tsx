@@ -41,11 +41,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return { title: 'Sayfa Bulunamadı' };
   }
 
-  // Dinamik benzersiz başlık (Örn: Nilüfer Evden Eve Nakliyat & Kiralık Asansör | 7/24)
-  const title = `${district.name} ${service.name} & Kiralık Asansör | 7/24 Güvenli`;
+  // Dinamik benzersiz başlık (Örn: Nilüfer Evden Eve Nakliyat | 0505 329 75 33)
+  const title = `${district.name} ${service.name} | 0505 329 75 33 | Güvenli Taşımacılık`;
   
   // Dinamik benzersiz açıklama (Max 160 karakter)
-  const description = `${district.name} bölgesinde 7/24 ${service.name} hizmeti. 15. kata kadar kiralık mobil asansörlerle profesyonel evden eve nakliyat ve güvenli taşıma çözümleri.`;
+  const description = `${district.name} bölgesinde profesyonel ${service.name} ve kiralık asansör hizmeti. 15. kata kadar güvenli taşıma çözümleri. Hemen Ara: 0505 329 75 33`;
 
   return {
     title,
@@ -104,7 +104,7 @@ export default async function ServicePage({ params }: Props) {
         "@id": `https://bursakiralikasansor.com/#organization`,
         "name": "Bursa Kiralık Asansör CNC Evden Eve Nakliyat",
         "image": "https://bursakiralikasansor.com/opengraph.jpg",
-        "telePhone": "+905053297533",
+        "telephone": "+905053297533",
         "url": "https://bursakiralikasansor.com",
         "sameAs": [
           district.wikidataId ? `https://www.wikidata.org/wiki/${district.wikidataId}` : "",

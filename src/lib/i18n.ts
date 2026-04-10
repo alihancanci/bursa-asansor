@@ -19,7 +19,7 @@ const trTranslations = {
     title1: "Bursa'nın Lider",
     title2: "Kiralık Asansör ve Evden Eve Nakliyat",
     title3: "Firması",
-    subtitle: "Dar sokaklar, yüksek binalar dert değil! 15. kata kadar güvenli ve hızlı mobil asansör ve nakliyat çözümleri sunuyoruz.",
+    subtitle: "Dar sokaklar, yüksek binalar dert değil! 15. kata kadar güvenli ve hızlı mobil asansör ve nakliyat çözümleri sunuyoruz. Hemen Ara: 0505 329 75 33",
     cta_call: "Hemen Ara Fiyat Al",
     cta_whatsapp: "WhatsApp'tan Teklif İste",
     image_alt: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Hizmeti"
@@ -78,7 +78,7 @@ const trTranslations = {
     guide_title: "Bursa Asansör Kiralama Rehberi: Nelere Dikkat Etmeli?",
     guide_desc: "Bursa'nın dar sokakları ve yüksek binalarında asansör kurulumu teknik uzmanlık gerektirir. Kurulum öncesi balkon genişliği, ağaç engelleri ve elektrik tellerinin konumu profesyonel ekibimiz tarafından incelenir. Eşyalarınızın güvenliği için rüzgar hassasiyeti yüksek, periyodik bakımlı mobil asansörleri tercih etmelisiniz. Site ve apartman yönetimlerinden gerekli izinleri alarak sürecinizi hızlandırabilirsiniz.",
     pricing_title: "Bursa Kiralık Asansör Fiyatları ve Hizmet Detayları",
-    pricing_desc: "Kiralık mobil asansör ücretlerimiz; kurulum yapılacak katın yüksekliği (15. kata kadar), kiralama süresi (saatlik/günlük) ve taşınacak eşyanın hacmine göre değişkenlik gösterir. Şeffaf fiyatlandırma ve size en uygun çözümü sunabilmemiz için ücretsiz ekspertiz hizmetimizden yararlanabilirsiniz. 7/24 operatörlü ve sigortalı taşıma desteği ile Bursa'nın her noktasındayız.",
+    pricing_desc: "Kiralık mobil asansör ücretlerimiz; kurulum yapılacak katın yüksekliği (15. kata kadar), kiralama süresi (saatlik/günlük) ve taşınacak eşyanın hacmine göre değişkenlik gösterir. Ücretsiz ekspertiz hizmetimizden yararlanabilirsiniz. 7/24 operatörlü profesyonel taşıma desteği ile Bursa'nın her noktasındayız. Hemen Ara: 0505 329 75 33",
     call_for_exact_price: "Net fiyat teklifi ve ücretsiz yerinde keşif için bizi arayın."
   },
   references: {

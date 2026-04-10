@@ -431,7 +431,7 @@ export const BLOG_POSTS: BlogPost[] = [
     keywords: ["asansörlü evden eve nakliyat", "teleskopik asansör", "bursa kiralık asansör", "asansörlü taşıma fiyatları", "yüksek kat nakliyat"],
     faqs: [
       { q: "Asansörlü nakliyat her binada kullanılabilir mi?", a: "Hayır. Binanın cephesine yeterli mesafe, zemin sağlamlığı ve park alanı gibi teknik koşullar gereklidir. Taşıma öncesinde firma yerinde keşif yaparak uygunluğu değerlendirir." },
-      { q: "Eşyalar ne kadar güvende?", a: "Asansörlü sistem, merdiven taşımacılığına kıyasla çizilme ve kırılma riskini önemli ölçüde azaltır. Bununla birlikte, sözleşme ve sigorta poliçesi güvenliği %100'e taşır." },
+      { q: "Eşyalar ne kadar güvende?", a: "Asansörlü sistem, merdiven taşımacılığına kıyasla çizilme ve kırılma riskini önemli ölçüde azaltır. Bununla birlikte, imzalanan hizmet sözleşmesi ve profesyonel ambalajlama güvenliği en üst seviyeye taşır." },
       { q: "Rezervasyon ne kadar önceden yapılmalı?", a: "Yoğun dönemlerde (ay başı/sonu) en az 1 hafta önceden randevu alınması önerilir. Bu, planlama sürecini daha verimli yönetmeyi sağlar." },
       { q: "Kötü hava koşullarında taşıma yapılır mı?", a: "Güçlü rüzgar veya yoğun yağışta asansör operasyonu işçi ve çevre güvenliği gerekçesiyle ertelenebilir." }
     ],
@@ -516,7 +516,7 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Bursa Kiralık Asansör SüperSEO Editörü",
     image: "/images/service-abstract.png",
     metaDescription: "Bursa'da en ucuz nakliyat firmalarını seçmenin gizli maliyetleri. Sürpriz asansör ücreti, çizilen eşyalar ve acemi nakliyeci tuzaklarından nasıl korunursunuz?",
-    keywords: ["en ucuz nakliyat bursa", "ucuz nakliyat fiyatları", "bursa ev taşıma hataları", "asansör ekstra ücret", "sigortalı nakliyat bursa", "ucuz evden eve", "sürpriz nakliye ücreti"],
+    keywords: ["en ucuz nakliyat bursa", "ucuz nakliyat fiyatları", "bursa ev taşıma hataları", "asansör ekstra ücret", "güvenilir nakliyat bursa", "ucuz evden eve", "sürpriz nakliye ücreti"],
     content: `
       <h2>"Telefonda Ucuz, Kapıda Pahalı" Tuzağına Düşmeyin</h2>
       <p>Yeni bir eve taşınmanın heyecanı, kapınıza gelen amatör bir nakliye ekibiyle kâbusa dönüşebilir. İnternette "<strong>Bursa en ucuz evden eve nakliyat</strong>" araması yaptığınızda karşınıza çıkan rakamlar cezbedici görünebilir. Ancak sektörün acı bir gerçeği var: <em>Ucuz etin yahnisi yavan olur, ucuz nakliyatın maliyeti ise paramparça olmuş mobilyalardır.</em></p>
@@ -527,8 +527,8 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>En sık rastlanan taktik, telefonda eşyalarınızı listeleyip size piyasanın %30 altında fiyat verilmesidir. Anlaşma sağlanır, taşınma günü kamyon kapıya yanaşır ve nakliye sorumlusu evi gezdikten sonra şu cümleyi kurar: <em>"Abla / Abi bu merdivenler çok dar, bu koltuk buradan dönmez. Eşyanız çizilir. Bizim acil asansör çağırmamız lazım ama o da fiyata dahil değil, ekstra x Bin TL tutar."</em></p>
       <p>O an eşyalar toplanmış ve eski evi boşaltmak zorunda olduğunuz için o astronomik rakamı çaresizce ödersiniz. Bizim sistemimizde ise <a href="/bursa-merkez-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">kiralık mobil asansörümüz</a> zaten işin merkezindedir ve fiyatlarımız sözleşmeyle tamamen sabittir.</p>
 
-      <h3>2. Sigorta Yalanı ve Çizilen Beyaz Eşyalar</h3>
-      <p>"Taşıma sigortamız var" demek, eşyanın koliden çıkarken düşüp kırılmasını kapsamaz. Gerçek bir firma, profesyonel <a href="/osmangazi-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Osmangazi evden eve nakliyat</a> veya <a href="/nilufer-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Nilüfer nakliyat</a> operasyonlarında, tüm beyaz eşyaları (Buzdolabı, çamaşır makinesi) koruyucu balonlu naylonlarla sarar. Sokak arası hamallarla çalışan "ucuz firmalar", koruma malzemesi kullanmadığı için 2.000 TL tasarruf edeyim derken 40.000 TL'lik buzdolabınızdan olursunuz.</p>
+      <h3>2. "Sözde" Güvenlik ve Çizilen Beyaz Eşyalar</h3>
+      <p>Pek çok firma "eşyalarınız güvende" dese de, profesyonel paketleme yapılmadığı sürece bu sözlerin bir karşılığı yoktur. Gerçek bir firma, profesyonel <a href="/osmangazi-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Osmangazi evden eve nakliyat</a> veya <a href="/nilufer-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Nilüfer nakliyat</a> operasyonlarında, tüm beyaz eşyaları (Buzdolabı, çamaşır makinesi) koruyucu balonlu naylonlarla sarar. Sokak arası hamallarla çalışan "ucuz firmalar", koruma malzemesi kullanmadığı için 2.000 TL tasarruf edeyim derken 40.000 TL'lik buzdolabınızdan olursunuz.</p>
 
       <h3>3. Sözleşmesiz ve Belgesiz İş Yapmak</h3>
       <p>Taşınma günü yaşanabilecek bir anlaşmazlıkta elinizde resmi bir belge yoksa hiçbir hak iddia edemezsiniz. Profesyonel nakliyat şirketleri taşıma başından sonuna kadar sizi yasal olarak garanti altına alan evraklarla çalışır.</p>
@@ -626,7 +626,7 @@ export const BLOG_POSTS: BlogPost[] = [
       </div>
 
       <h2>Bizi Hemen Arayın, Kafanız Rahat Taşının</h2>
-      <p>Ev taşımak yeterince stresli bir iştir, bırakın ağır yükü dış cephe asansörlerimiz çeksin. Hasarsız, sigortalı, asansörlü ve profesyonel taşıma güvencesi için işi şansa bırakmayın. Bize <strong><a href="https://wa.me/905053297533" class="text-primary font-semibold hover:underline">0505 329 75 33</a></strong> adresinden anında ulaşın ve modern taşımacılığın keyfini çıkarın.</p>
+      <p>Ev taşımak yeterince stresli bir iştir, bırakın ağır yükü dış cephe asansörlerimiz çeksin. Hasarsız, hızlı, asansörlü ve profesyonel taşıma güvencesi için işi şansa bırakmayın. Bize <strong><a href="https://wa.me/905053297533" class="text-primary font-semibold hover:underline">0505 329 75 33</a></strong> adresinden anında ulaşın ve modern taşımacılığın keyfini çıkarın.</p>
     `
   }
 ];
