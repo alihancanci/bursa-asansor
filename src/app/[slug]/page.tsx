@@ -127,10 +127,16 @@ export default async function ServicePage({ params }: Props) {
         },
         "aggregateRating": {
           "@type": "AggregateRating",
-          "ratingValue": "4.94",
-          "reviewCount": "50",
-          "bestRating": "5",
-          "worstRating": "4"
+          "ratingValue": 4.94,
+          "reviewCount": 50,
+          "bestRating": 5,
+          "worstRating": 1,
+          "itemReviewed": {
+            "@type": "MovingCompany",
+            "name": "Bursa Kiralık Asansör CNC Evden Eve Nakliyat",
+            "image": "https://bursakiralikasansor.com/opengraph.jpg",
+            "telephone": "+905053297533"
+          }
         },
         "areaServed": {
           "@type": "GeoShape",
@@ -158,6 +164,7 @@ export default async function ServicePage({ params }: Props) {
       },
       // 2. Spesifik Hizmet Şeması
       {
+        "@type": "Service",
         "name": `${district.name} ${service.name}`,
         "description": `${district.name} bölgesinde dar sokaklara uygun kompakt asansörlerimiz ve uzman operatör kadromuzla 7/24 ${service.name} hizmeti sunuyoruz. Beyaz eşya, mobilya ve inşaat malzemeleri için %100 güvenli taşıma.`,
         "provider": { "@id": `https://bursakiralikasansor.com/#organization` },
