@@ -41,11 +41,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return { title: 'Sayfa Bulunamadı' };
   }
 
-  // Dinamik benzersiz başlık (Örn: Nilüfer Evden Eve Nakliyat | 0505 329 75 33)
-  const title = `${district.name} ${service.name} | 0505 329 75 33 | Güvenli Taşımacılık`;
+  // Dinamik benzersiz başlık (Örn: Nilüfer Evden Eve Nakliyat | 0505 329 75 33 | Dar Sokak Uzmanlığı)
+  const title = district.isPriority 
+    ? `${district.name} ${service.name} | 0505 329 75 33 | Dar Sokak Uzmanlığı`
+    : `${district.name} ${service.name} | 0505 329 75 33 | Güvenli Taşımacılık`;
   
   // Dinamik benzersiz açıklama (Max 160 karakter)
-  const description = `${district.name} bölgesinde profesyonel ${service.name} ve kiralık asansör hizmeti. 15. kata kadar güvenli taşıma çözümleri. Hemen Ara: 0505 329 75 33`;
+  const description = `${district.name} bölgesinde uzman operatör ve dar sokaklara uygun küçük asansörümüzle profesyonel ${service.name} hizmeti. Hemen Ara: 0505 329 75 33`;
 
   return {
     title,
@@ -145,13 +147,19 @@ export default async function ServicePage({ params }: Props) {
           "latitude": district.latitude,
           "longitude": district.longitude
         },
-        "knowsAbout": ["Asansörlü Nakliyat", "Eşya Taşıma Asansörü", "Mobil Asansör Kiralama", "Yüksek Kat Taşıma"]
+        "knowsAbout": [
+          "Asansörlü Nakliyat", 
+          "Eşya Taşıma Asansörü", 
+          "Mobil Asansör Kiralama", 
+          "Dar Sokak Asansörü", 
+          "Hassas Eşya Taşıma",
+          "İnşaat Malzemesi Asansörü"
+        ]
       },
       // 2. Spesifik Hizmet Şeması
       {
-        "@type": "Service",
         "name": `${district.name} ${service.name}`,
-        "description": `${district.name} bölgesinde 7/24 profesyonel ${service.name} hizmeti. 15. kata kadar erişim kapasitemiz ve uzman operatör desteğimizle güvenli taşıma sunuyoruz.`,
+        "description": `${district.name} bölgesinde dar sokaklara uygun kompakt asansörlerimiz ve uzman operatör kadromuzla 7/24 ${service.name} hizmeti sunuyoruz. Beyaz eşya, mobilya ve inşaat malzemeleri için %100 güvenli taşıma.`,
         "provider": { "@id": `https://bursakiralikasansor.com/#organization` },
         "serviceArea": {
           "@type": "AdministrativeArea",

@@ -8,6 +8,7 @@ export interface District {
   longitude: number;
   wikidataId?: string;
   landmark?: string;
+  isPriority?: boolean;
 }
 
 export interface Service {
@@ -21,6 +22,29 @@ export interface Service {
 
 export const PHONE_NUMBER = "05053297533";
 export const WHATSAPP_LINK = "https://wa.me/905053297533?text=Merhaba,%20mobil%20asansör%20kiralama%20hizmetiniz%20hakkında%20bilgi%20alabilir%20miyim?";
+
+export const USPS = [
+  {
+    icon: "Truck",
+    title: "Dar Sokak Uzmanlığı",
+    desc: "Bursa'nın dar sokaklarına girebilen kompakt küçük asansörümüzle her adreste yanınızdayız."
+  },
+  {
+    icon: "UserCheck",
+    title: "Uzman Operatör Kadrosu",
+    desc: "Sertifikalı ve yılların deneyimine sahip operatörlerimizle sıfır riskli taşıma sağlıyoruz."
+  },
+  {
+    icon: "Zap",
+    title: "Hassas Eşya Taşıma",
+    desc: "TV, mobilya ve beyaz eşyalarınız için sarsıntısız, ileri teknoloji asansör sistemleri."
+  },
+  {
+    icon: "Building2",
+    title: "İnşaat ve Moloz Çözümleri",
+    desc: "Alçıpan, moloz ve inşaat malzemeleri için hızlı ve yüksek kapasiteli taşıma desteği."
+  }
+];
 
 export const DISTRICTS: District[] = [
   { 
@@ -37,9 +61,10 @@ export const DISTRICTS: District[] = [
   { 
     slug: "osmangazi", 
     name: "Osmangazi",
+    isPriority: true,
     neighborhoods: ["Hüdavendigar", "Dikkaldırım", "Altıparmak", "Hamitler", "Yunuseli", "Emek", "Geçit"],
-    seoParagraph: "Bursa'nın en büyük ve kozmopolit ilçesi Osmangazi'de, Kent Meydanı ve Osmangazi Meydanı yakınlarındaki yerleşimlerden Çekirge'nin dik yokuşlu binalarına kadar her noktada asansörlü nakliye sağlıyoruz. Hamitler ve Yunuseli'ndeki yeni sitelerden Emek'teki dikey yapılaşmaya kadar Osmangazi kiralık mobil asansör çözümlerimizle hizmetinizdeyiz. 15. kata kadar erişim kapasitemizle sitelerin huzurunu bozmadan güvenli transfer sağlıyoruz.",
-    localNote: "Hamitler ve Yunuseli gibi rüzgara açık yeni yerleşim bölgelerinde, rüzgar sensörlü ve denge ayakları güçlendirilmiş araçlarımızı tercih ediyoruz.",
+    seoParagraph: "Bursa'nın en büyük ve kozmopolit ilçesi Osmangazi'de, özellikle dar sokaklara sahip mahallelerde uzman operatörlerimiz ve kompakt küçük asansörümüzle hizmetinizdeyiz. Kent Meydanı ve Osmangazi Meydanı yakınlarındaki yerleşimlerden Çekirge'nin dik yokuşlarına kadar her noktada hızlı çözüm sağlıyoruz. Hamitler ve Yunuseli'ndeki yeni sitelerden Emek'teki dikey yapılaşmaya kadar Osmangazi kiralık mobil asansör çözümlerimizle güvenli transfer sağlıyoruz.",
+    localNote: "Osmangazi'nin dar sokakları için özel olarak tasarlanmış küçük mobil asansörümüz sayesinde binalara en güvenli açıyla yanaşabiliyoruz.",
     latitude: 40.1917,
     longitude: 29.0611,
     wikidataId: "Q1001402",
@@ -48,9 +73,10 @@ export const DISTRICTS: District[] = [
   { 
     slug: "nilufer", 
     name: "Nilüfer",
+    isPriority: true,
     neighborhoods: ["Özlüce", "Görükle", "İhsaniye", "Beşevler", "Ataevler", "Fethiye", "Balat"],
-    seoParagraph: "Modern mimari ve lüks yaşamın merkezi Nilüfer'de, Nilüfer Belediyesi ve FSM Bulvarı civarındaki konutlarda profesyonel asansörlü nakliyat standartlarını belirliyoruz. Özlüce, Balat ve Fethiye gibi prestijli bölgelerde yüksek katlı rezidanslara dış cepheden eşya transferi sağlıyoruz. Görükle'de öğrenci dostu, Balat'ta ise lüks taşımacılık anlayışıyla site yönetimleriyle koordineli çalışarak huzurlu bir taşınma süreci yaşatıyoruz.",
-    localNote: "Nilüfer'in geniş site bahçelerinde peyzaja zarar vermeyen kauçuk tabanlı denge ayakları kullanarak mülkünüzü koruyoruz.",
+    seoParagraph: "Modern mimari ve lüks yaşamın merkezi Nilüfer'de, hassas beyaz eşya ve elektronik taşımacılığında standartları belirliyoruz. Özlüce, Balat ve Fethiye gibi prestijli bölgelerde yüksek katlı rezidanslara uzman operatör eşliğinde sarsıntısız asansör hizmeti sunuyoruz. Nilüfer kiralık asansör ihtiyaçlarınızda, peyzaja zarar vermeyen kompakt araçlarımız ve profesyonel ekibimizle markalaşmış bir hizmet sunuyoruz.",
+    localNote: "Nilüfer'deki rezidans ve site yönetimlerinin talep ettiği tüm güvenlik sertifikalarına sahip operatörler ve bakımlı ekipmanlarla çalışıyoruz.",
     latitude: 40.2185,
     longitude: 28.9481,
     wikidataId: "Q1001400",
@@ -59,9 +85,10 @@ export const DISTRICTS: District[] = [
   { 
     slug: "yildirim", 
     name: "Yıldırım",
+    isPriority: true,
     neighborhoods: ["Millet", "Yavuzselim", "Ertuğrulgazi", "Mesken", "Teleferik", "Siteler", "Bağlaraltı"],
-    seoParagraph: "Yıldırım ilçesinde Teleferik İstasyonu ve Barış Manço Kültür Merkezi çevresindeki engebeli arazilerde uzman asansör hizmeti sunuyoruz. Millet Mahallesi'ndeki yeni dikey yapılaşmadan Ertuğrulgazi'nin dar yokuşlarına kadar Yıldırım mobil asansör kiralama servisimizle her noktadayız. Yamaçlardaki kurulumlarda aracın dengesini milimetrik sağlayan hidrolik kilit sistemlerimizle güvenliği garanti ediyoruz.",
-    localNote: "Yıldırım'ın dik yamaçlarında, aracın kaymasını önleyen özel takozlama ve hidrolik kilit sistemlerini her kurulumda titizlikle uyguluyoruz.",
+    seoParagraph: "Bursa'nın köklü ilçelerinden Yıldırım'da, Teleferik ve Ertuğrulgazi gibi dar ve yokuşlu sokaklarda uzman operatörlerimizle fark yaratıyoruz. Özellikle Millet Mahallesi'ndeki yeni dikey yapılarda alçıpan, moloz ve inşaat malzemesi taşıma konusunda Bursa'nın en hızlı ekibiyiz. Yıldırım kiralık asansör servisimizle, engebeli arazilerde dahi milimetrik denge sağlayan hidrolik sistemlerimizle hizmetinizdeyiz.",
+    localNote: "Yıldırım'ın dar sokakları ve dik yamaçları için küçük kompakt asansörümüzü tercih ederek güvenli kurulum sağlıyoruz.",
     latitude: 40.1834,
     longitude: 29.1235,
     wikidataId: "Q1010006",
@@ -92,9 +119,10 @@ export const DISTRICTS: District[] = [
   { 
     slug: "gursu", 
     name: "Gürsu",
+    isPriority: true,
     neighborhoods: ["Kurtuluş", "Yenidoğan", "İstiklal", "Zafer", "Adaköy", "Hasanköy"],
-    seoParagraph: "Gürsu Organize Sanayi Bölgesi (OSB) ve Zafer Meydanı çevresindeki ticari alanlar ile yeni yapılan Kurtuluş sitesi bölgelerinde aktif lojistik sunuyoruz. Gürsu'da fabrikaların çatı katlarına makine parçası verilmesi veya yeni binalarda asansörlü nakliyat süreçlerinde yanınızdayız. Gürsu'nun her mahallesinde seri kurulum kabiliyetimizle zaman tasarrufu sağlıyoruz.",
-    localNote: "Gürsu'daki fabrika ve depo kurulumlarında, tonajlı yükler için sepetteki yük dağılımını dengeleyen lazerli terazi sistemleri kullanıyoruz.",
+    seoParagraph: "Gürsu Organize Sanayi Bölgesi (OSB) ve yeni yerleşim alanlarında ağır inşaat malzemesi, alçıpan ve moloz transferinde profesyonel çözümler sunuyoruz. Gürsu genelinde fabrikaların çatı katlarına makine parçası verilmesi veya yeni binalarda asansörlü nakliyat süreçlerinde yanınızdayız. Gürsu kiralık asansör ihtiyaçlarınızda seri kurulum ve uzman operatör desteğimizle işinizi hızlandırıyoruz.",
+    localNote: "Gürsu'daki OSB kurulumlarında tonajlı yükler için sepetteki yük dağılımını dengeleyen özel sistemler kullanıyoruz.",
     latitude: 40.2185,
     longitude: 29.1956,
     wikidataId: "Q1025547",
@@ -103,9 +131,10 @@ export const DISTRICTS: District[] = [
   { 
     slug: "mudanya", 
     name: "Mudanya",
+    isPriority: true,
     neighborhoods: ["Güzelyalı", "Burgaz", "Halitpaşa", "Ömerbey", "Bademli", "Trilye", "Aydınpınar"],
-    seoParagraph: "Mudanya Mütareke Evi ve Güzelyalı Sahili yakınlarındaki yamaç yerleşimlerinde nakliye rüzgar ve eğim kontrolü gerektirir. Bademli villalarından Trilye'nin dar ve tarihi sokaklarına kadar Mudanya kiralık asansör servisimizle mülkünüzü koruyan çözümler sunuyoruz. Eğimli arazilerde aracın şasisini yere sabitleyen hidrolik sistemlerimizle güvenliğin markasıyız.",
-    localNote: "Güzelyalı ve Bademli gibi aşırı eğimli yamaçlarda, aracın şasisini yere sabitleyen hidrolik kilit sistemlerimizi devreye alıyoruz.",
+    seoParagraph: "Mudanya, Güzelyalı ve Trilye'nin dar ve tarihi sokaklarında küçük mobil asansörümüzle hasarsız taşıma garantisi veriyoruz. Bademli villalarında hassas mobilya ve beyaz eşya taşımacılığı için uzman operatörümüz eşliğinde hizmet sunuyoruz. Mudanya kiralık asansör servisimizle, deniz kenarındaki binaların zorlu kurulum noktalarında dahi profesyonel çözümler üretiyoruz.",
+    localNote: "Mudanya ve Trilye'nin dar yollarında manevra kabiliyeti yüksek küçük asansörümüzle binalara sıfır yanaşabiliyoruz.",
     latitude: 40.3756,
     longitude: 28.8821,
     wikidataId: "Q386994",

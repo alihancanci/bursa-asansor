@@ -38,6 +38,18 @@ async function priorityIndex() {
 
     console.log(`✅ CSV dosyasından ${urls.length} adet URL başarıyla okundu.\n`);
 
+    // Öncelikli ilçeleri en başa al
+    const priorityDistricts = ['nilufer', 'mudanya', 'osmangazi', 'yildirim', 'gursu'];
+    urls.sort((a, b) => {
+      const aPriority = priorityDistricts.some(d => a.toLowerCase().includes(d));
+      const bPriority = priorityDistricts.some(d => b.toLowerCase().includes(d));
+      if (aPriority && !bPriority) return -1;
+      if (!aPriority && bPriority) return 1;
+      return 0;
+    });
+
+    console.log('🎯 URL listesi öncelikli ilçelere (Nilüfer, Mudanya, Osmangazi, Yıldırım, Gürsu) göre sıralandı.\n');
+
     await jwtClient.authorize();
     console.log('✅ Google API yetkilendirmesi başarılı.\n');
 

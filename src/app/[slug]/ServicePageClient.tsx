@@ -5,11 +5,11 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
-import { DISTRICTS, PHONE_NUMBER, SERVICES, WHATSAPP_LINK } from "@/data";
+import { DISTRICTS, PHONE_NUMBER, SERVICES, WHATSAPP_LINK, USPS } from "@/data";
 import { CTASection } from "@/components/CTASection";
 import { FeaturesBar } from "@/components/FeaturesBar";
 import { Testimonials } from "@/components/Testimonials";
-import { ChevronRight, ArrowRight, CheckCircle2, Phone, MessageCircle, AlertTriangle, MapPin } from "lucide-react";
+import { ChevronRight, ArrowRight, CheckCircle2, Phone, MessageCircle, AlertTriangle, MapPin, Truck, UserCheck, Zap, Building2 } from "lucide-react";
 import { motion } from "framer-motion";
 import { getAbsoluteAssetUrl, getCanonicalUrl } from "@/lib/seo";
 import { trackPhoneClick, trackWhatsAppClick } from "@/lib/analytics";
@@ -202,18 +202,24 @@ export default function ServicePageClient() {
             <section className="mb-14 p-6 md:p-10 bg-secondary dark:bg-navy-light rounded-[2rem] text-white relative overflow-hidden shadow-xl">
               <div className="absolute top-0 right-0 p-8 opacity-10"><CheckCircle2 className="w-32 h-32" /></div>
               <div className="relative z-10">
-                <h3 className="text-2xl font-display font-bold mb-4">
+                <h3 className="text-2xl font-display font-bold mb-6">
                   {t('service_page.why_us', 'Neden', { district: district.name })} {district.name}&apos;de {t('service_page.why_us_suffix', 'Bizimle Çalışmalısınız?')}
                 </h3>
-                <p className="text-gray-100 dark:text-slate-300 leading-relaxed text-lg mb-6">
-                  {service.category === 'asansor'
-                    ? t('service_page.category_elevator_desc', `${district.name} bölgesindeki yapıların çoğunlukla dar balkon girişlerine veya yüksek katlı mimariye sahip olduğunun bilincindeyiz. Bu yüzden asansör kurulumu öncesinde çevre güvenliğini sağlıyor ve mobilyalarınızın binanın iç asansörüne sığmadığı durumlarda dış cepheden %100 güvenli transfer gerçekleştiriyoruz.`, { district: district.name })
-                    : t('service_page.category_moving_desc', `${district.name} lokasyonunda nakliye sürecini planlarken sadece eşya taşımıyor, bölgenin trafik saatlerini ve park yasaklarını da hesaba katıyoruz. Deneyimli ekibimizle eşyalarınızı paketliyor, asansörlü sistemimizle sıfır riskle yeni adresinize ulaştırıyoruz.`, { district: district.name })
-                  }
-                </p>
-                <div className="flex flex-wrap gap-4">
-                  <div className="bg-white/10 px-4 py-2 rounded-lg text-sm font-semibold backdrop-blur-sm border border-white/20">{t('service_page.regional_survey', 'Bölgesel Keşif Dahil')}</div>
-                  <div className="bg-white/10 px-4 py-2 rounded-lg text-sm font-semibold backdrop-blur-sm border border-white/20">{district.name} {t('service_page.fast_fleet', 'Hızlı Geniş Araç Filosu')}</div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {USPS.map((usp, idx) => {
+                    const Icon = { Truck, UserCheck, Zap, Building2 }[usp.icon] || MapPin;
+                    return (
+                      <div key={idx} className="flex gap-4 items-start bg-white/5 p-4 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
+                        <div className="p-2 bg-primary/20 rounded-lg text-primary">
+                          <Icon className="w-6 h-6" />
+                        </div>
+                        <div>
+                          <h4 className="font-bold text-lg mb-1">{usp.title}</h4>
+                          <p className="text-sm text-gray-200 dark:text-slate-300 leading-relaxed">{usp.desc}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </section>
@@ -222,20 +228,20 @@ export default function ServicePageClient() {
             <section className="mb-14">
               <h2 className="text-2xl font-display font-bold text-[#0f172a] dark:text-white mb-5 pb-3 border-b-2 border-gray-200 dark:border-white/10">{t('service_page.service_rules', 'Hizmet Kurallarımız')}</h2>
               <ul className="space-y-4">
-                {[
-                  { title: t('features.f2_title', "7/24 Hizmet"), desc: t('features.f2_desc', "Mesai saati gözetmeksizin, bize ihtiyaç duyduğunuz her an sahadayız.") },
-                  { title: t('features.f1_title', "15. Kata Kadar"), desc: t('features.f1_desc', "Yüksek erişimli asansörlerimiz maksimum 15. kata kadar güvenli ulaşım sağlar.") },
-                  { title: t('features.f3_title', "Operatörlü Çalışma"), desc: t('features.f3_desc', "Kurulum ve kullanım esnasında operatör her zaman asansörün başındadır.") },
-                  { title: t('features.f4_title', "Personel & Araç Desteği"), desc: t('features.f4_desc', "Gerekli durumlarda taşıma personeli (hamal) ve nakliye kamyonu desteği de verilir.") },
-                ].map(r => (
-                  <li key={r.title} className="flex items-start gap-4 p-5 bg-[#f8fafc] dark:bg-[#1e293b] border-2 border-[#cbd5e1] dark:border-[#334155] rounded-2xl">
-                    <CheckCircle2 className="w-7 h-7 text-primary shrink-0 mt-0.5" />
-                    <div>
-                      <div className="font-bold text-[#0f172a] dark:text-white text-base mb-1">{r.title}</div>
-                      <div className="text-[#334155] dark:text-slate-300">{r.desc}</div>
-                    </div>
-                  </li>
-                ))}
+                  {[
+                    { title: t('features.f1_title', "15. Kata Kadar"), desc: t('features.f1_desc', "Yüksek erişimli asansörlerimiz maksimum 15. kata kadar güvenli ulaşım sağlar.") },
+                    { title: "Uzman Operatör", desc: "Tüm kurulumlar sertifikalı ve tecrübeli operatörlerimiz eşliğinde gerçekleştirilir." },
+                    { title: "Dar Sokak Çözümü", desc: "Dar sokaklu bölgeler için manevra kabiliyeti yüksek kompakt araçlarımız mevcuttur." },
+                    { title: "7/24 Kesintisiz Hizmet", desc: "Mesai saati gözetmeksizin Bursa'nın her noktasına 7/24 hizmet veriyoruz." },
+                  ].map(r => (
+                    <li key={r.title} className="flex items-start gap-4 p-5 bg-[#f8fafc] dark:bg-[#1e293b] border-2 border-[#cbd5e1] dark:border-[#334155] rounded-2xl">
+                      <CheckCircle2 className="w-7 h-7 text-primary shrink-0 mt-0.5" />
+                      <div>
+                        <div className="font-bold text-[#0f172a] dark:text-white text-base mb-1">{r.title}</div>
+                        <div className="text-[#334155] dark:text-slate-300">{r.desc}</div>
+                      </div>
+                    </li>
+                  ))}
               </ul>
             </section>
 
