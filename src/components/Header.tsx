@@ -105,7 +105,7 @@ export function Header() {
                 Bursa <span className="text-primary">Kiralık Asansör</span>
               </span>
               <span className="text-[0.65rem] text-slate-500 dark:text-slate-400 font-bold uppercase tracking-[0.2em] mt-1">
-                {t('nav.subtitle', 'Profesyonel Nakliye Ağı')}
+                CNC Evden Eve Nakliyat
               </span>
             </div>
           </Link>

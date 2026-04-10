@@ -2,14 +2,14 @@ import { Metadata } from 'next';
 import HomePageClient from './HomePageClient';
 
 export const metadata: Metadata = {
-  title: 'Bursa Kiralık Asansör & Evden Eve Nakliyat | Mobil Asansör',
-  description: 'Bursa genelinde 15. kata kadar güvenli ve profesyonel mobil asansör kiralama hizmeti. Evden eve asansörlü nakliyat, inşaat asansörü, saatlik kiralama hizmetleri için 7/24 ulaşın.',
+  title: 'Bursa Kiralık Asansör CNC Evden Eve Nakliyat | Mobil Asansör',
+  description: 'Bursa genelinde 15. kata kadar güvenli ve profesyonel mobil asansör kiralama ve CNC evden eve nakliyat hizmeti. 7/24 operatör desteği için hemen ulaşın.',
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Bursa Kiralık Asansör & Evden Eve Nakliyat | Mobil Asansör',
-    description: 'Bursa genelinde 15. kata kadar güvenli ve profesyonel mobil asansör kiralama hizmeti. Evden eve asansörlü nakliyat, inşaat asansörü, saatlik kiralama hizmetleri için 7/24 ulaşın.',
+    title: 'Bursa Kiralık Asansör CNC Evden Eve Nakliyat | Mobil Asansör',
+    description: 'Bursa genelinde 15. kata kadar güvenli ve profesyonel mobil asansör kiralama ve CNC evden eve nakliyat hizmeti.',
     url: '/',
   }
 };
@@ -22,8 +22,8 @@ export default function HomePage() {
         "@type": "WebSite",
         "@id": "https://bursakiralikasansor.com/#website",
         "url": "https://bursakiralikasansor.com",
-        "name": "Bursa Kiralık Asansör ve Evden Eve Nakliyat",
-        "description": "Bursa'nın Lider Mobil Asansör ve Evden Eve Nakliyat Şirketi",
+        "name": "Bursa Kiralık Asansör CNC Evden Eve Nakliyat",
+        "description": "Bursa'nın Lider Mobil Asansör ve CNC Evden Eve Nakliyat Şirketi",
         "publisher": {
           "@id": "https://bursakiralikasansor.com/#organization"
         }
@@ -31,7 +31,7 @@ export default function HomePage() {
       {
         "@type": "MovingCompany",
         "@id": "https://bursakiralikasansor.com/#organization",
-        "name": "Bursa Kiralık Asansör ve Evden Eve Nakliyat",
+        "name": "Bursa Kiralık Asansör CNC Evden Eve Nakliyat",
         "url": "https://bursakiralikasansor.com",
         "logo": "https://bursakiralikasansor.com/images/hero-bg.png",
         "image": "https://bursakiralikasansor.com/images/hero-bg.png",

@@ -5,13 +5,13 @@ import { ArrowRight, MapPin } from 'lucide-react';
 import { getCanonicalUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Hizmet Bölgelerimiz | Bursa Kiralık Asansör & Nakliyat',
-  description: 'Bursa genelinde Nilüfer, Osmangazi, Yıldırım ve tüm ilçelerde asansör kiralama ve evden eve nakliyat hizmeti veriyoruz.',
+  title: 'Hizmet Bölgelerimiz | Bursa Kiralık Asansör CNC Evden Eve Nakliyat',
+  description: 'Bursa genelinde Nilüfer, Osmangazi, Yıldırım ve tüm ilçelerde profesyonel asansör kiralama ve CNC evden eve nakliyat hizmeti veriyoruz.',
   alternates: {
     canonical: getCanonicalUrl('/hizmet-bolgelerimiz'),
   },
   openGraph: {
-    title: 'Hizmet Bölgelerimiz | Bursa Kiralık Asansör',
+    title: 'Hizmet Bölgelerimiz | Bursa Kiralık Asansör CNC Evden Eve Nakliyat',
     description: 'Bursa genelinde tüm ilçelere 7/24 asansörlü nakliyat hizmeti.',
     url: getCanonicalUrl('/hizmet-bolgelerimiz'),
   }
@@ -84,7 +84,7 @@ export default function ServiceAreasPage() {
         {/* Teknik Kaynaklar / Geo-SEO Alt Bölümü */}
         <div className="mt-20 pt-10 border-t border-slate-200 dark:border-slate-800 text-center">
           <p className="text-slate-400 text-sm mb-4">
-            Bursa Kiralık Asansör olarak hizmet bölgelerimizi teknik harita verisi (KML) olarak yayınlıyoruz.
+            Bursa Kiralık Asansör CNC Evden Eve Nakliyat olarak hizmet bölgelerimizi teknik harita verisi (KML) olarak yayınlıyoruz.
           </p>
           <Link 
             href="/locations.kml" 

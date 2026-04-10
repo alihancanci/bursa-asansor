@@ -13,16 +13,16 @@ const trTranslations = {
     districts: "Hizmet Bölgeleri",
     blog: "Blog & Rehber",
     contact: "İletişim",
-    subtitle: "Kiralama Hizmetleri"
+    subtitle: "CNC Evden Eve Nakliyat"
   },
   hero: {
     title1: "Bursa'nın Lider",
-    title2: "Kiralık Asansör ve Evden Eve Nakliyat",
+    title2: "Kiralık Asansör CNC Evden Eve Nakliyat",
     title3: "Firması",
     subtitle: "Dar sokaklar, yüksek binalar dert değil! 15. kata kadar güvenli ve hızlı mobil asansör ve nakliyat çözümleri sunuyoruz. Hemen Ara: 0505 329 75 33",
     cta_call: "Hemen Ara Fiyat Al",
     cta_whatsapp: "WhatsApp'tan Teklif İste",
-    image_alt: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Hizmeti"
+    image_alt: "Bursa Kiralık Asansör CNC Evden Eve Nakliyat Hizmeti"
   },
   features: {
     f1_title: "15. Kata Kadar",
@@ -37,7 +37,7 @@ const trTranslations = {
     f4_desc: "Garantili hizmet"
   },
   footer: {
-    desc: "Bursa ve çevre illerde profesyonel asansör kiralama ve evden eve nakliyat hizmetleri.",
+    desc: "Bursa ve çevre illerde profesyonel asansör kiralama ve CNC evden eve nakliyat hizmetleri.",
     elevator_services: "Kiralık Asansör",
     moving_services: "Nakliyat Hizmetleri",
     rights: "Tüm hakları saklıdır."
@@ -60,7 +60,7 @@ const trTranslations = {
   },
   home: {
     active_in_all: "Bursa ve Tüm İlçelerinde Aktif",
-    services_title: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Hizmetleri",
+    services_title: "Bursa Kiralık Asansör CNC Evden Eve Nakliyat Hizmetleri",
     services_desc: "İhtiyacınıza uygun mobil asansör çözümleriyle yanınızdayız.",
     why_choose_us: "Neden Bizi Tercih Etmelisiniz?",
     trust_p1: "Bursa'da uzun yıllara dayanan lojistik ve taşıma tecrübemizle, müşterilerimize <strong>en sorunsuz ve profesyonel</strong> kiralık mobil asansör hizmetini sunuyoruz.",

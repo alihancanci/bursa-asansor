@@ -27,7 +27,7 @@ export function Footer() {
                   Bursa <span className="text-primary">Kiralık Asansör</span>
                 </span>
                 <span className="text-[0.65rem] text-slate-300 font-bold uppercase tracking-[0.2em] mt-1">
-                  {t('nav.subtitle', 'Profesyonel Nakliye Ağı')}
+                  CNC Evden Eve Nakliyat
                 </span>
               </div>
             </Link>
@@ -124,7 +124,7 @@ export function Footer() {
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-300 text-sm">
-            © {new Date().getFullYear()} Bursa Kiralık Asansör ve Evden Eve Nakliyat. {t('footer.rights', 'Tüm hakları saklıdır.')}
+            © {new Date().getFullYear()} Bursa Kiralık Asansör CNC Evden Eve Nakliyat. {t('footer.rights', 'Tüm hakları saklıdır.')}
           </p>
           <div className="flex gap-4 text-sm text-slate-300">
             <span>{t('features.f3_title', 'Uzman Operatör')}</span>

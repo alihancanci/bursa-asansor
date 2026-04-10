@@ -2,9 +2,9 @@ import { MetadataRoute } from 'next'
  
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Bursa Kiralık Asansör Nakliyat',
+    name: 'Bursa Kiralık Asansör CNC Evden Eve Nakliyat',
     short_name: 'Bursa Asansör',
-    description: 'Bursa kiralık asansör ve evden eve nakliyat hizmetleri. 15. kata kadar asansör kiralama.',
+    description: 'Bursa kiralık asansör ve CNC evden eve nakliyat hizmetleri. 15. kata kadar asansör kiralama.',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',
