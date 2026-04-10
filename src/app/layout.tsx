@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "tr_TR",
-    siteName: "Bursa Kiralık Asansör ve Evden Eve Nakliyat",
+    siteName: "Bursa Kiralık Asansör CNC Nakliyat",
     title: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Hizmetleri",
     description: "Bursa'da 7/24 mobil asansör kiralama ve asansörlü nakliyat hizmeti.",
     images: [

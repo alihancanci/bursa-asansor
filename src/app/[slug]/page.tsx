@@ -60,6 +60,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description,
       type: 'website',
       url: `/${fullSlug}`,
+      siteName: "Bursa Kiralık Asansör CNC Nakliyat",
     },
     twitter: {
       card: 'summary_large_image',
