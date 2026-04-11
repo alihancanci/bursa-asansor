@@ -85,9 +85,9 @@ export default function HomePageClient() {
                 <span className="text-sm font-semibold tracking-wide">{t('home.active_in_all', 'Bursa ve Tüm İlçelerinde Aktif')}</span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-white leading-[1.1] mb-6">
-                {t('hero.title1', "Bursa'nın Lider")} <br />
-                <span className="text-gradient">{t('hero.title2', "Mobil Asansör")}</span> {t('hero.title3', "Firması")}
+              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-white leading-[1.2] mb-6">
+                {t('hero.title1', "Bursa Kiralık Asansör")} <span className="text-gradient">{t('hero.title2', "CNC")}</span> <br />
+                {t('hero.title3', "Evden Eve Nakliyat")}
               </h1>
 
               <p className="text-lg sm:text-xl text-slate-100/90 mb-10 leading-relaxed max-w-2xl">

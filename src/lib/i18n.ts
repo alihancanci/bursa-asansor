@@ -16,9 +16,9 @@ const trTranslations = {
     subtitle: "CNC Evden Eve Nakliyat"
   },
   hero: {
-    title1: "Bursa'nın Lider",
-    title2: "Kiralık Asansör CNC Evden Eve Nakliyat",
-    title3: "Firması",
+    title1: "Bursa Kiralık Asansör",
+    title2: "CNC",
+    title3: "Evden Eve Nakliyat",
     subtitle: "Dar sokaklar, yüksek binalar dert değil! 15. kata kadar güvenli ve hızlı mobil asansör ve nakliyat çözümleri sunuyoruz. Hemen Ara: 0505 329 75 33",
     cta_call: "Hemen Ara Fiyat Al",
     cta_whatsapp: "WhatsApp'tan Teklif İste",

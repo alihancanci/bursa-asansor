@@ -554,7 +554,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Güvenlik & İnternet",
     author: "Bursa Kiralık Asansör SüperSEO Editörü",
     image: "/images/references/bursa-mobil-asansor-kiralama-referans-1.jpg",
-    metaDescription: "Armut ve benzeri aracı ilan sitelerinde kapora dolandırıcılığına dikkat! Bursa evden eve nakliyat firması seçerken güvenilirliği anlama yöntemleri ve kesin çözümler.",
+    metaDescription: "Armut ve benzeri sitelerdeki kapora dolandırıcılığına dikkat! Bursa'da güvenilir nakliyat firması seçme yöntemleri ve dolandırıcılardan korunma rehberi.",
     keywords: ["nakliye dolandırıcılığı", "kapora dolandırıcıları", "armut nakliyat şikayet", "güvenilir nakliyat firması bursa", "bursa kiralık asansör şikayet", "nakliyat tavsiye bursa"],
     content: `
       <h2>Taşınma Gününüzü Mahveden Kâbus: Hayalet Firmalar</h2>

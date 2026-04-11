@@ -46,8 +46,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? `${district.name} ${service.name} | 0505 329 75 33 | Dar Sokak Uzmanlığı`
     : `${district.name} ${service.name} | 0505 329 75 33 | Güvenli Taşımacılık`;
   
-  // Dinamik benzersiz açıklama (Max 160 karakter)
-  const description = `${district.name} bölgesinde uzman operatör ve dar sokaklara uygun küçük asansörümüzle profesyonel ${service.name} hizmeti. Hemen Ara: 0505 329 75 33`;
+  // Dinamik benzersiz açıklama (Max 160 karakter - Bing/Google uyumlu)
+  const description = `${district.name} bölgesinde dar sokaklara uygun asansörümüzle profesyonel ${service.name} hizmeti. Bilgi ve Randevu: 0505 329 75 33`;
 
   return {
     title,

@@ -5,10 +5,10 @@ import { ClientProviders } from "./providers";
 
 export const metadata: Metadata = {
   title: {
-    default: "Bursa Kiralık Asansör CNC Evden Eve Nakliyat | Mobil Asansör",
+    default: "Bursa Kiralık Asansör CNC Evden Eve Nakliyat",
     template: "%s | Bursa Kiralık Asansör CNC",
   },
-  description: "Bursa'da 7/24 mobil asansör kiralama ve CNC asansörlü evden eve nakliyat hizmeti. 15. kata kadar operatörlü güvenli taşıma çözümleri.",
+  description: "Bursa genelinde 7/24 mobil asansör kiralama ve CNC asansörlü evden eve nakliyat hizmeti. 15. kata kadar güvenli taşıma çözümleri.",
   metadataBase: new URL("https://bursakiralikasansor.com"),
   alternates: {
     canonical: '/',
@@ -82,14 +82,16 @@ export default function RootLayout({
         </ClientProviders>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-J2E99G4FY2"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
         />
-        <Script id="gtag-init" strategy="lazyOnload">
+        <Script id="gtag-init" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-J2E99G4FY2');
+            gtag('config', 'G-J2E99G4FY2', {
+              page_path: window.location.pathname,
+            });
           `}
         </Script>
 

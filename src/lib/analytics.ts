@@ -1,10 +1,10 @@
-export const trackEvent = (action: string, category: string, label: string, value?: number) => {
+export const trackEvent = (action: string, params?: Record<string, any>) => {
   if (typeof window !== 'undefined' && (window as any).gtag) {
-    (window as any).gtag('event', action, {
-      event_category: category,
-      event_label: label,
-      value: value,
-    });
+    (window as any).gtag('event', action, params);
+  } else if (typeof window !== 'undefined') {
+    // Fallback queue if gtag is not ready
+    (window as any).dataLayer = (window as any).dataLayer || [];
+    (window as any).dataLayer.push({ event: action, ...params });
   }
 };
 
@@ -17,11 +17,23 @@ export const trackPageView = (url: string) => {
 };
 
 export const trackPhoneClick = (location: string) => {
-  trackEvent('phone_click', 'Conversion', location);
+  trackEvent('generate_lead', {
+    method: 'phone',
+    location: location,
+    content_type: 'contact'
+  });
+  // Custom event for backward compatibility
+  trackEvent('phone_click', { location });
 };
 
 export const trackWhatsAppClick = (location: string) => {
-  trackEvent('whatsapp_click', 'Conversion', location);
+  trackEvent('generate_lead', {
+    method: 'whatsapp',
+    location: location,
+    content_type: 'contact'
+  });
+  // Custom event for backward compatibility
+  trackEvent('whatsapp_click', { location });
 };
 
 export const installGlobalClickTracking = () => {
