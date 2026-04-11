@@ -15,8 +15,7 @@ export default function robots(): MetadataRoute.Robots {
       }
     ],
     sitemap: [
-      "https://bursakiralikasansor.com/sitemap.xml",
-      "https://bursakiralikasansor.com/locations.kml"
+      "https://bursakiralikasansor.com/sitemap.xml"
     ],
   };
 }
