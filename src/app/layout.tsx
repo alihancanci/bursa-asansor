@@ -58,7 +58,6 @@ export const metadata: Metadata = {
   verification: {
     other: {
       // 'msvalidate.01': 'BURAYA_BING_WEBMASTER_KODUNUZU_YAZIN',
-      'yandex-verification': '933f824516ff764b',
     }
   },
 };
