@@ -74,16 +74,25 @@ export default function HomePage() {
           "latitude": "40.1828",
           "longitude": "29.0667"
         },
-        "areaServed": {
-          "@type": "GeoShape",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Bursa",
-            "addressRegion": "Bursa",
-            "addressCountry": "TR"
-          },
-          "polygon": "40.58,28.50 40.60,29.30 40.30,30.10 39.90,30.00 39.65,29.40 39.60,28.80 39.80,28.20 40.20,28.10 40.58,28.50"
-        },
+        "areaServed": [
+          {"@type": "City", "name": "Osmangazi", "containedInPlace": {"@type": "AdministrativeArea", "name": "Bursa", "addressCountry": "TR"}},
+          {"@type": "City", "name": "Nilüfer", "containedInPlace": {"@type": "AdministrativeArea", "name": "Bursa", "addressCountry": "TR"}},
+          {"@type": "City", "name": "Yıldırım", "containedInPlace": {"@type": "AdministrativeArea", "name": "Bursa", "addressCountry": "TR"}},
+          {"@type": "City", "name": "Mudanya", "containedInPlace": {"@type": "AdministrativeArea", "name": "Bursa", "addressCountry": "TR"}},
+          {"@type": "City", "name": "Gürsu", "containedInPlace": {"@type": "AdministrativeArea", "name": "Bursa", "addressCountry": "TR"}},
+          {"@type": "City", "name": "Kestel", "containedInPlace": {"@type": "AdministrativeArea", "name": "Bursa", "addressCountry": "TR"}},
+          {"@type": "City", "name": "Gemlik", "containedInPlace": {"@type": "AdministrativeArea", "name": "Bursa", "addressCountry": "TR"}},
+          {"@type": "City", "name": "İnegöl", "containedInPlace": {"@type": "AdministrativeArea", "name": "Bursa", "addressCountry": "TR"}},
+          {"@type": "City", "name": "İznik", "containedInPlace": {"@type": "AdministrativeArea", "name": "Bursa", "addressCountry": "TR"}},
+          {"@type": "City", "name": "Mustafakemalpaşa", "containedInPlace": {"@type": "AdministrativeArea", "name": "Bursa", "addressCountry": "TR"}},
+          {"@type": "City", "name": "Karacabey", "containedInPlace": {"@type": "AdministrativeArea", "name": "Bursa", "addressCountry": "TR"}},
+          {"@type": "City", "name": "Orhangazi", "containedInPlace": {"@type": "AdministrativeArea", "name": "Bursa", "addressCountry": "TR"}},
+          {"@type": "City", "name": "Yenişehir", "containedInPlace": {"@type": "AdministrativeArea", "name": "Bursa", "addressCountry": "TR"}},
+          {"@type": "City", "name": "Büyükorhan", "containedInPlace": {"@type": "AdministrativeArea", "name": "Bursa", "addressCountry": "TR"}},
+          {"@type": "City", "name": "Harmancık", "containedInPlace": {"@type": "AdministrativeArea", "name": "Bursa", "addressCountry": "TR"}},
+          {"@type": "City", "name": "Keles", "containedInPlace": {"@type": "AdministrativeArea", "name": "Bursa", "addressCountry": "TR"}},
+          {"@type": "City", "name": "Orhaneli", "containedInPlace": {"@type": "AdministrativeArea", "name": "Bursa", "addressCountry": "TR"}}
+        ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Bursa Asansör ve Nakliyat Hizmetleri",
