@@ -16,24 +16,26 @@ export const trackPageView = (url: string) => {
   }
 };
 
-export const trackPhoneClick = (location: string) => {
+export const trackPhoneClick = (location?: string) => {
+  const finalLocation = location || (typeof window !== 'undefined' ? window.location.pathname : 'Unknown');
   trackEvent('generate_lead', {
     method: 'phone',
-    location: location,
+    location: finalLocation,
     content_type: 'contact'
   });
   // Custom event for backward compatibility
-  trackEvent('phone_click', { location });
+  trackEvent('phone_click', { location: finalLocation });
 };
 
-export const trackWhatsAppClick = (location: string) => {
+export const trackWhatsAppClick = (location?: string) => {
+  const finalLocation = location || (typeof window !== 'undefined' ? window.location.pathname : 'Unknown');
   trackEvent('generate_lead', {
     method: 'whatsapp',
-    location: location,
+    location: finalLocation,
     content_type: 'contact'
   });
   // Custom event for backward compatibility
-  trackEvent('whatsapp_click', { location });
+  trackEvent('whatsapp_click', { location: finalLocation });
 };
 
 export const installGlobalClickTracking = () => {
@@ -45,12 +47,12 @@ export const installGlobalClickTracking = () => {
 
     const href = target.getAttribute('href') || '';
     if (href.startsWith('tel:')) {
-      trackPhoneClick('Global Link');
+      trackPhoneClick(window.location.pathname);
     } else if (href.includes('wa.me') || href.includes('whatsapp.com')) {
-      trackWhatsAppClick('Global Link');
+      trackWhatsAppClick(window.location.pathname);
     }
   };
 
-  window.addEventListener('click', handleGlobalClick);
+  window.addEventListener('click', handleGlobalClick, { capture: true });
   return () => window.removeEventListener('click', handleGlobalClick);
 };
