@@ -1,4 +1,27 @@
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
 
 Sitemap: https://bursakiralikasansor.com/sitemap.xml
