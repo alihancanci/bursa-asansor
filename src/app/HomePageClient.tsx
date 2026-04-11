@@ -154,7 +154,7 @@ export default function HomePageClient() {
 
           <div className="mt-10 text-center">
             <Link
-              href="/bursa-merkez-kiralik-mobil-asansor"
+              href="/hizmet-bolgelerimiz"
               className="inline-flex items-center gap-2 px-8 py-3 bg-primary hover:bg-orange-600 text-white font-bold rounded-xl transition-colors shadow-lg hover:shadow-primary/30"
             >
               {t('home.view_all_services', 'Tüm Asansörlü Nakliyat Hizmetlerimizi Gör')}
@@ -350,6 +350,17 @@ export default function HomePageClient() {
                 ))}
               </div>
             </div>
+          </div>
+
+          <div className="mt-12 text-center">
+            <Link
+              href="/hizmet-bolgelerimiz"
+              className="inline-flex items-center gap-2 px-8 py-3 bg-white dark:bg-navy-light border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Tüm İlçe ve Hizmet Kombinasyonlarını Gör
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <p className="mt-3 text-sm text-gray-500 dark:text-slate-400">{DISTRICTS.length} ilçe · {SERVICES.length} hizmet türü</p>
           </div>
         </div>
       </section>

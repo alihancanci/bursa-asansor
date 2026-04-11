@@ -51,6 +51,16 @@ export const metadata: Metadata = {
     statusBarStyle: "black-translucent",
   },
   manifest: "/manifest.json",
+  // Arama motoru doğrulama kodları
+  // Bing Webmaster Tools: https://www.bing.com/webmasters → Add Site → HTML Meta Tag seçeneği
+  // Yandex Webmaster: https://webmaster.yandex.com → Add Site → HTML Meta Tag seçeneği
+  // Bu değerleri ilgili panelden alıp güncelleyin:
+  verification: {
+    other: {
+      // 'msvalidate.01': 'BURAYA_BING_WEBMASTER_KODUNUZU_YAZIN',
+      'yandex-verification': '933f824516ff764b',
+    }
+  },
 };
 
 export const viewport: import('next').Viewport = {

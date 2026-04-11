@@ -54,25 +54,6 @@ export default function ServicePageClient() {
 
   return (
     <>
-      {/* FAQ Şeması (İstemci tarafında bırakıyoruz) */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: service.faqs.map((faq, idx) => ({
-              "@type": "Question",
-              name: t(`services.${service.slug}.faqs.${idx}.q`, faq.q),
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: t(`services.${service.slug}.faqs.${idx}.a`, faq.a),
-              },
-            })),
-          }),
-        }}
-      />
-
       {/* Breadcrumb strip */}
       <nav aria-label="Konum" className="bg-gray-100 dark:bg-navy border-b border-gray-300 dark:border-white/10 px-4 sm:px-6 py-3">
         <div className="max-w-7xl mx-auto flex items-center gap-1.5 text-sm text-gray-600 dark:text-slate-400">

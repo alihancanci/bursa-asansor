@@ -45,7 +45,7 @@ export default function ServiceAreasPage() {
               </div>
               
               <ul className="space-y-3 mb-8">
-                {SERVICES.slice(0, 4).map((service) => (
+                {SERVICES.map((service) => (
                   <li key={service.slug}>
                     <Link 
                       href={`/${district.slug}-${service.slug}`}

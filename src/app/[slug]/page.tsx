@@ -173,7 +173,7 @@ export default async function ServicePage({ params }: Props) {
           "@type": "AdministrativeArea",
           "name": district.name
         },
-        "dateModified": new Date().toISOString().split('T')[0],
+        "dateModified": "2025-03-15",
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Asansör Kiralama Hizmetleri",
