@@ -10,14 +10,14 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: "/yandex_933f824516ff764b.html",
+        source: "/yandex_8b02f2ef69ce4c35.html",
         headers: [
           { key: "Content-Type", value: "text/html; charset=UTF-8" },
           { key: "X-Content-Type-Options", value: "nosniff" },
         ],
       },
       {
-        source: "/((?!yandex_933f824516ff764b.html).*)",
+        source: "/((?!yandex_8b02f2ef69ce4c35.html).*)",
         headers: [
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "X-Frame-Options", value: "DENY" },
