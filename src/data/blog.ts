@@ -628,5 +628,352 @@ export const BLOG_POSTS: BlogPost[] = [
       <h2>Bizi Hemen Arayın, Kafanız Rahat Taşının</h2>
       <p>Ev taşımak yeterince stresli bir iştir, bırakın ağır yükü dış cephe asansörlerimiz çeksin. Hasarsız, hızlı, asansörlü ve profesyonel taşıma güvencesi için işi şansa bırakmayın. Bize <strong><a href="https://wa.me/905053297533" class="text-primary font-semibold hover:underline">0505 329 75 33</a></strong> adresinden anında ulaşın ve modern taşımacılığın keyfini çıkarın.</p>
     `
+  },
+  {
+    id: "10",
+    slug: "ev-tasiyanlar-icin-a-dan-z-ye-rehber",
+    title: "Ev Taşıyanlar İçin A'dan Z'ye Rehber: Planlamadan Yerleşime Her Şey",
+    excerpt: "Taşınmayı kafanızda büyütmeyin! Hazırlık, kolileme, firma seçimi, asansör kiralama ve yeni eve yerleşmeye kadar tüm süreçleri adım adım anlatan kapsamlı taşınma rehberi.",
+    date: "12 Nisan 2026",
+    readTime: "12 dk okuma",
+    category: "Taşınma Rehberi",
+    author: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Ekibi",
+    image: "/images/mutlu-aile-tasinma.png",
+    metaDescription: "Ev taşıyanlar için A'dan Z'ye kapsamlı rehber. Taşınma öncesi hazırlık, kolileme, güvenilir nakliyat firması seçimi, asansör kiralama ve yeni eve yerleşim adımları.",
+    keywords: [
+      "ev taşıma rehberi", "taşınma nasıl yapılır", "evden eve nakliyat adımları",
+      "taşınma öncesi hazırlık", "eşya paketleme taktikleri", "güvenilir nakliyat firması",
+      "kiralık asansör bursa", "yeni eve taşınma", "taşınma kontrol listesi",
+      "bursa evden eve nakliyat", "kolileme nasıl yapılır", "taşınma maliyeti hesaplama"
+    ],
+    faqs: [
+      {
+        q: "Taşınmaya ne kadar önceden hazırlanmaya başlamalıyım?",
+        a: "İdeal olarak taşınma gününden en az 4-6 hafta önce hazırlığa başlamalısınız. Eşya ayrıştırma, kolileme ve nakliyat firması rezervasyonu için bu süre yeterlidir."
+      },
+      {
+        q: "Eşyaları kolilerken nelere dikkat etmeliyim?",
+        a: "Kırılacak eşyaları balonlu naylon ile tek tek sarın, kolilerin içindeki boşlukları doldurun, her koliye içindekini ve hangi odaya ait olduğunu etiketleyin. Ağır eşyaları küçük kolilere, hafif eşyaları büyük kolilere koyun."
+      },
+      {
+        q: "Asansörlü nakliyat ne zaman şart olur?",
+        a: "Taşınılan daire 3. kat ve üzerindeyse, merdiven boşluğu darsa veya büyük mobilya ile beyaz eşya taşınacaksa dış cephe asansörü kullanmak hem güvenli hem de ekonomiktir."
+      },
+      {
+        q: "Nakliyat firması seçerken nelere bakmalıyım?",
+        a: "Firmanın özmal aracı ve asansörü olmasına, sözleşmeli çalışmasına, yerinde ücretsiz keşif yapmasına ve saha referanslarına dikkat edin. Fiyatı en düşük olan firmayı değil, güvenilirliği en yüksek olanı seçin."
+      },
+      {
+        q: "Taşınma günü abonelik işlemlerini unutmamak için ne yapmalıyım?",
+        a: "Elektrik, doğalgaz, su ve internet aboneliklerini taşınmadan 1-2 hafta önce yeni adrese naklet ya da iptal ettirin. Bu işlemlerin büyük bölümünü e-Devlet üzerinden halledebilirsiniz."
+      },
+      {
+        q: "Değerli ve kırılgan eşyalar nasıl taşınmalı?",
+        a: "Antika, sanat eseri, piyano gibi özel eşyalar için firma ile önceden görüşün. Bu tür eşyalar özel ambalaj malzemeleri ve ayrı araçlarla taşınmalıdır. Mümkünse bu tür eşyaları bizzat aracınızla taşıyın."
+      }
+    ],
+    content: `
+      <h2>Giriş: Taşınmak Neden Bu Kadar Zor Görünür?</h2>
+      <p>Bir evi baştan sona toparlamak, yıllarca biriktirilen anıları, eşyaları ve yaşama düzenini bir günde yeni bir mekâna nakletmek; hayatın en stresli deneyimlerinden biridir. Ancak <strong>iyi bir taşınma planı</strong> ile bu süreç, bir kâbusa dönmek yerine heyecan verici yeni bir başlangıca dönüşebilir.</p>
+
+      <p>Bu rehberde, <strong>evden eve taşınma sürecinin her aşamasını</strong> baştan sona ele alıyoruz. Planlamadan kolilemeye, nakliyat firması seçiminden <a href="/bursa-merkez-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">kiralık asansör</a> kiralamaya, yeni eve yerleşimden abonelik işlemlerine kadar her konuyu ayrıntılı biçimde bulacaksınız.</p>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>A — Araştırma: Doğru Firmayı Seçin</h2>
+      <p>Taşınma sürecinde yapılan en büyük hata, firma seçimini son güne bırakmaktır. Güvenilir bir <strong>evden eve nakliyat firması</strong> aramaya taşınmadan en az 4 hafta önce başlayın.</p>
+
+      <h3>Firma Seçerken Sormanız Gereken 5 Soru</h3>
+      <ol class="list-decimal pl-5 mt-4 space-y-3 mb-6">
+        <li><strong>Özmal araç ve asansörünüz var mı?</strong> Taşeron sistemle çalışan firmalar, işi başkasına devreder. Bu durum hem sorumluluğu hem de fiyatı belirsizleştirir.</li>
+        <li><strong>Ücretsiz yerinde keşif yapıyor musunuz?</strong> Gerçek bir firma, fiyat vermeden önce adresinizi inceler. Yalnızca telefonla kör fiyat veren firmalardan kaçının.</li>
+        <li><strong>Taşıma sözleşmesi imzalanıyor mu?</strong> Sözleşme olmadan hak iddianız güçtür. Kurumsal firmalar her işlemde yazılı evrak düzenler.</li>
+        <li><strong>Referans görselleri gerçek mi?</strong> Sitedeki fotoğraflar stok görsel mi, yoksa gerçek sahadan mı? <a href="/calismalarimiz" class="text-primary font-semibold hover:underline">Çalışmalarımız</a> sayfamızda Bursa sokaklarından gerçek referanslarımızı inceleyebilirsiniz.</li>
+        <li><strong>Kapora talep ediyorlar mı?</strong> Ön ödeme veya kapora isteyen firmalarla dikkatli olun. <a href="/blog/bursa-nakliye-kapora-dolandiriciligi-guvenilir-nakliyat-firmasi" class="text-primary font-semibold hover:underline">Nakliyat dolandırıcılığı</a> en çok bu yolla gerçekleşiyor.</li>
+      </ol>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>B — Bütçe: Taşınma Maliyetini Hesaplayın</h2>
+      <p><strong>Taşınma maliyeti</strong> birçok değişkene bağlıdır. Sürpriz fatura yememek için bu kalemleri önceden netleştirin:</p>
+
+      <div class="overflow-x-auto mt-6 mb-8">
+        <table class="w-full text-left border-collapse border border-slate-200 dark:border-slate-700">
+          <thead>
+            <tr class="bg-primary text-white">
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Maliyet Kalemi</th>
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Detay</th>
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Önem Derecesi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 dark:bg-slate-800/50">
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Nakliyat Ücreti</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Eşya hacmi, kat sayısı ve mesafeye göre değişir</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Kiralık Asansör</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">3. kat ve üzeri için şiddetle tavsiye edilir</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr class="bg-slate-50 dark:bg-slate-800/50">
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Ambalaj Malzemeleri</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Koli, balonlu naylon, kağıt, bant</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Demonte-Monte</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Büyük mobilyaların sökülüp takılması</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">⭐⭐⭐</td>
+            </tr>
+            <tr class="bg-slate-50 dark:bg-slate-800/50">
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Abonelik Devirleri</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Elektrik, su, gaz, internet nakil/iptal ücretleri</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">⭐⭐⭐</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="border-l-4 border-primary pl-4 py-2 bg-slate-50 dark:bg-slate-800/50 italic text-slate-700 dark:text-slate-300">
+        <strong>Pratik İpucu:</strong> Nakliyat fiyatını düşürmenin en hızlı yolu, taşınacak eşya miktarını azaltmaktır. Kullanmadığınız eşyaları satmak veya bağışlamak hem bütçenize hem de yeni evinize iyi gelir.
+      </p>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>C — Çizelge: 6 Haftalık Taşınma Planı</h2>
+      <p>Aşağıdaki zaman çizelgesi, <strong>stressiz ve organize bir taşınma süreci</strong> için en etkili yol haritasıdır:</p>
+
+      <h3>6. Hafta — Karar ve Araştırma Aşaması</h3>
+      <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
+        <li>Taşınma tarihini netleştirin ve takvimde işaretleyin.</li>
+        <li>Nakliyat ve <a href="/osmangazi-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">asansör kiralama</a> firmalarını araştırarak en az 3 firma ile iletişime geçin.</li>
+        <li>Yeni evin kat, merdiven ve balkon durumunu belirleyin.</li>
+      </ul>
+
+      <h3>5. Hafta — Ayıklama ve İlk Hazırlıklar</h3>
+      <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
+        <li>Bölme bölme gezerek kullanmadığınız eşyaları ayırın: satılacaklar, bağışlanacaklar ve çöpe gidecekler.</li>
+        <li>Nakliyat firmasını seçin ve mutlaka <strong>ücretsiz yerinde keşif</strong> talep edin.</li>
+        <li>Koli ve ambalaj malzemeleri alın ya da bazı marketlerden ücretsiz temin edin.</li>
+      </ul>
+
+      <h3>4. Hafta — Kolileme Başlangıcı</h3>
+      <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
+        <li>Önce günlük kullanmadığınız eşyaları kolileyin: kitaplar, süs eşyaları, kışlık giysiler.</li>
+        <li>Her koliye içindekini ve ait olduğu odayı yazın (Örn: "Mutfak — Kırılacak").</li>
+        <li>Değerli belgeleri, mücevherleri ve ziynet eşyalarını ayrı bir bölmede muhafaza edin.</li>
+      </ul>
+
+      <h3>3. Hafta — Abonelik İşlemleri</h3>
+      <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
+        <li><strong>Elektrik, doğalgaz ve su</strong> aboneliklerini yeni adrese nakledin ya da eski adreste iptal edin.</li>
+        <li>İnternet sağlayıcınızdan yeni adres için kurulum randevusu alın.</li>
+        <li>Posta adresinizi ve banka kayıtlarını güncelleyin.</li>
+      </ul>
+
+      <h3>2. Hafta — Tüm Eşyaları Kolileyin</h3>
+      <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
+        <li>Kullandığınız eşyalar da dahil artık her şeyi kolileyin, yalnızca birkaç gün kullanacaklarınızı ayrı tutun.</li>
+        <li>Yatak, banyo ve mutfak için "son hafta çantası" hazırlayın.</li>
+        <li>Nakliyat firması ile son detayları netleştirin: saat, adres, asansör konumu.</li>
+      </ul>
+
+      <h3>Son Hafta ve Taşınma Günü</h3>
+      <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
+        <li>Buzdolabını tamamen boşaltın ve fişini 24 saat önce çekerek kapıları açık bırakın (buzun çözülmesi için).</li>
+        <li>Çamaşır makinesinin <strong>nakliye emniyet vidalarını</strong> taktırın; sarsıntıdan motor hasar görür.</li>
+        <li>Taşınma günü nakliyat ekibini bizzat karşılayın ve hangi kolinin nereye gideceğini belirtin.</li>
+        <li>Yeni evden çıkarken eski evin tüm odalarını, dolapları ve balkonu kontrol edin.</li>
+      </ul>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>D — Dikkatli Kolileme: Eşyalarınızı Hasar Görmeden Taşıyın</h2>
+      <p>Kötü kolileme, iyi bir nakliyat firmasının bile önleyemeyeceği hasarlara yol açar. İşte oda oda dikkat etmeniz gerekenler:</p>
+
+      <h3>Mutfak Eşyaları</h3>
+      <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
+        <li>Tabak, bardak ve cam eşyaları <strong>balonlu naylon ile tek tek sarın</strong>. Çevresine kağıt rulo sarın.</li>
+        <li>Kolinin dibine ve taraflarına yeterince dolgu malzemesi (gazete, köpük) koyun.</li>
+        <li>Her zaman kolinin üstüne "KIRILACAK" yazın; nakliyat ekibi bu kolileri üste koyar.</li>
+        <li>Ağır tabak takımlarını küçük kolilere bölün; büyük koliler ağırlaşınca zemine düşme riski artar.</li>
+      </ul>
+
+      <h3>Beyaz Eşyalar</h3>
+      <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
+        <li><a href="/bursa-merkez-beyaz-esya-tasima-asansoru" class="text-primary font-semibold hover:underline">Beyaz eşya taşıma</a> için varsa orijinal ambalajı kullanın.</li>
+        <li>Çamaşır makinesi nakliye vidaları takılı değilse drumı (tamburu) sünger ile sabitleyin.</li>
+        <li>Buzdolabını daima dik taşıyın; yan yatırılan buzdolabının kompresörü arızalanabilir.</li>
+        <li>Kablolar ve aksesuarları bant ile cihaza iliştirin, kaybolmasın.</li>
+      </ul>
+
+      <h3>Mobilyalar ve Büyük Eşyalar</h3>
+      <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
+        <li>Büyük dolap ve yatak başlıkları gibi mobilyaları demonte edin; merdivenden ve asansörden çok daha kolay geçer.</li>
+        <li>Keskin köşeleri köşe koruyucu ile kaplatın, mobilya kılıfları kullanın.</li>
+        <li>Aynalı eşyaları çapraz bant ile güvenceye alın; çatlak riskini azaltır.</li>
+        <li>3. kat üzeri taşımalarda <a href="/nilufer-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">dış cephe asansörü</a> kullanmak bu tür hasarları neredeyse sıfıra indirir.</li>
+      </ul>
+
+      <h3>Elektronik Eşyalar ve Teknoloji Ürünleri</h3>
+      <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
+        <li>Televizyon ve monitörleri orijinal kutularında taşıyın; yoksa çok katmanlı balonlu naylon ile sarın ve dikeyine koyun.</li>
+        <li>Bilgisayar kasasındaki harici diskleri ve eklenti kartları çıkarın, ayrı bir çantada taşıyın.</li>
+        <li>Tüm kablolar için bir "kablo çantası" hazırlayın ve cihazın adını yazın.</li>
+      </ul>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>E — Eski Ev Çıkışı: Son Kontrol Listesi</h2>
+      <p>Taşınma günü telaşında eski evden hatırlatmayı unutabileceğiniz önemli noktalar:</p>
+      <ul class="list-disc pl-5 mt-4 space-y-2">
+        <li>✅ Tüm dolaplar, çekmeceler ve dolap altları boşaltıldı mı?</li>
+        <li>✅ Balkon, depo veya kömürlük gibi ek alanlar kontrol edildi mi?</li>
+        <li>✅ Çamaşır makinesi, bulaşık makinesi ve klima sökülüp hazır mı?</li>
+        <li>✅ Duvardaki resimler, raflar ve perdeler alındı mı?</li>
+        <li>✅ Kapı kilitleri ve orjinal anahtarlar teslim edildi mi?</li>
+        <li>✅ Elektrik, su, gaz sayaçlarının fotoğrafları çekildi mi?</li>
+        <li>✅ Apartman yönetimi ile aidat hesabı kapandı mı?</li>
+      </ul>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>F — Fark Yaratır: Asansörlü Taşımacılık</h2>
+      <p>Bursa'da <strong>yüksek katlı binalara taşınırken</strong> en çok sorulan soru şudur: <em>"Dış cephe asansörü şart mı?"</em> Kısa cevap: <strong>3. kat ve üzeri için evet, şarttır.</strong></p>
+
+      <p>Merdiven taşımacılığında yaşanan en yaygın sorunlar şunlardır:</p>
+      <ul class="list-disc pl-5 mt-4 mb-6 space-y-2">
+        <li>Büyük mobilyaların merdivenden dönemeyerek duvar ve korkuluklara çarpması.</li>
+        <li>Beyaz eşyaların sarsılarak kompresör ya da tambur arızasına uğraması.</li>
+        <li>Personelin yorulmasıyla birlikte eşya düşürme riskinin artması.</li>
+        <li>Apartman asansöründe yük taşımanın site yönetimi tarafından yasaklanmış olması.</li>
+      </ul>
+
+      <p>Bursa'nın farklı ilçelerinde asansörlü taşımacılık hizmetlerimize ulaşmak için:</p>
+      <ul class="list-disc pl-5 mt-4 mb-6 space-y-2">
+        <li><a href="/osmangazi-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Osmangazi Kiralık Asansör</a></li>
+        <li><a href="/nilufer-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Nilüfer Kiralık Asansör</a></li>
+        <li><a href="/yildirim-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Yıldırım Kiralık Asansör</a></li>
+        <li><a href="/kestel-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Kestel Kiralık Asansör</a></li>
+        <li><a href="/gursu-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Gürsu Kiralık Asansör</a></li>
+        <li><a href="/mudanya-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Mudanya Kiralık Asansör</a></li>
+        <li><a href="/gemlik-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Gemlik Kiralık Asansör</a></li>
+      </ul>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>G — Güvenli Taşıma: Değerli Eşyalar İçin Özel Önlemler</h2>
+      <p>Antika mobilya, sanat eseri, piyano gibi değerli eşyalar <strong>özel taşıma prosedürleri</strong> gerektirir:</p>
+
+      <ul class="list-disc pl-5 mt-4 mb-6 space-y-3">
+        <li><strong>Piyano ve org:</strong> Standart nakliye sepetleri bu eşyalar için tasarlanmamıştır. <a href="/yildirim-piyano-tasima-asansoru" class="text-primary font-semibold hover:underline">Piyano taşıma asansörü</a> ile özel teknikler kullanılmalıdır. Firma ile mutlaka önceden görüşün.</li>
+        <li><strong>Antika ve koleksiyon eşyalar:</strong> Nem ve ısı değişikliklerinden etkilenen bu eşyaları özel bez ve köpük içinde muhafaza edin. Mümkünse kendi aracınızla veya özel kurye ile taşıyın.</li>
+        <li><strong>Büyük camlar ve aynalar:</strong> "Bu/KIRILACAK" işareti yeterli değildir; cam ve ayna köşelerine mutlaka köşe koruyucu geçirin, dikey taşıyın.</li>
+        <li><strong>Nakit para, altın ve mücevher:</strong> <em>Kesinlikle</em> nakliye kamyonuna yüklemeyin. Her zaman üzerinizde veya özel bir kasada taşıyın.</li>
+      </ul>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>H — Hukuki Haklar: Taşınmada Bilinmesi Gerekenler</h2>
+      <p>Taşınma sürecinde hukuki haklarınızı bilmek, olası anlaşmazlıklarda sizi korur:</p>
+
+      <h3>Kira Sözleşmesi Sonlandırma</h3>
+      <p>Kiracı tarafından sözleşme sonlandırılırken <strong>yasal bildirim sürelerine</strong> uymak gerekir. Türk Borçlar Kanunu'na göre genellikle 1 ay önceden yazılı bildirim yeterlidir; ancak sözleşmenizde farklı bir süre belirtilmişse ona uyun.</p>
+
+      <h3>Depozito İadesinin Koşulları</h3>
+      <p>Ev sahibi, evi aldığı gibi teslim aldıktan sonra <strong>depozito iadesini</strong> yapmakla yükümlüdür. Normal kullanım kaynaklı olağan yıpranmalar depozito kesintisi gerekçesi olamaz. Taşınırken evin girişte ve çıkışta fotoğraflarını çekin, olası anlaşmazlıklara karşı deliliniz olsun.</p>
+
+      <h3>Site Yönetimi ve Asansör Kuralları</h3>
+      <p>Pek çok lüks sitenin yönetim planında bina içi asansörün yük taşımak için kullanılması yasaktır. Bu nedenle <a href="/blog/tasinirken-asansor-zorunlu-mu" class="text-primary font-semibold hover:underline">dış cephe asansörü kiralamak</a> hem yasal hem de pratik çözümdür.</p>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>I — İlk Gece Çantası: Taşındıktan Sonraki 24 Saat</h2>
+      <p>Taşındıktan sonra eşyaları açmak uzun sürebilir. Bu nedenle <strong>"ilk gece çantası"</strong> hazırlamayı asla atlamayın:</p>
+
+      <ul class="list-disc pl-5 mt-4 mb-6 space-y-2">
+        <li>Uyku tulumu ya da çarşaf-yastık-nevresim</li>
+        <li>Kişisel bakım ürünleri (diş fırçası, sabun, havlu)</li>
+        <li>Şarj aletleri ve powerbank</li>
+        <li>Birkaç günlük ilaç ve reçeteler</li>
+        <li>Önemli belgeler (kimlik, sigorta, kira sözleşmesi)</li>
+        <li>Bir set yemek takımı ve su bardağı</li>
+        <li>Atıştırmalık ve su</li>
+        <li>Bebek veya evcil hayvanınız için temel ihtiyaçlar</li>
+      </ul>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>J — Jenerasyon Farkı: Çocuklar ve Yaşlılarla Taşınmak</h2>
+      <p>Aile olarak taşınmak ekstra organizasyon gerektirir:</p>
+
+      <h3>Çocuklarla Taşınırken</h3>
+      <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
+        <li>Çocuğunuzu taşınma sürecine dahil edin; kendi odasını taşımasına küçük görevler verin.</li>
+        <li>Sevdiği oyuncakları ve kitapları en son kolileyin, ilk önce açın.</li>
+        <li>Taşınma günü mümkünse çocuğu güvenilir bir akrabanın yanında bırakın.</li>
+        <li>Yeni okul nakil işlemlerini taşınmadan önce başlatın.</li>
+      </ul>
+
+      <h3>Yaşlı Aile Üyeleriyle Taşınırken</h3>
+      <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
+        <li>İlaç kutuları ve sağlık ekipmanları en kolay erişilecek yerde paketlensin.</li>
+        <li>Süreç fiziksel açıdan yorucu olduğu için yaşlı aile üyelerinin taşınma günü yorulmaması için planlamayı önceden yapın.</li>
+        <li>Yeni evin merdiven ve banyo düzenini önceden inceleyin; gerekirse tutunma barı gibi güvenlik önlemleri alın.</li>
+      </ul>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>K — Komşuluk İlişkileri: Taşınırken Dikkat!</h2>
+      <p>Taşınma sürecinde hem eski hem de yeni komşularınızla iyi ilişkiler kurmak yaşam kalitenizi doğrudan etkiler:</p>
+
+      <ul class="list-disc pl-5 mt-4 mb-6 space-y-3">
+        <li><strong>Eski Komşulara Veda:</strong> Özellikle uzun süredir oturuyorsanız komşularınıza taşınma tarihinizi önceden bildirin; gürültü ve park sorunlarına karşı anlayış talep edin.</li>
+        <li><strong>Yeni Komşularla Tanışma:</strong> İlk günlerde kapı kapı dolaşmak zorunda değilsiniz; ancak kapı komşularınıza küçük bir tanışma hediyesi (baklava, çikolata) götürmek birçok potansiyel anlaşmazlığı önler.</li>
+        <li><strong>Gürültü ve Çalışma Saatleri:</strong> Taşınma veya yerleşme sürecindeki çekiç sesi ve gürültü, yasal sessizlik saatlerinde (genellikle 22:00-08:00 arası) yasaktır.</li>
+      </ul>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>M — Mobil Asansör: Sık Sorulan Teknik Sorular</h2>
+      <p>Dış cephe kiralık asansör hakkında müşterilerimizin en sık sorduğu sorular:</p>
+
+      <ul class="list-disc pl-5 mt-4 mb-6 space-y-3">
+        <li><strong>Asansör kaçıncı kata kadar çıkar?</strong> Sistemlerimiz güvenle <strong>15. kata kadar</strong> erişim sağlar. Ayrıntılar için <a href="/blog/kacinci-kata-kadar-cikar" class="text-primary font-semibold hover:underline">mobil asansör kat kapasitesi</a> yazımıza bakın.</li>
+        <li><strong>Sokak dar ise ne olur?</strong> Uzmanlarımız ücretsiz keşifte dar sokak konfigürasyonlarını inceler; pek çok zorlu konumda kurulum sağlayabiliyoruz.</li>
+        <li><strong>Kötü havada çalışır mı?</strong> Güçlü rüzgar veya yoğun yağış durumunda güvenlik protokolü gereğince işlem ertelenebilir. Operatörümüz kararı anlık olarak verir.</li>
+        <li><strong>Asansörü ben kullanabilir miyim?</strong> Hayır; iş güvenliği kanunları gereği asansörü yalnızca operatör belgeli uzmanımız kullanır.</li>
+      </ul>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>N — Yeni Eve Yerleşim: İlk Hafta Yapılacaklar</h2>
+      <p>Eşyalar yeni eve taşındıktan sonra yapılacaklar listesi:</p>
+
+      <ol class="list-decimal pl-5 mt-4 space-y-3 mb-6">
+        <li><strong>Güvenlik Kontrolü:</strong> Kapı kilitlerini değiştirin; bir önceki kiracının elinde anahtar kopyası olabilir.</li>
+        <li><strong>Sayaç Tutanakları:</strong> Yeni evdeki elektrik, su ve gaz sayaçlarının fotoğrafını çekin ve aboneliği kendi adınıza alın.</li>
+        <li><strong>İnternet Kurulumu:</strong> İnternet sağlayıcısı kurulum randevusunu önceden aldıysanız ilk gün aktif olur; almadıysanız birkaç günlük bekleme süreci olabilir.</li>
+        <li><strong>Olası Arızaları Belgeleyin:</strong> Taşınmadan önce evde mevcut olan kırık, çatlak veya boya hasarlarını fotoğrafla kayıt altına alın ve ev sahibine bildirin.</li>
+        <li><strong>Komşu Bilgilendirmesi:</strong> Apartman yöneticisiyle tanışın; bina kurallarını, aidatları ve acil iletişim bilgilerini öğrenin.</li>
+        <li><strong>Koli Açma Sırası:</strong> Önce mutfak, banyo ve yatak odası kolilerini açın. Oturma odası ve dekorasyon işleri ikinci aşamaya bırakılabilir.</li>
+      </ol>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>Sonuç: Profesyonel Destek ile Taşınmak Artık Zor Değil</h2>
+      <p>Ev taşımak, doğru planlama ve doğru ekip ile <strong>büyüleyici bir yeni başlangıca</strong> dönüşebilir. Bu rehberdeki adımları takip ederek hem maddi kayıpları hem de stresi minimuma indirebilirsiniz.</p>
+
+      <p>Bursa'nın tüm ilçelerinde <strong>asansörlü evden eve nakliyat ve kiralık asansör</strong> hizmetleri için deneyimli ekibimizle iletişime geçin. Ücretsiz keşif, sabit fiyat garantisi ve 7/24 hizmet anlayışıyla yanınızdayız.</p>
+
+      <div class="bg-primary/10 border-l-4 border-primary p-6 rounded-r-xl mt-8 mb-6">
+        <h4 class="text-lg font-bold text-secondary dark:text-white mb-2">Hemen Randevu Alın</h4>
+        <p class="text-slate-700 dark:text-slate-300">
+          Taşınma tarihinizi belirlediniz mi? Fiyat almak ve ücretsiz keşif talebinde bulunmak için <a href="https://wa.me/905053297533" class="text-primary font-bold hover:underline">WhatsApp üzerinden yazın (0505 329 75 33)</a> veya <a href="tel:+905053297533" class="text-primary font-bold hover:underline">hemen arayın</a>. Bursa'nın tüm ilçelerinde aynı gün hizmet sunuyoruz.
+        </p>
+      </div>
+    `
   }
 ];
