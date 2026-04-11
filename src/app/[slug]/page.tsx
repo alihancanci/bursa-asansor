@@ -110,9 +110,8 @@ export default async function ServicePage({ params }: Props) {
         "telephone": "+905053297533",
         "url": "https://bursakiralikasansor.com",
         "sameAs": [
-          district.wikidataId ? `https://www.wikidata.org/wiki/${district.wikidataId}` : "",
           "https://www.facebook.com/bursakiralikasansor"
-        ].filter(Boolean),
+        ],
         "department": {
           "@type": "MovingCompany",
           "name": `CNC ${district.name} ${service.name} Şubesi`,
@@ -140,14 +139,13 @@ export default async function ServicePage({ params }: Props) {
           }
         },
         "areaServed": {
-          "@type": "GeoShape",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Bursa",
-            "addressRegion": "Bursa",
+          "@type": "City",
+          "name": district.name,
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Bursa",
             "addressCountry": "TR"
-          },
-          "polygon": "40.58,28.50 40.60,29.30 40.30,30.10 39.90,30.00 39.65,29.40 39.60,28.80 39.80,28.20 40.20,28.10 40.58,28.50"
+          }
         },
         "geo": {
           "@type": "GeoCoordinates",
