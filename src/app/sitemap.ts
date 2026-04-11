@@ -13,10 +13,12 @@ const SERVICE_PAGES_UPDATED = new Date("2025-03-15");
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     { url: BASE_URL, lastModified: SITE_LAST_UPDATED, changeFrequency: "weekly", priority: 1.0 },
+    { url: `${BASE_URL}/evden-eve-nakliye-bursa`, lastModified: SITE_LAST_UPDATED, changeFrequency: "weekly", priority: 0.95 },
     { url: `${BASE_URL}/hakkimizda`, lastModified: new Date("2025-01-15"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/calismalarimiz`, lastModified: new Date("2025-01-15"), changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/blog`, lastModified: BLOG_LAST_UPDATED, changeFrequency: "weekly", priority: 0.8 },
   ];
+
 
   // Blog posts
   const blogPages: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => ({
