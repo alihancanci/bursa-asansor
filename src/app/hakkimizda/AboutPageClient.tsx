@@ -2,6 +2,7 @@
 
 import { useTranslation } from "react-i18next";
 import { DISTRICTS, PHONE_NUMBER } from "@/data";
+import { trackPhoneClick } from "@/lib/analytics";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ShieldCheck, Clock, ArrowUpToLine, Users, ArrowRight, Compass, Target } from "lucide-react";
@@ -84,7 +85,11 @@ export default function AboutPageClient() {
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">Eşyalarınız CNC Güvencesinde</h2>
           <p className="text-xl text-primary-foreground/90 mb-10">Eski usul taşımacılığın risklerine veda edin. Teknolojik asansörlerimiz ve uzman kadromuzla taşınmak artık çok kolay.</p>
-          <a href={`tel:${PHONE_NUMBER.replace(/\s+/g, '')}`} className="inline-flex items-center gap-2 bg-white text-primary hover:bg-slate-50 px-8 py-4 rounded-xl font-bold text-lg transition-all hover:scale-105 shadow-xl shadow-black/10 mx-auto">
+          <a 
+            href={`tel:${PHONE_NUMBER.replace(/\s+/g, '')}`} 
+            onClick={() => trackPhoneClick('About Page')}
+            className="inline-flex items-center gap-2 bg-white text-primary hover:bg-slate-50 px-8 py-4 rounded-xl font-bold text-lg transition-all hover:scale-105 shadow-xl shadow-black/10 mx-auto"
+          >
             Hemen Teklif Alın <ArrowRight className="w-5 h-5" />
           </a>
         </div>

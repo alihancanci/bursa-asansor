@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import { ELEVATOR_SERVICES, MOVING_SERVICES, PHONE_NUMBER, WHATSAPP_LINK } from "@/data";
+import { trackPhoneClick } from "@/lib/analytics";
 import { ArrowUpToLine, Phone, MapPin, Clock, Truck, ShieldCheck, CheckCircle2 } from "lucide-react";
 
 export function Footer() {
@@ -35,7 +36,11 @@ export function Footer() {
               {t('footer.desc', 'Bursa ve tüm ilçelerinde 7/24 mobil asansör kiralama ve nakliyat hizmetleri. 15. kata kadar ulaşım, uzman ekip desteği.')}
             </p>
             <div className="space-y-3">
-              <a href={`tel:${PHONE_NUMBER.replace(/\D/g,'')}`} className="flex items-center gap-3 text-gray-200 hover:text-primary transition-colors">
+              <a 
+                href={`tel:${PHONE_NUMBER.replace(/\D/g,'')}`} 
+                onClick={() => trackPhoneClick('Footer')}
+                className="flex items-center gap-3 text-gray-200 hover:text-primary transition-colors"
+              >
                 <div className="bg-white/5 p-2 rounded-lg"><Phone className="h-4 w-4" /></div>
                 <span className="font-semibold text-sm">{PHONE_NUMBER}</span>
               </a>

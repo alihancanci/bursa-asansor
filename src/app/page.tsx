@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'Bursa Kiralık Asansör CNC Evden Eve Nakliyat',
   description: 'Bursa genelinde 15. kata kadar güvenli ve profesyonel mobil asansör kiralama ve CNC evden eve nakliyat hizmeti. 7/24 operatör desteği için hemen ulaşın.',
   alternates: {
-    canonical: '/',
+    canonical: 'https://bursakiralikasansor.com/',
   },
   openGraph: {
     title: 'Bursa Kiralık Asansör CNC Evden Eve Nakliyat',
     description: 'Bursa genelinde 15. kata kadar güvenli ve profesyonel mobil asansör kiralama ve CNC evden eve nakliyat hizmeti.',
-    url: '/',
+    url: 'https://bursakiralikasansor.com/',
   }
 };
 
@@ -41,7 +41,7 @@ export default function HomePage() {
           "height": 630
         },
         "image": "https://bursakiralikasansor.com/opengraph.jpg",
-        "telephone": "+905053297533",
+        "telephone": "+905056080700",
         "email": "info@bursakiralikasansor.com",
         "priceRange": "₺₺",
         "currenciesAccepted": "TRY",

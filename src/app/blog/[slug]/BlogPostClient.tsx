@@ -55,7 +55,7 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
             <h3 className="text-2xl md:text-3xl font-bold text-secondary dark:text-white mb-4">Profesyonel Çözüm İçin Hemen Teklif Alın</h3>
             <p className="text-slate-600 dark:text-slate-300 mb-8 max-w-2xl mx-auto leading-relaxed">Siz de eşyalarınızı riske atmadan, %100 güvenli ve hızlı dış cephe asansörü ile taşıtmak istiyorsanız Bursa&apos;nın en iyi kiralama firmasıyla iletişime geçin.</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href="https://wa.me/905053297533" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-8 py-4 bg-[#25D366] hover:bg-[#1DA851] text-white rounded-xl font-bold flex items-center justify-center gap-2 transition-all transform hover:-translate-y-1 shadow-xl shadow-[#25D366]/20">
+              <a href="https://wa.me/905056080700" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-8 py-4 bg-[#25D366] hover:bg-[#1DA851] text-white rounded-xl font-bold flex items-center justify-center gap-2 transition-all transform hover:-translate-y-1 shadow-xl shadow-[#25D366]/20">
                 <MessageCircle className="w-5 h-5" /> WhatsApp&apos;tan Teklif Al
               </a>
               <Link href="/nilufer-kiralik-mobil-asansor" className="w-full sm:w-auto px-8 py-4 bg-primary hover:bg-orange-600 text-white rounded-xl font-bold flex items-center justify-center gap-2 transition-all transform hover:-translate-y-1 shadow-xl shadow-primary/20">

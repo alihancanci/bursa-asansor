@@ -4,7 +4,7 @@ import { getCanonicalUrl } from '@/lib/seo';
 import { CheckCircle, Phone, MessageCircle, AlertTriangle, Star, Clock, Shield } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Bursa Evden Eve Nakliyat | 0505 329 75 33 | CNC Asansörlü Taşıma',
+  title: 'Bursa Evden Eve Nakliyat | 0505 608 07 00 | CNC Asansörlü Taşıma',
   description: 'Bursa evden eve nakliyat hizmeti. Asansörlü taşıma, ücretsiz keşif, sabit fiyat garantisi. Osmangazi, Nilüfer, Yıldırım ve tüm Bursa ilçelerine 7/24 profesyonel nakliyat.',
   keywords: ['evden eve nakliyat bursa', 'bursa evden eve', 'bursa nakliyat', 'asansörlü nakliyat bursa', 'bursa ev taşıma'],
   alternates: {
@@ -105,14 +105,14 @@ export default function EvdenEveNakliyeBursa() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+905053297533"
+                href="tel:+905056080700"
                 className="inline-flex items-center justify-center gap-2 bg-primary text-white font-bold px-8 py-4 rounded-2xl hover:bg-primary/90 transition-colors text-lg"
               >
                 <Phone className="w-5 h-5" />
-                0505 329 75 33
+                0505 608 07 00
               </a>
               <a
-                href="https://wa.me/905053297533"
+                href="https://wa.me/905056080700"
                 className="inline-flex items-center justify-center gap-2 bg-green-600 text-white font-bold px-8 py-4 rounded-2xl hover:bg-green-700 transition-colors text-lg"
               >
                 <MessageCircle className="w-5 h-5" />
@@ -254,14 +254,14 @@ export default function EvdenEveNakliyeBursa() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+905053297533"
+                href="tel:+905056080700"
                 className="inline-flex items-center justify-center gap-2 bg-primary text-white font-bold px-8 py-4 rounded-2xl hover:bg-primary/90 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                Hemen Ara: 0505 329 75 33
+                Hemen Ara: 0505 608 07 00
               </a>
               <a
-                href="https://wa.me/905053297533"
+                href="https://wa.me/905056080700"
                 className="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-bold px-8 py-4 rounded-2xl hover:bg-white/20 transition-colors border border-white/20"
               >
                 <MessageCircle className="w-5 h-5" />

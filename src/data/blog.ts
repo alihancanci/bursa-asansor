@@ -88,7 +88,7 @@ export const BLOG_POSTS: BlogPost[] = [
       </ul>
 
       <h2>İşlem Nasıl Gerçekleşir?</h2>
-      <p>Eğer "Bina önü asansör kurmaya müsait mi?" diye düşünüyorsanız, iletişim numaramızdan veya WhatsApp (<a href="https://wa.me/905053297533" class="text-primary font-semibold hover:underline">0505 329 75 33</a>) üzerinden ücretsiz keşif talep etmeniz yeterli. Araç sokak/cadde uygunluğuna göre yanaşır, platform açısı ve denge ayakları (hidrolik sistem) ayarlanır. Ardından eşyalar doğrudan balkon veya sökülen cam boşluklarından evinize ulaştırılır.</p>
+      <p>Eğer "Bina önü asansör kurmaya müsait mi?" diye düşünüyorsanız, iletişim numaramızdan veya WhatsApp (<a href="https://wa.me/905056080700" class="text-primary font-semibold hover:underline">0505 608 07 00</a>) üzerinden ücretsiz keşif talep etmeniz yeterli. Araç sokak/cadde uygunluğuna göre yanaşır, platform açısı ve denge ayakları (hidrolik sistem) ayarlanır. Ardından eşyalar doğrudan balkon veya sökülen cam boşluklarından evinize ulaştırılır.</p>
     `
   },
   {
@@ -539,7 +539,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <div class="bg-primary/10 border-l-4 border-primary p-6 rounded-r-xl mt-8 mb-6">
         <h4 class="text-lg font-bold text-secondary dark:text-white mb-2">Peki Ne Yapmalısınız?</h4>
         <p class="text-slate-700 dark:text-slate-300">
-          Riski sıfırlamak için, işlemi başından sonuna kadar <a href="/bursa-merkez-kiralik-asansor-fiyatlari" class="text-primary font-semibold hover:underline">fiks fiyat garantisi</a> ile sunan ve <strong>kendine ait asansör filosu bulunan</strong> kurumsal firmalarla çalışmalısınız. Detaylı keşif ve %100 güvenli taşıma sözü için hemen <a href="https://wa.me/905053297533" class="text-primary font-bold hover:underline">WhatsApp Üzerinden Teklif Alın (0505 329 75 33)</a>.
+          Riski sıfırlamak için, işlemi başından sonuna kadar <a href="/bursa-merkez-kiralik-asansor-fiyatlari" class="text-primary font-semibold hover:underline">fiks fiyat garantisi</a> ile sunan ve <strong>kendine ait asansör filosu bulunan</strong> kurumsal firmalarla çalışmalısınız. Detaylı keşif ve %100 güvenli taşıma sözü için hemen <a href="https://wa.me/905056080700" class="text-primary font-bold hover:underline">WhatsApp Üzerinden Teklif Alın (0505 608 07 00)</a>.
         </p>
       </div>
     `
@@ -575,7 +575,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <h2>İçiniz Rahat Olsun: Nasıl Çalışıyoruz?</h2>
       <p>Bizim sistemimizde sürprize ve mağduriyete yer yoktur. Her müşteri için süreç nettir:</p>
       <ol class="list-disc pl-5 mt-2 space-y-2">
-        <li>Bize <a href="https://wa.me/905053297533" class="text-primary font-semibold hover:underline">+90 505 329 75 33</a> numarasından ulaşırsınız.</li>
+        <li>Bize <a href="https://wa.me/905056080700" class="text-primary font-semibold hover:underline">+90 505 608 07 00</a> numarasından ulaşırsınız.</li>
         <li>Kat sayınız ve eşya yoğunluğunuz dinlenir / gerekirse online fizibilite yapılır.</li>
         <li>Taşıma tarihi belirlenir ve o gün için size dev <a href="/bursa-merkez-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">mobil asansörümüz</a> ile kendi uzman ekibimiz tahsis edilir.</li>
         <li>İş bittiğinde, eşyalarınız yeni eve sapasağlam monte edildiğinde mutabık kalınan ücret alınır. Aracı, komisyoncu veya son dakika ekstra bedelleri yoktur.</li>
@@ -626,7 +626,7 @@ export const BLOG_POSTS: BlogPost[] = [
       </div>
 
       <h2>Bizi Hemen Arayın, Kafanız Rahat Taşının</h2>
-      <p>Ev taşımak yeterince stresli bir iştir, bırakın ağır yükü dış cephe asansörlerimiz çeksin. Hasarsız, hızlı, asansörlü ve profesyonel taşıma güvencesi için işi şansa bırakmayın. Bize <strong><a href="https://wa.me/905053297533" class="text-primary font-semibold hover:underline">0505 329 75 33</a></strong> adresinden anında ulaşın ve modern taşımacılığın keyfini çıkarın.</p>
+      <p>Ev taşımak yeterince stresli bir iştir, bırakın ağır yükü dış cephe asansörlerimiz çeksin. Hasarsız, hızlı, asansörlü ve profesyonel taşıma güvencesi için işi şansa bırakmayın. Bize <strong><a href="https://wa.me/905056080700" class="text-primary font-semibold hover:underline">0505 608 07 00</a></strong> adresinden anında ulaşın ve modern taşımacılığın keyfini çıkarın.</p>
     `
   },
   {
@@ -971,7 +971,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <div class="bg-primary/10 border-l-4 border-primary p-6 rounded-r-xl mt-8 mb-6">
         <h4 class="text-lg font-bold text-secondary dark:text-white mb-2">Hemen Randevu Alın</h4>
         <p class="text-slate-700 dark:text-slate-300">
-          Taşınma tarihinizi belirlediniz mi? Fiyat almak ve ücretsiz keşif talebinde bulunmak için <a href="https://wa.me/905053297533" class="text-primary font-bold hover:underline">WhatsApp üzerinden yazın (0505 329 75 33)</a> veya <a href="tel:+905053297533" class="text-primary font-bold hover:underline">hemen arayın</a>. Bursa'nın tüm ilçelerinde aynı gün hizmet sunuyoruz.
+          Taşınma tarihinizi belirlediniz mi? Fiyat almak ve ücretsiz keşif talebinde bulunmak için <a href="https://wa.me/905056080700" class="text-primary font-bold hover:underline">WhatsApp üzerinden yazın (0505 608 07 00)</a> veya <a href="tel:+905056080700" class="text-primary font-bold hover:underline">hemen arayın</a>. Bursa'nın tüm ilçelerinde aynı gün hizmet sunuyoruz.
         </p>
       </div>
     `

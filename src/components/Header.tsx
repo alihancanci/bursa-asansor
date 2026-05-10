@@ -5,6 +5,7 @@ import Link from "next/link";
 import { PhoneCall, MessageCircle, ArrowUpToLine, Globe, ChevronDown, Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { PHONE_NUMBER, WHATSAPP_LINK } from "@/data";
+import { trackPhoneClick, trackWhatsAppClick } from "@/lib/analytics";
 
 const LANGUAGES = [
   { code: 'tr', name: 'TR' },
@@ -137,6 +138,7 @@ export function Header() {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackWhatsAppClick('Header')}
               className="hidden lg:flex items-center gap-2 bg-[#25D366]/10 text-[#25D366] hover:bg-[#25D366]/20 px-4 py-2 rounded-full font-medium transition-all text-sm"
             >
               <MessageCircle className="h-4 w-4" />
@@ -144,6 +146,7 @@ export function Header() {
             </a>
             <a
               href={`tel:${PHONE_NUMBER.replace(/\D/g, '')}`}
+              onClick={() => trackPhoneClick('Header')}
               className="flex items-center gap-1.5 md:gap-2 bg-primary hover:bg-orange-600 focus:ring-4 focus:ring-primary/40 focus:outline-none text-white px-3 md:px-4 py-2 md:py-2.5 rounded-xl font-bold transition-all duration-200 text-sm"
             >
               <PhoneCall className="h-4 w-4" />

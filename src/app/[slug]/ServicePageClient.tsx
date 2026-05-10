@@ -113,7 +113,7 @@ export default function ServicePageClient() {
           <p className="text-xl sm:text-2xl font-display font-black text-secondary dark:text-white flex items-center gap-3">
             <Phone className="w-6 h-6 text-primary" />
             <a href={`tel:${PHONE_NUMBER.replace(/\D/g, '')}`} className="hover:text-primary transition-colors">
-              0505 329 75 33
+              0505 608 07 00
             </a>
           </p>
           <div className="hidden md:block h-6 w-px bg-gray-300 dark:bg-white/10" />

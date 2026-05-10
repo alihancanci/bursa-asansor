@@ -41,13 +41,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return { title: 'Sayfa Bulunamadı' };
   }
 
-  // Dinamik benzersiz başlık (Örn: Nilüfer Evden Eve Nakliyat | 0505 329 75 33 | Dar Sokak Uzmanlığı)
+  // Dinamik benzersiz başlık (Örn: Nilüfer Evden Eve Nakliyat | 0505 608 07 00 | Dar Sokak Uzmanlığı)
   const title = district.isPriority 
-    ? `${district.name} ${service.name} | 0505 329 75 33 | Dar Sokak Uzmanlığı`
-    : `${district.name} ${service.name} | 0505 329 75 33 | Güvenli Taşımacılık`;
+    ? `${district.name} ${service.name} | 0505 608 07 00 | Dar Sokak Uzmanlığı`
+    : `${district.name} ${service.name} | 0505 608 07 00 | Güvenli Taşımacılık`;
   
   // Dinamik benzersiz açıklama (Max 160 karakter - Bing/Google uyumlu)
-  const description = `${district.name} bölgesinde dar sokaklara uygun asansörümüzle profesyonel ${service.name} hizmeti. Bilgi ve Randevu: 0505 329 75 33`;
+  const description = `${district.name} bölgesinde dar sokaklara uygun asansörümüzle profesyonel ${service.name} hizmeti. Bilgi ve Randevu: 0505 608 07 00`;
 
   return {
     title,
@@ -107,7 +107,7 @@ export default async function ServicePage({ params }: Props) {
         "@id": `https://bursakiralikasansor.com/#organization`,
         "name": "Bursa Kiralık Asansör CNC Evden Eve Nakliyat",
         "image": "https://bursakiralikasansor.com/opengraph.jpg",
-        "telephone": "+905053297533",
+        "telephone": "+905056080700",
         "url": "https://bursakiralikasansor.com",
         "sameAs": [
           "https://www.facebook.com/bursakiralikasansor"
@@ -117,7 +117,7 @@ export default async function ServicePage({ params }: Props) {
           "name": `CNC ${district.name} ${service.name} Şubesi`,
           "areaServed": district.name,
           "url": `https://bursakiralikasansor.com/${fullSlug}`,
-          "telephone": "+905053297533"
+          "telephone": "+905056080700"
         },
         "address": {
           "@type": "PostalAddress",
@@ -135,7 +135,7 @@ export default async function ServicePage({ params }: Props) {
             "@type": "MovingCompany",
             "name": "Bursa Kiralık Asansör CNC Evden Eve Nakliyat",
             "image": "https://bursakiralikasansor.com/opengraph.jpg",
-            "telephone": "+905053297533"
+            "telephone": "+905056080700"
           }
         },
         "areaServed": {

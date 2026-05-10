@@ -6,9 +6,9 @@ const BASE_URL = "https://bursakiralikasansor.com";
 
 // Sabit tarihler: Google'ın lastModified sinyalini doğru okuması için
 // Her içerik güncellemesinde bu tarihleri manuel güncelleyin
-const SITE_LAST_UPDATED = new Date("2025-04-01");
-const BLOG_LAST_UPDATED = new Date("2025-04-01");
-const SERVICE_PAGES_UPDATED = new Date("2025-03-15");
+const SITE_LAST_UPDATED = new Date();
+const BLOG_LAST_UPDATED = new Date();
+const SERVICE_PAGES_UPDATED = new Date();
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [

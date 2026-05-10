@@ -25,13 +25,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: post.excerpt.length > 155 ? `${post.excerpt.substring(0, 155)}...` : post.excerpt,
     keywords: post.keywords,
     alternates: {
-      canonical: `/blog/${paramsSlug}`,
+      canonical: `https://bursakiralikasansor.com/blog/${paramsSlug}`,
     },
     openGraph: {
       title: post.title,
       description: post.excerpt.length > 155 ? `${post.excerpt.substring(0, 155)}...` : post.excerpt,
       type: 'article',
-      url: `/blog/${post.slug}`,
+      url: `https://bursakiralikasansor.com/blog/${post.slug}`,
       publishedTime: post.date,
       authors: [post.author],
     },
