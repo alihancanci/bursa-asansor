@@ -78,10 +78,14 @@ export default function ServicePageClient() {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.h1 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="text-4xl sm:text-5xl md:text-6xl font-display font-extrabold text-white leading-tight mb-4">
-            {district.name}<br /><span className="text-primary">{serviceName}</span>
-            <span className="block text-2xl sm:text-3xl font-semibold text-slate-600 dark:text-slate-300 mt-2 text-sm leading-snug">{neighborhoodStr} Mahalleleri</span>
+            {district.name} <span className="text-primary">{service.slug === 'kiralik-mobil-asansor' ? 'Kiralık Asansör' : serviceName}</span>
+            <span className="block text-2xl sm:text-3xl font-semibold text-slate-300 mt-2 leading-snug">{neighborhoodStr} ve Tüm Mahalleler</span>
           </motion.h1>
-          <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-xl text-slate-200 leading-relaxed max-w-2xl mb-8">{serviceShortDesc}</motion.p>
+          <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-xl text-slate-200 leading-relaxed max-w-2xl mb-8">
+            {service.slug === 'kiralik-mobil-asansor' 
+              ? `${district.name} genelinde dar sokaklara uygun mobil dış cephe asansörlerimizle 15. kata kadar güvenli eşya, mobilya ve malzeme taşıma hizmeti.` 
+              : serviceShortDesc}
+          </motion.p>
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="flex flex-col sm:flex-row gap-4 max-w-lg">
             <a 
               href={`tel:${PHONE_NUMBER.replace(/\D/g, '')}`} 
@@ -91,7 +95,7 @@ export default function ServicePageClient() {
               <Phone className="w-6 h-6" /> {t('common.call_now', 'Hemen Ara')}
             </a>
             <a 
-              href={WHATSAPP_LINK} 
+              href={`https://wa.me/905056080700?text=${encodeURIComponent(`Merhaba, ${district.name} bölgesinde kiralık asansör / nakliyat hizmeti hakkında fiyat ve uygunluk bilgisi almak istiyorum.`)}`} 
               onClick={() => trackWhatsAppClick(`${district.name} Hero`)}
               target="_blank" 
               rel="noopener noreferrer" 
@@ -159,23 +163,24 @@ export default function ServicePageClient() {
             )}
 
             {/* Neighborhoods Context Box (SEO Otoritesi) */}
-            <section className="mb-14 p-6 bg-[#f8fafc] dark:bg-[#0f172a] border-2 border-dashed border-[#cbd5e1] dark:border-[#334155] rounded-2xl">
-              <h2 className="text-xl font-display font-bold text-[#0f172a] dark:text-white mb-3 flex items-center gap-2">
-                <MapPin className="h-5 w-5 text-primary" />
-                {district.name} {t('service_page.coverage_info', 'Hizmet Bölgesi Detayları')}
+            <section className="mb-14 p-6 md:p-8 bg-[#f8fafc] dark:bg-[#0f172a] border-2 border-dashed border-[#cbd5e1] dark:border-[#334155] rounded-2xl shadow-sm">
+              <h2 className="text-xl md:text-2xl font-display font-bold text-[#0f172a] dark:text-white mb-3 flex items-center gap-2">
+                <MapPin className="h-6 w-6 text-primary" />
+                {district.name} Asansör Kiralama ve Nakliyat Mahallelerimiz
               </h2>
-              <p className="text-[#334155] dark:text-slate-300 leading-relaxed mb-4">
-                {t('service_page.coverage_desc_1', 'Firmamız')} {district.name} {t('service_page.coverage_desc_2', 'merkez ilçesinin tamamı ile birlikte özellikle aşağıdaki mahallelerde kesintisiz mobil asansör ve nakliye çözümleri sunar:')}
+              <p className="text-[#334155] dark:text-slate-300 leading-relaxed mb-5">
+                Bursa {district.name} genelinde ve özellikle aşağıdaki mahallelerde 15. kata kadar ulaşabilen mobil dış cephe asansörlerimizle aynı gün içinde hızlı ve güvenli hizmet sağlıyoruz:
               </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2.5">
                 {district.neighborhoods.map((n) => (
-                  <span key={n} className="px-3 py-1 bg-white dark:bg-navy border border-gray-200 dark:border-white/10 rounded-lg text-sm font-medium text-gray-700 dark:text-slate-300">
-                    {n}
-                  </span>
+                  <div key={n} className="flex items-center gap-2 p-2.5 bg-white dark:bg-navy border border-gray-200 dark:border-white/10 rounded-xl text-xs sm:text-sm font-semibold text-gray-800 dark:text-slate-200">
+                    <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
+                    <span className="truncate">{district.name} {n}</span>
+                  </div>
                 ))}
               </div>
-              <p className="text-[#334155] dark:text-slate-300 leading-relaxed mt-4 italic text-sm">
-                * {district.name} {t('service_page.coverage_desc_4', 'lokasyonunun dar sokaklarına ve yüksek binalarına özel asansör kurulum planlarımız mevcuttur.')}
+              <p className="text-[#334155] dark:text-slate-300 leading-relaxed mt-5 italic text-sm border-t border-gray-200 dark:border-white/10 pt-4">
+                * {district.name} bölgesindeki sitelerin, dar sokakların ve rezidansların mimari yapısına uygun kompakt mobil asansörlerimiz ve operatörlerimizle 7/24 hizmetinizdeyiz.
               </p>
             </section>
 

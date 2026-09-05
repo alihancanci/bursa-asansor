@@ -1,13 +1,18 @@
 import { Metadata } from 'next';
 import BlogIndexClient from './BlogIndexClient';
 
+import { getCanonicalUrl } from '@/lib/seo';
+
 export const metadata: Metadata = {
-  title: 'Blog | Taşınma Rehberi ve Asansör Kiralama Tüyoları',
+  title: 'Asansör Kiralama Tüyoları & Blog | Bursa Kiralık Asansör CNC',
   description: 'Taşınırken nelere dikkat edilmeli? Kiralık asansör fiyatları nasıl belirlenir? Hepsi ve daha fazlası uzman makalelerimizle blog bölümünde.',
+  alternates: {
+    canonical: getCanonicalUrl('/blog'),
+  },
   openGraph: {
-    title: 'Blog | Taşınma Rehberi ve Asansör Kiralama Tüyoları',
+    title: 'Asansör Kiralama Tüyoları & Blog | Bursa Kiralık Asansör CNC',
     description: 'Taşınırken nelere dikkat edilmeli? Kiralık asansör fiyatları nasıl belirlenir?',
-    url: '/blog',
+    url: getCanonicalUrl('/blog'),
   }
 };
 

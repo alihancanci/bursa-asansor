@@ -4,7 +4,7 @@ import { getCanonicalUrl } from '@/lib/seo';
 import { CheckCircle, Phone, MessageCircle, AlertTriangle, Star, Clock, Shield } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Bursa Evden Eve Nakliyat | 0505 608 07 00 | CNC Asansörlü Taşıma',
+  title: 'Bursa Evden Eve Nakliyat | CNC Asansörlü Taşıma',
   description: 'Bursa evden eve nakliyat hizmeti. Asansörlü taşıma, ücretsiz keşif, sabit fiyat garantisi. Osmangazi, Nilüfer, Yıldırım ve tüm Bursa ilçelerine 7/24 profesyonel nakliyat.',
   keywords: ['evden eve nakliyat bursa', 'bursa evden eve', 'bursa nakliyat', 'asansörlü nakliyat bursa', 'bursa ev taşıma'],
   alternates: {

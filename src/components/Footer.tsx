@@ -81,15 +81,73 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/hizmet-bolgelerimiz" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
+                  Hizmet Bölgelerimiz
+                </Link>
+              </li>
+              <li>
                 <Link href="/blog" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
                   Blog / Rehber
                 </Link>
               </li>
+              <li>
+                <Link href="/calismalarimiz" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
+                  Çalışmalarımız
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Column 1: Kiralık Asansör Hizmetleri */}
+          {/* Column 1: Popüler Bölgeler (VIP SEO) */}
+          <div className="lg:col-span-1">
+            <div className="flex items-center gap-2 mb-5">
+              <MapPin className="h-4 w-4 text-primary shrink-0" />
+              <h3 className="text-sm font-bold text-white uppercase tracking-wider font-display">Popüler Bölgeler</h3>
+            </div>
+            <ul className="space-y-2.5">
+              <li>
+                <Link href="/nilufer-kiralik-mobil-asansor" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
+                  Nilüfer Kiralık Asansör
+                </Link>
+              </li>
+              <li>
+                <Link href="/osmangazi-kiralik-mobil-asansor" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
+                  Osmangazi Kiralık Asansör
+                </Link>
+              </li>
+              <li>
+                <Link href="/yildirim-kiralik-mobil-asansor" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
+                  Yıldırım Kiralık Asansör
+                </Link>
+              </li>
+              <li>
+                <Link href="/mudanya-kiralik-mobil-asansor" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
+                  Mudanya Kiralık Asansör
+                </Link>
+              </li>
+              <li>
+                <Link href="/nilufer-evden-eve-nakliyat" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
+                  Nilüfer Evden Eve Nakliyat
+                </Link>
+              </li>
+              <li>
+                <Link href="/osmangazi-evden-eve-nakliyat" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
+                  Osmangazi Evden Eve Nakliyat
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 2: Kiralık Asansör Hizmetleri */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-5">
               <ArrowUpToLine className="h-4 w-4 text-primary shrink-0" />
@@ -107,7 +165,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 2: Nakliyat Hizmetleri */}
+          {/* Column 3: Nakliyat Hizmetleri */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-5">
               <Truck className="h-4 w-4 text-primary shrink-0" />

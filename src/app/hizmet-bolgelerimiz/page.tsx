@@ -5,13 +5,13 @@ import { ArrowRight, MapPin } from 'lucide-react';
 import { getCanonicalUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Hizmet Bölgelerimiz | Bursa Kiralık Asansör CNC Evden Eve Nakliyat',
+  title: 'Hizmet Bölgelerimiz | Bursa Kiralık Asansör CNC',
   description: 'Bursa genelinde Nilüfer, Osmangazi, Yıldırım ve tüm ilçelerde profesyonel asansör kiralama ve CNC evden eve nakliyat hizmeti veriyoruz.',
   alternates: {
     canonical: getCanonicalUrl('/hizmet-bolgelerimiz'),
   },
   openGraph: {
-    title: 'Hizmet Bölgelerimiz | Bursa Kiralık Asansör CNC Evden Eve Nakliyat',
+    title: 'Hizmet Bölgelerimiz | Bursa Kiralık Asansör CNC',
     description: 'Bursa genelinde tüm ilçelere 7/24 asansörlü nakliyat hizmeti.',
     url: getCanonicalUrl('/hizmet-bolgelerimiz'),
   }
@@ -33,15 +33,24 @@ export default function ServiceAreasPage() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {DISTRICTS.map((district) => (
-            <div key={district.slug} className="bg-white dark:bg-slate-800 rounded-3xl p-8 shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-100 dark:border-slate-700 hover:border-primary/30 transition-all duration-300">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-orange-100 dark:bg-orange-500/20 rounded-2xl flex items-center justify-center">
-                  <MapPin className="w-6 h-6 text-primary" />
+          {[...DISTRICTS].sort((a, b) => (b.isPriority ? 1 : 0) - (a.isPriority ? 1 : 0)).map((district) => (
+            <div key={district.slug} className={`bg-white dark:bg-slate-800 rounded-3xl p-8 shadow-xl shadow-slate-200/50 dark:shadow-none border transition-all duration-300 ${district.isPriority ? 'border-primary/40 ring-1 ring-primary/20' : 'border-slate-100 dark:border-slate-700 hover:border-primary/30'}`}>
+              <div className="flex items-center justify-between mb-6">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 bg-orange-100 dark:bg-orange-500/20 rounded-2xl flex items-center justify-center">
+                    <MapPin className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
+                      {district.name}
+                    </h2>
+                    {district.isPriority && (
+                      <span className="text-[11px] font-bold text-primary uppercase tracking-wider">
+                        Öncelikli Hizmet Bölgesi
+                      </span>
+                    )}
+                  </div>
                 </div>
-                <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
-                  {district.name}
-                </h2>
               </div>
               
               <ul className="space-y-3 mb-8">
@@ -52,7 +61,7 @@ export default function ServiceAreasPage() {
                       className="group flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors"
                     >
                       <span className="text-slate-600 dark:text-slate-300 group-hover:text-primary transition-colors text-sm font-medium">
-                        {service.name}
+                        {district.name} {service.name}
                       </span>
                       <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-primary transition-colors transform group-hover:translate-x-1" />
                     </Link>

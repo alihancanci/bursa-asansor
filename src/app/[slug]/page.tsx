@@ -22,7 +22,7 @@ export async function generateStaticParams() {
   return params;
 }
 
-// SEO: Her sayfa için eşsiz ve dinamik Title + Meta Description
+// SEO: Her sayfa için eşsiz ve tam eşleşme (Exact-Match) Title + Meta Description
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug: paramsSlug } = await params;
   const fullSlug = paramsSlug || "";
@@ -41,25 +41,60 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return { title: 'Sayfa Bulunamadı' };
   }
 
-  // Dinamik benzersiz başlık (Örn: Nilüfer Evden Eve Nakliyat | 0505 608 07 00 | Dar Sokak Uzmanlığı)
-  const title = district.isPriority 
-    ? `${district.name} ${service.name} | 0505 608 07 00 | Dar Sokak Uzmanlığı`
-    : `${district.name} ${service.name} | 0505 608 07 00 | Güvenli Taşımacılık`;
+  // Arama hacmi en yüksek 4 öncelikli ilçe için özel başlık ve açıklama stratejisi (<60 karakter kuralı)
+  let title = `${district.name} ${service.name} | Bursa Kiralık Asansör`;
+
+  if (service.slug === "kiralik-mobil-asansor") {
+    // En çok aranan kalıp "Nilüfer Kiralık Asansör" veya "Osmangazi Kiralık Asansör"
+    if (district.slug === "nilufer") {
+      title = "Nilüfer Kiralık Asansör | 7/24 Asansör Kiralama";
+    } else if (district.slug === "osmangazi") {
+      title = "Osmangazi Kiralık Asansör | Uygun Fiyat & 7/24";
+    } else if (district.slug === "yildirim") {
+      title = "Yıldırım Kiralık Asansör | 15. Kata Kadar Nakliyat";
+    } else if (district.slug === "mudanya") {
+      title = "Mudanya Kiralık Asansör | Güzelyalı & Bademli";
+    } else {
+      title = `${district.name} Kiralık Asansör | 7/24 Asansör Kiralama`;
+    }
+  } else if (service.slug === "evden-eve-asansorlu-nakliyat" || service.slug === "evden-eve-nakliyat") {
+    title = `${district.name} Evden Eve Nakliyat | Asansörlü Taşıma`;
+  } else if (service.slug === "kiralik-asansor-fiyatlari") {
+    title = `${district.name} Kiralık Asansör Fiyatları | 2026 Güncel`;
+  } else if (service.slug === "saatlik-asansor-kiralama") {
+    title = `${district.name} Saatlik Asansör Kiralama | Hızlı Kurulum`;
+  } else {
+    title = `${district.name} ${service.name} | 15. Kata Kadar`;
+  }
+
+  // 60 karakter limitini garanti altına al
+  if (title.length > 60) {
+    title = title.substring(0, 57) + "...";
+  }
+
+  // Dinamik açıklama (Max 155 karakter - Tam eşleşme + mahalleler + CTA)
+  const topHoods = district.neighborhoods.slice(0, 3).join(", ");
+  let description = `${district.name} ${service.name} hizmeti. ${topHoods} geneli 15. kata kadar güvenli taşıma. 7/24 fiyat ve randevu: 0505 608 07 00.`;
   
-  // Dinamik benzersiz açıklama (Max 160 karakter - Bing/Google uyumlu)
-  const description = `${district.name} bölgesinde dar sokaklara uygun asansörümüzle profesyonel ${service.name} hizmeti. Bilgi ve Randevu: 0505 608 07 00`;
+  if (service.slug === "kiralik-mobil-asansor") {
+    description = `Bursa ${district.name} kiralık asansör ve asansörlü nakliyat. ${topHoods} geneli 15. kata kadar eşya ve yük taşıma. Hemen ara: 0505 608 07 00.`;
+  }
+
+  if (description.length > 155) {
+    description = description.substring(0, 152) + "...";
+  }
 
   return {
     title,
     description,
     alternates: {
-      canonical: `/${fullSlug}`,
+      canonical: `https://bursakiralikasansor.com/${fullSlug}`,
     },
     openGraph: {
       title,
       description,
       type: 'website',
-      url: `/${fullSlug}`,
+      url: `https://bursakiralikasansor.com/${fullSlug}`,
       siteName: "Bursa Kiralık Asansör CNC Evden Eve Nakliyat",
     },
     twitter: {
@@ -138,15 +173,25 @@ export default async function ServicePage({ params }: Props) {
             "telephone": "+905056080700"
           }
         },
-        "areaServed": {
-          "@type": "City",
-          "name": district.name,
-          "containedInPlace": {
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": district.name,
+            "containedInPlace": {
+              "@type": "AdministrativeArea",
+              "name": "Bursa",
+              "addressCountry": "TR"
+            }
+          },
+          ...district.neighborhoods.slice(0, 6).map(n => ({
             "@type": "AdministrativeArea",
-            "name": "Bursa",
-            "addressCountry": "TR"
-          }
-        },
+            "name": `${district.name} ${n}`,
+            "containedInPlace": {
+              "@type": "City",
+              "name": district.name
+            }
+          }))
+        ],
         "geo": {
           "@type": "GeoCoordinates",
           "latitude": district.latitude,

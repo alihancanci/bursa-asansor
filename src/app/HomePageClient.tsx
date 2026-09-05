@@ -115,6 +115,98 @@ export default function HomePageClient() {
         <FeaturesBar />
       </div>
 
+      {/* Öncelikli Hizmet Bölgelerimiz (Nilüfer, Osmangazi, Yıldırım, Mudanya VIP SEO Kartları) */}
+      <section className="py-12 bg-white dark:bg-navy border-b border-border dark:border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-8">
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-2">
+                Bursa Merkez & Çevre
+              </div>
+              <h2 className="text-2xl sm:text-3xl font-display font-extrabold text-secondary dark:text-white">
+                Öncelikli Asansör Kiralama Bölgelerimiz
+              </h2>
+            </div>
+            <p className="text-sm text-slate-700 dark:text-slate-300 mt-2 md:mt-0 max-w-md">
+              Nilüfer, Osmangazi, Yıldırım ve Mudanya ilçelerinde 15. kata kadar anında mobil asansör ve nakliyat desteği.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              {
+                slug: "nilufer",
+                name: "Nilüfer",
+                title: "Nilüfer Kiralık Asansör",
+                desc: "Özlüce, Balat, Görükle ve İhsaniye rezidanslarına özel 7/24 sarsıntısız asansör kiralama.",
+                hoods: ["Özlüce", "Balat", "Görükle", "İhsaniye"],
+                asansorUrl: "/nilufer-kiralik-mobil-asansor",
+                nakliyatUrl: "/nilufer-evden-eve-nakliyat"
+              },
+              {
+                slug: "osmangazi",
+                name: "Osmangazi",
+                title: "Osmangazi Kiralık Asansör",
+                desc: "Hamitler, Yunuseli, Dikkaldırım ve Çekirge dar sokaklarına uygun kompakt asansörler.",
+                hoods: ["Hamitler", "Yunuseli", "Dikkaldırım", "Çekirge"],
+                asansorUrl: "/osmangazi-kiralik-mobil-asansor",
+                nakliyatUrl: "/osmangazi-evden-eve-nakliyat"
+              },
+              {
+                slug: "yildirim",
+                name: "Yıldırım",
+                title: "Yıldırım Kiralık Asansör",
+                desc: "Millet Mahallesi, Teleferik ve Ertuğrulgazi dik yamaçlarında güvenli hidrolik transfer.",
+                hoods: ["Millet Mah.", "Teleferik", "Ertuğrulgazi", "Mesken"],
+                asansorUrl: "/yildirim-kiralik-mobil-asansor",
+                nakliyatUrl: "/yildirim-evden-eve-nakliyat"
+              },
+              {
+                slug: "mudanya",
+                name: "Mudanya",
+                title: "Mudanya Kiralık Asansör",
+                desc: "Güzelyalı, Bademli villaları ve sahil bandına özel rüzgar dirençli asansörlü taşımacılık.",
+                hoods: ["Güzelyalı", "Bademli", "Burgaz", "Halitpaşa"],
+                asansorUrl: "/mudanya-kiralik-mobil-asansor",
+                nakliyatUrl: "/mudanya-evden-eve-nakliyat"
+              }
+            ].map((d) => (
+              <div key={d.slug} className="bg-slate-50 dark:bg-navy-light/60 border border-slate-200 dark:border-white/10 rounded-2xl p-5 hover:border-primary transition-all flex flex-col justify-between group shadow-sm hover:shadow-md">
+                <div>
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-xs font-bold text-primary bg-primary/10 px-2.5 py-1 rounded-lg uppercase">
+                      {d.name}
+                    </span>
+                    <span className="text-xs text-slate-700 dark:text-slate-300 font-medium">15. Kata Kadar</span>
+                  </div>
+                  <h3 className="text-lg font-bold text-secondary dark:text-white mb-2 group-hover:text-primary transition-colors">
+                    <Link href={d.asansorUrl}>{d.title}</Link>
+                  </h3>
+                  <p className="text-xs text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
+                    {d.desc}
+                  </p>
+                  <div className="flex flex-wrap gap-1.5 mb-4">
+                    {d.hoods.map(h => (
+                      <span key={h} className="text-[11px] bg-white dark:bg-navy px-2 py-0.5 rounded border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300 font-medium">
+                        {h}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                <div className="pt-3 border-t border-slate-200 dark:border-white/10 flex items-center justify-between text-xs font-bold">
+                  <Link href={d.asansorUrl} className="text-primary hover:underline flex items-center gap-1">
+                    Asansör Kirala <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                  <Link href={d.nakliyatUrl} className="text-slate-700 dark:text-slate-300 hover:text-primary transition-colors">
+                    Evden Eve
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-slate-50 dark:bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -328,7 +420,7 @@ export default function HomePageClient() {
                     href={`/${district.slug}-kiralik-mobil-asansor`}
                     className="bg-white dark:bg-navy-light text-secondary dark:text-white py-3 px-2 rounded-xl text-center border border-border dark:border-white/10 hover:border-primary hover:text-primary transition-all font-medium text-xs sm:text-sm shadow-sm"
                   >
-                    {district.name} Asansör
+                    {district.name} Kiralık Asansör
                   </Link>
                 ))}
               </div>
@@ -345,7 +437,7 @@ export default function HomePageClient() {
                     href={`/${district.slug}-evden-eve-nakliyat`}
                     className="bg-white dark:bg-navy-light text-secondary dark:text-white py-3 px-2 rounded-xl text-center border border-border dark:border-white/10 hover:border-primary hover:text-primary transition-all font-medium text-xs sm:text-sm shadow-sm"
                   >
-                    {district.name} Nakliyat
+                    {district.name} Evden Eve Nakliyat
                   </Link>
                 ))}
               </div>
