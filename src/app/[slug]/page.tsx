@@ -226,28 +226,30 @@ export default async function ServicePage({ params }: Props) {
           ]
         }
       },
-      // 3. Breadcrumb (Navigasyon) Şeması
+      // 3. Breadcrumb (Navigasyon) Şeması — Hiyerarşik Silo Otoritesi
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
-            "name": "Ana Sayfa",
+            "name": "Bursa Kiralık Asansör",
             "item": "https://bursakiralikasansor.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
-            "name": service.name,
-            "item": `https://bursakiralikasansor.com/#services`
+            "name": `${district.name} Kiralık Asansör`,
+            "item": `https://bursakiralikasansor.com/${district.slug}-kiralik-mobil-asansor`
           },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": district.name,
-            "item": `https://bursakiralikasansor.com/${fullSlug}`
-          }
+          ...(service.slug !== "kiralik-mobil-asansor" ? [
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": service.name,
+              "item": `https://bursakiralikasansor.com/${fullSlug}`
+            }
+          ] : [])
         ]
       },
       // 4. SSS (FAQ) Şeması (İnsanlar Bunu da Sordu - People Also Ask Optimizasyonu)

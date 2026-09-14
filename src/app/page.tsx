@@ -2,14 +2,14 @@ import { Metadata } from 'next';
 import HomePageClient from './HomePageClient';
 
 export const metadata: Metadata = {
-  title: 'Bursa Kiralık Asansör CNC Evden Eve Nakliyat',
-  description: 'Bursa genelinde 15. kata kadar güvenli ve profesyonel mobil asansör kiralama ve CNC evden eve nakliyat hizmeti. 7/24 operatör desteği için hemen ulaşın.',
+  title: 'Bursa Kiralık Asansör | Evden Eve Nakliyat & Mobil Asansör',
+  description: 'Bursa kiralık asansör ve evden eve nakliyat hizmeti. Nilüfer, Osmangazi, Yıldırım ve Mudanya başta olmak üzere 15. kata kadar güvenli taşıma: 0505 608 07 00.',
   alternates: {
     canonical: 'https://bursakiralikasansor.com/',
   },
   openGraph: {
-    title: 'Bursa Kiralık Asansör CNC Evden Eve Nakliyat',
-    description: 'Bursa genelinde 15. kata kadar güvenli ve profesyonel mobil asansör kiralama ve CNC evden eve nakliyat hizmeti.',
+    title: 'Bursa Kiralık Asansör | Evden Eve Nakliyat & Mobil Asansör',
+    description: 'Bursa kiralık asansör ve evden eve nakliyat hizmeti. Nilüfer, Osmangazi, Yıldırım ve Mudanya başta olmak üzere 15. kata kadar güvenli taşıma: 0505 608 07 00.',
     url: 'https://bursakiralikasansor.com/',
   }
 };

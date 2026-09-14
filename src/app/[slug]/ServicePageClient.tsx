@@ -54,14 +54,28 @@ export default function ServicePageClient() {
 
   return (
     <>
-      {/* Breadcrumb strip */}
+      {/* Breadcrumb strip — Silo PageRank Aktarımı: Tali sayfadan doğrudan ana ilçe otorite sayfasına akış */}
       <nav aria-label="Konum" className="bg-gray-100 dark:bg-navy border-b border-gray-300 dark:border-white/10 px-4 sm:px-6 py-3">
         <div className="max-w-7xl mx-auto flex items-center gap-1.5 text-sm text-gray-600 dark:text-slate-400">
           <Link href="/" className="hover:text-primary underline underline-offset-2 transition-colors">{t('nav.home', 'Ana Sayfa')}</Link>
           <ChevronRight className="h-4 w-4" aria-hidden="true" />
-          <span className="hover:text-primary underline underline-offset-2 cursor-default">{district.name}</span>
-          <ChevronRight className="h-4 w-4" aria-hidden="true" />
-          <span className="text-gray-900 dark:text-white font-semibold" aria-current="page">{serviceName}</span>
+          {service.slug === 'kiralik-mobil-asansor' ? (
+            <span className="text-gray-900 dark:text-white font-semibold">{district.name} Kiralık Asansör</span>
+          ) : (
+            <Link 
+              href={`/${district.slug}-kiralik-mobil-asansor`} 
+              className="hover:text-primary underline underline-offset-2 font-medium transition-colors"
+              title={`${district.name} Kiralık Asansör Ana Sayfası`}
+            >
+              {district.name} Kiralık Asansör
+            </Link>
+          )}
+          {service.slug !== 'kiralik-mobil-asansor' && (
+            <>
+              <ChevronRight className="h-4 w-4" aria-hidden="true" />
+              <span className="text-gray-900 dark:text-white font-semibold" aria-current="page">{serviceName}</span>
+            </>
+          )}
         </div>
       </nav>
 
