@@ -109,6 +109,33 @@ export default function HomePage() {
           "Asansörlü Nakliyat", "Mobil Asansör Kiralama", "Dar Sokak Asansörü",
           "Evden Eve Nakliyat Bursa", "İnşaat Asansörü", "Eşya Taşıma Asansörü"
         ],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+905056080700",
+            "contactType": "customer service",
+            "areaServed": "TR",
+            "availableLanguage": ["Turkish", "English", "Arabic"],
+            "hoursAvailable": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+              "opens": "00:00",
+              "closes": "23:59"
+            }
+          }
+        ],
+        "potentialAction": [
+          {
+            "@type": "CommunicateAction",
+            "name": "WhatsApp Hızlı Fiyat Al",
+            "target": "https://wa.me/905056080700?text=Merhaba,%20Bursa'da%20asansör%20ve%20nakliyat%20fiyatı%20almak%20istiyorum."
+          },
+          {
+            "@type": "ReserveAction",
+            "name": "Acil Mobil Asansör Çağır",
+            "target": "tel:+905056080700"
+          }
+        ],
         // TODO: Google Business Profile açıldığında sameAs'a ekle: "https://maps.app.goo.gl/XXXXX"
         // TODO: Yandex Maps profilini oluşturunca ekle: "https://yandex.com.tr/maps/-/XXXXX"
         "sameAs": [

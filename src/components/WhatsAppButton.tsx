@@ -1,6 +1,7 @@
 "use client";
-import { MessageCircle } from "lucide-react";
-import { WHATSAPP_LINK } from "@/data";
+import { MessageCircle, Phone } from "lucide-react";
+import { PHONE_NUMBER, WHATSAPP_LINK } from "@/data";
+import { trackPhoneClick, trackWhatsAppClick } from "@/lib/analytics";
 
 export function WhatsAppButton() {
   return (
@@ -21,18 +22,35 @@ export function WhatsAppButton() {
         <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-20 -z-10" />
       </a>
 
-      {/* MOBİL: Ekranın en altında başparmak hizasında yüzen geniş bar (Thumb-Zone Floating Pill) */}
-      <div className="md:hidden fixed bottom-6 left-5 right-5 z-50">
-        <a
-          href={WHATSAPP_LINK}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center justify-center gap-3 w-full bg-gradient-to-r from-[#20B053] to-[#25D366] text-white py-4 px-4 rounded-2xl font-bold shadow-[0_10px_25px_rgba(37,211,102,0.5)] active:scale-[0.98] active:shadow-sm transition-all"
-        >
-          <MessageCircle className="w-6 h-6 animate-bounce" />
-          <span className="text-[16px] tracking-wide">WhatsApp'tan Fiyat Alın</span>
-        </a>
-      </div>
+      {/* MOBİL: Ekranın en altında başparmak hizasında sabit ikili hızlı bar (Hemen Ara & Fiyat Al) */}
+      <aside 
+        aria-label="Hızlı İletişim Menüsü"
+        className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 px-3 py-2 pb-[max(0.75rem,env(safe-area-inset-bottom))] shadow-[0_-4px_25px_rgba(0,0,0,0.12)]"
+      >
+        <div className="grid grid-cols-2 gap-2.5 max-w-md mx-auto">
+          {/* 1. Buton: Hemen Ara */}
+          <a
+            href={`tel:${PHONE_NUMBER.replace(/\D/g, '')}`}
+            onClick={() => trackPhoneClick('MobileStickyDock')}
+            className="flex items-center justify-center gap-2 py-3.5 px-3 rounded-2xl bg-primary hover:bg-orange-600 text-white font-bold text-sm sm:text-base shadow-lg shadow-primary/25 active:scale-95 transition-transform"
+          >
+            <Phone className="w-5 h-5 shrink-0 fill-current animate-pulse" />
+            <span>Hemen Ara</span>
+          </a>
+
+          {/* 2. Buton: Fiyat Al */}
+          <a
+            href={WHATSAPP_LINK}
+            onClick={() => trackWhatsAppClick('MobileStickyDock')}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 py-3.5 px-3 rounded-2xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-sm sm:text-base shadow-lg shadow-[#25D366]/25 active:scale-95 transition-transform"
+          >
+            <MessageCircle className="w-5 h-5 shrink-0" />
+            <span>Fiyat Al</span>
+          </a>
+        </div>
+      </aside>
     </>
   );
 }

@@ -31,7 +31,7 @@ export function ClientProviders({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans overflow-x-hidden">
       <Header />
-      <main className="flex-1 flex flex-col">
+      <main className="flex-1 flex flex-col pb-16 md:pb-0">
         {children}
       </main>
       <Footer />
