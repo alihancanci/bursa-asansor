@@ -10,7 +10,22 @@ export default function robots(): MetadataRoute.Robots {
       },
       // Yapay Zeka (AI) Modelleri için VIP Geçiş İzni (GEO Taktik)
       {
-        userAgent: ["GPTBot", "ChatGPT-User", "Google-Extended", "Claude-Web", "PerplexityBot", "anthropic-ai", "OmgiliBot", "YandexBot"],
+        userAgent: [
+          "GPTBot",
+          "ChatGPT-User",
+          "Google-Extended",
+          "Claude-Web",
+          "PerplexityBot",
+          "anthropic-ai",
+          "OmgiliBot",
+          "YandexBot",
+          "Applebot",
+          "Applebot-Extended",
+          "Meta-ExternalAgent",
+          "facebookexternalhit",
+          "Bytespider",
+          "cohere-ai"
+        ],
         allow: "/",
       }
     ],
