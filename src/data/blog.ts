@@ -975,5 +975,386 @@ export const BLOG_POSTS: BlogPost[] = [
         </p>
       </div>
     `
+  },
+  {
+    id: "nilufer-kiralik-asansor-yuksek-kat-nakliyat",
+    slug: "nilufer-kiralik-asansor-yuksek-kat-nakliyat",
+    title: "Nilüfer Kiralık Asansör | Yüksek Katlı Sitelerde Çiziksiz Taşıma",
+    excerpt: "Nilüfer'de 20. kata kadar mobil asansör kiralama. Özlüce, Balat ve Görükle sitelerinde bina içi hasarsız, cezasız, 2 saatte jet hızında taşınma çözümü.",
+    date: "14 Eylül 2026",
+    readTime: "7 dk okuma",
+    category: "Lokal Rehber",
+    author: "Bursa Kiralık Asansör CNC Saha Ekibi",
+    image: "/images/hero-bg.png",
+    metaDescription: "Nilüfer kiralık asansör arayanlara özel saha rehberi. Özlüce ve Balat sitelerinde cezasız, hasarsız, hızlı dış cephe asansörü kiralama avantajları.",
+    keywords: [
+      "nilüfer kiralık asansör",
+      "nilüfer asansörlü nakliye",
+      "özlüce kiralık asansör",
+      "balat ev taşıma asansörü",
+      "görükle mobil yük asansörü",
+      "bursa asansör kiralama"
+    ],
+    faqs: [
+      {
+        q: "Nilüfer'deki sitelerin bahçesine mobil asansör kurulabilir mi?",
+        a: "Evet. 3.5 tonluk kompakt araç şasisi üzerine monteli hidrolik asansörlerimiz, site yangın tahliye yollarını ve peyzaj alanlarını ezmeden, kauçuk zemin pabuçlarıyla 35-40 derecelik güvenli yanaşma açısıyla dakikalar içinde kurulur."
+      },
+      {
+        q: "Nilüfer'de kiralık asansör kaçıncı kata kadar ulaşıyor?",
+        a: "Nilüfer genelindeki araç filomuz 70 metreye (yaklaşık 20-24. kat) kadar 400 kg yük taşıma kapasitesiyle kesintisiz operasyon sağlamaktadır."
+      },
+      {
+        q: "Komple ev taşımadan yalnızca mobilya veya tadilat molozu için asansör kiralayabilir miyiz?",
+        a: "Kesinlikle evet. Merdivenden sığmayan Amerikan kapı, salon köşe takımı, ada tezgah mermeri veya tadilat seramikleri için saatlik ve parça başı kiralama desteği sunuyoruz."
+      }
+    ],
+    content: `
+      <h2>Nilüfer’de Yüksek Katlara Taşınırken Karşılaşılan Gerçekler</h2>
+      <p>Bir koltuğun kumaşını yırtmak, merdiven sahanlığındaki yangın tüpünü devirmek veya apartman yönetiminden <em>"bina yolcu asansörünü yük için kullandınız ve kabini çizdiniz"</em> gerekçesiyle 15.000 TL ceza faturası almak... Nilüfer’deki yüksek katlı sitelerde taşınırken ödeyeceğiniz bedel, nakliye ücretinden katbekat fazla olabilir. 15 yıldır Bursa sokaklarındayız; Özlüce’nin geniş balkonlu sitelerinden Görükle’nin öğrenci sirkülasyonuna kadar sahada gördüğümüz tek bir gerçek var: <strong>İnsan gücü eşyayı taşırken yıpratır, dış cephe asansörü ise eşyanızı ve paranızı korur.</strong></p>
+
+      <p>Bursa'nın en yoğun göç alan ve modern konut projelerine ev sahipliği yapan ilçesinde, geleneksel taşımacılık yöntemleri hem site yönetimleriyle gerginlik yaratır hem de mobilyalarınızın ömrünü kısaltır. <a href="/nilufer-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Nilüfer kiralık mobil asansör</a> çözümlerimiz, binanın dış cephesine kurulan teleskopik ray mekanizmasıyla ortak kullanım alanlarına hiç girmeden doğrudan evinizin salonuna veya balkonuna güvenli hat açar.</p>
+
+      <h2>Nilüfer Saha Analizi: Site Yönetimleri, Balkon Açıları ve Rüzgar Riski</h2>
+      <p>Nilüfer ilçesi kentsel dokusu itibarıyla geniş bulvarlara sahip olsa da site içi operasyonlarda belirli kritik kurallar barındırır:</p>
+      
+      <ul class="list-disc pl-5 mt-4 space-y-3 mb-6">
+        <li><strong>Site Yönetim Katı Kuralları:</strong> Balat, 23 Nisan, Ertuğrul ve Altınşehir mahallelerindeki site yönetimlerinin %90'ı ortak alan asansörlerinin eşya taşımak amacıyla çalıştırılmasını yasaklamıştır. Koruyucu kılıf takılsa dahi motor aksamı aşırı yükten zarar görebileceği için yüklü cezalar kesilmektedir.</li>
+        <li><strong>Görükle ve Ataevler Hatlarında Parklanma:</strong> Görükle'de özellikle eğitim-öğretim başlangıç ve bitiş dönemlerinde sokak parklanması had safhadadır. Mobil asansörün 4 hidrolik pistonunun açılabilmesi için sabah saat 08:30 öncesi operasyon başlangıcı önerilir.</li>
+        <li><strong>Fransız Balkon ve Salon Camı Avantajı:</strong> Nilüfer'deki binaların çoğunda yere kadar uzanan çift kanatlı camlar ve geniş balkonlar mevcuttur. Çift raylı kılavuz sistemimiz balkona temas etmeden, arada 5 cm emniyet payı bırakarak milimetrik sıfırlama yapar.</li>
+      </ul>
+
+      <h2>Geleneksel Taşıma vs. Nilüfer Dış Cephe Asansörü</h2>
+      <div class="overflow-x-auto my-8">
+        <table class="w-full text-left border-collapse border border-slate-200 dark:border-slate-700">
+          <thead>
+            <tr class="bg-primary text-white">
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Taşıma Kriteri</th>
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Klasik Merdiven / Bina İçi Taşıma</th>
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Nilüfer Dış Cephe Mobil Asansörü</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 dark:bg-slate-800/50">
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Operasyon Süresi (3+1 Daire)</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">6 - 8 Saat (Ekip yoruldukça hasar artar)</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700 font-bold text-primary">1.5 - 2 Saat (Sürekli mekanik hat)</td>
+            </tr>
+            <tr>
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Eşya & Mobilya Çizilme Riski</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Yüksek (Merdiven boşluğu dönüş açıları dar)</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700 font-bold text-emerald-600">Sıfır Hasar (Doğrudan sepete sabitleme)</td>
+            </tr>
+            <tr class="bg-slate-50 dark:bg-slate-800/50">
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Apartman ve Site Yönetim Cezası</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Duvar boyası ve yolcu asansörü risk cezaları</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Sıfır Risk (Ortak alanlara dokunulmaz)</td>
+            </tr>
+            <tr>
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Toplam Maliyet & İşçilik Eforu</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">5-6 hamal yevmiyesi + olası marangoz masrafı</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700 font-bold text-primary">Net tasarruf: Azalan iş gücü + tek operasyon</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Komşularla ve Yönetimle Sıfır Problem: 3 Altın Kural</h2>
+      <p>Nilüfer’de taşınırken güne huzurlu başlayıp huzurlu bitirmeniz için operasyon adımlarımız:</p>
+      <ol class="list-decimal pl-5 mt-4 space-y-2 mb-6">
+        <li><strong>Önceden WhatsApp Keşfi:</strong> Sokağınızın ve balkonunuzun konumunu teyit ederek sitenin açık otopark veya itfaiye giriş kapısına uygun asansör aracımızı tahsis ediyoruz.</li>
+        <li><strong>Operatör Belgeli Güvenlik:</strong> Makine başındaki personelimiz MEB ve Mesleki Yeterlilik onaylı operatör lisansına sahiptir. Rüzgar ve ağırlık dengesini bilgisayar kontrollü ekrandan takip eder.</li>
+        <li><strong>Peyzaj ve Bahçe Koruma:</strong> Nilüfer sitelerinin hassas çim ve taş döşemelerine zarar vermemek için tekerlek altına koruyucu kauçuk rampalar serilir.</li>
+      </ol>
+
+      <div class="bg-primary/10 border-l-4 border-primary p-6 rounded-r-xl mt-8 mb-6">
+        <h4 class="text-xl font-bold text-secondary dark:text-white mb-2">Nilüfer’de Taşınırken Eşyanızı Riske Atmayın</h4>
+        <p class="text-slate-700 dark:text-slate-300">
+          Özlüce, Balat, İhsaniye veya Görükle'de taşınma tarihiniz netleştiyse, son dakikaya kalıp asansörsüz kalmayın. <a href="https://wa.me/905056080700" class="text-primary font-bold hover:underline">WhatsApp'tan bina ve balkon fotoğrafı gönderin</a>; 5 dakikada katınıza uygun asansör modelimizi ve en avantajlı sabit fiyat teklifimizi iletelim.
+        </p>
+      </div>
+    `
+  },
+  {
+    id: "osmangazi-kiralik-asansor-dar-sokak-tasima",
+    slug: "osmangazi-kiralik-asansor-dar-sokak-tasima",
+    title: "Osmangazi Kiralık Asansör | Dar Sokaklarda Güvenli Dış Cephe Taşıma",
+    excerpt: "Osmangazi'nin dar sokakları ve tarihi dokusuna özel kompakt mobil yük asansörü. Çarşamba, Kükürtlü ve Dikkaldırım'da merdivensiz, hasarsız taşının.",
+    date: "14 Eylül 2026",
+    readTime: "7 dk okuma",
+    category: "Lokal Rehber",
+    author: "Bursa Kiralık Asansör CNC Saha Ekibi",
+    image: "/images/service-abstract.png",
+    metaDescription: "Osmangazi kiralık asansör arayanlara özel rehber. Dar sokaklar ve elektrik tellerine karşı kompakt mobil yük asansörü çözümleri ve fiyat analizi.",
+    keywords: [
+      "osmangazi kiralık asansör",
+      "osmangazi asansörlü nakliyat",
+      "çarşamba kiralık nakliye asansörü",
+      "kükürtlü mobil asansör",
+      "dikkaldırım evden eve nakliye",
+      "dar sokak eşya taşıma asansörü"
+    ],
+    faqs: [
+      {
+        q: "Osmangazi'de sokağımız çok dar ve araçlar park etmiş, asansör yanaşabilir mi?",
+        a: "Filomuzda dar sokak mimarisi için özel üretilmiş dar şasili 3.5 tonluk hafif mobil asansörler mevcuttur. Normal bir panelvanın girebildiği her sokağa rahatça girip hidrolik ayaklarını tek yönlü açarak sabitleme yapabiliyoruz."
+      },
+      {
+        q: "Sokaktaki havai elektrik ve internet telleri kuruluma engel olur mu?",
+        a: "Hayır. Uzman operatörlerimiz teleskopik bom açısını tellerin arasından veya üst hizasından geçecek şekilde milimetrik olarak ayarlar. Uygun açı bulunamaması halinde yan cephe veya arka pencereler alternatif istasyon olarak değerlendirilir."
+      },
+      {
+        q: "Osmangazi'de kentsel dönüşüm molozu veya inşaat seramiği için asansör kiralanabilir mi?",
+        a: "Evet. Dış cephe asansörlerimiz 400 kg taşıma kapasiteli geniş sepetleriyle moloz çuvalları indirme ve fayans, alçıpan, çimento çıkarma işlerinde ustalarımıza saatlik veya günlük kiralanmaktadır."
+      }
+    ],
+    content: `
+      <h2>Osmangazi’nin Dar Sokaklarında Taşınma Çilesine Son Verin</h2>
+      <p>Osmangazi’de eski tip dik ve dar merdivenlerden indirilirken köşesi patlayan masif bir gardırop ya da binanın dönüş sahanlığında sıkışıp kalan çift kapılı bir buzdolabı... Osmangazi'nin sokak dokusunu bilmeyen tecrübesiz ekiplerle taşınmak, eşyalarınızın yarı değerini merdiven boşluklarında bırakmak demektir. Bursa'nın merkezinde sokak ne kadar dar olursa olsun, pencereniz açıksa her eşyayı sıfır hasarla indirmek tecrübeli operatörlük işidir.</p>
+
+      <p>Bursa'nın en köklü ilçesi olan Osmangazi; tarihi mahalleleri, kentsel dönüşüm bölgeleri ve bitişik nizam apartmanlarıyla nakliyecilikte en yüksek saha tecrübesini gerektirir. <a href="/osmangazi-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Osmangazi kiralık mobil asansör</a> hizmetimiz, sokak genişliğine göre seçilen araç filomuzla binaların dışına kurularak merdiven eziyetini tamamen ortadan kaldırır.</p>
+
+      <h2>Osmangazi Saha Gerçekleri: Havai Hatlar, Dar Sokaklar ve Zamanlama</h2>
+      <p>Osmangazi genelinde hatasız bir taşıma operasyonu için dikkat ettiğimiz 3 temel dinamik:</p>
+      
+      <ul class="list-disc pl-5 mt-4 space-y-3 mb-6">
+        <li><strong>Elektrik ve İnternet Telleri (Havai Hatlar):</strong> Çarşamba, Altıparmak, Zafer ve Alemdar gibi mahallelerde binaların önünden geçen hatlar kritik engeldir. Operatörlerimiz asansör bomunu tellerin arasından santimetrik açıyla geçirerek pencereye kilitler.</li>
+        <li><strong>Dar Sokak Parklanması ve Trafik İzni:</strong> Kükürtlü ve Dikkaldırım gibi yoğun bölgelerde sabah trafiği başlamadan (saat 07:30 - 09:30 arası) kurulan dış cephe asansörüyle sokağın tıkanması önlenir, 1.5 saatte tüm yükleme tamamlanır.</li>
+        <li><strong>Demirtaş ve Hamitler Gelişim Sahası:</strong> Yeni konut bloklarında geniş balkonlar mobil asansörün geniş platformuyla doğrudan kamyon kasasına köprü vazifesi görür.</li>
+      </ul>
+
+      <h2>Geleneksel Taşıma vs. Osmangazi Mobil Asansörü</h2>
+      <div class="overflow-x-auto my-8">
+        <table class="w-full text-left border-collapse border border-slate-200 dark:border-slate-700">
+          <thead>
+            <tr class="bg-primary text-white">
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Kriter</th>
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Osmangazi Klasik Merdivenli Taşıma</th>
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Osmangazi Kompakt Mobil Asansör</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 dark:bg-slate-800/50">
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Merdiven Dönüşleri</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Duvarlara çarpma, korkuluk kırılması</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700 font-bold text-emerald-600">Bina dışından direkt araca: Sıfır sürtünme</td>
+            </tr>
+            <tr>
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Sokak Trafiğini Kapatma</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">5-6 saat boyunca kamyonun yolu kilitlemesi</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700 font-bold text-primary">60 - 90 dakikada tüm eşyanın indirilmesi</td>
+            </tr>
+            <tr class="bg-slate-50 dark:bg-slate-800/50">
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Ağır Yük Transferi</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Piyano, mermer masa veya kasada kaza riski</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Çelik ray üzerinde sarsıntısız ve dengeli transfer</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Osmangazi'de Asansör Kiralamadan Önce Yapılacaklar</h2>
+      <p>Operasyonun kesintisiz ilerlemesi için izlenecek kolay adımlar:</p>
+      <ol class="list-decimal pl-5 mt-4 space-y-2 mb-6">
+        <li>Taşınacağınız binanın caddeye veya otoparka bakan pencere/balkon görüntüsünü çekin.</li>
+        <li>Sokağın genel genişliğini ve binanın önündeki elektrik direklerini de kadraja dahil edin.</li>
+        <li><a href="https://wa.me/905056080700" class="text-primary font-semibold hover:underline">WhatsApp hattımıza (0505 608 07 00)</a> gönderin; saha uzmanımız 3 dakikada uygun asansör modelimizi onaylasın.</li>
+      </ol>
+
+      <div class="bg-primary/10 border-l-4 border-primary p-6 rounded-r-xl mt-8 mb-6">
+        <h4 class="text-xl font-bold text-secondary dark:text-white mb-2">Osmangazi’de "Bu Sokağa Asansör Girmez" Diyenlere Aldanmayın</h4>
+        <p class="text-slate-700 dark:text-slate-300">
+          Kompakt dar şasi filomuzla Osmangazi'nin en zorlu ara sokaklarında 15 yıldır çözüm üretiyoruz. <a href="https://wa.me/905056080700" class="text-primary font-bold hover:underline">Hemen fotoğraf gönderin</a>, taşınmanızı kabusa dönüştürmeden güvenle tamamlayalım.
+        </p>
+      </div>
+    `
+  },
+  {
+    id: "yildirim-kiralik-asansor-egimli-arazi-nakliyat",
+    slug: "yildirim-kiralik-asansor-egimli-arazi-nakliyat",
+    title: "Yıldırım Kiralık Asansör | Dik Yokuş ve Eğimli Arazide Güvenli Taşıma",
+    excerpt: "Yıldırım'ın eğimli sokaklarında terazi sabitlemeli mobil dış cephe asansörü. Teleferik, Millet ve Yeşilyayla'da düşme ve kayma riski olmadan hızlı taşının.",
+    date: "14 Eylül 2026",
+    readTime: "7 dk okuma",
+    category: "Lokal Rehber",
+    author: "Bursa Kiralık Asansör CNC Saha Ekibi",
+    image: "/images/mutlu-aile-tasinma.png",
+    metaDescription: "Yıldırım kiralık asansör rehberi. Teleferik ve Yeşilyayla'nın dik yokuşlarında hidrolik terazi sabitlemeli mobil yük asansörüyle güvenli nakliyat.",
+    keywords: [
+      "yıldırım kiralık asansör",
+      "yıldırım asansörlü nakliye",
+      "millet mahallesi kiralık asansör",
+      "teleferik ev taşıma asansörü",
+      "yeşilyayla nakliyat asansörü",
+      "eğimli sokak nakliye asansörü"
+    ],
+    faqs: [
+      {
+        q: "Dik yokuşlu bir sokakta asansör aracı devrilmeden nasıl çalışır?",
+        a: "Araçlarımızda bağımsız çalışan 4 adet teleskopik hidrolik piston (outrigger) bulunur. Eğim ne kadar yüksek olursa olsun, elektronik terazi göstergesiyle araç şasisi sıfır eğime getirilir ve çelik kilitli takozlarla sabitlenir."
+      },
+      {
+        q: "Millet Mahallesi'ndeki yeni sitelerde bahçe içine giriş yapabiliyor musunuz?",
+        a: "Evet, Millet Mahallesi'ndeki kapalı veya açık otoparklı sitelerde kauçuk koruyucu tabanlıklarımızla zemin parkesine ve bordürlere zarar vermeden rahatça kurulum yapıyoruz."
+      },
+      {
+        q: "Uludağ'dan inen sert rüzgarlarda asansör çalıştırılır mı?",
+        a: "Sistemlerimizde yer alan dijital anemometre (rüzgar ölçer) sayesinde anlık rüzgar hızı takip edilir. 45 km/s hız limitinin altındaki havalarda çift gergili çelik halat sistemiyle %100 güvenli çalışır; fırtına anlarında güvenlik için ara verilir."
+      }
+    ],
+    content: `
+      <h2>Uludağ Eteklerinde Taşınırken Yerçekimini Hafife Almayın</h2>
+      <p>Uludağ eteklerindeki Yıldırım yokuşlarında, eğimli bir sokakta dik merdivenlerden ağır bir buzdolabını veya çamaşır makinesini indirmeye çalışan iki hamalın dengesini kaybettiği anı düşünün... Bu yalnızca binlerce liralık mobilya ve beyaz eşya hasarı değil, telafisi mümkün olmayan bir iş kazası riskidir. Yıldırım’da taşınmak düz ovada taşınmaya benzemez; burada zemin statiğini, yerçekimini ve hidrolik dengeyi doğru yönetmek hayati önem taşır.</p>
+
+      <p>Yıldırım ilçesi; Teleferik ve Yeşilyayla gibi eğimi yüksek eski mahalleleri ile Millet Mahallesi gibi modern ve geniş bulvarlı yeni yerleşimleri aynı potada eritir. <a href="/yildirim-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Yıldırım kiralık mobil asansör</a> hizmetimiz, her iki bölgenin coğrafi yapısına uygun ekipman parkuruyla eşyalarınızı sıfır sarsıntıyla hedefine ulaştırır.</p>
+
+      <h2>Yıldırım Coğrafyası: Zemin Eğimi, Merdiven Yapısı ve Millet Mahallesi</h2>
+      <p>Yıldırım sahasında başarıyı belirleyen 3 kritik faktör:</p>
+      
+      <ul class="list-disc pl-5 mt-4 space-y-3 mb-6">
+        <li><strong>Hidrolik Terazi ve Takoz Güvencesi:</strong> Mollafenari, Teleferik ve Teferrüç hatlarında sokak eğimleri %15-20 seviyelerine kadar çıkabilir. Bağımsız hidrolik pistonlarımız eğimi sıfırlayarak sepetin dik bir ray hattında sürtünmesiz kaymasını sağlar.</li>
+        <li><strong>Millet Mahallesi ve Erikli Modern Siteleri:</strong> Yıldırım'ın parlayan bölgesi Millet Mahallesi'nde binalar yüksektir. 8. kattan sonra bina merdivenlerinden eşya indirmek personeli tüketir; mobil asansörümüz 1.5 saatte evi boşaltır.</li>
+        <li><strong>Dar Spiral Apartman Merdivenleri:</strong> Yıldırım’daki 4-5 katlı aile apartmanlarında merdivenler dönemeçlidir. L koltuk, gardırop kapağı veya bazaların merdivenden dönmesi imkansızdır; dış cephe asansörü tek rasyonel çözümdür.</li>
+      </ul>
+
+      <h2>Geleneksel Taşıma vs. Yıldırım Hidrolik Denge Asansörü</h2>
+      <div class="overflow-x-auto my-8">
+        <table class="w-full text-left border-collapse border border-slate-200 dark:border-slate-700">
+          <thead>
+            <tr class="bg-primary text-white">
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Risk Faktörü</th>
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Yıldırım Yokuşlarında Beden Gücü</th>
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Yıldırım Denge Ayaklı Mobil Asansör</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 dark:bg-slate-800/50">
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">İş Kazası & Kayma Tehlikesi</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Eğimli zeminde düşme ve bel incinmesi</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700 font-bold text-emerald-600">Mekanik kilitli çelik rayla sıfır insan riski</td>
+            </tr>
+            <tr>
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Eşya Çarpma Oranı</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Dar spiral merdiven köşelerinde %40 hasar</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700 font-bold text-primary">Doğrudan balkondan sepete sabitleme: %0 hasar</td>
+            </tr>
+            <tr class="bg-slate-50 dark:bg-slate-800/50">
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Toplam Taşıma Süresi</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Yokuş yorgunluğu nedeniyle 7-9 saat</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700 font-bold text-primary">Ortalama 2 saatte kamyondan salona montaj</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Yıldırım Sakinlerine Güvenli Taşınma Tavsiyeleri</h2>
+      <p>Eğimli sokaklarda operasyonun tereyağından kıl çeker gibi tamamlanması için:</p>
+      <ol class="list-decimal pl-5 mt-4 space-y-2 mb-6">
+        <li>Binanın önündeki eğim yönünü ve araç yanaşma alanını netleştirmek için sokağınızın geniş bir fotoğrafını çekin.</li>
+        <li>Bina balkonunun caddeye olan açısını WhatsApp hattımızdan ekibimizle paylaşın.</li>
+        <li>Teleskopik bom uzunluğu ve zemin açısı hesaplandıktan sonra belirlenen saatte kapınıza gelen mobil asansörle strese girmeden taşının.</li>
+      </ol>
+
+      <div class="bg-primary/10 border-l-4 border-primary p-6 rounded-r-xl mt-8 mb-6">
+        <h4 class="text-xl font-bold text-secondary dark:text-white mb-2">Yıldırım’ın Dik Yokuşlarında Eşyalarınızı Riske Atmayın</h4>
+        <p class="text-slate-700 dark:text-slate-300">
+          Teleferik'ten Millet Mahallesi'ne kadar Yıldırım'ın her noktasında güvenli terazi sabitlemeli asansörlerimizle hizmetinizdeyiz. <a href="https://wa.me/905056080700" class="text-primary font-bold hover:underline">WhatsApp'tan hemen ulaşın</a>, sabit fiyat garantisiyle taşınma gününüzü rezerve edin.
+        </p>
+      </div>
+    `
+  },
+  {
+    id: "mudanya-kiralik-asansor-guzelyali-nakliyat",
+    slug: "mudanya-kiralik-asansor-guzelyali-nakliyat",
+    title: "Mudanya Kiralık Asansör | Rüzgara Dayanıklı Sahil ve Villa Taşıması",
+    excerpt: "Mudanya ve Güzelyalı'da sert deniz poyrazına dayanıklı dış cephe nakliye asansörü. Bademli villalarında ve sahil binalarında sıfır çizik garantisi.",
+    date: "14 Eylül 2026",
+    readTime: "7 dk okuma",
+    category: "Lokal Rehber",
+    author: "Bursa Kiralık Asansör CNC Saha Ekibi",
+    image: "/images/hero-bg.png",
+    metaDescription: "Mudanya kiralık asansör rehberi. Güzelyalı ve Bademli'de poyraz rüzgarına dayanıklı mobil asansör kiralama, sahil binaları ve villa nakliyesi.",
+    keywords: [
+      "mudanya kiralık asansör",
+      "güzelyalı asansörlü nakliyat",
+      "bademli villa eşya taşıma asansörü",
+      "mudanya evden eve nakliye",
+      "sahil binaları yük asansörü",
+      "bursa kiralık mobil asansör"
+    ],
+    faqs: [
+      {
+        q: "Mudanya'da şiddetli poyraz rüzgarında asansörlü taşıma güvenli midir?",
+        a: "Sistemlerimizde aerodinamik rüzgar yarıklarına sahip çift ray kılavuzlu Alman bom mekanizması kullanılır. Saatte 40-45 km hıza kadar olan rüzgarlarda balkona çelik gergilerle kilitlenen sepet titreşimsiz hareket eder."
+      },
+      {
+        q: "Sahil tarafındaki binalarda yol ile balkon arasında geniş bahçe mesafesi varsa asansör ulaşır mı?",
+        a: "Evet. 70 metreye kadar erişebilen teleskopik araçlarımız yatayda yüksek erişim açısına sahiptir. Yol ile bina cephesi arasındaki 15-20 metrelik bahçe veya istinat duvarı engellerini havadan rahatlıkla aşabilmektedir."
+      },
+      {
+        q: "Bademli'de sadece piyano, şömine mermeri veya para kasası gibi tek bir parça için çağırabilir miyiz?",
+        a: "Kesinlikle evet. Yüksek değerli sanat eseri, piyano, mermer tezgah veya çelik kasa gibi dar villa merdivenlerinden çıkmayan eşyalar için saatlik tek parça kiralama hizmeti sunuyoruz."
+      }
+    ],
+    content: `
+      <h2>Mudanya Sahilinde Sert Poyraza Karşı Bilinçli Taşınma</h2>
+      <p>Güzelyalı sırtlarında veya Mudanya sahil şeridinde poyrazın saatte 35 km hızla estiği bir günde, 6. katın balkonundan merdivensiz mobilya indirmeye kalktığınızda rüzgarın şiddetini hesaba katmazsanız eşyalarınız adeta bir yelkenli gibi savrulur. Mudanya’da taşınmak; yerel meteorolojiyi bilmeyi, denizden gelen ani hava akımlarını okumayı ve fırtınaya mukavim hidrolik çelik ray kullanmayı zorunlu kılar.</p>
+
+      <p>Mudanya; kot farkı yüksek sahil siteleri, deniz basamakları ve Bademli/Çağrışan hattındaki lüks villa projeleriyle Bursa’nın en seçkin mimarisine sahiptir. <a href="/mudanya-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Mudanya kiralık mobil asansör</a> filomuz, rüzgar güvenlik kilitleri ve uzun menzilli bomlarıyla eşyalarınızı doğrudan teras veya salonunuza taşır.</p>
+
+      <h2>Mudanya ve Bademli Saha Dinamikleri: Rüzgar, Kot Farkı ve Lüks Koruma</h2>
+      <p>Mudanya operasyonlarımızda öne çıkan 3 önemli kriter:</p>
+      
+      <ul class="list-disc pl-5 mt-4 space-y-3 mb-6">
+        <li><strong>Poyraz ve Rüzgar Mukavemeti:</strong> Sahil şeridinde hafif alüminyum sepetler rüzgarda sallanabilir. Çift raylı Alman kılavuz sistemimiz sepette titreşimi sıfıra indirerek balkon korkuluğuna çelik kancalarla sabitlenir.</li>
+        <li><strong>Kot Farkı ve Sahil Basamakları:</strong> Halitpaşa, Burgaz ve Kumyaka mevkilerinde binalar çoğu zaman sahil yolu kotunun altında kalır. 20 metreyi aşan bahçe ve merdiven basamakları havadan kurulan bom hattıyla tamamen baypas edilir.</li>
+        <li><strong>Bademli ve Çağrışan Villa Projeleri:</strong> Özel tasarım mobilyaların, ithal parkelerin ve merdiven korkuluklarının çizilmemesi için bahçeden 2. veya 3. kat terasına kurulan asansör iç mekanın lüks dokusuna el değdirmez.</li>
+      </ul>
+
+      <h2>Geleneksel Taşıma vs. Mudanya Rüzgar Korumalı Asansör</h2>
+      <div class="overflow-x-auto my-8">
+        <table class="w-full text-left border-collapse border border-slate-200 dark:border-slate-700">
+          <thead>
+            <tr class="bg-primary text-white">
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Bölgesel Kriter</th>
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Klasik İnsan Gücüyle Taşıma</th>
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Mudanya Emniyet Kilitli Mobil Asansör</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 dark:bg-slate-800/50">
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Poyraz / Rüzgar Güvenliği</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Balkonda rüzgarla denge kaybı ve eşya düşürme riski</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700 font-bold text-emerald-600">Sensörlü otomatik frenleme ve çelik gergi hattı</td>
+            </tr>
+            <tr>
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Kot Farkı & Sahil Merdivenleri</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Basamaklarda saatler süren yorucu taşıma</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700 font-bold text-primary">Tüm basamakları havadan aşan 1.5 saatlik transfer</td>
+            </tr>
+            <tr class="bg-slate-50 dark:bg-slate-800/50">
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Lüks Mobilya & Parke Koruması</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Dar merdiven korkuluklarında çizilme riski</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Dışarıdan direkt odaya indirme: Sıfır temas garantisi</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Mudanya'da Kolay ve Garantili Keşif Adımları</h2>
+      <p>Mudanya veya Güzelyalı'da sorunsuz taşınmak için:</p>
+      <ol class="list-decimal pl-5 mt-4 space-y-2 mb-6">
+        <li>Binanızın deniz veya cadde cephesinden çekilmiş bir fotoğrafını hazırlayın.</li>
+        <li>Binanın önündeki bahçe veya araç park mesafesini belirtin.</li>
+        <li><a href="https://wa.me/905056080700" class="text-primary font-semibold hover:underline">WhatsApp hattımıza (0505 608 07 00)</a> iletin; rüzgar yönü ve mesafe analizini yapıp en uygun asansör planını anında çıkaralım.</li>
+      </ol>
+
+      <div class="bg-primary/10 border-l-4 border-primary p-6 rounded-r-xl mt-8 mb-6">
+        <h4 class="text-xl font-bold text-secondary dark:text-white mb-2">Mudanya'nın Deniz Rüzgarında Eşyalarınızı Riske Atmayın</h4>
+        <p class="text-slate-700 dark:text-slate-300">
+          Güzelyalı, Halitpaşa veya Bademli'de lüks mobilyalarınızı ve beyaz eşyalarınızı sahil basamaklarında yıpratmayın. <a href="https://wa.me/905056080700" class="text-primary font-bold hover:underline">WhatsApp'tan hemen yazın</a>, 5 dakikada net fiyat teklifinizi alın.
+        </p>
+      </div>
+    `
   }
 ];

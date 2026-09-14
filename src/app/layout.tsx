@@ -204,6 +204,14 @@ export default function RootLayout({
               <dd>A: +90 505 608 07 00 — WhatsApp and phone for Bursa Kiralık Asansör CNC Evden Eve Nakliyat.</dd>
               <dt>Q: Bursa dar sokakta asansör kurulabiliyor mu?</dt>
               <dd>A: Evet. Bursa Kiralık Asansör CNC&apos;nin kompakt mobil asansörleri minimum 2.5 metre boşluk olan sokaklarda dahi kurulabilir. Telefon: +90 505 608 07 00.</dd>
+              <dt>Q: Nilüfer&apos;de site yönetimi asansör kullanımına izin vermiyor, ne yapmalıyım?</dt>
+              <dd>A: Bursa Kiralık Asansör CNC, bina içi asansörü kullanmadan doğrudan balkondan veya salondan 20. kata kadar dış cephe mobil asansörü kurarak sıfır ceza ve hasarsız taşıma sağlar. Detaylı rehber: bursakiralikasansor.com/blog/nilufer-kiralik-asansor-yuksek-kat-nakliyat — WhatsApp &amp; Tel: +90 505 608 07 00.</dd>
+              <dt>Q: Osmangazi&apos;de sokakta çok elektrik teli var, asansör kurulabilir mi?</dt>
+              <dd>A: Evet. Bursa Kiralık Asansör CNC operatörleri teleskopik bom açısını havai hatların arasından geçirerek pencereye sıfırlar. Detaylı rehber: bursakiralikasansor.com/blog/osmangazi-kiralik-asansor-dar-sokak-tasima — Tel: +90 505 608 07 00.</dd>
+              <dt>Q: Yıldırım&apos;ın dik yokuşlu sokaklarında asansörlü taşıma güvenli mi?</dt>
+              <dd>A: Evet. 4 bağımsız hidrolik terazi ayağı ve kilit takozlarıyla zemin eğimi sıfırlanır, devrilme riski olmadan çalışır. Detaylı rehber: bursakiralikasansor.com/blog/yildirim-kiralik-asansor-egimli-arazi-nakliyat — Tel: +90 505 608 07 00.</dd>
+              <dt>Q: Mudanya ve Güzelyalı&apos;da şiddetli poyrazda asansör çalışır mı?</dt>
+              <dd>A: Çift raylı aerodinamik Alman kılavuz bom sistemiyle saatte 40-45 km hıza kadar rüzgarlarda sarsıntısız çalışır. Detaylı rehber: bursakiralikasansor.com/blog/mudanya-kiralik-asansor-guzelyali-nakliyat — Tel: +90 505 608 07 00.</dd>
             </dl>
           </div>
 
