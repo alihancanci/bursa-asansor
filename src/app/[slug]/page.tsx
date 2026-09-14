@@ -41,30 +41,31 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return { title: 'Sayfa Bulunamadı' };
   }
 
-  // Arama hacmi en yüksek 4 öncelikli ilçe için özel başlık ve açıklama stratejisi (<60 karakter kuralı)
+  // Google Politikalarıyla %100 Uyumlu, Tıklama (CTR) Odaklı Başlık Motoru (<60 karakter)
   let title = `${district.name} ${service.name} | Bursa Kiralık Asansör`;
 
   if (service.slug === "kiralik-mobil-asansor") {
-    // En çok aranan kalıp "Nilüfer Kiralık Asansör" veya "Osmangazi Kiralık Asansör"
     if (district.slug === "nilufer") {
-      title = "Nilüfer Kiralık Asansör | 7/24 Asansör Kiralama";
+      title = "Nilüfer Kiralık Asansör | En Uygun Fiyat & Hızlı Taşıma";
     } else if (district.slug === "osmangazi") {
-      title = "Osmangazi Kiralık Asansör | Uygun Fiyat & 7/24";
+      title = "Osmangazi Kiralık Asansör | En İyi Fiyat & Güvenli Taşıma";
     } else if (district.slug === "yildirim") {
-      title = "Yıldırım Kiralık Asansör | 15. Kata Kadar Nakliyat";
+      title = "Yıldırım Kiralık Asansör | Uygun Fiyat & Hızlı Kurulum";
     } else if (district.slug === "mudanya") {
-      title = "Mudanya Kiralık Asansör | Güzelyalı & Bademli";
+      title = "Mudanya Kiralık Asansör | En Uygun Fiyat & Güvenli Taşıma";
     } else {
-      title = `${district.name} Kiralık Asansör | 7/24 Asansör Kiralama`;
+      title = `${district.name} Kiralık Asansör | En Uygun Fiyat & Hızlı Taşıma`;
     }
   } else if (service.slug === "evden-eve-asansorlu-nakliyat" || service.slug === "evden-eve-nakliyat") {
-    title = `${district.name} Evden Eve Nakliyat | Asansörlü Taşıma`;
+    title = `${district.name} Evden Eve Nakliyat | Hızlı ve Güvenli Taşıma`;
   } else if (service.slug === "kiralik-asansor-fiyatlari") {
-    title = `${district.name} Kiralık Asansör Fiyatları | 2026 Güncel`;
+    title = `${district.name} Kiralık Asansör Fiyatları | En Uygun 2026`;
   } else if (service.slug === "saatlik-asansor-kiralama") {
-    title = `${district.name} Saatlik Asansör Kiralama | Hızlı Kurulum`;
+    title = `${district.name} Saatlik Asansör Kiralama | En Uygun Fiyat`;
+  } else if (service.slug === "parca-esya-tasima" || service.slug === "mobilya-tasima-asansoru" || service.slug === "beyaz-esya-tasima-asansoru") {
+    title = `${district.name} ${service.name} | Hızlı ve Güvenli Taşıma`;
   } else {
-    title = `${district.name} ${service.name} | 15. Kata Kadar`;
+    title = `${district.name} ${service.name} | En Uygun Fiyat & Hızlı Hizmet`;
   }
 
   // 60 karakter limitini garanti altına al
@@ -72,12 +73,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title = title.substring(0, 57) + "...";
   }
 
-  // Dinamik açıklama (Max 155 karakter - Tam eşleşme + mahalleler + CTA)
+  // Dinamik açıklama (Max 155 karakter - Değer Teklifi + Ücretsiz Ekspertiz + CTA)
   const topHoods = district.neighborhoods.slice(0, 3).join(", ");
-  let description = `${district.name} ${service.name} hizmeti. ${topHoods} geneli 15. kata kadar güvenli taşıma. 7/24 fiyat ve randevu: 0505 608 07 00.`;
+  let description = `${district.name} ${service.name} hizmeti. ${topHoods} geneli en uygun fiyat, hızlı ve güvenli taşıma. 7/24 randevu: 0505 608 07 00.`;
   
   if (service.slug === "kiralik-mobil-asansor") {
-    description = `Bursa ${district.name} kiralık asansör ve asansörlü nakliyat. ${topHoods} geneli 15. kata kadar eşya ve yük taşıma. Hemen ara: 0505 608 07 00.`;
+    description = `${district.name} kiralık asansör. En uygun fiyat, hızlı ve güvenli taşıma, ücretsiz ekspertiz. 15. kata kadar hemen ara: 0505 608 07 00.`;
+  } else if (service.slug === "evden-eve-asansorlu-nakliyat" || service.slug === "evden-eve-nakliyat") {
+    description = `${district.name} evden eve nakliyat. Asansörlü, sigortalı, en uygun fiyat ve ücretsiz keşif desteğiyle taşının. İletişim: 0505 608 07 00.`;
   }
 
   if (description.length > 155) {
