@@ -1,20 +1,20 @@
 {
-  "/_not-found/page": "/_not-found",
   "/manifest.webmanifest/route": "/manifest.webmanifest",
-  "/favicon.ico/route": "/favicon.ico",
   "/sitemap.xml/route": "/sitemap.xml",
   "/robots.txt/route": "/robots.txt",
+  "/favicon.ico/route": "/favicon.ico",
   "/apple-icon.png/route": "/apple-icon.png",
   "/icon.png/route": "/icon.png",
   "/llms-full.txt/route": "/llms-full.txt",
   "/llms.txt/route": "/llms.txt",
-  "/blog/page": "/blog",
+  "/_not-found/page": "/_not-found",
   "/calismalarimiz/page": "/calismalarimiz",
   "/blog/[slug]/page": "/blog/[slug]",
+  "/blog/page": "/blog",
   "/hakkimizda/page": "/hakkimizda",
-  "/[slug]/page": "/[slug]",
   "/hizmet-bolgelerimiz/page": "/hizmet-bolgelerimiz",
-  "/bursa-evden-eve-nakliyat/page": "/bursa-evden-eve-nakliyat",
   "/evden-eve-nakliye-bursa/page": "/evden-eve-nakliye-bursa",
-  "/page": "/"
+  "/page": "/",
+  "/bursa-evden-eve-nakliyat/page": "/bursa-evden-eve-nakliyat",
+  "/[slug]/page": "/[slug]"
 }

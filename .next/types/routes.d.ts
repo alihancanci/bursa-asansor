@@ -5,23 +5,42 @@ type AppRoutes = "/" | "/[slug]" | "/blog" | "/blog/[slug]" | "/bursa-evden-eve-
 type AppRouteHandlerRoutes = "/llms-full.txt" | "/llms.txt"
 type PageRoutes = never
 type LayoutRoutes = "/"
-type RedirectRoutes = never
+type RedirectRoutes = "/[district]-kiralik-mobil-asansor" | "/bursa-merkez-kiralik-mobil-asansor" | "/buyukorhan-kiralik-mobil-asansor" | "/gemlik-kiralik-mobil-asansor" | "/gursu-kiralik-mobil-asansor" | "/harmancik-kiralik-mobil-asansor" | "/inegol-kiralik-mobil-asansor" | "/iznik-kiralik-mobil-asansor" | "/karacabey-kiralik-mobil-asansor" | "/keles-kiralik-mobil-asansor" | "/kestel-kiralik-mobil-asansor" | "/mudanya-kiralik-mobil-asansor" | "/mustafakemalpasa-kiralik-mobil-asansor" | "/nilufer-kiralik-mobil-asansor" | "/orhaneli-kiralik-mobil-asansor" | "/orhangazi-kiralik-mobil-asansor" | "/osmangazi-kiralik-mobil-asansor" | "/yenisehir-kiralik-mobil-asansor" | "/yildirim-kiralik-mobil-asansor"
 type RewriteRoutes = never
 type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRoutes | AppRouteHandlerRoutes
 
 
 interface ParamMap {
   "/": {}
+  "/[district]-kiralik-mobil-asansor": {}
   "/[slug]": { "slug": string; }
   "/blog": {}
   "/blog/[slug]": { "slug": string; }
   "/bursa-evden-eve-nakliyat": {}
+  "/bursa-merkez-kiralik-mobil-asansor": {}
+  "/buyukorhan-kiralik-mobil-asansor": {}
   "/calismalarimiz": {}
   "/evden-eve-nakliye-bursa": {}
+  "/gemlik-kiralik-mobil-asansor": {}
+  "/gursu-kiralik-mobil-asansor": {}
   "/hakkimizda": {}
+  "/harmancik-kiralik-mobil-asansor": {}
   "/hizmet-bolgelerimiz": {}
+  "/inegol-kiralik-mobil-asansor": {}
+  "/iznik-kiralik-mobil-asansor": {}
+  "/karacabey-kiralik-mobil-asansor": {}
+  "/keles-kiralik-mobil-asansor": {}
+  "/kestel-kiralik-mobil-asansor": {}
   "/llms-full.txt": {}
   "/llms.txt": {}
+  "/mudanya-kiralik-mobil-asansor": {}
+  "/mustafakemalpasa-kiralik-mobil-asansor": {}
+  "/nilufer-kiralik-mobil-asansor": {}
+  "/orhaneli-kiralik-mobil-asansor": {}
+  "/orhangazi-kiralik-mobil-asansor": {}
+  "/osmangazi-kiralik-mobil-asansor": {}
+  "/yenisehir-kiralik-mobil-asansor": {}
+  "/yildirim-kiralik-mobil-asansor": {}
 }
 
 

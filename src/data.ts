@@ -257,8 +257,8 @@ export const DISTRICTS: District[] = [
 export const SERVICES: Service[] = [
   /* ───────── KİRALIK ASANSÖR HİZMETLERİ ───────── */
   {
-    slug: "kiralik-mobil-asansor",
-    name: "Kiralık Mobil Asansör",
+    slug: "kiralik-asansor",
+    name: "Kiralık Asansör",
     shortDesc: "Yüksek katlara malzeme ve eşya çıkarmanın en güvenli, en hızlı yolu.",
     category: "asansor",
     template: `

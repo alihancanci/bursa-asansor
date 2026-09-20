@@ -140,7 +140,7 @@ export default function HomePageClient() {
                 title: "Nilüfer Kiralık Asansör",
                 desc: "Özlüce, Balat, Görükle ve İhsaniye rezidanslarına özel 7/24 sarsıntısız asansör kiralama.",
                 hoods: ["Özlüce", "Balat", "Görükle", "İhsaniye"],
-                asansorUrl: "/nilufer-kiralik-mobil-asansor",
+                asansorUrl: "/nilufer-kiralik-asansor",
                 nakliyatUrl: "/nilufer-evden-eve-nakliyat"
               },
               {
@@ -149,7 +149,7 @@ export default function HomePageClient() {
                 title: "Osmangazi Kiralık Asansör",
                 desc: "Hamitler, Yunuseli, Dikkaldırım ve Çekirge dar sokaklarına uygun kompakt asansörler.",
                 hoods: ["Hamitler", "Yunuseli", "Dikkaldırım", "Çekirge"],
-                asansorUrl: "/osmangazi-kiralik-mobil-asansor",
+                asansorUrl: "/osmangazi-kiralik-asansor",
                 nakliyatUrl: "/osmangazi-evden-eve-nakliyat"
               },
               {
@@ -158,7 +158,7 @@ export default function HomePageClient() {
                 title: "Yıldırım Kiralık Asansör",
                 desc: "Millet Mahallesi, Teleferik ve Ertuğrulgazi dik yamaçlarında güvenli hidrolik transfer.",
                 hoods: ["Millet Mah.", "Teleferik", "Ertuğrulgazi", "Mesken"],
-                asansorUrl: "/yildirim-kiralik-mobil-asansor",
+                asansorUrl: "/yildirim-kiralik-asansor",
                 nakliyatUrl: "/yildirim-evden-eve-nakliyat"
               },
               {
@@ -167,7 +167,7 @@ export default function HomePageClient() {
                 title: "Mudanya Kiralık Asansör",
                 desc: "Güzelyalı, Bademli villaları ve sahil bandına özel rüzgar dirençli asansörlü taşımacılık.",
                 hoods: ["Güzelyalı", "Bademli", "Burgaz", "Halitpaşa"],
-                asansorUrl: "/mudanya-kiralik-mobil-asansor",
+                asansorUrl: "/mudanya-kiralik-asansor",
                 nakliyatUrl: "/mudanya-evden-eve-nakliyat"
               }
             ].map((d) => (
@@ -417,7 +417,7 @@ export default function HomePageClient() {
                 {DISTRICTS.map(district => (
                   <Link
                     key={`${district.slug}-asansor`}
-                    href={`/${district.slug}-kiralik-mobil-asansor`}
+                    href={`/${district.slug}-kiralik-asansor`}
                     className="bg-white dark:bg-navy-light text-secondary dark:text-white py-3 px-2 rounded-xl text-center border border-border dark:border-white/10 hover:border-primary hover:text-primary transition-all font-medium text-xs sm:text-sm shadow-sm"
                   >
                     {district.name} Kiralık Asansör

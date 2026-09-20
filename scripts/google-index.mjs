@@ -9,7 +9,7 @@ const urls = [
   "https://bursakiralikasansor.com/nilufer-saatlik-asansor-kiralama",
   "https://bursakiralikasansor.com/gemlik-evden-eve-asansorlu-nakliyat",
   "https://bursakiralikasansor.com/karacabey-evden-eve-nakliyat",
-  "https://bursakiralikasansor.com/osmangazi-kiralik-mobil-asansor"
+  "https://bursakiralikasansor.com/osmangazi-kiralik-asansor"
 ];
 
 const KEY_FILE = path.join(process.cwd(), 'service-account.json');

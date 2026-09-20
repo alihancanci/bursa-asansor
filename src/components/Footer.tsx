@@ -137,25 +137,25 @@ export function Footer() {
             </div>
             <ul className="space-y-2.5">
               <li>
-                <Link href="/nilufer-kiralik-mobil-asansor" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2 font-semibold">
+                <Link href="/nilufer-kiralik-asansor" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2 font-semibold">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
                   Nilüfer Kiralık Asansör
                 </Link>
               </li>
               <li>
-                <Link href="/osmangazi-kiralik-mobil-asansor" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2 font-semibold">
+                <Link href="/osmangazi-kiralik-asansor" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2 font-semibold">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
                   Osmangazi Kiralık Asansör
                 </Link>
               </li>
               <li>
-                <Link href="/yildirim-kiralik-mobil-asansor" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2 font-semibold">
+                <Link href="/yildirim-kiralik-asansor" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2 font-semibold">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
                   Yıldırım Kiralık Asansör
                 </Link>
               </li>
               <li>
-                <Link href="/mudanya-kiralik-mobil-asansor" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2 font-semibold">
+                <Link href="/mudanya-kiralik-asansor" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2 font-semibold">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
                   Mudanya Kiralık Asansör
                 </Link>

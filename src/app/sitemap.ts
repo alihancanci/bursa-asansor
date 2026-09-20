@@ -41,10 +41,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // 4 Büyük Otorite İlçe & Hizmet Sayfaları
   const PRIMARY_AUTHORITY_SLUGS = [
-    "nilufer-kiralik-mobil-asansor",
-    "osmangazi-kiralik-mobil-asansor",
-    "yildirim-kiralik-mobil-asansor",
-    "mudanya-kiralik-mobil-asansor",
+    "nilufer-kiralik-asansor",
+    "osmangazi-kiralik-asansor",
+    "yildirim-kiralik-asansor",
+    "mudanya-kiralik-asansor",
   ];
 
   const SECONDARY_PRIORITY_SLUGS = [
@@ -52,7 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "osmangazi-evden-eve-nakliyat",
     "yildirim-evden-eve-nakliyat",
     "mudanya-evden-eve-nakliyat",
-    "bursa-merkez-kiralik-mobil-asansor",
+    "bursa-merkez-kiralik-asansor",
     "bursa-merkez-evden-eve-asansorlu-nakliyat"
   ];
 
@@ -67,7 +67,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         pagePriority = 0.98; // 4 Büyük İlçe Ana Otorite Sayfası
       } else if (SECONDARY_PRIORITY_SLUGS.includes(pageSlug)) {
         pagePriority = 0.85; // Önemli 2. seviye nakliyat sayfaları
-      } else if (district.isPriority && service.slug === "kiralik-mobil-asansor") {
+      } else if (district.isPriority && service.slug === "kiralik-asansor") {
         pagePriority = 0.75; // Diğer öncelikli ilçelerin ana asansör sayfaları
       }
 

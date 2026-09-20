@@ -58,7 +58,7 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
               <a href="https://wa.me/905056080700" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-8 py-4 bg-[#25D366] hover:bg-[#1DA851] text-white rounded-xl font-bold flex items-center justify-center gap-2 transition-all transform hover:-translate-y-1 shadow-xl shadow-[#25D366]/20">
                 <MessageCircle className="w-5 h-5" /> WhatsApp&apos;tan Teklif Al
               </a>
-              <Link href="/nilufer-kiralik-mobil-asansor" className="w-full sm:w-auto px-8 py-4 bg-primary hover:bg-orange-600 text-white rounded-xl font-bold flex items-center justify-center gap-2 transition-all transform hover:-translate-y-1 shadow-xl shadow-primary/20">
+              <Link href="/nilufer-kiralik-asansor" className="w-full sm:w-auto px-8 py-4 bg-primary hover:bg-orange-600 text-white rounded-xl font-bold flex items-center justify-center gap-2 transition-all transform hover:-translate-y-1 shadow-xl shadow-primary/20">
                 Hizmetlerimizi İncele
               </Link>
             </div>

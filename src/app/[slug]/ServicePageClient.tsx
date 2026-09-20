@@ -19,7 +19,7 @@ export default function ServicePageClient() {
   const params = useParams<{ slug: string }>();
   const fullSlug = params.slug || "";
 
-  const service = SERVICES.find(s => fullSlug.endsWith(`-${s.slug}`));
+  const service = [...SERVICES].sort((a, b) => b.slug.length - a.slug.length).find(s => fullSlug.endsWith(`-${s.slug}`));
 
   if (!service) {
     return <PageNotFound404 slug={fullSlug} />;
@@ -59,18 +59,18 @@ export default function ServicePageClient() {
         <div className="max-w-7xl mx-auto flex items-center gap-1.5 text-sm text-gray-600 dark:text-slate-400">
           <Link href="/" className="hover:text-primary underline underline-offset-2 transition-colors">{t('nav.home', 'Ana Sayfa')}</Link>
           <ChevronRight className="h-4 w-4" aria-hidden="true" />
-          {service.slug === 'kiralik-mobil-asansor' ? (
+          {service.slug === 'kiralik-asansor' ? (
             <span className="text-gray-900 dark:text-white font-semibold">{district.name} Kiralık Asansör</span>
           ) : (
             <Link 
-              href={`/${district.slug}-kiralik-mobil-asansor`} 
+              href={`/${district.slug}-kiralik-asansor`} 
               className="hover:text-primary underline underline-offset-2 font-medium transition-colors"
               title={`${district.name} Kiralık Asansör Ana Sayfası`}
             >
               {district.name} Kiralık Asansör
             </Link>
           )}
-          {service.slug !== 'kiralik-mobil-asansor' && (
+          {service.slug !== 'kiralik-asansor' && (
             <>
               <ChevronRight className="h-4 w-4" aria-hidden="true" />
               <span className="text-gray-900 dark:text-white font-semibold" aria-current="page">{serviceName}</span>
@@ -92,11 +92,11 @@ export default function ServicePageClient() {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.h1 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="text-4xl sm:text-5xl md:text-6xl font-display font-extrabold text-white leading-tight mb-4">
-            {district.name} <span className="text-primary">{service.slug === 'kiralik-mobil-asansor' ? 'Kiralık Asansör' : serviceName}</span>
+            {district.name} <span className="text-primary">{service.slug === 'kiralik-asansor' ? 'Kiralık Asansör' : serviceName}</span>
             <span className="block text-2xl sm:text-3xl font-semibold text-slate-300 mt-2 leading-snug">{neighborhoodStr} ve Tüm Mahalleler</span>
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-xl text-slate-200 leading-relaxed max-w-2xl mb-8">
-            {service.slug === 'kiralik-mobil-asansor' 
+            {service.slug === 'kiralik-asansor' 
               ? `${district.name} genelinde dar sokaklara uygun mobil dış cephe asansörlerimizle 15. kata kadar güvenli eşya, mobilya ve malzeme taşıma hizmeti.` 
               : serviceShortDesc}
           </motion.p>

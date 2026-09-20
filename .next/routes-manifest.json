@@ -10,6 +10,120 @@
       "internal": true,
       "statusCode": 308,
       "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    },
+    {
+      "source": "/bursa-merkez-kiralik-mobil-asansor",
+      "destination": "/bursa-merkez-kiralik-asansor",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/bursa-merkez-kiralik-mobil-asansor(?:/)?$"
+    },
+    {
+      "source": "/osmangazi-kiralik-mobil-asansor",
+      "destination": "/osmangazi-kiralik-asansor",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/osmangazi-kiralik-mobil-asansor(?:/)?$"
+    },
+    {
+      "source": "/nilufer-kiralik-mobil-asansor",
+      "destination": "/nilufer-kiralik-asansor",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/nilufer-kiralik-mobil-asansor(?:/)?$"
+    },
+    {
+      "source": "/yildirim-kiralik-mobil-asansor",
+      "destination": "/yildirim-kiralik-asansor",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/yildirim-kiralik-mobil-asansor(?:/)?$"
+    },
+    {
+      "source": "/inegol-kiralik-mobil-asansor",
+      "destination": "/inegol-kiralik-asansor",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/inegol-kiralik-mobil-asansor(?:/)?$"
+    },
+    {
+      "source": "/gemlik-kiralik-mobil-asansor",
+      "destination": "/gemlik-kiralik-asansor",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/gemlik-kiralik-mobil-asansor(?:/)?$"
+    },
+    {
+      "source": "/gursu-kiralik-mobil-asansor",
+      "destination": "/gursu-kiralik-asansor",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/gursu-kiralik-mobil-asansor(?:/)?$"
+    },
+    {
+      "source": "/mudanya-kiralik-mobil-asansor",
+      "destination": "/mudanya-kiralik-asansor",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/mudanya-kiralik-mobil-asansor(?:/)?$"
+    },
+    {
+      "source": "/orhangazi-kiralik-mobil-asansor",
+      "destination": "/orhangazi-kiralik-asansor",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/orhangazi-kiralik-mobil-asansor(?:/)?$"
+    },
+    {
+      "source": "/karacabey-kiralik-mobil-asansor",
+      "destination": "/karacabey-kiralik-asansor",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/karacabey-kiralik-mobil-asansor(?:/)?$"
+    },
+    {
+      "source": "/iznik-kiralik-mobil-asansor",
+      "destination": "/iznik-kiralik-asansor",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/iznik-kiralik-mobil-asansor(?:/)?$"
+    },
+    {
+      "source": "/mustafakemalpasa-kiralik-mobil-asansor",
+      "destination": "/mustafakemalpasa-kiralik-asansor",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/mustafakemalpasa-kiralik-mobil-asansor(?:/)?$"
+    },
+    {
+      "source": "/yenisehir-kiralik-mobil-asansor",
+      "destination": "/yenisehir-kiralik-asansor",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/yenisehir-kiralik-mobil-asansor(?:/)?$"
+    },
+    {
+      "source": "/kestel-kiralik-mobil-asansor",
+      "destination": "/kestel-kiralik-asansor",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/kestel-kiralik-mobil-asansor(?:/)?$"
+    },
+    {
+      "source": "/orhaneli-kiralik-mobil-asansor",
+      "destination": "/orhaneli-kiralik-asansor",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/orhaneli-kiralik-mobil-asansor(?:/)?$"
+    },
+    {
+      "source": "/keles-kiralik-mobil-asansor",
+      "destination": "/keles-kiralik-asansor",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/keles-kiralik-mobil-asansor(?:/)?$"
+    },
+    {
+      "source": "/harmancik-kiralik-mobil-asansor",
+      "destination": "/harmancik-kiralik-asansor",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/harmancik-kiralik-mobil-asansor(?:/)?$"
+    },
+    {
+      "source": "/buyukorhan-kiralik-mobil-asansor",
+      "destination": "/buyukorhan-kiralik-asansor",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/buyukorhan-kiralik-mobil-asansor(?:/)?$"
+    },
+    {
+      "source": "/:district-kiralik-mobil-asansor",
+      "destination": "/:district-kiralik-asansor",
+      "statusCode": 308,
+      "regex": "^(?!/_next)(?:/([^/]+?))-kiralik-mobil-asansor(?:/)?$"
     }
   ],
   "headers": [

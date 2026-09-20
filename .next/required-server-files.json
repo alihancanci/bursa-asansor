@@ -290,7 +290,104 @@
     "configFileName": "next.config.mjs",
     "turbopack": {
       "root": "/Users/alihancancihm/Desktop/yedek"
-    }
+    },
+    "_originalRedirects": [
+      {
+        "source": "/bursa-merkez-kiralik-mobil-asansor",
+        "destination": "/bursa-merkez-kiralik-asansor",
+        "permanent": true
+      },
+      {
+        "source": "/osmangazi-kiralik-mobil-asansor",
+        "destination": "/osmangazi-kiralik-asansor",
+        "permanent": true
+      },
+      {
+        "source": "/nilufer-kiralik-mobil-asansor",
+        "destination": "/nilufer-kiralik-asansor",
+        "permanent": true
+      },
+      {
+        "source": "/yildirim-kiralik-mobil-asansor",
+        "destination": "/yildirim-kiralik-asansor",
+        "permanent": true
+      },
+      {
+        "source": "/inegol-kiralik-mobil-asansor",
+        "destination": "/inegol-kiralik-asansor",
+        "permanent": true
+      },
+      {
+        "source": "/gemlik-kiralik-mobil-asansor",
+        "destination": "/gemlik-kiralik-asansor",
+        "permanent": true
+      },
+      {
+        "source": "/gursu-kiralik-mobil-asansor",
+        "destination": "/gursu-kiralik-asansor",
+        "permanent": true
+      },
+      {
+        "source": "/mudanya-kiralik-mobil-asansor",
+        "destination": "/mudanya-kiralik-asansor",
+        "permanent": true
+      },
+      {
+        "source": "/orhangazi-kiralik-mobil-asansor",
+        "destination": "/orhangazi-kiralik-asansor",
+        "permanent": true
+      },
+      {
+        "source": "/karacabey-kiralik-mobil-asansor",
+        "destination": "/karacabey-kiralik-asansor",
+        "permanent": true
+      },
+      {
+        "source": "/iznik-kiralik-mobil-asansor",
+        "destination": "/iznik-kiralik-asansor",
+        "permanent": true
+      },
+      {
+        "source": "/mustafakemalpasa-kiralik-mobil-asansor",
+        "destination": "/mustafakemalpasa-kiralik-asansor",
+        "permanent": true
+      },
+      {
+        "source": "/yenisehir-kiralik-mobil-asansor",
+        "destination": "/yenisehir-kiralik-asansor",
+        "permanent": true
+      },
+      {
+        "source": "/kestel-kiralik-mobil-asansor",
+        "destination": "/kestel-kiralik-asansor",
+        "permanent": true
+      },
+      {
+        "source": "/orhaneli-kiralik-mobil-asansor",
+        "destination": "/orhaneli-kiralik-asansor",
+        "permanent": true
+      },
+      {
+        "source": "/keles-kiralik-mobil-asansor",
+        "destination": "/keles-kiralik-asansor",
+        "permanent": true
+      },
+      {
+        "source": "/harmancik-kiralik-mobil-asansor",
+        "destination": "/harmancik-kiralik-asansor",
+        "permanent": true
+      },
+      {
+        "source": "/buyukorhan-kiralik-mobil-asansor",
+        "destination": "/buyukorhan-kiralik-asansor",
+        "permanent": true
+      },
+      {
+        "source": "/:district-kiralik-mobil-asansor",
+        "destination": "/:district-kiralik-asansor",
+        "permanent": true
+      }
+    ]
   },
   "appDir": "/Users/alihancancihm/Desktop/yedek",
   "relativeAppDir": "",

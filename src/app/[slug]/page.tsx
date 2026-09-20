@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug: paramsSlug } = await params;
   const fullSlug = paramsSlug || "";
   
-  const service = SERVICES.find(s => fullSlug.endsWith(`-${s.slug}`));
+  const service = [...SERVICES].sort((a, b) => b.slug.length - a.slug.length).find(s => fullSlug.endsWith(`-${s.slug}`));
   
   if (!service) {
     return { title: 'Sayfa Bulunamadı | Bursa Kiralık Asansör' };
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // Google Politikalarıyla %100 Uyumlu, Tıklama (CTR) Odaklı Başlık Motoru (<60 karakter)
   let title = `${district.name} ${service.name} | Bursa Kiralık Asansör`;
 
-  if (service.slug === "kiralik-mobil-asansor") {
+  if (service.slug === "kiralik-asansor") {
     if (district.slug === "nilufer") {
       title = "Nilüfer Kiralık Asansör | En Uygun Fiyat & Hızlı Taşıma";
     } else if (district.slug === "osmangazi") {
@@ -77,7 +77,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const topHoods = district.neighborhoods.slice(0, 3).join(", ");
   let description = `${district.name} ${service.name} hizmeti. ${topHoods} geneli en uygun fiyat, hızlı ve güvenli taşıma. 7/24 randevu: 0505 608 07 00.`;
   
-  if (service.slug === "kiralik-mobil-asansor") {
+  if (service.slug === "kiralik-asansor") {
     description = `${district.name} kiralık asansör. En uygun fiyat, hızlı ve güvenli taşıma, ücretsiz ekspertiz. 15. kata kadar hemen ara: 0505 608 07 00.`;
   } else if (service.slug === "evden-eve-asansorlu-nakliyat" || service.slug === "evden-eve-nakliyat") {
     description = `${district.name} evden eve nakliyat. Asansörlü, garantili, en uygun fiyat ve ücretsiz keşif desteğiyle taşının. İletişim: 0505 608 07 00.`;
@@ -112,7 +112,7 @@ export default async function ServicePage({ params }: Props) {
   const { slug: paramsSlug } = await params;
   const fullSlug = paramsSlug || "";
   
-  const service = SERVICES.find(s => fullSlug.endsWith(`-${s.slug}`));
+  const service = [...SERVICES].sort((a, b) => b.slug.length - a.slug.length).find(s => fullSlug.endsWith(`-${s.slug}`));
   const districtSlugLength = service ? fullSlug.length - service.slug.length - 1 : 0;
   const districtSlug = service ? fullSlug.substring(0, districtSlugLength) : "";
   const district = DISTRICTS.find(d => d.slug === districtSlug);
@@ -243,9 +243,9 @@ export default async function ServicePage({ params }: Props) {
             "@type": "ListItem",
             "position": 2,
             "name": `${district.name} Kiralık Asansör`,
-            "item": `https://bursakiralikasansor.com/${district.slug}-kiralik-mobil-asansor`
+            "item": `https://bursakiralikasansor.com/${district.slug}-kiralik-asansor`
           },
-          ...(service.slug !== "kiralik-mobil-asansor" ? [
+          ...(service.slug !== "kiralik-asansor" ? [
             {
               "@type": "ListItem",
               "position": 3,

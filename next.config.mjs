@@ -7,6 +7,27 @@ const nextConfig = {
   // Vercel build-time optimizations (TypeScript)
   typescript: { ignoreBuildErrors: true },
 
+  async redirects() {
+    const districts = [
+      "bursa-merkez", "osmangazi", "nilufer", "yildirim", "inegol",
+      "gemlik", "gursu", "mudanya", "orhangazi", "karacabey",
+      "iznik", "mustafakemalpasa", "yenisehir", "kestel", "orhaneli",
+      "keles", "harmancik", "buyukorhan"
+    ];
+    return [
+      ...districts.map((d) => ({
+        source: `/${d}-kiralik-mobil-asansor`,
+        destination: `/${d}-kiralik-asansor`,
+        permanent: true,
+      })),
+      {
+        source: '/:district-kiralik-mobil-asansor',
+        destination: '/:district-kiralik-asansor',
+        permanent: true,
+      },
+    ];
+  },
+
   async headers() {
     return [
       {
