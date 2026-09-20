@@ -2,80 +2,10 @@
 
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import { PhoneCall, MessageCircle, ArrowUpToLine, Globe, ChevronDown, Menu, X } from "lucide-react";
+import { PhoneCall, MessageCircle, ArrowUpToLine, Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { PHONE_NUMBER, WHATSAPP_LINK } from "@/data";
 import { trackPhoneClick, trackWhatsAppClick } from "@/lib/analytics";
-
-const LANGUAGES = [
-  { code: 'tr', name: 'TR' },
-  { code: 'en', name: 'EN' },
-  { code: 'ar', name: 'AR' },
-  { code: 'ru', name: 'RU' }
-];
-
-function LanguageSwitcher() {
-  const { t, i18n } = useTranslation();
-  const [isOpen, setIsOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setIsOpen(false);
-      }
-    }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
-
-  const changeLanguage = (lng: string) => {
-    const currentPath = window.location.pathname;
-    const segments = currentPath.split('/').filter(Boolean);
-    const firstSegment = segments[0];
-
-    const isLangPrefixed = ['en', 'ar', 'ru'].includes(firstSegment);
-    const pathWithoutLang = isLangPrefixed ? '/' + segments.slice(1).join('/') : currentPath;
-    const newPath = lng === 'tr' ? pathWithoutLang : `/${lng}${pathWithoutLang === '/' ? '' : pathWithoutLang}`;
-
-    setIsOpen(false);
-    i18n.changeLanguage(lng).then(() => {
-      window.location.href = newPath;
-    });
-  };
-
-  return (
-    <div className="relative" ref={dropdownRef}>
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-1.5 px-3 py-2.5 min-h-[44px] rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-700 dark:text-slate-200 font-medium text-sm"
-        aria-label={t('common.select_language', 'Dil Seçin')}
-        aria-expanded={isOpen}
-        aria-haspopup="true"
-      >
-        <Globe className="w-4 h-4" />
-        <span className="uppercase">{i18n.resolvedLanguage || 'TR'}</span>
-        <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
-      </button>
-
-      {isOpen && (
-        <div className="absolute right-0 mt-2 w-32 bg-white dark:bg-slate-900 rounded-xl shadow-lg shadow-black/5 dark:shadow-white/5 border border-slate-100 dark:border-slate-800 py-2 z-50">
-          {LANGUAGES.map((lng) => (
-            <button
-              key={lng.code}
-              onClick={() => changeLanguage(lng.code)}
-              aria-label={`${lng.name} diline geç`}
-              className={`w-full text-left px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors
-                ${i18n.resolvedLanguage === lng.code ? 'text-primary font-bold bg-orange-50/50 dark:bg-orange-500/10' : 'text-slate-600 dark:text-slate-300'}`}
-            >
-              {lng.name}
-            </button>
-          ))}
-        </div>
-      )}
-    </div>
-  );
-}
 
 export function Header() {
   const { t } = useTranslation();
@@ -112,8 +42,6 @@ export function Header() {
           </Link>
 
           <div className="flex items-center gap-2 md:gap-4">
-            <LanguageSwitcher />
-
             <Link
               href="/hakkimizda"
               className="hidden md:flex items-center text-sm font-bold text-slate-700 dark:text-slate-200 hover:text-primary transition-colors pr-2"
