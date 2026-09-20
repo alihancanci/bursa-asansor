@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
-import { ELEVATOR_SERVICES, MOVING_SERVICES, PHONE_NUMBER, WHATSAPP_LINK } from "@/data";
+import { ELEVATOR_SERVICES, MOVING_SERVICES, PHONE_NUMBER, WHATSAPP_LINK, GOOGLE_REVIEW_LINK } from "@/data";
 import { trackPhoneClick } from "@/lib/analytics";
-import { ArrowUpToLine, Phone, MapPin, Clock, Truck, ShieldCheck, CheckCircle2 } from "lucide-react";
+import { ArrowUpToLine, Phone, MapPin, Clock, Truck, ShieldCheck, CheckCircle2, Star } from "lucide-react";
 
 export function Footer() {
   const { t } = useTranslation();
@@ -65,6 +65,25 @@ export function Footer() {
 
             {/* E-E-A-T Trust Badges */}
             <div className="mt-6 flex flex-wrap gap-2">
+              <a
+                href={GOOGLE_REVIEW_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 px-3 py-2 rounded-xl flex items-center justify-between gap-2 transition-all group"
+                title="Google'da 5 Yıldız Bırakın"
+              >
+                <div className="flex items-center gap-1.5">
+                  <div className="flex items-center text-amber-400">
+                    <Star className="w-3.5 h-3.5 fill-amber-400" />
+                    <Star className="w-3.5 h-3.5 fill-amber-400" />
+                    <Star className="w-3.5 h-3.5 fill-amber-400" />
+                    <Star className="w-3.5 h-3.5 fill-amber-400" />
+                    <Star className="w-3.5 h-3.5 fill-amber-400" />
+                  </div>
+                  <span className="text-xs text-amber-300 font-bold">4.9 / 5.0 Google Puanı</span>
+                </div>
+                <span className="text-[11px] text-slate-300 underline group-hover:text-white transition-colors">Yorum Yaz ↗</span>
+              </a>
               <div className="bg-white/5 border border-white/10 px-3 py-2 rounded-lg flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-green-400" />
                 <span className="text-xs text-slate-200 font-medium">MYK Sertifikalı Operatör</span>

@@ -22,6 +22,8 @@ export interface Service {
 
 export const PHONE_NUMBER = "05056080700";
 export const WHATSAPP_LINK = "https://wa.me/905056080700?text=Merhaba,%20mobil%20asansör%20kiralama%20hizmetiniz%20hakkında%20bilgi%20alabilir%20miyim?";
+export const GOOGLE_MAPS_LINK = "https://maps.app.goo.gl/W5D6w9hQQ39QvVy29";
+export const GOOGLE_REVIEW_LINK = "https://search.google.com/local/writereview?placeid=ChIJJeWlKakuOhQRVg65WxNZ4OI";
 
 export const USPS = [
   {

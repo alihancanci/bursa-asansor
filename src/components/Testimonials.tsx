@@ -1,6 +1,7 @@
 "use client";
-import { Star } from "lucide-react";
+import { Star, ExternalLink } from "lucide-react";
 import { REVIEWS } from "@/data/reviews";
+import { GOOGLE_REVIEW_LINK } from "@/data";
 import Marquee from "./ui/marquee";
 
 export function Testimonials() {
@@ -10,12 +11,41 @@ export function Testimonials() {
   return (
     <section className="py-20 bg-white dark:bg-background overflow-hidden content-visibility-auto relative border-y border-slate-200 dark:border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
+        <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-amber-50 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/20 text-amber-700 dark:text-amber-400 mb-4 text-xs font-bold tracking-wide">
+          <div className="flex items-center gap-0.5">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+            ))}
+          </div>
+          <span>Google Doğrulanmış Müşteri Puanı: 4.9 / 5.0</span>
+        </div>
+
         <h2 className="text-3xl md:text-5xl font-display font-bold text-secondary dark:text-white mb-4">
           Bizi Tercih Eden <span className="text-primary">Müşterilerimiz</span>
         </h2>
-        <p className="text-gray-700 dark:text-slate-300 max-w-2xl mx-auto font-medium">
+        <p className="text-gray-700 dark:text-slate-300 max-w-2xl mx-auto font-medium mb-6">
           Müşteri memnuniyetini %100 oranında tutmayı hedefliyoruz. İşimizi şansa bırakmıyoruz, Bursa&apos;nın her noktasına kaliteyi asansörle ulaştırıyoruz.
         </p>
+
+        {/* Google Doğrudan 5 Yıldız & Yorum Yap Butonu */}
+        <div className="flex justify-center">
+          <a
+            href={GOOGLE_REVIEW_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2.5 px-6 py-3 rounded-2xl bg-white dark:bg-navy-light text-slate-800 dark:text-white border-2 border-slate-200 dark:border-white/10 hover:border-primary/50 dark:hover:border-primary/50 shadow-sm hover:shadow-lg transition-all duration-200 font-bold text-sm group"
+          >
+            <span className="flex items-center gap-1 text-amber-400">
+              <Star className="w-4 h-4 fill-amber-400" />
+              <Star className="w-4 h-4 fill-amber-400" />
+              <Star className="w-4 h-4 fill-amber-400" />
+              <Star className="w-4 h-4 fill-amber-400" />
+              <Star className="w-4 h-4 fill-amber-400" />
+            </span>
+            <span>Google&apos;da 5 Yıldız Bırak &amp; Yorum Yap</span>
+            <ExternalLink className="w-4 h-4 text-slate-400 group-hover:text-primary transition-colors" />
+          </a>
+        </div>
       </div>
 
       <div className="relative flex flex-col items-center justify-center overflow-hidden">
