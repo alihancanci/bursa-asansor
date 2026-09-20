@@ -172,6 +172,23 @@ export function Footer() {
               <h3 className="text-sm font-bold text-white uppercase tracking-wider font-display">{t('footer.moving_services', 'Nakliyat Hizmetleri')}</h3>
             </div>
             <ul className="space-y-2.5">
+              <li>
+                <Link href="/bursa-evden-eve-nakliyat" className="text-white hover:text-primary transition-colors text-sm flex items-center gap-2 font-semibold">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                  Bursa Evden Eve Nakliyat
+                </Link>
+              </li>
+              <li>
+                <a 
+                  href="https://bursavipevdeneve.com" 
+                  target="_blank" 
+                  rel="noopener"
+                  className="text-primary hover:text-orange-400 transition-colors text-sm flex items-center gap-2 font-bold"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-orange-400 shrink-0" />
+                  Bursa VIP Nakliyat ↗
+                </a>
+              </li>
               {MOVING_SERVICES.map(s => (
                 <li key={s.slug}>
                   <Link href={`/bursa-merkez-${s.slug}`} className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2">
@@ -183,6 +200,27 @@ export function Footer() {
             </ul>
           </div>
 
+        </div>
+
+        {/* Kardeş Kuruluş Tanıtım Bandı */}
+        <div className="mb-8 p-4 rounded-2xl bg-white/5 border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-3 text-left">
+            <div className="p-2.5 rounded-xl bg-primary/20 text-primary">
+              <Truck className="w-5 h-5" />
+            </div>
+            <div>
+              <p className="text-white font-bold text-sm">Resmi Kardeş Kuruluşumuz: Bursa VIP Evden Eve Nakliyat</p>
+              <p className="text-slate-400 text-xs">Asansörlü, ambalajlı ve marangozlu lüks ev taşımacılığı için ortak kurumsal hat: 0505 608 07 00</p>
+            </div>
+          </div>
+          <a
+            href="https://bursavipevdeneve.com"
+            target="_blank"
+            rel="noopener"
+            className="shrink-0 px-4 py-2 bg-primary hover:bg-orange-600 text-white font-bold text-xs rounded-xl transition-all shadow-md"
+          >
+            bursavipevdeneve.com Ziyaret Et ↗
+          </a>
         </div>
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">

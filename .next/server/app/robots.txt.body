@@ -3,5 +3,20 @@ Allow: /
 Disallow: /api/*
 Disallow: /_next/*
 
+User-Agent: GPTBot
+User-Agent: ChatGPT-User
+User-Agent: Google-Extended
+User-Agent: Claude-Web
+User-Agent: PerplexityBot
+User-Agent: anthropic-ai
+User-Agent: OmgiliBot
+User-Agent: YandexBot
+User-Agent: Applebot
+User-Agent: Applebot-Extended
+User-Agent: Meta-ExternalAgent
+User-Agent: facebookexternalhit
+User-Agent: Bytespider
+User-Agent: cohere-ai
+Allow: /
+
 Sitemap: https://bursakiralikasansor.com/sitemap.xml
-Sitemap: https://bursakiralikasansor.com/locations.kml

@@ -1,15 +1,20 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
+  "/manifest.webmanifest/route": "app/manifest.webmanifest/route.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/robots.txt/route": "app/robots.txt/route.js",
   "/sitemap.xml/route": "app/sitemap.xml/route.js",
-  "/icon.png/route": "app/icon.png/route.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
   "/apple-icon.png/route": "app/apple-icon.png/route.js",
+  "/icon.png/route": "app/icon.png/route.js",
+  "/llms-full.txt/route": "app/llms-full.txt/route.js",
+  "/llms.txt/route": "app/llms.txt/route.js",
   "/blog/page": "app/blog/page.js",
   "/calismalarimiz/page": "app/calismalarimiz/page.js",
-  "/[slug]/page": "app/[slug]/page.js",
   "/blog/[slug]/page": "app/blog/[slug]/page.js",
-  "/page": "app/page.js",
+  "/hakkimizda/page": "app/hakkimizda/page.js",
+  "/[slug]/page": "app/[slug]/page.js",
   "/hizmet-bolgelerimiz/page": "app/hizmet-bolgelerimiz/page.js",
-  "/hakkimizda/page": "app/hakkimizda/page.js"
+  "/bursa-evden-eve-nakliyat/page": "app/bursa-evden-eve-nakliyat/page.js",
+  "/evden-eve-nakliye-bursa/page": "app/evden-eve-nakliye-bursa/page.js",
+  "/page": "app/page.js"
 }

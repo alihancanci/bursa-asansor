@@ -13,6 +13,7 @@ const SERVICE_PAGES_UPDATED = new Date();
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     { url: BASE_URL, lastModified: SITE_LAST_UPDATED, changeFrequency: "weekly", priority: 1.0 },
+    { url: `${BASE_URL}/bursa-evden-eve-nakliyat`, lastModified: SITE_LAST_UPDATED, changeFrequency: "daily", priority: 0.98 },
     { url: `${BASE_URL}/evden-eve-nakliye-bursa`, lastModified: SITE_LAST_UPDATED, changeFrequency: "weekly", priority: 0.95 },
     { url: `${BASE_URL}/hizmet-bolgelerimiz`, lastModified: SITE_LAST_UPDATED, changeFrequency: "monthly", priority: 0.85 },
     { url: `${BASE_URL}/hakkimizda`, lastModified: new Date("2025-01-15"), changeFrequency: "monthly", priority: 0.7 },

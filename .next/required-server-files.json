@@ -99,7 +99,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/Users/alihancancihm",
+    "outputFileTracingRoot": "/Users/alihancancihm/Desktop/yedek",
     "experimental": {
       "useSkewCookie": false,
       "cacheLife": {
@@ -289,11 +289,11 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.mjs",
     "turbopack": {
-      "root": "/Users/alihancancihm"
+      "root": "/Users/alihancancihm/Desktop/yedek"
     }
   },
   "appDir": "/Users/alihancancihm/Desktop/yedek",
-  "relativeAppDir": "Desktop/yedek",
+  "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",
     ".next/server/pages-manifest.json",

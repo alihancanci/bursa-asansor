@@ -42,8 +42,8 @@ export const BLOG_POSTS: BlogPost[] = [
         <li><strong>Ek Hizmetler (Paketleme ve Montaj):</strong> Eşyaların güvenli bir şekilde de-monte edilip, köpüklü patpat (ambalajlama vb. LSI) malzemelerle sarılması taşımanın seyrini değiştirir. Özellikle beyaz eşya ve mobilyalar (gardırop vb.) için profesyonel marangoz desteği almanız faydalı olacaktır.</li>
       </ul>
 
-      <h3>Neden Sözleşmeli ve Kurumsal Firmalarla Çalışmalısınız?</h3>
-      <p>Merdiven altı firmalarla çalışmak, kısa vadede tasarruf sağlasa da eşyalarınızın (%100 hasarsız taşıma vaadine rağmen) hasar görmesi durumunda karşınızda muhatap bulamamanıza neden olabilir. Sitemizin ana sayfasındaki <a href="/#map" class="text-primary font-semibold hover:underline">Hizmet Ağımız</a> haritasından da görebileceğiniz üzere, Bursa'nın tüm ilçelerine profesyonel ve sözleşmeli hizmet veriyoruz. Değerli elektronik eşyalarınız ve mobilyalarınız uzman ellere emanet.</p>
+      <h3>Neden Garantili ve Kurumsal Firmalarla Çalışmalısınız?</h3>
+      <p>Merdiven altı firmalarla çalışmak, kısa vadede tasarruf sağlasa da eşyalarınızın (%100 hasarsız taşıma vaadine rağmen) hasar görmesi durumunda karşınızda muhatap bulamamanıza neden olabilir. Sitemizin ana sayfasındaki <a href="/#map" class="text-primary font-semibold hover:underline">Hizmet Ağımız</a> haritasından da görebileceğiniz üzere, Bursa'nın tüm ilçelerine profesyonel ve garantili hizmet veriyoruz. Değerli elektronik eşyalarınız ve mobilyalarınız uzman ellere emanet.</p>
 
       <h2>Paketleme Konusunda Altın Kurallar</h2>
       <p>Doğru <strong>eşya paketleme</strong> teknikleri kullanıldığında kırılma riski sıfıra yaklaşır:</p>
@@ -336,7 +336,7 @@ export const BLOG_POSTS: BlogPost[] = [
       
       <ol class="list-decimal pl-5 mt-4 space-y-2">
         <li><strong>Saha Keşfi:</strong> İyi bir firma asansör kurmak için Google üzerinden bile olsa konumunuzu inceler.</li>
-        <li><strong>Sözleşme ve Güvenlik:</strong> "Güvenli Taşıma Sözleşmesi" yapılıp yapılmadığını sorgulayın. Fiyat ucuzlasa bile eşyanız kaybolduğunda arkanıza yaslanabilmelisiniz.</li>
+        <li><strong>Planlama ve Güvenlik:</strong> "VIP Güvence ve Taşıma Mutabakatı" yapılıp yapılmadığını sorgulayın. Fiyat ucuzlasa bile eşyanız güvende olduğunda arkanıza yaslanabilmelisiniz.</li>
         <li><strong>Kendi Ekipmanı:</strong> Firmanın, sağdan soldan kiraladığı araçla değil, özmal araçlarla hizmet vermesi genel hizmet fiyatını aşağı çeken bir organizasyon gücüdür. Biz kendi bünyemizdeki sistemlerimizle çalıştığımız için gerçekçi ve dürüst fiyatlar sunarız.</li>
       </ol>
 
@@ -431,7 +431,7 @@ export const BLOG_POSTS: BlogPost[] = [
     keywords: ["asansörlü evden eve nakliyat", "teleskopik asansör", "bursa kiralık asansör", "asansörlü taşıma fiyatları", "yüksek kat nakliyat"],
     faqs: [
       { q: "Asansörlü nakliyat her binada kullanılabilir mi?", a: "Hayır. Binanın cephesine yeterli mesafe, zemin sağlamlığı ve park alanı gibi teknik koşullar gereklidir. Taşıma öncesinde firma yerinde keşif yaparak uygunluğu değerlendirir." },
-      { q: "Eşyalar ne kadar güvende?", a: "Asansörlü sistem, merdiven taşımacılığına kıyasla çizilme ve kırılma riskini önemli ölçüde azaltır. Bununla birlikte, imzalanan hizmet sözleşmesi ve profesyonel ambalajlama güvenliği en üst seviyeye taşır." },
+      { q: "Eşyalar ne kadar güvende?", a: "Asansörlü sistem, merdiven taşımacılığına kıyasla çizilme ve kırılma riskini önemli ölçüde azaltır. Bununla birlikte, belirlenen hizmet şartları ve profesyonel ambalajlama güvenliği en üst seviyeye taşır." },
       { q: "Rezervasyon ne kadar önceden yapılmalı?", a: "Yoğun dönemlerde (ay başı/sonu) en az 1 hafta önceden randevu alınması önerilir. Bu, planlama sürecini daha verimli yönetmeyi sağlar." },
       { q: "Kötü hava koşullarında taşıma yapılır mı?", a: "Güçlü rüzgar veya yoğun yağışta asansör operasyonu işçi ve çevre güvenliği gerekçesiyle ertelenebilir." }
     ],
@@ -466,7 +466,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <ul class="list-disc pl-5 mt-4 space-y-3">
         <li><strong>Keşif ve teklif alma:</strong> Nakliyat firmasıyla iletişime geçerek adres, kat bilgisi ve eşya hacminizi paylaşın.</li>
         <li><strong>Ekipman uygunluğunun kontrolü:</strong> Binanın önündeki alanın mobil asansör için uygun olup olmadığı, firma tarafından ücretsiz keşif ziyaretiyle doğrulanmalıdır.</li>
-        <li><strong>Sözleşme ve sigorta:</strong> Taşıma öncesi yazılı sözleşme imzalanması ve eşyaların sigorta kapsamına alınması, olası hasarlarda güvence sağlar.</li>
+        <li><strong>Planlama ve VIP güvence:</strong> Taşıma öncesi yazılı hizmet şartları mutabakatı yapılması ve eşyaların VIP güvence altına alınması, olası hasarlarda güvence sağlar.</li>
       </ul>
 
       <p>Hizmeti doğru almak kadar, doğru firmayı seçmek de kritik önem taşır; aklınızda bulunsun <strong>"Hazırlıklı bir müşteri, hem süreyi hem de maliyeti kısaltır."</strong></p>
@@ -525,12 +525,12 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <h3>1. Son Dakika "Asansör Gerekliymiş" Sürprizi (Bait-and-Switch)</h3>
       <p>En sık rastlanan taktik, telefonda eşyalarınızı listeleyip size piyasanın %30 altında fiyat verilmesidir. Anlaşma sağlanır, taşınma günü kamyon kapıya yanaşır ve nakliye sorumlusu evi gezdikten sonra şu cümleyi kurar: <em>"Abla / Abi bu merdivenler çok dar, bu koltuk buradan dönmez. Eşyanız çizilir. Bizim acil asansör çağırmamız lazım ama o da fiyata dahil değil, ekstra x Bin TL tutar."</em></p>
-      <p>O an eşyalar toplanmış ve eski evi boşaltmak zorunda olduğunuz için o astronomik rakamı çaresizce ödersiniz. Bizim sistemimizde ise <a href="/bursa-merkez-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">kiralık mobil asansörümüz</a> zaten işin merkezindedir ve fiyatlarımız sözleşmeyle tamamen sabittir.</p>
+      <p>O an eşyalar toplanmış ve eski evi boşaltmak zorunda olduğunuz için o astronomik rakamı çaresizce ödersiniz. Bizim sistemimizde ise <a href="/bursa-merkez-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">kiralık mobil asansörümüz</a> zaten işin merkezindedir ve fiyatlarımız karşılıklı mutabakatla tamamen sabittir.</p>
 
       <h3>2. "Sözde" Güvenlik ve Çizilen Beyaz Eşyalar</h3>
       <p>Pek çok firma "eşyalarınız güvende" dese de, profesyonel paketleme yapılmadığı sürece bu sözlerin bir karşılığı yoktur. Gerçek bir firma, profesyonel <a href="/osmangazi-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Osmangazi evden eve nakliyat</a> veya <a href="/nilufer-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Nilüfer nakliyat</a> operasyonlarında, tüm beyaz eşyaları (Buzdolabı, çamaşır makinesi) koruyucu balonlu naylonlarla sarar. Sokak arası hamallarla çalışan "ucuz firmalar", koruma malzemesi kullanmadığı için 2.000 TL tasarruf edeyim derken 40.000 TL'lik buzdolabınızdan olursunuz.</p>
 
-      <h3>3. Sözleşmesiz ve Belgesiz İş Yapmak</h3>
+      <h3>3. Mutabakatsız ve Belgesiz İş Yapmak</h3>
       <p>Taşınma günü yaşanabilecek bir anlaşmazlıkta elinizde resmi bir belge yoksa hiçbir hak iddia edemezsiniz. Profesyonel nakliyat şirketleri taşıma başından sonuna kadar sizi yasal olarak garanti altına alan evraklarla çalışır.</p>
 
       <h2>Ucuz İşçilik, Kötü Montaj Demektir</h2>
@@ -661,7 +661,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         q: "Nakliyat firması seçerken nelere bakmalıyım?",
-        a: "Firmanın özmal aracı ve asansörü olmasına, sözleşmeli çalışmasına, yerinde ücretsiz keşif yapmasına ve saha referanslarına dikkat edin. Fiyatı en düşük olan firmayı değil, güvenilirliği en yüksek olanı seçin."
+        a: "Firmanın özmal aracı ve asansörü olmasına, yazılı hizmet şartları ve mutabakatla çalışmasına, yerinde ücretsiz keşif yapmasına ve saha referanslarına dikkat edin. Fiyatı en düşük olan firmayı değil, güvenilirliği en yüksek olanı seçin."
       },
       {
         q: "Taşınma günü abonelik işlemlerini unutmamak için ne yapmalıyım?",
@@ -687,7 +687,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <ol class="list-decimal pl-5 mt-4 space-y-3 mb-6">
         <li><strong>Özmal araç ve asansörünüz var mı?</strong> Taşeron sistemle çalışan firmalar, işi başkasına devreder. Bu durum hem sorumluluğu hem de fiyatı belirsizleştirir.</li>
         <li><strong>Ücretsiz yerinde keşif yapıyor musunuz?</strong> Gerçek bir firma, fiyat vermeden önce adresinizi inceler. Yalnızca telefonla kör fiyat veren firmalardan kaçının.</li>
-        <li><strong>Taşıma sözleşmesi imzalanıyor mu?</strong> Sözleşme olmadan hak iddianız güçtür. Kurumsal firmalar her işlemde yazılı evrak düzenler.</li>
+        <li><strong>Yazılı hizmet şartları ve mutabakat düzenleniyor mu?</strong> Belge olmadan hak iddianız güçtür. Kurumsal firmalar her işlemde yazılı evrak düzenler.</li>
         <li><strong>Referans görselleri gerçek mi?</strong> Sitedeki fotoğraflar stok görsel mi, yoksa gerçek sahadan mı? <a href="/calismalarimiz" class="text-primary font-semibold hover:underline">Çalışmalarımız</a> sayfamızda Bursa sokaklarından gerçek referanslarımızı inceleyebilirsiniz.</li>
         <li><strong>Kapora talep ediyorlar mı?</strong> Ön ödeme veya kapora isteyen firmalarla dikkatli olun. <a href="/blog/bursa-nakliye-kapora-dolandiriciligi-guvenilir-nakliyat-firmasi" class="text-primary font-semibold hover:underline">Nakliyat dolandırıcılığı</a> en çok bu yolla gerçekleşiyor.</li>
       </ol>
@@ -879,8 +879,8 @@ export const BLOG_POSTS: BlogPost[] = [
       <h2>H — Hukuki Haklar: Taşınmada Bilinmesi Gerekenler</h2>
       <p>Taşınma sürecinde hukuki haklarınızı bilmek, olası anlaşmazlıklarda sizi korur:</p>
 
-      <h3>Kira Sözleşmesi Sonlandırma</h3>
-      <p>Kiracı tarafından sözleşme sonlandırılırken <strong>yasal bildirim sürelerine</strong> uymak gerekir. Türk Borçlar Kanunu'na göre genellikle 1 ay önceden yazılı bildirim yeterlidir; ancak sözleşmenizde farklı bir süre belirtilmişse ona uyun.</p>
+      <h3>Kira Kontratı Sonlandırma</h3>
+      <p>Kiracı tarafından kontrat sonlandırılırken <strong>yasal bildirim sürelerine</strong> uymak gerekir. Türk Borçlar Kanunu'na göre genellikle 1 ay önceden yazılı bildirim yeterlidir; ancak kontratınızda farklı bir süre belirtilmişse ona uyun.</p>
 
       <h3>Depozito İadesinin Koşulları</h3>
       <p>Ev sahibi, evi aldığı gibi teslim aldıktan sonra <strong>depozito iadesini</strong> yapmakla yükümlüdür. Normal kullanım kaynaklı olağan yıpranmalar depozito kesintisi gerekçesi olamaz. Taşınırken evin girişte ve çıkışta fotoğraflarını çekin, olası anlaşmazlıklara karşı deliliniz olsun.</p>
@@ -898,7 +898,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <li>Kişisel bakım ürünleri (diş fırçası, sabun, havlu)</li>
         <li>Şarj aletleri ve powerbank</li>
         <li>Birkaç günlük ilaç ve reçeteler</li>
-        <li>Önemli belgeler (kimlik, sigorta, kira sözleşmesi)</li>
+        <li>Önemli belgeler (kimlik, tapu, kira kontratı)</li>
         <li>Bir set yemek takımı ve su bardağı</li>
         <li>Atıştırmalık ve su</li>
         <li>Bebek veya evcil hayvanınız için temel ihtiyaçlar</li>

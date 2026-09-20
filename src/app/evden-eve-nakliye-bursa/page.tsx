@@ -35,7 +35,7 @@ const faqSchema = {
       "name": "Bursa'da güvenilir nakliyat firması nasıl seçilir?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Özmal aracı ve asansörü olan, yerinde ücretsiz keşif yapan, taşıma sözleşmesi imzalayan ve gerçek referans görsellerine sahip firmalar tercih edilmelidir. Kapora talep eden ve yalnızca telefonda fiyat veren firmalardan uzak durun."
+        "text": "Özmal aracı ve asansörü olan, yerinde ücretsiz keşif yapan, yazılı hizmet şartları sunan ve gerçek referans görsellerine sahip firmalar tercih edilmelidir. Kapora talep eden ve yalnızca telefonda fiyat veren firmalardan uzak durun."
       }
     },
     {
@@ -59,7 +59,7 @@ const faqSchema = {
       "name": "Nakliyat sırasında eşyalar zarar görürse ne olur?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sözleşmeli çalışan kurumsal nakliyat firmalarında hasar durumunda sorumluluk firmaya aittir. Bu nedenle taşıma öncesi mutlaka yazılı sözleşme imzalayın; sözleşmesiz çalışan firmalar hasardan sorumlu tutulamaz."
+        "text": "VIP güvence ve hasarsızlık garantisiyle çalışan kurumsal nakliyat firmalarında hasar durumunda tam sorumluluk firmaya aittir. Bu nedenle taşıma öncesi mutlaka yazılı hizmet şartları ve mutabakat oluşturulmalıdır."
       }
     }
   ]
@@ -134,7 +134,7 @@ export default function EvdenEveNakliyeBursa() {
                 { icon: Shield, title: 'Sıfır Hasar Garantisi', text: 'Dış cephe asansörü ile eşyalarınız merdivene değmeden taşınır.' },
                 { icon: Star, title: 'Ücretsiz Yerinde Keşif', text: 'Sürpriz fiyat yok. Keşif sonrası verilen fiyat sabittir.' },
                 { icon: Clock, title: '7/24 Hizmet', text: 'Hafta sonu ve resmi tatil dahil her gün hizmetinizdeyiz.' },
-                { icon: CheckCircle, title: 'Sözleşmeli Çalışma', text: 'Her taşıma yazılı sözleşme ile güvence altına alınır.' },
+                { icon: CheckCircle, title: 'Hizmet Şartları & Mutabakat', text: 'Her taşıma yazılı hizmet şartları ile güvence altına alınır.' },
               ].map(({ icon: Icon, title, text }) => (
                 <div key={title} className="flex gap-4 bg-white dark:bg-slate-800 rounded-2xl p-5 shadow-sm border border-slate-100 dark:border-slate-700">
                   <div className="w-10 h-10 bg-orange-100 dark:bg-orange-500/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -159,11 +159,11 @@ export default function EvdenEveNakliyeBursa() {
             </p>
             <ol className="space-y-5">
               {[
-                { step: '1', title: 'Keşif ve Fiyat Alma', text: 'Nakliyat firması adresinize gelir, eşyaları inceler ve asansör kurulup kurulamayacağını değerlendirir. Keşipsiz verilen fiyatlar bağlayıcı değildir; taşınma günü artış yaşanabilir.' },
-                { step: '2', title: 'Sözleşme İmzalama', text: 'Keşif fiyatı netleştikten sonra taraflarca sözleşme imzalanır. Sözleşmede hizmet kapsamı, fiyat ve taşıma tarihi yer alır.' },
+                { step: '1', title: 'Keşif ve Fiyat Alma', text: 'Nakliyat firması adresinize gelir, eşyaları inceler ve asansör kurulup kurulamayacağını değerlendirir. Keşifsiz verilen fiyatlar bağlayıcı değildir; taşınma günü artış yaşanabilir.' },
+                { step: '2', title: 'Planlama ve Mutabakat', text: 'Keşif fiyatı netleştikten sonra karşılıklı hizmet şartları ve mutabakat oluşturulur. Mutabakatta hizmet kapsamı, sabit fiyat ve taşıma tarihi yer alır.' },
                 { step: '3', title: 'Kolileme ve Hazırlık', text: 'Kırılgan eşyalar balonlu naylon ile sarılır, mobilyalar demonte edilir. Büyük beyaz eşyalar için nakliye emniyet vidaları takılmalıdır.' },
                 { step: '4', title: 'Asansörlü Taşıma', text: 'Dış cephe asansörü binaya yanaşır ve eşyalar balkon veya pencereden doğrudan taşınır. Bu yöntem eşya hasarını neredeyse sıfıra indirir.' },
-                { step: '5', title: 'Yerleşim ve Montaj', text: 'Eşyalar yeni eve taşındıktan sonra mobilyalar monte edilir, beyaz eşyalar yerleştirilir. İş bitiminde sözleşmedeki ücret ödenir.' },
+                { step: '5', title: 'Yerleşim ve Montaj', text: 'Eşyalar yeni eve taşındıktan sonra mobilyalar monte edilir, beyaz eşyalar yerleştirilir. İş bitiminde mutabakattaki sabit ücret ödenir.' },
               ].map(({ step, title, text }) => (
                 <li key={step} className="flex gap-4">
                   <div className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 mt-0.5">
@@ -184,14 +184,14 @@ export default function EvdenEveNakliyeBursa() {
               Nakliyat Firması Seçerken Dikkat Edilmesi Gerekenler
             </h2>
             <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
-              Bursa&apos;da yüzlerce nakliyat firması olduğunu düşünürsek, doğru seçim yapmak kritiktir. Aşağıdaki kriterleri kontrol edin:
+              Bursa&apos;da yüzlerce nakliyat firması olduğunu düşünürsek, doğru seçim yapmak kritiktir. VIP standartta taşıma için kardeş kuruluşumuz <a href="https://bursavipevdeneve.com" target="_blank" rel="noopener" className="text-primary font-bold hover:underline">Bursa VIP Evden Eve Nakliyat</a> gibi profesyonel kurumsal firmalar tercih edilmelidir:
             </p>
             <div className="space-y-4">
               {[
                 { ok: true, text: 'Özmal aracı ve dış cephe asansörü mevcut.' },
                 { ok: true, text: 'Taşınma öncesi ücretsiz yerinde keşif yapıyor.' },
                 { ok: true, text: 'Keşif sonrası sabit fiyat garantisi veriyor.' },
-                { ok: true, text: 'Yazılı taşıma sözleşmesi düzenliyor.' },
+                { ok: true, text: 'Yazılı hizmet şartları ve mutabakat düzenliyor.' },
                 { ok: true, text: 'Web sitesinde gerçek saha görselleri mevcut.' },
                 { ok: false, text: 'Yalnızca telefonla, evi görmeden fiyat veriyor.' },
                 { ok: false, text: 'Rezervasyon için önceden kapora talep ediyor.' },

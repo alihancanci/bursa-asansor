@@ -14,7 +14,21 @@
   ],
   "headers": [
     {
-      "source": "/(.*)",
+      "source": "/yandex_8b02f2ef69ce4c35.html",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/html; charset=UTF-8"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
+      ],
+      "regex": "^/yandex_8b02f2ef69ce4c35\\.html(?:/)?$"
+    },
+    {
+      "source": "/((?!yandex_8b02f2ef69ce4c35.html).*)",
       "headers": [
         {
           "key": "X-Content-Type-Options",
@@ -37,7 +51,7 @@
           "value": "camera=(), microphone=(), geolocation=()"
         }
       ],
-      "regex": "^(?:/(.*))(?:/)?$"
+      "regex": "^(?:/((?!yandex_8b02f2ef69ce4c35.html).*))(?:/)?$"
     },
     {
       "source": "/fonts/(.*)",
@@ -119,10 +133,22 @@
       "namedRegex": "^/blog(?:/)?$"
     },
     {
+      "page": "/bursa-evden-eve-nakliyat",
+      "regex": "^/bursa\\-evden\\-eve\\-nakliyat(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/bursa\\-evden\\-eve\\-nakliyat(?:/)?$"
+    },
+    {
       "page": "/calismalarimiz",
       "regex": "^/calismalarimiz(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/calismalarimiz(?:/)?$"
+    },
+    {
+      "page": "/evden-eve-nakliye-bursa",
+      "regex": "^/evden\\-eve\\-nakliye\\-bursa(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/evden\\-eve\\-nakliye\\-bursa(?:/)?$"
     },
     {
       "page": "/favicon.ico",
@@ -147,6 +173,24 @@
       "regex": "^/icon\\.png(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/icon\\.png(?:/)?$"
+    },
+    {
+      "page": "/llms-full.txt",
+      "regex": "^/llms\\-full\\.txt(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/llms\\-full\\.txt(?:/)?$"
+    },
+    {
+      "page": "/llms.txt",
+      "regex": "^/llms\\.txt(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/llms\\.txt(?:/)?$"
+    },
+    {
+      "page": "/manifest.webmanifest",
+      "regex": "^/manifest\\.webmanifest(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/manifest\\.webmanifest(?:/)?$"
     },
     {
       "page": "/robots.txt",

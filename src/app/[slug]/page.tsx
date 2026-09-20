@@ -80,7 +80,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (service.slug === "kiralik-mobil-asansor") {
     description = `${district.name} kiralık asansör. En uygun fiyat, hızlı ve güvenli taşıma, ücretsiz ekspertiz. 15. kata kadar hemen ara: 0505 608 07 00.`;
   } else if (service.slug === "evden-eve-asansorlu-nakliyat" || service.slug === "evden-eve-nakliyat") {
-    description = `${district.name} evden eve nakliyat. Asansörlü, sigortalı, en uygun fiyat ve ücretsiz keşif desteğiyle taşının. İletişim: 0505 608 07 00.`;
+    description = `${district.name} evden eve nakliyat. Asansörlü, garantili, en uygun fiyat ve ücretsiz keşif desteğiyle taşının. İletişim: 0505 608 07 00.`;
   }
 
   if (description.length > 155) {

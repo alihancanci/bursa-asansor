@@ -1,8 +1,8 @@
-(()=>{var a={};a.id=831,a.ids=[831],a.modules={261:a=>{"use strict";a.exports=require("next/dist/shared/lib/router/utils/app-paths")},3295:a=>{"use strict";a.exports=require("next/dist/server/app-render/after-task-async-storage.external.js")},10846:a=>{"use strict";a.exports=require("next/dist/compiled/next-server/app-page.runtime.prod.js")},11997:a=>{"use strict";a.exports=require("punycode")},18422:(a,b,c)=>{"use strict";c.r(b),c.d(b,{default:()=>g,metadata:()=>f});var d=c(75338),e=c(20202);let f={title:"Blog | Taşınma Rehberi ve Asans\xf6r Kiralama T\xfcyoları",description:"Taşınırken nelere dikkat edilmeli? Kiralık asans\xf6r fiyatları nasıl belirlenir? Hepsi ve daha fazlası uzman makalelerimizle blog b\xf6l\xfcm\xfcnde.",openGraph:{title:"Blog | Taşınma Rehberi ve Asans\xf6r Kiralama T\xfcyoları",description:"Taşınırken nelere dikkat edilmeli? Kiralık asans\xf6r fiyatları nasıl belirlenir?",url:"/blog"}};function g(){return(0,d.jsx)(e.default,{})}},19121:a=>{"use strict";a.exports=require("next/dist/server/app-render/action-async-storage.external.js")},20202:(a,b,c)=>{"use strict";c.d(b,{default:()=>d});let d=(0,c(97954).registerClientReference)(function(){throw Error("Attempted to call the default export of \"/Users/alihancancihm/Desktop/yedek/src/app/blog/BlogIndexClient.tsx\" from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"/Users/alihancancihm/Desktop/yedek/src/app/blog/BlogIndexClient.tsx","default")},26713:a=>{"use strict";a.exports=require("next/dist/shared/lib/router/utils/is-bot")},27529:(a,b,c)=>{"use strict";c.d(b,{default:()=>m});var d=c(21124),e=c(3991),f=c.n(e),g=c(24515),h=c(4085);let i=[{id:"1",slug:"2026-evden-eve-nakliyat-rehberi",title:"2026 Evden Eve Nakliyat Rehberi: Fiyatlar ve Dikkat Edilmesi Gerekenler",excerpt:"Evden eve nakliyat s\xfcrecinde maliyetleri nasıl d\xfcş\xfcrebilirsiniz? 2026 yılı g\xfcncel nakliye fiyatları, asans\xf6rl\xfc taşıma avantajları ve doğru firma se\xe7imi i\xe7in kapsamlı rehber.",date:"24 Mart 2026",readTime:"6 dk okuma",category:"Nakliyat Rehberi",author:"Bursa Kiralık Asans\xf6r ve Evden Eve Nakliyat Ekibi",image:"/images/hero-bg.png",metaDescription:"2026 evden eve nakliyat fiyatları ne kadar? Taşınırken maliyeti d\xfcş\xfcrmenin yolları ve asans\xf6rl\xfc taşımacılığın avantajları. Detaylı nakliyat rehberi.",keywords:["evden eve nakliyat","nakliyat fiyatları 2026","asans\xf6rl\xfc nakliyat","taşınma rehberi","bursa evden eve nakliyat","paketleme","g\xfcvenilir taşıma"],content:`
+(()=>{var a={};a.id=831,a.ids=[831],a.modules={261:a=>{"use strict";a.exports=require("next/dist/shared/lib/router/utils/app-paths")},3295:a=>{"use strict";a.exports=require("next/dist/server/app-render/after-task-async-storage.external.js")},10846:a=>{"use strict";a.exports=require("next/dist/compiled/next-server/app-page.runtime.prod.js")},11997:a=>{"use strict";a.exports=require("punycode")},18422:(a,b,c)=>{"use strict";c.r(b),c.d(b,{default:()=>h,metadata:()=>g});var d=c(75338),e=c(20202),f=c(41861);let g={title:"Asans\xf6r Kiralama T\xfcyoları & Blog | Bursa Kiralık Asans\xf6r CNC",description:"Taşınırken nelere dikkat edilmeli? Kiralık asans\xf6r fiyatları nasıl belirlenir? Hepsi ve daha fazlası uzman makalelerimizle blog b\xf6l\xfcm\xfcnde.",alternates:{canonical:(0,f.K)("/blog")},openGraph:{title:"Asans\xf6r Kiralama T\xfcyoları & Blog | Bursa Kiralık Asans\xf6r CNC",description:"Taşınırken nelere dikkat edilmeli? Kiralık asans\xf6r fiyatları nasıl belirlenir?",url:(0,f.K)("/blog")}};function h(){return(0,d.jsx)(e.default,{})}},19121:a=>{"use strict";a.exports=require("next/dist/server/app-render/action-async-storage.external.js")},20202:(a,b,c)=>{"use strict";c.d(b,{default:()=>d});let d=(0,c(97954).registerClientReference)(function(){throw Error("Attempted to call the default export of \"/Users/alihancancihm/Desktop/yedek/src/app/blog/BlogIndexClient.tsx\" from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"/Users/alihancancihm/Desktop/yedek/src/app/blog/BlogIndexClient.tsx","default")},26713:a=>{"use strict";a.exports=require("next/dist/shared/lib/router/utils/is-bot")},27529:(a,b,c)=>{"use strict";c.d(b,{default:()=>m});var d=c(21124),e=c(3991),f=c.n(e),g=c(24515),h=c(4085);let i=[{id:"1",slug:"2026-evden-eve-nakliyat-rehberi",title:"2026 Evden Eve Nakliyat Rehberi: Fiyatlar ve Dikkat Edilmesi Gerekenler",excerpt:"Evden eve nakliyat s\xfcrecinde maliyetleri nasıl d\xfcş\xfcrebilirsiniz? 2026 yılı g\xfcncel nakliye fiyatları, asans\xf6rl\xfc taşıma avantajları ve doğru firma se\xe7imi i\xe7in kapsamlı rehber.",date:"24 Mart 2026",readTime:"6 dk okuma",category:"Nakliyat Rehberi",author:"Bursa Kiralık Asans\xf6r ve Evden Eve Nakliyat Ekibi",image:"/images/hero-bg.png",metaDescription:"2026 evden eve nakliyat fiyatları ne kadar? Taşınırken maliyeti d\xfcş\xfcrmenin yolları ve asans\xf6rl\xfc taşımacılığın avantajları. Detaylı nakliyat rehberi.",keywords:["evden eve nakliyat","nakliyat fiyatları 2026","asans\xf6rl\xfc nakliyat","taşınma rehberi","bursa evden eve nakliyat","paketleme","g\xfcvenilir taşıma"],content:`
       <h2>2026 Yılında Ev Taşımanın Zorlukları ve \xc7\xf6z\xfcmleri</h2>
       <p>Yeni bir eve taşınmak hayatımızdaki en stresli s\xfcre\xe7lerden biridir. Eşyaların toplanması, paketlenmesi, doğru nakil aracının bulunması ve yerleştirilmesi ciddi bir organizasyon gerektirir. 2026 yılı itibarıyla, şehirleşmenin hızlanması ve \xe7ok katlı binaların artması, geleneksel <strong>evden eve nakliyat</strong> y\xf6ntemlerini yetersiz kılmaktadır.</p>
       
-      <p>Peki taşınırken stresi minimuma indirmek ve eşyalarınızın zarar g\xf6rmesini engellemek i\xe7in ne yapmalısınız? Cevap basit: Profesyonel destek almak. Bursa gibi metropollerde \xf6zellikle <a href="/osmangazi-evden-eve-asansorlu-nakliyat" class="text-primary font-semibold hover:underline">Osmangazi</a> ve <a href="/nilufer-asansorlu-komple-ev-tasima" class="text-primary font-semibold hover:underline">Nil\xfcfer</a> il\xe7elerinde y\xfcksek katlı konutlaşma oranının artması, <strong>asans\xf6rl\xfc taşımacılık</strong> hizmetini bir l\xfcks olmaktan \xe7ıkarıp ihtiya\xe7 haline getirmiştir.</p>
+      <p>Peki taşınırken stresi minimuma indirmek ve eşyalarınızın zarar g\xf6rmesini engellemek i\xe7in ne yapmalısınız? Cevap basit: Profesyonel destek almak. Bursa gibi metropollerde \xf6zellikle <a href="/nilufer-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Nil\xfcfer Kiralık Asans\xf6r</a>, <a href="/osmangazi-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Osmangazi Kiralık Asans\xf6r</a> ve <a href="/mudanya-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Mudanya Kiralık Asans\xf6r</a> operasyonlarımızda y\xfcksek katlı konutlaşma ve dar sokaklar nedeniyle <strong>asans\xf6rl\xfc taşımacılık</strong> hizmeti bir l\xfcks olmaktan \xe7ıkıp vazge\xe7ilmez bir ihtiya\xe7 haline gelmiştir.</p>
 
       <h3>Evden Eve Nakliyat Fiyatları (2026) Neye G\xf6re Belirlenir?</h3>
       <p>Taşınma planı yapanların aklındaki ilk soru genellikle "<em>Evden eve nakliyat fiyatları ne kadar?</em>" olur. 2026 yılında maliyetleri etkileyen temel unsurlar (LSI: maliyet analizi, fiyat hesaplama) şunlardır:</p>
@@ -13,8 +13,8 @@
         <li><strong>Ek Hizmetler (Paketleme ve Montaj):</strong> Eşyaların g\xfcvenli bir şekilde de-monte edilip, k\xf6p\xfckl\xfc patpat (ambalajlama vb. LSI) malzemelerle sarılması taşımanın seyrini değiştirir. \xd6zellikle beyaz eşya ve mobilyalar (gardırop vb.) i\xe7in profesyonel marangoz desteği almanız faydalı olacaktır.</li>
       </ul>
 
-      <h3>Neden S\xf6zleşmeli ve Kurumsal Firmalarla \xc7alışmalısınız?</h3>
-      <p>Merdiven altı firmalarla \xe7alışmak, kısa vadede tasarruf sağlasa da eşyalarınızın (%100 hasarsız taşıma vaadine rağmen) hasar g\xf6rmesi durumunda karşınızda muhatap bulamamanıza neden olabilir. Sitemizin ana sayfasındaki <a href="/#map" class="text-primary font-semibold hover:underline">Hizmet Ağımız</a> haritasından da g\xf6rebileceğiniz \xfczere, Bursa'nın t\xfcm il\xe7elerine profesyonel ve s\xf6zleşmeli hizmet veriyoruz. Değerli elektronik eşyalarınız ve mobilyalarınız uzman ellere emanet.</p>
+      <h3>Neden Garantili ve Kurumsal Firmalarla \xc7alışmalısınız?</h3>
+      <p>Merdiven altı firmalarla \xe7alışmak, kısa vadede tasarruf sağlasa da eşyalarınızın (%100 hasarsız taşıma vaadine rağmen) hasar g\xf6rmesi durumunda karşınızda muhatap bulamamanıza neden olabilir. Sitemizin ana sayfasındaki <a href="/#map" class="text-primary font-semibold hover:underline">Hizmet Ağımız</a> haritasından da g\xf6rebileceğiniz \xfczere, Bursa'nın t\xfcm il\xe7elerine profesyonel ve garantili hizmet veriyoruz. Değerli elektronik eşyalarınız ve mobilyalarınız uzman ellere emanet.</p>
 
       <h2>Paketleme Konusunda Altın Kurallar</h2>
       <p>Doğru <strong>eşya paketleme</strong> teknikleri kullanıldığında kırılma riski sıfıra yaklaşır:</p>
@@ -45,7 +45,7 @@
       </ul>
 
       <h2>İşlem Nasıl Ger\xe7ekleşir?</h2>
-      <p>Eğer "Bina \xf6n\xfc asans\xf6r kurmaya m\xfcsait mi?" diye d\xfcş\xfcn\xfcyorsanız, iletişim numaramızdan veya WhatsApp (<a href="https://wa.me/905053297533" class="text-primary font-semibold hover:underline">0505 329 75 33</a>) \xfczerinden \xfccretsiz keşif talep etmeniz yeterli. Ara\xe7 sokak/cadde uygunluğuna g\xf6re yanaşır, platform a\xe7ısı ve denge ayakları (hidrolik sistem) ayarlanır. Ardından eşyalar doğrudan balkon veya s\xf6k\xfclen cam boşluklarından evinize ulaştırılır.</p>
+      <p>Eğer "Bina \xf6n\xfc asans\xf6r kurmaya m\xfcsait mi?" diye d\xfcş\xfcn\xfcyorsanız, iletişim numaramızdan veya WhatsApp (<a href="https://wa.me/905056080700" class="text-primary font-semibold hover:underline">0505 608 07 00</a>) \xfczerinden \xfccretsiz keşif talep etmeniz yeterli. Ara\xe7 sokak/cadde uygunluğuna g\xf6re yanaşır, platform a\xe7ısı ve denge ayakları (hidrolik sistem) ayarlanır. Ardından eşyalar doğrudan balkon veya s\xf6k\xfclen cam boşluklarından evinize ulaştırılır.</p>
     `},{id:"3",slug:"tasinma-oncesi-kontrol-listesi-adim-adim-stresten-kurtulun",title:"Taşınma \xd6ncesi Kontrol Listesi: Adım Adım Stresten Kurtulun",excerpt:"Sorunsuz bir taşınma s\xfcreci i\xe7in 1 ay \xf6ncesinden yapmanız gerekenleri bir araya getirdik. Abonelik devirleri, eşya ayrıştırma, kolileme stratejileri ve taşıma şirketi rezervasyonu.",date:"26 Mart 2026",readTime:"4 dk okuma",category:"Taşınma Planlaması",author:"Bursa Kiralık Asans\xf6r ve Evden Eve Nakliyat Ekibi",image:"/images/hero-bg.png",metaDescription:"Taşınma telaşından kurtulmak i\xe7in en iyi kontrol listesi. Abonelik işlemleri, eşya paketleme taktikleri ve kurumsal nakliyat firması bulma rehberi.",keywords:["taşınma işlemleri","abonelik taşıma","eşya paketleme listesi","stres olmadan taşınmak","ofis taşıma ipu\xe7ları","yeni eve taşınırken"],content:`
       <h2>Taşınma S\xfcrecinde Planlamanın G\xfcc\xfc</h2>
       <p>Yeni bir eve veya ofise ge\xe7mek b\xfcy\xfck bir heyecandır, ancak "eşyaları koliye doldurup yola \xe7ıkmak" basit bir eylemden farklı olarak, gerisinde detaylı bir idari ve organizasyon y\xfck\xfc barındırır. Son g\xfcne bırakılan işler kafa karışıklığına ve eşyaların kaybedilmesine neden olur. Bu nedenle, aşağıda adım adım hazırladığımız "Taşınma Stratejisi" ile y\xfck\xfcn\xfcz\xfc hafifletebilirsiniz.</p>
@@ -184,7 +184,7 @@
       
       <ol class="list-decimal pl-5 mt-4 space-y-2">
         <li><strong>Saha Keşfi:</strong> İyi bir firma asans\xf6r kurmak i\xe7in Google \xfczerinden bile olsa konumunuzu inceler.</li>
-        <li><strong>S\xf6zleşme ve G\xfcvenlik:</strong> "G\xfcvenli Taşıma S\xf6zleşmesi" yapılıp yapılmadığını sorgulayın. Fiyat ucuzlasa bile eşyanız kaybolduğunda arkanıza yaslanabilmelisiniz.</li>
+        <li><strong>Planlama ve G\xfcvenlik:</strong> "VIP G\xfcvence ve Taşıma Mutabakatı" yapılıp yapılmadığını sorgulayın. Fiyat ucuzlasa bile eşyanız g\xfcvende olduğunda arkanıza yaslanabilmelisiniz.</li>
         <li><strong>Kendi Ekipmanı:</strong> Firmanın, sağdan soldan kiraladığı ara\xe7la değil, \xf6zmal ara\xe7larla hizmet vermesi genel hizmet fiyatını aşağı \xe7eken bir organizasyon g\xfcc\xfcd\xfcr. Biz kendi b\xfcnyemizdeki sistemlerimizle \xe7alıştığımız i\xe7in ger\xe7ek\xe7i ve d\xfcr\xfcst fiyatlar sunarız.</li>
       </ol>
 
@@ -231,7 +231,7 @@
 
       <h2>Bursa Kiralık Asans\xf6r ve Evden Eve Nakliyat Farkı</h2>
       <p>Bursa Kiralık Asans\xf6r ve Evden Eve Nakliyat olarak evden eve taşınma s\xfcrecinizde size sadece yeni evinizin keyfini s\xfcrmeyi bırakıyoruz. \xdccretsiz ekspertiz hizmetimizle eşyalarınızı yerinde inceliyor, size en uygun asans\xf6r ve ara\xe7 b\xfcy\xfckl\xfcğ\xfcn\xfc tahsis ediyor, deneyimli personelimizle eşyalarınızı yeni yuvanıza aynı g\xfcn i\xe7inde g\xfcvenle ulaştırıyoruz.</p>
-    `},{id:"frase-asansorlu-nakliyat",slug:"asansorlu-evden-eve-nakliyat",title:"Bursa Asans\xf6rl\xfc Evden Eve Nakliyat: Kolay ve G\xfcvenli Taşıma",excerpt:"Y\xfcksek katlı binalarda asans\xf6rl\xfc evden eve nakliyat ile eşyalarınızı g\xfcvenle taşıyın. Profesyonel hizmetle stres ve masrafları azaltın!",date:"07 Nisan 2026",author:"Atakan",readTime:"8 dk okuma",category:"Lojistik & Teknoloji",image:"/images/asansorlu-tasima-bursa-hero.jpg",metaDescription:"Y\xfcksek katlı binalarda asans\xf6rl\xfc evden eve nakliyat ile eşyalarınızı g\xfcvenle taşıyın. Profesyonel hizmetle stres ve masrafları azaltın!",keywords:["asans\xf6rl\xfc evden eve nakliyat","teleskopik asans\xf6r","bursa kiralık asans\xf6r","asans\xf6rl\xfc taşıma fiyatları","y\xfcksek kat nakliyat"],faqs:[{q:"Asans\xf6rl\xfc nakliyat her binada kullanılabilir mi?",a:"Hayır. Binanın cephesine yeterli mesafe, zemin sağlamlığı ve park alanı gibi teknik koşullar gereklidir. Taşıma \xf6ncesinde firma yerinde keşif yaparak uygunluğu değerlendirir."},{q:"Eşyalar ne kadar g\xfcvende?",a:"Asans\xf6rl\xfc sistem, merdiven taşımacılığına kıyasla \xe7izilme ve kırılma riskini \xf6nemli \xf6l\xe7\xfcde azaltır. Bununla birlikte, s\xf6zleşme ve sigorta poli\xe7esi g\xfcvenliği %100'e taşır."},{q:"Rezervasyon ne kadar \xf6nceden yapılmalı?",a:"Yoğun d\xf6nemlerde (ay başı/sonu) en az 1 hafta \xf6nceden randevu alınması \xf6nerilir. Bu, planlama s\xfcrecini daha verimli y\xf6netmeyi sağlar."},{q:"K\xf6t\xfc hava koşullarında taşıma yapılır mı?",a:"G\xfc\xe7l\xfc r\xfczgar veya yoğun yağışta asans\xf6r operasyonu iş\xe7i ve \xe7evre g\xfcvenliği gerek\xe7esiyle ertelenebilir."}],content:`
+    `},{id:"frase-asansorlu-nakliyat",slug:"asansorlu-evden-eve-nakliyat",title:"Bursa Asans\xf6rl\xfc Evden Eve Nakliyat: Kolay ve G\xfcvenli Taşıma",excerpt:"Y\xfcksek katlı binalarda asans\xf6rl\xfc evden eve nakliyat ile eşyalarınızı g\xfcvenle taşıyın. Profesyonel hizmetle stres ve masrafları azaltın!",date:"07 Nisan 2026",author:"Atakan",readTime:"8 dk okuma",category:"Lojistik & Teknoloji",image:"/images/asansorlu-tasima-bursa-hero.jpg",metaDescription:"Y\xfcksek katlı binalarda asans\xf6rl\xfc evden eve nakliyat ile eşyalarınızı g\xfcvenle taşıyın. Profesyonel hizmetle stres ve masrafları azaltın!",keywords:["asans\xf6rl\xfc evden eve nakliyat","teleskopik asans\xf6r","bursa kiralık asans\xf6r","asans\xf6rl\xfc taşıma fiyatları","y\xfcksek kat nakliyat"],faqs:[{q:"Asans\xf6rl\xfc nakliyat her binada kullanılabilir mi?",a:"Hayır. Binanın cephesine yeterli mesafe, zemin sağlamlığı ve park alanı gibi teknik koşullar gereklidir. Taşıma \xf6ncesinde firma yerinde keşif yaparak uygunluğu değerlendirir."},{q:"Eşyalar ne kadar g\xfcvende?",a:"Asans\xf6rl\xfc sistem, merdiven taşımacılığına kıyasla \xe7izilme ve kırılma riskini \xf6nemli \xf6l\xe7\xfcde azaltır. Bununla birlikte, belirlenen hizmet şartları ve profesyonel ambalajlama g\xfcvenliği en \xfcst seviyeye taşır."},{q:"Rezervasyon ne kadar \xf6nceden yapılmalı?",a:"Yoğun d\xf6nemlerde (ay başı/sonu) en az 1 hafta \xf6nceden randevu alınması \xf6nerilir. Bu, planlama s\xfcrecini daha verimli y\xf6netmeyi sağlar."},{q:"K\xf6t\xfc hava koşullarında taşıma yapılır mı?",a:"G\xfc\xe7l\xfc r\xfczgar veya yoğun yağışta asans\xf6r operasyonu iş\xe7i ve \xe7evre g\xfcvenliği gerek\xe7esiyle ertelenebilir."}],content:`
       <h2>Asans\xf6rl\xfc Evden Eve Nakliyat Nedir?</h2>
       <p>Ev taşıma s\xfcre\xe7leri, yanlış planlama yapıldığında hem stresli hem de masraflı bir deneyime d\xf6n\xfcşebilir. <strong>Asans\xf6rl\xfc evden eve nakliyat</strong>, bu zorluğu minimize eden, \xf6zellikle y\xfcksek katlı binalar ve teleskopik asans\xf6rlerde b\xfcy\xfck mobilyaların ve ağır eşyaların g\xfcvenli bi\xe7imde taşınmasını sağlayan profesyonel bir hizmettir. Bina dışına monte edilen hidrolik veya mekanik <strong>teleskopik asans\xf6rler</strong> aracılığıyla eşyalar, merdiven kullanılmaksızın doğrudan istenilen kata ulaştırılır.</p>
       
@@ -262,7 +262,7 @@
       <ul class="list-disc pl-5 mt-4 space-y-3">
         <li><strong>Keşif ve teklif alma:</strong> Nakliyat firmasıyla iletişime ge\xe7erek adres, kat bilgisi ve eşya hacminizi paylaşın.</li>
         <li><strong>Ekipman uygunluğunun kontrol\xfc:</strong> Binanın \xf6n\xfcndeki alanın mobil asans\xf6r i\xe7in uygun olup olmadığı, firma tarafından \xfccretsiz keşif ziyaretiyle doğrulanmalıdır.</li>
-        <li><strong>S\xf6zleşme ve sigorta:</strong> Taşıma \xf6ncesi yazılı s\xf6zleşme imzalanması ve eşyaların sigorta kapsamına alınması, olası hasarlarda g\xfcvence sağlar.</li>
+        <li><strong>Planlama ve VIP g\xfcvence:</strong> Taşıma \xf6ncesi yazılı hizmet şartları mutabakatı yapılması ve eşyaların VIP g\xfcvence altına alınması, olası hasarlarda g\xfcvence sağlar.</li>
       </ul>
 
       <p>Hizmeti doğru almak kadar, doğru firmayı se\xe7mek de kritik \xf6nem taşır; aklınızda bulunsun <strong>"Hazırlıklı bir m\xfcşteri, hem s\xfcreyi hem de maliyeti kısaltır."</strong></p>
@@ -299,5 +299,630 @@
       <p>Genel uygulama şu şekildedir: Nakliyat firmaları <strong>standart taşıma hizmetine avize s\xf6kme-takma işlemini dahil etmez.</strong> Bu iş, elektrik tesisatına m\xfcdahale gerektirdiğinden ayrı bir uzmanlık alanı (elektrik\xe7i) sayılır. Dolayısıyla avize s\xf6k\xfcm ve montajı i\xe7in ek personel bulundurulur.</p>
 
       <p class="mt-6 border-l-4 border-primary pl-4 py-2 bg-slate-50 dark:bg-slate-800/50 italic text-slate-700 dark:text-slate-300"><strong>Pratik \xf6neri:</strong> Avize ve benzeri elektrikli aksesuarları taşınmadan en az bir g\xfcn \xf6nce s\xf6kt\xfcr\xfcn; b\xf6ylece nakliyat g\xfcn\xfc zaman kaybı yaşanmaz. Unutmayın iyi planlama, doğru firma se\xe7imi ve \xf6nceden netleştirilen hizmet kapsamı, taşınma s\xfcrecini stressiz h\xe2le getirir.</p>
-    `}];var j=c(72567),k=c(15303),l=c(57923);function m(){return(0,d.jsxs)(d.Fragment,{children:[(0,d.jsx)(l.B,{items:[{name:"Blog",path:"/blog"}]}),(0,d.jsx)("section",{className:"pt-32 pb-16 bg-slate-50 dark:bg-navy/30 border-b border-slate-200 dark:border-white/10",children:(0,d.jsxs)("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center",children:[(0,d.jsxs)(h.P.h1,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},className:"text-4xl md:text-5xl font-display font-bold mb-6 text-secondary dark:text-white",children:["Nakliyat & ",(0,d.jsx)("span",{className:"text-primary",children:"Taşınma Rehberi"})]}),(0,d.jsx)(h.P.p,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},transition:{delay:.1},className:"text-lg text-slate-700 dark:text-slate-300 max-w-2xl mx-auto",children:"T\xfcrkiye'nin en kapsamlı asans\xf6rl\xfc taşımacılık ve evden eve nakliyat bilgi arşivi. Sorunsuz bir taşınma s\xfcreci i\xe7in uzman tavsiyeleri."})]})}),(0,d.jsx)("section",{className:"py-20 bg-white dark:bg-background",children:(0,d.jsx)("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",children:(0,d.jsx)("div",{className:"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8",children:i.map((a,b)=>(0,d.jsxs)(h.P.article,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},transition:{delay:.1*b+.2},className:"group flex flex-col bg-white dark:bg-navy-light rounded-3xl border border-border dark:border-white/10 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1",children:[(0,d.jsxs)(f(),{href:`/blog/${a.slug}`,className:"block h-48 overflow-hidden relative",children:[(0,d.jsx)("div",{className:"absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors z-10"}),(0,d.jsx)(g.default,{src:a.image,alt:a.title,fill:!0,className:"object-cover transform group-hover:scale-105 transition-transform duration-500",sizes:"(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"}),(0,d.jsx)("div",{className:"absolute top-4 left-4 z-20 bg-white/90 backdrop-blur text-secondary px-3 py-1 rounded-full text-xs font-bold shadow-sm",children:a.category})]}),(0,d.jsxs)("div",{className:"p-6 flex flex-col flex-1",children:[(0,d.jsx)(f(),{href:`/blog/${a.slug}`,children:(0,d.jsx)("h2",{className:"text-xl font-bold mb-3 text-secondary dark:text-white group-hover:text-primary transition-colors line-clamp-2",children:a.title})}),(0,d.jsx)("p",{className:"text-slate-800 dark:text-slate-400 text-sm mb-6 line-clamp-3",children:a.excerpt}),(0,d.jsx)("div",{className:"mt-auto pt-4 border-t border-slate-100 dark:border-white/10 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400",children:(0,d.jsxs)("div",{className:"flex items-center gap-4",children:[(0,d.jsxs)("span",{className:"flex items-center gap-1",children:[(0,d.jsx)(j.A,{className:"w-3 h-3"})," ",a.date]}),(0,d.jsxs)("span",{className:"flex items-center gap-1",children:[(0,d.jsx)(k.A,{className:"w-3 h-3"})," ",a.readTime]})]})})]})]},a.id))})})})]})}},27744:(a,b,c)=>{Promise.resolve().then(c.bind(c,27529))},27910:a=>{"use strict";a.exports=require("stream")},28354:a=>{"use strict";a.exports=require("util")},29294:a=>{"use strict";a.exports=require("next/dist/server/app-render/work-async-storage.external.js")},33873:a=>{"use strict";a.exports=require("path")},41025:a=>{"use strict";a.exports=require("next/dist/server/app-render/dynamic-access-async-storage.external.js")},55591:a=>{"use strict";a.exports=require("https")},57923:(a,b,c)=>{"use strict";c.d(b,{B:()=>i});var d=c(21124),e=c(3991),f=c.n(e),g=c(78733),h=c(59405);function i({items:a}){return(0,d.jsx)("nav",{"aria-label":"Breadcrumb",className:"bg-gray-100 dark:bg-navy border-b border-gray-300 dark:border-white/10 px-4 sm:px-6 py-3",children:(0,d.jsx)("div",{className:"max-w-7xl mx-auto",children:(0,d.jsxs)("ol",{className:"flex items-center gap-1.5 text-sm text-gray-600 dark:text-slate-400",children:[(0,d.jsx)("li",{children:(0,d.jsxs)(f(),{href:"/",className:"hover:text-primary transition-colors flex items-center gap-1",children:[(0,d.jsx)(g.A,{className:"w-3.5 h-3.5"}),(0,d.jsx)("span",{children:"Ana Sayfa"})]})}),a.map((b,c)=>(0,d.jsxs)("li",{className:"flex items-center gap-1.5",children:[(0,d.jsx)(h.A,{className:"h-4 w-4","aria-hidden":"true"}),c===a.length-1?(0,d.jsx)("span",{className:"text-gray-900 dark:text-white font-semibold","aria-current":"page",children:b.name}):(0,d.jsx)(f(),{href:b.path,className:"hover:text-primary underline underline-offset-2 transition-colors",children:b.name})]},b.path))]})})})}},59405:(a,b,c)=>{"use strict";c.d(b,{A:()=>d});let d=(0,c(23339).A)("chevron-right",[["path",{d:"m9 18 6-6-6-6",key:"mthhwq"}]])},63033:a=>{"use strict";a.exports=require("next/dist/server/app-render/work-unit-async-storage.external.js")},64192:(a,b,c)=>{Promise.resolve().then(c.bind(c,20202))},72567:(a,b,c)=>{"use strict";c.d(b,{A:()=>d});let d=(0,c(23339).A)("calendar",[["path",{d:"M8 2v4",key:"1cmpym"}],["path",{d:"M16 2v4",key:"4m81vk"}],["rect",{width:"18",height:"18",x:"3",y:"4",rx:"2",key:"1hopcy"}],["path",{d:"M3 10h18",key:"8toen8"}]])},74075:a=>{"use strict";a.exports=require("zlib")},78733:(a,b,c)=>{"use strict";c.d(b,{A:()=>d});let d=(0,c(23339).A)("house",[["path",{d:"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8",key:"5wwlr5"}],["path",{d:"M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z",key:"r6nss1"}]])},79551:a=>{"use strict";a.exports=require("url")},81630:a=>{"use strict";a.exports=require("http")},82588:(a,b,c)=>{"use strict";c.r(b),c.d(b,{GlobalError:()=>D.a,__next_app__:()=>J,handler:()=>L,pages:()=>I,routeModule:()=>K,tree:()=>H});var d=c(49754),e=c(9117),f=c(46595),g=c(32324),h=c(39326),i=c(38928),j=c(20175),k=c(12),l=c(54290),m=c(12696),n=c(82802),o=c(77533),p=c(45229),q=c(32822),r=c(261),s=c(26453),t=c(52474),u=c(26713),v=c(51356),w=c(62685),x=c(36225),y=c(63446),z=c(2762),A=c(45742),B=c(86439),C=c(81170),D=c.n(C),E=c(62506),F=c(91203),G={};for(let a in E)0>["default","tree","pages","GlobalError","__next_app__","routeModule","handler"].indexOf(a)&&(G[a]=()=>E[a]);c.d(b,G);let H={children:["",{children:["blog",{children:["__PAGE__",{},{page:[()=>Promise.resolve().then(c.bind(c,18422)),"/Users/alihancancihm/Desktop/yedek/src/app/blog/page.tsx"]}]},{metadata:{icon:[async a=>(await Promise.resolve().then(c.bind(c,70440))).default(a),async a=>(await Promise.resolve().then(c.bind(c,78162))).default(a)],apple:[async a=>(await Promise.resolve().then(c.bind(c,94650))).default(a)],openGraph:[],twitter:[],manifest:void 0}}]},{layout:[()=>Promise.resolve().then(c.bind(c,51472)),"/Users/alihancancihm/Desktop/yedek/src/app/layout.tsx"],"global-error":[()=>Promise.resolve().then(c.t.bind(c,81170,23)),"next/dist/client/components/builtin/global-error.js"],"not-found":[()=>Promise.resolve().then(c.bind(c,59732)),"/Users/alihancancihm/Desktop/yedek/src/app/not-found.tsx"],forbidden:[()=>Promise.resolve().then(c.t.bind(c,90461,23)),"next/dist/client/components/builtin/forbidden.js"],unauthorized:[()=>Promise.resolve().then(c.t.bind(c,32768,23)),"next/dist/client/components/builtin/unauthorized.js"],metadata:{icon:[async a=>(await Promise.resolve().then(c.bind(c,70440))).default(a),async a=>(await Promise.resolve().then(c.bind(c,78162))).default(a)],apple:[async a=>(await Promise.resolve().then(c.bind(c,94650))).default(a)],openGraph:[],twitter:[],manifest:void 0}}]}.children,I=["/Users/alihancancihm/Desktop/yedek/src/app/blog/page.tsx"],J={require:c,loadChunk:()=>Promise.resolve()},K=new d.AppPageRouteModule({definition:{kind:e.RouteKind.APP_PAGE,page:"/blog/page",pathname:"/blog",bundlePath:"",filename:"",appPaths:[]},userland:{loaderTree:H},distDir:".next",relativeProjectDir:""});async function L(a,b,d){var C;let G="/blog/page";"/index"===G&&(G="/");let M=(0,h.getRequestMeta)(a,"postponed"),N=(0,h.getRequestMeta)(a,"minimalMode"),O=await K.prepare(a,b,{srcPage:G,multiZoneDraftMode:!1});if(!O)return b.statusCode=400,b.end("Bad Request"),null==d.waitUntil||d.waitUntil.call(d,Promise.resolve()),null;let{buildId:P,query:Q,params:R,parsedUrl:S,pageIsDynamic:T,buildManifest:U,nextFontManifest:V,reactLoadableManifest:W,serverActionsManifest:X,clientReferenceManifest:Y,subresourceIntegrityManifest:Z,prerenderManifest:$,isDraftMode:_,resolvedPathname:aa,revalidateOnlyGenerated:ab,routerServerContext:ac,nextConfig:ad,interceptionRoutePatterns:ae}=O,af=S.pathname||"/",ag=(0,r.normalizeAppPath)(G),{isOnDemandRevalidate:ah}=O,ai=K.match(af,$),aj=!!$.routes[aa],ak=!!(ai||aj||$.routes[ag]),al=a.headers["user-agent"]||"",am=(0,u.getBotType)(al),an=(0,p.isHtmlBotRequest)(a),ao=(0,h.getRequestMeta)(a,"isPrefetchRSCRequest")??"1"===a.headers[t.NEXT_ROUTER_PREFETCH_HEADER],ap=(0,h.getRequestMeta)(a,"isRSCRequest")??!!a.headers[t.RSC_HEADER],aq=(0,s.getIsPossibleServerAction)(a),ar=(0,m.checkIsAppPPREnabled)(ad.experimental.ppr)&&(null==(C=$.routes[ag]??$.dynamicRoutes[ag])?void 0:C.renderingMode)==="PARTIALLY_STATIC",as=!1,at=!1,au=ar?M:void 0,av=ar&&ap&&!ao,aw=(0,h.getRequestMeta)(a,"segmentPrefetchRSCRequest"),ax=!al||(0,p.shouldServeStreamingMetadata)(al,ad.htmlLimitedBots);an&&ar&&(ak=!1,ax=!1);let ay=!0===K.isDev||!ak||"string"==typeof M||av,az=an&&ar,aA=null;_||!ak||ay||aq||au||av||(aA=aa);let aB=aA;!aB&&K.isDev&&(aB=aa),K.isDev||_||!ak||!ap||av||(0,k.d)(a.headers);let aC={...E,tree:H,pages:I,GlobalError:D(),handler:L,routeModule:K,__next_app__:J};X&&Y&&(0,o.setReferenceManifestsSingleton)({page:G,clientReferenceManifest:Y,serverActionsManifest:X,serverModuleMap:(0,q.createServerModuleMap)({serverActionsManifest:X})});let aD=a.method||"GET",aE=(0,g.getTracer)(),aF=aE.getActiveScopeSpan();try{let f=K.getVaryHeader(aa,ae);b.setHeader("Vary",f);let k=async(c,d)=>{let e=new l.NodeNextRequest(a),f=new l.NodeNextResponse(b);return K.render(e,f,d).finally(()=>{if(!c)return;c.setAttributes({"http.status_code":b.statusCode,"next.rsc":!1});let d=aE.getRootSpanAttributes();if(!d)return;if(d.get("next.span_type")!==i.BaseServerSpan.handleRequest)return void console.warn(`Unexpected root span type '${d.get("next.span_type")}'. Please report this Next.js issue https://github.com/vercel/next.js`);let e=d.get("next.route");if(e){let a=`${aD} ${e}`;c.setAttributes({"next.route":e,"http.route":e,"next.span_name":a}),c.updateName(a)}else c.updateName(`${aD} ${a.url}`)})},m=async({span:e,postponed:f,fallbackRouteParams:g})=>{let i={query:Q,params:R,page:ag,sharedContext:{buildId:P},serverComponentsHmrCache:(0,h.getRequestMeta)(a,"serverComponentsHmrCache"),fallbackRouteParams:g,renderOpts:{App:()=>null,Document:()=>null,pageConfig:{},ComponentMod:aC,Component:(0,j.T)(aC),params:R,routeModule:K,page:G,postponed:f,shouldWaitOnAllReady:az,serveStreamingMetadata:ax,supportsDynamicResponse:"string"==typeof f||ay,buildManifest:U,nextFontManifest:V,reactLoadableManifest:W,subresourceIntegrityManifest:Z,serverActionsManifest:X,clientReferenceManifest:Y,setIsrStatus:null==ac?void 0:ac.setIsrStatus,dir:c(33873).join(process.cwd(),K.relativeProjectDir),isDraftMode:_,isRevalidate:ak&&!f&&!av,botType:am,isOnDemandRevalidate:ah,isPossibleServerAction:aq,assetPrefix:ad.assetPrefix,nextConfigOutput:ad.output,crossOrigin:ad.crossOrigin,trailingSlash:ad.trailingSlash,previewProps:$.preview,deploymentId:ad.deploymentId,enableTainting:ad.experimental.taint,htmlLimitedBots:ad.htmlLimitedBots,devtoolSegmentExplorer:ad.experimental.devtoolSegmentExplorer,reactMaxHeadersLength:ad.reactMaxHeadersLength,multiZoneDraftMode:!1,incrementalCache:(0,h.getRequestMeta)(a,"incrementalCache"),cacheLifeProfiles:ad.experimental.cacheLife,basePath:ad.basePath,serverActions:ad.experimental.serverActions,...as?{nextExport:!0,supportsDynamicResponse:!1,isStaticGeneration:!0,isRevalidate:!0,isDebugDynamicAccesses:as}:{},experimental:{isRoutePPREnabled:ar,expireTime:ad.expireTime,staleTimes:ad.experimental.staleTimes,cacheComponents:!!ad.experimental.cacheComponents,clientSegmentCache:!!ad.experimental.clientSegmentCache,clientParamParsing:!!ad.experimental.clientParamParsing,dynamicOnHover:!!ad.experimental.dynamicOnHover,inlineCss:!!ad.experimental.inlineCss,authInterrupts:!!ad.experimental.authInterrupts,clientTraceMetadata:ad.experimental.clientTraceMetadata||[]},waitUntil:d.waitUntil,onClose:a=>{b.on("close",a)},onAfterTaskError:()=>{},onInstrumentationRequestError:(b,c,d)=>K.onRequestError(a,b,d,ac),err:(0,h.getRequestMeta)(a,"invokeError"),dev:K.isDev}},l=await k(e,i),{metadata:m}=l,{cacheControl:n,headers:o={},fetchTags:p}=m;if(p&&(o[y.NEXT_CACHE_TAGS_HEADER]=p),a.fetchMetrics=m.fetchMetrics,ak&&(null==n?void 0:n.revalidate)===0&&!K.isDev&&!ar){let a=m.staticBailoutInfo,b=Object.defineProperty(Error(`Page changed from static to dynamic at runtime ${aa}${(null==a?void 0:a.description)?`, reason: ${a.description}`:""}
+    `},{id:"7",slug:"ucuz-nakliyat-tuzagi-bursa-evden-eve-tasinirken-yapilan-hatalar",title:"Ucuz Nakliyat Tuzağı: Bursa'da Ev Taşırken Yapılan 5 B\xfcy\xfck Hata",excerpt:"2.000 TL k\xe2r edeyim derken eşyalarınızın nasıl 50.000 TL zarar g\xf6rd\xfcğ\xfcn\xfc biliyor musunuz? Bursa evden eve nakliyatta son dakika asans\xf6r s\xfcrprizleri ve bait-and-switch kurnazlıklarını deşifre ediyoruz.",date:"10 Nisan 2026",readTime:"6 dk okuma",category:"Nakliyat Rehberi",author:"Bursa Kiralık Asans\xf6r S\xfcperSEO Edit\xf6r\xfc",image:"/images/service-abstract.png",metaDescription:"Bursa'da en ucuz nakliyat firmalarını se\xe7menin gizli maliyetleri. S\xfcrpriz asans\xf6r \xfccreti, \xe7izilen eşyalar ve acemi nakliyeci tuzaklarından nasıl korunursunuz?",keywords:["en ucuz nakliyat bursa","ucuz nakliyat fiyatları","bursa ev taşıma hataları","asans\xf6r ekstra \xfccret","g\xfcvenilir nakliyat bursa","ucuz evden eve","s\xfcrpriz nakliye \xfccreti"],content:`
+      <h2>"Telefonda Ucuz, Kapıda Pahalı" Tuzağına D\xfcşmeyin</h2>
+      <p>Yeni bir eve taşınmanın heyecanı, kapınıza gelen amat\xf6r bir nakliye ekibiyle k\xe2busa d\xf6n\xfcşebilir. İnternette "<strong>Bursa en ucuz evden eve nakliyat</strong>" araması yaptığınızda karşınıza \xe7ıkan rakamlar cezbedici g\xf6r\xfcnebilir. Ancak sekt\xf6r\xfcn acı bir ger\xe7eği var: <em>Ucuz etin yahnisi yavan olur, ucuz nakliyatın maliyeti ise parampar\xe7a olmuş mobilyalardır.</em></p>
+
+      <p>Bursa Kiralık Asans\xf6r ve CNC Nakliyat olarak yıllardır sahada karşılaştığımız ve m\xfcşterilerin en \xe7ok mağdur olduğu 5 b\xfcy\xfck hatayı sizin i\xe7in derledik.</p>
+
+      <h3>1. Son Dakika "Asans\xf6r Gerekliymiş" S\xfcrprizi (Bait-and-Switch)</h3>
+      <p>En sık rastlanan taktik, telefonda eşyalarınızı listeleyip size piyasanın %30 altında fiyat verilmesidir. Anlaşma sağlanır, taşınma g\xfcn\xfc kamyon kapıya yanaşır ve nakliye sorumlusu evi gezdikten sonra şu c\xfcmleyi kurar: <em>"Abla / Abi bu merdivenler \xe7ok dar, bu koltuk buradan d\xf6nmez. Eşyanız \xe7izilir. Bizim acil asans\xf6r \xe7ağırmamız lazım ama o da fiyata dahil değil, ekstra x Bin TL tutar."</em></p>
+      <p>O an eşyalar toplanmış ve eski evi boşaltmak zorunda olduğunuz i\xe7in o astronomik rakamı \xe7aresizce \xf6dersiniz. Bizim sistemimizde ise <a href="/bursa-merkez-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">kiralık mobil asans\xf6r\xfcm\xfcz</a> zaten işin merkezindedir ve fiyatlarımız karşılıklı mutabakatla tamamen sabittir.</p>
+
+      <h3>2. "S\xf6zde" G\xfcvenlik ve \xc7izilen Beyaz Eşyalar</h3>
+      <p>Pek \xe7ok firma "eşyalarınız g\xfcvende" dese de, profesyonel paketleme yapılmadığı s\xfcrece bu s\xf6zlerin bir karşılığı yoktur. Ger\xe7ek bir firma, profesyonel <a href="/osmangazi-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Osmangazi evden eve nakliyat</a> veya <a href="/nilufer-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Nil\xfcfer nakliyat</a> operasyonlarında, t\xfcm beyaz eşyaları (Buzdolabı, \xe7amaşır makinesi) koruyucu balonlu naylonlarla sarar. Sokak arası hamallarla \xe7alışan "ucuz firmalar", koruma malzemesi kullanmadığı i\xe7in 2.000 TL tasarruf edeyim derken 40.000 TL'lik buzdolabınızdan olursunuz.</p>
+
+      <h3>3. Mutabakatsız ve Belgesiz İş Yapmak</h3>
+      <p>Taşınma g\xfcn\xfc yaşanabilecek bir anlaşmazlıkta elinizde resmi bir belge yoksa hi\xe7bir hak iddia edemezsiniz. Profesyonel nakliyat şirketleri taşıma başından sonuna kadar sizi yasal olarak garanti altına alan evraklarla \xe7alışır.</p>
+
+      <h2>Ucuz İş\xe7ilik, K\xf6t\xfc Montaj Demektir</h2>
+      <p>Nakliyat sadece "eşyayı kamyona taşımak" değildir. \xd6zellikle yatak odası dolabı ve TV \xfcniteleri gibi mod\xfcler par\xe7aların s\xf6k\xfcl\xfcp yeni evde terazide tekrar kurulması marangozluk becerisi gerektirir. Piyasadan g\xfcnl\xfck toplanan personeller, mobilyalarınızın menteşe kısımlarını yalama yapar, dolap kapaklarınız bir daha asla tam kapanmaz.</p>
+
+      <div class="bg-primary/10 border-l-4 border-primary p-6 rounded-r-xl mt-8 mb-6">
+        <h4 class="text-lg font-bold text-secondary dark:text-white mb-2">Peki Ne Yapmalısınız?</h4>
+        <p class="text-slate-700 dark:text-slate-300">
+          Riski sıfırlamak i\xe7in, işlemi başından sonuna kadar <a href="/bursa-merkez-kiralik-asansor-fiyatlari" class="text-primary font-semibold hover:underline">fiks fiyat garantisi</a> ile sunan ve <strong>kendine ait asans\xf6r filosu bulunan</strong> kurumsal firmalarla \xe7alışmalısınız. Detaylı keşif ve %100 g\xfcvenli taşıma s\xf6z\xfc i\xe7in hemen <a href="https://wa.me/905056080700" class="text-primary font-bold hover:underline">WhatsApp \xdczerinden Teklif Alın (0505 608 07 00)</a>.
+        </p>
+      </div>
+    `},{id:"8",slug:"bursa-nakliye-kapora-dolandiriciligi-guvenilir-nakliyat-firmasi",title:"Nakliye Kapora Dolandırıcılığı: G\xfcvenilir Nakliyat Firması Nasıl Anlaşılır?",excerpt:"Sarı sitelerde ve aracı platformlarda ucuza ilan verip, m\xfcşteriden kapora aldıktan sonra ortadan kaybolan sahte nakliyeci kabusu. Bursa'da g\xfcvenilir bir asans\xf6r kiralama veya nakliye firması ararken dikkat etmeniz gereken hayati işaretler.",date:"11 Nisan 2026",readTime:"7 dk okuma",category:"G\xfcvenlik & İnternet",author:"Bursa Kiralık Asans\xf6r S\xfcperSEO Edit\xf6r\xfc",image:"/images/references/bursa-mobil-asansor-kiralama-referans-1.jpg",metaDescription:"Armut ve benzeri sitelerdeki kapora dolandırıcılığına dikkat! Bursa'da g\xfcvenilir nakliyat firması se\xe7me y\xf6ntemleri ve dolandırıcılardan korunma rehberi.",keywords:["nakliye dolandırıcılığı","kapora dolandırıcıları","armut nakliyat şikayet","g\xfcvenilir nakliyat firması bursa","bursa kiralık asans\xf6r şikayet","nakliyat tavsiye bursa"],content:`
+      <h2>Taşınma G\xfcn\xfcn\xfcz\xfc Mahveden K\xe2bus: Hayalet Firmalar</h2>
+      <p>Bir sabah uyandınız, eski evinizi o g\xfcn boşaltmanız gerekiyor, kolileriniz hazır. G\xfcnler \xf6ncesinden anlaştığınız o "\xe7ok uygun fiyatlı" nakliyeciyi arıyorsunuz ama telefon kapalı! Ya da numara tamamen kullanım dışı... Tebrikler, internetteki en pop\xfcler <strong>Nakliye Kapora Dolandırıcılığına</strong> kurban gittiniz.</p>
+
+      <p>\xd6zellikle ikinci el ilan sitelerinde veya taşeron bulma platformlarında kendine "X Nakliyat" veya "Y Asans\xf6r Kiralama" gibi sahte isimler a\xe7an y\xfczlerce sistemsiz hesap bulunuyor. Bu hesaplar rakiplerinden \xe7ok daha d\xfcş\xfck fiyatlar verir, <em>"Abi/Abla randevuyu kesinleştirmek i\xe7in yarı \xfccretini veya kaporayı at"</em> derler. Taşıma g\xfcn\xfc geldiğinde ise asla kapınızı \xe7almazlar.</p>
+
+      <h3>Ger\xe7ek Bir Firmayı Sahtesinden Ayırmanın Kesin Yolları</h3>
+      <p>Vaktinizin ve b\xfct\xe7enizin değerli olduğu bu s\xfcre\xe7te, nakliyat ve <a href="/osmangazi-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">kiralık asans\xf6r</a> hizmeti alacağınız firmanın ger\xe7ekliğini şu 4 adımla doğrulayabilirsiniz:</p>
+
+      <ul class="list-decimal pl-5 mt-4 mb-8 space-y-4">
+        <li><strong>Sabit Kurum Web Sitesi:</strong> Firmanın '.com' veya '.com.tr' uzantılı, hizmet b\xf6lgelerini (\xd6rn: <a href="/yildirim-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Yıldırım Nakliyat</a>, <a href="/gorukle-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">G\xf6r\xfckle Nakliyat</a>) teknik verilerle sunan bir sitesi var mı? Bursa Kiralık Asans\xf6r CNC Nakliyat olarak dijital kimliğimiz ve referanslarımız a\xe7ık\xe7a ortadadır.</li>
+        <li><strong>Kendi Ara\xe7 Filosu:</strong> Ger\xe7ek firmaların kendi ara\xe7ları, kendi mobil cephe asans\xf6rleri ve kendi personeli vardır. Komisyoncular telefonu kapatır, sağdan soldan ara\xe7 ayarlamaya \xe7alışır. Ara\xe7 bulamazlarsa sizi ortada bırakırlar.</li>
+        <li><strong>Referans G\xf6rselleri İnceleyin:</strong> Firmanın daha \xf6nce yaptığı asans\xf6r kurumlarına ait g\xf6rseller ger\xe7ek\xe7i mi, yoksa internetten kopyalanmış stok g\xf6rseller mi? (Dilerseniz sitemizin <a href="/calismalarimiz" class="text-primary font-semibold hover:underline">\xc7alışmalarımız</a> sayfasından bizzat Bursa sokaklarında yaptığımız asans\xf6rl\xfc taşımaları inceleyebilirsiniz).</li>
+        <li><strong>Saha Keşfi:</strong> Sadece telefondan ezbere fiyat verenlerden uzak durun. Ger\xe7ek bir firma, evin veya ofisin fizibilitesini yapar; asans\xf6r nereye yanaşacak, cadde uygun mu diye b\xf6lgesel fakt\xf6rleri inceler.</li>
+      </ul>
+
+      <h2>İ\xe7iniz Rahat Olsun: Nasıl \xc7alışıyoruz?</h2>
+      <p>Bizim sistemimizde s\xfcrprize ve mağduriyete yer yoktur. Her m\xfcşteri i\xe7in s\xfcre\xe7 nettir:</p>
+      <ol class="list-disc pl-5 mt-2 space-y-2">
+        <li>Bize <a href="https://wa.me/905056080700" class="text-primary font-semibold hover:underline">+90 505 608 07 00</a> numarasından ulaşırsınız.</li>
+        <li>Kat sayınız ve eşya yoğunluğunuz dinlenir / gerekirse online fizibilite yapılır.</li>
+        <li>Taşıma tarihi belirlenir ve o g\xfcn i\xe7in size dev <a href="/bursa-merkez-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">mobil asans\xf6r\xfcm\xfcz</a> ile kendi uzman ekibimiz tahsis edilir.</li>
+        <li>İş bittiğinde, eşyalarınız yeni eve sapasağlam monte edildiğinde mutabık kalınan \xfccret alınır. Aracı, komisyoncu veya son dakika ekstra bedelleri yoktur.</li>
+      </ol>
+
+      <p class="mt-8">\xd6zellikle Bursa gibi yokuşlu ve dar sokaklı b\xf6lgelerde, sahtekar nakliyeciler asans\xf6r kurmayı zaten beceremezler. İşi şansa bırakmak yerine doğrudan ana merkezden, ger\xe7ek asans\xf6r sahiplerinden hizmet alın.</p>
+    `},{id:"9",slug:"merdivenden-ev-tasima-devri-bitti-dis-cephe-asansoru-avantajlari",title:"Merdivenden Ev Taşıma Devri Bitti: Eşyalarınız Neden Dış Cephe Asans\xf6r\xfc ile Taşınmalı?",excerpt:"Hamal g\xfcc\xfcyle merdivenden \xe7ıkartılan eşyalarınızın %90'ının neden \xe7izildiğini hi\xe7 d\xfcş\xfcnd\xfcn\xfcz m\xfc? Eski tip nakliyeyi unutturacak devrim: Dış Cephe (Mobil) Asans\xf6rleriyle %100 Hasarsız Taşımacılık.",date:"12 Nisan 2026",readTime:"5 dk okuma",category:"Lojistik & Teknoloji",author:"Bursa Kiralık Asans\xf6r S\xfcperSEO Edit\xf6r\xfc",image:"/images/references/yuksek-kat-esya-tasima-asansoru-referans-3.jpg",metaDescription:"Merdivenden ev taşımanın zararları. Beyaz eşya \xe7izikleri ve mobilya kırıklarını engelleyen en kesin y\xf6ntem: Bursa mobil dış cephe kiralık asans\xf6rleri.",keywords:["merdivenden ev taşıma","cephe asans\xf6r\xfc faydaları","eşyalar neden \xe7izilir","sıfır hasar nakliyat","asans\xf6rl\xfc evden eve bursa","eşya taşıma teknikleri"],content:`
+      <h2>Merdiven Dairesinde Yankılanan "Dikkat Et \xc7arptı!" Sesine Son</h2>
+      <p>Daha \xf6nce hi\xe7 eski y\xf6ntemlerle taşındıysanız o kaosu gayet iyi bilirsiniz. Apartman kapısından 8. kata kadar yankılanan sesler: <em>"Aman k\xf6şeyi kurtar", "Az bekle dinlenelim", "Dikkat et duvara vurdu!"</em></p>
+      
+      <p>Ne kadar dikkat edilirse edilsin insan anatomisi, 100 kiloluk bir yatak odası dolabını veya 150 kiloluk \xe7ift kapılı bir buzdolabını dar merdiven boşluklarında kusursuzca d\xf6nd\xfcrmeye m\xfcsait değildir. Fizik kurallarına g\xf6re bir yerden taviz verilir: Eşyanın en g\xfczel k\xf6şesi duvar sıvasına s\xfcrt\xfcn\xfcr, \xe7izilir. Sonu\xe7? Yenisini almak i\xe7in harcayacağınız binlerce lira ekstra b\xfct\xe7e.</p>
+
+      <h3>G\xf6z Ardı Edilen 3 Gizli Tehlike (Geleneksel Taşıma)</h3>
+      <ul class="space-y-4 mt-4 mb-6 list-disc pl-5">
+        <li><strong>Binanın Ortak Kullanım Alanlarının Hasar G\xf6rmesi:</strong> Eşyaların \xe7ıkarılırken apartmanın duvar boyasını, merdiven mermerlerini veya trabzanlarını kırması durumunda bina y\xf6netimi ile davalık olabilirsiniz. T\xfcm masraf şahsınıza kesilir.</li>
+        <li><strong>Gizli Beyaz Eşya Arızaları:</strong> Bir \xe7amaşır makinesi veya buzdolabı merdivenlerde kat kat taşınırken sarsıntının ve sert yere bırakmaların etkisiyle kompres\xf6r gaz borusu \xe7atlayabilir, motor denge amortis\xf6rleri kırılabilir. Siz taşındığınızda makinenin neden sesli \xe7alıştığını aylarca anlamazsınız bile.</li>
+        <li><strong>Zaman Kaybı:</strong> Hamal g\xfcc\xfcyle 4 katlı bir binanın taşınması t\xfcm g\xfcn\xfcn\xfcz\xfc yutarken, kapı \xf6n\xfcnde trafiği saatlerce tıkadığınız i\xe7in komşularınızla husumet yaşarsınız.</li>
+      </ul>
+
+      <h2>\xc7\xf6z\xfcm: Bursa Mobil Asans\xf6r ve Dış Cephe Sistemleri</h2>
+      <p>Eski usul "ter d\xf6ken" sistemleri unutun. Bizler eşyanızı binanın i\xe7inden değil, <strong>balkonunuzdan veya geniş bir salon camınızdan doğrudan g\xf6ky\xfcz\xfc rotasıyla dışarıdan</strong> nakil ediyoruz.</p>
+
+      <p><a href="/bursa-merkez-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Bursa kiralık asans\xf6r</a> sistemlerinin devrimi şurada başlar:</p>
+      <ul class="list-decimal pl-5 mt-4 mb-6 space-y-2">
+        <li>Sokağınıza yanaşan aracımızdan \xe7ıkan teleskopik kol, tam <strong>15. kata kadar (yaklaşık 45 metre)</strong> uzanabilir.</li>
+        <li>Devasa b\xfcy\xfckl\xfckteki eşya sepeti, bir kerede b\xfct\xfcn bir koltuk takımını hi\xe7 sarsmadan aşağıya, kamyonetin yanına indirir.</li>
+        <li>Duvara s\xfcrt\xfcnme ihtimali fiziksel olarak <strong>%0'a d\xfcşer</strong>.</li>
+        <li>Taşıma s\xfcresi 8 saatten, yaklaşık <strong>2-3 saate</strong> kadar iner.</li>
+        <li>Komşularınızı apartman boşluğunda işgal etmezsiniz.</li>
+      </ul>
+
+      <div class="bg-slate-100 dark:bg-slate-800 p-6 rounded-2xl border-l-8 border-primary my-8">
+        <p class="text-lg text-secondary dark:text-white font-medium mb-0">Eğer "Bizim sokak biraz dar, asans\xf6r yanaşır mı?" diye endişeleriniz varsa, teknolojiyi hafife alıyorsunuz. CNC uzman ekibimiz en zorlu ve dar Bursa Mahallesi konfig\xfcrasyonlarında (\xd6rn: <a href="/osmangazi-evden-eve-asansorlu-nakliyat" class="text-primary font-semibold hover:underline">Osmangazi'nin</a> dik yokuşlarında) bile konumlanıp, milimetrik hesaplamalarla operasyonu başarıyla y\xfcr\xfctebilmektedir.</p>
+      </div>
+
+      <h2>Bizi Hemen Arayın, Kafanız Rahat Taşının</h2>
+      <p>Ev taşımak yeterince stresli bir iştir, bırakın ağır y\xfck\xfc dış cephe asans\xf6rlerimiz \xe7eksin. Hasarsız, hızlı, asans\xf6rl\xfc ve profesyonel taşıma g\xfcvencesi i\xe7in işi şansa bırakmayın. Bize <strong><a href="https://wa.me/905056080700" class="text-primary font-semibold hover:underline">0505 608 07 00</a></strong> adresinden anında ulaşın ve modern taşımacılığın keyfini \xe7ıkarın.</p>
+    `},{id:"10",slug:"ev-tasiyanlar-icin-a-dan-z-ye-rehber",title:"Ev Taşıyanlar İ\xe7in A'dan Z'ye Rehber: Planlamadan Yerleşime Her Şey",excerpt:"Taşınmayı kafanızda b\xfcy\xfctmeyin! Hazırlık, kolileme, firma se\xe7imi, asans\xf6r kiralama ve yeni eve yerleşmeye kadar t\xfcm s\xfcre\xe7leri adım adım anlatan kapsamlı taşınma rehberi.",date:"12 Nisan 2026",readTime:"12 dk okuma",category:"Taşınma Rehberi",author:"Bursa Kiralık Asans\xf6r ve Evden Eve Nakliyat Ekibi",image:"/images/mutlu-aile-tasinma.png",metaDescription:"Ev taşıyanlar i\xe7in A'dan Z'ye kapsamlı rehber. Taşınma \xf6ncesi hazırlık, kolileme, g\xfcvenilir nakliyat firması se\xe7imi, asans\xf6r kiralama ve yeni eve yerleşim adımları.",keywords:["ev taşıma rehberi","taşınma nasıl yapılır","evden eve nakliyat adımları","taşınma \xf6ncesi hazırlık","eşya paketleme taktikleri","g\xfcvenilir nakliyat firması","kiralık asans\xf6r bursa","yeni eve taşınma","taşınma kontrol listesi","bursa evden eve nakliyat","kolileme nasıl yapılır","taşınma maliyeti hesaplama"],faqs:[{q:"Taşınmaya ne kadar \xf6nceden hazırlanmaya başlamalıyım?",a:"İdeal olarak taşınma g\xfcn\xfcnden en az 4-6 hafta \xf6nce hazırlığa başlamalısınız. Eşya ayrıştırma, kolileme ve nakliyat firması rezervasyonu i\xe7in bu s\xfcre yeterlidir."},{q:"Eşyaları kolilerken nelere dikkat etmeliyim?",a:"Kırılacak eşyaları balonlu naylon ile tek tek sarın, kolilerin i\xe7indeki boşlukları doldurun, her koliye i\xe7indekini ve hangi odaya ait olduğunu etiketleyin. Ağır eşyaları k\xfc\xe7\xfck kolilere, hafif eşyaları b\xfcy\xfck kolilere koyun."},{q:"Asans\xf6rl\xfc nakliyat ne zaman şart olur?",a:"Taşınılan daire 3. kat ve \xfczerindeyse, merdiven boşluğu darsa veya b\xfcy\xfck mobilya ile beyaz eşya taşınacaksa dış cephe asans\xf6r\xfc kullanmak hem g\xfcvenli hem de ekonomiktir."},{q:"Nakliyat firması se\xe7erken nelere bakmalıyım?",a:"Firmanın \xf6zmal aracı ve asans\xf6r\xfc olmasına, yazılı hizmet şartları ve mutabakatla \xe7alışmasına, yerinde \xfccretsiz keşif yapmasına ve saha referanslarına dikkat edin. Fiyatı en d\xfcş\xfck olan firmayı değil, g\xfcvenilirliği en y\xfcksek olanı se\xe7in."},{q:"Taşınma g\xfcn\xfc abonelik işlemlerini unutmamak i\xe7in ne yapmalıyım?",a:"Elektrik, doğalgaz, su ve internet aboneliklerini taşınmadan 1-2 hafta \xf6nce yeni adrese naklet ya da iptal ettirin. Bu işlemlerin b\xfcy\xfck b\xf6l\xfcm\xfcn\xfc e-Devlet \xfczerinden halledebilirsiniz."},{q:"Değerli ve kırılgan eşyalar nasıl taşınmalı?",a:"Antika, sanat eseri, piyano gibi \xf6zel eşyalar i\xe7in firma ile \xf6nceden g\xf6r\xfcş\xfcn. Bu t\xfcr eşyalar \xf6zel ambalaj malzemeleri ve ayrı ara\xe7larla taşınmalıdır. M\xfcmk\xfcnse bu t\xfcr eşyaları bizzat aracınızla taşıyın."}],content:`
+      <h2>Giriş: Taşınmak Neden Bu Kadar Zor G\xf6r\xfcn\xfcr?</h2>
+      <p>Bir evi baştan sona toparlamak, yıllarca biriktirilen anıları, eşyaları ve yaşama d\xfczenini bir g\xfcnde yeni bir mek\xe2na nakletmek; hayatın en stresli deneyimlerinden biridir. Ancak <strong>iyi bir taşınma planı</strong> ile bu s\xfcre\xe7, bir k\xe2busa d\xf6nmek yerine heyecan verici yeni bir başlangıca d\xf6n\xfcşebilir.</p>
+
+      <p>Bu rehberde, <strong>evden eve taşınma s\xfcrecinin her aşamasını</strong> baştan sona ele alıyoruz. Planlamadan kolilemeye, nakliyat firması se\xe7iminden <a href="/bursa-merkez-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">kiralık asans\xf6r</a> kiralamaya, yeni eve yerleşimden abonelik işlemlerine kadar her konuyu ayrıntılı bi\xe7imde bulacaksınız.</p>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>A — Araştırma: Doğru Firmayı Se\xe7in</h2>
+      <p>Taşınma s\xfcrecinde yapılan en b\xfcy\xfck hata, firma se\xe7imini son g\xfcne bırakmaktır. G\xfcvenilir bir <strong>evden eve nakliyat firması</strong> aramaya taşınmadan en az 4 hafta \xf6nce başlayın.</p>
+
+      <h3>Firma Se\xe7erken Sormanız Gereken 5 Soru</h3>
+      <ol class="list-decimal pl-5 mt-4 space-y-3 mb-6">
+        <li><strong>\xd6zmal ara\xe7 ve asans\xf6r\xfcn\xfcz var mı?</strong> Taşeron sistemle \xe7alışan firmalar, işi başkasına devreder. Bu durum hem sorumluluğu hem de fiyatı belirsizleştirir.</li>
+        <li><strong>\xdccretsiz yerinde keşif yapıyor musunuz?</strong> Ger\xe7ek bir firma, fiyat vermeden \xf6nce adresinizi inceler. Yalnızca telefonla k\xf6r fiyat veren firmalardan ka\xe7ının.</li>
+        <li><strong>Yazılı hizmet şartları ve mutabakat d\xfczenleniyor mu?</strong> Belge olmadan hak iddianız g\xfc\xe7t\xfcr. Kurumsal firmalar her işlemde yazılı evrak d\xfczenler.</li>
+        <li><strong>Referans g\xf6rselleri ger\xe7ek mi?</strong> Sitedeki fotoğraflar stok g\xf6rsel mi, yoksa ger\xe7ek sahadan mı? <a href="/calismalarimiz" class="text-primary font-semibold hover:underline">\xc7alışmalarımız</a> sayfamızda Bursa sokaklarından ger\xe7ek referanslarımızı inceleyebilirsiniz.</li>
+        <li><strong>Kapora talep ediyorlar mı?</strong> \xd6n \xf6deme veya kapora isteyen firmalarla dikkatli olun. <a href="/blog/bursa-nakliye-kapora-dolandiriciligi-guvenilir-nakliyat-firmasi" class="text-primary font-semibold hover:underline">Nakliyat dolandırıcılığı</a> en \xe7ok bu yolla ger\xe7ekleşiyor.</li>
+      </ol>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>B — B\xfct\xe7e: Taşınma Maliyetini Hesaplayın</h2>
+      <p><strong>Taşınma maliyeti</strong> bir\xe7ok değişkene bağlıdır. S\xfcrpriz fatura yememek i\xe7in bu kalemleri \xf6nceden netleştirin:</p>
+
+      <div class="overflow-x-auto mt-6 mb-8">
+        <table class="w-full text-left border-collapse border border-slate-200 dark:border-slate-700">
+          <thead>
+            <tr class="bg-primary text-white">
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Maliyet Kalemi</th>
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Detay</th>
+              <th class="p-4 border border-slate-200 dark:border-slate-700">\xd6nem Derecesi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 dark:bg-slate-800/50">
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Nakliyat \xdccreti</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Eşya hacmi, kat sayısı ve mesafeye g\xf6re değişir</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Kiralık Asans\xf6r</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">3. kat ve \xfczeri i\xe7in şiddetle tavsiye edilir</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr class="bg-slate-50 dark:bg-slate-800/50">
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Ambalaj Malzemeleri</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Koli, balonlu naylon, kağıt, bant</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Demonte-Monte</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">B\xfcy\xfck mobilyaların s\xf6k\xfcl\xfcp takılması</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">⭐⭐⭐</td>
+            </tr>
+            <tr class="bg-slate-50 dark:bg-slate-800/50">
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Abonelik Devirleri</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Elektrik, su, gaz, internet nakil/iptal \xfccretleri</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">⭐⭐⭐</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="border-l-4 border-primary pl-4 py-2 bg-slate-50 dark:bg-slate-800/50 italic text-slate-700 dark:text-slate-300">
+        <strong>Pratik İpucu:</strong> Nakliyat fiyatını d\xfcş\xfcrmenin en hızlı yolu, taşınacak eşya miktarını azaltmaktır. Kullanmadığınız eşyaları satmak veya bağışlamak hem b\xfct\xe7enize hem de yeni evinize iyi gelir.
+      </p>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>C — \xc7izelge: 6 Haftalık Taşınma Planı</h2>
+      <p>Aşağıdaki zaman \xe7izelgesi, <strong>stressiz ve organize bir taşınma s\xfcreci</strong> i\xe7in en etkili yol haritasıdır:</p>
+
+      <h3>6. Hafta — Karar ve Araştırma Aşaması</h3>
+      <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
+        <li>Taşınma tarihini netleştirin ve takvimde işaretleyin.</li>
+        <li>Nakliyat ve <a href="/osmangazi-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">asans\xf6r kiralama</a> firmalarını araştırarak en az 3 firma ile iletişime ge\xe7in.</li>
+        <li>Yeni evin kat, merdiven ve balkon durumunu belirleyin.</li>
+      </ul>
+
+      <h3>5. Hafta — Ayıklama ve İlk Hazırlıklar</h3>
+      <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
+        <li>B\xf6lme b\xf6lme gezerek kullanmadığınız eşyaları ayırın: satılacaklar, bağışlanacaklar ve \xe7\xf6pe gidecekler.</li>
+        <li>Nakliyat firmasını se\xe7in ve mutlaka <strong>\xfccretsiz yerinde keşif</strong> talep edin.</li>
+        <li>Koli ve ambalaj malzemeleri alın ya da bazı marketlerden \xfccretsiz temin edin.</li>
+      </ul>
+
+      <h3>4. Hafta — Kolileme Başlangıcı</h3>
+      <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
+        <li>\xd6nce g\xfcnl\xfck kullanmadığınız eşyaları kolileyin: kitaplar, s\xfcs eşyaları, kışlık giysiler.</li>
+        <li>Her koliye i\xe7indekini ve ait olduğu odayı yazın (\xd6rn: "Mutfak — Kırılacak").</li>
+        <li>Değerli belgeleri, m\xfccevherleri ve ziynet eşyalarını ayrı bir b\xf6lmede muhafaza edin.</li>
+      </ul>
+
+      <h3>3. Hafta — Abonelik İşlemleri</h3>
+      <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
+        <li><strong>Elektrik, doğalgaz ve su</strong> aboneliklerini yeni adrese nakledin ya da eski adreste iptal edin.</li>
+        <li>İnternet sağlayıcınızdan yeni adres i\xe7in kurulum randevusu alın.</li>
+        <li>Posta adresinizi ve banka kayıtlarını g\xfcncelleyin.</li>
+      </ul>
+
+      <h3>2. Hafta — T\xfcm Eşyaları Kolileyin</h3>
+      <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
+        <li>Kullandığınız eşyalar da dahil artık her şeyi kolileyin, yalnızca birka\xe7 g\xfcn kullanacaklarınızı ayrı tutun.</li>
+        <li>Yatak, banyo ve mutfak i\xe7in "son hafta \xe7antası" hazırlayın.</li>
+        <li>Nakliyat firması ile son detayları netleştirin: saat, adres, asans\xf6r konumu.</li>
+      </ul>
+
+      <h3>Son Hafta ve Taşınma G\xfcn\xfc</h3>
+      <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
+        <li>Buzdolabını tamamen boşaltın ve fişini 24 saat \xf6nce \xe7ekerek kapıları a\xe7ık bırakın (buzun \xe7\xf6z\xfclmesi i\xe7in).</li>
+        <li>\xc7amaşır makinesinin <strong>nakliye emniyet vidalarını</strong> taktırın; sarsıntıdan motor hasar g\xf6r\xfcr.</li>
+        <li>Taşınma g\xfcn\xfc nakliyat ekibini bizzat karşılayın ve hangi kolinin nereye gideceğini belirtin.</li>
+        <li>Yeni evden \xe7ıkarken eski evin t\xfcm odalarını, dolapları ve balkonu kontrol edin.</li>
+      </ul>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>D — Dikkatli Kolileme: Eşyalarınızı Hasar G\xf6rmeden Taşıyın</h2>
+      <p>K\xf6t\xfc kolileme, iyi bir nakliyat firmasının bile \xf6nleyemeyeceği hasarlara yol a\xe7ar. İşte oda oda dikkat etmeniz gerekenler:</p>
+
+      <h3>Mutfak Eşyaları</h3>
+      <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
+        <li>Tabak, bardak ve cam eşyaları <strong>balonlu naylon ile tek tek sarın</strong>. \xc7evresine kağıt rulo sarın.</li>
+        <li>Kolinin dibine ve taraflarına yeterince dolgu malzemesi (gazete, k\xf6p\xfck) koyun.</li>
+        <li>Her zaman kolinin \xfcst\xfcne "KIRILACAK" yazın; nakliyat ekibi bu kolileri \xfcste koyar.</li>
+        <li>Ağır tabak takımlarını k\xfc\xe7\xfck kolilere b\xf6l\xfcn; b\xfcy\xfck koliler ağırlaşınca zemine d\xfcşme riski artar.</li>
+      </ul>
+
+      <h3>Beyaz Eşyalar</h3>
+      <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
+        <li><a href="/bursa-merkez-beyaz-esya-tasima-asansoru" class="text-primary font-semibold hover:underline">Beyaz eşya taşıma</a> i\xe7in varsa orijinal ambalajı kullanın.</li>
+        <li>\xc7amaşır makinesi nakliye vidaları takılı değilse drumı (tamburu) s\xfcnger ile sabitleyin.</li>
+        <li>Buzdolabını daima dik taşıyın; yan yatırılan buzdolabının kompres\xf6r\xfc arızalanabilir.</li>
+        <li>Kablolar ve aksesuarları bant ile cihaza iliştirin, kaybolmasın.</li>
+      </ul>
+
+      <h3>Mobilyalar ve B\xfcy\xfck Eşyalar</h3>
+      <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
+        <li>B\xfcy\xfck dolap ve yatak başlıkları gibi mobilyaları demonte edin; merdivenden ve asans\xf6rden \xe7ok daha kolay ge\xe7er.</li>
+        <li>Keskin k\xf6şeleri k\xf6şe koruyucu ile kaplatın, mobilya kılıfları kullanın.</li>
+        <li>Aynalı eşyaları \xe7apraz bant ile g\xfcvenceye alın; \xe7atlak riskini azaltır.</li>
+        <li>3. kat \xfczeri taşımalarda <a href="/nilufer-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">dış cephe asans\xf6r\xfc</a> kullanmak bu t\xfcr hasarları neredeyse sıfıra indirir.</li>
+      </ul>
+
+      <h3>Elektronik Eşyalar ve Teknoloji \xdcr\xfcnleri</h3>
+      <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
+        <li>Televizyon ve monit\xf6rleri orijinal kutularında taşıyın; yoksa \xe7ok katmanlı balonlu naylon ile sarın ve dikeyine koyun.</li>
+        <li>Bilgisayar kasasındaki harici diskleri ve eklenti kartları \xe7ıkarın, ayrı bir \xe7antada taşıyın.</li>
+        <li>T\xfcm kablolar i\xe7in bir "kablo \xe7antası" hazırlayın ve cihazın adını yazın.</li>
+      </ul>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>E — Eski Ev \xc7ıkışı: Son Kontrol Listesi</h2>
+      <p>Taşınma g\xfcn\xfc telaşında eski evden hatırlatmayı unutabileceğiniz \xf6nemli noktalar:</p>
+      <ul class="list-disc pl-5 mt-4 space-y-2">
+        <li>✅ T\xfcm dolaplar, \xe7ekmeceler ve dolap altları boşaltıldı mı?</li>
+        <li>✅ Balkon, depo veya k\xf6m\xfcrl\xfck gibi ek alanlar kontrol edildi mi?</li>
+        <li>✅ \xc7amaşır makinesi, bulaşık makinesi ve klima s\xf6k\xfcl\xfcp hazır mı?</li>
+        <li>✅ Duvardaki resimler, raflar ve perdeler alındı mı?</li>
+        <li>✅ Kapı kilitleri ve orjinal anahtarlar teslim edildi mi?</li>
+        <li>✅ Elektrik, su, gaz saya\xe7larının fotoğrafları \xe7ekildi mi?</li>
+        <li>✅ Apartman y\xf6netimi ile aidat hesabı kapandı mı?</li>
+      </ul>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>F — Fark Yaratır: Asans\xf6rl\xfc Taşımacılık</h2>
+      <p>Bursa'da <strong>y\xfcksek katlı binalara taşınırken</strong> en \xe7ok sorulan soru şudur: <em>"Dış cephe asans\xf6r\xfc şart mı?"</em> Kısa cevap: <strong>3. kat ve \xfczeri i\xe7in evet, şarttır.</strong></p>
+
+      <p>Merdiven taşımacılığında yaşanan en yaygın sorunlar şunlardır:</p>
+      <ul class="list-disc pl-5 mt-4 mb-6 space-y-2">
+        <li>B\xfcy\xfck mobilyaların merdivenden d\xf6nemeyerek duvar ve korkuluklara \xe7arpması.</li>
+        <li>Beyaz eşyaların sarsılarak kompres\xf6r ya da tambur arızasına uğraması.</li>
+        <li>Personelin yorulmasıyla birlikte eşya d\xfcş\xfcrme riskinin artması.</li>
+        <li>Apartman asans\xf6r\xfcnde y\xfck taşımanın site y\xf6netimi tarafından yasaklanmış olması.</li>
+      </ul>
+
+      <p>Bursa'nın farklı il\xe7elerinde asans\xf6rl\xfc taşımacılık hizmetlerimize ulaşmak i\xe7in:</p>
+      <ul class="list-disc pl-5 mt-4 mb-6 space-y-2">
+        <li><a href="/osmangazi-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Osmangazi Kiralık Asans\xf6r</a></li>
+        <li><a href="/nilufer-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Nil\xfcfer Kiralık Asans\xf6r</a></li>
+        <li><a href="/yildirim-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Yıldırım Kiralık Asans\xf6r</a></li>
+        <li><a href="/kestel-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Kestel Kiralık Asans\xf6r</a></li>
+        <li><a href="/gursu-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">G\xfcrsu Kiralık Asans\xf6r</a></li>
+        <li><a href="/mudanya-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Mudanya Kiralık Asans\xf6r</a></li>
+        <li><a href="/gemlik-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Gemlik Kiralık Asans\xf6r</a></li>
+      </ul>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>G — G\xfcvenli Taşıma: Değerli Eşyalar İ\xe7in \xd6zel \xd6nlemler</h2>
+      <p>Antika mobilya, sanat eseri, piyano gibi değerli eşyalar <strong>\xf6zel taşıma prosed\xfcrleri</strong> gerektirir:</p>
+
+      <ul class="list-disc pl-5 mt-4 mb-6 space-y-3">
+        <li><strong>Piyano ve org:</strong> Standart nakliye sepetleri bu eşyalar i\xe7in tasarlanmamıştır. <a href="/yildirim-piyano-tasima-asansoru" class="text-primary font-semibold hover:underline">Piyano taşıma asans\xf6r\xfc</a> ile \xf6zel teknikler kullanılmalıdır. Firma ile mutlaka \xf6nceden g\xf6r\xfcş\xfcn.</li>
+        <li><strong>Antika ve koleksiyon eşyalar:</strong> Nem ve ısı değişikliklerinden etkilenen bu eşyaları \xf6zel bez ve k\xf6p\xfck i\xe7inde muhafaza edin. M\xfcmk\xfcnse kendi aracınızla veya \xf6zel kurye ile taşıyın.</li>
+        <li><strong>B\xfcy\xfck camlar ve aynalar:</strong> "Bu/KIRILACAK" işareti yeterli değildir; cam ve ayna k\xf6şelerine mutlaka k\xf6şe koruyucu ge\xe7irin, dikey taşıyın.</li>
+        <li><strong>Nakit para, altın ve m\xfccevher:</strong> <em>Kesinlikle</em> nakliye kamyonuna y\xfcklemeyin. Her zaman \xfczerinizde veya \xf6zel bir kasada taşıyın.</li>
+      </ul>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>H — Hukuki Haklar: Taşınmada Bilinmesi Gerekenler</h2>
+      <p>Taşınma s\xfcrecinde hukuki haklarınızı bilmek, olası anlaşmazlıklarda sizi korur:</p>
+
+      <h3>Kira Kontratı Sonlandırma</h3>
+      <p>Kiracı tarafından kontrat sonlandırılırken <strong>yasal bildirim s\xfcrelerine</strong> uymak gerekir. T\xfcrk Bor\xe7lar Kanunu'na g\xf6re genellikle 1 ay \xf6nceden yazılı bildirim yeterlidir; ancak kontratınızda farklı bir s\xfcre belirtilmişse ona uyun.</p>
+
+      <h3>Depozito İadesinin Koşulları</h3>
+      <p>Ev sahibi, evi aldığı gibi teslim aldıktan sonra <strong>depozito iadesini</strong> yapmakla y\xfck\xfcml\xfcd\xfcr. Normal kullanım kaynaklı olağan yıpranmalar depozito kesintisi gerek\xe7esi olamaz. Taşınırken evin girişte ve \xe7ıkışta fotoğraflarını \xe7ekin, olası anlaşmazlıklara karşı deliliniz olsun.</p>
+
+      <h3>Site Y\xf6netimi ve Asans\xf6r Kuralları</h3>
+      <p>Pek \xe7ok l\xfcks sitenin y\xf6netim planında bina i\xe7i asans\xf6r\xfcn y\xfck taşımak i\xe7in kullanılması yasaktır. Bu nedenle <a href="/blog/tasinirken-asansor-zorunlu-mu" class="text-primary font-semibold hover:underline">dış cephe asans\xf6r\xfc kiralamak</a> hem yasal hem de pratik \xe7\xf6z\xfcmd\xfcr.</p>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>I — İlk Gece \xc7antası: Taşındıktan Sonraki 24 Saat</h2>
+      <p>Taşındıktan sonra eşyaları a\xe7mak uzun s\xfcrebilir. Bu nedenle <strong>"ilk gece \xe7antası"</strong> hazırlamayı asla atlamayın:</p>
+
+      <ul class="list-disc pl-5 mt-4 mb-6 space-y-2">
+        <li>Uyku tulumu ya da \xe7arşaf-yastık-nevresim</li>
+        <li>Kişisel bakım \xfcr\xfcnleri (diş fır\xe7ası, sabun, havlu)</li>
+        <li>Şarj aletleri ve powerbank</li>
+        <li>Birka\xe7 g\xfcnl\xfck ila\xe7 ve re\xe7eteler</li>
+        <li>\xd6nemli belgeler (kimlik, tapu, kira kontratı)</li>
+        <li>Bir set yemek takımı ve su bardağı</li>
+        <li>Atıştırmalık ve su</li>
+        <li>Bebek veya evcil hayvanınız i\xe7in temel ihtiya\xe7lar</li>
+      </ul>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>J — Jenerasyon Farkı: \xc7ocuklar ve Yaşlılarla Taşınmak</h2>
+      <p>Aile olarak taşınmak ekstra organizasyon gerektirir:</p>
+
+      <h3>\xc7ocuklarla Taşınırken</h3>
+      <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
+        <li>\xc7ocuğunuzu taşınma s\xfcrecine dahil edin; kendi odasını taşımasına k\xfc\xe7\xfck g\xf6revler verin.</li>
+        <li>Sevdiği oyuncakları ve kitapları en son kolileyin, ilk \xf6nce a\xe7ın.</li>
+        <li>Taşınma g\xfcn\xfc m\xfcmk\xfcnse \xe7ocuğu g\xfcvenilir bir akrabanın yanında bırakın.</li>
+        <li>Yeni okul nakil işlemlerini taşınmadan \xf6nce başlatın.</li>
+      </ul>
+
+      <h3>Yaşlı Aile \xdcyeleriyle Taşınırken</h3>
+      <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
+        <li>İla\xe7 kutuları ve sağlık ekipmanları en kolay erişilecek yerde paketlensin.</li>
+        <li>S\xfcre\xe7 fiziksel a\xe7ıdan yorucu olduğu i\xe7in yaşlı aile \xfcyelerinin taşınma g\xfcn\xfc yorulmaması i\xe7in planlamayı \xf6nceden yapın.</li>
+        <li>Yeni evin merdiven ve banyo d\xfczenini \xf6nceden inceleyin; gerekirse tutunma barı gibi g\xfcvenlik \xf6nlemleri alın.</li>
+      </ul>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>K — Komşuluk İlişkileri: Taşınırken Dikkat!</h2>
+      <p>Taşınma s\xfcrecinde hem eski hem de yeni komşularınızla iyi ilişkiler kurmak yaşam kalitenizi doğrudan etkiler:</p>
+
+      <ul class="list-disc pl-5 mt-4 mb-6 space-y-3">
+        <li><strong>Eski Komşulara Veda:</strong> \xd6zellikle uzun s\xfcredir oturuyorsanız komşularınıza taşınma tarihinizi \xf6nceden bildirin; g\xfcr\xfclt\xfc ve park sorunlarına karşı anlayış talep edin.</li>
+        <li><strong>Yeni Komşularla Tanışma:</strong> İlk g\xfcnlerde kapı kapı dolaşmak zorunda değilsiniz; ancak kapı komşularınıza k\xfc\xe7\xfck bir tanışma hediyesi (baklava, \xe7ikolata) g\xf6t\xfcrmek bir\xe7ok potansiyel anlaşmazlığı \xf6nler.</li>
+        <li><strong>G\xfcr\xfclt\xfc ve \xc7alışma Saatleri:</strong> Taşınma veya yerleşme s\xfcrecindeki \xe7eki\xe7 sesi ve g\xfcr\xfclt\xfc, yasal sessizlik saatlerinde (genellikle 22:00-08:00 arası) yasaktır.</li>
+      </ul>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>M — Mobil Asans\xf6r: Sık Sorulan Teknik Sorular</h2>
+      <p>Dış cephe kiralık asans\xf6r hakkında m\xfcşterilerimizin en sık sorduğu sorular:</p>
+
+      <ul class="list-disc pl-5 mt-4 mb-6 space-y-3">
+        <li><strong>Asans\xf6r ka\xe7ıncı kata kadar \xe7ıkar?</strong> Sistemlerimiz g\xfcvenle <strong>15. kata kadar</strong> erişim sağlar. Ayrıntılar i\xe7in <a href="/blog/kacinci-kata-kadar-cikar" class="text-primary font-semibold hover:underline">mobil asans\xf6r kat kapasitesi</a> yazımıza bakın.</li>
+        <li><strong>Sokak dar ise ne olur?</strong> Uzmanlarımız \xfccretsiz keşifte dar sokak konfig\xfcrasyonlarını inceler; pek \xe7ok zorlu konumda kurulum sağlayabiliyoruz.</li>
+        <li><strong>K\xf6t\xfc havada \xe7alışır mı?</strong> G\xfc\xe7l\xfc r\xfczgar veya yoğun yağış durumunda g\xfcvenlik protokol\xfc gereğince işlem ertelenebilir. Operat\xf6r\xfcm\xfcz kararı anlık olarak verir.</li>
+        <li><strong>Asans\xf6r\xfc ben kullanabilir miyim?</strong> Hayır; iş g\xfcvenliği kanunları gereği asans\xf6r\xfc yalnızca operat\xf6r belgeli uzmanımız kullanır.</li>
+      </ul>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>N — Yeni Eve Yerleşim: İlk Hafta Yapılacaklar</h2>
+      <p>Eşyalar yeni eve taşındıktan sonra yapılacaklar listesi:</p>
+
+      <ol class="list-decimal pl-5 mt-4 space-y-3 mb-6">
+        <li><strong>G\xfcvenlik Kontrol\xfc:</strong> Kapı kilitlerini değiştirin; bir \xf6nceki kiracının elinde anahtar kopyası olabilir.</li>
+        <li><strong>Saya\xe7 Tutanakları:</strong> Yeni evdeki elektrik, su ve gaz saya\xe7larının fotoğrafını \xe7ekin ve aboneliği kendi adınıza alın.</li>
+        <li><strong>İnternet Kurulumu:</strong> İnternet sağlayıcısı kurulum randevusunu \xf6nceden aldıysanız ilk g\xfcn aktif olur; almadıysanız birka\xe7 g\xfcnl\xfck bekleme s\xfcreci olabilir.</li>
+        <li><strong>Olası Arızaları Belgeleyin:</strong> Taşınmadan \xf6nce evde mevcut olan kırık, \xe7atlak veya boya hasarlarını fotoğrafla kayıt altına alın ve ev sahibine bildirin.</li>
+        <li><strong>Komşu Bilgilendirmesi:</strong> Apartman y\xf6neticisiyle tanışın; bina kurallarını, aidatları ve acil iletişim bilgilerini \xf6ğrenin.</li>
+        <li><strong>Koli A\xe7ma Sırası:</strong> \xd6nce mutfak, banyo ve yatak odası kolilerini a\xe7ın. Oturma odası ve dekorasyon işleri ikinci aşamaya bırakılabilir.</li>
+      </ol>
+
+      <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+      <h2>Sonu\xe7: Profesyonel Destek ile Taşınmak Artık Zor Değil</h2>
+      <p>Ev taşımak, doğru planlama ve doğru ekip ile <strong>b\xfcy\xfcleyici bir yeni başlangıca</strong> d\xf6n\xfcşebilir. Bu rehberdeki adımları takip ederek hem maddi kayıpları hem de stresi minimuma indirebilirsiniz.</p>
+
+      <p>Bursa'nın t\xfcm il\xe7elerinde <strong>asans\xf6rl\xfc evden eve nakliyat ve kiralık asans\xf6r</strong> hizmetleri i\xe7in deneyimli ekibimizle iletişime ge\xe7in. \xdccretsiz keşif, sabit fiyat garantisi ve 7/24 hizmet anlayışıyla yanınızdayız.</p>
+
+      <div class="bg-primary/10 border-l-4 border-primary p-6 rounded-r-xl mt-8 mb-6">
+        <h4 class="text-lg font-bold text-secondary dark:text-white mb-2">Hemen Randevu Alın</h4>
+        <p class="text-slate-700 dark:text-slate-300">
+          Taşınma tarihinizi belirlediniz mi? Fiyat almak ve \xfccretsiz keşif talebinde bulunmak i\xe7in <a href="https://wa.me/905056080700" class="text-primary font-bold hover:underline">WhatsApp \xfczerinden yazın (0505 608 07 00)</a> veya <a href="tel:+905056080700" class="text-primary font-bold hover:underline">hemen arayın</a>. Bursa'nın t\xfcm il\xe7elerinde aynı g\xfcn hizmet sunuyoruz.
+        </p>
+      </div>
+    `},{id:"nilufer-kiralik-asansor-yuksek-kat-nakliyat",slug:"nilufer-kiralik-asansor-yuksek-kat-nakliyat",title:"Nil\xfcfer Kiralık Asans\xf6r | Y\xfcksek Katlı Sitelerde \xc7iziksiz Taşıma",excerpt:"Nil\xfcfer'de 20. kata kadar mobil asans\xf6r kiralama. \xd6zl\xfcce, Balat ve G\xf6r\xfckle sitelerinde bina i\xe7i hasarsız, cezasız, 2 saatte jet hızında taşınma \xe7\xf6z\xfcm\xfc.",date:"14 Eyl\xfcl 2026",readTime:"7 dk okuma",category:"Lokal Rehber",author:"Bursa Kiralık Asans\xf6r CNC Saha Ekibi",image:"/images/hero-bg.png",metaDescription:"Nil\xfcfer kiralık asans\xf6r arayanlara \xf6zel saha rehberi. \xd6zl\xfcce ve Balat sitelerinde cezasız, hasarsız, hızlı dış cephe asans\xf6r\xfc kiralama avantajları.",keywords:["nil\xfcfer kiralık asans\xf6r","nil\xfcfer asans\xf6rl\xfc nakliye","\xf6zl\xfcce kiralık asans\xf6r","balat ev taşıma asans\xf6r\xfc","g\xf6r\xfckle mobil y\xfck asans\xf6r\xfc","bursa asans\xf6r kiralama"],faqs:[{q:"Nil\xfcfer'deki sitelerin bah\xe7esine mobil asans\xf6r kurulabilir mi?",a:"Evet. 3.5 tonluk kompakt ara\xe7 şasisi \xfczerine monteli hidrolik asans\xf6rlerimiz, site yangın tahliye yollarını ve peyzaj alanlarını ezmeden, kau\xe7uk zemin pabu\xe7larıyla 35-40 derecelik g\xfcvenli yanaşma a\xe7ısıyla dakikalar i\xe7inde kurulur."},{q:"Nil\xfcfer'de kiralık asans\xf6r ka\xe7ıncı kata kadar ulaşıyor?",a:"Nil\xfcfer genelindeki ara\xe7 filomuz 70 metreye (yaklaşık 20-24. kat) kadar 400 kg y\xfck taşıma kapasitesiyle kesintisiz operasyon sağlamaktadır."},{q:"Komple ev taşımadan yalnızca mobilya veya tadilat molozu i\xe7in asans\xf6r kiralayabilir miyiz?",a:"Kesinlikle evet. Merdivenden sığmayan Amerikan kapı, salon k\xf6şe takımı, ada tezgah mermeri veya tadilat seramikleri i\xe7in saatlik ve par\xe7a başı kiralama desteği sunuyoruz."}],content:`
+      <h2>Nil\xfcfer’de Y\xfcksek Katlara Taşınırken Karşılaşılan Ger\xe7ekler</h2>
+      <p>Bir koltuğun kumaşını yırtmak, merdiven sahanlığındaki yangın t\xfcp\xfcn\xfc devirmek veya apartman y\xf6netiminden <em>"bina yolcu asans\xf6r\xfcn\xfc y\xfck i\xe7in kullandınız ve kabini \xe7izdiniz"</em> gerek\xe7esiyle 15.000 TL ceza faturası almak... Nil\xfcfer’deki y\xfcksek katlı sitelerde taşınırken \xf6deyeceğiniz bedel, nakliye \xfccretinden katbekat fazla olabilir. 15 yıldır Bursa sokaklarındayız; \xd6zl\xfcce’nin geniş balkonlu sitelerinden G\xf6r\xfckle’nin \xf6ğrenci sirk\xfclasyonuna kadar sahada g\xf6rd\xfcğ\xfcm\xfcz tek bir ger\xe7ek var: <strong>İnsan g\xfcc\xfc eşyayı taşırken yıpratır, dış cephe asans\xf6r\xfc ise eşyanızı ve paranızı korur.</strong></p>
+
+      <p>Bursa'nın en yoğun g\xf6\xe7 alan ve modern konut projelerine ev sahipliği yapan il\xe7esinde, geleneksel taşımacılık y\xf6ntemleri hem site y\xf6netimleriyle gerginlik yaratır hem de mobilyalarınızın \xf6mr\xfcn\xfc kısaltır. <a href="/nilufer-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Nil\xfcfer kiralık mobil asans\xf6r</a> \xe7\xf6z\xfcmlerimiz, binanın dış cephesine kurulan teleskopik ray mekanizmasıyla ortak kullanım alanlarına hi\xe7 girmeden doğrudan evinizin salonuna veya balkonuna g\xfcvenli hat a\xe7ar.</p>
+
+      <h2>Nil\xfcfer Saha Analizi: Site Y\xf6netimleri, Balkon A\xe7ıları ve R\xfczgar Riski</h2>
+      <p>Nil\xfcfer il\xe7esi kentsel dokusu itibarıyla geniş bulvarlara sahip olsa da site i\xe7i operasyonlarda belirli kritik kurallar barındırır:</p>
+      
+      <ul class="list-disc pl-5 mt-4 space-y-3 mb-6">
+        <li><strong>Site Y\xf6netim Katı Kuralları:</strong> Balat, 23 Nisan, Ertuğrul ve Altınşehir mahallelerindeki site y\xf6netimlerinin %90'ı ortak alan asans\xf6rlerinin eşya taşımak amacıyla \xe7alıştırılmasını yasaklamıştır. Koruyucu kılıf takılsa dahi motor aksamı aşırı y\xfckten zarar g\xf6rebileceği i\xe7in y\xfckl\xfc cezalar kesilmektedir.</li>
+        <li><strong>G\xf6r\xfckle ve Ataevler Hatlarında Parklanma:</strong> G\xf6r\xfckle'de \xf6zellikle eğitim-\xf6ğretim başlangı\xe7 ve bitiş d\xf6nemlerinde sokak parklanması had safhadadır. Mobil asans\xf6r\xfcn 4 hidrolik pistonunun a\xe7ılabilmesi i\xe7in sabah saat 08:30 \xf6ncesi operasyon başlangıcı \xf6nerilir.</li>
+        <li><strong>Fransız Balkon ve Salon Camı Avantajı:</strong> Nil\xfcfer'deki binaların \xe7oğunda yere kadar uzanan \xe7ift kanatlı camlar ve geniş balkonlar mevcuttur. \xc7ift raylı kılavuz sistemimiz balkona temas etmeden, arada 5 cm emniyet payı bırakarak milimetrik sıfırlama yapar.</li>
+      </ul>
+
+      <h2>Geleneksel Taşıma vs. Nil\xfcfer Dış Cephe Asans\xf6r\xfc</h2>
+      <div class="overflow-x-auto my-8">
+        <table class="w-full text-left border-collapse border border-slate-200 dark:border-slate-700">
+          <thead>
+            <tr class="bg-primary text-white">
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Taşıma Kriteri</th>
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Klasik Merdiven / Bina İ\xe7i Taşıma</th>
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Nil\xfcfer Dış Cephe Mobil Asans\xf6r\xfc</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 dark:bg-slate-800/50">
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Operasyon S\xfcresi (3+1 Daire)</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">6 - 8 Saat (Ekip yorulduk\xe7a hasar artar)</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700 font-bold text-primary">1.5 - 2 Saat (S\xfcrekli mekanik hat)</td>
+            </tr>
+            <tr>
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Eşya & Mobilya \xc7izilme Riski</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Y\xfcksek (Merdiven boşluğu d\xf6n\xfcş a\xe7ıları dar)</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700 font-bold text-emerald-600">Sıfır Hasar (Doğrudan sepete sabitleme)</td>
+            </tr>
+            <tr class="bg-slate-50 dark:bg-slate-800/50">
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Apartman ve Site Y\xf6netim Cezası</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Duvar boyası ve yolcu asans\xf6r\xfc risk cezaları</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Sıfır Risk (Ortak alanlara dokunulmaz)</td>
+            </tr>
+            <tr>
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Toplam Maliyet & İş\xe7ilik Eforu</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">5-6 hamal yevmiyesi + olası marangoz masrafı</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700 font-bold text-primary">Net tasarruf: Azalan iş g\xfcc\xfc + tek operasyon</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Komşularla ve Y\xf6netimle Sıfır Problem: 3 Altın Kural</h2>
+      <p>Nil\xfcfer’de taşınırken g\xfcne huzurlu başlayıp huzurlu bitirmeniz i\xe7in operasyon adımlarımız:</p>
+      <ol class="list-decimal pl-5 mt-4 space-y-2 mb-6">
+        <li><strong>\xd6nceden WhatsApp Keşfi:</strong> Sokağınızın ve balkonunuzun konumunu teyit ederek sitenin a\xe7ık otopark veya itfaiye giriş kapısına uygun asans\xf6r aracımızı tahsis ediyoruz.</li>
+        <li><strong>Operat\xf6r Belgeli G\xfcvenlik:</strong> Makine başındaki personelimiz MEB ve Mesleki Yeterlilik onaylı operat\xf6r lisansına sahiptir. R\xfczgar ve ağırlık dengesini bilgisayar kontroll\xfc ekrandan takip eder.</li>
+        <li><strong>Peyzaj ve Bah\xe7e Koruma:</strong> Nil\xfcfer sitelerinin hassas \xe7im ve taş d\xf6şemelerine zarar vermemek i\xe7in tekerlek altına koruyucu kau\xe7uk rampalar serilir.</li>
+      </ol>
+
+      <div class="bg-primary/10 border-l-4 border-primary p-6 rounded-r-xl mt-8 mb-6">
+        <h4 class="text-xl font-bold text-secondary dark:text-white mb-2">Nil\xfcfer’de Taşınırken Eşyanızı Riske Atmayın</h4>
+        <p class="text-slate-700 dark:text-slate-300">
+          \xd6zl\xfcce, Balat, İhsaniye veya G\xf6r\xfckle'de taşınma tarihiniz netleştiyse, son dakikaya kalıp asans\xf6rs\xfcz kalmayın. <a href="https://wa.me/905056080700" class="text-primary font-bold hover:underline">WhatsApp'tan bina ve balkon fotoğrafı g\xf6nderin</a>; 5 dakikada katınıza uygun asans\xf6r modelimizi ve en avantajlı sabit fiyat teklifimizi iletelim.
+        </p>
+      </div>
+    `},{id:"osmangazi-kiralik-asansor-dar-sokak-tasima",slug:"osmangazi-kiralik-asansor-dar-sokak-tasima",title:"Osmangazi Kiralık Asans\xf6r | Dar Sokaklarda G\xfcvenli Dış Cephe Taşıma",excerpt:"Osmangazi'nin dar sokakları ve tarihi dokusuna \xf6zel kompakt mobil y\xfck asans\xf6r\xfc. \xc7arşamba, K\xfck\xfcrtl\xfc ve Dikkaldırım'da merdivensiz, hasarsız taşının.",date:"14 Eyl\xfcl 2026",readTime:"7 dk okuma",category:"Lokal Rehber",author:"Bursa Kiralık Asans\xf6r CNC Saha Ekibi",image:"/images/service-abstract.png",metaDescription:"Osmangazi kiralık asans\xf6r arayanlara \xf6zel rehber. Dar sokaklar ve elektrik tellerine karşı kompakt mobil y\xfck asans\xf6r\xfc \xe7\xf6z\xfcmleri ve fiyat analizi.",keywords:["osmangazi kiralık asans\xf6r","osmangazi asans\xf6rl\xfc nakliyat","\xe7arşamba kiralık nakliye asans\xf6r\xfc","k\xfck\xfcrtl\xfc mobil asans\xf6r","dikkaldırım evden eve nakliye","dar sokak eşya taşıma asans\xf6r\xfc"],faqs:[{q:"Osmangazi'de sokağımız \xe7ok dar ve ara\xe7lar park etmiş, asans\xf6r yanaşabilir mi?",a:"Filomuzda dar sokak mimarisi i\xe7in \xf6zel \xfcretilmiş dar şasili 3.5 tonluk hafif mobil asans\xf6rler mevcuttur. Normal bir panelvanın girebildiği her sokağa rahat\xe7a girip hidrolik ayaklarını tek y\xf6nl\xfc a\xe7arak sabitleme yapabiliyoruz."},{q:"Sokaktaki havai elektrik ve internet telleri kuruluma engel olur mu?",a:"Hayır. Uzman operat\xf6rlerimiz teleskopik bom a\xe7ısını tellerin arasından veya \xfcst hizasından ge\xe7ecek şekilde milimetrik olarak ayarlar. Uygun a\xe7ı bulunamaması halinde yan cephe veya arka pencereler alternatif istasyon olarak değerlendirilir."},{q:"Osmangazi'de kentsel d\xf6n\xfcş\xfcm molozu veya inşaat seramiği i\xe7in asans\xf6r kiralanabilir mi?",a:"Evet. Dış cephe asans\xf6rlerimiz 400 kg taşıma kapasiteli geniş sepetleriyle moloz \xe7uvalları indirme ve fayans, al\xe7ıpan, \xe7imento \xe7ıkarma işlerinde ustalarımıza saatlik veya g\xfcnl\xfck kiralanmaktadır."}],content:`
+      <h2>Osmangazi’nin Dar Sokaklarında Taşınma \xc7ilesine Son Verin</h2>
+      <p>Osmangazi’de eski tip dik ve dar merdivenlerden indirilirken k\xf6şesi patlayan masif bir gardırop ya da binanın d\xf6n\xfcş sahanlığında sıkışıp kalan \xe7ift kapılı bir buzdolabı... Osmangazi'nin sokak dokusunu bilmeyen tecr\xfcbesiz ekiplerle taşınmak, eşyalarınızın yarı değerini merdiven boşluklarında bırakmak demektir. Bursa'nın merkezinde sokak ne kadar dar olursa olsun, pencereniz a\xe7ıksa her eşyayı sıfır hasarla indirmek tecr\xfcbeli operat\xf6rl\xfck işidir.</p>
+
+      <p>Bursa'nın en k\xf6kl\xfc il\xe7esi olan Osmangazi; tarihi mahalleleri, kentsel d\xf6n\xfcş\xfcm b\xf6lgeleri ve bitişik nizam apartmanlarıyla nakliyecilikte en y\xfcksek saha tecr\xfcbesini gerektirir. <a href="/osmangazi-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Osmangazi kiralık mobil asans\xf6r</a> hizmetimiz, sokak genişliğine g\xf6re se\xe7ilen ara\xe7 filomuzla binaların dışına kurularak merdiven eziyetini tamamen ortadan kaldırır.</p>
+
+      <h2>Osmangazi Saha Ger\xe7ekleri: Havai Hatlar, Dar Sokaklar ve Zamanlama</h2>
+      <p>Osmangazi genelinde hatasız bir taşıma operasyonu i\xe7in dikkat ettiğimiz 3 temel dinamik:</p>
+      
+      <ul class="list-disc pl-5 mt-4 space-y-3 mb-6">
+        <li><strong>Elektrik ve İnternet Telleri (Havai Hatlar):</strong> \xc7arşamba, Altıparmak, Zafer ve Alemdar gibi mahallelerde binaların \xf6n\xfcnden ge\xe7en hatlar kritik engeldir. Operat\xf6rlerimiz asans\xf6r bomunu tellerin arasından santimetrik a\xe7ıyla ge\xe7irerek pencereye kilitler.</li>
+        <li><strong>Dar Sokak Parklanması ve Trafik İzni:</strong> K\xfck\xfcrtl\xfc ve Dikkaldırım gibi yoğun b\xf6lgelerde sabah trafiği başlamadan (saat 07:30 - 09:30 arası) kurulan dış cephe asans\xf6r\xfcyle sokağın tıkanması \xf6nlenir, 1.5 saatte t\xfcm y\xfckleme tamamlanır.</li>
+        <li><strong>Demirtaş ve Hamitler Gelişim Sahası:</strong> Yeni konut bloklarında geniş balkonlar mobil asans\xf6r\xfcn geniş platformuyla doğrudan kamyon kasasına k\xf6pr\xfc vazifesi g\xf6r\xfcr.</li>
+      </ul>
+
+      <h2>Geleneksel Taşıma vs. Osmangazi Mobil Asans\xf6r\xfc</h2>
+      <div class="overflow-x-auto my-8">
+        <table class="w-full text-left border-collapse border border-slate-200 dark:border-slate-700">
+          <thead>
+            <tr class="bg-primary text-white">
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Kriter</th>
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Osmangazi Klasik Merdivenli Taşıma</th>
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Osmangazi Kompakt Mobil Asans\xf6r</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 dark:bg-slate-800/50">
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Merdiven D\xf6n\xfcşleri</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Duvarlara \xe7arpma, korkuluk kırılması</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700 font-bold text-emerald-600">Bina dışından direkt araca: Sıfır s\xfcrt\xfcnme</td>
+            </tr>
+            <tr>
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Sokak Trafiğini Kapatma</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">5-6 saat boyunca kamyonun yolu kilitlemesi</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700 font-bold text-primary">60 - 90 dakikada t\xfcm eşyanın indirilmesi</td>
+            </tr>
+            <tr class="bg-slate-50 dark:bg-slate-800/50">
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Ağır Y\xfck Transferi</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Piyano, mermer masa veya kasada kaza riski</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">\xc7elik ray \xfczerinde sarsıntısız ve dengeli transfer</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Osmangazi'de Asans\xf6r Kiralamadan \xd6nce Yapılacaklar</h2>
+      <p>Operasyonun kesintisiz ilerlemesi i\xe7in izlenecek kolay adımlar:</p>
+      <ol class="list-decimal pl-5 mt-4 space-y-2 mb-6">
+        <li>Taşınacağınız binanın caddeye veya otoparka bakan pencere/balkon g\xf6r\xfcnt\xfcs\xfcn\xfc \xe7ekin.</li>
+        <li>Sokağın genel genişliğini ve binanın \xf6n\xfcndeki elektrik direklerini de kadraja dahil edin.</li>
+        <li><a href="https://wa.me/905056080700" class="text-primary font-semibold hover:underline">WhatsApp hattımıza (0505 608 07 00)</a> g\xf6nderin; saha uzmanımız 3 dakikada uygun asans\xf6r modelimizi onaylasın.</li>
+      </ol>
+
+      <div class="bg-primary/10 border-l-4 border-primary p-6 rounded-r-xl mt-8 mb-6">
+        <h4 class="text-xl font-bold text-secondary dark:text-white mb-2">Osmangazi’de "Bu Sokağa Asans\xf6r Girmez" Diyenlere Aldanmayın</h4>
+        <p class="text-slate-700 dark:text-slate-300">
+          Kompakt dar şasi filomuzla Osmangazi'nin en zorlu ara sokaklarında 15 yıldır \xe7\xf6z\xfcm \xfcretiyoruz. <a href="https://wa.me/905056080700" class="text-primary font-bold hover:underline">Hemen fotoğraf g\xf6nderin</a>, taşınmanızı kabusa d\xf6n\xfcşt\xfcrmeden g\xfcvenle tamamlayalım.
+        </p>
+      </div>
+    `},{id:"yildirim-kiralik-asansor-egimli-arazi-nakliyat",slug:"yildirim-kiralik-asansor-egimli-arazi-nakliyat",title:"Yıldırım Kiralık Asans\xf6r | Dik Yokuş ve Eğimli Arazide G\xfcvenli Taşıma",excerpt:"Yıldırım'ın eğimli sokaklarında terazi sabitlemeli mobil dış cephe asans\xf6r\xfc. Teleferik, Millet ve Yeşilyayla'da d\xfcşme ve kayma riski olmadan hızlı taşının.",date:"14 Eyl\xfcl 2026",readTime:"7 dk okuma",category:"Lokal Rehber",author:"Bursa Kiralık Asans\xf6r CNC Saha Ekibi",image:"/images/mutlu-aile-tasinma.png",metaDescription:"Yıldırım kiralık asans\xf6r rehberi. Teleferik ve Yeşilyayla'nın dik yokuşlarında hidrolik terazi sabitlemeli mobil y\xfck asans\xf6r\xfcyle g\xfcvenli nakliyat.",keywords:["yıldırım kiralık asans\xf6r","yıldırım asans\xf6rl\xfc nakliye","millet mahallesi kiralık asans\xf6r","teleferik ev taşıma asans\xf6r\xfc","yeşilyayla nakliyat asans\xf6r\xfc","eğimli sokak nakliye asans\xf6r\xfc"],faqs:[{q:"Dik yokuşlu bir sokakta asans\xf6r aracı devrilmeden nasıl \xe7alışır?",a:"Ara\xe7larımızda bağımsız \xe7alışan 4 adet teleskopik hidrolik piston (outrigger) bulunur. Eğim ne kadar y\xfcksek olursa olsun, elektronik terazi g\xf6stergesiyle ara\xe7 şasisi sıfır eğime getirilir ve \xe7elik kilitli takozlarla sabitlenir."},{q:"Millet Mahallesi'ndeki yeni sitelerde bah\xe7e i\xe7ine giriş yapabiliyor musunuz?",a:"Evet, Millet Mahallesi'ndeki kapalı veya a\xe7ık otoparklı sitelerde kau\xe7uk koruyucu tabanlıklarımızla zemin parkesine ve bord\xfcrlere zarar vermeden rahat\xe7a kurulum yapıyoruz."},{q:"Uludağ'dan inen sert r\xfczgarlarda asans\xf6r \xe7alıştırılır mı?",a:"Sistemlerimizde yer alan dijital anemometre (r\xfczgar \xf6l\xe7er) sayesinde anlık r\xfczgar hızı takip edilir. 45 km/s hız limitinin altındaki havalarda \xe7ift gergili \xe7elik halat sistemiyle %100 g\xfcvenli \xe7alışır; fırtına anlarında g\xfcvenlik i\xe7in ara verilir."}],content:`
+      <h2>Uludağ Eteklerinde Taşınırken Yer\xe7ekimini Hafife Almayın</h2>
+      <p>Uludağ eteklerindeki Yıldırım yokuşlarında, eğimli bir sokakta dik merdivenlerden ağır bir buzdolabını veya \xe7amaşır makinesini indirmeye \xe7alışan iki hamalın dengesini kaybettiği anı d\xfcş\xfcn\xfcn... Bu yalnızca binlerce liralık mobilya ve beyaz eşya hasarı değil, telafisi m\xfcmk\xfcn olmayan bir iş kazası riskidir. Yıldırım’da taşınmak d\xfcz ovada taşınmaya benzemez; burada zemin statiğini, yer\xe7ekimini ve hidrolik dengeyi doğru y\xf6netmek hayati \xf6nem taşır.</p>
+
+      <p>Yıldırım il\xe7esi; Teleferik ve Yeşilyayla gibi eğimi y\xfcksek eski mahalleleri ile Millet Mahallesi gibi modern ve geniş bulvarlı yeni yerleşimleri aynı potada eritir. <a href="/yildirim-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Yıldırım kiralık mobil asans\xf6r</a> hizmetimiz, her iki b\xf6lgenin coğrafi yapısına uygun ekipman parkuruyla eşyalarınızı sıfır sarsıntıyla hedefine ulaştırır.</p>
+
+      <h2>Yıldırım Coğrafyası: Zemin Eğimi, Merdiven Yapısı ve Millet Mahallesi</h2>
+      <p>Yıldırım sahasında başarıyı belirleyen 3 kritik fakt\xf6r:</p>
+      
+      <ul class="list-disc pl-5 mt-4 space-y-3 mb-6">
+        <li><strong>Hidrolik Terazi ve Takoz G\xfcvencesi:</strong> Mollafenari, Teleferik ve Teferr\xfc\xe7 hatlarında sokak eğimleri %15-20 seviyelerine kadar \xe7ıkabilir. Bağımsız hidrolik pistonlarımız eğimi sıfırlayarak sepetin dik bir ray hattında s\xfcrt\xfcnmesiz kaymasını sağlar.</li>
+        <li><strong>Millet Mahallesi ve Erikli Modern Siteleri:</strong> Yıldırım'ın parlayan b\xf6lgesi Millet Mahallesi'nde binalar y\xfcksektir. 8. kattan sonra bina merdivenlerinden eşya indirmek personeli t\xfcketir; mobil asans\xf6r\xfcm\xfcz 1.5 saatte evi boşaltır.</li>
+        <li><strong>Dar Spiral Apartman Merdivenleri:</strong> Yıldırım’daki 4-5 katlı aile apartmanlarında merdivenler d\xf6neme\xe7lidir. L koltuk, gardırop kapağı veya bazaların merdivenden d\xf6nmesi imkansızdır; dış cephe asans\xf6r\xfc tek rasyonel \xe7\xf6z\xfcmd\xfcr.</li>
+      </ul>
+
+      <h2>Geleneksel Taşıma vs. Yıldırım Hidrolik Denge Asans\xf6r\xfc</h2>
+      <div class="overflow-x-auto my-8">
+        <table class="w-full text-left border-collapse border border-slate-200 dark:border-slate-700">
+          <thead>
+            <tr class="bg-primary text-white">
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Risk Fakt\xf6r\xfc</th>
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Yıldırım Yokuşlarında Beden G\xfcc\xfc</th>
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Yıldırım Denge Ayaklı Mobil Asans\xf6r</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 dark:bg-slate-800/50">
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">İş Kazası & Kayma Tehlikesi</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Eğimli zeminde d\xfcşme ve bel incinmesi</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700 font-bold text-emerald-600">Mekanik kilitli \xe7elik rayla sıfır insan riski</td>
+            </tr>
+            <tr>
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Eşya \xc7arpma Oranı</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Dar spiral merdiven k\xf6şelerinde %40 hasar</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700 font-bold text-primary">Doğrudan balkondan sepete sabitleme: %0 hasar</td>
+            </tr>
+            <tr class="bg-slate-50 dark:bg-slate-800/50">
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Toplam Taşıma S\xfcresi</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Yokuş yorgunluğu nedeniyle 7-9 saat</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700 font-bold text-primary">Ortalama 2 saatte kamyondan salona montaj</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Yıldırım Sakinlerine G\xfcvenli Taşınma Tavsiyeleri</h2>
+      <p>Eğimli sokaklarda operasyonun tereyağından kıl \xe7eker gibi tamamlanması i\xe7in:</p>
+      <ol class="list-decimal pl-5 mt-4 space-y-2 mb-6">
+        <li>Binanın \xf6n\xfcndeki eğim y\xf6n\xfcn\xfc ve ara\xe7 yanaşma alanını netleştirmek i\xe7in sokağınızın geniş bir fotoğrafını \xe7ekin.</li>
+        <li>Bina balkonunun caddeye olan a\xe7ısını WhatsApp hattımızdan ekibimizle paylaşın.</li>
+        <li>Teleskopik bom uzunluğu ve zemin a\xe7ısı hesaplandıktan sonra belirlenen saatte kapınıza gelen mobil asans\xf6rle strese girmeden taşının.</li>
+      </ol>
+
+      <div class="bg-primary/10 border-l-4 border-primary p-6 rounded-r-xl mt-8 mb-6">
+        <h4 class="text-xl font-bold text-secondary dark:text-white mb-2">Yıldırım’ın Dik Yokuşlarında Eşyalarınızı Riske Atmayın</h4>
+        <p class="text-slate-700 dark:text-slate-300">
+          Teleferik'ten Millet Mahallesi'ne kadar Yıldırım'ın her noktasında g\xfcvenli terazi sabitlemeli asans\xf6rlerimizle hizmetinizdeyiz. <a href="https://wa.me/905056080700" class="text-primary font-bold hover:underline">WhatsApp'tan hemen ulaşın</a>, sabit fiyat garantisiyle taşınma g\xfcn\xfcn\xfcz\xfc rezerve edin.
+        </p>
+      </div>
+    `},{id:"mudanya-kiralik-asansor-guzelyali-nakliyat",slug:"mudanya-kiralik-asansor-guzelyali-nakliyat",title:"Mudanya Kiralık Asans\xf6r | R\xfczgara Dayanıklı Sahil ve Villa Taşıması",excerpt:"Mudanya ve G\xfczelyalı'da sert deniz poyrazına dayanıklı dış cephe nakliye asans\xf6r\xfc. Bademli villalarında ve sahil binalarında sıfır \xe7izik garantisi.",date:"14 Eyl\xfcl 2026",readTime:"7 dk okuma",category:"Lokal Rehber",author:"Bursa Kiralık Asans\xf6r CNC Saha Ekibi",image:"/images/hero-bg.png",metaDescription:"Mudanya kiralık asans\xf6r rehberi. G\xfczelyalı ve Bademli'de poyraz r\xfczgarına dayanıklı mobil asans\xf6r kiralama, sahil binaları ve villa nakliyesi.",keywords:["mudanya kiralık asans\xf6r","g\xfczelyalı asans\xf6rl\xfc nakliyat","bademli villa eşya taşıma asans\xf6r\xfc","mudanya evden eve nakliye","sahil binaları y\xfck asans\xf6r\xfc","bursa kiralık mobil asans\xf6r"],faqs:[{q:"Mudanya'da şiddetli poyraz r\xfczgarında asans\xf6rl\xfc taşıma g\xfcvenli midir?",a:"Sistemlerimizde aerodinamik r\xfczgar yarıklarına sahip \xe7ift ray kılavuzlu Alman bom mekanizması kullanılır. Saatte 40-45 km hıza kadar olan r\xfczgarlarda balkona \xe7elik gergilerle kilitlenen sepet titreşimsiz hareket eder."},{q:"Sahil tarafındaki binalarda yol ile balkon arasında geniş bah\xe7e mesafesi varsa asans\xf6r ulaşır mı?",a:"Evet. 70 metreye kadar erişebilen teleskopik ara\xe7larımız yatayda y\xfcksek erişim a\xe7ısına sahiptir. Yol ile bina cephesi arasındaki 15-20 metrelik bah\xe7e veya istinat duvarı engellerini havadan rahatlıkla aşabilmektedir."},{q:"Bademli'de sadece piyano, ş\xf6mine mermeri veya para kasası gibi tek bir par\xe7a i\xe7in \xe7ağırabilir miyiz?",a:"Kesinlikle evet. Y\xfcksek değerli sanat eseri, piyano, mermer tezgah veya \xe7elik kasa gibi dar villa merdivenlerinden \xe7ıkmayan eşyalar i\xe7in saatlik tek par\xe7a kiralama hizmeti sunuyoruz."}],content:`
+      <h2>Mudanya Sahilinde Sert Poyraza Karşı Bilin\xe7li Taşınma</h2>
+      <p>G\xfczelyalı sırtlarında veya Mudanya sahil şeridinde poyrazın saatte 35 km hızla estiği bir g\xfcnde, 6. katın balkonundan merdivensiz mobilya indirmeye kalktığınızda r\xfczgarın şiddetini hesaba katmazsanız eşyalarınız adeta bir yelkenli gibi savrulur. Mudanya’da taşınmak; yerel meteorolojiyi bilmeyi, denizden gelen ani hava akımlarını okumayı ve fırtınaya mukavim hidrolik \xe7elik ray kullanmayı zorunlu kılar.</p>
+
+      <p>Mudanya; kot farkı y\xfcksek sahil siteleri, deniz basamakları ve Bademli/\xc7ağrışan hattındaki l\xfcks villa projeleriyle Bursa’nın en se\xe7kin mimarisine sahiptir. <a href="/mudanya-kiralik-mobil-asansor" class="text-primary font-semibold hover:underline">Mudanya kiralık mobil asans\xf6r</a> filomuz, r\xfczgar g\xfcvenlik kilitleri ve uzun menzilli bomlarıyla eşyalarınızı doğrudan teras veya salonunuza taşır.</p>
+
+      <h2>Mudanya ve Bademli Saha Dinamikleri: R\xfczgar, Kot Farkı ve L\xfcks Koruma</h2>
+      <p>Mudanya operasyonlarımızda \xf6ne \xe7ıkan 3 \xf6nemli kriter:</p>
+      
+      <ul class="list-disc pl-5 mt-4 space-y-3 mb-6">
+        <li><strong>Poyraz ve R\xfczgar Mukavemeti:</strong> Sahil şeridinde hafif al\xfcminyum sepetler r\xfczgarda sallanabilir. \xc7ift raylı Alman kılavuz sistemimiz sepette titreşimi sıfıra indirerek balkon korkuluğuna \xe7elik kancalarla sabitlenir.</li>
+        <li><strong>Kot Farkı ve Sahil Basamakları:</strong> Halitpaşa, Burgaz ve Kumyaka mevkilerinde binalar \xe7oğu zaman sahil yolu kotunun altında kalır. 20 metreyi aşan bah\xe7e ve merdiven basamakları havadan kurulan bom hattıyla tamamen baypas edilir.</li>
+        <li><strong>Bademli ve \xc7ağrışan Villa Projeleri:</strong> \xd6zel tasarım mobilyaların, ithal parkelerin ve merdiven korkuluklarının \xe7izilmemesi i\xe7in bah\xe7eden 2. veya 3. kat terasına kurulan asans\xf6r i\xe7 mekanın l\xfcks dokusuna el değdirmez.</li>
+      </ul>
+
+      <h2>Geleneksel Taşıma vs. Mudanya R\xfczgar Korumalı Asans\xf6r</h2>
+      <div class="overflow-x-auto my-8">
+        <table class="w-full text-left border-collapse border border-slate-200 dark:border-slate-700">
+          <thead>
+            <tr class="bg-primary text-white">
+              <th class="p-4 border border-slate-200 dark:border-slate-700">B\xf6lgesel Kriter</th>
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Klasik İnsan G\xfcc\xfcyle Taşıma</th>
+              <th class="p-4 border border-slate-200 dark:border-slate-700">Mudanya Emniyet Kilitli Mobil Asans\xf6r</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 dark:bg-slate-800/50">
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Poyraz / R\xfczgar G\xfcvenliği</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Balkonda r\xfczgarla denge kaybı ve eşya d\xfcş\xfcrme riski</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700 font-bold text-emerald-600">Sens\xf6rl\xfc otomatik frenleme ve \xe7elik gergi hattı</td>
+            </tr>
+            <tr>
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">Kot Farkı & Sahil Merdivenleri</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Basamaklarda saatler s\xfcren yorucu taşıma</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700 font-bold text-primary">T\xfcm basamakları havadan aşan 1.5 saatlik transfer</td>
+            </tr>
+            <tr class="bg-slate-50 dark:bg-slate-800/50">
+              <td class="font-bold p-4 border border-slate-200 dark:border-slate-700">L\xfcks Mobilya & Parke Koruması</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Dar merdiven korkuluklarında \xe7izilme riski</td>
+              <td class="p-4 border border-slate-200 dark:border-slate-700">Dışarıdan direkt odaya indirme: Sıfır temas garantisi</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Mudanya'da Kolay ve Garantili Keşif Adımları</h2>
+      <p>Mudanya veya G\xfczelyalı'da sorunsuz taşınmak i\xe7in:</p>
+      <ol class="list-decimal pl-5 mt-4 space-y-2 mb-6">
+        <li>Binanızın deniz veya cadde cephesinden \xe7ekilmiş bir fotoğrafını hazırlayın.</li>
+        <li>Binanın \xf6n\xfcndeki bah\xe7e veya ara\xe7 park mesafesini belirtin.</li>
+        <li><a href="https://wa.me/905056080700" class="text-primary font-semibold hover:underline">WhatsApp hattımıza (0505 608 07 00)</a> iletin; r\xfczgar y\xf6n\xfc ve mesafe analizini yapıp en uygun asans\xf6r planını anında \xe7ıkaralım.</li>
+      </ol>
+
+      <div class="bg-primary/10 border-l-4 border-primary p-6 rounded-r-xl mt-8 mb-6">
+        <h4 class="text-xl font-bold text-secondary dark:text-white mb-2">Mudanya'nın Deniz R\xfczgarında Eşyalarınızı Riske Atmayın</h4>
+        <p class="text-slate-700 dark:text-slate-300">
+          G\xfczelyalı, Halitpaşa veya Bademli'de l\xfcks mobilyalarınızı ve beyaz eşyalarınızı sahil basamaklarında yıpratmayın. <a href="https://wa.me/905056080700" class="text-primary font-bold hover:underline">WhatsApp'tan hemen yazın</a>, 5 dakikada net fiyat teklifinizi alın.
+        </p>
+      </div>
+    `}];var j=c(72567),k=c(15303),l=c(57923);function m(){return(0,d.jsxs)(d.Fragment,{children:[(0,d.jsx)(l.B,{items:[{name:"Blog",path:"/blog"}]}),(0,d.jsx)("section",{className:"pt-32 pb-16 bg-slate-50 dark:bg-navy/30 border-b border-slate-200 dark:border-white/10",children:(0,d.jsxs)("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center",children:[(0,d.jsxs)(h.P.h1,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},className:"text-4xl md:text-5xl font-display font-bold mb-6 text-secondary dark:text-white",children:["Nakliyat & ",(0,d.jsx)("span",{className:"text-primary",children:"Taşınma Rehberi"})]}),(0,d.jsx)(h.P.p,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},transition:{delay:.1},className:"text-lg text-slate-700 dark:text-slate-300 max-w-2xl mx-auto",children:"T\xfcrkiye'nin en kapsamlı asans\xf6rl\xfc taşımacılık ve evden eve nakliyat bilgi arşivi. Sorunsuz bir taşınma s\xfcreci i\xe7in uzman tavsiyeleri."})]})}),(0,d.jsx)("section",{className:"py-20 bg-white dark:bg-background",children:(0,d.jsx)("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",children:(0,d.jsx)("div",{className:"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8",children:i.map((a,b)=>(0,d.jsxs)(h.P.article,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},transition:{delay:.1*b+.2},className:"group flex flex-col bg-white dark:bg-navy-light rounded-3xl border border-border dark:border-white/10 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1",children:[(0,d.jsxs)(f(),{href:`/blog/${a.slug}`,className:"block h-48 overflow-hidden relative",children:[(0,d.jsx)("div",{className:"absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors z-10"}),(0,d.jsx)(g.default,{src:a.image,alt:a.title,fill:!0,className:"object-cover transform group-hover:scale-105 transition-transform duration-500",sizes:"(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"}),(0,d.jsx)("div",{className:"absolute top-4 left-4 z-20 bg-white/90 backdrop-blur text-secondary px-3 py-1 rounded-full text-xs font-bold shadow-sm",children:a.category})]}),(0,d.jsxs)("div",{className:"p-6 flex flex-col flex-1",children:[(0,d.jsx)(f(),{href:`/blog/${a.slug}`,children:(0,d.jsx)("h2",{className:"text-xl font-bold mb-3 text-secondary dark:text-white group-hover:text-primary transition-colors line-clamp-2",children:a.title})}),(0,d.jsx)("p",{className:"text-slate-800 dark:text-slate-400 text-sm mb-6 line-clamp-3",children:a.excerpt}),(0,d.jsx)("div",{className:"mt-auto pt-4 border-t border-slate-100 dark:border-white/10 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400",children:(0,d.jsxs)("div",{className:"flex items-center gap-4",children:[(0,d.jsxs)("span",{className:"flex items-center gap-1",children:[(0,d.jsx)(j.A,{className:"w-3 h-3"})," ",a.date]}),(0,d.jsxs)("span",{className:"flex items-center gap-1",children:[(0,d.jsx)(k.A,{className:"w-3 h-3"})," ",a.readTime]})]})})]})]},a.id))})})})]})}},27744:(a,b,c)=>{Promise.resolve().then(c.bind(c,27529))},27910:a=>{"use strict";a.exports=require("stream")},28354:a=>{"use strict";a.exports=require("util")},29294:a=>{"use strict";a.exports=require("next/dist/server/app-render/work-async-storage.external.js")},33873:a=>{"use strict";a.exports=require("path")},41025:a=>{"use strict";a.exports=require("next/dist/server/app-render/dynamic-access-async-storage.external.js")},41861:(a,b,c)=>{"use strict";function d(a){let b=a.startsWith("/")?a:`/${a}`;return`${function(){let a=process.env.NEXT_PUBLIC_SITE_URL;if(a&&"string"==typeof a)return a.endsWith("/")?a.slice(0,-1):a;return"https://bursakiralikasansor.com"}()}${b}`}c.d(b,{K:()=>d})},55591:a=>{"use strict";a.exports=require("https")},57923:(a,b,c)=>{"use strict";c.d(b,{B:()=>i});var d=c(21124),e=c(3991),f=c.n(e),g=c(78733),h=c(59405);function i({items:a}){return(0,d.jsx)("nav",{"aria-label":"Breadcrumb",className:"bg-gray-100 dark:bg-navy border-b border-gray-300 dark:border-white/10 px-4 sm:px-6 py-3",children:(0,d.jsx)("div",{className:"max-w-7xl mx-auto",children:(0,d.jsxs)("ol",{className:"flex items-center gap-1.5 text-sm text-gray-600 dark:text-slate-400",children:[(0,d.jsx)("li",{children:(0,d.jsxs)(f(),{href:"/",className:"hover:text-primary transition-colors flex items-center gap-1",children:[(0,d.jsx)(g.A,{className:"w-3.5 h-3.5"}),(0,d.jsx)("span",{children:"Ana Sayfa"})]})}),a.map((b,c)=>(0,d.jsxs)("li",{className:"flex items-center gap-1.5",children:[(0,d.jsx)(h.A,{className:"h-4 w-4","aria-hidden":"true"}),c===a.length-1?(0,d.jsx)("span",{className:"text-gray-900 dark:text-white font-semibold","aria-current":"page",children:b.name}):(0,d.jsx)(f(),{href:b.path,className:"hover:text-primary underline underline-offset-2 transition-colors",children:b.name})]},b.path))]})})})}},59405:(a,b,c)=>{"use strict";c.d(b,{A:()=>d});let d=(0,c(23339).A)("chevron-right",[["path",{d:"m9 18 6-6-6-6",key:"mthhwq"}]])},63033:a=>{"use strict";a.exports=require("next/dist/server/app-render/work-unit-async-storage.external.js")},64192:(a,b,c)=>{Promise.resolve().then(c.bind(c,20202))},72567:(a,b,c)=>{"use strict";c.d(b,{A:()=>d});let d=(0,c(23339).A)("calendar",[["path",{d:"M8 2v4",key:"1cmpym"}],["path",{d:"M16 2v4",key:"4m81vk"}],["rect",{width:"18",height:"18",x:"3",y:"4",rx:"2",key:"1hopcy"}],["path",{d:"M3 10h18",key:"8toen8"}]])},74075:a=>{"use strict";a.exports=require("zlib")},78733:(a,b,c)=>{"use strict";c.d(b,{A:()=>d});let d=(0,c(23339).A)("house",[["path",{d:"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8",key:"5wwlr5"}],["path",{d:"M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z",key:"r6nss1"}]])},79551:a=>{"use strict";a.exports=require("url")},81630:a=>{"use strict";a.exports=require("http")},82588:(a,b,c)=>{"use strict";c.r(b),c.d(b,{GlobalError:()=>D.a,__next_app__:()=>J,handler:()=>L,pages:()=>I,routeModule:()=>K,tree:()=>H});var d=c(49754),e=c(9117),f=c(46595),g=c(32324),h=c(39326),i=c(38928),j=c(20175),k=c(12),l=c(54290),m=c(12696),n=c(82802),o=c(77533),p=c(45229),q=c(32822),r=c(261),s=c(26453),t=c(52474),u=c(26713),v=c(51356),w=c(62685),x=c(36225),y=c(63446),z=c(2762),A=c(45742),B=c(86439),C=c(81170),D=c.n(C),E=c(62506),F=c(91203),G={};for(let a in E)0>["default","tree","pages","GlobalError","__next_app__","routeModule","handler"].indexOf(a)&&(G[a]=()=>E[a]);c.d(b,G);let H={children:["",{children:["blog",{children:["__PAGE__",{},{page:[()=>Promise.resolve().then(c.bind(c,18422)),"/Users/alihancancihm/Desktop/yedek/src/app/blog/page.tsx"]}]},{metadata:{icon:[async a=>(await Promise.resolve().then(c.bind(c,70440))).default(a),async a=>(await Promise.resolve().then(c.bind(c,78162))).default(a)],apple:[async a=>(await Promise.resolve().then(c.bind(c,94650))).default(a)],openGraph:[],twitter:[],manifest:"/manifest.webmanifest"}}]},{layout:[()=>Promise.resolve().then(c.bind(c,51472)),"/Users/alihancancihm/Desktop/yedek/src/app/layout.tsx"],"global-error":[()=>Promise.resolve().then(c.t.bind(c,81170,23)),"next/dist/client/components/builtin/global-error.js"],"not-found":[()=>Promise.resolve().then(c.bind(c,59732)),"/Users/alihancancihm/Desktop/yedek/src/app/not-found.tsx"],forbidden:[()=>Promise.resolve().then(c.t.bind(c,90461,23)),"next/dist/client/components/builtin/forbidden.js"],unauthorized:[()=>Promise.resolve().then(c.t.bind(c,32768,23)),"next/dist/client/components/builtin/unauthorized.js"],metadata:{icon:[async a=>(await Promise.resolve().then(c.bind(c,70440))).default(a),async a=>(await Promise.resolve().then(c.bind(c,78162))).default(a)],apple:[async a=>(await Promise.resolve().then(c.bind(c,94650))).default(a)],openGraph:[],twitter:[],manifest:"/manifest.webmanifest"}}]}.children,I=["/Users/alihancancihm/Desktop/yedek/src/app/blog/page.tsx"],J={require:c,loadChunk:()=>Promise.resolve()},K=new d.AppPageRouteModule({definition:{kind:e.RouteKind.APP_PAGE,page:"/blog/page",pathname:"/blog",bundlePath:"",filename:"",appPaths:[]},userland:{loaderTree:H},distDir:".next",relativeProjectDir:""});async function L(a,b,d){var C;let G="/blog/page";"/index"===G&&(G="/");let M=(0,h.getRequestMeta)(a,"postponed"),N=(0,h.getRequestMeta)(a,"minimalMode"),O=await K.prepare(a,b,{srcPage:G,multiZoneDraftMode:!1});if(!O)return b.statusCode=400,b.end("Bad Request"),null==d.waitUntil||d.waitUntil.call(d,Promise.resolve()),null;let{buildId:P,query:Q,params:R,parsedUrl:S,pageIsDynamic:T,buildManifest:U,nextFontManifest:V,reactLoadableManifest:W,serverActionsManifest:X,clientReferenceManifest:Y,subresourceIntegrityManifest:Z,prerenderManifest:$,isDraftMode:_,resolvedPathname:aa,revalidateOnlyGenerated:ab,routerServerContext:ac,nextConfig:ad,interceptionRoutePatterns:ae}=O,af=S.pathname||"/",ag=(0,r.normalizeAppPath)(G),{isOnDemandRevalidate:ah}=O,ai=K.match(af,$),aj=!!$.routes[aa],ak=!!(ai||aj||$.routes[ag]),al=a.headers["user-agent"]||"",am=(0,u.getBotType)(al),an=(0,p.isHtmlBotRequest)(a),ao=(0,h.getRequestMeta)(a,"isPrefetchRSCRequest")??"1"===a.headers[t.NEXT_ROUTER_PREFETCH_HEADER],ap=(0,h.getRequestMeta)(a,"isRSCRequest")??!!a.headers[t.RSC_HEADER],aq=(0,s.getIsPossibleServerAction)(a),ar=(0,m.checkIsAppPPREnabled)(ad.experimental.ppr)&&(null==(C=$.routes[ag]??$.dynamicRoutes[ag])?void 0:C.renderingMode)==="PARTIALLY_STATIC",as=!1,at=!1,au=ar?M:void 0,av=ar&&ap&&!ao,aw=(0,h.getRequestMeta)(a,"segmentPrefetchRSCRequest"),ax=!al||(0,p.shouldServeStreamingMetadata)(al,ad.htmlLimitedBots);an&&ar&&(ak=!1,ax=!1);let ay=!0===K.isDev||!ak||"string"==typeof M||av,az=an&&ar,aA=null;_||!ak||ay||aq||au||av||(aA=aa);let aB=aA;!aB&&K.isDev&&(aB=aa),K.isDev||_||!ak||!ap||av||(0,k.d)(a.headers);let aC={...E,tree:H,pages:I,GlobalError:D(),handler:L,routeModule:K,__next_app__:J};X&&Y&&(0,o.setReferenceManifestsSingleton)({page:G,clientReferenceManifest:Y,serverActionsManifest:X,serverModuleMap:(0,q.createServerModuleMap)({serverActionsManifest:X})});let aD=a.method||"GET",aE=(0,g.getTracer)(),aF=aE.getActiveScopeSpan();try{let f=K.getVaryHeader(aa,ae);b.setHeader("Vary",f);let k=async(c,d)=>{let e=new l.NodeNextRequest(a),f=new l.NodeNextResponse(b);return K.render(e,f,d).finally(()=>{if(!c)return;c.setAttributes({"http.status_code":b.statusCode,"next.rsc":!1});let d=aE.getRootSpanAttributes();if(!d)return;if(d.get("next.span_type")!==i.BaseServerSpan.handleRequest)return void console.warn(`Unexpected root span type '${d.get("next.span_type")}'. Please report this Next.js issue https://github.com/vercel/next.js`);let e=d.get("next.route");if(e){let a=`${aD} ${e}`;c.setAttributes({"next.route":e,"http.route":e,"next.span_name":a}),c.updateName(a)}else c.updateName(`${aD} ${a.url}`)})},m=async({span:e,postponed:f,fallbackRouteParams:g})=>{let i={query:Q,params:R,page:ag,sharedContext:{buildId:P},serverComponentsHmrCache:(0,h.getRequestMeta)(a,"serverComponentsHmrCache"),fallbackRouteParams:g,renderOpts:{App:()=>null,Document:()=>null,pageConfig:{},ComponentMod:aC,Component:(0,j.T)(aC),params:R,routeModule:K,page:G,postponed:f,shouldWaitOnAllReady:az,serveStreamingMetadata:ax,supportsDynamicResponse:"string"==typeof f||ay,buildManifest:U,nextFontManifest:V,reactLoadableManifest:W,subresourceIntegrityManifest:Z,serverActionsManifest:X,clientReferenceManifest:Y,setIsrStatus:null==ac?void 0:ac.setIsrStatus,dir:c(33873).join(process.cwd(),K.relativeProjectDir),isDraftMode:_,isRevalidate:ak&&!f&&!av,botType:am,isOnDemandRevalidate:ah,isPossibleServerAction:aq,assetPrefix:ad.assetPrefix,nextConfigOutput:ad.output,crossOrigin:ad.crossOrigin,trailingSlash:ad.trailingSlash,previewProps:$.preview,deploymentId:ad.deploymentId,enableTainting:ad.experimental.taint,htmlLimitedBots:ad.htmlLimitedBots,devtoolSegmentExplorer:ad.experimental.devtoolSegmentExplorer,reactMaxHeadersLength:ad.reactMaxHeadersLength,multiZoneDraftMode:!1,incrementalCache:(0,h.getRequestMeta)(a,"incrementalCache"),cacheLifeProfiles:ad.experimental.cacheLife,basePath:ad.basePath,serverActions:ad.experimental.serverActions,...as?{nextExport:!0,supportsDynamicResponse:!1,isStaticGeneration:!0,isRevalidate:!0,isDebugDynamicAccesses:as}:{},experimental:{isRoutePPREnabled:ar,expireTime:ad.expireTime,staleTimes:ad.experimental.staleTimes,cacheComponents:!!ad.experimental.cacheComponents,clientSegmentCache:!!ad.experimental.clientSegmentCache,clientParamParsing:!!ad.experimental.clientParamParsing,dynamicOnHover:!!ad.experimental.dynamicOnHover,inlineCss:!!ad.experimental.inlineCss,authInterrupts:!!ad.experimental.authInterrupts,clientTraceMetadata:ad.experimental.clientTraceMetadata||[]},waitUntil:d.waitUntil,onClose:a=>{b.on("close",a)},onAfterTaskError:()=>{},onInstrumentationRequestError:(b,c,d)=>K.onRequestError(a,b,d,ac),err:(0,h.getRequestMeta)(a,"invokeError"),dev:K.isDev}},l=await k(e,i),{metadata:m}=l,{cacheControl:n,headers:o={},fetchTags:p}=m;if(p&&(o[y.NEXT_CACHE_TAGS_HEADER]=p),a.fetchMetrics=m.fetchMetrics,ak&&(null==n?void 0:n.revalidate)===0&&!K.isDev&&!ar){let a=m.staticBailoutInfo,b=Object.defineProperty(Error(`Page changed from static to dynamic at runtime ${aa}${(null==a?void 0:a.description)?`, reason: ${a.description}`:""}
 see more here https://nextjs.org/docs/messages/app-static-to-dynamic-error`),"__NEXT_ERROR_CODE",{value:"E132",enumerable:!1,configurable:!0});if(null==a?void 0:a.stack){let c=a.stack;b.stack=b.message+c.substring(c.indexOf("\n"))}throw b}return{value:{kind:v.CachedRouteKind.APP_PAGE,html:l,headers:o,rscData:m.flightData,postponed:m.postponed,status:m.statusCode,segmentData:m.segmentData},cacheControl:n}},o=async({hasResolved:c,previousCacheEntry:f,isRevalidating:g,span:i})=>{let j,k=!1===K.isDev,l=c||b.writableEnded;if(ah&&ab&&!f&&!N)return(null==ac?void 0:ac.render404)?await ac.render404(a,b):(b.statusCode=404,b.end("This page could not be found")),null;if(ai&&(j=(0,w.parseFallbackField)(ai.fallback)),j===w.FallbackMode.PRERENDER&&(0,u.isBot)(al)&&(!ar||an)&&(j=w.FallbackMode.BLOCKING_STATIC_RENDER),(null==f?void 0:f.isStale)===-1&&(ah=!0),ah&&(j!==w.FallbackMode.NOT_FOUND||f)&&(j=w.FallbackMode.BLOCKING_STATIC_RENDER),!N&&j!==w.FallbackMode.BLOCKING_STATIC_RENDER&&aB&&!l&&!_&&T&&(k||!aj)){let b;if((k||ai)&&j===w.FallbackMode.NOT_FOUND)throw new B.NoFallbackError;if(ar&&!ap){let c="string"==typeof(null==ai?void 0:ai.fallback)?ai.fallback:k?ag:null;if(b=await K.handleResponse({cacheKey:c,req:a,nextConfig:ad,routeKind:e.RouteKind.APP_PAGE,isFallback:!0,prerenderManifest:$,isRoutePPREnabled:ar,responseGenerator:async()=>m({span:i,postponed:void 0,fallbackRouteParams:k||at?(0,n.u)(ag):null}),waitUntil:d.waitUntil}),null===b)return null;if(b)return delete b.cacheControl,b}}let o=ah||g||!au?void 0:au;if(as&&void 0!==o)return{cacheControl:{revalidate:1,expire:void 0},value:{kind:v.CachedRouteKind.PAGES,html:x.default.EMPTY,pageData:{},headers:void 0,status:void 0}};let p=T&&ar&&((0,h.getRequestMeta)(a,"renderFallbackShell")||at)?(0,n.u)(af):null;return m({span:i,postponed:o,fallbackRouteParams:p})},p=async c=>{var f,g,i,j,k;let l,n=await K.handleResponse({cacheKey:aA,responseGenerator:a=>o({span:c,...a}),routeKind:e.RouteKind.APP_PAGE,isOnDemandRevalidate:ah,isRoutePPREnabled:ar,req:a,nextConfig:ad,prerenderManifest:$,waitUntil:d.waitUntil});if(_&&b.setHeader("Cache-Control","private, no-cache, no-store, max-age=0, must-revalidate"),K.isDev&&b.setHeader("Cache-Control","no-store, must-revalidate"),!n){if(aA)throw Object.defineProperty(Error("invariant: cache entry required but not generated"),"__NEXT_ERROR_CODE",{value:"E62",enumerable:!1,configurable:!0});return null}if((null==(f=n.value)?void 0:f.kind)!==v.CachedRouteKind.APP_PAGE)throw Object.defineProperty(Error(`Invariant app-page handler received invalid cache entry ${null==(i=n.value)?void 0:i.kind}`),"__NEXT_ERROR_CODE",{value:"E707",enumerable:!1,configurable:!0});let p="string"==typeof n.value.postponed;ak&&!av&&(!p||ao)&&(N||b.setHeader("x-nextjs-cache",ah?"REVALIDATED":n.isMiss?"MISS":n.isStale?"STALE":"HIT"),b.setHeader(t.NEXT_IS_PRERENDER_HEADER,"1"));let{value:q}=n;if(au)l={revalidate:0,expire:void 0};else if(N&&ap&&!ao&&ar)l={revalidate:0,expire:void 0};else if(!K.isDev)if(_)l={revalidate:0,expire:void 0};else if(ak){if(n.cacheControl)if("number"==typeof n.cacheControl.revalidate){if(n.cacheControl.revalidate<1)throw Object.defineProperty(Error(`Invalid revalidate configuration provided: ${n.cacheControl.revalidate} < 1`),"__NEXT_ERROR_CODE",{value:"E22",enumerable:!1,configurable:!0});l={revalidate:n.cacheControl.revalidate,expire:(null==(j=n.cacheControl)?void 0:j.expire)??ad.expireTime}}else l={revalidate:y.CACHE_ONE_YEAR,expire:void 0}}else b.getHeader("Cache-Control")||(l={revalidate:0,expire:void 0});if(n.cacheControl=l,"string"==typeof aw&&(null==q?void 0:q.kind)===v.CachedRouteKind.APP_PAGE&&q.segmentData){b.setHeader(t.NEXT_DID_POSTPONE_HEADER,"2");let c=null==(k=q.headers)?void 0:k[y.NEXT_CACHE_TAGS_HEADER];N&&ak&&c&&"string"==typeof c&&b.setHeader(y.NEXT_CACHE_TAGS_HEADER,c);let d=q.segmentData.get(aw);return void 0!==d?(0,A.sendRenderResult)({req:a,res:b,generateEtags:ad.generateEtags,poweredByHeader:ad.poweredByHeader,result:x.default.fromStatic(d,t.RSC_CONTENT_TYPE_HEADER),cacheControl:n.cacheControl}):(b.statusCode=204,(0,A.sendRenderResult)({req:a,res:b,generateEtags:ad.generateEtags,poweredByHeader:ad.poweredByHeader,result:x.default.EMPTY,cacheControl:n.cacheControl}))}let r=(0,h.getRequestMeta)(a,"onCacheEntry");if(r&&await r({...n,value:{...n.value,kind:"PAGE"}},{url:(0,h.getRequestMeta)(a,"initURL")}))return null;if(p&&au)throw Object.defineProperty(Error("Invariant: postponed state should not be present on a resume request"),"__NEXT_ERROR_CODE",{value:"E396",enumerable:!1,configurable:!0});if(q.headers){let a={...q.headers};for(let[c,d]of(N&&ak||delete a[y.NEXT_CACHE_TAGS_HEADER],Object.entries(a)))if(void 0!==d)if(Array.isArray(d))for(let a of d)b.appendHeader(c,a);else"number"==typeof d&&(d=d.toString()),b.appendHeader(c,d)}let s=null==(g=q.headers)?void 0:g[y.NEXT_CACHE_TAGS_HEADER];if(N&&ak&&s&&"string"==typeof s&&b.setHeader(y.NEXT_CACHE_TAGS_HEADER,s),!q.status||ap&&ar||(b.statusCode=q.status),!N&&q.status&&F.RedirectStatusCode[q.status]&&ap&&(b.statusCode=200),p&&b.setHeader(t.NEXT_DID_POSTPONE_HEADER,"1"),ap&&!_){if(void 0===q.rscData){if(q.postponed)throw Object.defineProperty(Error("Invariant: Expected postponed to be undefined"),"__NEXT_ERROR_CODE",{value:"E372",enumerable:!1,configurable:!0});return(0,A.sendRenderResult)({req:a,res:b,generateEtags:ad.generateEtags,poweredByHeader:ad.poweredByHeader,result:q.html,cacheControl:av?{revalidate:0,expire:void 0}:n.cacheControl})}return(0,A.sendRenderResult)({req:a,res:b,generateEtags:ad.generateEtags,poweredByHeader:ad.poweredByHeader,result:x.default.fromStatic(q.rscData,t.RSC_CONTENT_TYPE_HEADER),cacheControl:n.cacheControl})}let u=q.html;if(!p||N||ap)return(0,A.sendRenderResult)({req:a,res:b,generateEtags:ad.generateEtags,poweredByHeader:ad.poweredByHeader,result:u,cacheControl:n.cacheControl});if(as)return u.push(new ReadableStream({start(a){a.enqueue(z.ENCODED_TAGS.CLOSED.BODY_AND_HTML),a.close()}})),(0,A.sendRenderResult)({req:a,res:b,generateEtags:ad.generateEtags,poweredByHeader:ad.poweredByHeader,result:u,cacheControl:{revalidate:0,expire:void 0}});let w=new TransformStream;return u.push(w.readable),m({span:c,postponed:q.postponed,fallbackRouteParams:null}).then(async a=>{var b,c;if(!a)throw Object.defineProperty(Error("Invariant: expected a result to be returned"),"__NEXT_ERROR_CODE",{value:"E463",enumerable:!1,configurable:!0});if((null==(b=a.value)?void 0:b.kind)!==v.CachedRouteKind.APP_PAGE)throw Object.defineProperty(Error(`Invariant: expected a page response, got ${null==(c=a.value)?void 0:c.kind}`),"__NEXT_ERROR_CODE",{value:"E305",enumerable:!1,configurable:!0});await a.value.html.pipeTo(w.writable)}).catch(a=>{w.writable.abort(a).catch(a=>{console.error("couldn't abort transformer",a)})}),(0,A.sendRenderResult)({req:a,res:b,generateEtags:ad.generateEtags,poweredByHeader:ad.poweredByHeader,result:u,cacheControl:{revalidate:0,expire:void 0}})};if(!aF)return await aE.withPropagatedContext(a.headers,()=>aE.trace(i.BaseServerSpan.handleRequest,{spanName:`${aD} ${a.url}`,kind:g.SpanKind.SERVER,attributes:{"http.method":aD,"http.target":a.url}},p));await p(aF)}catch(b){throw b instanceof B.NoFallbackError||await K.onRequestError(a,b,{routerKind:"App Router",routePath:G,routeType:"render",revalidateReason:(0,f.c)({isRevalidate:ak,isOnDemandRevalidate:ah})},ac),b}}},86439:a=>{"use strict";a.exports=require("next/dist/shared/lib/no-fallback-error.external")}};var b=require("../../webpack-runtime.js");b.C(a);var c=b.X(0,[331,393,515,170],()=>b(b.s=82588));module.exports=c})();

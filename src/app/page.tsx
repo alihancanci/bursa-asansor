@@ -137,11 +137,36 @@ export default function HomePage() {
           }
         ],
         // TODO: Google Business Profile açıldığında sameAs'a ekle: "https://maps.app.goo.gl/XXXXX"
-        // TODO: Yandex Maps profilini oluşturunca ekle: "https://yandex.com.tr/maps/-/XXXXX"
         "sameAs": [
+          "https://bursavipevdeneve.com",
           "https://www.facebook.com/bursakiralikasansor"
+        ],
+        "relatedLink": [
+          "https://bursavipevdeneve.com"
         ]
       },
+      {
+        "@type": "MovingCompany",
+        "@id": "https://bursavipevdeneve.com/#organization",
+        "name": "Bursa VIP Evden Eve Nakliyat",
+        "alternateName": "Bursa VIP Nakliyat",
+        "url": "https://bursavipevdeneve.com",
+        "telephone": "+905056080700",
+        "priceRange": "₺₺₺",
+        "description": "Bursa VIP Evden Eve Nakliyat - Asansörlü, lüks ambalajlı, marangozlu ve VIP güvenceli ev taşıma hizmetleri. Bursa Kiralık Asansör kardeş kuruluşu.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Bursa Merkez",
+          "addressLocality": "Bursa",
+          "addressRegion": "Bursa",
+          "postalCode": "16000",
+          "addressCountry": "TR"
+        },
+        "sameAs": [
+          "https://bursavipevdeneve.com",
+          "https://bursakiralikasansor.com"
+        ]
+      }
     ]
   };
 
