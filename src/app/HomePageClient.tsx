@@ -14,7 +14,7 @@ const Testimonials = dynamic(() => import("@/components/Testimonials").then(m =>
 const FaqSection = dynamic(() => import("@/components/FaqSection").then(m => m.FaqSection as any));
 const ReferencesGallery = dynamic(() => import("@/components/ReferencesGallery").then(m => m.ReferencesGallery as any));
 import { DISTRICTS, PHONE_NUMBER, SERVICES, WHATSAPP_LINK } from "@/data";
-import { ArrowRight, CheckCircle2, ArrowUpToLine, Home as HomeIcon, Sofa, Truck, HardHat, Package, Phone } from "lucide-react";
+import { ArrowRight, CheckCircle2, ArrowUpToLine, Home as HomeIcon, Sofa, Truck, HardHat, Package, Phone, ShieldCheck, ExternalLink } from "lucide-react";
 import { getAbsoluteAssetUrl } from "@/lib/seo";
 
 export default function HomePageClient() {
@@ -253,6 +253,68 @@ export default function HomePageClient() {
               <ArrowRight className="w-4 h-4" />
             </Link>
             <p className="mt-3 text-sm text-gray-600 dark:text-slate-300">{SERVICES.length} farklı hizmet · Bursa&apos;nın tüm ilçelerine</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Kardeş Kuruluş & VIP Evden Eve Nakliyat Backlink Bölümü (Anasayfa Otorite Bağlantısı) */}
+      <section className="py-16 bg-gradient-to-br from-slate-900 via-[#071320] to-slate-950 text-white border-y border-white/10 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="bg-white/5 border border-white/10 rounded-3xl p-6 sm:p-10 backdrop-blur-sm">
+            <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+              <div className="max-w-3xl">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/20 text-primary text-xs font-bold uppercase tracking-wider mb-4 border border-primary/30">
+                  <ShieldCheck className="w-4 h-4" />
+                  Resmi Kardeş Kuruluşumuz &amp; VIP Taşımacılık Çözüm Ortağımız
+                </div>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display font-extrabold text-white mb-4">
+                  Bursa VIP Evden Eve Nakliyat
+                </h2>
+                <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-6">
+                  <strong>Bursa Kiralık Asansör CNC</strong> olarak dış cephe asansör filomuzla hizmet sunarken; komple anahtar teslim ev taşıma, lüks ambalajlama ve marangozlu mobilya demontaj/montaj işlemlerinde kardeş markamız{' '}
+                  <a 
+                    href="https://www.bursavipevdeneve.com" 
+                    target="_blank" 
+                    rel="noopener"
+                    className="text-primary font-bold hover:underline inline-flex items-center gap-1"
+                    title="Bursa VIP Evden Eve Nakliyat Resmi Sitesi"
+                  >
+                    Bursa VIP Evden Eve Nakliyat
+                    <ExternalLink className="w-4 h-4 inline" />
+                  </a>
+                  {' '}ile ortak çağrı merkezimiz (<a href="tel:05056080700" className="text-white font-bold hover:text-primary underline">0505 608 07 00</a>) üzerinden 7/24 koordineli çalışmaktayız.
+                </p>
+                <div className="flex flex-wrap items-center gap-2.5 text-xs font-semibold">
+                  <span className="text-slate-400 py-1">İlçe VIP Nakliyat Sayfaları:</span>
+                  <a href="https://www.bursavipevdeneve.com/nilufer-evden-eve-nakliyat" target="_blank" rel="noopener" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Nilüfer Evden Eve Nakliyat</a>
+                  <a href="https://www.bursavipevdeneve.com/osmangazi-evden-eve-nakliyat" target="_blank" rel="noopener" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Osmangazi Evden Eve Nakliyat</a>
+                  <a href="https://www.bursavipevdeneve.com/yildirim-evden-eve-nakliyat" target="_blank" rel="noopener" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Yıldırım Evden Eve Nakliyat</a>
+                  <a href="https://www.bursavipevdeneve.com/mudanya-evden-eve-nakliyat" target="_blank" rel="noopener" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Mudanya Evden Eve Nakliyat</a>
+                  <a href="https://www.bursavipevdeneve.com/gemlik-evden-eve-nakliyat" target="_blank" rel="noopener" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Gemlik Evden Eve Nakliyat</a>
+                  <a href="https://www.bursavipevdeneve.com/gursu-evden-eve-nakliyat" target="_blank" rel="noopener" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Gürsu Evden Eve Nakliyat</a>
+                  <a href="https://www.bursavipevdeneve.com/hizmetler/asansorlu-evden-eve-nakliyat" target="_blank" rel="noopener" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Asansörlü VIP Ev Taşıma</a>
+                </div>
+              </div>
+
+              <div className="shrink-0 flex flex-col sm:flex-row lg:flex-col gap-4 w-full sm:w-auto">
+                <a
+                  href="https://www.bursavipevdeneve.com"
+                  target="_blank"
+                  rel="noopener"
+                  className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-orange-600 text-white font-extrabold px-8 py-4 rounded-2xl transition-all shadow-xl shadow-primary/20 text-base text-center"
+                >
+                  <span>bursavipevdeneve.com Ziyaret Et</span>
+                  <ArrowRight className="w-5 h-5" />
+                </a>
+                <a
+                  href="tel:05056080700"
+                  className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-bold px-8 py-4 rounded-2xl transition-all border border-white/15 text-base text-center"
+                >
+                  <Phone className="w-5 h-5 text-primary" />
+                  <span>0505 608 07 00</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

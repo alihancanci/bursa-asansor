@@ -9,7 +9,7 @@ import { DISTRICTS, PHONE_NUMBER, SERVICES, WHATSAPP_LINK, USPS } from "@/data";
 import { CTASection } from "@/components/CTASection";
 import { FeaturesBar } from "@/components/FeaturesBar";
 import { Testimonials } from "@/components/Testimonials";
-import { ChevronRight, ArrowRight, CheckCircle2, Phone, MessageCircle, AlertTriangle, MapPin, Truck, UserCheck, Zap, Building2 } from "lucide-react";
+import { ChevronRight, ArrowRight, CheckCircle2, Phone, MessageCircle, AlertTriangle, MapPin, Truck, UserCheck, Zap, Building2, ShieldCheck, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
 import { getAbsoluteAssetUrl, getCanonicalUrl } from "@/lib/seo";
 import { trackPhoneClick, trackWhatsAppClick } from "@/lib/analytics";
@@ -51,6 +51,41 @@ export default function ServicePageClient() {
   const htmlContent = serviceTemplate
     .replace(/{district}/g, district.name)
     .replace(/{neighborhoods}/g, selectedNeighborhoods.join(", "));
+
+  // Kardeş kuruluş bursavipevdeneve.com dinamik sayfa bazlı backlink eşlemesi
+  const vipDistricts: Record<string, string> = {
+    "nilufer": "nilufer-evden-eve-nakliyat",
+    "osmangazi": "osmangazi-evden-eve-nakliyat",
+    "yildirim": "yildirim-evden-eve-nakliyat",
+    "mudanya": "mudanya-evden-eve-nakliyat",
+    "gemlik": "gemlik-evden-eve-nakliyat",
+    "gursu": "gursu-evden-eve-nakliyat",
+  };
+
+  const isNakliyat = service.slug.includes("nakliyat") || service.slug.includes("tasima") || service.slug.includes("ev-tasima");
+  const hasExactDistrictPage = !!vipDistricts[district.slug];
+  
+  const vipTargetUrl = hasExactDistrictPage 
+    ? `https://www.bursavipevdeneve.com/${vipDistricts[district.slug]}`
+    : (isNakliyat 
+        ? "https://www.bursavipevdeneve.com/hizmetler/asansorlu-evden-eve-nakliyat" 
+        : "https://www.bursavipevdeneve.com/hizmetler/bursa-kiralik-asansor");
+
+  const vipAnchor = hasExactDistrictPage
+    ? `${district.name} Evden Eve Nakliyat`
+    : `${district.name} Asansörlü VIP Nakliyat`;
+
+  const vipBadge = hasExactDistrictPage
+    ? `${district.name} VIP Taşımacılık Çözüm Ortağımız`
+    : `Bursa VIP Taşımacılık Çözüm Ortağımız`;
+
+  const vipTitle = hasExactDistrictPage
+    ? `${district.name} VIP Evden Eve Nakliyat & Komple Taşıma`
+    : `${district.name} İçin VIP Evden Eve Nakliyat Çözümü`;
+
+  const vipDescription = hasExactDistrictPage
+    ? `${district.name} bölgesinde sadece mobil asansör değil, komple anahtar teslim ev taşıma, birinci sınıf balonlu ambalajlama ve marangozlu demontaj/montaj desteği almak istiyorsanız resmi kardeş markamız Bursa VIP Evden Eve Nakliyat profesyonel filosuyla hizmetinizdedir.`
+    : `${district.name} ve tüm Bursa genelinde sigortalı, marangozlu ve asansörlü komple ev taşıma operasyonlarında kardeş kuruluşumuz Bursa VIP Evden Eve Nakliyat ile ortak koordinasyonla çalışıyoruz.`;
 
   return (
     <>
@@ -175,6 +210,65 @@ export default function ServicePageClient() {
                 <p className="text-[#334155] dark:text-slate-300 leading-relaxed text-lg">{district.seoParagraph}</p>
               </div>
             )}
+
+            {/* Kardeş Kuruluş Sayfa Bazlı Dinamik VIP Backlink Kartı */}
+            <section className="mb-14 p-6 md:p-8 bg-gradient-to-br from-slate-900 via-slate-900 to-[#071320] text-white border-2 border-primary/30 rounded-3xl shadow-xl relative overflow-hidden">
+              <div className="absolute top-0 right-0 p-8 opacity-10 pointer-events-none">
+                <ShieldCheck className="w-32 h-32" />
+              </div>
+              <div className="relative z-10">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-4">
+                  <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/20 text-primary text-xs font-bold uppercase tracking-wider border border-primary/30">
+                    <ShieldCheck className="w-4 h-4" />
+                    {vipBadge}
+                  </div>
+                  <span className="text-xs font-semibold text-slate-300">
+                    Ortak Çağrı Hattı: <a href="tel:05056080700" className="text-white hover:text-primary font-bold">0505 608 07 00</a>
+                  </span>
+                </div>
+                
+                <h3 className="text-xl sm:text-2xl font-display font-bold text-white mb-3">
+                  {vipTitle}
+                </h3>
+                
+                <p className="text-slate-200 leading-relaxed mb-6 text-sm sm:text-base">
+                  {vipDescription}{' '}
+                  {district.name} bölgesinde anahtar teslim VIP taşınma ayrıcalığı için resmi kardeş kuruluşumuz{' '}
+                  <a
+                    href={vipTargetUrl}
+                    target="_blank"
+                    rel="noopener"
+                    className="text-primary font-bold hover:underline inline-flex items-center gap-1"
+                    title={`${vipAnchor} - bursavipevdeneve.com`}
+                  >
+                    {vipAnchor}
+                    <ExternalLink className="w-3.5 h-3.5 inline" />
+                  </a>
+                  {' '}web sayfamızı ziyaret edebilirsiniz.
+                </p>
+
+                <div className="flex flex-col sm:flex-row items-center gap-3.5 pt-2">
+                  <a
+                    href={vipTargetUrl}
+                    target="_blank"
+                    rel="noopener"
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary hover:bg-orange-600 text-white font-extrabold px-6 py-3.5 rounded-xl transition-all shadow-lg shadow-primary/20 text-sm"
+                  >
+                    <span>{vipAnchor} Sayfasına Git</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
+                  <a
+                    href="https://www.bursavipevdeneve.com"
+                    target="_blank"
+                    rel="noopener"
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-5 py-3.5 rounded-xl transition-all border border-white/10 text-sm"
+                  >
+                    <span>Bursa VIP Nakliyat Ana Sayfa</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+                </div>
+              </div>
+            </section>
 
             {/* Neighborhoods Context Box (SEO Otoritesi) */}
             <section className="mb-14 p-6 md:p-8 bg-[#f8fafc] dark:bg-[#0f172a] border-2 border-dashed border-[#cbd5e1] dark:border-[#334155] rounded-2xl shadow-sm">

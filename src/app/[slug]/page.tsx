@@ -121,6 +121,21 @@ export default async function ServicePage({ params }: Props) {
     return <ServicePageClient />;
   }
 
+  const vipDistricts: Record<string, string> = {
+    "nilufer": "nilufer-evden-eve-nakliyat",
+    "osmangazi": "osmangazi-evden-eve-nakliyat",
+    "yildirim": "yildirim-evden-eve-nakliyat",
+    "mudanya": "mudanya-evden-eve-nakliyat",
+    "gemlik": "gemlik-evden-eve-nakliyat",
+    "gursu": "gursu-evden-eve-nakliyat",
+  };
+  const isNakliyat = service.slug.includes("nakliyat") || service.slug.includes("tasima") || service.slug.includes("ev-tasima");
+  const vipTargetUrl = vipDistricts[district.slug]
+    ? `https://www.bursavipevdeneve.com/${vipDistricts[district.slug]}`
+    : (isNakliyat 
+        ? "https://www.bursavipevdeneve.com/hizmetler/asansorlu-evden-eve-nakliyat" 
+        : "https://www.bursavipevdeneve.com/hizmetler/bursa-kiralik-asansor");
+
   // JSON-LD Şemaları (SEO için kritik)
   const jsonLd = {
     "@context": "https://schema.org",
@@ -131,6 +146,10 @@ export default async function ServicePage({ params }: Props) {
         "@id": `https://bursakiralikasansor.com/${fullSlug}#webpage`,
         "url": `https://bursakiralikasansor.com/${fullSlug}`,
         "name": `${district.name} ${service.name} | Bursa Kiralık Asansör CNC Evden Eve Nakliyat`,
+        "relatedLink": [
+          vipTargetUrl,
+          "https://bursavipevdeneve.com"
+        ],
         "speakable": {
           "@type": "SpeakableSpecification",
           "xpath": [
@@ -227,6 +246,11 @@ export default async function ServicePage({ params }: Props) {
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mobil Asansör Kiralama" } },
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Evden Eve Nakliyat" } }
           ]
+        },
+        "isRelatedTo": {
+          "@type": "Service",
+          "name": "Bursa VIP Evden Eve Nakliyat",
+          "url": vipTargetUrl
         }
       },
       // 3. Breadcrumb (Navigasyon) Şeması — Hiyerarşik Silo Otoritesi

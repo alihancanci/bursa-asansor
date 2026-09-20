@@ -1,20 +1,20 @@
 {
-  "/manifest.webmanifest/route": "/manifest.webmanifest",
+  "/_not-found/page": "/_not-found",
   "/sitemap.xml/route": "/sitemap.xml",
-  "/robots.txt/route": "/robots.txt",
-  "/favicon.ico/route": "/favicon.ico",
-  "/apple-icon.png/route": "/apple-icon.png",
   "/icon.png/route": "/icon.png",
+  "/manifest.webmanifest/route": "/manifest.webmanifest",
+  "/robots.txt/route": "/robots.txt",
+  "/apple-icon.png/route": "/apple-icon.png",
+  "/favicon.ico/route": "/favicon.ico",
   "/llms-full.txt/route": "/llms-full.txt",
   "/llms.txt/route": "/llms.txt",
-  "/_not-found/page": "/_not-found",
   "/calismalarimiz/page": "/calismalarimiz",
   "/blog/[slug]/page": "/blog/[slug]",
   "/blog/page": "/blog",
   "/hakkimizda/page": "/hakkimizda",
-  "/hizmet-bolgelerimiz/page": "/hizmet-bolgelerimiz",
-  "/evden-eve-nakliye-bursa/page": "/evden-eve-nakliye-bursa",
   "/page": "/",
+  "/hizmet-bolgelerimiz/page": "/hizmet-bolgelerimiz",
   "/bursa-evden-eve-nakliyat/page": "/bursa-evden-eve-nakliyat",
-  "/[slug]/page": "/[slug]"
+  "/[slug]/page": "/[slug]",
+  "/evden-eve-nakliye-bursa/page": "/evden-eve-nakliye-bursa"
 }
