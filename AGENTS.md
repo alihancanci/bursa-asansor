@@ -14,7 +14,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - **Stack:** Next.js (App Router), TypeScript, Tailwind CSS, Framer Motion, react-i18next
 - **Deployment:** Vercel (auto-deploy from `main` branch on GitHub: `alihancanci/bursa-asansor`)
 - **Business:** Local elevator rental & moving service covering all 17 Bursa districts
-- **Phone/WhatsApp:** +90 505 329 7533
+- **Phone/WhatsApp:** +90 505 608 07 00
 - **Primary Goal:** Rank #1 in Google/Yandex for "Bursa kiralık asansör" and "Bursa evden eve nakliyat"
 
 ## Analytics Stack (Always Preserve)

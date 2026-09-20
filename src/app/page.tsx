@@ -32,7 +32,11 @@ export default function HomePage() {
         "@type": "MovingCompany",
         "@id": "https://bursakiralikasansor.com/#organization",
         "name": "Bursa Kiralık Asansör CNC Evden Eve Nakliyat",
-        "alternateName": "CNC Asansörlü Nakliyat Bursa",
+        "alternateName": [
+          "Bursa CNC Asansör Kiralama",
+          "CNC Asansörlü Nakliyat Bursa",
+          "Bursa CNC Asansör"
+        ],
         "url": "https://bursakiralikasansor.com",
         "logo": {
           "@type": "ImageObject",
