@@ -48,10 +48,19 @@ export function Footer() {
                 <div className="bg-white/5 p-2 rounded-lg"><Clock className="h-4 w-4 text-primary" /></div>
                 <span className="text-sm text-slate-300">{t('features.f2_title', '7/24 Kesintisiz Hizmet')}</span>
               </div>
-              <div className="flex items-center gap-3 text-slate-300">
-                <div className="bg-white/5 p-2 rounded-lg"><MapPin className="h-4 w-4" /></div>
-                <span className="text-sm text-slate-300">Bursa ve Tüm İlçeleri</span>
-              </div>
+              <a
+                href="https://share.google/7NMadojGkWXunqIYz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-slate-300 hover:text-primary transition-colors group"
+                title="Bursa CNC Asansör Kiralama - Google Haritalar Profili"
+              >
+                <div className="bg-white/5 p-2 rounded-lg group-hover:bg-primary/20 transition-colors"><MapPin className="h-4 w-4 text-primary" /></div>
+                <div className="flex flex-col">
+                  <span className="text-sm font-medium text-slate-200 group-hover:text-primary transition-colors">Bursa CNC Asansör Kiralama</span>
+                  <span className="text-xs text-slate-400 flex items-center gap-1">Google Haritalar&apos;da Görün ↗</span>
+                </div>
+              </a>
             </div>
 
             {/* E-E-A-T Trust Badges */}

@@ -140,8 +140,9 @@ export default function HomePage() {
             "target": "tel:+905056080700"
           }
         ],
-        // TODO: Google Business Profile açıldığında sameAs'a ekle: "https://maps.app.goo.gl/XXXXX"
+        "hasMap": "https://share.google/7NMadojGkWXunqIYz",
         "sameAs": [
+          "https://share.google/7NMadojGkWXunqIYz",
           "https://bursavipevdeneve.com",
           "https://www.facebook.com/bursakiralikasansor"
         ],
