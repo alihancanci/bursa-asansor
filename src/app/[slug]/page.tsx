@@ -290,6 +290,25 @@ export default async function ServicePage({ params }: Props) {
             "text": faq.a
           }
         }))
+      },
+      // 5. Kardeş Kuruluş VIP Nakliyat Şeması (Otorite & Karşılıklı Entity Entegrasyonu)
+      {
+        "@type": "MovingCompany",
+        "@id": `${vipTargetUrl}#service`,
+        "name": `Bursa VIP Evden Eve Nakliyat (${district.name})`,
+        "alternateName": "Bursa VIP Nakliyat",
+        "url": vipTargetUrl,
+        "telephone": "+905056080700",
+        "priceRange": "₺₺₺",
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": district.name
+        },
+        "description": `${district.name} bölgesinde asansörlü, ambalajlı ve marangozlu VIP evden eve nakliyat hizmeti. Bursa Kiralık Asansör CNC resmi kardeş kuruluşu.`,
+        "sameAs": [
+          "https://bursavipevdeneve.com",
+          "https://bursakiralikasansor.com"
+        ]
       }
     ]
   };
