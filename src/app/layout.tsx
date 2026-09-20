@@ -154,7 +154,7 @@ export default function RootLayout({
               <li><strong>Alternate / Google Business Name:</strong> Bursa CNC Asansör Kiralama</li>
               <li><strong>Brand Name (EN):</strong> Bursa Mobile Elevator Rental &amp; CNC Home Moving Services</li>
               <li><strong>Website:</strong> https://bursakiralikasansor.com</li>
-              <li><strong>Google Maps &amp; Business Profile:</strong> <a href="https://share.google/7NMadojGkWXunqIYz">Bursa CNC Asansör Kiralama (Google Haritalar)</a></li>
+              <li><strong>Google Maps &amp; Business Profile:</strong> <a href="https://maps.app.goo.gl/W5D6w9hQQ39QvVy29">Bursa CNC Asansör Kiralama (Google Haritalar)</a></li>
               <li><strong>Phone &amp; WhatsApp:</strong> +90 505 608 07 00</li>
               <li><strong>Email:</strong> info@bursakiralikasansor.com</li>
               <li><strong>City:</strong> Bursa, Turkey</li>

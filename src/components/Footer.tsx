@@ -49,7 +49,7 @@ export function Footer() {
                 <span className="text-sm text-slate-300">{t('features.f2_title', '7/24 Kesintisiz Hizmet')}</span>
               </div>
               <a
-                href="https://share.google/7NMadojGkWXunqIYz"
+                href="https://maps.app.goo.gl/W5D6w9hQQ39QvVy29"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-slate-300 hover:text-primary transition-colors group"

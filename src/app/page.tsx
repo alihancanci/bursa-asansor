@@ -75,8 +75,8 @@ export default function HomePage() {
         ],
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": "40.1828",
-          "longitude": "29.0667"
+          "latitude": "40.18614",
+          "longitude": "29.0796141"
         },
         "areaServed": [
           {"@type": "City", "name": "Osmangazi", "containedInPlace": {"@type": "AdministrativeArea", "name": "Bursa", "addressCountry": "TR"}},
@@ -140,8 +140,9 @@ export default function HomePage() {
             "target": "tel:+905056080700"
           }
         ],
-        "hasMap": "https://share.google/7NMadojGkWXunqIYz",
+        "hasMap": "https://maps.app.goo.gl/W5D6w9hQQ39QvVy29",
         "sameAs": [
+          "https://maps.app.goo.gl/W5D6w9hQQ39QvVy29",
           "https://share.google/7NMadojGkWXunqIYz",
           "https://bursavipevdeneve.com",
           "https://www.facebook.com/bursakiralikasansor"
