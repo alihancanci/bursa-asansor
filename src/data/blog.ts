@@ -268,22 +268,28 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: "7",
     slug: "tasinirken-asansor-zorunlu-mu",
-    title: "Apartmanda Taşınırken Asansör Kullanmak Zorunlu mu?",
+    title: "Asansörde Eşya Taşımak Yasak mı? (Apartman ve Site Kuralları)",
     excerpt: "Yeni bir eve taşınırken site yönetimlerinin bina içi asansör yasakları. Apartman merdivenlerinde taşıma stresi ve dış cephe kullanımının hukuki boyutu.",
     date: "30 Mart 2026",
     readTime: "6 dk okuma",
     category: "Taşınma Planlaması",
     author: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Ekibi",
     image: "/images/hero-bg.png",
-    metaDescription: "Taşınırken asansör zorunlu mu? Site yönetimi bina içi asansörü yasaklayabilir mi? Dış cephe asansörü kiralama ve apartman kuralları hakkında bilmeniz gerekenler.",
-    keywords: ["taşınırken asansör zorunlu mu", "bina içi asansör yasakları", "site yönetimi kuralları", "dış cephe asansörü kurulumu", "mobilya asansörü kiralamak", "apartman kuralları"],
+    metaDescription: "Asansörde eşya taşımak yasak mı? Apartman asansörüyle eşya taşıma cezası ve site kuralları hakkında kısa yanıt. Dış cephe asansörü çözümleri.",
+    keywords: ["asansörde eşya taşımak yasak mı", "apartman asansörüyle eşya taşıma", "taşınırken asansör zorunlu mu", "bina içi asansör yasakları", "site yönetimi kuralları", "dış cephe asansörü kiralama"],
     faqs: [
       { q: "Yönetici apartmanın asansörünü taşınmaya kapatabilir mi?", a: "Evet. Kat Mülkiyeti Kanunu ve genel ahlak kuralları çerçevesinde yönetim planına 'Bina asansöründe (yolcu asansörü) yük taşımak yasaktır' maddesi eklenmişse kullanımını engelleyebilir." },
       { q: "Oturduğum ev 2. katta, yine de asansör kurmak mantıklı mı?", a: "Binanızın merdiven boşluğu genişse beden gücüyle taşınabilir. Ancak merdivenler darsa, 2. kat bile olsa büyük mobilyalarınızın hasar görmemesi için asansör kurulması tavsiye edilir." },
       { q: "Sokak çok dar, asansör sığar mı?", a: "Uzmanlarımız ücretsiz keşif yapar. Ufak manevralar veya hafif açılı kurulum ile pek çok zorlu sokağa asansör kurabiliyoruz." }
     ],
     content: `
-      <h2>Taşınırken Karşılaşılan Bürokrasi: Site Yönetimleri</h2>
+      
+      <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-xl my-8">
+        <h3 class="text-xl font-bold mb-2 text-red-700">Kısa Yanıt: Asansörde Eşya Taşımak Yasak mı?</h3>
+        <p class="mb-0 text-red-900"><strong>Evet, çoğu durumda yasaktır.</strong> Kat Mülkiyeti Kanunu ve yeni nesil site/apartman yönetim planlarına göre; yolcu (insan) taşıma amacıyla tasarlanmış bina içi asansörlerle ağır mobilya, beyaz eşya ve inşaat malzemesi (moloz, fayans vb.) taşımak kesinlikle yasaktır. Kurallara uyulmaması durumunda binanın asansör motoruna verilecek zarar, taşıyan kişiye yansıtılır ve para cezası uygulanır. Bu yüzden yüksek katlı taşınmalarda <a href="/bursa-kiralik-asansor" class="font-bold underline">dış cephe asansörü kiralamak</a> en güvenilir çözümdür.</p>
+      </div>
+
+      <h2>Taşınırken Karşılaşılan Bürokrasi: Apartman Asansörüyle Eşya Taşıma</h2>
       <p>Yeni ve lüks bir daire kiraladınız. <a href="/bursa-merkez-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Evden eve nakliyat</a> firmasını tuttunuz ve eşyalar geldi. Tam o esnada apartman görevlisi veya site yöneticisi karşınızda belirir: "<em>Beyefendi/Hanımefendi, bina içi yolcu asansörümüz eşya taşımak için kullanılamaz.</em>" İşte bu an, hazırlıksız yakalandıysanız taşınmanın bir kâbusa dönüştüğü andır.</p>
 
       <p>"<strong>Taşınırken asansör zorunlu mu?</strong>" sorusu aslında hukuki ve sosyal bir zorunluluğun kesişimidir. Yeni nesil lüks sitelerin neredeyse tamamında, yük asansörü tahsis edilmemişse, normal asansörlerle ağır mobilyaların (beyaz eşyaların) taşınması kesin bir dille yönetim planlarında yasaklanmıştır.</p>
@@ -420,14 +426,14 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: "frase-asansorlu-nakliyat",
     slug: "asansorlu-evden-eve-nakliyat",
-    title: "Asansörlü Evden Eve Nakliyat Nedir? Avantajları ve Fiyatları",
+    title: "Asansörlü Evden Eve Nakliyat: Ne Zaman Gereklidir, Fiyatları Nelerdir?",
     excerpt: "Asansörlü evden eve nakliyatın ne olduğunu, avantajlarını ve yüksek katlı binalardaki önemini keşfedin. Taşınma rehberimizle bilgi edinin.",
     date: "07 Nisan 2026",
     author: "Atakan",
     readTime: "8 dk okuma",
     category: "Lojistik & Teknoloji",
     image: "/images/asansorlu-tasima-bursa-hero.jpg",
-    metaDescription: "Asansörlü evden eve nakliyat sistemi nedir? Kimler tercih etmeli? Avantajları ve maliyetleri hakkında tüm merak edilenler bu rehberde.",
+    metaDescription: "Asansörlü evden eve nakliyat ne zaman gereklidir? Hizmet akışı nasıl işler ve fiyatı etkileyen unsurlar nelerdir? Hızlı ve güvenli taşıma rehberi.",
     keywords: ["asansörlü evden eve nakliyat", "teleskopik asansör", "bursa kiralık asansör", "asansörlü taşıma fiyatları", "yüksek kat nakliyat"],
     faqs: [
       { q: "Asansörlü nakliyat her binada kullanılabilir mi?", a: "Hayır. Binanın cephesine yeterli mesafe, zemin sağlamlığı ve park alanı gibi teknik koşullar gereklidir. Taşıma öncesinde firma yerinde keşif yaparak uygunluğu değerlendirir." },
@@ -463,6 +469,31 @@ export const BLOG_POSTS: BlogPost[] = [
         <li><strong>Ekipman erişimi:</strong> Dar sokaklar veya araç park sorunu olan bölgelerde asansör kurulumu güçleşebilir.</li>
         <li><strong>Ek maliyet:</strong> Standart nakliyata göre daha yüksek bir bütçe gerektirir; ancak hasar maliyetleri düşünüldüğünde bu fark çoğu zaman telafi edilir.</li>
         <li><strong>Her yapıya uygun değil:</strong> Bazı binaların cephe yapısı merdiven dayama ya da asansör montajına izin vermeyebilir.</li>
+      </ul>
+
+      
+      <h2>Asansörlü Evden Eve Nakliyat Ne Zaman Kesinlikle Gereklidir?</h2>
+      <ul class="list-disc pl-5 mt-4 space-y-3">
+        <li><strong>Dar Merdivenler ve Dönüşler:</strong> Apartman merdivenleri veya koridorları eşya dönüşüne izin vermeyecek kadar darsa.</li>
+        <li><strong>Bina Asansörü Yasakları:</strong> Site yönetimi, yolcu asansörüyle eşya taşımayı yasakladıysa.</li>
+        <li><strong>Yüksek Katlı Binalar:</strong> 3. kat ve üzerindeki taşınmalarda insan gücüyle taşıma riskli ve yorucuysa.</li>
+        <li><strong>Büyük Hacimli Eşyalar:</strong> Parçalanamayan devasa dolaplar, piyanolar veya ağır beyaz eşyalar varsa.</li>
+      </ul>
+
+      <h2>Hizmet Akışı: Süreç Nasıl İşler?</h2>
+      <ol class="list-decimal pl-5 mt-4 space-y-3">
+        <li><strong>Ücretsiz Keşif ve Konum Değerlendirmesi:</strong> Aracın binaya yanaşma açısı, sokak genişliği ve balkon/pencere uygunluğu tespit edilir.</li>
+        <li><strong>Güvenlik Önlemleri ve Kurulum:</strong> Operatörlerimiz, mobil asansörü uygun açıyla kurarak hidrolik ayaklarla aracı sabitler ve çevre güvenliğini sağlar.</li>
+        <li><strong>Eşyaların Ambalajlanması ve Transferi:</strong> Özel koruma kılıflarına sarılan eşyalar, geniş taşıma sepetine dengeli şekilde yüklenir ve doğrudan dairenize çıkarılır (veya indirilir).</li>
+        <li><strong>Yerleştirme:</strong> Daire içine alınan eşyalar, odalarınıza planlı bir şekilde yerleştirilir.</li>
+      </ol>
+
+      <h2>Fiyatı Etkileyen Unsurlar</h2>
+      <p>Asansörlü nakliyat fiyatları standart bir tarifeye sahip değildir. Fiyat teklifini belirleyen temel unsurlar şunlardır:</p>
+      <ul class="list-disc pl-5 mt-4 space-y-3 mb-6">
+        <li><strong>Kat Yüksekliği:</strong> 3. kat ile 12. kat arasında kullanılan asansör tipi ve risk oranı farklı olduğu için fiyat değişir.</li>
+        <li><strong>Eşya Hacmi ve Kurulum Süresi:</strong> Tüm evin eşyası mı taşınacak yoksa sadece birkaç saatlik parça eşya (beyaz eşya, koltuk) transferi mi yapılacak? Saatlik kiralama ile komple ev taşıma ücretleri farklıdır.</li>
+        <li><strong>Mesafe ve Lokasyon:</strong> Asansörün kurulacağı ilçenin uzaklığı ve sokağın fiziksel şartları (çok dik yokuş, zorlu yanaşma) fiyatı etkiler.</li>
       </ul>
 
       <h2>Asansörlü Nakliyat Hizmeti Nasıl Alınır?</h2>
