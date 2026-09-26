@@ -420,14 +420,14 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: "frase-asansorlu-nakliyat",
     slug: "asansorlu-evden-eve-nakliyat",
-    title: "Bursa Asansörlü Evden Eve Nakliyat: Kolay ve Güvenli Taşıma",
-    excerpt: "Yüksek katlı binalarda asansörlü evden eve nakliyat ile eşyalarınızı güvenle taşıyın. Profesyonel hizmetle stres ve masrafları azaltın!",
+    title: "Asansörlü Evden Eve Nakliyat Nedir? Avantajları ve Fiyatları",
+    excerpt: "Asansörlü evden eve nakliyatın ne olduğunu, avantajlarını ve yüksek katlı binalardaki önemini keşfedin. Taşınma rehberimizle bilgi edinin.",
     date: "07 Nisan 2026",
     author: "Atakan",
     readTime: "8 dk okuma",
     category: "Lojistik & Teknoloji",
     image: "/images/asansorlu-tasima-bursa-hero.jpg",
-    metaDescription: "Yüksek katlı binalarda asansörlü evden eve nakliyat ile eşyalarınızı güvenle taşıyın. Profesyonel hizmetle stres ve masrafları azaltın!",
+    metaDescription: "Asansörlü evden eve nakliyat sistemi nedir? Kimler tercih etmeli? Avantajları ve maliyetleri hakkında tüm merak edilenler bu rehberde.",
     keywords: ["asansörlü evden eve nakliyat", "teleskopik asansör", "bursa kiralık asansör", "asansörlü taşıma fiyatları", "yüksek kat nakliyat"],
     faqs: [
       { q: "Asansörlü nakliyat her binada kullanılabilir mi?", a: "Hayır. Binanın cephesine yeterli mesafe, zemin sağlamlığı ve park alanı gibi teknik koşullar gereklidir. Taşıma öncesinde firma yerinde keşif yaparak uygunluğu değerlendirir." },
@@ -437,6 +437,11 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     content: `
       <h2>Asansörlü Evden Eve Nakliyat Nedir?</h2>
+      <div class="bg-primary/10 border-l-4 border-primary p-6 rounded-r-xl my-8">
+        <h3 class="text-xl font-bold mb-2">Hizmet Almak İster misiniz?</h3>
+        <p class="mb-4">Bursa ve ilçelerinde güvenilir, asansörlü evden eve nakliyat hizmeti arıyorsanız doğru yerdesiniz. Ücretsiz ekspertiz ve net fiyat garantisiyle taşınma stresinden kurtulun.</p>
+        <a href="/evden-eve-asansorlu-nakliyat" class="inline-block bg-primary text-white font-semibold py-3 px-6 rounded-lg hover:bg-primary-dark transition-colors">Hizmetlerimizi İnceleyin</a>
+      </div>
       <p>Ev taşıma süreçleri, yanlış planlama yapıldığında hem stresli hem de masraflı bir deneyime dönüşebilir. <strong>Asansörlü evden eve nakliyat</strong>, bu zorluğu minimize eden, özellikle yüksek katlı binalar ve teleskopik asansörlerde büyük mobilyaların ve ağır eşyaların güvenli biçimde taşınmasını sağlayan profesyonel bir hizmettir. Bina dışına monte edilen hidrolik veya mekanik <strong>teleskopik asansörler</strong> aracılığıyla eşyalar, merdiven kullanılmaksızın doğrudan istenilen kata ulaştırılır.</p>
       
       <p>Bu yöntem yalnızca konfor sağlamakla kalmaz; aynı zamanda <a href="/nilufer-evden-eve-asansorlu-nakliyat" class="text-primary font-semibold hover:underline">ev taşıma sürecindeki kırılma ve çizilme risklerini</a> ciddi ölçüde azaltır. Geleneksel taşımacılıkta merdivenlerde yaşanan hasar olayları, asansörlü sistemde neredeyse sıfıra iner.</p>

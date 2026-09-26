@@ -91,7 +91,7 @@ export default function HomePageClient() {
               </h1>
 
               <p className="text-lg sm:text-xl text-slate-100/90 mb-10 leading-relaxed max-w-2xl">
-                {t('hero.subtitle', "Bursa’da 15. kata kadar mobil asansör kiralama. Haftanın her günü, 7/24 ulaşılabiliriz. Nilüfer, Mudanya, Osmangazi, Yıldırım ve Gürsu öncelikli olmak üzere Bursa’nın tüm ilçelerine hizmet veriyoruz.")}
+                {t('hero.subtitle', "Bursa’da 15. kata kadar mobil asansör kiralama. Haftanın her günü, 7/24 ulaşılabiliriz. Nilüfer, Mudanya, Osmangazi, Yıldırım ve Gürsu öncelikli olmak üzere Bursa’nın tüm ilçelerine hizmet veriyoruz. Net fiyat garantisi ve ücretsiz ekspertiz ile sürpriz maliyetlere son veriyoruz.")}
               </p>
 
               <CTASection className="max-w-xl" />
