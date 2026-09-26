@@ -100,8 +100,8 @@ export const DISTRICTS: District[] = [
     slug: "inegol", 
     name: "İnegöl",
     neighborhoods: ["Alanyurt", "Mesudiye", "Kemalpaşa", "Mahmudiye", "Hamidiye", "Yenice", "Akhisar"],
-    seoParagraph: "Türkiye'nin mobilya başkenti İnegöl'de, İnegöl AVM ve Mobiliyum Mobilya Kent yakınlarındaki showroomlara ve atölyelere profesyonel asansör kiralama hizmeti sunuyoruz. Alanyurt'taki yeni yerleşim bölgelerinden Mahmudiye ve Kemalpaşa'daki üretim merkezlerine kadar mobilya hassasiyetini biliyoruz. 15. kata kadar erişim kapasitemizle İnegöl esnafının ve halkının yanındayız.",
-    localNote: "Mobilya hassasiyeti olan İnegöl'de, asansör sepetini kadife yüzeyli koruma battaniyeleriyle kaplayarak 'Sıfır Çizik' mottosuyla çalışıyoruz.",
+    seoParagraph: "Türkiye'nin mobilya başkenti İnegöl'de, İnegöl AVM ve Mobiliyum Mobilya Kent yakınlarındaki showroomlara ve atölyelere profesyonel asansör kiralama hizmeti sunuyoruz. Alanyurt'taki yeni yerleşim bölgelerinden Mahmudiye ve Kemalpaşa'daki üretim merkezlerine kadar mobilya hassasiyetini biliyoruz. 15. kata kadar erişim kapasitemizle ve esnek **İnegöl saatlik asansör kiralama** seçeneklerimizle İnegöl esnafının yanındayız.",
+    localNote: "Mobilya hassasiyeti olan İnegöl'de, asansör sepetini kadife yüzeyli koruma battaniyeleriyle kaplıyoruz. Uygun **İnegöl saatlik kiralama fiyatları** ile 'Sıfır Çizik' mottosuyla çalışıyoruz.",
     latitude: 40.0778,
     longitude: 29.5161,
     wikidataId: "Q819445",
@@ -190,8 +190,8 @@ export const DISTRICTS: District[] = [
     slug: "yenisehir", 
     name: "Yenişehir",
     neighborhoods: ["Yenigün", "Kurtuluş", "Çayır", "Tabakhane", "Ulucami", "Yolören"],
-    seoParagraph: "Yenişehir Saat Kulesi ve Tarihi Çarşı çevresindeki yerleşimlerde taşınma zorluklarını teknolojik asansörlerimizle aşıyoruz. Yenişehir Havalimanı bölgesindeki lojistik ihtiyaçlardan merkez mahallelerdeki ev taşımalarına kadar, ova rüzgarlarını hesaba katan güvenli kurulum teknikleri uyguluyoruz.",
-    localNote: "Yenişehir'in geniş düzlüklerinde ve rüzgara açık mevkilerinde, asansörü binalara çelik gergi halatlarıyla ek olarak sabitleyerek güvenliği ikiye katlıyoruz.",
+    seoParagraph: "Yenişehir Saat Kulesi ve Tarihi Çarşı çevresindeki yerleşimlerde taşınma zorluklarını teknolojik asansörlerimizle aşıyoruz. Yenişehir Havalimanı bölgesindeki lojistik ihtiyaçlardan merkez mahallelerdeki ev taşımalarına kadar, ova rüzgarlarını hesaba katan güvenli kurulum teknikleri uyguluyoruz. Bütçe dostu **Yenişehir kiralık asansör fiyatları** arayan müşterilerimize net fiyat garantisi ve ücretsiz ekspertiz sunuyoruz.",
+    localNote: "Yenişehir'in geniş düzlüklerinde ve rüzgara açık mevkilerinde, asansörü binalara çelik gergi halatlarıyla ek olarak sabitleyerek güvenliği ikiye katlıyoruz. Şeffaf **Yenişehir asansörlü nakliyat fiyatları** ile sürpriz maliyetlere son veriyoruz.",
     latitude: 40.2644,
     longitude: 29.6528,
     wikidataId: "Q1010530",
@@ -281,9 +281,9 @@ export const SERVICES: Service[] = [
     shortDesc: "Bina içi merdivenleri dert etmeden, doğrudan balkon veya pencereden eşya transferi.",
     category: "asansor",
     template: `
-      <p>{district} sakinleri için taşınmak artık stresli bir süreç olmak zorunda değil. <strong>Evden eve asansörlü nakliyat</strong> hizmetimiz sayesinde eşyalarınız bina içindeki dar merdivenlere çarpıp zarar görme riski yaşamadan, doğrudan dairenizin balkonundan veya uygun bir penceresinden transfer edilir.</p>
+      <p>{district} sakinleri için taşınmak artık stresli bir süreç olmak zorunda değil. Profesyonel <strong>evden eve asansörlü nakliyat</strong> hizmetimiz sayesinde eşyalarınız bina içindeki dar merdivenlere çarpıp zarar görme riski yaşamadan, doğrudan dairenizin balkonundan veya penceresinden transfer edilir.</p>
       
-      <p>Hizmet ağımız kapsamında <strong>15. kata kadar</strong> olan tüm dairelere asansör kurabiliyoruz. Gelişmiş teknolojiye sahip makinelerimiz ve uzman ekibimizle, taşıma süresini yarı yarıya indiriyoruz. İş güvenliği kurallarından asla taviz vermeden çalışan firmamızda, <strong>operatör her zaman asansörün başındadır</strong>. {district} civarında yeni evinize taşınırken zaman ve enerji tasarrufu sağlamak istiyorsanız doğru adrestesiniz.</p>
+      <p>Hizmet ağımız kapsamında <strong>15. kata kadar</strong> olan tüm dairelere asansör kurabiliyoruz. Özellikle <strong>asansörlü taşımacılık</strong> gerektiren yüksek katlı binalarda, gelişmiş teknolojiye sahip makinelerimiz ve uzman ekibimizle taşıma süresini yarı yarıya indiriyoruz. İş güvenliği kurallarından asla taviz vermeden çalışan firmamızda, <strong>operatör her zaman asansörün başındadır</strong>. {district} civarında güvenilir <strong>asansörlü nakliyat</strong> çözümleri arıyorsanız doğru adrestesiniz.</p>
 
       <p>Amacımız sıfır hasar ve maksimum müşteri memnuniyetidir. Tam saatinde adresinizde hazır bulunan ekibimiz, oldukça özenli bir çalışma sergiler. Ayrıca, araç ve taşıma elemanı bulunmayan müşterilerimiz için <strong>gerekli durumlarda taşıma personeli (hamal) ve nakliye kamyonu desteği de verilir</strong>. Haftanın her günü, günün her saati <strong>7/24 hizmet veriyoruz</strong>.</p>
     `,
@@ -418,11 +418,11 @@ export const SERVICES: Service[] = [
     template: `
       <p>{district} bölgesinde evden eve taşınmak artık tek bir telefonla halloluyor. <strong>Evden eve nakliyat</strong> hizmetimizde sadece asansör değil; <strong>kapalı kasa nakliye kamyonumuz, uzman taşıma personelimiz ve 15. kata çıkan mobil asansörümüzle anahtar teslim taşıma yapıyoruz.</strong> Eşyalarınızı toplamaktan yeni adresinizde yerleştirmeye kadar tüm süreci biz yönetiyoruz.</p>
 
-      <p>Taşınma sürecinde en çok zarar gören eşyalar dar merdivenlerden geçerken ya da binanın içindeki asansöre sıkıştırılmaya çalışılırken zarar görür. Bizim yöntemimizde büyük ve ağır eşyalar doğrudan <strong>balkon veya pencereden, dış cephe asansörümüzle</strong> yükseltilir; böylece duvarlar, çerçeveler ve eşyaların kendisi korunmuş olur. Tüm yükleme ve indirme işlemlerinde <strong>operatör her zaman asansörün başındadır.</strong></p>
+      <p>Taşınma sürecinde en çok zarar gören eşyalar dar merdivenlerden geçerken ya da binanın içindeki asansöre sıkıştırılmaya çalışılırken zarar görür. Bizim yöntemimizde büyük ve ağır eşyalar doğrudan <strong>balkon veya pencereden, dış cephe asansörümüzle</strong> yükseltilir; böylece duvarlar, çerçeveler ve eşyaların kendisi korunmuş olur. Profesyonel <strong>asansörlü evden eve nakliyat</strong> sürecinde tüm yükleme ve indirme işlemlerinde <strong>operatör her zaman asansörün başındadır.</strong></p>
 
       <p>{district} ve çevresinde <strong>7/24 hizmet veriyoruz.</strong> Anlaştığımız saatte kapınızdayız; randevuya geç kalmak gibi bir alışkanlığımız yoktur. Sözünün eri, uygun fiyatlı ve dürüst bir esnaf ekibi olarak çalışıyoruz. Fiyatımız telefonda konuşurken netleşir, sürpriz ek ücret talep etmeyiz. Eşya sayısına ve taşıma mesafesine göre size özel bir plan hazırlıyoruz.</p>
 
-      <p>Kapalı kasa aracımız hem eşyaları hava koşullarından korur hem de güvenli bir yükleme imkanı sunar. Taşıma personelimiz deneyimli ve özenli çalışır; kırılgan ve değerli eşyalara özellikle dikkat eder. Ev taşıma sürecinizi mümkün olan en az stresle tamamlamak için buradayız. {district} bölgesinde güvenilir nakliyat için bizi arayın.</p>
+      <p>Kapalı kasa aracımız hem eşyaları hava koşullarından korur hem de güvenli bir yükleme imkanı sunar. Taşıma personelimiz deneyimli ve özenli çalışır; kırılgan ve değerli eşyalara özellikle dikkat eder. Ev taşıma sürecinizi mümkün olan en az stresle tamamlamak için buradayız. {district} bölgesinde güvenilir <strong>asansörlü nakliyat</strong> için bizi arayın.</p>
     `,
     faqs: [
       { q: "Fiyat önceden belli oluyor mu?", a: "Evet, taşıma öncesinde eşya sayısı ve mesafeye göre net fiyat veriyoruz. Sürpriz ek ücret talep etmiyoruz." },
