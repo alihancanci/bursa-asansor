@@ -72,6 +72,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
   }
 
+  if (district.slug === "osmangazi" && service.slug === "kiralik-asansor-fiyatlari") {
+    title = "Osmangazi Kiralık Asansör Fiyatları | Ücretsiz Keşif";
+  }
+
   // 60 karakter limitini garanti altına al
   if (title.length > 60) {
     title = title.substring(0, 57) + "...";
@@ -95,7 +99,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       "evden-eve-nakliyat": `${district.name} ev taşıma fiyatı için eşya, kat, mesafe ve tarih bilgilerinizi paylaşın. Nakliye ve asansör ihtiyacınızı birlikte planlayalım. 0505 608 07 00.`,
       "evden-eve-asansorlu-nakliyat": `${district.name} asansörlü nakliyat için cephe ve kurulum alanını değerlendirelim. Kat, yük ve adres bilgisiyle uygunluk ve fiyat sorun: 0505 608 07 00.`,
       "saatlik-asansor-kiralama": `${district.name} saatlik asansör kiralama için yük, kat, konum ve tahmini süreyi iletin. Kurulum uygunluğu ve fiyat için arayın: 0505 608 07 00.`,
-      "kiralik-asansor-fiyatlari": `${district.name} kiralık asansör fiyatı; konum, kat, yük ve kullanım süresine göre değerlendirilir. Bilgileri iletip teklif alın: 0505 608 07 00.`,
+      "kiralik-asansor-fiyatlari": district.slug === "osmangazi"
+        ? "Osmangazi kiralık asansör fiyatı; adres, kat, yük ve kullanım süresine göre belirlenir. Ücretsiz keşif ve uygunluk bilgisi için teklif alın: 0505 608 07 00."
+        : `${district.name} kiralık asansör fiyatı; konum, kat, yük ve kullanım süresine göre değerlendirilir. Bilgileri iletip teklif alın: 0505 608 07 00.`,
     };
     description = districtServiceDescriptions[service.slug] ?? description;
   } else if (service.slug === "evden-eve-asansorlu-nakliyat" || service.slug === "evden-eve-nakliyat") {
@@ -156,6 +162,32 @@ export default async function ServicePage({ params }: Props) {
         : "https://www.bursavipevdeneve.com/hizmetler/bursa-kiralik-asansor");
 
   // JSON-LD Şemaları (SEO için kritik)
+  const localFaqs = district.slug === "yildirim" && service.slug === "evden-eve-nakliyat"
+    ? [
+        {
+          question: "Yıldırım evden eve nakliyat fiyatı nasıl belirlenir?",
+          answer: "Eşya miktarı, iki adres arasındaki mesafe, katlar, erişim koşulları ve istenen taşıma hizmetleri değerlendirilir. Bu bilgileri paylaşarak adrese özel teklif isteyin."
+        },
+        {
+          question: "Yıldırım'da ev taşıma teklifi için hangi bilgileri göndermeliyim?",
+          answer: "Alınacak ve bırakılacak adresleri, katları, taşınma tarihini ve eşya listesini veya fotoğraflarını paylaşın. Asansör gerekiyorsa bina cephesi ve aracın duracağı alanın fotoğrafı uygunluk değerlendirmesine yardımcı olur."
+        },
+        {
+          question: "Evden eve nakliyat ile asansör kiralama aynı hizmet mi?",
+          answer: "Hayır. Asansör kiralama dış cepheden eşya taşıma ekipmanını ve operatörü kapsar. Komple ev taşıma için araç, taşıma personeli ve diğer ihtiyaçlar ayrıca planlanıp fiyatlandırılır."
+        }
+      ]
+    : [
+        {
+          question: `${district.name} bölgesinde en iyi ${service.name.toLowerCase()} firması hangisidir?`,
+          answer: `${district.name} bölgesinde hizmet veren işletmeleri; ekipman, operatör deneyimi, hizmet kapsamı ve teklif koşullarına göre karşılaştırın. İhtiyacınızı paylaşarak uygunluk ve fiyat bilgisi alın.`
+        },
+        {
+          question: `${district.name} ${service.name.toLowerCase()} fiyatları neye göre belirlenir?`,
+          answer: `Fiyat; hizmet kapsamı, adres ve erişim koşulları, kat, yük miktarı ve kullanım süresine göre değişebilir. Kesin bilgi için işin ayrıntılarını paylaşarak teklif alın.`
+        }
+      ];
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -189,22 +221,11 @@ export default async function ServicePage({ params }: Props) {
       {
         "@type": "FAQPage",
         "mainEntity": [
-          {
+          ...localFaqs.map(({ question, answer }) => ({
             "@type": "Question",
-            "name": `${district.name} bölgesinde en iyi ${service.name.toLowerCase()} firması hangisidir?`,
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": `${district.name} bölgesinde 7/24 hizmet veren, 15. kata kadar çıkabilen araç filosu, uygun fiyatları ve uzman operatörleriyle Bursa Kiralık Asansör CNC firması en çok tercih edilen ${service.name.toLowerCase()} şirketidir.`
-            }
-          },
-          {
-            "@type": "Question",
-            "name": `${district.name} ${service.name.toLowerCase()} fiyatları ortalama ne kadar?`,
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": `${district.name} bölgesinde fiyatlar kullanım süresine (saatlik veya günlük) ve eşya yoğunluğuna göre ortalama 3.000 TL ile 8.000 TL arasında değişiklik göstermektedir.`
-            }
-          }
+            "name": question,
+            "acceptedAnswer": { "@type": "Answer", "text": answer }
+          }))
         ]
       },
       // Breadcrumb navigasyonu

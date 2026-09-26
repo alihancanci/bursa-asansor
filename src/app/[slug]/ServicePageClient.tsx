@@ -42,6 +42,7 @@ export default function ServicePageClient() {
 
   const topNeighborhoods = district.neighborhoods.slice(0, 3);
   const neighborhoodStr = topNeighborhoods.join(", ");
+  const localNeighborhoods = district.neighborhoods.slice(0, 5).join(", ");
 
   const hash = fullSlug.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
   const selectedNeighborhoods = district.neighborhoods
@@ -57,7 +58,7 @@ export default function ServicePageClient() {
     htmlContent = `<p>${district.name} evden eve nakliyat talebinizde taşınacak eşya miktarı, iki adres arasındaki mesafe, katlar ve bina erişimi değerlendirilir. Evden eve taşıma için süre bazlı asansör kiralaması yerine, taşınmanın kapsamına göre ayrıca fiyat teklifi hazırlanır. Ücretsiz ekspertiz ve keşif ile ihtiyaç duyulan nakliye aracı, taşıma personeli ve asansör planlanır.</p>
       <h2>${district.name} ev taşıma teklifi için gerekli bilgiler</h2>
       <ul><li>Alınacak ve bırakılacak mahalle veya adresler</li><li>Kat ve bina içi asansör bilgisi</li><li>Oda sayısı ya da eşya listesi; büyük parçaların fotoğrafı</li><li>Taşınma tarihi ve paketleme/montaj ihtiyacı</li><li>Asansör gerekiyorsa bina cephesi ve aracın duracağı alanın fotoğrafı</li></ul>
-      <p>${district.name}’in Kayapa, Görükle, Özlüce, FSM ve diğer mahallelerinde hizmet veriyoruz. Ücretsiz ekspertiz/keşif sırasında adres, kat ve taşınma kapsamı incelenir; fiyat mesafe, süre ve kat bilgilerine göre belirlenir. Asansör kurulumu gerekiyorsa cephe ve zemin uygunluğu önceden teyit edilir.</p>`;
+      <p>${district.name}’in ${localNeighborhoods} ve diğer mahallelerinde hizmet veriyoruz. Ücretsiz ekspertiz/keşif sırasında adres, kat ve taşınma kapsamı incelenir; fiyat mesafe, süre ve kat bilgilerine göre belirlenir. Asansör kurulumu gerekiyorsa cephe ve zemin uygunluğu önceden teyit edilir.</p>`;
   } else if (hasDistrictSearchContent && service.slug === "evden-eve-asansorlu-nakliyat") {
     htmlContent = `<p>${district.name} asansörlü nakliyat hizmetinde büyük eşyalar, bina koşulları elveriyorsa dış cephe mobil asansörüyle balkon veya uygun pencereden taşınabilir. Operatör kiralamaya dahildir. İhtiyacınıza göre taşıma personeli ve nakliye aracı da sağlanabilir. Komple evden eve taşıma için süre bazlı kiralama yerine taşınma kapsamına göre ayrıca teklif hazırlanır.</p>
       <h2>Asansörlü nakliyat kurulumu nasıl değerlendirilir?</h2>
@@ -66,15 +67,15 @@ export default function ServicePageClient() {
     htmlContent = `<p>${district.name}’de mobil asansör saatlik veya günlük kiralanabilir. Operatör kiralama hizmetine dahildir. İhtiyaca göre yükleme/taşıma personeli ve nakliye aracı da sağlayabiliyoruz. Evden eve taşıma taleplerinde ise süre bazlı kiralama yerine taşınmanın kapsamına göre ayrıca fiyat verilir.</p>
       <h2>${district.name} asansör kiralama fiyatı nasıl belirlenir?</h2>
       <p>Ücret; hizmet verilecek mesafeye, tahmini çalışma süresine ve kata göre değişir. Bu nedenle sabit fiyat listesi yayımlamıyoruz. Ücretsiz ekspertiz ve keşif ile adresi, cepheyi ve ihtiyacınız olan hizmet kapsamını değerlendirip size özel teklif hazırlıyoruz.</p>
-      <p>Kayapa, Görükle, Özlüce, FSM ve Nilüfer’in diğer mahallelerinde teklif ve ücretsiz keşif için adres, kat ve taşınacak eşya bilgilerini iletin.</p>`;
+      <p>${localNeighborhoods} ve ${district.name}’in diğer mahallelerinde teklif ve ücretsiz keşif için adres, kat ve taşınacak eşya bilgilerini iletin.</p>`;
   } else if (hasDistrictSearchContent && service.slug === "kiralik-asansor-fiyatlari") {
     htmlContent = `<p>${district.name} kiralık asansör fiyatı sabit değildir; hizmet verilecek mesafeye, çalışma süresine ve kata göre değişir. Bu nedenle web sitemizde sabit fiyat yayımlamıyoruz. Ücretsiz ekspertiz ve keşif sırasında işin koşullarını değerlendirip size özel fiyat teklifi sunuyoruz.</p>
       <h2>${district.name} asansör kiralama teklifine neler dahil?</h2>
       <ul><li>Saatlik veya günlük asansör kiralama seçenekleri</li><li>Operatör hizmeti kiralama ücretine dahildir</li><li>İhtiyaca göre yükleme/taşıma personeli ve nakliye aracı</li><li>Ücretsiz ekspertiz ve keşif</li></ul>
-      <p>Evden eve taşınma hizmetinde süre bazlı kiralama yerine taşınmanın kapsamına göre ayrıca fiyat verilir. Kayapa, Görükle, Özlüce, FSM ve Nilüfer’in tüm mahallelerinde teklif için adres, kat, eşya ve taşınma bilgilerinizi paylaşabilirsiniz.</p>`;
+      <p>Evden eve taşınma hizmetinde süre bazlı kiralama yerine taşınmanın kapsamına göre ayrıca fiyat verilir. ${localNeighborhoods} ve ${district.name}’in diğer mahallelerinde teklif için adres, kat, eşya ve taşınma bilgilerinizi paylaşabilirsiniz.</p>`;
   } else if (hasDistrictSearchContent && service.slug === "kiralik-asansor") {
     htmlContent = `<p>${district.name} kiralık asansör hizmetimizde operatör kiralama ücretine dahildir. Asansör saatlik veya günlük kiralanabilir. Evden eve taşınma taleplerinde süre bazlı asansör kiralaması yerine, taşınmanın kapsamına göre ayrıca fiyat teklifi hazırlanır.</p>
-      <p>Kayapa, Görükle, Özlüce, FSM ve ${district.name}’in diğer mahallelerinde hizmet veriyoruz. Ücretsiz ekspertiz ve keşif ile bina cephesini, kurulum alanını ve taşıma ihtiyacınızı değerlendiriyoruz. İhtiyaca göre yükleme/taşıma personeli ve nakliye aracı da sağlanabilir.</p>
+      <p>${localNeighborhoods} ve ${district.name}’in diğer mahallelerinde hizmet veriyoruz. Ücretsiz ekspertiz ve keşif ile bina cephesini, kurulum alanını ve taşıma ihtiyacınızı değerlendiriyoruz. İhtiyaca göre yükleme/taşıma personeli ve nakliye aracı da sağlanabilir.</p>
       <h2>${district.name} kiralık asansör fiyatı nasıl belirlenir?</h2>
       <p>Ücret; mesafeye, çalışma süresine ve kata göre değiştiğinden sitede sabit fiyat veremiyoruz. Size uygun teklifi hazırlayabilmemiz için mahalle veya adres, kat, taşınacak eşya ve planlanan tarih bilgilerini iletin. Keşif ve ekspertiz ücretsizdir.</p>`;
   }
@@ -93,7 +94,17 @@ export default function ServicePageClient() {
     }
   }
 
-  const targetedFaqs = district.slug === "nilufer" && hasDistrictSearchContent ? service.slug === "kiralik-asansor-fiyatlari" ? [
+  if (district.slug === "yildirim" && service.slug === "evden-eve-nakliyat") {
+    htmlContent += `<h2>Yıldırım'da ev taşıma ve asansör planı</h2><p>${district.localNote ?? ""} Yıldırım'da asansör gerekip gerekmediği bina cephesi ve aracın güvenle durabileceği alan incelendikten sonra netleştirilir. Yalnızca asansör kiralama arıyorsanız <a href="/yildirim-kiralik-asansor-fiyatlari" class="text-primary font-semibold hover:underline">Yıldırım kiralık asansör fiyatları ve teklif bilgilerine</a> bakabilirsiniz. Ev taşıma teklifi için alınacak ve bırakılacak adresleri, katları, eşya kapsamını ve tarihi paylaşın.</p>`;
+  } else if (district.slug === "osmangazi" && service.slug === "kiralik-asansor-fiyatlari") {
+    htmlContent += `<p>Osmangazi'de saatlik veya günlük kullanım için <a href="/osmangazi-saatlik-asansor-kiralama" class="text-primary font-semibold hover:underline">Osmangazi saatlik asansör kiralama</a> seçeneklerine de bakabilirsiniz. Kurulum uygunluğu adres, cephe ve aracın durabileceği alana göre teyit edilir.</p>`;
+  }
+
+  const targetedFaqs = district.slug === "yildirim" && service.slug === "evden-eve-nakliyat" ? [
+    { q: "Yıldırım evden eve nakliyat fiyatı nasıl belirlenir?", a: "Eşya miktarı, iki adres arasındaki mesafe, katlar, erişim koşulları ve istenen taşıma hizmetleri değerlendirilir. Bu bilgileri paylaşarak adrese özel teklif isteyin." },
+    { q: "Yıldırım'da ev taşıma teklifi için hangi bilgileri göndermeliyim?", a: "Alınacak ve bırakılacak adresleri, katları, taşınma tarihini ve eşya listesini veya fotoğraflarını paylaşın. Asansör gerekiyorsa bina cephesi ve aracın duracağı alanın fotoğrafı uygunluk değerlendirmesine yardımcı olur." },
+    { q: "Evden eve nakliyat ile asansör kiralama aynı hizmet mi?", a: "Hayır. Asansör kiralama dış cepheden eşya taşıma ekipmanını ve operatörü kapsar. Komple ev taşıma için araç, taşıma personeli ve diğer ihtiyaçlar ayrıca planlanıp fiyatlandırılır." },
+  ] : district.slug === "nilufer" && hasDistrictSearchContent ? service.slug === "kiralik-asansor-fiyatlari" ? [
     { q: "Nilüfer kiralık asansör fiyatı neden sitede yazmıyor?", a: "Ücret mesafeye, çalışma süresine ve kata göre değişir. Ücretsiz ekspertiz/keşif sonrası işinize özel teklif veriyoruz." },
     { q: "Operatör ve taşıma ekibi fiyata dahil mi?", a: "Operatör asansör kiralamasına dahildir. İhtiyaca göre yükleme/taşıma personeli ve nakliye aracı da sağlayabiliriz." },
     { q: "Saatlik ve günlük kiralama var mı?", a: "Evet. Mobil asansör saatlik veya günlük kiralanabilir. Evden eve taşıma için taşınmanın kapsamına göre ayrıca fiyat veriyoruz." },
@@ -440,7 +451,7 @@ export default function ServicePageClient() {
 
             
             {/* SGE (GEO) Sıkça Sorulan Sorular Section */}
-            <div className="bg-slate-800/30 rounded-2xl p-6 sm:p-8 mt-12 mb-8 border border-slate-700">
+            {!(district.slug === "yildirim" && service.slug === "evden-eve-nakliyat") && <div className="bg-slate-800/30 rounded-2xl p-6 sm:p-8 mt-12 mb-8 border border-slate-700">
               <h3 className="text-2xl font-bold text-white mb-6">Sıkça Sorulan Sorular</h3>
               <div className="space-y-6">
                 <div>
@@ -460,7 +471,7 @@ export default function ServicePageClient() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div>}
 
             {/* Testimonials (Review Schema Sinyalini Doğrulamak İçin) */}
             <section className="mb-14">
