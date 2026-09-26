@@ -148,7 +148,7 @@ export default function ServicePageClient() {
 
   const vipDescription = hasExactDistrictPage
     ? `${district.name} bölgesinde sadece mobil asansör değil, komple anahtar teslim ev taşıma, birinci sınıf balonlu ambalajlama ve marangozlu demontaj/montaj desteği almak istiyorsanız resmi kardeş markamız Bursa VIP Evden Eve Nakliyat profesyonel filosuyla hizmetinizdedir.`
-    : `${district.name} ve tüm Bursa genelinde sigortalı, marangozlu ve asansörlü komple ev taşıma operasyonlarında kardeş kuruluşumuz Bursa VIP Evden Eve Nakliyat ile ortak koordinasyonla çalışıyoruz.`;
+    : `${district.name} ve tüm Bursa genelinde sigortalı, marangozlu ve asansörlü komple ev taşıma operasyonlarında uzman taşıma ekibimizle koordineli şekilde çalışıyoruz.`;
 
   return (
     <>
@@ -309,18 +309,7 @@ export default function ServicePageClient() {
                 
                 <p className="text-slate-200 leading-relaxed mb-6 text-sm sm:text-base">
                   {vipDescription}{' '}
-                  {district.name} bölgesinde anahtar teslim VIP taşınma ayrıcalığı için resmi kardeş kuruluşumuz{' '}
-                  <a
-                    href={vipTargetUrl}
-                    target="_blank"
-                    rel="noopener"
-                    className="text-primary font-bold hover:underline inline-flex items-center gap-1"
-                    title={`${vipAnchor} - bursavipevdeneve.com`}
-                  >
-                    {vipAnchor}
-                    <ExternalLink className="w-3.5 h-3.5 inline" />
-                  </a>
-                  {' '}web sayfamızı ziyaret edebilirsiniz.
+                  {district.name} bölgesinde anahtar teslim VIP taşınma ayrıcalığı için uzman ekibimizle profesyonel nakliyat hizmetlerimizi tercih edebilirsiniz.
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center gap-3.5 pt-2">

@@ -92,7 +92,7 @@ export default function HomePage() {
         "alternateName": "Bursa VIP Nakliyat",
         "url": "https://bursavipevdeneve.com",
         "telephone": "+905056080700",
-        "description": "Bursa VIP Evden Eve Nakliyat - Asansörlü, lüks ambalajlı, marangozlu ve VIP güvenceli ev taşıma hizmetleri. Bursa Kiralık Asansör kardeş kuruluşu.",
+        "description": "Bursa VIP Evden Eve Nakliyat - Asansörlü, lüks ambalajlı, marangozlu ve VIP güvenceli ev taşıma hizmetleri. Bursa Kiralık Asansör güvencesiyle.",
       }
     ]
   };

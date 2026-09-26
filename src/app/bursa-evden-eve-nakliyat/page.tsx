@@ -128,8 +128,7 @@ export default function BursaEvdenEveNakliyatPage() {
             </h1>
 
             <p className="text-slate-300 text-base sm:text-lg md:text-xl leading-relaxed mb-8 max-w-3xl mx-auto font-normal">
-              15. kata kadar çıkan hidrolik mobil asansörlerimiz, marangozlu uzman ekibimiz ve kardeş kuruluşumuz{' '}
-              <strong className="text-white font-semibold">Bursa VIP Evden Eve Nakliyat</strong> güvencesiyle eşyalarınızı sıfır riskle yeni yuvanıza taşıyoruz.
+              15. kata kadar çıkan hidrolik mobil asansörlerimiz, marangozlu uzman ekibimiz güvencesiyle eşyalarınızı sıfır riskle yeni yuvanıza taşıyoruz.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -421,11 +420,7 @@ export default function BursaEvdenEveNakliyatPage() {
                 Bursa&apos;da Sorunsuz Taşınmanın En Güvenilir Yolu
               </h2>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                Eşyalarınızı riske atmayın. Bursa Kiralık Asansör ve kardeş kuruluşumuz{' '}
-                <a href="https://bursavipevdeneve.com" target="_blank" rel="noopener" className="text-primary font-bold underline">
-                  Bursa VIP Evden Eve Nakliyat
-                </a>{' '}
-                ortak güvencesiyle bugün ücretsiz keşif randevusu oluşturun.
+                Eşyalarınızı riske atmayın. Bursa Kiralık Asansör uzmanlığıyla bugün ücretsiz keşif randevusu oluşturun.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-2">
                 <a
