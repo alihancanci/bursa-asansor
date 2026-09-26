@@ -15,6 +15,11 @@ const nextConfig = {
       "keles", "harmancik", "buyukorhan"
     ];
     return [
+      {
+        source: "/evden-eve-nakliye-bursa",
+        destination: "/bursa-evden-eve-nakliyat",
+        permanent: true,
+      },
       ...districts.map((d) => ({
         source: `/${d}-kiralik-mobil-asansor`,
         destination: `/${d}-kiralik-asansor`,
@@ -31,7 +36,7 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: "/yandex_8b02f2ef69ce4c35.html",
+        source: "/evden-eve-nakliye-bursa",
         headers: [
           { key: "Content-Type", value: "text/html; charset=UTF-8" },
           { key: "X-Content-Type-Options", value: "nosniff" },

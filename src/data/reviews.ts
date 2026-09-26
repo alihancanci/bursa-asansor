@@ -33,7 +33,7 @@ export const REVIEWS = [
   { id: 32, name: 'Süleyman K.', district: 'Orhangazi', rating: 5, text: 'İnşaat malzemelerimizi 12. kata asansörle çıkardılar. Amale masrafından ve süresinden büyük tasarruf ettik.' },
   { id: 33, name: 'Gülşah D.', district: 'Osmangazi', rating: 5, text: 'Piyanomu taşımak için özel asansör ve uzman ekip gönderdiler. En ufak bir çizik dahi olmadı.' },
   { id: 34, name: 'Ramazan O.', district: 'Karacabey', rating: 4, text: 'Anlaştığımız saatte geldiler, sessiz sedasız işlerini yapıp gittiler. Kesinlikle tavsiye ederim.' },
-  { id: 35, name: 'Yasin V.', district: 'Gürsu', rating: 5, text: '18. kata klima motoru çıkarılması gerekiyordu. 3 firma yapamayız dedi, Bursa Kiralık Asansör ve Evden Eve Nakliyat tık diye çıkardı halletti.' },
+  { id: 35, name: 'Yasin V.', district: 'Gürsu', rating: 5, text: '15. kata klima motoru çıkarılması gerekiyordu. 3 firma yapamayız dedi, Bursa Kiralık Asansör ve Evden Eve Nakliyat tık diye çıkardı halletti.' },
   { id: 36, name: 'Gizem H.', district: 'Bursa Merkez', rating: 5, text: 'Daracık sokakta bile asansörü şipşak kurdular. Bütün komşular profesyonelliklerine hayran kaldı.' },
   { id: 37, name: 'Tolga A.', district: 'Kestel', rating: 5, text: 'Hızlı ve sorunsuz bir süreç yönettiler. Değerli antika eşyalarım sıfır hatayla taşındı.' },
   { id: 38, name: 'Hande B.', district: 'Osmangazi', rating: 5, text: 'İlgi, alaka, hız, profesyonellik her şey dört dörtlüktü. Başka asansör firması aramaya gerek yok Bursa\'da.' },

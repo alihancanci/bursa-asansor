@@ -92,15 +92,6 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
-// Validate ../../src/app/evden-eve-nakliye-bursa/page.tsx
-{
-  type __IsExpected<Specific extends AppPageConfig<"/evden-eve-nakliye-bursa">> = Specific
-  const handler = {} as typeof import("../../src/app/evden-eve-nakliye-bursa/page.js")
-  type __Check = __IsExpected<typeof handler>
-  // @ts-ignore
-  type __Unused = __Check
-}
-
 // Validate ../../src/app/hakkimizda/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/hakkimizda">> = Specific

@@ -81,6 +81,20 @@ export default function ServicePageClient() {
       <p>Kat, tahmini çalışma süresi, konum, yükün türü ve miktarı fiyat teklifini etkiler. Talep oluştururken mahalle veya adres, kat, eşya bilgisi, tarih ve cephe/sokak fotoğrafını paylaşın. Taşıma personeli veya nakliye aracı gerekiyorsa bunu ayrıca belirtin.</p>`;
   }
 
+  if (hasDistrictSearchContent && ["kiralik-asansor-fiyatlari", "saatlik-asansor-kiralama"].includes(service.slug)) {
+    const localSetupNotes: Record<string, string> = {
+      yildirim: "Yıldırım'da eğimli ya da dar sokaklı bir adreste, asansör aracının güvenle durabileceği alan ve bina cephesine erişim ayrıca değerlendirilir. Teklif isterken açık adresi, katı ve sokak/cephe fotoğrafını paylaşın.",
+      nilufer: "Nilüfer'de site veya apartman içindeki taşımalarda yönetimin izin ve çalışma saati koşullarını önceden öğrenin. Adres, kat, cephe fotoğrafı ve planlanan tarih; kurulum uygunluğu ile fiyatın değerlendirilmesini kolaylaştırır.",
+      osmangazi: "Osmangazi'de yoğun cadde veya dar sokak üzerindeki adreslerde aracın duracağı alanı önceden değerlendirmek gerekir. Mahalle/adres, kat ve bina cephesinin fotoğrafını ileterek kurulum alanı ile fiyat hakkında bilgi isteyin.",
+      mudanya: "Mudanya'da mahalleye göre sokak ve bina cephesi koşulları değişebilir. Güzelyalı, Burgaz, Bademli veya başka bir adresteki talebiniz için konumu, katı ve aracın yaklaşacağı alanın fotoğrafını paylaşın.",
+    };
+    const localSetupNote = localSetupNotes[district.slug];
+
+    if (localSetupNote) {
+      htmlContent += `<h2>${district.name} adresinde kurulum için hangi bilgiler gerekir?</h2><p>${localSetupNote}</p>`;
+    }
+  }
+
   const targetedFaqs = !hasDistrictSearchContent ? service.faqs : service.slug === "kiralik-asansor-fiyatlari" ? [
     { q: `${district.name} kiralık asansör fiyatı neye göre hesaplanır?`, a: "Konum, kat, cephe ve kurulum koşulları, yükün türü ve miktarı ile kullanım süresi değerlendirilir." },
     { q: "Fiyat teklifi için hangi bilgileri paylaşmalıyım?", a: "Mahalle veya adres, kat, yük bilgisi, tahmini süre ve talep edilen tarihi iletin. Cephe fotoğrafı ön değerlendirmeyi kolaylaştırır." },

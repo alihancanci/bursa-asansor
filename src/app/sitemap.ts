@@ -6,15 +6,14 @@ const BASE_URL = "https://bursakiralikasansor.com";
 
 // Sabit tarihler: Google'ın lastModified sinyalini doğru okuması için
 // Her içerik güncellemesinde bu tarihleri manuel güncelleyin
-const SITE_LAST_UPDATED = new Date();
-const BLOG_LAST_UPDATED = new Date();
-const SERVICE_PAGES_UPDATED = new Date();
+const SITE_LAST_UPDATED = new Date("2026-09-26");
+const BLOG_LAST_UPDATED = new Date("2026-09-26");
+const SERVICE_PAGES_UPDATED = new Date("2026-09-26");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     { url: BASE_URL, lastModified: SITE_LAST_UPDATED, changeFrequency: "weekly", priority: 1.0 },
     { url: `${BASE_URL}/bursa-evden-eve-nakliyat`, lastModified: SITE_LAST_UPDATED, changeFrequency: "daily", priority: 0.98 },
-    { url: `${BASE_URL}/evden-eve-nakliye-bursa`, lastModified: SITE_LAST_UPDATED, changeFrequency: "weekly", priority: 0.95 },
     { url: `${BASE_URL}/hizmet-bolgelerimiz`, lastModified: SITE_LAST_UPDATED, changeFrequency: "monthly", priority: 0.85 },
     { url: `${BASE_URL}/hakkimizda`, lastModified: new Date("2025-01-15"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/calismalarimiz`, lastModified: new Date("2025-01-15"), changeFrequency: "monthly", priority: 0.6 },

@@ -185,7 +185,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>Büyük metropollerde yatay mimariden dikey mimariye geçilmesi, <a href="/nilufer-yuksek-kat-esya-tasima-asansoru" class="text-primary font-semibold hover:underline">yüksek kat eşya taşıma asansörü</a> ihtiyacını patlatmıştır. Müşterilerimizin bize en sık yönelttiği soruların başında, "<strong>Acaba sizin asansör kaçıncı kata kadar çıkar?</strong>" sorusu gelmektedir. Kulaktan dolma bilgiler yerine meselenin tamamen teknik standartlarına inelim.</p>
 
       <h3>Kapasite ve Yükseklik Limitleri (15. Kat Gerçeği)</h3>
-      <p>Türkiye'de ve Avrupa'da standart dış cephe nakliyat asansörleri ortalama 15. ile 18. kata kadar hizmet verebilecek şekilde tasarlanmıştır. Ortalama 45-50 metre bom uzunluğuna (açılabilir merdiven mekanizması) sahip bu makineler, şehirlerarası lojistik ve inşaat uygulamalarında altın standardı belirler.</p>
+      <p>Türkiye'de ve Avrupa'da standart dış cephe nakliyat asansörleri ortalama 15. ile 15. kata kadar hizmet verebilecek şekilde tasarlanmıştır. Ortalama 45-50 metre bom uzunluğuna (açılabilir merdiven mekanizması) sahip bu makineler, şehirlerarası lojistik ve inşaat uygulamalarında altın standardı belirler.</p>
       
       <p>Daha özel makineler (Örn: XXL boyutlu Alman üretimi asansörler) 25. kata kadar (yaklaşık 70 metre) erişebilse de, bu durum ciddi mühendislik alan gereksinimleri doğurur. Biz, Bursa genelinde iş ve müşteri güvenliğini %100 oranında garanti edebildiğimiz, fizik ve aerodinamik sınırları zorlamayan <strong>15. kata kadar çıkabilen</strong> son teknoloji cihazlarla hizmet veriyoruz.</p>
 
@@ -1016,7 +1016,7 @@ export const BLOG_POSTS: BlogPost[] = [
     id: "nilufer-kiralik-asansor-yuksek-kat-nakliyat",
     slug: "nilufer-kiralik-asansor-yuksek-kat-nakliyat",
     title: "Nilüfer Kiralık Asansör | Yüksek Katlı Sitelerde Çiziksiz Taşıma",
-    excerpt: "Nilüfer'de 20. kata kadar mobil asansör kiralama. Özlüce, Balat ve Görükle sitelerinde bina içi hasarsız, cezasız, 2 saatte jet hızında taşınma çözümü.",
+    excerpt: "Nilüfer'de 15. kata kadar mobil asansör kiralama. Özlüce, Balat ve Görükle sitelerinde bina içi hasarsız, cezasız, 2 saatte jet hızında taşınma çözümü.",
     date: "14 Eylül 2026",
     readTime: "7 dk okuma",
     category: "Lokal Rehber",

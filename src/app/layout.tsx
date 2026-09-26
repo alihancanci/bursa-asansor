@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     default: "Bursa Kiralık Asansör CNC | 0505 608 07 00",
     template: "%s",
   },
-  description: "Bursa CNC kiralık asansör hizmetleri. 18. kata kadar ulaşabilen modern yük asansörlerimizle eşyalarınızı güvenle taşıyoruz. Evden eve nakliyat, mobilya ve inşaat malzemesi taşıma.",
+  description: "Bursa CNC kiralık asansör hizmetleri. 15. kata kadar ulaşabilen modern yük asansörlerimizle eşyalarınızı güvenle taşıyoruz. Evden eve nakliyat, mobilya ve inşaat malzemesi taşıma.",
   metadataBase: new URL("https://bursakiralikasansor.com"),
   alternates: {
     canonical: 'https://bursakiralikasansor.com/',

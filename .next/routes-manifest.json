@@ -12,6 +12,12 @@
       "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
     },
     {
+      "source": "/evden-eve-nakliye-bursa",
+      "destination": "/bursa-evden-eve-nakliyat",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/evden-eve-nakliye-bursa(?:/)?$"
+    },
+    {
       "source": "/bursa-merkez-kiralik-mobil-asansor",
       "destination": "/bursa-merkez-kiralik-asansor",
       "statusCode": 308,
@@ -128,7 +134,7 @@
   ],
   "headers": [
     {
-      "source": "/yandex_8b02f2ef69ce4c35.html",
+      "source": "/evden-eve-nakliye-bursa",
       "headers": [
         {
           "key": "Content-Type",
@@ -139,7 +145,7 @@
           "value": "nosniff"
         }
       ],
-      "regex": "^/yandex_8b02f2ef69ce4c35\\.html(?:/)?$"
+      "regex": "^/evden-eve-nakliye-bursa(?:/)?$"
     },
     {
       "source": "/((?!yandex_8b02f2ef69ce4c35.html).*)",
@@ -257,12 +263,6 @@
       "regex": "^/calismalarimiz(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/calismalarimiz(?:/)?$"
-    },
-    {
-      "page": "/evden-eve-nakliye-bursa",
-      "regex": "^/evden\\-eve\\-nakliye\\-bursa(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/evden\\-eve\\-nakliye\\-bursa(?:/)?$"
     },
     {
       "page": "/favicon.ico",

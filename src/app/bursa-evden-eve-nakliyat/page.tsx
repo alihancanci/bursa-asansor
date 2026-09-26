@@ -18,8 +18,8 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Bursa Evden Eve Nakliyat | Bursa VIP Nakliyat & Asansörlü Taşıma',
-  description: 'Bursa evden eve nakliyat ve VIP taşımacılık hizmetleri. 15. kata kadar dış cephe asansörü, profesyonel paketleme, marangozlu montaj ve hasarsız teslimat: 0505 608 07 00.',
+  title: 'Bursa Evden Eve Nakliyat: Asansörlü VIP Taşıma',
+  description: 'Bursa evden eve nakliyat ve VIP taşımacılık. 15. kata kadar dış cephe asansörü, ambalajlı, marangozlu ve hasarsız teslimat: 0505 608 07 00.',
   keywords: [
     'bursa evden eve nakliyat',
     'bursa nakliyat',

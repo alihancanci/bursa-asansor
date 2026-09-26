@@ -293,6 +293,11 @@
     },
     "_originalRedirects": [
       {
+        "source": "/evden-eve-nakliye-bursa",
+        "destination": "/bursa-evden-eve-nakliyat",
+        "permanent": true
+      },
+      {
         "source": "/bursa-merkez-kiralik-mobil-asansor",
         "destination": "/bursa-merkez-kiralik-asansor",
         "permanent": true
