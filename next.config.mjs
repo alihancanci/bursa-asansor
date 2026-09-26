@@ -1,4 +1,10 @@
 /** @type {import('next').NextConfig} */
+import { readFileSync } from "node:fs";
+
+const legacyLocaleRedirectPaths = JSON.parse(
+  readFileSync(new URL("./legacy-locale-redirect-paths.json", import.meta.url), "utf8"),
+);
+
 const nextConfig = {
   trailingSlash: false,
   images: {
@@ -15,6 +21,23 @@ const nextConfig = {
       "keles", "harmancik", "buyukorhan"
     ];
     return [
+      // Remove obsolete language prefixes only when the Turkish destination
+      // is a known current route. Unknown legacy URLs keep their 404 response.
+      ...legacyLocaleRedirectPaths.map((path) => ({
+        source: `/:locale(en|ru|ar)/${path}`,
+        destination: `/${path}`,
+        permanent: true,
+      })),
+      {
+        source: "/:locale(en|ru|ar)/:district(bursa-merkez|osmangazi|nilufer|yildirim|inegol|gemlik|gursu|mudanya|orhangazi|karacabey|iznik|mustafakemalpasa|yenisehir|kestel|orhaneli|keles|harmancik|buyukorhan)-kiralik-mobil-asansor",
+        destination: "/:district-kiralik-asansor",
+        permanent: true,
+      },
+      {
+        source: "/ru/index.html",
+        destination: "/",
+        permanent: true,
+      },
       {
         source: "/evden-eve-nakliye-bursa",
         destination: "/bursa-evden-eve-nakliyat",
