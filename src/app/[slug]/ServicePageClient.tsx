@@ -37,6 +37,9 @@ export default function ServicePageClient() {
   const serviceName = t(`services.${service.slug}.name`, service.name);
   const serviceShortDesc = t(`services.${service.slug}.shortDesc`, service.shortDesc);
   const serviceTemplate = t(`services.${service.slug}.template`, service.template);
+  const priorityDistricts = ["nilufer", "yildirim", "mudanya", "osmangazi", "gursu"];
+  const districtServiceSlugs = ["kiralik-asansor", "kiralik-asansor-fiyatlari", "evden-eve-nakliyat", "evden-eve-asansorlu-nakliyat", "saatlik-asansor-kiralama"];
+  const hasDistrictSearchContent = priorityDistricts.includes(district.slug) && districtServiceSlugs.includes(service.slug);
 
   const YEAR = new Date().getFullYear();
   const topNeighborhoods = district.neighborhoods.slice(0, 3);
@@ -48,9 +51,57 @@ export default function ServicePageClient() {
     .sort((a, b) => (hash % a.length) - (hash % b.length))
     .slice(0, 5);
 
-  const htmlContent = serviceTemplate
+  let htmlContent = serviceTemplate
     .replace(/{district}/g, district.name)
     .replace(/{neighborhoods}/g, selectedNeighborhoods.join(", "));
+
+  if (hasDistrictSearchContent && service.slug === "evden-eve-nakliyat") {
+    htmlContent = `<p>${district.name} evden eve nakliyat talebiniz için taşınacak eşya miktarı, iki adresin mesafesi, katlar ve bina erişimi birlikte değerlendirilir. İhtiyacınız komple ev taşıma ise nakliye kapsamını; yalnızca büyük eşyaları cepheden taşımak istiyorsanız asansörlü nakliyat seçeneğini belirtin.</p>
+      <h2>${district.name} ev taşıma teklifi için gerekli bilgiler</h2>
+      <ul><li>Alınacak ve bırakılacak mahalle veya adresler</li><li>Kat ve bina içi asansör bilgisi</li><li>Oda sayısı ya da eşya listesi; büyük parçaların fotoğrafı</li><li>Taşınma tarihi ve paketleme/montaj ihtiyacı</li><li>Asansör gerekiyorsa bina cephesi ve aracın duracağı alanın fotoğrafı</li></ul>
+      <p>Bu ayrıntılar, ${district.name} evden eve nakliyat fiyatı ve gerekli ekipman için doğru teklif hazırlanmasına yardımcı olur. Asansör kurulumu her binada mümkün olmayabilir; adresin cephe ve zemin koşulları önceden teyit edilir.</p>`;
+  } else if (hasDistrictSearchContent && service.slug === "evden-eve-asansorlu-nakliyat") {
+    htmlContent = `<p>${district.name} asansörlü nakliyat hizmetinde büyük eşyalar, bina koşulları elveriyorsa dış cephe mobil asansörüyle balkon veya uygun pencereden taşınabilir. Bu yöntem komple evden eve nakliye ile aynı kapsamda değildir; taşıma ekibi ve araç ihtiyacınızı ayrıca belirtin.</p>
+      <h2>Asansörlü nakliyat kurulumu nasıl değerlendirilir?</h2>
+      <p>Aracın bina önünde durabileceği alan, cepheye erişim, balkon veya pencere açıklığı, çevredeki ağaç ve kablolar ile taşınacak yükün ölçüleri kontrol edilir. ${district.name} adresiniz için kat, yük, tarih ve sokak/cephe fotoğrafı göndererek uygunluk ve fiyat bilgisi isteyin.</p>`;
+  } else if (hasDistrictSearchContent && service.slug === "saatlik-asansor-kiralama") {
+    htmlContent = `<p>${district.name} saatlik asansör kiralama, birkaç parça eşya veya sınırlı süreli malzeme aktarımı için değerlendirilebilir. Minimum süre, ücret ve müsaitlik talebin kapsamına göre netleştirilir.</p>
+      <h2>Saatlik asansör kiralama fiyatını etkileyenler</h2>
+      <ul><li>Konum ve aracın kurulum alanına erişimi</li><li>Kat yüksekliği ve cephe koşulları</li><li>Taşınacak yükün türü ve yaklaşık miktarı</li><li>Talep edilen çalışma süresi ve tarih</li></ul>
+      <p>Bilgileri ve mümkünse bina cephesinin fotoğrafını paylaşarak ${district.name} için kurulum uygunluğu, fiyat ve müsaitlik sorun.</p>`;
+  } else if (hasDistrictSearchContent && service.slug === "kiralik-asansor-fiyatlari") {
+    htmlContent = `<p>${district.name} kiralık asansör fiyatı; hizmet konumu, kat, taşınacak yükün türü ve miktarı ile tahmini çalışma süresine göre değerlendirilir. Fiyat talebinde işin kapsamını doğru paylaşmak, uygun hizmet seçeneğinin belirlenmesine yardımcı olur.</p>
+      <h2>${district.name} asansör kiralama fiyat teklifini etkileyenler</h2>
+      <ul><li>Mahalle veya açık adres ve aracın kurulum alanına erişimi</li><li>Kat sayısı ve binanın cephe koşulları</li><li>Taşınacak eşya veya malzemenin türü, ölçüsü ve miktarı</li><li>Saatlik ya da daha uzun kullanım ihtiyacı</li><li>Talep edilen tarih ve varsa ek taşıma personeli/araç</li></ul>
+      <p>Bu bilgileri ve mümkünse sokak ile bina cephesinin fotoğrafını paylaşarak ${district.name} için güncel teklif isteyin. Net ücret ve müsaitlik, iş ayrıntıları alındıktan sonra teyit edilir.</p>`;
+  } else if (hasDistrictSearchContent && service.slug === "kiralik-asansor") {
+    htmlContent = `<p>${district.name} kiralık asansör arıyorsanız dış cepheye kurulan mobil eşya asansörü; büyük mobilya, beyaz eşya veya yapı malzemesi aktarımı için değerlendirilebilir. Bina içi asansörün yetersiz kaldığı durumlarda balkon veya uygun pencereden taşıma seçeneği incelenir.</p>
+      <p>Mobil asansör kiralama uygunluğu yalnızca kata göre belirlenmez. Binanın cephesi, aracın duracağı alan, ağaç veya kablo gibi engeller ve yükün ölçüleri birlikte değerlendirilmelidir. ${district.name} içinde ${neighborhoodStr} ve çevresindeki adresler için bu bilgileri ileterek ön değerlendirme isteyin.</p>
+      <h2>${district.name} kiralık asansör fiyatı nasıl belirlenir?</h2>
+      <p>Kat, tahmini çalışma süresi, konum, yükün türü ve miktarı fiyat teklifini etkiler. Talep oluştururken mahalle veya adres, kat, eşya bilgisi, tarih ve cephe/sokak fotoğrafını paylaşın. Taşıma personeli veya nakliye aracı gerekiyorsa bunu ayrıca belirtin.</p>`;
+  }
+
+  const targetedFaqs = !hasDistrictSearchContent ? service.faqs : service.slug === "kiralik-asansor-fiyatlari" ? [
+    { q: `${district.name} kiralık asansör fiyatı neye göre hesaplanır?`, a: "Konum, kat, cephe ve kurulum koşulları, yükün türü ve miktarı ile kullanım süresi değerlendirilir." },
+    { q: "Fiyat teklifi için hangi bilgileri paylaşmalıyım?", a: "Mahalle veya adres, kat, yük bilgisi, tahmini süre ve talep edilen tarihi iletin. Cephe fotoğrafı ön değerlendirmeyi kolaylaştırır." },
+    { q: "Saatlik asansör kiralama seçeneği var mı?", a: "İşin kapsamını ve tahmini süreyi iletip saatlik veya farklı kullanım seçeneklerinin uygunluğunu sorun." },
+  ] : service.slug === "evden-eve-nakliyat" ? [
+    { q: `${district.name} evden eve nakliyat fiyatı neye göre belirlenir?`, a: "Eşya miktarı, iki adresin mesafesi, katlar, erişim koşulları, paketleme ve montaj ihtiyaçları birlikte değerlendirilir." },
+    { q: "Teklif almak için hangi bilgileri paylaşmalıyım?", a: "Alınacak ve bırakılacak adresleri, katları, eşya listesini veya fotoğraflarını ve taşınma tarihini paylaşın." },
+    { q: "Ev taşımada dış cephe asansörü kullanılabilir mi?", a: "Cephe erişimi, aracın duracağı alan ve çevredeki engeller uygunsa değerlendirilebilir. Uygunluk adres bazında teyit edilir." },
+  ] : service.slug === "evden-eve-asansorlu-nakliyat" ? [
+    { q: "Asansörlü nakliyat her binada yapılabilir mi?", a: "Hayır. Binanın cephesi, aracın kurulum alanı, balkon veya pencere erişimi ve çevredeki engeller önceden değerlendirilir." },
+    { q: "Fiyat teklifi için ne göndermeliyim?", a: "Mahalle veya adres, kat, taşınacak yükün türü ve miktarı, tarih ve cephe/sokak fotoğrafı paylaşın." },
+    { q: "Asansörlü nakliyat komple ev taşıma mıdır?", a: "Her zaman değil. Mobil asansör kullanımı ayrı bir hizmet olabilir; araç ve taşıma personeli ihtiyacınızı teklif talebinde belirtin." },
+  ] : service.slug === "saatlik-asansor-kiralama" ? [
+    { q: "Saatlik kiralama süresi ve ücreti nasıl belirlenir?", a: "Tahmini çalışma süresi ve işin kapsamı paylaşılınca fiyat ve minimum süre bilgisi verilir." },
+    { q: "Saatlik asansör her adreste kurulabilir mi?", a: "Hayır. Aracın duracağı alan, cephe erişimi ve çevredeki engeller kontrol edilir." },
+    { q: "Teklif için hangi bilgileri paylaşmalıyım?", a: "Konum, kat, yük türü ve miktarı, tahmini süre, tarih ve varsa cephe fotoğrafını iletin." },
+  ] : [
+    { q: "Mobil asansör her binaya kurulabilir mi?", a: "Hayır. Binanın cephesine erişim, aracın durabileceği alan ve çevredeki engeller kontrol edilmelidir." },
+    { q: "Kiralık asansör fiyatı için hangi bilgiler gerekli?", a: "Adres veya mahalle, kat, yükün türü ve miktarı, tahmini kullanım süresi ve planlanan tarih fiyat değerlendirmesine yardımcı olur." },
+    { q: "Teklif almak için cephe fotoğrafı gönderebilir miyim?", a: "Evet. Sokak ve bina cephesinin güncel fotoğrafı kurulum uygunluğunu önceden değerlendirmeye yardımcı olur." },
+  ];
 
   // Kardeş kuruluş bursavipevdeneve.com dinamik sayfa bazlı backlink eşlemesi
   const vipDistricts: Record<string, string> = {
@@ -128,11 +179,11 @@ export default function ServicePageClient() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.h1 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="text-4xl sm:text-5xl md:text-6xl font-display font-extrabold text-white leading-tight mb-4">
             {district.name} <span className="text-primary">{service.slug === 'kiralik-asansor' ? 'Kiralık Asansör' : serviceName}</span>
-            <span className="block text-2xl sm:text-3xl font-semibold text-slate-300 mt-2 leading-snug">{neighborhoodStr} ve Tüm Mahalleler</span>
+            <span className="block text-2xl sm:text-3xl font-semibold text-slate-300 mt-2 leading-snug">{neighborhoodStr} ve çevresi</span>
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-xl text-slate-200 leading-relaxed max-w-2xl mb-8">
             {service.slug === 'kiralik-asansor' 
-              ? `${district.name} genelinde dar sokaklara uygun mobil dış cephe asansörlerimizle 15. kata kadar güvenli eşya, mobilya ve malzeme taşıma hizmeti.` 
+              ? `${district.name} için mobil dış cephe asansörü kiralama. Kurulum uygunluğu; adres, bina cephesi, kat ve taşınacak yüke göre değerlendirilir.`
               : serviceShortDesc}
           </motion.p>
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="flex flex-col sm:flex-row gap-4 max-w-lg">
@@ -171,7 +222,7 @@ export default function ServicePageClient() {
           </p>
           <div className="hidden md:block h-6 w-px bg-gray-300 dark:bg-white/10" />
           <p className="text-base font-semibold text-primary">
-            Hemen Ara, 5 Dakikada Fiyat Al!
+            {hasDistrictSearchContent ? "Uygunluk ve fiyat bilgisi için arayın" : "Hemen Ara, 5 Dakikada Fiyat Al!"}
           </p>
         </div>
       </div>
@@ -188,8 +239,21 @@ export default function ServicePageClient() {
               <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
             </div>
 
+            {hasDistrictSearchContent && (
+              <nav aria-label={`${district.name} hizmet bağlantıları`} className="mb-12 rounded-2xl border border-gray-200 dark:border-white/10 p-5">
+                <h2 className="text-lg font-bold mb-3">{district.name} için hizmet seçenekleri</h2>
+                <ul className="flex flex-wrap gap-x-5 gap-y-2">
+                  {service.slug !== "evden-eve-nakliyat" && <li><Link className="text-primary underline underline-offset-4" href={`/${district.slug}-evden-eve-nakliyat`}>{district.name} evden eve nakliyat</Link></li>}
+                  {service.slug !== "evden-eve-asansorlu-nakliyat" && <li><Link className="text-primary underline underline-offset-4" href={`/${district.slug}-evden-eve-asansorlu-nakliyat`}>{district.name} asansörlü nakliyat</Link></li>}
+                  {service.slug !== "saatlik-asansor-kiralama" && <li><Link className="text-primary underline underline-offset-4" href={`/${district.slug}-saatlik-asansor-kiralama`}>{district.name} saatlik asansör kiralama</Link></li>}
+                  {service.slug !== "kiralik-asansor" && <li><Link className="text-primary underline underline-offset-4" href={`/${district.slug}-kiralik-asansor`}>{district.name} kiralık asansör</Link></li>}
+                  {service.slug !== "kiralik-asansor-fiyatlari" && <li><Link className="text-primary underline underline-offset-4" href={`/${district.slug}-kiralik-asansor-fiyatlari`}>{district.name} kiralık asansör fiyatları</Link></li>}
+                </ul>
+              </nav>
+            )}
+
             {/* Dynamic Local Content */}
-            {district.localNote && (
+            {service.slug === "kiralik-asansor" && district.localNote && (
               <div className="bg-[#eff6ff] dark:bg-[#1e3a5f]/40 border border-[#bfdbfe] dark:border-[#1e3a5f] rounded-2xl p-6 mb-12 flex flex-col sm:flex-row gap-5 items-start">
                 <div className="h-12 w-12 shrink-0 bg-[#dbeafe] dark:bg-[#1e3a5f] rounded-full flex items-center justify-center text-[#2563eb] dark:text-[#60a5fa]">
                   <MapPin className="h-6 w-6" />
@@ -202,7 +266,7 @@ export default function ServicePageClient() {
             )}
 
             {/* District Specific Context (SEO) */}
-            {district.seoParagraph && (
+            {service.slug === "kiralik-asansor" && district.seoParagraph && (
               <div className="mb-12 p-6 md:p-8 bg-[#fff7ed] dark:bg-[#1e293b] border-l-4 border-primary rounded-r-2xl shadow-sm">
                 <h3 className="text-xl md:text-2xl font-display font-bold text-[#0f172a] dark:text-white mb-4 flex items-center gap-2">
                   <span className="text-primary">{district.name}</span> <span className="text-[#0f172a] dark:text-white">{t('service_page.special_solutions', 'Bölgesine Özel Çözümler')}</span>
@@ -277,7 +341,9 @@ export default function ServicePageClient() {
                 {district.name} Asansör Kiralama ve Nakliyat Mahallelerimiz
               </h2>
               <p className="text-[#334155] dark:text-slate-300 leading-relaxed mb-5">
-                Bursa {district.name} genelinde ve özellikle aşağıdaki mahallelerde 15. kata kadar ulaşabilen mobil dış cephe asansörlerimizle aynı gün içinde hızlı ve güvenli hizmet sağlıyoruz:
+                {hasDistrictSearchContent
+                  ? `${district.name} için hizmet talebi bu mahallelerden alınabilir. Asansörün adrese kurulup kurulamayacağı; cepheye erişim, aracın durabileceği alan, kat ve yük bilgisine göre teyit edilir.`
+                  : `${district.name} ve çevresindeki adresler için kiralama talebi oluşturabilirsiniz. Kurulum uygunluğu adres ve bina koşulları incelendikten sonra netleştirilir.`}
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2.5">
                 {district.neighborhoods.map((n) => (
@@ -288,7 +354,7 @@ export default function ServicePageClient() {
                 ))}
               </div>
               <p className="text-[#334155] dark:text-slate-300 leading-relaxed mt-5 italic text-sm border-t border-gray-200 dark:border-white/10 pt-4">
-                * {district.name} bölgesindeki sitelerin, dar sokakların ve rezidansların mimari yapısına uygun kompakt mobil asansörlerimiz ve operatörlerimizle 7/24 hizmetinizdeyiz.
+                Teklif için mahalle veya konum, kat sayısı, taşınacak eşyanın türü ve planlanan tarih bilgilerini paylaşın. Cephe ya da sokak fotoğrafı ön değerlendirmeye yardımcı olur.
               </p>
             </section>
 
@@ -322,12 +388,15 @@ export default function ServicePageClient() {
             <section className="mb-14">
               <h2 className="text-2xl font-display font-bold text-[#0f172a] dark:text-white mb-5 pb-3 border-b-2 border-gray-200 dark:border-white/10">{t('service_page.service_rules', 'Hizmet Kurallarımız')}</h2>
               <ul className="space-y-4">
-                  {[
-                    { title: t('features.f1_title', "15. Kata Kadar"), desc: t('features.f1_desc', "Yüksek erişimli asansörlerimiz maksimum 15. kata kadar güvenli ulaşım sağlar.") },
-                    { title: "Uzman Operatör", desc: "Tüm kurulumlar sertifikalı ve tecrübeli operatörlerimiz eşliğinde gerçekleştirilir." },
-                    { title: "Dar Sokak Çözümü", desc: "Dar sokaklu bölgeler için manevra kabiliyeti yüksek kompakt araçlarımız mevcuttur." },
-                    { title: "7/24 Kesintisiz Hizmet", desc: "Mesai saati gözetmeksizin Bursa'nın her noktasına 7/24 hizmet veriyoruz." },
-                  ].map(r => (
+                  {(hasDistrictSearchContent ? [
+                    { title: "Adres ve kurulum uygunluğu", desc: "Bina cephesi, aracın duracağı alan ve çevredeki engeller önceden değerlendirilir." },
+                    { title: "Kat ve yük bilgisi", desc: "Kat, eşyanın türü ve yaklaşık ölçüleri uygun ekipman ve teklif değerlendirmesine yardımcı olur." },
+                    { title: "Randevu planı", desc: "Talep edilen tarih ve tahmini çalışma süresini paylaşarak müsaitlik bilgisi alın." },
+                  ] : [
+                    { title: t('features.f1_title', "Asansör uygunluğu"), desc: t('features.f1_desc', "Kurulum imkânı adres, cephe ve çalışma alanı incelendikten sonra teyit edilir.") },
+                    { title: "Operatörlü kullanım", desc: "Kiralama ve operatör kapsamını teklif sırasında netleştirin." },
+                    { title: "Kurulum alanı", desc: "Sokak erişimi, araç konumu ve çevredeki engeller kurulum kararını etkiler." },
+                  ]).map(r => (
                     <li key={r.title} className="flex items-start gap-4 p-5 bg-[#f8fafc] dark:bg-[#1e293b] border-2 border-[#cbd5e1] dark:border-[#334155] rounded-2xl">
                       <CheckCircle2 className="w-7 h-7 text-primary shrink-0 mt-0.5" />
                       <div>
@@ -343,9 +412,9 @@ export default function ServicePageClient() {
             <section className="mb-14">
               <h2 className="text-2xl font-display font-bold text-[#0f172a] dark:text-white mb-5 pb-3 border-b-2 border-[#e2e8f0] dark:border-white/10">{t('common.faq', 'Sıkça Sorulan Sorular')}</h2>
               <div className="space-y-4">
-                {service.faqs.map((faq, idx) => {
-                  const q = t(`services.${service.slug}.faqs.${idx}.q`, faq.q);
-                  const a = t(`services.${service.slug}.faqs.${idx}.a`, faq.a);
+                {targetedFaqs.map((faq, idx) => {
+                  const q = hasDistrictSearchContent ? faq.q : t(`services.${service.slug}.faqs.${idx}.q`, faq.q);
+                  const a = hasDistrictSearchContent ? faq.a : t(`services.${service.slug}.faqs.${idx}.a`, faq.a);
                   return (
                     <div key={idx} className="bg-[#f8fafc] dark:bg-[#1e293b] border-2 border-[#cbd5e1] dark:border-[#334155] rounded-2xl p-6">
                       <h3 className="text-base font-bold text-[#0f172a] dark:text-white mb-2">{q}</h3>

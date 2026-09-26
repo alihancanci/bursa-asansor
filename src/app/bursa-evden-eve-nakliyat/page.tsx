@@ -66,71 +66,20 @@ const jsonLd = {
       "@id": "https://bursakiralikasansor.com/bursa-evden-eve-nakliyat#service",
       "name": "Bursa Evden Eve Nakliyat",
       "description": "Bursa genelinde asansörlü, marangozlu, hijyenik ambalajlı ve VIP güvenceli evden eve nakliyat hizmetleri.",
-      "provider": {
-        "@type": "MovingCompany",
-        "@id": "https://bursakiralikasansor.com/#organization",
-        "name": "Bursa Kiralık Asansör CNC Evden Eve Nakliyat",
-        "telephone": "+905056080700",
-        "url": "https://bursakiralikasansor.com",
-        "sameAs": [
-          "https://bursavipevdeneve.com"
-        ]
-      },
+      "provider": { "@id": "https://bursakiralikasansor.com/#organization" },
       "areaServed": {
         "@type": "City",
         "name": "Bursa",
-        "containedInPlace": {
-          "@type": "AdministrativeArea",
-          "name": "Bursa",
-          "addressCountry": "TR"
-        }
+        "addressCountry": "TR"
       }
     },
     {
-      "@type": "MovingCompany",
+      "@type": "Organization",
       "@id": "https://bursavipevdeneve.com/#organization",
       "name": "Bursa VIP Evden Eve Nakliyat",
       "url": "https://bursavipevdeneve.com",
       "telephone": "+905056080700",
       "description": "Bursa VIP Evden Eve Nakliyat - Lüks ambalajlama, marangozlu demontaj-montaj ve asansörlü VIP ev taşıma hizmetleri."
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://bursakiralikasansor.com/bursa-evden-eve-nakliyat#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Bursa'da evden eve nakliyat nasıl planlanır?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Taşınma öncesi uzman ekspertiz ekibimiz adresinize gelerek ya da görsel kayıt ile dairenizin kat durumunu, asansör kurulum açısını ve eşya hacmini inceler. Sabit fiyatlı ve detaylı taşıma planlaması hazırlanarak gün ve saat belirlenir."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Bursa VIP Evden Eve Nakliyat ile farkınız nedir?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Bursa VIP Evden Eve Nakliyat (bursavipevdeneve.com) resmi kardeş kuruluşumuzdur. Ortak çağrı merkezimiz (0505 608 07 00) ve kendi özmal mobil asansör filomuz ile koordineli çalışarak, Bursa'nın en seçkin ve sorunsuz VIP ev taşıma deneyimini sunmaktayız."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Eşyaların güvenliği ve hasarsız teslimat nasıl sağlanır?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Bina içi dar merdivenler yerine 15. kata kadar ulaşabilen mobil dış cephe asansörlerimiz kullanılır. Tüm mobilyalar baloncuklu havalı naylon ve kraft kağıtlarla ambalajlanır. Hasarsız teslimat ve VIP güvence protokolü uygulanır."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Mobilya ve beyaz eşyaların montajı yapılıyor mu?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Evet. Alanında uzman marangozlarımız yatak odası gardıropları, yemek masaları ve ünitelerin demontajını ve yeni evinizde kurulumunu eksiksiz tamamlar. Beyaz eşyalarınızın su ve elektrik bağlantı hazırlıkları yapılır."
-          }
-        }
-      ]
     }
   ]
 };

@@ -45,6 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "osmangazi-kiralik-asansor",
     "yildirim-kiralik-asansor",
     "mudanya-kiralik-asansor",
+    "gursu-kiralik-asansor",
   ];
 
   const SECONDARY_PRIORITY_SLUGS = [
