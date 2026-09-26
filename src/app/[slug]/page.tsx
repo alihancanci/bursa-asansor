@@ -174,7 +174,7 @@ export default async function ServicePage({ params }: Props) {
       {
         "@type": "Service",
         "name": `${district.name} ${service.name}`,
-        "description": description,
+        "description": `${district.name} ${service.name} hizmetleri`,
         "provider": { "@id": `https://bursakiralikasansor.com/#organization` },
         "serviceArea": {
           "@type": district.slug === "bursa-merkez" ? "City" : "AdministrativeArea",
