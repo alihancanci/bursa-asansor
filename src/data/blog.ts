@@ -29,12 +29,12 @@ export const BLOG_POSTS: BlogPost[] = [
     keywords: ["evden eve nakliyat", "nakliyat fiyatları 2026", "asansörlü nakliyat", "taşınma rehberi", "bursa evden eve nakliyat", "paketleme", "güvenilir taşıma"],
     content: `
       <h2>2026 Yılında Ev Taşımanın Zorlukları ve Çözümleri</h2>
-      <p>Yeni bir eve taşınmak hayatımızdaki en stresli süreçlerden biridir. Eşyaların toplanması, paketlenmesi, doğru nakil aracının bulunması ve yerleştirilmesi ciddi bir organizasyon gerektirir. 2026 yılı itibarıyla, şehirleşmenin hızlanması ve çok katlı binaların artması, geleneksel <strong>evden eve nakliyat</strong> yöntemlerini yetersiz kılmaktadır.</p>
+      <p>Yeni bir eve taşınmak hayatımızdaki en stresli süreçlerden biridir. Eşyaların toplanması, paketlenmesi, doğru nakil aracının bulunması ve yerleştirilmesi ciddi bir organizasyon gerektirir. 2026 yılı itibarıyla, şehirleşmenin hızlanması ve çok katlı binaların artması, geleneksel <strong>evden eve nakliyat</strong> yöntemlerini yetersiz kılmaktadır. Bu kapsamda <a href="/osmangazi-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Osmangazi evden eve nakliyat</a> hizmetlerimizden de faydalanabilirsiniz.</p>
       
       <p>Peki taşınırken stresi minimuma indirmek ve eşyalarınızın zarar görmesini engellemek için ne yapmalısınız? Cevap basit: Profesyonel destek almak. Bursa gibi metropollerde özellikle <a href="/nilufer-kiralik-asansor" class="text-primary font-semibold hover:underline">Nilüfer Kiralık Asansör</a>, <a href="/osmangazi-kiralik-asansor" class="text-primary font-semibold hover:underline">Osmangazi Kiralık Asansör</a> ve <a href="/mudanya-kiralik-asansor" class="text-primary font-semibold hover:underline">Mudanya Kiralık Asansör</a> operasyonlarımızda yüksek katlı konutlaşma ve dar sokaklar nedeniyle <strong>asansörlü taşımacılık</strong> hizmeti bir lüks olmaktan çıkıp vazgeçilmez bir ihtiyaç haline gelmiştir.</p>
 
       <h3>Evden Eve Nakliyat Fiyatları (2026) Neye Göre Belirlenir?</h3>
-      <p>Taşınma planı yapanların aklındaki ilk soru genellikle "<em>Evden eve nakliyat fiyatları ne kadar?</em>" olur. 2026 yılında maliyetleri etkileyen temel unsurlar (LSI: maliyet analizi, fiyat hesaplama) şunlardır:</p>
+      <p>Taşınma planı yapanların aklındaki ilk soru genellikle "<em>Evden eve nakliyat fiyatları ne kadar?</em>" olur. 2026 yılında maliyetleri etkileyen temel unsurlar (LSI: maliyet analizi, fiyat hesaplama) şunlardır: Bu kapsamda <a href="/nilufer-kiralik-asansor" class="text-primary font-semibold hover:underline">Nilüfer kiralık asansör</a> hizmetlerimizden de faydalanabilirsiniz.</p>
       <ul class="list-disc pl-5 mt-2 mb-4 space-y-2">
         <li><strong>Eşya Hacmi (Oda Sayısı):</strong> 1+1, 2+1 veya 3+1 evlerin eşya yoğunluğu fiyatın ana belirleyicisidir. Taşıma kapasitesine uygun araç seçimi (kamponent, kapalı kasa nakliye aracı) doğrudan maliyete yansır.</li>
         <li><strong>Kat Yüksekliği ve Asansör İhtiyacı:</strong> Geleneksel bina merdivenlerinin kullanılması hem riski artırır hem de taşıma süresini uzatır. Dış cepheden kurulan mobil asansörler (örneğin <a href="/yildirim-kiralik-asansor" class="text-primary font-semibold hover:underline">Yıldırım Kiralık Asansör</a> hizmetimizde olduğu gibi) başlangıçta ekstra maliyet gibi görünse de işçi gücünden tasarruf sağladığı için nihai fiyatı dengeler.</li>
@@ -70,9 +70,9 @@ export const BLOG_POSTS: BlogPost[] = [
     keywords: ["asansörlü taşımacılık", "kiralık asansör fiyatları", "mobil asansör kiralama", "dış cephe asansörü", "bina merdiven koruması", "eşya taşıma güvenliği"],
     content: `
       <h2>Taşımacılık Sektöründe Evrim: Dış Cephe Asansörleri</h2>
-      <p>Şehir hayatında giderek yükselen binalar, daralan apartman boşlukları ve küçük bina içi asansörler... Eşya ve malzeme taşıma işlemini bir kâbus haline dönüştüren bu yapısal engeller, lojistik sektöründe yepyeni bir standardı doğurdu: <strong>Asansörlü Taşımacılık</strong>.</p>
+      <p>Şehir hayatında giderek yükselen binalar, daralan apartman boşlukları ve küçük bina içi asansörler... Eşya ve malzeme taşıma işlemini bir kâbus haline dönüştüren bu yapısal engeller, lojistik sektöründe yepyeni bir standardı doğurdu: <strong>Asansörlü Taşımacılık</strong>. Bu kapsamda <a href="/osmangazi-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Osmangazi evden eve nakliyat</a> hizmetlerimizden de faydalanabilirsiniz.</p>
       
-      <p>Özellikle inşaat (LSI: tuğla, çimento, alçıpan transferi) ve yapı sektöründe, ya da ev taşıma süreçlerinde bina içini kullanmadan, ürünleri doğrudan açık bir pencere veya balkondan yukarı taşımanın benzersiz avantajları vardır.</p>
+      <p>Özellikle inşaat (LSI: tuğla, çimento, alçıpan transferi) ve yapı sektöründe, ya da ev taşıma süreçlerinde bina içini kullanmadan, ürünleri doğrudan açık bir pencere veya balkondan yukarı taşımanın benzersiz avantajları vardır. Bu kapsamda <a href="/gursu-kiralik-asansor" class="text-primary font-semibold hover:underline">Gürsu asansör kiralama</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <h3>Maliyet Değil, Kazanç: Kiralık Asansör Fiyatları Analizi</h3>
       <p>Pek çok müşteri haklı olarak "<em>Asansör kiralama işlemi bütçemi yorar mı?</em>" endişesini taşır. Ancak matematik aksini söyler. Geleneksel olarak, 12. kattaki büyük bir <a href="/nilufer-villa-tasimaciligi" class="text-primary font-semibold hover:underline">villa eşyasını</a> veya ofis malzemesini beden gücüyle indirmek 5 kişilik bir ekibin en az 6-8 saatini alır. İş gücü uzadıkça günlük yevmiye maliyeti katlanır.</p>
@@ -105,7 +105,7 @@ export const BLOG_POSTS: BlogPost[] = [
     keywords: ["taşınma işlemleri", "abonelik taşıma", "eşya paketleme listesi", "stres olmadan taşınmak", "ofis taşıma ipuçları", "yeni eve taşınırken"],
     content: `
       <h2>Taşınma Sürecinde Planlamanın Gücü</h2>
-      <p>Yeni bir eve veya ofise geçmek büyük bir heyecandır, ancak "eşyaları koliye doldurup yola çıkmak" basit bir eylemden farklı olarak, gerisinde detaylı bir idari ve organizasyon yükü barındırır. Son güne bırakılan işler kafa karışıklığına ve eşyaların kaybedilmesine neden olur. Bu nedenle, aşağıda adım adım hazırladığımız "Taşınma Stratejisi" ile yükünüzü hafifletebilirsiniz.</p>
+      <p>Yeni bir eve veya ofise geçmek büyük bir heyecandır, ancak "eşyaları koliye doldurup yola çıkmak" basit bir eylemden farklı olarak, gerisinde detaylı bir idari ve organizasyon yükü barındırır. Son güne bırakılan işler kafa karışıklığına ve eşyaların kaybedilmesine neden olur. Bu nedenle, aşağıda adım adım hazırladığımız "Taşınma Stratejisi" ile yükünüzü hafifletebilirsiniz. Bu kapsamda <a href="/mudanya-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Mudanya asansörlü nakliyat</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <h3>3-4 Hafta Öncesi: İdari İşler ve Arınma</h3>
       <ul class="list-disc pl-5 mt-4 space-y-2">
@@ -115,7 +115,7 @@ export const BLOG_POSTS: BlogPost[] = [
       </ul>
 
       <h3>1-2 Hafta Öncesi: Paketleme Start Veriyor</h3>
-      <p>Koli fırtınası burada başlıyor. Kitaplar, süs eşyaları, yazın ortasında taşınıyorsanız kışlık kabanlar gibi acil ihtiyacınız olmayan eşyaları önceden paketleyin.</p>
+      <p>Koli fırtınası burada başlıyor. Kitaplar, süs eşyaları, yazın ortasında taşınıyorsanız kışlık kabanlar gibi acil ihtiyacınız olmayan eşyaları önceden paketleyin. Bu kapsamda <a href="/osmangazi-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Osmangazi evden eve nakliyat</a> hizmetlerimizden de faydalanabilirsiniz.</p>
       <ul class="list-disc pl-5 mt-2 space-y-2">
         <li>Kolilerin üzerini mutlak suretle etiketleyin: (Örn: "Mutfak - Kırılacak", "Çocuk Odası - Oyuncaklar").</li>
         <li><strong>Abonelik İşlemleri:</strong> Elektrik, su, doğalgaz ve internet aboneliklerinin nakil taleplerini yapın. Günümüzde E-Devlet üzerinden (LSI: e-devlet abonelik taşıma, internet nakil işlemi) dakikalar içinde pek çok iptal başvurusunu halledebilirsiniz.</li>
@@ -149,13 +149,13 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>Yüksek katlı binalara taşınırken veya ağır inşaat malzemelerini binalara çıkarırken <strong>dış cephe asansörü</strong> kullanmak artık bir standart haline geldi. Peki, "<strong>Asansör kiralama nasıl yapılır?</strong>" ve bu sürecin arkasındaki güvenlik mekanizmaları nelerdir? İster bireysel kullanıcı olun, ister bir inşaat firması yöneticisi; profesyonel bir <a href="/osmangazi-kiralik-asansor" class="text-primary font-semibold hover:underline">kiralık mobil asansör</a> hizmetinin adımlarını bilmek zaman ve para kayıplarını önler.</p>
       
       <h3>1. Adım: Keşif ve Rezervasyon</h3>
-      <p>Her şey bir WhatsApp mesajı veya telefon aramasıyla başlar. Binanızın konumu (Örneğin; Nilüfer, Özlüce mevkii), kaçıncı katta işlem yapılacağı ve taşınacak malzemenin (beyaz eşya, moloz, tuğla vb.) cinsi bildirilir. Alanında uzman ekibimiz Google Haritalar üzerinden veya fiili olarak sokağınızın genişliğini, ağaç engelini ve elektrik telleri gibi risk faktörlerini analiz eder. Uygunluk onayı verildikten sonra saat ve tarih netleştirilir.</p>
+      <p>Her şey bir WhatsApp mesajı veya telefon aramasıyla başlar. Binanızın konumu (Örneğin; Nilüfer, Özlüce mevkii), kaçıncı katta işlem yapılacağı ve taşınacak malzemenin (beyaz eşya, moloz, tuğla vb.) cinsi bildirilir. Alanında uzman ekibimiz Google Haritalar üzerinden veya fiili olarak sokağınızın genişliğini, ağaç engelini ve elektrik telleri gibi risk faktörlerini analiz eder. Uygunluk onayı verildikten sonra saat ve tarih netleştirilir. Bu kapsamda <a href="/osmangazi-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Osmangazi evden eve nakliyat</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <h3>2. Adım: İzinler ve Çevre Güvenliği</h3>
-      <p>Özellikle ana caddelerde veya dar sokaklarda kurulum yapılacaksa, trafiğin güvenliğini sağlamak esastır. Gerekirse duba ve emniyet şeritleriyle çalışma alanı izole edilir. Yüksek ağırlık merkezine sahip olan <strong>teleskopik asansör</strong> kasası, şasedeki dört hidrolik "denge ayağı" sayesinde milimetrik olarak sabitlenir. Bu ayaklardan biri bile tam basmazsa sistem güvenlik sensörleri sebebiyle çalışmaya başlamaz.</p>
+      <p>Özellikle ana caddelerde veya dar sokaklarda kurulum yapılacaksa, trafiğin güvenliğini sağlamak esastır. Gerekirse duba ve emniyet şeritleriyle çalışma alanı izole edilir. Yüksek ağırlık merkezine sahip olan <strong>teleskopik asansör</strong> kasası, şasedeki dört hidrolik "denge ayağı" sayesinde milimetrik olarak sabitlenir. Bu ayaklardan biri bile tam basmazsa sistem güvenlik sensörleri sebebiyle çalışmaya başlamaz. Bu kapsamda <a href="/mudanya-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Mudanya asansörlü nakliyat</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <h3>3. Adım: Kurulum ve Operatör Belgesi Zorunluluğu</h3>
-      <p>Önemli bir teknik detay: Piyasada ucuza iş yapan yetkisiz kişilerin iddialarının aksine, bu makineleri herkes kullanamaz. Sektör standardı olan iş güvenliği kanunları gereğince <strong>operatör belgesi</strong> (kaldırma ve yükleme emniyeti sertifikasyonu) zorunludur. İşlem esnasında operatör başından bir saniye bile ayrılmaz; rüzgar şiddetini, sepetin ağırlık dağılımını (load distribution) ve halat gerginliğini sürekli monitöründen takip eder.</p>
+      <p>Önemli bir teknik detay: Piyasada ucuza iş yapan yetkisiz kişilerin iddialarının aksine, bu makineleri herkes kullanamaz. Sektör standardı olan iş güvenliği kanunları gereğince <strong>operatör belgesi</strong> (kaldırma ve yükleme emniyeti sertifikasyonu) zorunludur. İşlem esnasında operatör başından bir saniye bile ayrılmaz; rüzgar şiddetini, sepetin ağırlık dağılımını (load distribution) ve halat gerginliğini sürekli monitöründen takip eder. Bu kapsamda <a href="/bursa-merkez-kiralik-asansor" class="text-primary font-semibold hover:underline">Bursa asansör kiralama</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <h2>Mobil Kurulum ve Taşıma Aşaması</h2>
       <p>Dış cephe sisteminin balkona veya sökülmüş bir pencere kasasına sıfır açıyla yanaştırılması özel bir ustalık ister. Asansörün taşıyıcı kızakları binaya <em>değmez</em>, aralarında birkaç santimetrelik kritik bir boşluk (emniyet payı) bırakılarak binanın boyasına, camlarına ve mantolamasına (yalıtımına) kesinlikle zarar verilmez.</p>
@@ -185,12 +185,12 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>Büyük metropollerde yatay mimariden dikey mimariye geçilmesi, <a href="/nilufer-yuksek-kat-esya-tasima-asansoru" class="text-primary font-semibold hover:underline">yüksek kat eşya taşıma asansörü</a> ihtiyacını patlatmıştır. Müşterilerimizin bize en sık yönelttiği soruların başında, "<strong>Acaba sizin asansör kaçıncı kata kadar çıkar?</strong>" sorusu gelmektedir. Kulaktan dolma bilgiler yerine meselenin tamamen teknik standartlarına inelim.</p>
 
       <h3>Kapasite ve Yükseklik Limitleri (15. Kat Gerçeği)</h3>
-      <p>Türkiye'de ve Avrupa'da standart dış cephe nakliyat asansörleri ortalama 15. ile 15. kata kadar hizmet verebilecek şekilde tasarlanmıştır. Ortalama 45-50 metre bom uzunluğuna (açılabilir merdiven mekanizması) sahip bu makineler, şehirlerarası lojistik ve inşaat uygulamalarında altın standardı belirler.</p>
+      <p>Türkiye'de ve Avrupa'da standart dış cephe nakliyat asansörleri ortalama 15. ile 15. kata kadar hizmet verebilecek şekilde tasarlanmıştır. Ortalama 45-50 metre bom uzunluğuna (açılabilir merdiven mekanizması) sahip bu makineler, şehirlerarası lojistik ve inşaat uygulamalarında altın standardı belirler. Bu kapsamda <a href="/gursu-kiralik-asansor" class="text-primary font-semibold hover:underline">Gürsu asansör kiralama</a> hizmetlerimizden de faydalanabilirsiniz.</p>
       
-      <p>Daha özel makineler (Örn: XXL boyutlu Alman üretimi asansörler) 25. kata kadar (yaklaşık 70 metre) erişebilse de, bu durum ciddi mühendislik alan gereksinimleri doğurur. Biz, Bursa genelinde iş ve müşteri güvenliğini %100 oranında garanti edebildiğimiz, fizik ve aerodinamik sınırları zorlamayan <strong>15. kata kadar çıkabilen</strong> son teknoloji cihazlarla hizmet veriyoruz.</p>
+      <p>Daha özel makineler (Örn: XXL boyutlu Alman üretimi asansörler) 25. kata kadar (yaklaşık 70 metre) erişebilse de, bu durum ciddi mühendislik alan gereksinimleri doğurur. Biz, Bursa genelinde iş ve müşteri güvenliğini %100 oranında garanti edebildiğimiz, fizik ve aerodinamik sınırları zorlamayan <strong>15. kata kadar çıkabilen</strong> son teknoloji cihazlarla hizmet veriyoruz. Bu kapsamda <a href="/gursu-kiralik-asansor" class="text-primary font-semibold hover:underline">Gürsu asansör kiralama</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <h3>Rüzgâr Hızı ve Fizik Kuralları (Emniyet Limitleri)</h3>
-      <p>Yerden 45 metre yüksekte hava akımları, zemine kıyasla çok daha serttir. <strong>Dış cephe asansörü</strong> platformu açıldığında bir yelken görevi görür. İş güvenliği kurallarına göre:</p>
+      <p>Yerden 45 metre yüksekte hava akımları, zemine kıyasla çok daha serttir. <strong>Dış cephe asansörü</strong> platformu açıldığında bir yelken görevi görür. İş güvenliği kurallarına göre: Bu kapsamda <a href="/nilufer-kiralik-asansor" class="text-primary font-semibold hover:underline">Nilüfer kiralık asansör</a> hizmetlerimizden de faydalanabilirsiniz.</p>
       <ul class="list-disc pl-5 mt-4 space-y-2">
         <li><strong>Güvenli Rüzgar Limitleri:</strong> Sistem, saniyede 10-12 metreden esen rüzgarlara kadar stabilitesini korur. Bu limitin üzerinde makine kullanılmaz, fırtınanın dinmesi beklenir.</li>
         <li><strong>Ağırlık Dağılımı:</strong> Bom ne kadar yükseğe açılırsa, sepetin taşıyabileceği maksimum yük o kadar düşer (Momentum prensibi). 3. katta 400 kg taşıyan bir sepet, 15. kata ulaştığında makine sağlığı için maksimum 200-250 kg yük ile gönderilmelidir. <a href="/osmangazi-kiralik-asansor" class="text-primary font-semibold hover:underline">Operatör belgesi</a> sahibi uzmanlarımız bu hesaplamaları milimetrik yapar.</li>
@@ -219,7 +219,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     content: `
       <h2>Yüksek Kat Maliyet Savaşları: Asansör mü, Vinç mi?</h2>
-      <p>Özellikle inşaat projelerinde, restorasyonlarda ve hacimli ofis taşımalarında projeyi yöneten mühendislerin ve yöneticilerin aklında tek soru vardır: <strong>Malzemeyi vinçle mi basmalıyım, yoksa dış cephe asansörü mü kiralamalıyım?</strong></p>
+      <p>Özellikle inşaat projelerinde, restorasyonlarda ve hacimli ofis taşımalarında projeyi yöneten mühendislerin ve yöneticilerin aklında tek soru vardır: <strong>Malzemeyi vinçle mi basmalıyım, yoksa dış cephe asansörü mü kiralamalıyım?</strong> Bu kapsamda <a href="/gursu-kiralik-asansor" class="text-primary font-semibold hover:underline">Gürsu asansör kiralama</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <p>Türkiye pazarında (<a href="/osmangazi-insaat-cephe-asansoru" class="text-primary font-semibold hover:underline">İnşaat cephe asansörü ihtiyaçlarında</a>) geleneksel alışkanlıklar vinçlerden yana olsa da, teknoloji odaklı yeni nesil müteahhitler ibreyi <strong>teleskopik asansör</strong> kullanımına çevirmiştir. Aralarındaki farkı detaylıca masaya yatıralım.</p>
 
@@ -268,7 +268,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: "7",
     slug: "tasinirken-asansor-zorunlu-mu",
-    title: "Asansörde Eşya Taşımak Yasak mı? (Apartman ve Site Kuralları)",
+    title: "Asansörde Eşya Taşımak Yasak Mı? (Site Kuralları)",
     excerpt: "Yeni bir eve taşınırken site yönetimlerinin bina içi asansör yasakları. Apartman merdivenlerinde taşıma stresi ve dış cephe kullanımının hukuki boyutu.",
     date: "30 Mart 2026",
     readTime: "6 dk okuma",
@@ -286,13 +286,13 @@ export const BLOG_POSTS: BlogPost[] = [
       
       <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-xl my-8">
         <h3 class="text-xl font-bold mb-2 text-red-700">Kısa Yanıt: Asansörde Eşya Taşımak Yasak mı?</h3>
-        <p class="mb-0 text-red-900"><strong>Evet, çoğu durumda yasaktır.</strong> Kat Mülkiyeti Kanunu ve yeni nesil site/apartman yönetim planlarına göre; yolcu (insan) taşıma amacıyla tasarlanmış bina içi asansörlerle ağır mobilya, beyaz eşya ve inşaat malzemesi (moloz, fayans vb.) taşımak kesinlikle yasaktır. Kurallara uyulmaması durumunda binanın asansör motoruna verilecek zarar, taşıyan kişiye yansıtılır ve para cezası uygulanır. Bu yüzden yüksek katlı taşınmalarda <a href="/bursa-kiralik-asansor" class="font-bold underline">dış cephe asansörü kiralamak</a> en güvenilir çözümdür.</p>
+        <p class="mb-0 text-red-900"><strong>Evet, çoğu durumda yasaktır.</strong> Kat Mülkiyeti Kanunu ve yeni nesil site/apartman yönetim planlarına göre; yolcu (insan) taşıma amacıyla tasarlanmış bina içi asansörlerle ağır mobilya, beyaz eşya ve inşaat malzemesi (moloz, fayans vb.) taşımak kesinlikle yasaktır. Kurallara uyulmaması durumunda binanın asansör motoruna verilecek zarar, taşıyan kişiye yansıtılır ve para cezası uygulanır. Bu yüzden yüksek katlı taşınmalarda <a href="/bursa-merkez-kiralik-asansor" class="font-bold underline">dış cephe asansörü kiralamak</a> en güvenilir çözümdür.</p>
       </div>
 
       <h2>Taşınırken Karşılaşılan Bürokrasi: Apartman Asansörüyle Eşya Taşıma</h2>
       <p>Yeni ve lüks bir daire kiraladınız. <a href="/bursa-merkez-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Evden eve nakliyat</a> firmasını tuttunuz ve eşyalar geldi. Tam o esnada apartman görevlisi veya site yöneticisi karşınızda belirir: "<em>Beyefendi/Hanımefendi, bina içi yolcu asansörümüz eşya taşımak için kullanılamaz.</em>" İşte bu an, hazırlıksız yakalandıysanız taşınmanın bir kâbusa dönüştüğü andır.</p>
 
-      <p>"<strong>Taşınırken asansör zorunlu mu?</strong>" sorusu aslında hukuki ve sosyal bir zorunluluğun kesişimidir. Yeni nesil lüks sitelerin neredeyse tamamında, yük asansörü tahsis edilmemişse, normal asansörlerle ağır mobilyaların (beyaz eşyaların) taşınması kesin bir dille yönetim planlarında yasaklanmıştır.</p>
+      <p>"<strong>Taşınırken asansör zorunlu mu?</strong>" sorusu aslında hukuki ve sosyal bir zorunluluğun kesişimidir. Yeni nesil lüks sitelerin neredeyse tamamında, yük asansörü tahsis edilmemişse, normal asansörlerle ağır mobilyaların (beyaz eşyaların) taşınması kesin bir dille yönetim planlarında yasaklanmıştır. Bu kapsamda <a href="/bursa-merkez-kiralik-asansor" class="text-primary font-semibold hover:underline">Bursa asansör kiralama</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <h3>Bina İçi Asansör Kullanmak Neden Yasaklanır?</h3>
       <ol class="list-decimal pl-5 mt-4 space-y-2">
@@ -304,7 +304,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <h2>Tek Çözüm Yolu: Dış Cephe Asansörü Kiralama</h2>
       <p>Tüm bu krizleri yaşamadan atlatmanın tek meşru ve stressiz yolu <a href="/nilufer-kiralik-asansor" class="text-primary font-semibold hover:underline">mobil asansör kiralamak</a>tır. Apartman yönetiminden izin almak için çırpınmak yerine, balkonunuza sessiz sedasız (mobil kurulum) ile uzanan sistemimiz sizi tüm kavgalardan kurtarır.</p>
       
-      <p>Maliyet olarak bakıldığında, "Taşımacılar elle merdivenden çıkarsın" diyebilirsiniz. Ancak bu sefer de 10. kattaki dairenize çıkartılan bir eşyanın çarpıp kırılması muhtemeldir. Dış cephe asansörü bu gibi kullanıcı (hamal) hatalarını engeller. Kendi yatırımınızı korumak için dış cephe sisteminin sağladığı güvenliğe sığınmak, uzun vadede daima "ucuz" bir yatırımdır.</p>
+      <p>Maliyet olarak bakıldığında, "Taşımacılar elle merdivenden çıkarsın" diyebilirsiniz. Ancak bu sefer de 10. kattaki dairenize çıkartılan bir eşyanın çarpıp kırılması muhtemeldir. Dış cephe asansörü bu gibi kullanıcı (hamal) hatalarını engeller. Kendi yatırımınızı korumak için dış cephe sisteminin sağladığı güvenliğe sığınmak, uzun vadede daima "ucuz" bir yatırımdır. Bu kapsamda <a href="/yildirim-kiralik-asansor" class="text-primary font-semibold hover:underline">Yıldırım kiralık asansör</a> hizmetlerimizden de faydalanabilirsiniz.</p>
     `
   },
   {
@@ -326,7 +326,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     content: `
       <h2>Ucuz Etin Yahnisi: Nakliyat Sektöründeki Tuzaklar</h2>
-      <p>Taşınma stresi içindeyken internete girdiğinizde onlarca nakliyat ilanı görürsünüz. "Bursa'nın en ucuz asansörü", "bedavaya taşıyoruz" gibi agresif pazarlama taktikleri aklınızı çelebilir. Ancak <strong>"Bursa'nın en ucuz ve kaliteli hizmeti"</strong> arayışı, mantıkla hareket edilmediğinde büyük felaketlerle son bulur.</p>
+      <p>Taşınma stresi içindeyken internete girdiğinizde onlarca nakliyat ilanı görürsünüz. "Bursa'nın en ucuz asansörü", "bedavaya taşıyoruz" gibi agresif pazarlama taktikleri aklınızı çelebilir. Ancak <strong>"Bursa'nın en ucuz ve kaliteli hizmeti"</strong> arayışı, mantıkla hareket edilmediğinde büyük felaketlerle son bulur. Bu kapsamda <a href="/gursu-kiralik-asansor" class="text-primary font-semibold hover:underline">Gürsu asansör kiralama</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <p><a href="/osmangazi-asansorlu-komple-ev-tasima" class="text-primary font-semibold hover:underline">Komple ev taşıma</a> işlemi, lojistik bir sanat dalıdır. Maliyeti kısmak için başvurduğunuz merdiven altı firmalar, operasyon sırasında karşınıza beklemediğiniz sinsi maliyetler çıkartır.</p>
 
@@ -367,7 +367,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     content: `
       <h2>Taşınma Stresini Sıfıra İndirmenin Sırrı: Ücretsiz Ekspertiz</h2>
-      <p>Yeni bir eve geçerken en büyük korkulardan biri, nakliye günü kapıya gelen ekibin anlaştığınız fiyattan çok daha fazlasını istemesidir. "<em>Abla eşyanız çokmuş</em>", "<em>Bu sokağa asansör kurulmazmış</em>" gibi bahanelerle mağdur olmamak için tek ve en kesin çözüm <strong>ücretsiz ekspertiz (yerinde keşif)</strong> hizmetidir.</p>
+      <p>Yeni bir eve geçerken en büyük korkulardan biri, nakliye günü kapıya gelen ekibin anlaştığınız fiyattan çok daha fazlasını istemesidir. "<em>Abla eşyanız çokmuş</em>", "<em>Bu sokağa asansör kurulmazmış</em>" gibi bahanelerle mağdur olmamak için tek ve en kesin çözüm <strong>ücretsiz ekspertiz (yerinde keşif)</strong> hizmetidir. Bu kapsamda <a href="/mudanya-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Mudanya asansörlü nakliyat</a> hizmetlerimizden de faydalanabilirsiniz.</p>
       
       <p><a href="/bursa-merkez-kiralik-asansor" class="text-primary font-semibold hover:underline">Bursa Kiralık Asansör ve Evden Eve Nakliyat</a> olarak, taşınmanın sadece eşyaların yer değiştirmesi değil, güven üzerine kurulu bir lojistik operasyon olduğuna inanıyoruz. Ekspertiz hizmetimiz sayesinde yüzü gülen mutlu ailelerin yeni evlerine stres olmadan adım atmalarını sağlıyoruz.</p>
 
@@ -380,7 +380,7 @@ export const BLOG_POSTS: BlogPost[] = [
       </ol>
 
       <h2>Neden Ücretsiz Keşif İstemelisiniz?</h2>
-      <p>Telefonda afakî fiyat veren "merdiven altı" nakliyatçılar genellikle işi alabilmek için maliyeti düşük gösterirler. Taşıma günü kapınıza geldiklerinde ise asansörün sığmadığını bahane edip süreci kilitlerler. Ücretsiz ekspertiz, sizi bu amatörlüklerden korur.</p>
+      <p>Telefonda afakî fiyat veren "merdiven altı" nakliyatçılar genellikle işi alabilmek için maliyeti düşük gösterirler. Taşıma günü kapınıza geldiklerinde ise asansörün sığmadığını bahane edip süreci kilitlerler. Ücretsiz ekspertiz, sizi bu amatörlüklerden korur. Bu kapsamda <a href="/yildirim-kiralik-asansor" class="text-primary font-semibold hover:underline">Yıldırım kiralık asansör</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <ul class="list-disc pl-5 mt-4 space-y-2">
         <li><strong>Zaman Tasarrufu:</strong> Taşınma günü asansör nereye kurulacak sokağı kim kapatacak kargaşası yaşanmaz, operasyon en hızlı şekilde başlar.</li>
@@ -405,13 +405,13 @@ export const BLOG_POSTS: BlogPost[] = [
     keywords: ["bursa evden eve nakliyat", "asansörlü evden eve", "bursa ev taşıma", "stressiz taşınma rehberi", "bursa nakliyat firmaları"],
     content: `
       <h2>Evden Eve Taşınma Sürecini Nasıl Kolaylaştırırsınız?</h2>
-      <p>Bursa gibi kalabalık, trafiği yoğun ve binaların giderek yükseldiği bir şehirde <strong>evden eve taşınma</strong> süreci pek çok aile için kabusa dönüşebiliyor. Eşyaların kırılması, zamanın uzaması veya ekstra masraflar en sık karşılaşılan sorunlar arasında. Ancak doğru bir planlama ve profesyonel destekle bu süreci keyifli bir yeni başlangıca dönüştürmek elinizde.</p>
+      <p>Bursa gibi kalabalık, trafiği yoğun ve binaların giderek yükseldiği bir şehirde <strong>evden eve taşınma</strong> süreci pek çok aile için kabusa dönüşebiliyor. Eşyaların kırılması, zamanın uzaması veya ekstra masraflar en sık karşılaşılan sorunlar arasında. Ancak doğru bir planlama ve profesyonel destekle bu süreci keyifli bir yeni başlangıca dönüştürmek elinizde. Bu kapsamda <a href="/bursa-merkez-kiralik-asansor" class="text-primary font-semibold hover:underline">Bursa asansör kiralama</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <h3>1. Taşınma Planınızı Erkenden Yapın</h3>
-      <p>Nakliye gününden en az 2 hafta önce hazırlıklara başlamalısınız. Kullanmadığınız eşyaları ayıklamak, kolileme stratejisi belirlemek ve en önemlisi doğru nakliyat firmasını seçmek için zaman kazanmış olursunuz.</p>
+      <p>Nakliye gününden en az 2 hafta önce hazırlıklara başlamalısınız. Kullanmadığınız eşyaları ayıklamak, kolileme stratejisi belirlemek ve en önemlisi doğru nakliyat firmasını seçmek için zaman kazanmış olursunuz. Bu kapsamda <a href="/yildirim-kiralik-asansor" class="text-primary font-semibold hover:underline">Yıldırım kiralık asansör</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <h3>2. Asansörlü Evden Eve Nakliyatın Avantajını Kullanın</h3>
-      <p>Eski usul "sırtta taşıma" yöntemi hem eşyalarınızın apartman merdivenlerinde çizilmesine neden olur hem de süreci saatlerce uzatır. Bursa'da özellikle yüksek katlı sitelerde veya dar merdivenli binalarda kesinlikle <strong>asansörlü evden eve nakliyat</strong> hizmeti almalısınız. Dış cepheye kurulan mobil asansör sistemleri sayesinde eşyalarınız 15. kata kadar balkon veya pencereden doğrudan eve alınır. Bu "sıfır hasar" garantisi demektir.</p>
+      <p>Eski usul "sırtta taşıma" yöntemi hem eşyalarınızın apartman merdivenlerinde çizilmesine neden olur hem de süreci saatlerce uzatır. Bursa'da özellikle yüksek katlı sitelerde veya dar merdivenli binalarda kesinlikle <strong>asansörlü evden eve nakliyat</strong> hizmeti almalısınız. Dış cepheye kurulan mobil asansör sistemleri sayesinde eşyalarınız 15. kata kadar balkon veya pencereden doğrudan eve alınır. Bu "sıfır hasar" garantisi demektir. Bu kapsamda <a href="/mudanya-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Mudanya asansörlü nakliyat</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <h3>3. Referanslı ve Kurumsal Firmaları Seçin</h3>
       <p>Ne kadar dikkat edilirse edilsin, trafikte veya taşıma esnasında öngörülemeyen kazalar yaşanabilir. Kurumsal bir firma ile çalışıyorsanız, eşyalarınızın A noktasından B noktasına varana kadar profesyonel güvenlik standartları kapsamında olduğundan emin olun.</p>
@@ -426,7 +426,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: "frase-asansorlu-nakliyat",
     slug: "asansorlu-evden-eve-nakliyat",
-    title: "Asansörlü Evden Eve Nakliyat: Ne Zaman Gereklidir, Fiyatları Nelerdir?",
+    title: "Asansörlü Evden Eve Nakliyat Rehberi ve Fiyatları",
     excerpt: "Asansörlü evden eve nakliyatın ne olduğunu, avantajlarını ve yüksek katlı binalardaki önemini keşfedin. Taşınma rehberimizle bilgi edinin.",
     date: "07 Nisan 2026",
     author: "Atakan",
@@ -448,14 +448,14 @@ export const BLOG_POSTS: BlogPost[] = [
         <p class="mb-4">Bursa ve ilçelerinde güvenilir, asansörlü evden eve nakliyat hizmeti arıyorsanız doğru yerdesiniz. Ücretsiz ekspertiz ve net fiyat garantisiyle taşınma stresinden kurtulun.</p>
         <a href="/evden-eve-asansorlu-nakliyat" class="inline-block bg-primary text-white font-semibold py-3 px-6 rounded-lg hover:bg-primary-dark transition-colors">Hizmetlerimizi İnceleyin</a>
       </div>
-      <p>Ev taşıma süreçleri, yanlış planlama yapıldığında hem stresli hem de masraflı bir deneyime dönüşebilir. <strong>Asansörlü evden eve nakliyat</strong>, bu zorluğu minimize eden, özellikle yüksek katlı binalar ve teleskopik asansörlerde büyük mobilyaların ve ağır eşyaların güvenli biçimde taşınmasını sağlayan profesyonel bir hizmettir. Bina dışına monte edilen hidrolik veya mekanik <strong>teleskopik asansörler</strong> aracılığıyla eşyalar, merdiven kullanılmaksızın doğrudan istenilen kata ulaştırılır.</p>
+      <p>Ev taşıma süreçleri, yanlış planlama yapıldığında hem stresli hem de masraflı bir deneyime dönüşebilir. <strong>Asansörlü evden eve nakliyat</strong>, bu zorluğu minimize eden, özellikle yüksek katlı binalar ve teleskopik asansörlerde büyük mobilyaların ve ağır eşyaların güvenli biçimde taşınmasını sağlayan profesyonel bir hizmettir. Bina dışına monte edilen hidrolik veya mekanik <strong>teleskopik asansörler</strong> aracılığıyla eşyalar, merdiven kullanılmaksızın doğrudan istenilen kata ulaştırılır. Bu kapsamda <a href="/osmangazi-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Osmangazi evden eve nakliyat</a> hizmetlerimizden de faydalanabilirsiniz.</p>
       
       <p>Bu yöntem yalnızca konfor sağlamakla kalmaz; aynı zamanda <a href="/nilufer-evden-eve-asansorlu-nakliyat" class="text-primary font-semibold hover:underline">ev taşıma sürecindeki kırılma ve çizilme risklerini</a> ciddi ölçüde azaltır. Geleneksel taşımacılıkta merdivenlerde yaşanan hasar olayları, asansörlü sistemde neredeyse sıfıra iner.</p>
       
-      <p>Türkiye'de kentsel dönüşüm ve yeni yapı stoğunun artmasıyla birlikte bu hizmete olan talep de belirgin şekilde yükselmektedir. Peki asansörlü nakliyat gerçekten her durum için doğru tercih midir? Avantajları ve olası dezavantajlarıyla birlikte değerlendirmek gerekir.</p>
+      <p>Türkiye'de kentsel dönüşüm ve yeni yapı stoğunun artmasıyla birlikte bu hizmete olan talep de belirgin şekilde yükselmektedir. Peki asansörlü nakliyat gerçekten her durum için doğru tercih midir? Avantajları ve olası dezavantajlarıyla birlikte değerlendirmek gerekir. Bu kapsamda <a href="/nilufer-kiralik-asansor" class="text-primary font-semibold hover:underline">Nilüfer kiralık asansör</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <h2>Asansörlü Nakliyatın Avantajları ve Dezavantajları</h2>
-      <p><strong>Evden eve taşıma</strong> sürecinde asansörlü sistem tercih etmek, birçok somut fayda sunar. Ancak her çözümde olduğu gibi, dikkat edilmesi gereken bazı sınırlılıklar da mevcuttur.</p>
+      <p><strong>Evden eve taşıma</strong> sürecinde asansörlü sistem tercih etmek, birçok somut fayda sunar. Ancak her çözümde olduğu gibi, dikkat edilmesi gereken bazı sınırlılıklar da mevcuttur. Bu kapsamda <a href="/yildirim-kiralik-asansor" class="text-primary font-semibold hover:underline">Yıldırım kiralık asansör</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <h3>Öne Çıkan Avantajlar</h3>
       <ul class="list-disc pl-5 mt-4 space-y-3">
@@ -555,12 +555,12 @@ export const BLOG_POSTS: BlogPost[] = [
     keywords: ["en ucuz nakliyat bursa", "ucuz nakliyat fiyatları", "bursa ev taşıma hataları", "asansör ekstra ücret", "güvenilir nakliyat bursa", "ucuz evden eve", "sürpriz nakliye ücreti"],
     content: `
       <h2>"Telefonda Ucuz, Kapıda Pahalı" Tuzağına Düşmeyin</h2>
-      <p>Yeni bir eve taşınmanın heyecanı, kapınıza gelen amatör bir nakliye ekibiyle kâbusa dönüşebilir. İnternette "<strong>Bursa en ucuz evden eve nakliyat</strong>" araması yaptığınızda karşınıza çıkan rakamlar cezbedici görünebilir. Ancak sektörün acı bir gerçeği var: <em>Ucuz etin yahnisi yavan olur, ucuz nakliyatın maliyeti ise paramparça olmuş mobilyalardır.</em></p>
+      <p>Yeni bir eve taşınmanın heyecanı, kapınıza gelen amatör bir nakliye ekibiyle kâbusa dönüşebilir. İnternette "<strong>Bursa en ucuz evden eve nakliyat</strong>" araması yaptığınızda karşınıza çıkan rakamlar cezbedici görünebilir. Ancak sektörün acı bir gerçeği var: <em>Ucuz etin yahnisi yavan olur, ucuz nakliyatın maliyeti ise paramparça olmuş mobilyalardır.</em> Bu kapsamda <a href="/gursu-kiralik-asansor" class="text-primary font-semibold hover:underline">Gürsu asansör kiralama</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
-      <p>Bursa Kiralık Asansör ve CNC Nakliyat olarak yıllardır sahada karşılaştığımız ve müşterilerin en çok mağdur olduğu 5 büyük hatayı sizin için derledik.</p>
+      <p>Bursa Kiralık Asansör ve CNC Nakliyat olarak yıllardır sahada karşılaştığımız ve müşterilerin en çok mağdur olduğu 5 büyük hatayı sizin için derledik. Bu kapsamda <a href="/nilufer-kiralik-asansor" class="text-primary font-semibold hover:underline">Nilüfer kiralık asansör</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <h3>1. Son Dakika "Asansör Gerekliymiş" Sürprizi (Bait-and-Switch)</h3>
-      <p>En sık rastlanan taktik, telefonda eşyalarınızı listeleyip size piyasanın %30 altında fiyat verilmesidir. Anlaşma sağlanır, taşınma günü kamyon kapıya yanaşır ve nakliye sorumlusu evi gezdikten sonra şu cümleyi kurar: <em>"Abla / Abi bu merdivenler çok dar, bu koltuk buradan dönmez. Eşyanız çizilir. Bizim acil asansör çağırmamız lazım ama o da fiyata dahil değil, ekstra x Bin TL tutar."</em></p>
+      <p>En sık rastlanan taktik, telefonda eşyalarınızı listeleyip size piyasanın %30 altında fiyat verilmesidir. Anlaşma sağlanır, taşınma günü kamyon kapıya yanaşır ve nakliye sorumlusu evi gezdikten sonra şu cümleyi kurar: <em>"Abla / Abi bu merdivenler çok dar, bu koltuk buradan dönmez. Eşyanız çizilir. Bizim acil asansör çağırmamız lazım ama o da fiyata dahil değil, ekstra x Bin TL tutar."</em> Bu kapsamda <a href="/bursa-merkez-kiralik-asansor" class="text-primary font-semibold hover:underline">Bursa asansör kiralama</a> hizmetlerimizden de faydalanabilirsiniz.</p>
       <p>O an eşyalar toplanmış ve eski evi boşaltmak zorunda olduğunuz için o astronomik rakamı çaresizce ödersiniz. Bizim sistemimizde ise <a href="/bursa-merkez-kiralik-asansor" class="text-primary font-semibold hover:underline">kiralık mobil asansörümüz</a> zaten işin merkezindedir ve fiyatlarımız karşılıklı mutabakatla tamamen sabittir.</p>
 
       <h3>2. "Sözde" Güvenlik ve Çizilen Beyaz Eşyalar</h3>
@@ -594,9 +594,9 @@ export const BLOG_POSTS: BlogPost[] = [
     keywords: ["nakliye dolandırıcılığı", "kapora dolandırıcıları", "armut nakliyat şikayet", "güvenilir nakliyat firması bursa", "bursa kiralık asansör şikayet", "nakliyat tavsiye bursa"],
     content: `
       <h2>Taşınma Gününüzü Mahveden Kâbus: Hayalet Firmalar</h2>
-      <p>Bir sabah uyandınız, eski evinizi o gün boşaltmanız gerekiyor, kolileriniz hazır. Günler öncesinden anlaştığınız o "çok uygun fiyatlı" nakliyeciyi arıyorsunuz ama telefon kapalı! Ya da numara tamamen kullanım dışı... Tebrikler, internetteki en popüler <strong>Nakliye Kapora Dolandırıcılığına</strong> kurban gittiniz.</p>
+      <p>Bir sabah uyandınız, eski evinizi o gün boşaltmanız gerekiyor, kolileriniz hazır. Günler öncesinden anlaştığınız o "çok uygun fiyatlı" nakliyeciyi arıyorsunuz ama telefon kapalı! Ya da numara tamamen kullanım dışı... Tebrikler, internetteki en popüler <strong>Nakliye Kapora Dolandırıcılığına</strong> kurban gittiniz. Bu kapsamda <a href="/mudanya-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Mudanya asansörlü nakliyat</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
-      <p>Özellikle ikinci el ilan sitelerinde veya taşeron bulma platformlarında kendine "X Nakliyat" veya "Y Asansör Kiralama" gibi sahte isimler açan yüzlerce sistemsiz hesap bulunuyor. Bu hesaplar rakiplerinden çok daha düşük fiyatlar verir, <em>"Abi/Abla randevuyu kesinleştirmek için yarı ücretini veya kaporayı at"</em> derler. Taşıma günü geldiğinde ise asla kapınızı çalmazlar.</p>
+      <p>Özellikle ikinci el ilan sitelerinde veya taşeron bulma platformlarında kendine "X Nakliyat" veya "Y Asansör Kiralama" gibi sahte isimler açan yüzlerce sistemsiz hesap bulunuyor. Bu hesaplar rakiplerinden çok daha düşük fiyatlar verir, <em>"Abi/Abla randevuyu kesinleştirmek için yarı ücretini veya kaporayı at"</em> derler. Taşıma günü geldiğinde ise asla kapınızı çalmazlar. Bu kapsamda <a href="/nilufer-kiralik-asansor" class="text-primary font-semibold hover:underline">Nilüfer kiralık asansör</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <h3>Gerçek Bir Firmayı Sahtesinden Ayırmanın Kesin Yolları</h3>
       <p>Vaktinizin ve bütçenizin değerli olduğu bu süreçte, nakliyat ve <a href="/osmangazi-kiralik-asansor" class="text-primary font-semibold hover:underline">kiralık asansör</a> hizmeti alacağınız firmanın gerçekliğini şu 4 adımla doğrulayabilirsiniz:</p>
@@ -634,9 +634,9 @@ export const BLOG_POSTS: BlogPost[] = [
     keywords: ["merdivenden ev taşıma", "cephe asansörü faydaları", "eşyalar neden çizilir", "sıfır hasar nakliyat", "asansörlü evden eve bursa", "eşya taşıma teknikleri"],
     content: `
       <h2>Merdiven Dairesinde Yankılanan "Dikkat Et Çarptı!" Sesine Son</h2>
-      <p>Daha önce hiç eski yöntemlerle taşındıysanız o kaosu gayet iyi bilirsiniz. Apartman kapısından 8. kata kadar yankılanan sesler: <em>"Aman köşeyi kurtar", "Az bekle dinlenelim", "Dikkat et duvara vurdu!"</em></p>
+      <p>Daha önce hiç eski yöntemlerle taşındıysanız o kaosu gayet iyi bilirsiniz. Apartman kapısından 8. kata kadar yankılanan sesler: <em>"Aman köşeyi kurtar", "Az bekle dinlenelim", "Dikkat et duvara vurdu!"</em> Bu kapsamda <a href="/nilufer-kiralik-asansor" class="text-primary font-semibold hover:underline">Nilüfer kiralık asansör</a> hizmetlerimizden de faydalanabilirsiniz.</p>
       
-      <p>Ne kadar dikkat edilirse edilsin insan anatomisi, 100 kiloluk bir yatak odası dolabını veya 150 kiloluk çift kapılı bir buzdolabını dar merdiven boşluklarında kusursuzca döndürmeye müsait değildir. Fizik kurallarına göre bir yerden taviz verilir: Eşyanın en güzel köşesi duvar sıvasına sürtünür, çizilir. Sonuç? Yenisini almak için harcayacağınız binlerce lira ekstra bütçe.</p>
+      <p>Ne kadar dikkat edilirse edilsin insan anatomisi, 100 kiloluk bir yatak odası dolabını veya 150 kiloluk çift kapılı bir buzdolabını dar merdiven boşluklarında kusursuzca döndürmeye müsait değildir. Fizik kurallarına göre bir yerden taviz verilir: Eşyanın en güzel köşesi duvar sıvasına sürtünür, çizilir. Sonuç? Yenisini almak için harcayacağınız binlerce lira ekstra bütçe. Bu kapsamda <a href="/osmangazi-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Osmangazi evden eve nakliyat</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <h3>Göz Ardı Edilen 3 Gizli Tehlike (Geleneksel Taşıma)</h3>
       <ul class="space-y-4 mt-4 mb-6 list-disc pl-5">
@@ -646,7 +646,7 @@ export const BLOG_POSTS: BlogPost[] = [
       </ul>
 
       <h2>Çözüm: Bursa Mobil Asansör ve Dış Cephe Sistemleri</h2>
-      <p>Eski usul "ter döken" sistemleri unutun. Bizler eşyanızı binanın içinden değil, <strong>balkonunuzdan veya geniş bir salon camınızdan doğrudan gökyüzü rotasıyla dışarıdan</strong> nakil ediyoruz.</p>
+      <p>Eski usul "ter döken" sistemleri unutun. Bizler eşyanızı binanın içinden değil, <strong>balkonunuzdan veya geniş bir salon camınızdan doğrudan gökyüzü rotasıyla dışarıdan</strong> nakil ediyoruz. Bu kapsamda <a href="/osmangazi-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Osmangazi evden eve nakliyat</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <p><a href="/bursa-merkez-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Bursa kiralık asansör</a> sistemlerinin devrimi şurada başlar:</p>
       <ul class="list-decimal pl-5 mt-4 mb-6 space-y-2">
@@ -710,14 +710,14 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     content: `
       <h2>Giriş: Taşınmak Neden Bu Kadar Zor Görünür?</h2>
-      <p>Bir evi baştan sona toparlamak, yıllarca biriktirilen anıları, eşyaları ve yaşama düzenini bir günde yeni bir mekâna nakletmek; hayatın en stresli deneyimlerinden biridir. Ancak <strong>iyi bir taşınma planı</strong> ile bu süreç, bir kâbusa dönmek yerine heyecan verici yeni bir başlangıca dönüşebilir.</p>
+      <p>Bir evi baştan sona toparlamak, yıllarca biriktirilen anıları, eşyaları ve yaşama düzenini bir günde yeni bir mekâna nakletmek; hayatın en stresli deneyimlerinden biridir. Ancak <strong>iyi bir taşınma planı</strong> ile bu süreç, bir kâbusa dönmek yerine heyecan verici yeni bir başlangıca dönüşebilir. Bu kapsamda <a href="/yildirim-kiralik-asansor" class="text-primary font-semibold hover:underline">Yıldırım kiralık asansör</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <p>Bu rehberde, <strong>evden eve taşınma sürecinin her aşamasını</strong> baştan sona ele alıyoruz. Planlamadan kolilemeye, nakliyat firması seçiminden <a href="/bursa-merkez-kiralik-asansor" class="text-primary font-semibold hover:underline">kiralık asansör</a> kiralamaya, yeni eve yerleşimden abonelik işlemlerine kadar her konuyu ayrıntılı biçimde bulacaksınız.</p>
 
       <hr class="my-8 border-slate-200 dark:border-slate-700" />
 
       <h2>A — Araştırma: Doğru Firmayı Seçin</h2>
-      <p>Taşınma sürecinde yapılan en büyük hata, firma seçimini son güne bırakmaktır. Güvenilir bir <strong>evden eve nakliyat firması</strong> aramaya taşınmadan en az 4 hafta önce başlayın.</p>
+      <p>Taşınma sürecinde yapılan en büyük hata, firma seçimini son güne bırakmaktır. Güvenilir bir <strong>evden eve nakliyat firması</strong> aramaya taşınmadan en az 4 hafta önce başlayın. Bu kapsamda <a href="/mudanya-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Mudanya asansörlü nakliyat</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <h3>Firma Seçerken Sormanız Gereken 5 Soru</h3>
       <ol class="list-decimal pl-5 mt-4 space-y-3 mb-6">
@@ -731,7 +731,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <hr class="my-8 border-slate-200 dark:border-slate-700" />
 
       <h2>B — Bütçe: Taşınma Maliyetini Hesaplayın</h2>
-      <p><strong>Taşınma maliyeti</strong> birçok değişkene bağlıdır. Sürpriz fatura yememek için bu kalemleri önceden netleştirin:</p>
+      <p><strong>Taşınma maliyeti</strong> birçok değişkene bağlıdır. Sürpriz fatura yememek için bu kalemleri önceden netleştirin: Bu kapsamda <a href="/bursa-merkez-kiralik-asansor" class="text-primary font-semibold hover:underline">Bursa asansör kiralama</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <div class="overflow-x-auto mt-6 mb-8">
         <table class="w-full text-left border-collapse border border-slate-200 dark:border-slate-700">
@@ -1047,12 +1047,12 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     content: `
       <h2>Nilüfer’de Yüksek Katlara Taşınırken Karşılaşılan Gerçekler</h2>
-      <p>Bir koltuğun kumaşını yırtmak, merdiven sahanlığındaki yangın tüpünü devirmek veya apartman yönetiminden <em>"bina yolcu asansörünü yük için kullandınız ve kabini çizdiniz"</em> gerekçesiyle 15.000 TL ceza faturası almak... Nilüfer’deki yüksek katlı sitelerde taşınırken ödeyeceğiniz bedel, nakliye ücretinden katbekat fazla olabilir. 15 yıldır Bursa sokaklarındayız; Özlüce’nin geniş balkonlu sitelerinden Görükle’nin öğrenci sirkülasyonuna kadar sahada gördüğümüz tek bir gerçek var: <strong>İnsan gücü eşyayı taşırken yıpratır, dış cephe asansörü ise eşyanızı ve paranızı korur.</strong></p>
+      <p>Bir koltuğun kumaşını yırtmak, merdiven sahanlığındaki yangın tüpünü devirmek veya apartman yönetiminden <em>"bina yolcu asansörünü yük için kullandınız ve kabini çizdiniz"</em> gerekçesiyle 15.000 TL ceza faturası almak... Nilüfer’deki yüksek katlı sitelerde taşınırken ödeyeceğiniz bedel, nakliye ücretinden katbekat fazla olabilir. 15 yıldır Bursa sokaklarındayız; Özlüce’nin geniş balkonlu sitelerinden Görükle’nin öğrenci sirkülasyonuna kadar sahada gördüğümüz tek bir gerçek var: <strong>İnsan gücü eşyayı taşırken yıpratır, dış cephe asansörü ise eşyanızı ve paranızı korur.</strong> Bu kapsamda <a href="/nilufer-kiralik-asansor" class="text-primary font-semibold hover:underline">Nilüfer kiralık asansör</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <p>Bursa'nın en yoğun göç alan ve modern konut projelerine ev sahipliği yapan ilçesinde, geleneksel taşımacılık yöntemleri hem site yönetimleriyle gerginlik yaratır hem de mobilyalarınızın ömrünü kısaltır. <a href="/nilufer-kiralik-asansor" class="text-primary font-semibold hover:underline">Nilüfer kiralık mobil asansör</a> çözümlerimiz, binanın dış cephesine kurulan teleskopik ray mekanizmasıyla ortak kullanım alanlarına hiç girmeden doğrudan evinizin salonuna veya balkonuna güvenli hat açar.</p>
 
       <h2>Nilüfer Saha Analizi: Site Yönetimleri, Balkon Açıları ve Rüzgar Riski</h2>
-      <p>Nilüfer ilçesi kentsel dokusu itibarıyla geniş bulvarlara sahip olsa da site içi operasyonlarda belirli kritik kurallar barındırır:</p>
+      <p>Nilüfer ilçesi kentsel dokusu itibarıyla geniş bulvarlara sahip olsa da site içi operasyonlarda belirli kritik kurallar barındırır: Bu kapsamda <a href="/osmangazi-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Osmangazi evden eve nakliyat</a> hizmetlerimizden de faydalanabilirsiniz.</p>
       
       <ul class="list-disc pl-5 mt-4 space-y-3 mb-6">
         <li><strong>Site Yönetim Katı Kuralları:</strong> Balat, 23 Nisan, Ertuğrul ve Altınşehir mahallelerindeki site yönetimlerinin %90'ı ortak alan asansörlerinin eşya taşımak amacıyla çalıştırılmasını yasaklamıştır. Koruyucu kılıf takılsa dahi motor aksamı aşırı yükten zarar görebileceği için yüklü cezalar kesilmektedir.</li>
@@ -1146,7 +1146,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     content: `
       <h2>Osmangazi’nin Dar Sokaklarında Taşınma Çilesine Son Verin</h2>
-      <p>Osmangazi’de eski tip dik ve dar merdivenlerden indirilirken köşesi patlayan masif bir gardırop ya da binanın dönüş sahanlığında sıkışıp kalan çift kapılı bir buzdolabı... Osmangazi'nin sokak dokusunu bilmeyen tecrübesiz ekiplerle taşınmak, eşyalarınızın yarı değerini merdiven boşluklarında bırakmak demektir. Bursa'nın merkezinde sokak ne kadar dar olursa olsun, pencereniz açıksa her eşyayı sıfır hasarla indirmek tecrübeli operatörlük işidir.</p>
+      <p>Osmangazi’de eski tip dik ve dar merdivenlerden indirilirken köşesi patlayan masif bir gardırop ya da binanın dönüş sahanlığında sıkışıp kalan çift kapılı bir buzdolabı... Osmangazi'nin sokak dokusunu bilmeyen tecrübesiz ekiplerle taşınmak, eşyalarınızın yarı değerini merdiven boşluklarında bırakmak demektir. Bursa'nın merkezinde sokak ne kadar dar olursa olsun, pencereniz açıksa her eşyayı sıfır hasarla indirmek tecrübeli operatörlük işidir. Bu kapsamda <a href="/bursa-merkez-kiralik-asansor" class="text-primary font-semibold hover:underline">Bursa asansör kiralama</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <p>Bursa'nın en köklü ilçesi olan Osmangazi; tarihi mahalleleri, kentsel dönüşüm bölgeleri ve bitişik nizam apartmanlarıyla nakliyecilikte en yüksek saha tecrübesini gerektirir. <a href="/osmangazi-kiralik-asansor" class="text-primary font-semibold hover:underline">Osmangazi kiralık mobil asansör</a> hizmetimiz, sokak genişliğine göre seçilen araç filomuzla binaların dışına kurularak merdiven eziyetini tamamen ortadan kaldırır.</p>
 
@@ -1240,7 +1240,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     content: `
       <h2>Uludağ Eteklerinde Taşınırken Yerçekimini Hafife Almayın</h2>
-      <p>Uludağ eteklerindeki Yıldırım yokuşlarında, eğimli bir sokakta dik merdivenlerden ağır bir buzdolabını veya çamaşır makinesini indirmeye çalışan iki hamalın dengesini kaybettiği anı düşünün... Bu yalnızca binlerce liralık mobilya ve beyaz eşya hasarı değil, telafisi mümkün olmayan bir iş kazası riskidir. Yıldırım’da taşınmak düz ovada taşınmaya benzemez; burada zemin statiğini, yerçekimini ve hidrolik dengeyi doğru yönetmek hayati önem taşır.</p>
+      <p>Uludağ eteklerindeki Yıldırım yokuşlarında, eğimli bir sokakta dik merdivenlerden ağır bir buzdolabını veya çamaşır makinesini indirmeye çalışan iki hamalın dengesini kaybettiği anı düşünün... Bu yalnızca binlerce liralık mobilya ve beyaz eşya hasarı değil, telafisi mümkün olmayan bir iş kazası riskidir. Yıldırım’da taşınmak düz ovada taşınmaya benzemez; burada zemin statiğini, yerçekimini ve hidrolik dengeyi doğru yönetmek hayati önem taşır. Bu kapsamda <a href="/osmangazi-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Osmangazi evden eve nakliyat</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <p>Yıldırım ilçesi; Teleferik ve Yeşilyayla gibi eğimi yüksek eski mahalleleri ile Millet Mahallesi gibi modern ve geniş bulvarlı yeni yerleşimleri aynı potada eritir. <a href="/yildirim-kiralik-asansor" class="text-primary font-semibold hover:underline">Yıldırım kiralık mobil asansör</a> hizmetimiz, her iki bölgenin coğrafi yapısına uygun ekipman parkuruyla eşyalarınızı sıfır sarsıntıyla hedefine ulaştırır.</p>
 
@@ -1334,7 +1334,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     content: `
       <h2>Mudanya Sahilinde Sert Poyraza Karşı Bilinçli Taşınma</h2>
-      <p>Güzelyalı sırtlarında veya Mudanya sahil şeridinde poyrazın saatte 35 km hızla estiği bir günde, 6. katın balkonundan merdivensiz mobilya indirmeye kalktığınızda rüzgarın şiddetini hesaba katmazsanız eşyalarınız adeta bir yelkenli gibi savrulur. Mudanya’da taşınmak; yerel meteorolojiyi bilmeyi, denizden gelen ani hava akımlarını okumayı ve fırtınaya mukavim hidrolik çelik ray kullanmayı zorunlu kılar.</p>
+      <p>Güzelyalı sırtlarında veya Mudanya sahil şeridinde poyrazın saatte 35 km hızla estiği bir günde, 6. katın balkonundan merdivensiz mobilya indirmeye kalktığınızda rüzgarın şiddetini hesaba katmazsanız eşyalarınız adeta bir yelkenli gibi savrulur. Mudanya’da taşınmak; yerel meteorolojiyi bilmeyi, denizden gelen ani hava akımlarını okumayı ve fırtınaya mukavim hidrolik çelik ray kullanmayı zorunlu kılar. Bu kapsamda <a href="/mudanya-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Mudanya asansörlü nakliyat</a> hizmetlerimizden de faydalanabilirsiniz.</p>
 
       <p>Mudanya; kot farkı yüksek sahil siteleri, deniz basamakları ve Bademli/Çağrışan hattındaki lüks villa projeleriyle Bursa’nın en seçkin mimarisine sahiptir. <a href="/mudanya-kiralik-asansor" class="text-primary font-semibold hover:underline">Mudanya kiralık mobil asansör</a> filomuz, rüzgar güvenlik kilitleri ve uzun menzilli bomlarıyla eşyalarınızı doğrudan teras veya salonunuza taşır.</p>
 

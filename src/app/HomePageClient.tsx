@@ -446,7 +446,7 @@ export default function HomePageClient() {
                 </h3>
                 <div className="space-y-6">
                   <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-lg">
-                    {t('home.pricing_desc', "Kiralık mobil asansör ücretlerimiz; kurulum yapılacak katın yüksekliği (15. kata kadar)...")}
+                    {t('home.pricing_desc', "Kiralık mobil asansör ücretlerimiz; kurulum yapılacak katın yüksekliği (15. kata kadar), taşınacak eşyanın veya malzemenin miktarı ve operasyonun tahmini süresine göre şeffaf bir şekilde belirlenir. Binanın önündeki ağaç, elektrik teli gibi engeller operatörümüz tarafından değerlendirilir ve en güvenli kurulum sağlanır. İhtiyaç halinde eşya taşıma personeli (hamal) ve nakliye aracı da fiyat teklifine dahil edilebilir. Gizli ücret veya sürpriz maliyet yoktur.")}
                   </p>
                   <div className="bg-white dark:bg-navy-light p-5 rounded-2xl border border-primary/20 shadow-sm">
                     <p className="text-primary font-bold text-base flex items-center gap-3">

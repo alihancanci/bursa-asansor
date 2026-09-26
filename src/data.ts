@@ -267,6 +267,10 @@ export const SERVICES: Service[] = [
       <p>Sistemimiz <strong>15. kata kadar</strong> güvenle ulaşabilmekte ve ağır yüklerinizi saniyeler içinde hedeflenen kata ulaştırabilmektedir. {district} mahalleri olan {neighborhoods} ve çevresinde, tüm süreç boyunca <strong>uzman operatörümüz asansörün başındadır</strong>; yani makine kullanımını tamamen biz yönetir ve iş güvenliğini en üst düzeyde tutarız. <strong>7/24 hizmet veriyoruz</strong>; acil taşınma ihtiyaçlarınızda bir telefon kadar uzağınızdayız.</p>
 
       <p>Bakımlı makine parkuru ve tecrübeli ekibimizle {district} lokasyonunda zaman kaybını önler, tam anlaştığımız saatte adresinizde oluruz. İhtiyaç duymanız halinde, sadece makine kiralama ile kalmayıp <strong>hamal (taşıma personeli) ve nakliye kamyonu desteği de sağlıyoruz</strong>. Profesyonel ve uygun fiyatlı çözümler için hemen iletişime geçebilirsiniz.</p>
+      <h3>Hizmet Süreci ve Fiyatlandırma</h3>
+      <p>{district} bölgesinde kiralık asansör fiyatları ve evden eve nakliyat ücretleri; taşınılacak eşyanın miktarına, asansörün kurulacağı kat yüksekliğine (15. kata kadar hizmetimiz mevcuttur) ve kiralama süresine göre değişiklik gösterir. Kesin ve net bir fiyat teklifi alabilmek için iletişim numaramız üzerinden bizimle 7/24 irtibata geçebilirsiniz. Fiyat belirlemede sürpriz maliyetler çıkarılmaz, her şey baştan konuşulur.</p>
+      <p><strong>Kurulum Uygunluğu:</strong> Asansör aracımızın binaya güvenli bir şekilde yanaşabilmesi için park alanı ve bina önünde ağaç, elektrik teli gibi engellerin bulunmaması önemlidir. Operatörümüz kurulum uygunluğunu değerlendirir ve asansörün başından hiç ayrılmayarak güvenli taşıma sürecini yönetir. İhtiyaç duymanız halinde nakliye kamyonu ve eşya taşıma personeli (hamal) desteği de sağlamaktayız.</p>
+
     `,
     faqs: [
       { q: "Mobil asansör kaçıncı kata kadar ulaşıyor?", a: "Sistemlerimiz maksimum 15. kata kadar güvenle ulaşabilmektedir." },
@@ -286,6 +290,10 @@ export const SERVICES: Service[] = [
       <p>Hizmet ağımız kapsamında <strong>15. kata kadar</strong> olan tüm dairelere asansör kurabiliyoruz. Özellikle <strong>asansörlü taşımacılık</strong> gerektiren yüksek katlı binalarda, gelişmiş teknolojiye sahip makinelerimiz ve uzman ekibimizle taşıma süresini yarı yarıya indiriyoruz. İş güvenliği kurallarından asla taviz vermeden çalışan firmamızda, <strong>operatör her zaman asansörün başındadır</strong>. {district} civarında güvenilir <strong>asansörlü nakliyat</strong> çözümleri arıyorsanız doğru adrestesiniz.</p>
 
       <p>Amacımız sıfır hasar ve maksimum müşteri memnuniyetidir. Tam saatinde adresinizde hazır bulunan ekibimiz, oldukça özenli bir çalışma sergiler. Ayrıca, araç ve taşıma elemanı bulunmayan müşterilerimiz için <strong>gerekli durumlarda taşıma personeli (hamal) ve nakliye kamyonu desteği de verilir</strong>. Haftanın her günü, günün her saati <strong>7/24 hizmet veriyoruz</strong>.</p>
+      <h3>Hizmet Süreci ve Fiyatlandırma</h3>
+      <p>{district} bölgesinde kiralık asansör fiyatları ve evden eve nakliyat ücretleri; taşınılacak eşyanın miktarına, asansörün kurulacağı kat yüksekliğine (15. kata kadar hizmetimiz mevcuttur) ve kiralama süresine göre değişiklik gösterir. Kesin ve net bir fiyat teklifi alabilmek için iletişim numaramız üzerinden bizimle 7/24 irtibata geçebilirsiniz. Fiyat belirlemede sürpriz maliyetler çıkarılmaz, her şey baştan konuşulur.</p>
+      <p><strong>Kurulum Uygunluğu:</strong> Asansör aracımızın binaya güvenli bir şekilde yanaşabilmesi için park alanı ve bina önünde ağaç, elektrik teli gibi engellerin bulunmaması önemlidir. Operatörümüz kurulum uygunluğunu değerlendirir ve asansörün başından hiç ayrılmayarak güvenli taşıma sürecini yönetir. İhtiyaç duymanız halinde nakliye kamyonu ve eşya taşıma personeli (hamal) desteği de sağlamaktayız.</p>
+
     `,
     faqs: [
       { q: "Asansörlü nakliyatın avantajı nedir?", a: "Eşyalarınız bina merdivenlerinde çizilme veya kırılma riski yaşamaz, ayrıca taşıma işlemi klasik yönteme göre çok daha hızlı tamamlanır." },
@@ -305,6 +313,10 @@ export const SERVICES: Service[] = [
       <p>Sistemlerimiz <strong>15. kata kadar çıkar</strong> ve kurulumu dakikalar içinde tamamlanır. Saatlik kiralamalarda dahi kalite standartlarımızdan ödün vermiyoruz; <strong>operatör her zaman asansörün başındadır</strong> ve makinenin güvenli çalışmasından sorumludur. {district} ve mahallelerinde acil gelişen ihtiyaçlarınız için firmamıza güvenebilirsiniz çünkü <strong>7/24 hizmet veriyoruz</strong>.</p>
 
       <p>Makinelerimiz her zaman bakımlıdır ve iş güvenliğine üst düzeyde dikkat ederiz. Kısa süreli kiralama taleplerinizde randevu sistemimizle tam saatinde orada oluruz. Eğer eşyanın yukarıda karşılanması veya araca yüklenmesi için insan gücüne ihtiyacınız olursa, <strong>gerekli durumlarda taşıma personeli (hamal) ve nakliye kamyonu desteği de verilir</strong>.</p>
+      <h3>Hizmet Süreci ve Fiyatlandırma</h3>
+      <p>{district} bölgesinde kiralık asansör fiyatları ve evden eve nakliyat ücretleri; taşınılacak eşyanın miktarına, asansörün kurulacağı kat yüksekliğine (15. kata kadar hizmetimiz mevcuttur) ve kiralama süresine göre değişiklik gösterir. Kesin ve net bir fiyat teklifi alabilmek için iletişim numaramız üzerinden bizimle 7/24 irtibata geçebilirsiniz. Fiyat belirlemede sürpriz maliyetler çıkarılmaz, her şey baştan konuşulur.</p>
+      <p><strong>Kurulum Uygunluğu:</strong> Asansör aracımızın binaya güvenli bir şekilde yanaşabilmesi için park alanı ve bina önünde ağaç, elektrik teli gibi engellerin bulunmaması önemlidir. Operatörümüz kurulum uygunluğunu değerlendirir ve asansörün başından hiç ayrılmayarak güvenli taşıma sürecini yönetir. İhtiyaç duymanız halinde nakliye kamyonu ve eşya taşıma personeli (hamal) desteği de sağlamaktayız.</p>
+
     `,
     faqs: [
       { q: "Minimum kiralama süresi nedir?", a: "İşinizin durumuna göre esnek saatlik periyotlarda kiralama yapabilirsiniz. Sadece 1-2 saatlik işleriniz için de hizmet alabilirsiniz." },

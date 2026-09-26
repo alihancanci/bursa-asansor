@@ -36,9 +36,9 @@ export default function HomePage() {
         "url": "https://bursakiralikasansor.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://bursakiralikasansor.com/opengraph.jpg",
-          "width": 1200,
-          "height": 630
+          "url": "https://bursakiralikasansor.com/icon.png",
+          "width": 512,
+          "height": 512
         },
         "image": "https://bursakiralikasansor.com/opengraph.jpg",
         "telephone": "+905056080700",
