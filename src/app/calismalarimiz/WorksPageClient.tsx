@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { getAbsoluteAssetUrl } from "@/lib/seo";
 import { ArrowLeft, ImageIcon } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
-import { ELEVATOR_SERVICES, MOVING_SERVICES, PHONE_NUMBER, WHATSAPP_LINK, GOOGLE_REVIEW_LINK } from "@/data";
+import { ELEVATOR_SERVICES, MOVING_SERVICES, PHONE_NUMBER, GOOGLE_REVIEW_LINK } from "@/data";
 import { trackPhoneClick } from "@/lib/analytics";
 import { ArrowUpToLine, Phone, MapPin, Clock, Truck, ShieldCheck, CheckCircle2, Star } from "lucide-react";
 

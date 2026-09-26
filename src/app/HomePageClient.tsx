@@ -10,17 +10,16 @@ import { SearchFilter } from "@/components/SearchFilter";
 import { FeaturesBar } from "@/components/FeaturesBar";
 import dynamic from "next/dynamic";
 const ServiceMap = dynamic(() => import("@/components/ServiceMap"), { ssr: false, loading: () => <div className="h-[500px] w-full bg-slate-100 animate-pulse rounded-3xl" /> });
+/* eslint-disable @typescript-eslint/no-explicit-any */
 const Testimonials = dynamic(() => import("@/components/Testimonials").then(m => m.Testimonials as any));
 const FaqSection = dynamic(() => import("@/components/FaqSection").then(m => m.FaqSection as any));
 const ReferencesGallery = dynamic(() => import("@/components/ReferencesGallery").then(m => m.ReferencesGallery as any));
-import { DISTRICTS, GOOGLE_MAPS_LINK, PHONE_NUMBER, SERVICES, WHATSAPP_LINK } from "@/data";
+/* eslint-enable @typescript-eslint/no-explicit-any */
+import { DISTRICTS, GOOGLE_MAPS_LINK, SERVICES } from "@/data";
 import { ArrowRight, CheckCircle2, ArrowUpToLine, Home as HomeIcon, Sofa, Truck, HardHat, Package, Phone, ShieldCheck, ExternalLink, Star } from "lucide-react";
-import { getAbsoluteAssetUrl } from "@/lib/seo";
 
 export default function HomePageClient() {
   const { t } = useTranslation();
-
-  const ogImage = getAbsoluteAssetUrl("/opengraph.jpg");
   const [shouldLoadMap, setShouldLoadMap] = useState(false);
   const mapSentinelRef = useRef<HTMLDivElement | null>(null);
 

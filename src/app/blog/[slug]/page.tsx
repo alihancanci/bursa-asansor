@@ -59,6 +59,7 @@ export default async function BlogPost({ params }: Props) {
   }
 
   // Tüm yazılar için Zengin Şema (Topical Authority)
+  /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
   const graph: any[] = [
     {
       "@type": ["Article", "BlogPosting"],

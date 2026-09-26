@@ -99,7 +99,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/Users/alihancancihm/Desktop/yedek",
+    "outputFileTracingRoot": "/Users/alihancancihm/.gemini/antigravity/worktrees/yedek/fix_site_issues",
     "experimental": {
       "useSkewCookie": false,
       "cacheLife": {
@@ -289,7 +289,7 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.mjs",
     "turbopack": {
-      "root": "/Users/alihancancihm/Desktop/yedek"
+      "root": "/Users/alihancancihm/.gemini/antigravity/worktrees/yedek/fix_site_issues"
     },
     "_originalRedirects": [
       {
@@ -394,7 +394,7 @@
       }
     ]
   },
-  "appDir": "/Users/alihancancihm/Desktop/yedek",
+  "appDir": "/Users/alihancancihm/.gemini/antigravity/worktrees/yedek/fix_site_issues",
   "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",

@@ -2,18 +2,13 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useParams } from "next/navigation";
 import { motion } from "framer-motion";
-import { BLOG_POSTS } from "@/data/blog";
 import { Calendar, Clock, User, MessageCircle } from "lucide-react";
-import { getCanonicalUrl, getAbsoluteAssetUrl } from "@/lib/seo";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { notFound } from "next/navigation";
 
 import { BlogPost } from "@/data/blog";
 
 export default function BlogPostClient({ post }: { post: BlogPost }) {
-  const ogImage = getAbsoluteAssetUrl(post.image);
 
   return (
     <>

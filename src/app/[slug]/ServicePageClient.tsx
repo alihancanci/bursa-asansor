@@ -1,7 +1,6 @@
 "use client";
 
 import { useParams } from "next/navigation";
-import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
@@ -11,7 +10,7 @@ import { FeaturesBar } from "@/components/FeaturesBar";
 import { Testimonials } from "@/components/Testimonials";
 import { ChevronRight, ArrowRight, CheckCircle2, Phone, MessageCircle, AlertTriangle, MapPin, Truck, UserCheck, Zap, Building2, ShieldCheck, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
-import { getAbsoluteAssetUrl, getCanonicalUrl } from "@/lib/seo";
+import {  } from "@/lib/seo";
 import { trackPhoneClick, trackWhatsAppClick } from "@/lib/analytics";
 
 export default function ServicePageClient() {
@@ -41,7 +40,6 @@ export default function ServicePageClient() {
   const districtServiceSlugs = ["kiralik-asansor", "kiralik-asansor-fiyatlari", "evden-eve-nakliyat", "evden-eve-asansorlu-nakliyat", "saatlik-asansor-kiralama"];
   const hasDistrictSearchContent = priorityDistricts.includes(district.slug) && districtServiceSlugs.includes(service.slug);
 
-  const YEAR = new Date().getFullYear();
   const topNeighborhoods = district.neighborhoods.slice(0, 3);
   const neighborhoodStr = topNeighborhoods.join(", ");
 
@@ -561,7 +559,7 @@ export default function ServicePageClient() {
   );
 }
 
-function PageNotFound404({ slug }: { slug: string }) {
+function PageNotFound404({}: { slug: string }) {
   return (
     <div className="min-h-[60vh] flex flex-col items-center justify-center px-4 py-24 text-center">
       <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 mb-6">

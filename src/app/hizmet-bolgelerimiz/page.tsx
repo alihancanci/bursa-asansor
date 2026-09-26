@@ -26,7 +26,7 @@ export default function ServiceAreasPage() {
             Hizmet <span className="text-primary">Bölgelerimiz</span>
           </h1>
           <p className="text-slate-300 max-w-2xl mx-auto text-lg leading-relaxed">
-            Bursa'nın tüm ilçelerine ve mahallelerine 7/24 hızlı, güvenilir ve profesyonel mobil asansör kiralama ile evden eve nakliyat çözümleri sunuyoruz.
+            Bursa&apos;nın tüm ilçelerine ve mahallelerine 7/24 hızlı, güvenilir ve profesyonel mobil asansör kiralama ile evden eve nakliyat çözümleri sunuyoruz.
           </p>
         </div>
       </div>

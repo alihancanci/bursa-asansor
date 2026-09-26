@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
@@ -45,6 +45,7 @@ export function SocialProofToast() {
     }, 5000);
 
     return () => clearTimeout(startTimeout);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
 

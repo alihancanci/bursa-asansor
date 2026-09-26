@@ -1,16 +1,13 @@
 "use client";
 
-import { useTranslation } from "react-i18next";
-import { DISTRICTS, PHONE_NUMBER } from "@/data";
+import { PHONE_NUMBER } from "@/data";
 import { trackPhoneClick } from "@/lib/analytics";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { ShieldCheck, Clock, ArrowUpToLine, Users, ArrowRight, Compass, Target } from "lucide-react";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { getAbsoluteAssetUrl } from "@/lib/seo";
 
 export default function AboutPageClient() {
-  const { t } = useTranslation();
+  
 
   const features = [
     { icon: Clock, title: "7/24 Kesintisiz Hizmet", description: "Bursa'nın her noktasına, günün her saati acil asansör ve nakliyat desteği sağlıyoruz." },
