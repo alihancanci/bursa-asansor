@@ -3,14 +3,14 @@ import { DISTRICTS } from '@/data';
 import HomePageClient from './HomePageClient';
 
 export const metadata: Metadata = {
-  title: 'Bursa Kiralık Asansör | Mobil Asansör Kiralama',
-  description: 'Bursa’da 15. kata kadar mobil asansör kiralama. 7/24 hizmet: Nilüfer, Mudanya, Osmangazi, Yıldırım, Gürsu ve tüm Bursa ilçeleri. 0505 608 07 00.',
+  title: 'Bursa Kiralık Asansör & Asansör Kiralama | 0505 608 07 00',
+  description: 'Bursa kiralık asansör ve saatlik mobil asansör kiralama hizmeti. 15. kata kadar güvenli eşya taşıma. 7/24 uygun fiyat ve ücretsiz keşif: 0505 608 07 00.',
   alternates: {
     canonical: 'https://bursakiralikasansor.com/',
   },
   openGraph: {
-    title: 'Bursa Kiralık Asansör | Mobil Asansör Kiralama',
-    description: 'Bursa’da 15. kata kadar mobil asansör kiralama. 7/24 hizmet: Nilüfer, Mudanya, Osmangazi, Yıldırım, Gürsu ve tüm Bursa ilçeleri. 0505 608 07 00.',
+    title: 'Bursa Kiralık Asansör & Asansör Kiralama | 0505 608 07 00',
+    description: 'Bursa kiralık asansör ve saatlik mobil asansör kiralama hizmeti. 15. kata kadar güvenli eşya taşıma. 7/24 uygun fiyat ve ücretsiz keşif: 0505 608 07 00.',
     url: 'https://bursakiralikasansor.com/',
   }
 };

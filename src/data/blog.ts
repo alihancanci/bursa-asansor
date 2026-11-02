@@ -173,7 +173,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Lojistik & Teknoloji",
     author: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Ekibi",
     image: "/images/hero-bg.png",
-    metaDescription: "Mobil asansörler kaçıncı kata çıkar? Yüksek kat eşya taşıma asansörlerinin erişim limitleri, 15-20-25 kat kuralları ve rüzgar güvenliği.",
+    metaDescription: "Mobil asansör kaçıncı kata çıkar? Bursa’daki asansörlerimiz 15. kata kadar erişir. Kat, bina cephesi ve kurulum koşullarını öğrenin.",
     keywords: ["kaçıncı kata kadar çıkar", "yüksek kat eşya taşıma asansörü", "teleskopik asansör", "asansör kiralama sınırları", "rüzgar güvenliği"],
     faqs: [
       { q: "Sizin cihazlarınız maksimum kaçıncı kata erişiyor?", a: "Bursa sınırları içinde hizmet verdiğimiz araç parkurumuz güvenilir şekilde 15. kata kadar erişim sağlamaktadır." },
@@ -268,17 +268,18 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: "7",
     slug: "tasinirken-asansor-zorunlu-mu",
-    title: "Asansörde Eşya Taşımak Yasak Mı? (Site Kuralları)",
-    excerpt: "Yeni bir eve taşınırken site yönetimlerinin bina içi asansör yasakları. Apartman merdivenlerinde taşıma stresi ve dış cephe kullanımının hukuki boyutu.",
+    title: "Asansörde Eşya Taşımak Yasak Mı? Yük Taşıma Cezası (2026)",
+    excerpt: "Yeni bir eve taşınırken site yönetimlerinin bina içi asansör yasakları. Apartman asansöründe yük taşıma cezası, kurallar ve dış cephe asansörü çözümleri.",
     date: "30 Mart 2026",
     readTime: "6 dk okuma",
     category: "Taşınma Planlaması",
     author: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Ekibi",
     image: "/images/hero-bg.png",
-    metaDescription: "Asansörde eşya taşımak yasak mı? Apartman asansörüyle eşya taşıma cezası ve site kuralları hakkında kısa yanıt. Dış cephe asansörü çözümleri.",
-    keywords: ["asansörde eşya taşımak yasak mı", "apartman asansörüyle eşya taşıma", "taşınırken asansör zorunlu mu", "bina içi asansör yasakları", "site yönetimi kuralları", "dış cephe asansörü kiralama"],
+    metaDescription: "Apartman asansöründe eşya taşımak yasak mı, cezası var mı? Site kuralları, Kat Mülkiyeti Kanunu ve dış cephe asansörüyle cezasız güvenli taşınma.",
+    keywords: ["asansörde eşya taşımak yasak mı", "apartman asansöründe eşya taşımak yasak mı", "asansörde yük taşıma cezası", "bina asansöründe eşya taşıma", "taşınırken asansör zorunlu mu", "site yönetimi kuralları", "dış cephe asansörü kiralama"],
     faqs: [
-      { q: "Yönetici apartmanın asansörünü taşınmaya kapatabilir mi?", a: "Evet. Kat Mülkiyeti Kanunu ve genel ahlak kuralları çerçevesinde yönetim planına 'Bina asansöründe (yolcu asansörü) yük taşımak yasaktır' maddesi eklenmişse kullanımını engelleyebilir." },
+      { q: "Apartman asansöründe eşya veya yük taşımanın cezası var mı?", a: "Evet. Site yönetim planına aykırı şekilde yolcu asansöründe eşya taşındığında yönetim idari para cezası kesebilir ve asansörde meydana gelen tüm teknik arıza/bakım masraflarını taşınan kişiye fatura edebilir." },
+      { q: "Yönetici apartmanın asansörünü taşınmaya kapatabilir mi?", a: "Evet. Kat Mülkiyeti Kanunu ve bina yönetim planında 'Yolcu asansöründe yük taşınamaz' hükmü varsa yönetici ve bina görevlisi asansörü taşınmaya kapatma hakkına sahiptir." },
       { q: "Oturduğum ev 2. katta, yine de asansör kurmak mantıklı mı?", a: "Binanızın merdiven boşluğu genişse beden gücüyle taşınabilir. Ancak merdivenler darsa, 2. kat bile olsa büyük mobilyalarınızın hasar görmemesi için asansör kurulması tavsiye edilir." },
       { q: "Sokak çok dar, asansör sığar mı?", a: "Uzmanlarımız ücretsiz keşif yapar. Ufak manevralar veya hafif açılı kurulum ile pek çok zorlu sokağa asansör kurabiliyoruz." }
     ],
@@ -301,10 +302,22 @@ export const BLOG_POSTS: BlogPost[] = [
         <li><strong>Komşuların Hakkı:</strong> 15 katlı bir binada taşınma işlemi 5-6 saat sürdüğünde, asansörü meşgul eden taşıma firması yüzünden diğer komşular merdiven kullanmak zorunda kalır.</li>
       </ol>
 
+      <h2>Apartman Asansöründe Yük Taşıma Cezası Var mı? Yasal Boyut</h2>
+      <p>Pek çok kiracı ve ev sahibinin en çok merak ettiği konulardan biri: <em>"Bina asansöründe eşya taşımanın cezası var mı?"</em> <strong>Evet, vardır.</strong> 634 Sayılı Kat Mülkiyeti Kanunu uyarınca ana gayrimenkulün yönetim planı, tüm kat maliklerini ve kiracıları bağlayan bir sözleşme hükmündedir.</p>
+      
+      <p>Yönetim planında yolcu asansöründe eşya ve mobilya taşınması yasaklanmışsa:</p>
+      <ul class="list-disc pl-5 mt-3 space-y-2">
+        <li><strong>İdari Para Cezası:</strong> Site yönetimi genel kurul kararıyla belirlenen iç ceza tarifesini uygulayabilir.</li>
+        <li><strong>Arıza ve Hasar Tazmini:</strong> Taşıma sırasında asansör motorunun arızalanması, halat aşınması veya kabin içindeki kaplamaların çizilmesi halinde tüm onarım ve servis masrafları doğrudan eşyayı taşıyana rücu edilir.</li>
+        <li><strong>Hukuki Sorumluluk:</strong> Olası bir kazada veya asansörün düşme riskinde doğacak maddi/manevi zararlardan taşıyıcı ve mülk sakini sorumlu tutulur.</li>
+      </ul>
+
       <h2>Tek Çözüm Yolu: Dış Cephe Asansörü Kiralama</h2>
-      <p>Tüm bu krizleri yaşamadan atlatmanın tek meşru ve stressiz yolu <a href="/nilufer-kiralik-asansor" class="text-primary font-semibold hover:underline">mobil asansör kiralamak</a>tır. Apartman yönetiminden izin almak için çırpınmak yerine, balkonunuza sessiz sedasız (mobil kurulum) ile uzanan sistemimiz sizi tüm kavgalardan kurtarır.</p>
+      <p>Tüm bu krizleri ve ceza risklerini yaşamadan atlatmanın tek meşru ve stressiz yolu <a href="/nilufer-kiralik-asansor" class="text-primary font-semibold hover:underline">mobil asansör kiralamak</a>tır. Apartman yönetiminden izin almak için çırpınmak yerine, balkonunuza sessiz sedasız (mobil kurulum) ile uzanan sistemimiz sizi tüm kavgalardan kurtarır.</p>
       
       <p>Maliyet olarak bakıldığında, "Taşımacılar elle merdivenden çıkarsın" diyebilirsiniz. Ancak bu sefer de 10. kattaki dairenize çıkartılan bir eşyanın çarpıp kırılması muhtemeldir. Dış cephe asansörü bu gibi kullanıcı (hamal) hatalarını engeller. Kendi yatırımınızı korumak için dış cephe sisteminin sağladığı güvenliğe sığınmak, uzun vadede daima "ucuz" bir yatırımdır. Bu kapsamda <a href="/yildirim-kiralik-asansor" class="text-primary font-semibold hover:underline">Yıldırım kiralık asansör</a> hizmetlerimizden de faydalanabilirsiniz.</p>
+
+      <p>Kurulum koşulları ilçeye ve adrese göre değişebilir. Bölgenize özel bilgi için <a href="/osmangazi-kiralik-asansor" class="text-primary font-semibold hover:underline">Osmangazi</a>, <a href="/mudanya-kiralik-asansor" class="text-primary font-semibold hover:underline">Mudanya</a> ve <a href="/gursu-kiralik-asansor" class="text-primary font-semibold hover:underline">Gürsu kiralık asansör</a> sayfalarına göz atın; uygunluk bina cephesi ve aracın kurulacağı alan değerlendirilerek netleştirilir.</p>
     `
   },
   {
