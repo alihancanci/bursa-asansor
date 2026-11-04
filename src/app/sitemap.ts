@@ -68,9 +68,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  // 5 Ana İlçe + Bursa Merkez En Yüksek Otorite Sayfaları
+  // 5 Ana İlçe En Yüksek Otorite Sayfaları
   const PRIMARY_AUTHORITY_SLUGS = [
-    "bursa-merkez-kiralik-asansor",
     "nilufer-kiralik-asansor",
     "osmangazi-kiralik-asansor",
     "yildirim-kiralik-asansor",
@@ -112,9 +111,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
       const pageSlug = `${district.slug}-${service.slug}`;
 
-      // bursa-merkez nakliyat sayfaları /bursa-evden-eve-nakliyat a 301 yönlendirildiği için sitemap e ekleme
+      // bursa-merkez kopya sayfaları / ve /bursa-evden-eve-nakliyat a 301 yönlendirildiği için sitemap e ekleme
       if (
         [
+          "bursa-merkez-kiralik-asansor",
           "bursa-merkez-evden-eve-nakliyat",
           "bursa-merkez-evden-eve-asansorlu-nakliyat",
           "bursa-merkez-asansorlu-ev-tasima",

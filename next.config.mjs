@@ -49,6 +49,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/bursa-merkez-kiralik-asansor",
+        destination: "/",
+        permanent: true,
+      },
+      {
         source: "/bursa-merkez-evden-eve-nakliyat",
         destination: "/bursa-evden-eve-nakliyat",
         permanent: true,

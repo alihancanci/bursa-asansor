@@ -166,21 +166,24 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: "5",
     slug: "kacinci-kata-kadar-cikar",
-    title: "Mobil Asansörler Kaçıncı Kata Kadar Çıkar?",
-    excerpt: "Teleskopik asansörlerin teknik limitleri. 15., 20. veya 25. katlar için güvenlik sınırları, rüzgar hızı toleransı ve yükseklik fiziği.",
+    title: "Kiralık Asansör Kaçıncı Kata Kadar Çıkar? (15. Kat & Metre)",
+    excerpt: "Teleskopik dış cephe asansörlerinin teknik limitleri. 15. kata kadar (45-50 metre) güvenlik sınırları, rüzgar hızı toleransı ve yükseklik fiziği.",
     date: "28 Mart 2026",
     readTime: "7 dk okuma",
     category: "Lojistik & Teknoloji",
     author: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Ekibi",
     image: "/images/hero-bg.png",
-    metaDescription: "Mobil asansör kaçıncı kata çıkar? Bursa’daki asansörlerimiz 15. kata kadar erişir. Kat, bina cephesi ve kurulum koşullarını öğrenin.",
-    keywords: ["kaçıncı kata kadar çıkar", "yüksek kat eşya taşıma asansörü", "teleskopik asansör", "asansör kiralama sınırları", "rüzgar güvenliği"],
+    metaDescription: "Kiralık eşya taşıma asansörü kaçıncı kata kadar çıkar? 15. kata (45-50 m) ulaşan mobil dış cephe asansörü kurulum şartları ve fiyatları: 0505 608 07 00.",
+    keywords: ["kaçıncı kata kadar çıkar", "eşya taşıma asansörü kaçıncı kata çıkar", "kiralık asansör kaçıncı kata çıkar", "yüksek kat eşya taşıma asansörü", "teleskopik asansör"],
     faqs: [
-      { q: "Sizin cihazlarınız maksimum kaçıncı kata erişiyor?", a: "Bursa sınırları içinde hizmet verdiğimiz araç parkurumuz güvenilir şekilde 15. kata kadar erişim sağlamaktadır." },
+      { q: "Kiralık eşya taşıma asansörü maksimum kaçıncı kata çıkar?", a: "Standart mobil dış cephe asansörleri 15. kata (yaklaşık 45-50 metre yüksekliğe) kadar güvenli şekilde ulaşmaktadır." },
       { q: "Yüksek katlarda balkon şart mı?", a: "Balkon taşıma için en uygun alandır ancak yere kadar inen geniş Fransız camlar veya çift kanat sökülebilen pencereler de sıklıkla kullanılmaktadır." },
       { q: "Çok rüzgârlı havalarda sorun olur mu?", a: "Asansörlerimiz rüzgar sensörlerine sahiptir. Emniyet limitlerini aşan şiddetli rüzgarlarda operatörümüz işlemi durdurma yetkisine tam olarak sahiptir." }
     ],
     content: `
+      <div class="bg-blue-50 dark:bg-blue-950/30 border-l-4 border-primary p-5 rounded-r-xl my-6">
+        <p class="mb-0 font-medium"><strong>Kısa Yanıt:</strong> Mobil dış cephe eşya taşıma asansörlerimiz <strong>15. kata kadar (yaklaşık 45–50 metre yüksekliğe)</strong> güvenle ulaşmaktadır. Tek seferde 300–400 kg yük kapasitesiyle <a href="/nilufer-kiralik-asansor" class="text-primary font-bold underline">Nilüfer</a>, <a href="/osmangazi-kiralik-asansor" class="text-primary font-bold underline">Osmangazi</a>, <a href="/yildirim-kiralik-asansor" class="text-primary font-bold underline">Yıldırım</a>, <a href="/mudanya-kiralik-asansor" class="text-primary font-bold underline">Mudanya</a> ve <a href="/gursu-kiralik-asansor" class="text-primary font-bold underline">Gürsu</a> başta olmak üzere tüm Bursa genelinde 7/24 hizmet veriyoruz.</p>
+      </div>
       <h2>Teleskopik Teknolojinin Sınırları: Asansörler Kaçıncı Kata Ulaşır?</h2>
       <p>Büyük metropollerde yatay mimariden dikey mimariye geçilmesi, <a href="/nilufer-yuksek-kat-esya-tasima-asansoru" class="text-primary font-semibold hover:underline">yüksek kat eşya taşıma asansörü</a> ihtiyacını patlatmıştır. Müşterilerimizin bize en sık yönelttiği soruların başında, "<strong>Acaba sizin asansör kaçıncı kata kadar çıkar?</strong>" sorusu gelmektedir. Kulaktan dolma bilgiler yerine meselenin tamamen teknik standartlarına inelim.</p>
 

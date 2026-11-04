@@ -250,7 +250,9 @@ export default function HomePageClient() {
                 >
                   <Link
                     href={
-                      ["evden-eve-asansorlu-nakliyat", "evden-eve-nakliyat", "asansorlu-ev-tasima"].includes(service.slug)
+                      service.slug === "kiralik-asansor"
+                        ? "/"
+                        : ["evden-eve-asansorlu-nakliyat", "evden-eve-nakliyat", "asansorlu-ev-tasima"].includes(service.slug)
                         ? "/bursa-evden-eve-nakliyat"
                         : `/bursa-merkez-${service.slug}`
                     }

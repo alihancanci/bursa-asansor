@@ -113,16 +113,28 @@ export default function ServicePageClient() {
 
     const hoodText = hoodHighlights[district.slug] || "";
 
+    const districtBlogMap: Record<string, { slug: string; title: string }> = {
+      nilufer: { slug: "nilufer-kiralik-asansor-yuksek-kat-nakliyat", title: "Nilüfer Yüksek Katlı Sitelerde Asansör Kurulum Rehberi" },
+      osmangazi: { slug: "osmangazi-kiralik-asansor-dar-sokak-tasima", title: "Osmangazi Dar Sokak ve Yoğun Caddelerde Asansörlü Taşıma Rehberi" },
+      yildirim: { slug: "yildirim-kiralik-asansor-egimli-arazi-nakliyat", title: "Yıldırım Eğimli Sokaklarda Güvenli Asansör Kurulum Rehberi" },
+      mudanya: { slug: "mudanya-kiralik-asansor-guzelyali-nakliyat", title: "Mudanya & Güzelyalı Sahil Hattı Asansörlü Taşımacılık Rehberi" },
+    };
+    const blogGuide = districtBlogMap[district.slug];
+    const blogLinkHtml = blogGuide
+      ? `<li class="sm:col-span-2 pt-1 border-t border-slate-200/60 dark:border-white/10">📖 <a href="/blog/${blogGuide.slug}" class="text-primary font-semibold hover:underline">${blogGuide.title}</a></li>`
+      : "";
+
     htmlContent += `
       <h2>${district.name} Mahallelerinde Kiralık Asansör ve Evden Eve Nakliyat</h2>
       <p>${hoodText}</p>
       <div class="my-6 p-5 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10">
         <h3 class="text-base font-bold mb-3">${district.name} Hızlı Hizmet & Fiyat Bağlantıları</h3>
         <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm list-none pl-0">
-          <li>👉 <a href="/${district.slug}-kiralik-asansor" class="text-primary font-semibold hover:underline">${district.name} Kiralık Asansör</a></li>
+          <li>👉 <a href="${district.slug === "bursa-merkez" ? "/" : `/${district.slug}-kiralik-asansor`}" class="text-primary font-semibold hover:underline">${district.name} Kiralık Asansör</a></li>
           <li>👉 <a href="/${district.slug}-saatlik-asansor-kiralama" class="text-primary font-semibold hover:underline">${district.name} Saatlik Asansör Kiralama</a></li>
           <li>👉 <a href="/${district.slug}-kiralik-asansor-fiyatlari" class="text-primary font-semibold hover:underline">${district.name} Kiralık Asansör Fiyatları</a></li>
-          <li>👉 <a href="/${district.slug}-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">${district.name} Evden Eve Nakliyat</a></li>
+          <li>👉 <a href="${district.slug === "bursa-merkez" ? "/bursa-evden-eve-nakliyat" : `/${district.slug}-evden-eve-nakliyat`}" class="text-primary font-semibold hover:underline">${district.name} Evden Eve Nakliyat</a></li>
+          ${blogLinkHtml}
         </ul>
       </div>
     `;

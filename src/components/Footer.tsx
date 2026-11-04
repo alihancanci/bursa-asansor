@@ -167,7 +167,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/bursa-merkez-kiralik-asansor" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2 font-semibold">
+                <Link href="/" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2 font-semibold">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
                   Bursa Kiralık Asansör
                 </Link>
@@ -214,7 +214,10 @@ export function Footer() {
             <ul className="space-y-2.5">
               {ELEVATOR_SERVICES.map(s => (
                 <li key={s.slug}>
-                  <Link href={`/bursa-merkez-${s.slug}`} className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                  <Link
+                    href={s.slug === "kiralik-asansor" ? "/" : `/bursa-merkez-${s.slug}`}
+                    className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2"
+                  >
                     <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
                     {s.name}
                   </Link>
