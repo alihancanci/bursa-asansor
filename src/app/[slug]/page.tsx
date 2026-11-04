@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { DISTRICTS, SERVICES } from '@/data';
+import { FOCUS_DISTRICTS, FOCUS_DISTRICT_SERVICES, CORE_SERVICES_ALL_DISTRICTS } from '@/app/sitemap';
 import ServicePageClient from './ServicePageClient';
 
 export const revalidate = 604800; // Sayfaları arka planda haftada 1 kez (7 gün) otomatik yenileyerek taze tutar.
@@ -61,10 +62,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const priorityDistricts = ["nilufer", "yildirim", "mudanya", "osmangazi", "gursu"];
   if (priorityDistricts.includes(district.slug)) {
     const districtServiceMetadata: Record<string, string> = {
-      "evden-eve-nakliyat": `${district.name} Evden Eve Nakliyat | Teklif Al`,
-      "evden-eve-asansorlu-nakliyat": `${district.name} Asansörlü Nakliyat | Bilgi Al`,
-      "saatlik-asansor-kiralama": `${district.name} Saatlik Asansör Kiralama`,
-      "kiralik-asansor-fiyatlari": `${district.name} Kiralık Asansör Fiyatları`,
+      "kiralik-asansor": `${district.name} Kiralık Asansör & Asansör Kiralama`,
+      "evden-eve-nakliyat": `${district.name} Evden Eve Nakliyat | Asansörlü Taşıma`,
+      "evden-eve-asansorlu-nakliyat": `${district.name} Asansörlü Evden Eve Nakliyat`,
+      "saatlik-asansor-kiralama": `${district.name} Saatlik Asansör Kiralama | 7/24`,
+      "kiralik-asansor-fiyatlari": `${district.name} Kiralık Asansör Fiyatları (2026)`,
     };
     const metadata = districtServiceMetadata[service.slug];
     if (metadata) {
@@ -112,9 +114,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description = description.substring(0, 152) + "...";
   }
 
+  // Zayıf ve arama hacmi olmayan tali kombinasyonları Google indeksinden çıkarıp (noindex)
+  // sitenin tüm otoritesini Bursa ve 5 Ana İlçenin çekirdek sayfalarına odaklıyoruz.
+  const isFocusDistrict = FOCUS_DISTRICTS.includes(district.slug);
+  const allowedServices = isFocusDistrict ? FOCUS_DISTRICT_SERVICES : CORE_SERVICES_ALL_DISTRICTS;
+  const shouldIndex = allowedServices.includes(service.slug);
+
   return {
     title,
     description,
+    robots: shouldIndex
+      ? { index: true, follow: true, "max-image-preview": "large" }
+      : { index: false, follow: true },
     alternates: {
       canonical: `https://bursakiralikasansor.com/${fullSlug}`,
     },

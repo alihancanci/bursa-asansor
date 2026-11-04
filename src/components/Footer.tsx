@@ -161,6 +161,18 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/gursu-kiralik-asansor" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2 font-semibold">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                  Gürsu Kiralık Asansör
+                </Link>
+              </li>
+              <li>
+                <Link href="/bursa-merkez-kiralik-asansor" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2 font-semibold">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                  Bursa Kiralık Asansör
+                </Link>
+              </li>
+              <li>
                 <Link href="/nilufer-evden-eve-nakliyat" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
                   Nilüfer Evden Eve Nakliyat
@@ -170,6 +182,24 @@ export function Footer() {
                 <Link href="/osmangazi-evden-eve-nakliyat" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
                   Osmangazi Evden Eve Nakliyat
+                </Link>
+              </li>
+              <li>
+                <Link href="/yildirim-evden-eve-nakliyat" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
+                  Yıldırım Evden Eve Nakliyat
+                </Link>
+              </li>
+              <li>
+                <Link href="/mudanya-evden-eve-nakliyat" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
+                  Mudanya Evden Eve Nakliyat
+                </Link>
+              </li>
+              <li>
+                <Link href="/gursu-evden-eve-nakliyat" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
+                  Gürsu Evden Eve Nakliyat
                 </Link>
               </li>
             </ul>
