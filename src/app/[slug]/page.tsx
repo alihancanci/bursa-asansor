@@ -89,25 +89,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   if (service.slug === "kiralik-asansor") {
     const districtDescriptions: Record<string, string> = {
-      nilufer: "Nilüfer'de mobil asansör kiralama: cephe ve kurulum uygunluğunu öğrenin. Kat, eşya ve adres bilgisiyle fiyat sorun: 0505 608 07 00.",
-      osmangazi: "Osmangazi'de kiralık dış cephe asansörü için adres ve kurulum alanını değerlendirelim. Kat ve eşya bilgisiyle fiyat alın: 0505 608 07 00.",
-      yildirim: "Yıldırım'da mobil asansör uygunluğu sokak ve cephe erişimine göre belirlenir. Konum, kat ve yük bilgisiyle fiyat sorun: 0505 608 07 00.",
-      mudanya: "Mudanya'da kiralık asansör için adres, cephe ve sokak koşullarını paylaşın. Kurulum uygunluğu ve fiyat için arayın: 0505 608 07 00.",
-      gursu: "Gürsu'da mobil asansör kiralama için kat, yük türü ve adres bilgisiyle uygunluk ve fiyat alın: 0505 608 07 00.",
+      "bursa-merkez": "Bursa kiralık asansör ve saatlik mobil asansör kiralama. Heykel, Çekirge, Demirtaş geneli 15. kata kadar güvenli taşıma: 0505 608 07 00.",
+      nilufer: "Nilüfer kiralık asansör ve mobil asansör kiralama. Özlüce, Balat, Görükle, Ataevler'de 15. kata kadar 7/24 fiyat alın: 0505 608 07 00.",
+      osmangazi: "Osmangazi kiralık asansör ve dış cephe asansör kiralama. Hamitler, Yunuseli, Emek, Çekirge'de ücretsiz keşif ve fiyat: 0505 608 07 00.",
+      yildirim: "Yıldırım kiralık asansör ve saatlik mobil asansör kiralama. Millet, Erikli, Mesken, Teleferik'te 15. kata kadar taşıma: 0505 608 07 00.",
+      mudanya: "Mudanya kiralık asansör ve asansörlü nakliyat. Güzelyalı, Burgaz, Bademli, Halitpaşa'da saatlik asansör kiralama: 0505 608 07 00.",
+      gursu: "Gürsu kiralık asansör ve mobil asansör kiralama. Kurtuluş, Yenidoğan, Zafer mahallelerinde 15. kata kadar güvenli kurulum: 0505 608 07 00.",
     };
-    description = districtDescriptions[district.slug] ?? `${district.name} kiralık mobil asansör. Adres, kat ve eşya bilgisiyle kurulum uygunluğu ve fiyat için arayın: 0505 608 07 00.`;
-  } else if (priorityDistricts.includes(district.slug)) {
+    description = districtDescriptions[district.slug] ?? `${district.name} kiralık asansör ve saatlik mobil asansör kiralama. 15. kata kadar güvenli kurulum ve fiyat için arayın: 0505 608 07 00.`;
+  } else if (priorityDistricts.includes(district.slug) || district.slug === "bursa-merkez") {
     const districtServiceDescriptions: Record<string, string> = {
-      "evden-eve-nakliyat": `${district.name} ev taşıma fiyatı için eşya, kat, mesafe ve tarih bilgilerinizi paylaşın. Nakliye ve asansör ihtiyacınızı birlikte planlayalım. 0505 608 07 00.`,
-      "evden-eve-asansorlu-nakliyat": `${district.name} asansörlü nakliyat için cephe ve kurulum alanını değerlendirelim. Kat, yük ve adres bilgisiyle uygunluk ve fiyat sorun: 0505 608 07 00.`,
-      "saatlik-asansor-kiralama": `${district.name} saatlik asansör kiralama için yük, kat, konum ve tahmini süreyi iletin. Kurulum uygunluğu ve fiyat için arayın: 0505 608 07 00.`,
-      "kiralik-asansor-fiyatlari": district.slug === "osmangazi"
-        ? "Osmangazi kiralık asansör fiyatı; adres, kat, yük ve kullanım süresine göre belirlenir. Ücretsiz keşif ve uygunluk bilgisi için teklif alın: 0505 608 07 00."
-        : `${district.name} kiralık asansör fiyatı; konum, kat, yük ve kullanım süresine göre değerlendirilir. Bilgileri iletip teklif alın: 0505 608 07 00.`,
+      "evden-eve-nakliyat": `${district.name} evden eve nakliyat ve asansörlü ev taşıma. ${topHoods} genelinde 15. kata kadar dış cephe asansörlü nakliye teklifi: 0505 608 07 00.`,
+      "evden-eve-asansorlu-nakliyat": `${district.name} asansörlü evden eve nakliyat. ${topHoods} mahallelerinde dış cephe asansörüyle güvenli ev taşıma fiyatı: 0505 608 07 00.`,
+      "saatlik-asansor-kiralama": `${district.name} saatlik asansör kiralama ve operatörlü dış cephe asansörü. ${topHoods} genelinde 7/24 kurulum ve fiyat: 0505 608 07 00.`,
+      "kiralik-asansor-fiyatlari": `${district.name} kiralık asansör fiyatları (2026). Saatlik ve günlük mobil asansör kiralama ücretleri için ücretsiz keşif: 0505 608 07 00.`,
     };
     description = districtServiceDescriptions[service.slug] ?? description;
   } else if (service.slug === "evden-eve-asansorlu-nakliyat" || service.slug === "evden-eve-nakliyat") {
-    description = `${district.name} evden eve nakliyat. Asansörlü, garantili, en uygun fiyat ve ücretsiz keşif desteğiyle taşının. İletişim: 0505 608 07 00.`;
+    description = `${district.name} evden eve nakliyat ve asansörlü nakliye. 15. kata kadar dış cephe asansörü ve ücretsiz keşif desteği: 0505 608 07 00.`;
   }
 
   if (description.length > 155) {
@@ -217,7 +216,7 @@ export default async function ServicePage({ params }: Props) {
       {
         "@type": "Service",
         "name": `${district.name} ${service.name}`,
-        "description": `${district.name} ${service.name} hizmetleri`,
+        "description": `${district.name} kiralık asansör, saatlik asansör kiralama ve asansörlü evden eve nakliyat hizmetleri.`,
         "provider": { "@id": `https://bursakiralikasansor.com/#organization` },
         "serviceArea": {
           "@type": district.slug === "bursa-merkez" ? "City" : "AdministrativeArea",
@@ -225,6 +224,36 @@ export default async function ServicePage({ params }: Props) {
           ...(district.slug !== "bursa-merkez" ? {
             "containedInPlace": { "@type": "City", "name": "Bursa", "addressCountry": "TR" }
           } : {})
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": `${district.name} Asansör Kiralama ve Nakliyat Çözümleri`,
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": `${district.name} Kiralık Asansör & Mobil Asansör Kiralama`,
+                "url": `https://bursakiralikasansor.com/${district.slug}-kiralik-asansor`
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": `${district.name} Saatlik Asansör Kiralama`,
+                "url": `https://bursakiralikasansor.com/${district.slug}-saatlik-asansor-kiralama`
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": `${district.name} Evden Eve Nakliyat & Asansörlü Taşıma`,
+                "url": `https://bursakiralikasansor.com/${district.slug}-evden-eve-nakliyat`
+              }
+            }
+          ]
         }
       },
       

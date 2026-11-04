@@ -100,6 +100,34 @@ export default function ServicePageClient() {
     htmlContent += `<p>Osmangazi'de saatlik veya günlük kullanım için <a href="/osmangazi-saatlik-asansor-kiralama" class="text-primary font-semibold hover:underline">Osmangazi saatlik asansör kiralama</a> seçeneklerine de bakabilirsiniz. Kurulum uygunluğu adres, cephe ve aracın durabileceği alana göre teyit edilir.</p>`;
   }
 
+  // 5 Ana İlçe + Bursa Merkez için Semt Bazlı Odak & İlçe İçi Çapraz Güçlendirme (Silo) Bloğu
+  if (priorityDistricts.includes(district.slug) || district.slug === "bursa-merkez") {
+    const hoodHighlights: Record<string, string> = {
+      mudanya: "Güzelyalı, Burgaz, Bademli, Halitpaşa, Ömerbey ve Çağrışan mahallelerinde site içi ve sahil şeridi binalara uygun 15. kata kadar dış cephe asansör kurulumu yapıyoruz.",
+      nilufer: "Özlüce, Balat, Görükle, İhsaniye, Ataevler, Beşevler, Ertuğrul ve Altınşehir'deki yüksek katlı modern sitelerde bina asansörünü meşgul etmeden dış cepheden hızlı taşıma sağlıyoruz.",
+      osmangazi: "Hamitler, Yunuseli, Emek, Geçit, Dikkaldırım, Çekirge ve Demirtaş bölgelerinde dar sokaklara ve yoğun caddelere uyumlu mobil asansör filomuzla hizmet veriyoruz.",
+      yildirim: "Millet, Erikli, Ertuğrulgazi, Mesken, Teleferik ve Esenevler mahallelerinde eğimli sokak koşullarına uygun denge ayaklarıyla güvenli asansör kurulumu gerçekleştiriyoruz.",
+      gursu: "Kurtuluş, Yenidoğan, Zafer ve İstiklal mahallelerindeki apartman ve sitelerde ev eşyası, mobilya ve yapı malzemesi taşımacılığı için saatlik veya günlük asansör kiralama sunuyoruz.",
+      "bursa-merkez": "Heykel, Setbaşı, Altıparmak, Çekirge, Kükürtlü ve Muradiye başta olmak üzere Bursa merkezdeki tüm mahallelere 7/24 operatörlü mobil asansör yönlendiriyoruz."
+    };
+
+    const hoodText = hoodHighlights[district.slug] || "";
+
+    htmlContent += `
+      <h2>${district.name} Mahallelerinde Kiralık Asansör ve Evden Eve Nakliyat</h2>
+      <p>${hoodText}</p>
+      <div class="my-6 p-5 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10">
+        <h3 class="text-base font-bold mb-3">${district.name} Hızlı Hizmet & Fiyat Bağlantıları</h3>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm list-none pl-0">
+          <li>👉 <a href="/${district.slug}-kiralik-asansor" class="text-primary font-semibold hover:underline">${district.name} Kiralık Asansör</a></li>
+          <li>👉 <a href="/${district.slug}-saatlik-asansor-kiralama" class="text-primary font-semibold hover:underline">${district.name} Saatlik Asansör Kiralama</a></li>
+          <li>👉 <a href="/${district.slug}-kiralik-asansor-fiyatlari" class="text-primary font-semibold hover:underline">${district.name} Kiralık Asansör Fiyatları</a></li>
+          <li>👉 <a href="/${district.slug}-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">${district.name} Evden Eve Nakliyat</a></li>
+        </ul>
+      </div>
+    `;
+  }
+
   const targetedFaqs = district.slug === "yildirim" && service.slug === "evden-eve-nakliyat" ? [
     { q: "Yıldırım evden eve nakliyat fiyatı nasıl belirlenir?", a: "Eşya miktarı, iki adres arasındaki mesafe, katlar, erişim koşulları ve istenen taşıma hizmetleri değerlendirilir. Bu bilgileri paylaşarak adrese özel teklif isteyin." },
     { q: "Yıldırım'da ev taşıma teklifi için hangi bilgileri göndermeliyim?", a: "Alınacak ve bırakılacak adresleri, katları, taşınma tarihini ve eşya listesini veya fotoğraflarını paylaşın. Asansör gerekiyorsa bina cephesi ve aracın duracağı alanın fotoğrafı uygunluk değerlendirmesine yardımcı olur." },
