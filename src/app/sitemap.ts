@@ -56,6 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "osmangazi-kiralik-asansor-dar-sokak-tasima",
       "yildirim-kiralik-asansor-egimli-arazi-nakliyat",
       "mudanya-kiralik-asansor-guzelyali-nakliyat",
+      "gursu-kiralik-asansor-evden-eve-nakliyat-rehberi",
       "tasinirken-asansor-zorunlu-mu",
       "asansorlu-evden-eve-nakliyat"
     ].includes(post.slug);

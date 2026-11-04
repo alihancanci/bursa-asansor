@@ -30,7 +30,7 @@ export default function HomePage() {
         }
       },
       {
-        "@type": "Organization",
+        "@type": ["Organization", "LocalBusiness", "MovingCompany"],
         "@id": "https://bursakiralikasansor.com/#organization",
         "name": "Bursa Kiralık Asansör CNC Evden Eve Nakliyat",
         "url": "https://bursakiralikasansor.com",
@@ -43,6 +43,25 @@ export default function HomePage() {
         "image": "https://bursakiralikasansor.com/opengraph.jpg",
         "telephone": "+905056080700",
         "email": "info@bursakiralikasansor.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Nilüfer",
+          "addressRegion": "Bursa",
+          "addressCountry": "TR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 40.1885,
+          "longitude": 29.0610
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+          }
+        ],
         "contactPoint": [
           {
             "@type": "ContactPoint",
@@ -61,6 +80,7 @@ export default function HomePage() {
         "areaServed": DISTRICTS.filter((district) => district.slug !== "bursa-merkez").map((district) => ({
           "@type": "AdministrativeArea",
           "name": district.name,
+          ...(district.wikidataId ? { "sameAs": `https://www.wikidata.org/wiki/${district.wikidataId}` } : {}),
           "containedInPlace": { "@type": "City", "name": "Bursa", "addressCountry": "TR" }
         })),
         "hasOfferCatalog": {

@@ -118,6 +118,7 @@ export default function ServicePageClient() {
       osmangazi: { slug: "osmangazi-kiralik-asansor-dar-sokak-tasima", title: "Osmangazi Dar Sokak ve Yoğun Caddelerde Asansörlü Taşıma Rehberi" },
       yildirim: { slug: "yildirim-kiralik-asansor-egimli-arazi-nakliyat", title: "Yıldırım Eğimli Sokaklarda Güvenli Asansör Kurulum Rehberi" },
       mudanya: { slug: "mudanya-kiralik-asansor-guzelyali-nakliyat", title: "Mudanya & Güzelyalı Sahil Hattı Asansörlü Taşımacılık Rehberi" },
+      gursu: { slug: "gursu-kiralik-asansor-evden-eve-nakliyat-rehberi", title: "Gürsu Kiralık Asansör ve Evden Eve Nakliyat Rehberi" },
     };
     const blogGuide = districtBlogMap[district.slug];
     const blogLinkHtml = blogGuide

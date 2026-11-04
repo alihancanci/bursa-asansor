@@ -1408,5 +1408,61 @@ export const BLOG_POSTS: BlogPost[] = [
         </p>
       </div>
     `
+  },
+  {
+    id: "20",
+    slug: "gursu-kiralik-asansor-evden-eve-nakliyat-rehberi",
+    title: "Gürsu Kiralık Asansör ve Evden Eve Nakliyat Rehberi (2026)",
+    excerpt: "Gürsu Kurtuluş, Yenidoğan, Zafer ve İstiklal mahallelerinde 15. kata kadar dış cephe kiralık asansör kurulumu, evden eve taşıma ve saatlik kiralama detayları.",
+    date: "05 Kasım 2026",
+    readTime: "6 dk okuma",
+    category: "Bölgesel Rehber",
+    author: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Ekibi",
+    image: "/images/hero-bg.png",
+    metaDescription: "Gürsu kiralık asansör ve evden eve nakliyat rehberi. Kurtuluş, Yenidoğan ve Zafer mahallelerinde 15. kata kadar saatlik asansör kiralama: 0505 608 07 00.",
+    keywords: [
+      "gürsu kiralık asansör",
+      "gürsu evden eve nakliyat",
+      "gürsu asansör kiralama",
+      "gürsu saatlik asansör kiralama",
+      "yenidoğan kiralık asansör",
+      "kurtuluş mahallesi asansörlü nakliyat"
+    ],
+    faqs: [
+      {
+        q: "Gürsu'da kiralık asansör kaçıncı kata kadar ulaşıyor?",
+        a: "Gürsu genelinde hizmet veren teleskopik dış cephe asansörlerimiz 15. kata (yaklaşık 45-50 metre yüksekliğe) kadar güvenle ulaşmaktadır."
+      },
+      {
+        q: "Gürsu Yenidoğan ve Kurtuluş mahallelerindeki dar sokaklara asansör kurulabilir mi?",
+        a: "Evet. Kompakt şasili mobil asansör araçlarımız dar sokaklarda minimum ayak açıklığıyla kurulabilir. WhatsApp'tan sokak ve bina cephesinin fotoğrafını göndererek 5 dakikada ücretsiz uygunluk onayı alabilirsiniz."
+      },
+      {
+        q: "Sadece saatlik asansör kiralama mı yapıyorsunuz yoksa komple ev taşıma da var mı?",
+        a: "Her iki hizmeti de sunuyoruz. İster sadece operatörlü saatlik dış cephe asansörü kiralayabilir, isterseniz Gürsu evden eve nakliyat kapsamında anahtar teslim taşıma hizmeti alabilirsiniz."
+      }
+    ],
+    content: `
+      <div class="bg-blue-50 dark:bg-blue-950/30 border-l-4 border-primary p-5 rounded-r-xl my-6">
+        <p class="mb-0 font-medium"><strong>Gürsu Hızlı Özet:</strong> <a href="/gursu-kiralik-asansor" class="text-primary font-bold underline">Gürsu kiralık asansör</a> ve <a href="/gursu-evden-eve-nakliyat" class="text-primary font-bold underline">Gürsu evden eve nakliyat</a> operasyonlarımızda; Kurtuluş, Yenidoğan, Zafer ve İstiklal mahallelerindeki çok katlı binalara <strong>15. kata kadar</strong> dış cepheden güvenli erişim sağlıyoruz.</p>
+      </div>
+
+      <h2>Gürsu'da Neden Dış Cephe Kiralık Asansör Tercih Edilmeli?</h2>
+      <p>Doğu Bursa'nın en hızlı büyüyen ilçelerinden biri olan Gürsu; bir yandan Kurtuluş ve Zafer mahallelerindeki yeni nesil yüksek katlı apartmanları, diğer yandan Yenidoğan ve İstiklal mahallelerindeki bitişik nizam yerleşimleriyle dikkat çeker. Bina içi asansörlerin yük taşımaya kapatılması veya merdiven boşluklarının darlığı, taşınma sürecinde eşyaların hasar görmesine yol açabilir.</p>
+
+      <p><a href="/gursu-saatlik-asansor-kiralama" class="text-primary font-semibold hover:underline">Gürsu saatlik asansör kiralama</a> hizmetimiz sayesinde ağır mobilyalar, beyaz eşyalar, cam balkon panelleri ve inşaat malzemeleri bina merdivenlerine hiç girmeden doğrudan balkon veya geniş pencerelerden dairenize aktarılır.</p>
+
+      <h2>Gürsu Mahallelerinde Kurulum ve Saha Planlaması</h2>
+      <ul class="list-disc pl-5 mt-4 space-y-3 mb-6">
+        <li><strong>Kurtuluş ve Zafer Mahallesi:</strong> Yeni konut projelerinde site içi peyzaj alanlarına zarar vermeden, geniş erişim açılı teleskopik bomlarımızla 15. kata kadar kurulum yapıyoruz.</li>
+        <li><strong>Yenidoğan ve İstiklal Mahallesi:</strong> Yoğun sokak yapısında trafiği engellemeden kompakt araçlarımızla hızlı kurulum gerçekleştiriyor, taşınma süresini 4-5 saatten 1-1.5 saate indiriyoruz.</li>
+        <li><strong>Gürsu Organize Sanayi ve Ticari Alanlar:</strong> Ofis mobilyaları, tekstil makineleri veya yapı malzemelerinin üst katlara güvenli sevkiyatında MYK belgeli operatörlerimizle destek veriyoruz.</li>
+      </ul>
+
+      <h2>Gürsu Kiralık Asansör Fiyatları ve Ev Taşıma Teklifi</h2>
+      <p><a href="/gursu-kiralik-asansor-fiyatlari" class="text-primary font-semibold hover:underline">Gürsu kiralık asansör fiyatları</a>; eşyanın çıkacağı kat yüksekliğine, çalışma süresine (saatlik veya günlük) ve kurulum yapılacak adresin mesafesine göre şeffaf biçimde belirlenir. Komple ev taşıma taleplerinizde ise ücretsiz ekspertiz desteğimizle net fiyat garantisi sunuyoruz.</p>
+
+      <p>Komşu ilçelerimizdeki hizmetlerimiz için <a href="/yildirim-kiralik-asansor" class="text-primary font-semibold hover:underline">Yıldırım kiralık asansör</a>, <a href="/osmangazi-kiralik-asansor" class="text-primary font-semibold hover:underline">Osmangazi kiralık asansör</a> ve <a href="/nilufer-kiralik-asansor" class="text-primary font-semibold hover:underline">Nilüfer kiralık asansör</a> sayfalarımızı da inceleyebilirsiniz.</p>
+    `
   }
 ];

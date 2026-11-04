@@ -1,18 +1,19 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { DISTRICTS, SERVICES } from '@/data';
+import { FOCUS_DISTRICTS, FOCUS_DISTRICT_SERVICES, CORE_SERVICES_ALL_DISTRICTS } from '@/app/sitemap';
 import { ArrowRight, MapPin } from 'lucide-react';
 import { getCanonicalUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Hizmet Bölgelerimiz | Bursa Kiralık Asansör CNC',
-  description: 'Bursa genelinde Nilüfer, Osmangazi, Yıldırım ve tüm ilçelerde profesyonel asansör kiralama ve CNC evden eve nakliyat hizmeti veriyoruz.',
+  title: 'Bursa Hizmet Bölgelerimiz | Nilüfer, Osmangazi, Yıldırım',
+  description: 'Nilüfer, Osmangazi, Yıldırım, Mudanya, Gürsu ve tüm Bursa ilçelerinde 15. kata kadar mobil kiralık asansör ve evden eve nakliyat: 0505 608 07 00.',
   alternates: {
     canonical: getCanonicalUrl('/hizmet-bolgelerimiz'),
   },
   openGraph: {
-    title: 'Hizmet Bölgelerimiz | Bursa Kiralık Asansör CNC',
-    description: 'Bursa genelinde tüm ilçelere 7/24 asansörlü nakliyat hizmeti.',
+    title: 'Bursa Hizmet Bölgelerimiz | Nilüfer, Osmangazi, Yıldırım',
+    description: 'Bursa genelinde tüm ilçelere 7/24 kiralık asansör ve asansörlü nakliyat hizmeti.',
     url: getCanonicalUrl('/hizmet-bolgelerimiz'),
   }
 };
@@ -54,19 +55,40 @@ export default function ServiceAreasPage() {
               </div>
               
               <ul className="space-y-3 mb-8">
-                {SERVICES.map((service) => (
-                  <li key={service.slug}>
-                    <Link 
-                      href={`/${district.slug}-${service.slug}`}
-                      className="group flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors"
-                    >
-                      <span className="text-slate-600 dark:text-slate-300 group-hover:text-primary transition-colors text-sm font-medium">
-                        {district.name} {service.name}
-                      </span>
-                      <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-primary transition-colors transform group-hover:translate-x-1" />
-                    </Link>
-                  </li>
-                ))}
+                {SERVICES.filter((service) => {
+                  const allowed = FOCUS_DISTRICTS.includes(district.slug)
+                    ? FOCUS_DISTRICT_SERVICES
+                    : CORE_SERVICES_ALL_DISTRICTS;
+                  return allowed.includes(service.slug);
+                }).map((service) => {
+                  const pageSlug = `${district.slug}-${service.slug}`;
+                  let targetHref = `/${pageSlug}`;
+                  if (pageSlug === "bursa-merkez-kiralik-asansor") {
+                    targetHref = "/";
+                  } else if (
+                    [
+                      "bursa-merkez-evden-eve-nakliyat",
+                      "bursa-merkez-evden-eve-asansorlu-nakliyat",
+                      "bursa-merkez-asansorlu-ev-tasima",
+                    ].includes(pageSlug)
+                  ) {
+                    targetHref = "/bursa-evden-eve-nakliyat";
+                  }
+
+                  return (
+                    <li key={service.slug}>
+                      <Link 
+                        href={targetHref}
+                        className="group flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors"
+                      >
+                        <span className="text-slate-600 dark:text-slate-300 group-hover:text-primary transition-colors text-sm font-medium">
+                          {district.name} {service.name}
+                        </span>
+                        <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-primary transition-colors transform group-hover:translate-x-1" />
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
               
               <div className="pt-6 border-t border-slate-100 dark:border-slate-700">
