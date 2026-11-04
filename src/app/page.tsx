@@ -4,13 +4,13 @@ import HomePageClient from './HomePageClient';
 
 export const metadata: Metadata = {
   title: 'Bursa Kiralık Asansör & Asansör Kiralama | 0505 608 07 00',
-  description: 'Bursa kiralık asansör ve saatlik mobil asansör kiralama hizmeti. 15. kata kadar güvenli eşya taşıma. 7/24 uygun fiyat ve ücretsiz keşif: 0505 608 07 00.',
+  description: 'Bursa kiralık asansör ve saatlik asansör kiralama fiyatları. Nilüfer, Osmangazi, Yıldırım, Mudanya ve Gürsu’da 15. kata kadar 7/24 kurulum: 0505 608 07 00.',
   alternates: {
     canonical: 'https://bursakiralikasansor.com/',
   },
   openGraph: {
     title: 'Bursa Kiralık Asansör & Asansör Kiralama | 0505 608 07 00',
-    description: 'Bursa kiralık asansör ve saatlik mobil asansör kiralama hizmeti. 15. kata kadar güvenli eşya taşıma. 7/24 uygun fiyat ve ücretsiz keşif: 0505 608 07 00.',
+    description: 'Bursa kiralık asansör ve saatlik asansör kiralama fiyatları. Nilüfer, Osmangazi, Yıldırım, Mudanya ve Gürsu’da 15. kata kadar 7/24 kurulum: 0505 608 07 00.',
     url: 'https://bursakiralikasansor.com/',
   }
 };

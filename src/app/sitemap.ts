@@ -111,6 +111,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       }
 
       const pageSlug = `${district.slug}-${service.slug}`;
+
+      // bursa-merkez nakliyat sayfaları /bursa-evden-eve-nakliyat a 301 yönlendirildiği için sitemap e ekleme
+      if (
+        [
+          "bursa-merkez-evden-eve-nakliyat",
+          "bursa-merkez-evden-eve-asansorlu-nakliyat",
+          "bursa-merkez-asansorlu-ev-tasima",
+        ].includes(pageSlug)
+      ) {
+        continue;
+      }
+
       let pagePriority = isFocusDistrict ? 0.8 : 0.65;
 
       if (PRIMARY_AUTHORITY_SLUGS.includes(pageSlug)) {

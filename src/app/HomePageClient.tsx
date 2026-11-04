@@ -249,7 +249,11 @@ export default function HomePageClient() {
                   transition={{ duration: 0.4, delay: idx * 0.1 }}
                 >
                   <Link
-                    href={`/bursa-merkez-${service.slug}`}
+                    href={
+                      ["evden-eve-asansorlu-nakliyat", "evden-eve-nakliyat", "asansorlu-ev-tasima"].includes(service.slug)
+                        ? "/bursa-evden-eve-nakliyat"
+                        : `/bursa-merkez-${service.slug}`
+                    }
                     className="block h-full bg-white dark:bg-navy-light rounded-3xl p-6 border border-border dark:border-white/10 hover:border-primary dark:hover:border-primary shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group"
                   >
                     <div className="h-12 w-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">

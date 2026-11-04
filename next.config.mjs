@@ -29,6 +29,11 @@ const nextConfig = {
         permanent: true,
       })),
       {
+        source: "/:locale(en|ru|ar)",
+        destination: "/",
+        permanent: true,
+      },
+      {
         source: "/:locale(en|ru|ar)/:district(bursa-merkez|osmangazi|nilufer|yildirim|inegol|gemlik|gursu|mudanya|orhangazi|karacabey|iznik|mustafakemalpasa|yenisehir|kestel|orhaneli|keles|harmancik|buyukorhan)-kiralik-mobil-asansor",
         destination: "/:district-kiralik-asansor",
         permanent: true,
@@ -40,6 +45,21 @@ const nextConfig = {
       },
       {
         source: "/evden-eve-nakliye-bursa",
+        destination: "/bursa-evden-eve-nakliyat",
+        permanent: true,
+      },
+      {
+        source: "/bursa-merkez-evden-eve-nakliyat",
+        destination: "/bursa-evden-eve-nakliyat",
+        permanent: true,
+      },
+      {
+        source: "/bursa-merkez-evden-eve-asansorlu-nakliyat",
+        destination: "/bursa-evden-eve-nakliyat",
+        permanent: true,
+      },
+      {
+        source: "/bursa-merkez-asansorlu-ev-tasima",
         destination: "/bursa-evden-eve-nakliyat",
         permanent: true,
       },

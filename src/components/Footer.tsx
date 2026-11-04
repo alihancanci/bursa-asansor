@@ -249,7 +249,14 @@ export function Footer() {
               </li>
               {MOVING_SERVICES.map(s => (
                 <li key={s.slug}>
-                  <Link href={`/bursa-merkez-${s.slug}`} className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                  <Link
+                    href={
+                      ["evden-eve-asansorlu-nakliyat", "evden-eve-nakliyat", "asansorlu-ev-tasima"].includes(s.slug)
+                        ? "/bursa-evden-eve-nakliyat"
+                        : `/bursa-merkez-${s.slug}`
+                    }
+                    className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2"
+                  >
                     <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
                     {s.name}
                   </Link>
