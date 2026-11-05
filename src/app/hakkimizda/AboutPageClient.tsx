@@ -41,7 +41,7 @@ export default function AboutPageClient() {
             <h2 className="text-3xl lg:text-5xl font-display font-black text-slate-900 mb-6">Biz Kimiz?</h2>
             <div className="prose prose-lg dark:prose-invert prose-p:text-black dark:prose-p:text-slate-300 font-medium">
               <p><strong>Bursa Kiralık Asansör CNC Evden Eve Nakliyat</strong> olarak, Bursa&apos;nın zorlu ve dar sokaklarında evden eve taşımacılık sektörüne yenilikçi bir nefes getirdik. Klasik &quot;sırtta taşıma&quot; dönemini kapatarak, hem eşya güvenliğini hem de zaman tasarrufunu odağımıza aldık.</p>
-              <p>Yılların getirdiği sektör tecrübemizle, bugün 18 ilçenin tamamında aktif hizmet asansörlü nakliyat ağına sahibiz. İster parça eşya, ister yüksek katlı lüks rezidans taşımacılığı olsun; teknolojik altyapımız ve güler yüzlü ekibimizle nakliyatı &quot;stresli bir gün&quot; olmaktan çıkarıp, &quot;keyifli bir başlangıca&quot; dönüştürüyoruz.</p>
+              <p>Yılların getirdiği sektör tecrübemizle, bugün Bursa&apos;nın 17 ilçesinin tamamında aktif hizmet ve asansörlü nakliyat ağına sahibiz. İster parça eşya, ister yüksek katlı lüks rezidans taşımacılığı olsun; teknolojik altyapımız ve güler yüzlü ekibimizle nakliyatı &quot;stresli bir gün&quot; olmaktan çıkarıp, &quot;keyifli bir başlangıca&quot; dönüştürüyoruz.</p>
             </div>
           </motion.div>
           <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6, delay: 0.3 }} className="grid gap-6 sm:grid-cols-2">

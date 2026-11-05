@@ -125,9 +125,52 @@ export default function ServicePageClient() {
       ? `<li class="sm:col-span-2 pt-1 border-t border-slate-200/60 dark:border-white/10">📖 <a href="/blog/${blogGuide.slug}" class="text-primary font-semibold hover:underline">${blogGuide.title}</a></li>`
       : "";
 
+    const districtEngineeringSpecs: Record<string, string> = {
+      mudanya: "Mudanya'nın Güzelyalı, Burgaz ve Bademli bölgelerindeki eğimli sahil sokaklarında ve rüzgar alan cephelerde, aracımızın 4 noktalı hidrolik denge ayakları eğim açısına göre teraziye alınır ve rüzgar sensörü kontrolüyle güvenli taşıma yapılır.",
+      nilufer: "Nilüfer'in Özlüce, Balat, Ataevler ve Görükle mahallelerindeki 10-15 katlı modern sitelerde, site otopark giriş yüksekliği ve peyzaj alanı mesafesi dikkate alınarak 45-50 metre teleskopik raylı asansörlerimizle bina asansörünü hiç meşgul etmeden doğrudan balkondan yükleme yapılır.",
+      osmangazi: "Osmangazi'nin Hamitler, Yunuseli, Emek ve Dikkaldırım gibi yoğun cadde ve bitişik nizam apartmanlarının bulunduğu sokaklarda, trafiği aksatmayan kompakt şasili mobil asansör araçlarımızla 25-30 dakikada kurulum tamamlanır.",
+      yildirim: "Yıldırım'ın Millet, Erikli, Teleferik ve Esenevler mahallelerindeki dar veya yokuşlu sokak yapısına uygun manevra kabiliyeti yüksek araçlarımızla, dar merdiven boşluklarında eşya çizilme riskini tamamen ortadan kaldırıyoruz.",
+      gursu: "Gürsu'nun Kurtuluş, Yenidoğan ve Zafer mahallelerindeki yeni konut projelerinde ve çok katlı apartmanlarda hem evden eve nakliyat hem de mobilya, beyaz eşya ve inşaat malzemesi çıkarımı için hızlı saatlik/günlük kurulum sağlıyoruz.",
+      "bursa-merkez": "Bursa merkezdeki tarihi ve yoğun yapılaşmalı mahallelerde sokak genişliğine uygun araç seçimiyle 15. kata kadar hasarsız dış cephe erişimi sunuyoruz."
+    };
+    const engSpecText = districtEngineeringSpecs[district.slug] || "";
+
     htmlContent += `
       <h2>${district.name} Mahallelerinde Kiralık Asansör ve Evden Eve Nakliyat</h2>
       <p>${hoodText}</p>
+      <p>${engSpecText}</p>
+      <div class="my-6 overflow-x-auto rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-light">
+        <table class="w-full text-left text-xs sm:text-sm my-0">
+          <thead class="bg-slate-100 dark:bg-navy text-slate-800 dark:text-slate-200 font-bold">
+            <tr>
+              <th class="p-3 border-b border-slate-200 dark:border-white/10">${district.name} Kat Aralığı</th>
+              <th class="p-3 border-b border-slate-200 dark:border-white/10">Ortalama Kurulum</th>
+              <th class="p-3 border-b border-slate-200 dark:border-white/10">Kiralama Seçeneği</th>
+              <th class="p-3 border-b border-slate-200 dark:border-white/10">Hizmet Kapsamı</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 dark:divide-white/10">
+            <tr>
+              <td class="p-3 font-semibold">2. – 6. Kat</td>
+              <td class="p-3">20 – 30 Dk</td>
+              <td class="p-3">Saatlik / Günlük</td>
+              <td class="p-3">Operatör + Kurulum Dahil</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-semibold">7. – 11. Kat</td>
+              <td class="p-3">30 – 40 Dk</td>
+              <td class="p-3">Saatlik / Günlük</td>
+              <td class="p-3">Operatör + Kurulum Dahil</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-semibold">12. – 15. Kat (45-50m)</td>
+              <td class="p-3">40 – 45 Dk</td>
+              <td class="p-3">Saatlik / Komple Taşıma</td>
+              <td class="p-3">Uzman Operatör + Ücretsiz Keşif</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <div class="my-6 p-5 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10">
         <h3 class="text-base font-bold mb-3">${district.name} Hızlı Hizmet & Fiyat Bağlantıları</h3>
         <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm list-none pl-0">

@@ -1,10 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getCanonicalUrl } from '@/lib/seo';
+import { CTASection } from '@/components/CTASection';
 import { 
   CheckCircle, 
-  Phone, 
-  MessageCircle, 
   Star, 
   Clock, 
   ShieldCheck, 
@@ -131,23 +130,8 @@ export default function BursaEvdenEveNakliyatPage() {
               15. kata kadar çıkan hidrolik mobil asansörlerimiz, marangozlu uzman ekibimiz güvencesiyle eşyalarınızı sıfır riskle yeni yuvanıza taşıyoruz.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a
-                href="tel:+905056080700"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-primary text-white font-bold px-8 py-4 rounded-2xl hover:bg-orange-600 transition-all text-base sm:text-lg shadow-lg shadow-primary/25 hover:-translate-y-0.5"
-              >
-                <Phone className="w-5 h-5" />
-                Hemen Ara: 0505 608 07 00
-              </a>
-              <a
-                href="https://wa.me/905056080700?text=Merhaba,%20Bursa%20evden%20eve%20nakliyat%20hizmeti%20ve%20fiyat%20bilgisi%20almak%20istiyorum."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-emerald-600 text-white font-bold px-8 py-4 rounded-2xl hover:bg-emerald-700 transition-all text-base sm:text-lg shadow-lg shadow-emerald-900/30 hover:-translate-y-0.5"
-              >
-                <MessageCircle className="w-5 h-5" />
-                WhatsApp ile Fiyat Al
-              </a>
+            <div className="max-w-xl mx-auto">
+              <CTASection locationName="Bursa Evden Eve Nakliyat Hero" />
             </div>
           </div>
         </section>
@@ -356,16 +340,28 @@ export default function BursaEvdenEveNakliyatPage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
               {districtLinks.map((d) => (
-                <Link
+                <div
                   key={d.slug}
-                  href={`/${d.slug}-evden-eve-asansorlu-nakliyat`}
-                  className="flex items-center justify-center gap-2 p-3.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm font-bold text-slate-700 dark:text-slate-200 hover:border-primary hover:text-primary transition-colors text-center shadow-xs"
+                  className="p-4 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl shadow-xs flex flex-col gap-2"
                 >
-                  <MapPin className="w-3.5 h-3.5 text-primary shrink-0" />
-                  <span>{d.name} Nakliyat</span>
-                </Link>
+                  <div className="flex items-center gap-2 font-bold text-slate-900 dark:text-white text-sm">
+                    <MapPin className="w-4 h-4 text-primary shrink-0" />
+                    <span>{d.name} Bölgesi</span>
+                  </div>
+                  <div className="flex flex-col gap-1 text-xs font-semibold">
+                    <Link href={`/${d.slug}-evden-eve-nakliyat`} className="text-primary hover:underline">
+                      → {d.name} Evden Eve Nakliyat
+                    </Link>
+                    <Link href={`/${d.slug}-kiralik-asansor`} className="text-slate-600 dark:text-slate-300 hover:text-primary transition-colors">
+                      → {d.name} Kiralık Asansör
+                    </Link>
+                    <Link href={`/${d.slug}-evden-eve-asansorlu-nakliyat`} className="text-slate-600 dark:text-slate-300 hover:text-primary transition-colors">
+                      → {d.name} Asansörlü Nakliyat
+                    </Link>
+                  </div>
+                </div>
               ))}
             </div>
           </section>
@@ -422,23 +418,8 @@ export default function BursaEvdenEveNakliyatPage() {
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                 Eşyalarınızı riske atmayın. Bursa Kiralık Asansör uzmanlığıyla bugün ücretsiz keşif randevusu oluşturun.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-2">
-                <a
-                  href="tel:+905056080700"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-xl transition-all text-base shadow-lg shadow-primary/30"
-                >
-                  <Phone className="w-5 h-5" />
-                  0505 608 07 00
-                </a>
-                <a
-                  href="https://wa.me/905056080700?text=Merhaba,%20Bursa%20evden%20eve%20nakliyat%20hakkında%20bilgi%20almak%20istiyorum."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-4 rounded-xl transition-all text-base"
-                >
-                  <MessageCircle className="w-5 h-5" />
-                  WhatsApp Destek
-                </a>
+              <div className="max-w-xl mx-auto pt-2">
+                <CTASection locationName="Bursa Evden Eve Nakliyat Footer CTA" />
               </div>
             </div>
           </section>

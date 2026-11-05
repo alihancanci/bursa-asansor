@@ -314,14 +314,13 @@ export default function HomePageClient() {
                   {' '}ile ortak çağrı merkezimiz (<a href="tel:05056080700" className="text-white font-bold hover:text-primary underline">0505 608 07 00</a>) üzerinden 7/24 koordineli çalışmaktayız.
                 </p>
                 <div className="flex flex-wrap items-center gap-2.5 text-xs font-semibold">
-                  <span className="text-slate-400 py-1">İlçe VIP Nakliyat Sayfaları:</span>
-                  <a href="https://www.bursavipevdeneve.com/nilufer-evden-eve-nakliyat" target="_blank" rel="noopener" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Nilüfer Evden Eve Nakliyat</a>
-                  <a href="https://www.bursavipevdeneve.com/osmangazi-evden-eve-nakliyat" target="_blank" rel="noopener" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Osmangazi Evden Eve Nakliyat</a>
-                  <a href="https://www.bursavipevdeneve.com/yildirim-evden-eve-nakliyat" target="_blank" rel="noopener" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Yıldırım Evden Eve Nakliyat</a>
-                  <a href="https://www.bursavipevdeneve.com/mudanya-evden-eve-nakliyat" target="_blank" rel="noopener" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Mudanya Evden Eve Nakliyat</a>
-                  <a href="https://www.bursavipevdeneve.com/gemlik-evden-eve-nakliyat" target="_blank" rel="noopener" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Gemlik Evden Eve Nakliyat</a>
-                  <a href="https://www.bursavipevdeneve.com/gursu-evden-eve-nakliyat" target="_blank" rel="noopener" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Gürsu Evden Eve Nakliyat</a>
-                  <a href="https://www.bursavipevdeneve.com/hizmetler/asansorlu-evden-eve-nakliyat" target="_blank" rel="noopener" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Asansörlü VIP Ev Taşıma</a>
+                  <span className="text-slate-400 py-1">5 Ana İlçe Nakliyat &amp; Asansör Sayfalarımız:</span>
+                  <Link href="/nilufer-evden-eve-nakliyat" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Nilüfer Evden Eve Nakliyat</Link>
+                  <Link href="/osmangazi-evden-eve-nakliyat" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Osmangazi Evden Eve Nakliyat</Link>
+                  <Link href="/yildirim-evden-eve-nakliyat" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Yıldırım Evden Eve Nakliyat</Link>
+                  <Link href="/mudanya-evden-eve-nakliyat" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Mudanya Evden Eve Nakliyat</Link>
+                  <Link href="/gursu-evden-eve-nakliyat" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Gürsu Evden Eve Nakliyat</Link>
+                  <Link href="/bursa-evden-eve-nakliyat" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Bursa Asansörlü Evden Eve Nakliyat</Link>
                 </div>
               </div>
 
@@ -391,7 +390,7 @@ export default function HomePageClient() {
                 <div className="font-semibold text-white/90" dangerouslySetInnerHTML={{ __html: t('home.operator_control', 'Operatör<br/>Kontrolü') }} />
               </div>
               <div className="bg-white dark:bg-navy-light p-6 rounded-3xl shadow-lg border border-border dark:border-white/10 text-center">
-                <div className="text-4xl font-display font-black text-primary mb-2">18</div>
+                <div className="text-4xl font-display font-black text-primary mb-2">17</div>
                 <div className="font-semibold text-secondary dark:text-white" dangerouslySetInnerHTML={{ __html: t('home.active_network', 'İlçede<br/>Aktif Ağ') }} />
               </div>
               <div className="bg-white dark:bg-navy-light p-6 rounded-3xl shadow-lg border border-border dark:border-white/10 text-center transform translate-y-8">
@@ -454,6 +453,38 @@ export default function HomePageClient() {
                   <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-lg">
                     {t('home.pricing_desc', "Kiralık mobil asansör ücretlerimiz; kurulum yapılacak katın yüksekliği (15. kata kadar), taşınacak eşyanın veya malzemenin miktarı ve operasyonun tahmini süresine göre şeffaf bir şekilde belirlenir. Binanın önündeki ağaç, elektrik teli gibi engeller operatörümüz tarafından değerlendirilir ve en güvenli kurulum sağlanır. İhtiyaç halinde eşya taşıma personeli (hamal) ve nakliye aracı da fiyat teklifine dahil edilebilir. Gizli ücret veya sürpriz maliyet yoktur.")}
                   </p>
+                  <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-light shadow-sm">
+                    <table className="w-full text-left text-xs sm:text-sm">
+                      <thead className="bg-slate-100 dark:bg-navy text-slate-800 dark:text-slate-200 font-bold">
+                        <tr>
+                          <th className="p-3 border-b border-slate-200 dark:border-white/10">Kat Aralığı</th>
+                          <th className="p-3 border-b border-slate-200 dark:border-white/10">Kurulum Süresi</th>
+                          <th className="p-3 border-b border-slate-200 dark:border-white/10">Kiralama Modeli</th>
+                          <th className="p-3 border-b border-slate-200 dark:border-white/10">Dahil Olanlar</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-slate-200 dark:divide-white/10 text-slate-700 dark:text-slate-300">
+                        <tr>
+                          <td className="p-3 font-semibold text-secondary dark:text-white">2. – 6. Kat</td>
+                          <td className="p-3">20 – 30 Dakika</td>
+                          <td className="p-3">Saatlik / Tek Sefer</td>
+                          <td className="p-3">Operatör + Kurulum + Yakıt</td>
+                        </tr>
+                        <tr>
+                          <td className="p-3 font-semibold text-secondary dark:text-white">7. – 11. Kat</td>
+                          <td className="p-3">30 – 40 Dakika</td>
+                          <td className="p-3">Saatlik / Yarım Gün</td>
+                          <td className="p-3">Operatör + Kurulum + Yakıt</td>
+                        </tr>
+                        <tr>
+                          <td className="p-3 font-semibold text-secondary dark:text-white">12. – 15. Kat (45-50m)</td>
+                          <td className="p-3">40 – 45 Dakika</td>
+                          <td className="p-3">Saatlik / Günlük</td>
+                          <td className="p-3">Uzman Operatör + Rüzgar Kontrolü</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                   <div className="bg-white dark:bg-navy-light p-5 rounded-2xl border border-primary/20 shadow-sm">
                     <p className="text-primary font-bold text-base flex items-center gap-3">
                       <Phone className="w-5 h-5" />
