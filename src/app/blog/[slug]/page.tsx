@@ -20,16 +20,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return { title: 'Yazı Bulunamadı | Blog' };
   }
 
+  const description = post.metaDescription || post.excerpt;
+  const snippetDescription = description.length > 160
+    ? `${description.substring(0, 157).trimEnd()}...`
+    : description;
+
   return {
     title: `${post.title} | Blog`,
-    description: post.excerpt.length > 155 ? `${post.excerpt.substring(0, 155)}...` : post.excerpt,
+    description: snippetDescription,
     keywords: post.keywords,
     alternates: {
       canonical: `https://bursakiralikasansor.com/blog/${paramsSlug}`,
     },
     openGraph: {
       title: post.title,
-      description: post.excerpt.length > 155 ? `${post.excerpt.substring(0, 155)}...` : post.excerpt,
+      description: snippetDescription,
       type: 'article',
       url: `https://bursakiralikasansor.com/blog/${post.slug}`,
       publishedTime: post.date,
@@ -38,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     twitter: {
       card: 'summary_large_image',
       title: post.title,
-      description: post.excerpt,
+      description: snippetDescription,
     }
   };
 }

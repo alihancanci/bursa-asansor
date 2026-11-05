@@ -5,10 +5,10 @@ import { ClientProviders } from "./providers";
 
 export const metadata: Metadata = {
   title: {
-    default: "Bursa Kiralık Asansör & Asansör Kiralama | 0505 608 07 00",
+    default: "Bursa Kiralık Asansör & Asansör Kiralama Fiyatları (15. Kat)",
     template: "%s",
   },
-  description: "Bursa kiralık asansör ve profesyonel mobil asansör kiralama hizmetleri. 15. kata kadar eşya taşıma asansörü, 7/24 uygun fiyat: 0505 608 07 00.",
+  description: "Bursa kiralık asansör, ev taşıma asansörü ve eşya taşıma asansörü kiralama fiyatları. 15. kata kadar saatlik ve günlük 7/24 kurulum: 0505 608 07 00.",
   metadataBase: new URL("https://bursakiralikasansor.com"),
   alternates: {
     canonical: 'https://bursakiralikasansor.com/',

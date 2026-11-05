@@ -86,11 +86,11 @@ export default function HomePageClient() {
 
               <h1 className="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-white leading-[1.2] mb-6">
                 {t('hero.title1', "Bursa Kiralık")} <span className="text-gradient">{t('hero.title2', "Mobil Asansör")}</span> <br />
-                {t('hero.title3', "Eşya Taşıma Asansörü")}
+                {t('hero.title3', "Ev & Eşya Taşıma Asansörü")}
               </h1>
 
               <p className="text-lg sm:text-xl text-slate-100/90 mb-10 leading-relaxed max-w-2xl">
-                {t('hero.subtitle', "Bursa’da 15. kata kadar mobil asansör kiralama. Haftanın her günü, 7/24 ulaşılabiliriz. Nilüfer, Mudanya, Osmangazi, Yıldırım ve Gürsu öncelikli olmak üzere Bursa’nın tüm ilçelerine hizmet veriyoruz. Net fiyat garantisi ve ücretsiz ekspertiz ile sürpriz maliyetlere son veriyoruz.")}
+                {t('hero.subtitle', "Bursa ev taşıma asansörü ve saatlik eşya taşıma asansörü kiralama hizmetiyle 15. kata kadar güvenli kurulum. Nilüfer, Mudanya, Osmangazi, Yıldırım ve Gürsu başta olmak üzere tüm Bursa'da 7/24 operatörlü, net fiyat ve ücretsiz keşif garantisi.")}
               </p>
 
               <CTASection className="max-w-xl" />

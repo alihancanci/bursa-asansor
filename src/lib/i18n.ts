@@ -2,8 +2,6 @@
 
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
-import HttpBackend from 'i18next-http-backend';
 
 // Inline Turkish translations so SSR and client render the same initial content
 const trTranslations = {
@@ -16,10 +14,10 @@ const trTranslations = {
     subtitle: "CNC Evden Eve Nakliyat"
   },
   hero: {
-    title1: "Bursa Kiralık Asansör",
-    title2: "CNC",
-    title3: "Evden Eve Nakliyat",
-    subtitle: "Dar sokaklar, yüksek binalar dert değil! 15. kata kadar güvenli ve hızlı mobil asansör ve nakliyat çözümleri sunuyoruz. Hemen Ara: 0505 608 07 00",
+    title1: "Bursa Kiralık",
+    title2: "Mobil Asansör",
+    title3: "Ev & Eşya Taşıma Asansörü",
+    subtitle: "Bursa ev taşıma asansörü ve saatlik eşya taşıma asansörü kiralama hizmetiyle 15. kata kadar güvenli kurulum. Nilüfer, Mudanya, Osmangazi, Yıldırım ve Gürsu başta olmak üzere tüm Bursa'da 7/24 operatörlü, net fiyat ve ücretsiz keşif garantisi.",
     cta_call: "Hemen Ara Fiyat Al",
     cta_whatsapp: "WhatsApp'tan Teklif İste",
     image_alt: "Bursa Kiralık Asansör CNC Evden Eve Nakliyat Hizmeti"
@@ -63,7 +61,7 @@ const trTranslations = {
     services_title: "Bursa Kiralık Asansör CNC Evden Eve Nakliyat Hizmetleri",
     services_desc: "İhtiyacınıza uygun mobil asansör çözümleriyle yanınızdayız.",
     why_choose_us: "Neden Bizi Tercih Etmelisiniz?",
-    trust_p1: "Bursa'da uzun yıllara dayanan lojistik ve taşıma tecrübemizle, müşterilerimize <strong>en sorunsuz ve profesyonel</strong> kiralık mobil asansör hizmetini sunuyoruz.",
+    trust_p1: "Bursa'da uzun yıllara dayanan lojistik ve taşıma tecrübemizle, ev taşıma asansörü ve eşya taşıma asansörü ihtiyaçlarınızda müşterilerimize <strong class='text-white'>en sorunsuz ve profesyonel</strong> kiralık mobil asansör hizmetini sunuyoruz.",
     trust_p2: "Klasik yöntemlerin aksine; eşyalarınızı merdiven dairesine sokmadan, duvarları çizmeden ve eşyalarınıza zarar vermeden doğrudan taşıma işlemini gerçekleştiriyoruz. Üstelik <strong>15. kata kadar çıkar</strong> kapasitemizle yüksek binalarda bile kolaylık sağlıyoruz.",
     trust_p3: "İhtiyaç duymanız halinde sadece asansör değil, <strong>gerekli durumlarda taşıma personeli (hamal) ve nakliye kamyonu desteği de verilir</strong>. İşimizi ciddiye alıyoruz: Tam saatinde oluruz, özenli çalışırız, makinelerimiz bakımlıdır ve iş güvenliğine dikkat ederiz.",
     up_to_floor: "Kata Kadar<br/>Erişim",
@@ -100,17 +98,11 @@ const trTranslations = {
 
 const isBrowser = typeof window !== 'undefined';
 
-if (isBrowser) {
-  i18n
-    .use(HttpBackend)
-    .use(LanguageDetector);
-}
-
 i18n
   .use(initReactI18next)
   .init({
     fallbackLng: 'tr',
-    supportedLngs: ['tr', 'en', 'ar', 'ru'],
+    supportedLngs: ['tr'],
     debug: false,
     lng: 'tr',
 
@@ -119,39 +111,13 @@ i18n
       tr: { translation: trTranslations }
     },
 
-    // Still allow loading other languages from backend
-    partialBundledLanguages: true,
-    
     interpolation: {
       escapeValue: false,
-    },
-
-    backend: {
-      loadPath: '/locales/{{lng}}/translation.json',
-    },
-    
-    detection: {
-      order: ['localStorage', 'navigator'],
-      caches: ['localStorage'],
     },
     
     react: {
       useSuspense: false,
     },
   });
-
-// Setup dynamic RTL direction change
-i18n.on('languageChanged', (lng) => {
-  if (typeof document !== 'undefined') {
-    document.documentElement.lang = lng;
-    document.documentElement.dir = i18n.dir(lng);
-    
-    if (lng === 'ar') {
-      document.body.classList.add('rtl-active');
-    } else {
-      document.body.classList.remove('rtl-active');
-    }
-  }
-});
 
 export default i18n;

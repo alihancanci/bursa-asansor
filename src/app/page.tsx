@@ -3,14 +3,14 @@ import { DISTRICTS } from '@/data';
 import HomePageClient from './HomePageClient';
 
 export const metadata: Metadata = {
-  title: 'Bursa Kiralık Asansör & Asansör Kiralama | 0505 608 07 00',
-  description: 'Bursa kiralık asansör ve saatlik asansör kiralama fiyatları. Nilüfer, Osmangazi, Yıldırım, Mudanya ve Gürsu’da 15. kata kadar 7/24 kurulum: 0505 608 07 00.',
+  title: 'Bursa Kiralık Asansör & Asansör Kiralama Fiyatları (15. Kat)',
+  description: 'Bursa kiralık asansör, ev taşıma asansörü ve eşya taşıma asansörü kiralama fiyatları. 15. kata kadar saatlik ve günlük 7/24 kurulum: 0505 608 07 00.',
   alternates: {
     canonical: 'https://bursakiralikasansor.com/',
   },
   openGraph: {
-    title: 'Bursa Kiralık Asansör & Asansör Kiralama | 0505 608 07 00',
-    description: 'Bursa kiralık asansör ve saatlik asansör kiralama fiyatları. Nilüfer, Osmangazi, Yıldırım, Mudanya ve Gürsu’da 15. kata kadar 7/24 kurulum: 0505 608 07 00.',
+    title: 'Bursa Kiralık Asansör & Asansör Kiralama Fiyatları (15. Kat)',
+    description: 'Bursa kiralık asansör, ev taşıma asansörü ve eşya taşıma asansörü kiralama fiyatları. 15. kata kadar saatlik ve günlük 7/24 kurulum: 0505 608 07 00.',
     url: 'https://bursakiralikasansor.com/',
   }
 };
@@ -97,7 +97,8 @@ export default function HomePage() {
         },
         "knowsAbout": [
           "Asansörlü Nakliyat", "Mobil Asansör Kiralama", "Dar Sokak Asansörü",
-          "Evden Eve Nakliyat Bursa", "İnşaat Asansörü", "Eşya Taşıma Asansörü"
+          "Evden Eve Nakliyat Bursa", "İnşaat Asansörü", "Eşya Taşıma Asansörü",
+          "Ev Taşıma Asansörü", "Bursa Asansör Kiralama Fiyatları"
         ],
         "sameAs": [
           "https://maps.app.goo.gl/W5D6w9hQQ39QvVy29",
