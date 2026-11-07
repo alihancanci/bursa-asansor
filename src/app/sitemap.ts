@@ -5,9 +5,9 @@ import { BLOG_POSTS } from "@/data/blog";
 const BASE_URL = "https://bursakiralikasansor.com";
 
 // Sabit tarihler: Google'ın lastModified sinyalini doğru okuması için
-const SITE_LAST_UPDATED = new Date("2026-11-05");
-const BLOG_LAST_UPDATED = new Date("2026-11-05");
-const SERVICE_PAGES_UPDATED = new Date("2026-11-05");
+const SITE_LAST_UPDATED = new Date("2026-11-07");
+const BLOG_LAST_UPDATED = new Date("2026-11-07");
+const SERVICE_PAGES_UPDATED = new Date("2026-11-07");
 
 // 5 Ana Hedef İlçe + Bursa Merkez
 export const FOCUS_DISTRICTS = [
@@ -112,13 +112,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
       const pageSlug = `${district.slug}-${service.slug}`;
 
-      // bursa-merkez kopya sayfaları / ve /bursa-evden-eve-nakliyat a 301 yönlendirildiği için sitemap e ekleme
+      // bursa-merkez ve mudanya kopya sayfaları ana otorite sayfalarına 301 yönlendirildiği için sitemap e ekleme
       if (
         [
           "bursa-merkez-kiralik-asansor",
           "bursa-merkez-evden-eve-nakliyat",
           "bursa-merkez-evden-eve-asansorlu-nakliyat",
           "bursa-merkez-asansorlu-ev-tasima",
+          "mudanya-evden-eve-asansorlu-nakliyat",
+          "mudanya-asansorlu-ev-tasima",
         ].includes(pageSlug)
       ) {
         continue;

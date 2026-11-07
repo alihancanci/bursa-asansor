@@ -220,8 +220,8 @@ export default function HomePageClient() {
                   <Link href={`/${d.slugPrefix}-evden-eve-nakliyat`} className="text-slate-700 dark:text-slate-300 hover:text-primary transition-colors">
                     Evden Eve
                   </Link>
-                  <Link href={`/${d.slugPrefix}-evden-eve-asansorlu-nakliyat`} className="text-slate-700 dark:text-slate-300 hover:text-primary transition-colors">
-                    Asansörlü Nakliyat
+                  <Link href={`/${d.slugPrefix}-saatlik-asansor-kiralama`} className="text-slate-700 dark:text-slate-300 hover:text-primary transition-colors">
+                    Saatlik Kiralama
                   </Link>
                 </div>
               </div>

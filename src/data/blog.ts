@@ -1054,7 +1054,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         q: "Nilüfer'de kiralık asansör kaçıncı kata kadar ulaşıyor?",
-        a: "Nilüfer genelindeki araç filomuz 70 metreye (yaklaşık 20-24. kat) kadar 400 kg yük taşıma kapasitesiyle kesintisiz operasyon sağlamaktadır."
+        a: "Nilüfer genelindeki araç filomuz 15. kata (yaklaşık 45-50 metreye) kadar 400 kg yük taşıma kapasitesiyle kesintisiz operasyon sağlamaktadır."
       },
       {
         q: "Komple ev taşımadan yalnızca mobilya veya tadilat molozu için asansör kiralayabilir miyiz?",
@@ -1341,7 +1341,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         q: "Sahil tarafındaki binalarda yol ile balkon arasında geniş bahçe mesafesi varsa asansör ulaşır mı?",
-        a: "Evet. 70 metreye kadar erişebilen teleskopik araçlarımız yatayda yüksek erişim açısına sahiptir. Yol ile bina cephesi arasındaki 15-20 metrelik bahçe veya istinat duvarı engellerini havadan rahatlıkla aşabilmektedir."
+        a: "Evet. 15. kata (yaklaşık 45-50 metreye) kadar erişebilen teleskopik araçlarımız yatayda yüksek erişim açısına sahiptir. Yol ile bina cephesi arasındaki 15-20 metrelik bahçe veya istinat duvarı engellerini havadan rahatlıkla aşabilmektedir."
       },
       {
         q: "Bademli'de sadece piyano, şömine mermeri veya para kasası gibi tek bir parça için çağırabilir miyiz?",

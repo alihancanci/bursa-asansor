@@ -78,6 +78,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title = "Osmangazi Kiralık Asansör Fiyatları | Ücretsiz Keşif";
   }
 
+  if (district.slug === "mudanya") {
+    const mudanyaTitles: Record<string, string> = {
+      "kiralik-asansor": "Mudanya Kiralık Asansör & Asansör Kiralama (Güzelyalı)",
+      "evden-eve-nakliyat": "Mudanya Evden Eve Nakliyat & Asansörlü Ev Taşıma",
+      "saatlik-asansor-kiralama": "Mudanya Saatlik Asansör Kiralama | 15. Kata Kadar 7/24",
+      "kiralik-asansor-fiyatlari": "Mudanya Kiralık Asansör Fiyatları 2026 | Saatlik & Günlük",
+    };
+    if (mudanyaTitles[service.slug]) {
+      title = mudanyaTitles[service.slug];
+    }
+  }
+
   // 60 karakter limitini garanti altına al
   if (title.length > 60) {
     title = title.substring(0, 57) + "...";
@@ -93,10 +105,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       nilufer: "Nilüfer kiralık asansör ve mobil asansör kiralama. Özlüce, Balat, Görükle, Ataevler'de 15. kata kadar 7/24 fiyat alın: 0505 608 07 00.",
       osmangazi: "Osmangazi kiralık asansör ve dış cephe asansör kiralama. Hamitler, Yunuseli, Emek, Çekirge'de ücretsiz keşif ve fiyat: 0505 608 07 00.",
       yildirim: "Yıldırım kiralık asansör ve saatlik mobil asansör kiralama. Millet, Erikli, Mesken, Teleferik'te 15. kata kadar taşıma: 0505 608 07 00.",
-      mudanya: "Mudanya kiralık asansör ve asansörlü nakliyat. Güzelyalı, Burgaz, Bademli, Halitpaşa'da saatlik asansör kiralama: 0505 608 07 00.",
+      mudanya: "Mudanya kiralık asansör ve saatlik asansör kiralama. Güzelyalı, Burgaz, Bademli, Halitpaşa'da 15. kata kadar operatörlü kurulum: 0505 608 07 00.",
       gursu: "Gürsu kiralık asansör ve mobil asansör kiralama. Kurtuluş, Yenidoğan, Zafer mahallelerinde 15. kata kadar güvenli kurulum: 0505 608 07 00.",
     };
     description = districtDescriptions[district.slug] ?? `${district.name} kiralık asansör ve saatlik mobil asansör kiralama. 15. kata kadar güvenli kurulum ve fiyat için arayın: 0505 608 07 00.`;
+  } else if (district.slug === "mudanya") {
+    const mudanyaServiceDescriptions: Record<string, string> = {
+      "evden-eve-nakliyat": "Mudanya evden eve nakliyat, asansörlü ev taşıma ve nakliye fiyatları. Güzelyalı, Bademli, Burgaz ve Halitpaşa'da sigortalı taşıma: 0505 608 07 00.",
+      "evden-eve-asansorlu-nakliyat": "Mudanya asansörlü evden eve nakliyat. Güzelyalı, Burgaz ve Bademli'de 15. kata kadar dış cephe asansörlü güvenli ev taşıma: 0505 608 07 00.",
+      "saatlik-asansor-kiralama": "Mudanya saatlik asansör kiralama ve günlük mobil asansör. Güzelyalı, Bademli, Burgaz ve Halitpaşa'da 30 dk'da operatörlü kurulum: 0505 608 07 00.",
+      "kiralik-asansor-fiyatlari": "Mudanya kiralık asansör fiyatları ve saatlik kiralama ücretleri. Güzelyalı, Bademli, Burgaz'da 15. kata kadar net fiyat teklifi: 0505 608 07 00.",
+    };
+    description = mudanyaServiceDescriptions[service.slug] ?? description;
   } else if (priorityDistricts.includes(district.slug) || district.slug === "bursa-merkez") {
     const districtServiceDescriptions: Record<string, string> = {
       "evden-eve-nakliyat": `${district.name} evden eve nakliyat ve asansörlü ev taşıma. ${topHoods} genelinde 15. kata kadar dış cephe asansörlü nakliye teklifi: 0505 608 07 00.`,
@@ -117,7 +137,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // sitenin tüm otoritesini Bursa ve 5 Ana İlçenin çekirdek sayfalarına odaklıyoruz.
   const isFocusDistrict = FOCUS_DISTRICTS.includes(district.slug);
   const allowedServices = isFocusDistrict ? FOCUS_DISTRICT_SERVICES : CORE_SERVICES_ALL_DISTRICTS;
-  const shouldIndex = allowedServices.includes(service.slug);
+  const isCannibalizingMudanyaNakliyat = district.slug === "mudanya" && service.slug === "evden-eve-asansorlu-nakliyat";
+  const shouldIndex = allowedServices.includes(service.slug) && !isCannibalizingMudanyaNakliyat;
 
   return {
     title,
@@ -156,75 +177,47 @@ export default async function ServicePage({ params }: Props) {
     return <ServicePageClient />;
   }
 
-  const vipDistricts: Record<string, string> = {
-    "nilufer": "nilufer-evden-eve-nakliyat",
-    "osmangazi": "osmangazi-evden-eve-nakliyat",
-    "yildirim": "yildirim-evden-eve-nakliyat",
-    "mudanya": "mudanya-evden-eve-nakliyat",
-    "gemlik": "gemlik-evden-eve-nakliyat",
-    "gursu": "gursu-evden-eve-nakliyat",
-  };
-  const isNakliyat = service.slug.includes("nakliyat") || service.slug.includes("tasima") || service.slug.includes("ev-tasima");
-  const vipTargetUrl = vipDistricts[district.slug]
-    ? `https://www.bursavipevdeneve.com/${vipDistricts[district.slug]}`
-    : (isNakliyat 
-        ? "https://www.bursavipevdeneve.com/hizmetler/asansorlu-evden-eve-nakliyat" 
-        : "https://www.bursavipevdeneve.com/hizmetler/bursa-kiralik-asansor");
-
-  // JSON-LD Şemaları (SEO için kritik)
-  const localFaqs = district.slug === "yildirim" && service.slug === "evden-eve-nakliyat"
-    ? [
-        {
-          question: "Yıldırım evden eve nakliyat fiyatı nasıl belirlenir?",
-          answer: "Eşya miktarı, iki adres arasındaki mesafe, katlar, erişim koşulları ve istenen taşıma hizmetleri değerlendirilir. Bu bilgileri paylaşarak adrese özel teklif isteyin."
-        },
-        {
-          question: "Yıldırım'da ev taşıma teklifi için hangi bilgileri göndermeliyim?",
-          answer: "Alınacak ve bırakılacak adresleri, katları, taşınma tarihini ve eşya listesini veya fotoğraflarını paylaşın. Asansör gerekiyorsa bina cephesi ve aracın duracağı alanın fotoğrafı uygunluk değerlendirmesine yardımcı olur."
-        },
-        {
-          question: "Evden eve nakliyat ile asansör kiralama aynı hizmet mi?",
-          answer: "Hayır. Asansör kiralama dış cepheden eşya taşıma ekipmanını ve operatörü kapsar. Komple ev taşıma için araç, taşıma personeli ve diğer ihtiyaçlar ayrıca planlanıp fiyatlandırılır."
-        }
-      ]
-    : [
-        {
-          question: `${district.name} bölgesinde en iyi ${service.name.toLowerCase()} firması hangisidir?`,
-          answer: `${district.name} bölgesinde hizmet veren işletmeleri; ekipman, operatör deneyimi, hizmet kapsamı ve teklif koşullarına göre karşılaştırın. İhtiyacınızı paylaşarak uygunluk ve fiyat bilgisi alın.`
-        },
-        {
-          question: `${district.name} ${service.name.toLowerCase()} fiyatları neye göre belirlenir?`,
-          answer: `Fiyat; hizmet kapsamı, adres ve erişim koşulları, kat, yük miktarı ve kullanım süresine göre değişebilir. Kesin bilgi için işin ayrıntılarını paylaşarak teklif alın.`
-        }
-      ];
-
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
-      // Sayfa ve hizmet işaretlemesi
+      // Sayfa ve hizmet işaretlemesi (İç otorite bağlantılarıyla)
       {
         "@type": "WebPage",
         "@id": `https://bursakiralikasansor.com/${fullSlug}#webpage`,
         "url": `https://bursakiralikasansor.com/${fullSlug}`,
         "name": `${district.name} ${service.name} | Bursa Kiralık Asansör CNC Evden Eve Nakliyat`,
         "relatedLink": [
-          vipTargetUrl,
-          "https://bursavipevdeneve.com"
+          `https://bursakiralikasansor.com/${district.slug === "bursa-merkez" ? "" : `${district.slug}-kiralik-asansor`}`,
+          `https://bursakiralikasansor.com/${district.slug}-saatlik-asansor-kiralama`,
+          `https://bursakiralikasansor.com/${district.slug}-kiralik-asansor-fiyatlari`,
+          `https://bursakiralikasansor.com/${district.slug === "bursa-merkez" ? "bursa-evden-eve-nakliyat" : `${district.slug}-evden-eve-nakliyat`}`
         ]
       },
       // Sayfaya özgü hizmet bilgisi; işletme kimliği ana sayfadaki Organization kaydına bağlanır.
       {
         "@type": "Service",
+        "@id": `https://bursakiralikasansor.com/${fullSlug}#service`,
         "name": `${district.name} ${service.name}`,
         "description": `${district.name} kiralık asansör, saatlik asansör kiralama ve asansörlü evden eve nakliyat hizmetleri.`,
         "provider": { "@id": `https://bursakiralikasansor.com/#organization` },
-        "serviceArea": {
-          "@type": district.slug === "bursa-merkez" ? "City" : "AdministrativeArea",
-          "name": district.slug === "bursa-merkez" ? "Bursa" : district.name,
-          ...(district.slug !== "bursa-merkez" ? {
-            "containedInPlace": { "@type": "City", "name": "Bursa", "addressCountry": "TR" }
-          } : {})
-        },
+        "areaServed": [
+          {
+            "@type": district.slug === "bursa-merkez" ? "City" : "AdministrativeArea",
+            "name": district.slug === "bursa-merkez" ? "Bursa" : district.name,
+            ...(district.wikidataId ? { "sameAs": `https://www.wikidata.org/wiki/${district.wikidataId}` } : {}),
+            ...(district.slug !== "bursa-merkez" ? {
+              "containedInPlace": { "@type": "City", "name": "Bursa", "addressCountry": "TR" }
+            } : {})
+          },
+          ...district.neighborhoods.map((hood) => ({
+            "@type": "Place",
+            "name": `${hood}, ${district.name}`,
+            "containedInPlace": {
+              "@type": "AdministrativeArea",
+              "name": district.name
+            }
+          }))
+        ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": `${district.name} Asansör Kiralama ve Nakliyat Çözümleri`,
@@ -249,24 +242,20 @@ export default async function ServicePage({ params }: Props) {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": `${district.name} Evden Eve Nakliyat & Asansörlü Taşıma`,
+                "name": `${district.name} Kiralık Asansör Fiyatları`,
+                "url": `https://bursakiralikasansor.com/${district.slug}-kiralik-asansor-fiyatlari`
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": `${district.name} Evden Eve Nakliyat & Asansörlü Ev Taşıma`,
                 "url": `https://bursakiralikasansor.com/${district.slug}-evden-eve-nakliyat`
               }
             }
           ]
         }
-      },
-      
-      // SGE (GEO) Optimizasyonu için FAQ Schema
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          ...localFaqs.map(({ question, answer }) => ({
-            "@type": "Question",
-            "name": question,
-            "acceptedAnswer": { "@type": "Answer", "text": answer }
-          }))
-        ]
       },
       // Breadcrumb navigasyonu
       {

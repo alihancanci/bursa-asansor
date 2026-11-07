@@ -68,6 +68,16 @@ const nextConfig = {
         destination: "/bursa-evden-eve-nakliyat",
         permanent: true,
       },
+      {
+        source: "/mudanya-evden-eve-asansorlu-nakliyat",
+        destination: "/mudanya-evden-eve-nakliyat",
+        permanent: true,
+      },
+      {
+        source: "/mudanya-asansorlu-ev-tasima",
+        destination: "/mudanya-evden-eve-nakliyat",
+        permanent: true,
+      },
       ...districts.map((d) => ({
         source: `/${d}-kiralik-mobil-asansor`,
         destination: `/${d}-kiralik-asansor`,

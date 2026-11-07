@@ -54,7 +54,78 @@ export default function ServicePageClient() {
     .replace(/{district}/g, district.name)
     .replace(/{neighborhoods}/g, selectedNeighborhoods.join(", "));
 
-  if (hasDistrictSearchContent && service.slug === "evden-eve-nakliyat") {
+  if (district.slug === "mudanya" && service.slug === "evden-eve-nakliyat") {
+    htmlContent = `<p><strong>Mudanya evden eve nakliyat</strong> ve <strong>Mudanya asansörlü ev taşıma</strong> operasyonlarımızda; Güzelyalı (Yalı, Eğitim, Siteler, Burgaz), Bademli, Çağrışan, Halitpaşa, Ömerbey, Yeni Mahalle ve Trilye hattındaki apartman, yazlık ve villalar için sigortalı, marangozlu ve dış cephe asansörlü anahtar teslim taşımacılık sunuyoruz. Mudanya sahil şeridinin rüzgar (poyraz) dinamiklerini, eğimli sokaklarını ve site yönetim kurallarını bilen yerel saha ekibimizle eşyalarınızı bina merdivenlerine hiç sokmadan doğrudan balkondan kapalı çelik kasalı araçlarımıza aktarıyoruz.</p>
+      <h2>Mudanya Evden Eve Nakliyat Süreci Nasıl İşler?</h2>
+      <ul>
+        <li><strong>Ücretsiz Ekspertiz ve Cephe Analizi:</strong> Alınacak ve bırakılacak mahalle/adres, kat sayısı, bina cephesi, bahçe/istinat duvarı mesafesi ve eşya hacmi (1+1 yazlıktan 4+1 Bademli villasına kadar) önceden incelenir.</li>
+        <li><strong>Birinci Sınıf Ambalajlama &amp; Marangozlu Demontaj:</strong> Koltuk takımları, beyaz eşyalar, cam vitrinler ve yatak odası mobilyaları balonlu patpat naylon, kraft kağıt ve streç filmle paketlenir; gardırop ve yemek masaları uzman marangozumuz tarafından sökülüp yeni evinizde kurulur.</li>
+        <li><strong>15. Kata Kadar Dış Cephe Asansörlü Yükleme:</strong> Dar apartman merdivenlerinde eşya çizilmesini ve site yönetimlerinin bina asansörü yasaklarını aşmak için 45-50 metre (15. kat) erişimli mobil asansörümüz balkona veya uygun pencereye kurulur.</li>
+        <li><strong>Mudanya İçi, Bursa Merkez ve Şehirler Arası Transfer:</strong> Mudanya – Nilüfer – Osmangazi arası şehir içi taşınmaların yanı sıra İstanbul – Mudanya / Güzelyalı yazlık ve kalıcı konut taşımalarında da sabit fiyat teklifiyle hizmet veriyoruz.</li>
+      </ul>
+      <h2>Mudanya Ev Taşıma ve Villa Nakliyat Planlama Tablosu</h2>
+      <div class="my-6 overflow-x-auto rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-light">
+        <table class="w-full text-left text-xs sm:text-sm my-0">
+          <thead class="bg-slate-100 dark:bg-navy text-slate-800 dark:text-slate-200 font-bold">
+            <tr>
+              <th class="p-3 border-b border-slate-200 dark:border-white/10">Konut Tipi (Mudanya)</th>
+              <th class="p-3 border-b border-slate-200 dark:border-white/10">Ekip &amp; Marangoz</th>
+              <th class="p-3 border-b border-slate-200 dark:border-white/10">Asansör &amp; Araç</th>
+              <th class="p-3 border-b border-slate-200 dark:border-white/10">Ortalama Süre</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 dark:divide-white/10">
+            <tr>
+              <td class="p-3 font-semibold">1+1 / 2+1 Yazlık &amp; Daire (Güzelyalı / Burgaz)</td>
+              <td class="p-3">3-4 Kişilik Ekip + Marangoz</td>
+              <td class="p-3">Mobil Asansör + Orta Boy Kapalı Kasa</td>
+              <td class="p-3">3 – 4 Saat</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-semibold">3+1 Apartman / Site Dairesi (Halitpaşa / Ömerbey)</td>
+              <td class="p-3">4-5 Kişilik Ekip + Marangoz</td>
+              <td class="p-3">15. Kat Mobil Asansör + Büyük Kamyon</td>
+              <td class="p-3">4 – 6 Saat</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-semibold">4+1 &amp; Müstakil Villa (Bademli / Çağrışan)</td>
+              <td class="p-3">5-6 Kişilik VIP Ekip + Çift Marangoz</td>
+              <td class="p-3">Yatay Erişimli Asansör + XL Çelik Kasa</td>
+              <td class="p-3">6 – 8 Saat</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Yalnızca dış cephe asansörü kiralamak istiyorsanız <a href="/mudanya-kiralik-asansor" class="text-primary font-semibold hover:underline">Mudanya kiralık asansör</a> ve <a href="/mudanya-saatlik-asansor-kiralama" class="text-primary font-semibold hover:underline">Mudanya saatlik asansör kiralama</a> sayfalarımızı inceleyebilir, güncel ücretlendirme kriterleri için <a href="/mudanya-kiralik-asansor-fiyatlari" class="text-primary font-semibold hover:underline">Mudanya kiralık asansör fiyatları</a> rehberimize göz atabilirsiniz.</p>`;
+  } else if (district.slug === "mudanya" && service.slug === "kiralik-asansor") {
+    htmlContent = `<p><strong>Mudanya kiralık asansör</strong> ve <strong>Mudanya asansör kiralama</strong> hizmetimizde, Güzelyalı'dan Bademli'ye, Halitpaşa'dan Ömerbey ve Burgaz'a kadar tüm mahallelerde <strong>15. kata (yaklaşık 45-50 metreye) kadar</strong> sertifikalı operatör dahil mobil dış cephe asansörü kiralıyoruz. Ev eşyası, beyaz eşya, koltuk takımı, cam balkon, inşaat/tadilat malzemesi ve güneş paneli çıkarımı için saatlik veya günlük kiralama yapabilirsiniz.</p>
+      <h2>Mudanya'da Neden Dış Cephe Mobil Asansör Kiralanmalı?</h2>
+      <ul>
+        <li><strong>Güzelyalı ve Sahil Sitelerinde Bina Asansörü Koruması:</strong> Güzelyalı Yalı, Eğitim, Siteler ve Burgaz mahallelerindeki çok katlı sitelerde bina içi yolcu asansörüyle yük taşımak yönetim kuralları gereği yasaktır. Mobil asansörümüz ortak alanlara hiç girmeden doğrudan balkondan yükleme sağlar.</li>
+        <li><strong>Bademli &amp; Çağrışan Villalarında Yatay Bahçe Aşımı:</strong> Yol ile bina cephesi arasında bahçe, peyzaj alanı veya istinat duvarı bulunan Bademli villalarında, teleskopik bomlu araçlarımız yatay mesafeyi havadan aşarak teras ve üst kat balkonlarına güvenle ulaşır.</li>
+        <li><strong>Poyraz Rüzgar Sensörü ve Eğimli Sokak Terazisi:</strong> Mudanya sahil hattının sert poyrazına ve Halitpaşa/Ömerbey'in eğimli sokaklarına karşı 4 noktalı hidrolik denge ayaklarımız (outrigger) elektronik teraziyle sabitlenir, rüzgar hızı anlık ölçülür.</li>
+      </ul>
+      <h2>Mudanya Kiralık Asansör Fiyatı Nasıl Belirlenir?</h2>
+      <p>Kiralama ücreti; adresin bulunduğu mahalleye, kurulacak kata, çalışma süresine (saatlik veya günlük) ve taşınacak yükün niteliğine göre hesaplanır. Operatör hizmeti kiralama ücretine dahildir. Anahtar teslim komple taşınma talepleriniz için <a href="/mudanya-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Mudanya evden eve nakliyat</a> sayfamızdan, kısa süreli işlemler için <a href="/mudanya-saatlik-asansor-kiralama" class="text-primary font-semibold hover:underline">Mudanya saatlik asansör kiralama</a> sayfamızdan bilgi alabilirsiniz.</p>`;
+  } else if (district.slug === "mudanya" && service.slug === "saatlik-asansor-kiralama") {
+    htmlContent = `<p><strong>Mudanya saatlik asansör kiralama</strong> hizmetimiz; Güzelyalı, Burgaz, Halitpaşa, Ömerbey, Yeni Mahalle ve Bademli'de kısa süreli dış cephe yükleme veya indirme ihtiyacı olan bireysel müşteriler, şehir dışından gelen nakliyeciler ve esnaflar için en ekonomik çözümdür. <strong>Operatör ücrete dahildir</strong> ve aracımız 20-30 dakika içinde kurularak 15. kata kadar çalışmaya başlar.</p>
+      <h2>Mudanya'da Saatlik Asansör Kiralama Kimler İçin Uygundur?</h2>
+      <ul>
+        <li><strong>Şehir Dışından Mudanya'ya Gelen Nakliye Firmaları:</strong> İstanbul, Ankara, İzmir veya diğer illerden Mudanya ve Güzelyalı'ya ev eşyası getiren meslektaşlarımıza, yerel operatörlü saatlik mobil asansör desteği sağlıyoruz.</li>
+        <li><strong>Kendi İmkanıyla Ev Taşıyanlar:</strong> Aracını ve taşıma ekibini kendi ayarlayan müşterilerimiz, dar apartman merdivenlerinde eşya yıpranmasını önlemek için saatlik asansör kiralayabilir.</li>
+        <li><strong>Mobilya, Beyaz Eşya, Cam Balkon ve Tadilat Ustaları:</strong> Merdivenden dönmeyen L koltuk, buzdolabı, çelik kapı, cam balkon panelleri, parke, seramik ve alçıpan sevkiyatlarında tek parça veya saatlik kurulum yapılır.</li>
+      </ul>
+      <p>Güncel ücretlendirme detayları için <a href="/mudanya-kiralik-asansor-fiyatlari" class="text-primary font-semibold hover:underline">Mudanya kiralık asansör fiyatları</a> sayfamızı, komple ev taşıma hizmeti için <a href="/mudanya-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Mudanya evden eve nakliyat</a> sayfamızı ziyaret edebilirsiniz.</p>`;
+  } else if (district.slug === "mudanya" && service.slug === "kiralik-asansor-fiyatlari") {
+    htmlContent = `<p><strong>Mudanya kiralık asansör fiyatları</strong>; kurulum yapılacak mahalle (Güzelyalı, Bademli, Halitpaşa, Ömerbey, Burgaz, Trilye vb.), kaçıncı kata çıkılacağı (2. kattan 15. kata kadar), kullanım süresi (saatlik, yarım gün veya tam gün) ve taşınacak malzemenin ağırlığına göre belirlenir. Şeffaf fiyat politikamız gereği <strong>sertifikalı operatör ve kurulum ücrete dahildir</strong>; iş bitiminde sürpriz ek ücret talep edilmez.</p>
+      <h2>2026 Mudanya Asansör Kiralama Fiyatını Etkileyen 4 Kriter</h2>
+      <ul>
+        <li><strong>Kat Yüksekliği (2. Kat – 15. Kat):</strong> 2 ile 7. kat arasındaki standart kurulumlar ile 10–15. kat (45-50 metre) yüksek erişimli teleskopik araç kurulumları farklı makine parkuru gerektirir.</li>
+        <li><strong>Çalışma Süresi (Tek Parça / Saatlik / Günlük):</strong> Tek bir koltuk takımı veya beyaz eşya çıkarma işlemi ile tam gün süren inşaat/mobilya sevkiyatı arasında süre bazlı avantajlı tarife uygulanır.</li>
+        <li><strong>Cephe ve Yanaşma Mesafesi:</strong> Aracın binaya doğrudan yanaşabildiği sokaklar ile Bademli/Güzelyalı gibi bahçe mesafesi aşılması gereken cepheler WhatsApp üzerinden gönderilen fotoğrafla 5 dakikada ücretsiz değerlendirilir.</li>
+        <li><strong>Hizmet Kapsamı (Sadece Asansör vs. Komple Nakliyat):</strong> Yalnızca operatörlü asansör kiralama ile <a href="/mudanya-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Mudanya evden eve nakliyat</a> (kamyon + taşıma ekibi + ambalaj + marangoz) ayrı olarak fiyatlandırılır.</li>
+      </ul>`;
+  } else if (hasDistrictSearchContent && service.slug === "evden-eve-nakliyat") {
     htmlContent = `<p>${district.name} evden eve nakliyat talebinizde taşınacak eşya miktarı, iki adres arasındaki mesafe, katlar ve bina erişimi değerlendirilir. Evden eve taşıma için süre bazlı asansör kiralaması yerine, taşınmanın kapsamına göre ayrıca fiyat teklifi hazırlanır. Ücretsiz ekspertiz ve keşif ile ihtiyaç duyulan nakliye aracı, taşıma personeli ve asansör planlanır.</p>
       <h2>${district.name} ev taşıma teklifi için gerekli bilgiler</h2>
       <ul><li>Alınacak ve bırakılacak mahalle veya adresler</li><li>Kat ve bina içi asansör bilgisi</li><li>Oda sayısı ya da eşya listesi; büyük parçaların fotoğrafı</li><li>Taşınma tarihi ve paketleme/montaj ihtiyacı</li><li>Asansör gerekiyorsa bina cephesi ve aracın duracağı alanın fotoğrafı</li></ul>
@@ -184,7 +255,17 @@ export default function ServicePageClient() {
     `;
   }
 
-  const targetedFaqs = district.slug === "yildirim" && service.slug === "evden-eve-nakliyat" ? [
+  const targetedFaqs = district.slug === "mudanya" && service.slug === "evden-eve-nakliyat" ? [
+    { q: "Mudanya evden eve nakliyat fiyatları 2026 yılında nasıl hesaplanır?", a: "Taşınacak dairenin veya villanın oda sayısı (1+1, 2+1, 3+1, 4+1), alınacak ve bırakılacak mahalleler (Güzelyalı, Bademli, Halitpaşa, Ömerbey vb.), kat durumu, dış cephe asansörü kurulumu ve marangoz/ambalaj kapsamına göre ücretsiz ekspertiz sonrası net ve sabit fiyat verilir." },
+    { q: "Güzelyalı ve Bademli'deki sitelerde dış cephe asansörüyle ev taşıyor musunuz?", a: "Evet. Güzelyalı sahil sitelerinde bina asansörünü kullanmadan 15. kata kadar dış cepheden yükleme yapıyoruz. Bademli ve Çağrışan'daki bahçeli villalarda ise yatay erişimli teleskopik asansörümüzle bahçe duvarı mesafesini aşarak balkon ve teraslara doğrudan ulaşıyoruz." },
+    { q: "Mudanya'dan Bursa merkeze (Nilüfer, Osmangazi) veya şehir dışına nakliyat var mı?", a: "Evet. Mudanya içi taşınmaların yanı sıra Mudanya – Nilüfer – Osmangazi – Yıldırım arası ve İstanbul başta olmak üzere şehirler arası sigortalı, marangozlu evden eve nakliyat hizmeti sunuyoruz." },
+    { q: "Eşyaların paketlenmesi ve mobilya söküm-kurulumu hizmete dahil mi?", a: "Anahtar teslim Mudanya evden eve nakliyat paketimizde tüm mobilyaların marangozumuz tarafından sökülüp yeni adreste kurulması, beyaz eşya ve koltukların balonlu patpat naylonla ambalajlanması fiyata dahildir." },
+  ] : district.slug === "mudanya" && (service.slug === "kiralik-asansor" || service.slug === "saatlik-asansor-kiralama" || service.slug === "kiralik-asansor-fiyatlari") ? [
+    { q: "Mudanya'da kiralık asansör kaçıncı kata kadar çıkıyor?", a: "Mudanya ve Güzelyalı'da hizmet veren teleskopik mobil asansör filomuz 2. kattan 15. kata (yaklaşık 45-50 metre yüksekliğe) ve 400 kg sepet kapasitesine kadar güvenli kurulum sağlamaktadır." },
+    { q: "Mudanya saatlik asansör kiralama ücretine operatör dahil mi?", a: "Evet. Saatlik veya günlük tüm mobil asansör kiralamalarımızda makineyi kullanan sertifikalı uzman operatörümüz fiyata dahildir; kurulum 20-30 dakikada tamamlanır." },
+    { q: "Güzelyalı ve Mudanya sahilinde rüzgarlı (poyraz) havalarda asansör kurulur mu?", a: "Araçlarımızda rüzgar hızı sensörü (anemometre) ve 4 noktalı hidrolik denge ayakları bulunur. Güvenli rüzgar limitleri dahilinde çelik ray sistemi balkona sabitlenerek sarsıntısız taşıma yapılır." },
+    { q: "Sadece tek parça koltuk, beyaz eşya, cam balkon veya inşaat malzemesi için asansör çağırabilir miyim?", a: "Kesinlikle evet. Komple ev taşıma dışında merdivenden sığmayan büyük mobilyalar, beyaz eşyalar, cam balkon panelleri, parke, seramik ve çatı/tadilat malzemeleri için saatlik kiralama yapabilirsiniz." },
+  ] : district.slug === "yildirim" && service.slug === "evden-eve-nakliyat" ? [
     { q: "Yıldırım evden eve nakliyat fiyatı nasıl belirlenir?", a: "Eşya miktarı, iki adres arasındaki mesafe, katlar, erişim koşulları ve istenen taşıma hizmetleri değerlendirilir. Bu bilgileri paylaşarak adrese özel teklif isteyin." },
     { q: "Yıldırım'da ev taşıma teklifi için hangi bilgileri göndermeliyim?", a: "Alınacak ve bırakılacak adresleri, katları, taşınma tarihini ve eşya listesini veya fotoğraflarını paylaşın. Asansör gerekiyorsa bina cephesi ve aracın duracağı alanın fotoğrafı uygunluk değerlendirmesine yardımcı olur." },
     { q: "Evden eve nakliyat ile asansör kiralama aynı hizmet mi?", a: "Hayır. Asansör kiralama dış cepheden eşya taşıma ekipmanını ve operatörü kapsar. Komple ev taşıma için araç, taşıma personeli ve diğer ihtiyaçlar ayrıca planlanıp fiyatlandırılır." },
@@ -222,40 +303,27 @@ export default function ServicePageClient() {
     { q: "Teklif almak için cephe fotoğrafı gönderebilir miyim?", a: "Evet. Sokak ve bina cephesinin güncel fotoğrafı kurulum uygunluğunu önceden değerlendirmeye yardımcı olur." },
   ];
 
-  // Kardeş kuruluş bursavipevdeneve.com dinamik sayfa bazlı backlink eşlemesi
-  const vipDistricts: Record<string, string> = {
-    "nilufer": "nilufer-evden-eve-nakliyat",
-    "osmangazi": "osmangazi-evden-eve-nakliyat",
-    "yildirim": "yildirim-evden-eve-nakliyat",
-    "mudanya": "mudanya-evden-eve-nakliyat",
-    "gemlik": "gemlik-evden-eve-nakliyat",
-    "gursu": "gursu-evden-eve-nakliyat",
-  };
-
+  // İlçe içi çapraz otorite akışı (Ana buton kendi sitemizdeki tamamlayıcı hizmet sayfasına gider)
   const isNakliyat = service.slug.includes("nakliyat") || service.slug.includes("tasima") || service.slug.includes("ev-tasima");
-  const hasExactDistrictPage = !!vipDistricts[district.slug];
-  
-  const vipTargetUrl = hasExactDistrictPage 
-    ? `https://www.bursavipevdeneve.com/${vipDistricts[district.slug]}`
-    : (isNakliyat 
-        ? "https://www.bursavipevdeneve.com/hizmetler/asansorlu-evden-eve-nakliyat" 
-        : "https://www.bursavipevdeneve.com/hizmetler/bursa-kiralik-asansor");
+  const internalCrossHref = isNakliyat
+    ? (district.slug === "bursa-merkez" ? "/" : `/${district.slug}-kiralik-asansor`)
+    : (district.slug === "bursa-merkez" ? "/bursa-evden-eve-nakliyat" : `/${district.slug}-evden-eve-nakliyat`);
 
-  const vipAnchor = hasExactDistrictPage
-    ? `${district.name} Evden Eve Nakliyat`
-    : `${district.name} Asansörlü VIP Nakliyat`;
+  const internalCrossLabel = isNakliyat
+    ? `${district.name} Kiralık Asansör & Saatlik Kiralama`
+    : `${district.name} Evden Eve Nakliyat & Ev Taşıma`;
 
-  const vipBadge = hasExactDistrictPage
-    ? `${district.name} VIP Taşımacılık Çözüm Ortağımız`
-    : `Bursa VIP Taşımacılık Çözüm Ortağımız`;
+  const vipBadge = isNakliyat
+    ? `${district.name} 15. Kata Kadar Mobil Asansör Parkuru`
+    : `${district.name} Anahtar Teslim Ev Taşıma Çözümü`;
 
-  const vipTitle = hasExactDistrictPage
-    ? `${district.name} VIP Evden Eve Nakliyat & Komple Taşıma`
-    : `${district.name} İçin VIP Evden Eve Nakliyat Çözümü`;
+  const vipTitle = isNakliyat
+    ? `${district.name} Kiralık Asansör & Saatlik Dış Cephe Kurulumu`
+    : `${district.name} Evden Eve Nakliyat & Sigortalı Komple Taşıma`;
 
-  const vipDescription = hasExactDistrictPage
-    ? `${district.name} bölgesinde sadece mobil asansör değil, komple anahtar teslim ev taşıma, birinci sınıf balonlu ambalajlama ve marangozlu demontaj/montaj desteği almak istiyorsanız resmi kardeş markamız Bursa VIP Evden Eve Nakliyat profesyonel filosuyla hizmetinizdedir.`
-    : `${district.name} ve tüm Bursa genelinde sigortalı, marangozlu ve asansörlü komple ev taşıma operasyonlarında uzman taşıma ekibimizle koordineli şekilde çalışıyoruz.`;
+  const vipDescription = isNakliyat
+    ? `${district.name} bölgesinde komple nakliyat dışında yalnızca saatlik veya günlük operatörlü dış cephe asansörü kiralamak istiyorsanız, 15. kata (45-50m) ulaşan kendi araç filomuzla 25 dakikada yanınızdayız.`
+    : `${district.name} bölgesinde sadece mobil asansör değil; kapalı çelik kasa kamyon, birinci sınıf balonlu ambalajlama ve marangozlu demontaj/montaj dahil anahtar teslim ev taşıma hizmetimizle yanınızdayız.`;
 
   return (
     <>
@@ -363,7 +431,7 @@ export default function ServicePageClient() {
                 <h2 className="text-lg font-bold mb-3">{district.name} için hizmet seçenekleri</h2>
                 <ul className="flex flex-wrap gap-x-5 gap-y-2">
                   {service.slug !== "evden-eve-nakliyat" && <li><Link className="text-primary underline underline-offset-4" href={`/${district.slug}-evden-eve-nakliyat`}>{district.name} evden eve nakliyat</Link></li>}
-                  {service.slug !== "evden-eve-asansorlu-nakliyat" && <li><Link className="text-primary underline underline-offset-4" href={`/${district.slug}-evden-eve-asansorlu-nakliyat`}>{district.name} asansörlü nakliyat</Link></li>}
+                  {district.slug !== "mudanya" && service.slug !== "evden-eve-asansorlu-nakliyat" && <li><Link className="text-primary underline underline-offset-4" href={`/${district.slug}-evden-eve-asansorlu-nakliyat`}>{district.name} asansörlü nakliyat</Link></li>}
                   {service.slug !== "saatlik-asansor-kiralama" && <li><Link className="text-primary underline underline-offset-4" href={`/${district.slug}-saatlik-asansor-kiralama`}>{district.name} saatlik asansör kiralama</Link></li>}
                   {service.slug !== "kiralik-asansor" && <li><Link className="text-primary underline underline-offset-4" href={`/${district.slug}-kiralik-asansor`}>{district.name} kiralık asansör</Link></li>}
                   {service.slug !== "kiralik-asansor-fiyatlari" && <li><Link className="text-primary underline underline-offset-4" href={`/${district.slug}-kiralik-asansor-fiyatlari`}>{district.name} kiralık asansör fiyatları</Link></li>}
@@ -394,7 +462,7 @@ export default function ServicePageClient() {
               </div>
             )}
 
-            {/* Kardeş Kuruluş Sayfa Bazlı Dinamik VIP Backlink Kartı */}
+            {/* İlçe İçi Çapraz Hizmet & Kardeş Marka Kartı */}
             <section className="mb-14 p-6 md:p-8 bg-gradient-to-br from-slate-900 via-slate-900 to-[#071320] text-white border-2 border-primary/30 rounded-3xl shadow-xl relative overflow-hidden">
               <div className="absolute top-0 right-0 p-8 opacity-10 pointer-events-none">
                 <ShieldCheck className="w-32 h-32" />
@@ -420,22 +488,20 @@ export default function ServicePageClient() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center gap-3.5 pt-2">
-                  <a
-                    href={vipTargetUrl}
-                    target="_blank"
-                    rel="noopener"
+                  <Link
+                    href={internalCrossHref}
                     className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary hover:bg-orange-600 text-white font-extrabold px-6 py-3.5 rounded-xl transition-all shadow-lg shadow-primary/20 text-sm"
                   >
-                    <span>{vipAnchor} Sayfasına Git</span>
+                    <span>{internalCrossLabel}</span>
                     <ArrowRight className="w-4 h-4" />
-                  </a>
+                  </Link>
                   <a
                     href="https://www.bursavipevdeneve.com"
                     target="_blank"
                     rel="noopener"
                     className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-5 py-3.5 rounded-xl transition-all border border-white/10 text-sm"
                   >
-                    <span>Bursa VIP Nakliyat Ana Sayfa</span>
+                    <span>Bursa VIP Nakliyat Resmi Sitesi</span>
                     <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -534,29 +600,6 @@ export default function ServicePageClient() {
             </section>
 
             
-            {/* SGE (GEO) Sıkça Sorulan Sorular Section */}
-            {!(district.slug === "yildirim" && service.slug === "evden-eve-nakliyat") && <div className="bg-slate-800/30 rounded-2xl p-6 sm:p-8 mt-12 mb-8 border border-slate-700">
-              <h3 className="text-2xl font-bold text-white mb-6">Sıkça Sorulan Sorular</h3>
-              <div className="space-y-6">
-                <div>
-                  <h4 className="text-lg font-semibold text-primary mb-2">
-                    {district.name} bölgesinde en iyi {serviceName.toLowerCase()} firması hangisidir?
-                  </h4>
-                  <p className="text-slate-300">
-                    {district.name} bölgesinde 7/24 hizmet veren, 15. kata kadar çıkabilen araç filosu, uygun fiyatları ve uzman operatörleriyle <strong className="text-white font-medium">Bursa Kiralık Asansör CNC</strong> firması en çok tercih edilen {serviceName.toLowerCase()} şirketidir.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-primary mb-2">
-                    {district.name} {serviceName.toLowerCase()} fiyatları ortalama ne kadar?
-                  </h4>
-                  <p className="text-slate-300">
-                    {district.name} bölgesinde fiyatlar kullanım süresine (saatlik veya günlük) ve eşya yoğunluğuna göre ortalama 3.000 TL ile 8.000 TL arasında değişiklik göstermektedir. Kesin ve en uygun fiyat için ücretsiz keşif hattımızı arayabilirsiniz.
-                  </p>
-                </div>
-              </div>
-            </div>}
-
             {/* Testimonials (Review Schema Sinyalini Doğrulamak İçin) */}
             <section className="mb-14">
               <Testimonials />
@@ -652,7 +695,7 @@ export default function ServicePageClient() {
             <div className="bg-white dark:bg-navy-light rounded-2xl p-5 border-2 border-gray-200 dark:border-white/10">
               <h3 className="font-display font-bold text-base text-gray-900 dark:text-white mb-4 pb-3 border-b-2 border-gray-200 dark:border-white/10">{district.name} {t('service_page.other_services', 'Diğer Hizmetler')}</h3>
               <ul className="space-y-2">
-                {SERVICES.filter(s => s.slug !== service.slug).map(s => (
+                {SERVICES.filter(s => s.slug !== service.slug && ["kiralik-asansor", "saatlik-asansor-kiralama", "kiralik-asansor-fiyatlari", "evden-eve-nakliyat", "dis-cephe-esya-asansoru", "mobilya-tasima-asansoru"].includes(s.slug)).map(s => (
                   <li key={s.slug}>
                     <Link href={`/${district.slug}-${s.slug}`} className="flex items-center justify-between group py-1.5 text-gray-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium">
                       <span className="truncate pr-4">{t(`services.${s.slug}.name`, s.name)}</span>
