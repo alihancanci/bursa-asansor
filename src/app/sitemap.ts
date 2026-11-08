@@ -5,9 +5,9 @@ import { BLOG_POSTS } from "@/data/blog";
 const BASE_URL = "https://bursakiralikasansor.com";
 
 // Sabit tarihler: Google'ın lastModified sinyalini doğru okuması için
-const SITE_LAST_UPDATED = new Date("2026-11-07");
-const BLOG_LAST_UPDATED = new Date("2026-11-07");
-const SERVICE_PAGES_UPDATED = new Date("2026-11-07");
+const SITE_LAST_UPDATED = new Date("2026-11-08");
+const BLOG_LAST_UPDATED = new Date("2026-11-08");
+const SERVICE_PAGES_UPDATED = new Date("2026-11-08");
 
 // 5 Ana Hedef İlçe + Bursa Merkez
 export const FOCUS_DISTRICTS = [

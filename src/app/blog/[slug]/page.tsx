@@ -26,7 +26,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : description;
 
   return {
-    title: `${post.title} | Blog`,
+    title: {
+      absolute: post.title.length <= 62 ? post.title : `${post.title.substring(0, 59).trimEnd()}...`,
+    },
     description: snippetDescription,
     keywords: post.keywords,
     alternates: {
@@ -81,17 +83,6 @@ export default async function BlogPost({ params }: Props) {
       "image": post.image
     }
   ];
-
-  if (post.faqs && post.faqs.length > 0) {
-    graph.push({
-      "@type": "FAQPage",
-      "mainEntity": post.faqs.map(faq => ({
-        "@type": "Question",
-        "name": faq.q,
-        "acceptedAnswer": { "@type": "Answer", "text": faq.a }
-      }))
-    });
-  }
 
   const richSchema = {
     "@context": "https://schema.org",

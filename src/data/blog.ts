@@ -166,31 +166,70 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: "5",
     slug: "kacinci-kata-kadar-cikar",
-    title: "Kiralık Asansör Kaçıncı Kata Kadar Çıkar? (15. Kat & Metre)",
-    excerpt: "Teleskopik dış cephe asansörlerinin teknik limitleri. 15. kata kadar (45-50 metre) güvenlik sınırları, rüzgar hızı toleransı ve yükseklik fiziği.",
+    title: "Eşya Taşıma Asansörü Kaçıncı Kata Kadar Çıkar? (15. Kat)",
+    excerpt: "Kiralık eşya taşıma asansörü kaçıncı kata kadar çıkar? 2. kattan 15. kata (45-50 metre) mobil dış cephe nakliyat asansörü kat tablosu, rüzgar toleransı ve kurulum şartları.",
     date: "28 Mart 2026",
     readTime: "7 dk okuma",
     category: "Lojistik & Teknoloji",
     author: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Ekibi",
     image: "/images/hero-bg.png",
-    metaDescription: "Kiralık eşya taşıma asansörü kaçıncı kata kadar çıkar? 15. kata (45-50 m) ulaşan mobil dış cephe asansörü kurulum şartları ve fiyatları: 0505 608 07 00.",
-    keywords: ["kaçıncı kata kadar çıkar", "eşya taşıma asansörü kaçıncı kata çıkar", "kiralık asansör kaçıncı kata çıkar", "yüksek kat eşya taşıma asansörü", "teleskopik asansör"],
+    metaDescription: "Kiralık eşya taşıma asansörü kaçıncı kata kadar çıkar? 2. kattan 15. kata (45-50 metre) mobil dış cephe nakliyat asansörü kat tablosu ve kurulum şartları.",
+    keywords: ["kaçıncı kata kadar çıkar", "eşya taşıma asansörü kaçıncı kata çıkar", "kiralık asansör kaçıncı kata çıkar", "ev taşıma asansörü kaçıncı kata kadar çıkar", "yüksek kat eşya taşıma asansörü", "teleskopik asansör"],
     faqs: [
-      { q: "Kiralık eşya taşıma asansörü maksimum kaçıncı kata çıkar?", a: "Standart mobil dış cephe asansörleri 15. kata (yaklaşık 45-50 metre yüksekliğe) kadar güvenli şekilde ulaşmaktadır." },
+      { q: "Kiralık eşya taşıma asansörü maksimum kaçıncı kata çıkar?", a: "Mobil dış cephe eşya taşıma asansörleri 2. kattan 15. kata (yaklaşık 45-50 metre yüksekliğe) ve 400 kg sepet kapasitesine kadar güvenli şekilde ulaşmaktadır." },
       { q: "Yüksek katlarda balkon şart mı?", a: "Balkon taşıma için en uygun alandır ancak yere kadar inen geniş Fransız camlar veya çift kanat sökülebilen pencereler de sıklıkla kullanılmaktadır." },
       { q: "Çok rüzgârlı havalarda sorun olur mu?", a: "Asansörlerimiz rüzgar sensörlerine sahiptir. Emniyet limitlerini aşan şiddetli rüzgarlarda operatörümüz işlemi durdurma yetkisine tam olarak sahiptir." }
     ],
     content: `
       <div class="bg-blue-50 dark:bg-blue-950/30 border-l-4 border-primary p-5 rounded-r-xl my-6">
-        <p class="mb-0 font-medium"><strong>Kısa Yanıt:</strong> Mobil dış cephe eşya taşıma asansörlerimiz <strong>15. kata kadar (yaklaşık 45–50 metre yüksekliğe)</strong> güvenle ulaşmaktadır. Tek seferde 300–400 kg yük kapasitesiyle <a href="/nilufer-kiralik-asansor" class="text-primary font-bold underline">Nilüfer</a>, <a href="/osmangazi-kiralik-asansor" class="text-primary font-bold underline">Osmangazi</a>, <a href="/yildirim-kiralik-asansor" class="text-primary font-bold underline">Yıldırım</a>, <a href="/mudanya-kiralik-asansor" class="text-primary font-bold underline">Mudanya</a> ve <a href="/gursu-kiralik-asansor" class="text-primary font-bold underline">Gürsu</a> başta olmak üzere tüm Bursa genelinde 7/24 hizmet veriyoruz.</p>
+        <p class="mb-3 font-medium"><strong>Kısa Yanıt:</strong> Kiralık eşya taşıma asansörü (mobil dış cephe asansörü) <strong>2. kattan 15. kata kadar (yaklaşık 45–50 metre yüksekliğe)</strong> güvenle çıkar. Tek seferde 300–400 kg yük kapasitesiyle <a href="/" class="text-primary font-bold underline">Bursa kiralık asansör</a>, <a href="/nilufer-kiralik-asansor" class="text-primary font-bold underline">Nilüfer</a>, <a href="/osmangazi-kiralik-asansor" class="text-primary font-bold underline">Osmangazi</a>, <a href="/yildirim-kiralik-asansor" class="text-primary font-bold underline">Yıldırım</a>, <a href="/mudanya-kiralik-asansor" class="text-primary font-bold underline">Mudanya</a> ve <a href="/gursu-kiralik-asansor" class="text-primary font-bold underline">Gürsu</a> başta olmak üzere tüm Bursa genelinde 7/24 operatörlü kurulum yapıyoruz.</p>
+        <div class="flex flex-wrap gap-3 pt-1">
+          <a href="/" class="inline-block bg-primary text-white text-sm font-bold px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors">Bursa Kiralık Asansör Fiyat Al</a>
+          <a href="/bursa-evden-eve-nakliyat" class="inline-block bg-slate-900 text-white text-sm font-bold px-4 py-2 rounded-lg hover:bg-slate-800 transition-colors">Bursa Asansörlü Evden Eve Nakliyat</a>
+        </div>
       </div>
-      <h2>Teleskopik Teknolojinin Sınırları: Asansörler Kaçıncı Kata Ulaşır?</h2>
-      <p>Büyük metropollerde yatay mimariden dikey mimariye geçilmesi, <a href="/nilufer-yuksek-kat-esya-tasima-asansoru" class="text-primary font-semibold hover:underline">yüksek kat eşya taşıma asansörü</a> ihtiyacını patlatmıştır. Müşterilerimizin bize en sık yönelttiği soruların başında, "<strong>Acaba sizin asansör kaçıncı kata kadar çıkar?</strong>" sorusu gelmektedir. Kulaktan dolma bilgiler yerine meselenin tamamen teknik standartlarına inelim.</p>
 
-      <h3>Kapasite ve Yükseklik Limitleri (15. Kat Gerçeği)</h3>
-      <p>Türkiye'de ve Avrupa'da standart dış cephe nakliyat asansörleri ortalama 15. ile 15. kata kadar hizmet verebilecek şekilde tasarlanmıştır. Ortalama 45-50 metre bom uzunluğuna (açılabilir merdiven mekanizması) sahip bu makineler, şehirlerarası lojistik ve inşaat uygulamalarında altın standardı belirler. Bu kapsamda <a href="/gursu-kiralik-asansor" class="text-primary font-semibold hover:underline">Gürsu asansör kiralama</a> hizmetlerimizden de faydalanabilirsiniz.</p>
+      <h2>Kiralık Eşya Taşıma Asansörü Kat ve Metre Tablosu (2026)</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-left border-collapse border border-slate-200 dark:border-slate-700 text-sm">
+          <thead>
+            <tr class="bg-primary text-white">
+              <th class="p-3.5 border border-slate-200 dark:border-slate-700">Kat Aralığı</th>
+              <th class="p-3.5 border border-slate-200 dark:border-slate-700">Yaklaşık Yükseklik (Metre)</th>
+              <th class="p-3.5 border border-slate-200 dark:border-slate-700">Sepet Yük Kapasitesi</th>
+              <th class="p-3.5 border border-slate-200 dark:border-slate-700">Ortalama Kurulum Süresi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 dark:bg-slate-800/50">
+              <td class="font-bold p-3.5 border border-slate-200 dark:border-slate-700">2. – 5. Kat</td>
+              <td class="p-3.5 border border-slate-200 dark:border-slate-700">6 – 16 Metre</td>
+              <td class="p-3.5 border border-slate-200 dark:border-slate-700">400 kg</td>
+              <td class="p-3.5 border border-slate-200 dark:border-slate-700">15 – 20 Dakika</td>
+            </tr>
+            <tr>
+              <td class="font-bold p-3.5 border border-slate-200 dark:border-slate-700">6. – 10. Kat</td>
+              <td class="p-3.5 border border-slate-200 dark:border-slate-700">18 – 32 Metre</td>
+              <td class="p-3.5 border border-slate-200 dark:border-slate-700">300 – 350 kg</td>
+              <td class="p-3.5 border border-slate-200 dark:border-slate-700">25 – 35 Dakika</td>
+            </tr>
+            <tr class="bg-slate-50 dark:bg-slate-800/50">
+              <td class="font-bold p-3.5 border border-slate-200 dark:border-slate-700">11. – 15. Kat (Maksimum)</td>
+              <td class="p-3.5 border border-slate-200 dark:border-slate-700">35 – 50 Metre</td>
+              <td class="p-3.5 border border-slate-200 dark:border-slate-700">250 – 300 kg</td>
+              <td class="p-3.5 border border-slate-200 dark:border-slate-700">35 – 45 Dakika</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Teleskopik Teknolojinin Sınırları: Asansörler Kaçıncı Kata Ulaşır?</h2>
+      <p>Büyük metropollerde yatay mimariden dikey mimariye geçilmesi, <a href="/nilufer-kiralik-asansor" class="text-primary font-semibold hover:underline">yüksek kat eşya taşıma asansörü</a> ihtiyacını patlatmıştır. Müşterilerimizin bize en sık yönelttiği soruların başında, "<strong>Acaba sizin asansör kaçıncı kata kadar çıkar?</strong>" sorusu gelmektedir. Kulaktan dolma bilgiler yerine meselenin tamamen teknik standartlarına inelim.</p>
+
+      <h3>Kapasite ve Yükseklik Limitleri (15. Kat / 45-50 Metre Gerçeği)</h3>
+      <p>Türkiye'de ve Avrupa'da profesyonel dış cephe nakliyat asansörleri 2. kattan 15. kata kadar güvenli hizmet verebilecek şekilde tasarlanmıştır. Ortalama 45-50 metre teleskopik bom uzunluğuna (açılabilir çelik/alüminyum ray mekanizması) sahip bu makineler, evden eve taşımacılık ve inşaat malzeme sevkiyatlarında altın standardı belirler. Bu kapsamda <a href="/gursu-kiralik-asansor" class="text-primary font-semibold hover:underline">Gürsu asansör kiralama</a> hizmetlerimizden de faydalanabilirsiniz.</p>
       
-      <p>Daha özel makineler (Örn: XXL boyutlu Alman üretimi asansörler) 25. kata kadar (yaklaşık 70 metre) erişebilse de, bu durum ciddi mühendislik alan gereksinimleri doğurur. Biz, Bursa genelinde iş ve müşteri güvenliğini %100 oranında garanti edebildiğimiz, fizik ve aerodinamik sınırları zorlamayan <strong>15. kata kadar çıkabilen</strong> son teknoloji cihazlarla hizmet veriyoruz. Bu kapsamda <a href="/gursu-kiralik-asansor" class="text-primary font-semibold hover:underline">Gürsu asansör kiralama</a> hizmetlerimizden de faydalanabilirsiniz.</p>
+      <p>Biz, Bursa genelinde iş ve müşteri güvenliğini %100 oranında garanti edebildiğimiz, rüzgar ve zemin statiği sınırları içinde en yüksek emniyeti sunan <strong>15. kata (yaklaşık 45-50 metreye) kadar çıkabilen</strong> son teknoloji hidrolik araçlarla hizmet veriyoruz. Komple taşınma talepleriniz için <a href="/bursa-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Bursa asansörlü evden eve nakliyat</a> sayfamızı da inceleyebilirsiniz.</p>
 
       <h3>Rüzgâr Hızı ve Fizik Kuralları (Emniyet Limitleri)</h3>
       <p>Yerden 45 metre yüksekte hava akımları, zemine kıyasla çok daha serttir. <strong>Dış cephe asansörü</strong> platformu açıldığında bir yelken görevi görür. İş güvenliği kurallarına göre: Bu kapsamda <a href="/nilufer-kiralik-asansor" class="text-primary font-semibold hover:underline">Nilüfer kiralık asansör</a> hizmetlerimizden de faydalanabilirsiniz.</p>
@@ -271,32 +310,36 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: "7",
     slug: "tasinirken-asansor-zorunlu-mu",
-    title: "Asansörde Eşya Taşımak Yasak Mı? Yük Taşıma Cezası (2026)",
-    excerpt: "Yeni bir eve taşınırken site yönetimlerinin bina içi asansör yasakları. Apartman asansöründe yük taşıma cezası, kurallar ve dış cephe asansörü çözümleri.",
+    title: "Apartman Asansöründe Eşya Taşımak Yasak mı? (2026 Cezası)",
+    excerpt: "Apartman ve bina asansöründe eşya taşımak yasak mı, yük taşıma cezası ne kadar? Asansörlü nakliyat zorunlu mu? Kat Mülkiyeti Kanunu ve dış cephe asansörü çözümleri.",
     date: "30 Mart 2026",
     readTime: "6 dk okuma",
     category: "Taşınma Planlaması",
     author: "Bursa Kiralık Asansör ve Evden Eve Nakliyat Ekibi",
     image: "/images/hero-bg.png",
-    metaDescription: "Apartman asansöründe eşya taşımak yasak mı, cezası var mı? Site kuralları, Kat Mülkiyeti Kanunu ve dış cephe asansörüyle cezasız güvenli taşınma.",
-    keywords: ["asansörde eşya taşımak yasak mı", "apartman asansöründe eşya taşımak yasak mı", "asansörde yük taşıma cezası", "bina asansöründe eşya taşıma", "taşınırken asansör zorunlu mu", "site yönetimi kuralları", "dış cephe asansörü kiralama"],
+    metaDescription: "Apartman ve bina asansöründe eşya taşımak yasak mı, yük taşıma cezası ne kadar? Asansörlü nakliyat zorunlu mu? Kat Mülkiyeti Kanunu ve dış cephe çözümü.",
+    keywords: ["apartman asansöründe eşya taşımak yasak mı", "asansörle eşya taşımak yasak mı", "asansörde eşya taşımak yasak mı", "asansörde yük taşıma cezası", "bina asansöründe eşya taşıma", "asansörlü nakliyat zorunlu mu", "taşınırken asansör zorunlu mu"],
     faqs: [
       { q: "Apartman asansöründe eşya veya yük taşımanın cezası var mı?", a: "Evet. Site yönetim planına aykırı şekilde yolcu asansöründe eşya taşındığında yönetim idari para cezası kesebilir ve asansörde meydana gelen tüm teknik arıza/bakım masraflarını taşınan kişiye fatura edebilir." },
+      { q: "Asansörlü nakliyat zorunlu mu?", a: "Yasal olarak devlet tarafından getirilmiş genel bir zorunluluk olmasa da, 3. kat ve üzerindeki çok katlı site ve apartmanların yönetim planlarında bina içi yolcu asansörüyle yük taşınması yasaklandığı için fiilen dış cephe asansörlü nakliyat zorunlu hale gelmektedir." },
       { q: "Yönetici apartmanın asansörünü taşınmaya kapatabilir mi?", a: "Evet. Kat Mülkiyeti Kanunu ve bina yönetim planında 'Yolcu asansöründe yük taşınamaz' hükmü varsa yönetici ve bina görevlisi asansörü taşınmaya kapatma hakkına sahiptir." },
-      { q: "Oturduğum ev 2. katta, yine de asansör kurmak mantıklı mı?", a: "Binanızın merdiven boşluğu genişse beden gücüyle taşınabilir. Ancak merdivenler darsa, 2. kat bile olsa büyük mobilyalarınızın hasar görmemesi için asansör kurulması tavsiye edilir." },
-      { q: "Sokak çok dar, asansör sığar mı?", a: "Uzmanlarımız ücretsiz keşif yapar. Ufak manevralar veya hafif açılı kurulum ile pek çok zorlu sokağa asansör kurabiliyoruz." }
+      { q: "Oturduğum ev 2. katta, yine de asansör kurmak mantıklı mı?", a: "Binanızın merdiven boşluğu genişse beden gücüyle taşınabilir. Ancak merdivenler darsa, 2. kat bile olsa büyük mobilyalarınızın hasar görmemesi için asansör kurulması tavsiye edilir." }
     ],
     content: `
       
-      <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-xl my-8">
-        <h3 class="text-xl font-bold mb-2 text-red-700">Kısa Yanıt: Asansörde Eşya Taşımak Yasak mı?</h3>
-        <p class="mb-0 text-red-900"><strong>Evet, çoğu durumda yasaktır.</strong> Kat Mülkiyeti Kanunu ve yeni nesil site/apartman yönetim planlarına göre; yolcu (insan) taşıma amacıyla tasarlanmış bina içi asansörlerle ağır mobilya, beyaz eşya ve inşaat malzemesi (moloz, fayans vb.) taşımak kesinlikle yasaktır. Kurallara uyulmaması durumunda binanın asansör motoruna verilecek zarar, taşıyan kişiye yansıtılır ve para cezası uygulanır. Bu yüzden yüksek katlı taşınmalarda <a href="/bursa-merkez-kiralik-asansor" class="font-bold underline">dış cephe asansörü kiralamak</a> en güvenilir çözümdür.</p>
+      <div class="bg-red-50 dark:bg-red-950/30 border-l-4 border-red-500 p-6 rounded-r-xl my-8">
+        <h3 class="text-xl font-bold mb-2 text-red-700 dark:text-red-400">Kısa Yanıt: Apartman Asansöründe Eşya Taşımak Yasak mı?</h3>
+        <p class="mb-4 text-red-900 dark:text-slate-200"><strong>Evet, bina yönetim planlarının %90'ında yasaktır.</strong> 634 Sayılı Kat Mülkiyeti Kanunu ve site/apartman yönetim planlarına göre; insan (yolcu) taşıma amacıyla tescil edilmiş bina içi asansörlerle ağır mobilya, beyaz eşya ve inşaat malzemesi taşımak yasaktır. Yasağa rağmen taşıma yapıldığında <strong>asansörde yük taşıma cezası</strong> uygulanır ve olası motor/kabin hasarı taşınan kişiye fatura edilir. Bu nedenle 3. kat ve üzeri taşınmalarda <a href="/" class="font-bold underline">Bursa kiralık asansör</a> (dış cephe mobil asansörü) veya <a href="/bursa-evden-eve-nakliyat" class="font-bold underline">Bursa asansörlü evden eve nakliyat</a> tercih edilmelidir.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="/" class="inline-block bg-primary text-white text-sm font-bold px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors">Saatlik Dış Cephe Asansörü Kirala</a>
+          <a href="/bursa-evden-eve-nakliyat" class="inline-block bg-slate-900 text-white text-sm font-bold px-4 py-2 rounded-lg hover:bg-slate-800 transition-colors">Asansörlü Evden Eve Nakliyat Fiyat Al</a>
+        </div>
       </div>
 
-      <h2>Taşınırken Karşılaşılan Bürokrasi: Apartman Asansörüyle Eşya Taşıma</h2>
-      <p>Yeni ve lüks bir daire kiraladınız. <a href="/bursa-merkez-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Evden eve nakliyat</a> firmasını tuttunuz ve eşyalar geldi. Tam o esnada apartman görevlisi veya site yöneticisi karşınızda belirir: "<em>Beyefendi/Hanımefendi, bina içi yolcu asansörümüz eşya taşımak için kullanılamaz.</em>" İşte bu an, hazırlıksız yakalandıysanız taşınmanın bir kâbusa dönüştüğü andır.</p>
+      <h2>Asansörlü Nakliyat Zorunlu mu? Bina Asansöründe Eşya Taşıma Kuralları</h2>
+      <p>Yeni bir daire kiraladınız veya satın aldınız. <a href="/bursa-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Bursa evden eve nakliyat</a> firmasını tuttunuz ve eşyalar kapıya geldi. Tam o esnada apartman görevlisi veya site yöneticisi karşınızda belirir: "<em>Bina içi yolcu asansörümüz eşya taşımak için kullanılamaz, şalteri kapatıyoruz.</em>" İşte bu an, dış cephe asansörü planlamadıysanız taşınmanın kâbusa dönüştüğü andır.</p>
 
-      <p>"<strong>Taşınırken asansör zorunlu mu?</strong>" sorusu aslında hukuki ve sosyal bir zorunluluğun kesişimidir. Yeni nesil lüks sitelerin neredeyse tamamında, yük asansörü tahsis edilmemişse, normal asansörlerle ağır mobilyaların (beyaz eşyaların) taşınması kesin bir dille yönetim planlarında yasaklanmıştır. Bu kapsamda <a href="/bursa-merkez-kiralik-asansor" class="text-primary font-semibold hover:underline">Bursa asansör kiralama</a> hizmetlerimizden de faydalanabilirsiniz.</p>
+      <p>"<strong>Asansörlü nakliyat zorunlu mu?</strong>" veya "<strong>Asansörle eşya taşımak yasak mı?</strong>" sorusu hukuki ve teknik iki nedene dayanır. Yeni nesil sitelerin ve apartmanların neredeyse tamamında, ayrı bir yük asansörü yoksa yolcu asansörüyle beyaz eşya ve mobilya taşınması yönetim planıyla kesin olarak yasaklanmıştır. Bu kapsamda <a href="/" class="text-primary font-semibold hover:underline">Bursa asansör kiralama</a> hizmetlerimizden 7/24 faydalanabilirsiniz.</p>
 
       <h3>Bina İçi Asansör Kullanmak Neden Yasaklanır?</h3>
       <ol class="list-decimal pl-5 mt-4 space-y-2">
@@ -442,15 +485,15 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: "frase-asansorlu-nakliyat",
     slug: "asansorlu-evden-eve-nakliyat",
-    title: "Asansörlü Evden Eve Nakliyat Rehberi ve Fiyatları",
-    excerpt: "Asansörlü evden eve nakliyatın ne olduğunu, avantajlarını ve yüksek katlı binalardaki önemini keşfedin. Taşınma rehberimizle bilgi edinin.",
+    title: "Bursa Asansörlü Evden Eve Nakliyat Rehberi & 2026 Fiyatları",
+    excerpt: "Bursa asansörlü evden eve nakliyat nedir, fiyatları nasıl hesaplanır? 15. kata kadar dış cephe asansörlü ev taşıma avantajları ve kurulum rehberi.",
     date: "07 Nisan 2026",
     author: "Atakan",
     readTime: "8 dk okuma",
     category: "Lojistik & Teknoloji",
     image: "/images/asansorlu-tasima-bursa-hero.jpg",
-    metaDescription: "Asansörlü evden eve nakliyat ne zaman gereklidir? Hizmet akışı nasıl işler ve fiyatı etkileyen unsurlar nelerdir? Hızlı ve güvenli taşıma rehberi.",
-    keywords: ["asansörlü evden eve nakliyat", "teleskopik asansör", "bursa kiralık asansör", "asansörlü taşıma fiyatları", "yüksek kat nakliyat"],
+    metaDescription: "Bursa asansörlü evden eve nakliyat fiyatları ve 15. kata kadar dış cephe eşya taşıma rehberi. Nilüfer, Osmangazi, Yıldırım ve Mudanya'da sigortalı taşıma.",
+    keywords: ["asansörlü evden eve nakliyat", "bursa asansörlü nakliyat", "asansörlü taşımacılık fiyatları bursa", "bursa kiralık asansör", "asansörlü taşıma fiyatları", "yüksek kat nakliyat"],
     faqs: [
       { q: "Asansörlü nakliyat her binada kullanılabilir mi?", a: "Hayır. Binanın cephesine yeterli mesafe, zemin sağlamlığı ve park alanı gibi teknik koşullar gereklidir. Taşıma öncesinde firma yerinde keşif yaparak uygunluğu değerlendirir." },
       { q: "Eşyalar ne kadar güvende?", a: "Asansörlü sistem, merdiven taşımacılığına kıyasla çizilme ve kırılma riskini önemli ölçüde azaltır. Bununla birlikte, belirlenen hizmet şartları ve profesyonel ambalajlama güvenliği en üst seviyeye taşır." },
@@ -460,9 +503,12 @@ export const BLOG_POSTS: BlogPost[] = [
     content: `
       <h2>Asansörlü Evden Eve Nakliyat Nedir?</h2>
       <div class="bg-primary/10 border-l-4 border-primary p-6 rounded-r-xl my-8">
-        <h3 class="text-xl font-bold mb-2">Hizmet Almak İster misiniz?</h3>
-        <p class="mb-4">Bursa ve ilçelerinde güvenilir, asansörlü evden eve nakliyat hizmeti arıyorsanız doğru yerdesiniz. Ücretsiz ekspertiz ve net fiyat garantisiyle taşınma stresinden kurtulun.</p>
-        <a href="/evden-eve-asansorlu-nakliyat" class="inline-block bg-primary text-white font-semibold py-3 px-6 rounded-lg hover:bg-primary-dark transition-colors">Hizmetlerimizi İnceleyin</a>
+        <h3 class="text-xl font-bold mb-2">Bursa Asansörlü Evden Eve Nakliyat &amp; Kiralık Asansör Hizmeti</h3>
+        <p class="mb-4">Bursa merkez, Nilüfer, Osmangazi, Yıldırım, Mudanya ve Gürsu'da 15. kata (45-50 metreye) kadar ulaşan özmal mobil asansör filomuzla anahtar teslim ev taşıma veya saatlik asansör kiralama hizmeti sunuyoruz. Ücretsiz ekspertiz ve sabit fiyat teklifi için hizmet sayfalarımızı inceleyin:</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="/bursa-evden-eve-nakliyat" class="inline-block bg-primary text-white font-semibold py-3 px-6 rounded-lg hover:bg-orange-600 transition-colors">Bursa Evden Eve Nakliyat &amp; Fiyatlar</a>
+          <a href="/" class="inline-block bg-slate-900 text-white font-semibold py-3 px-6 rounded-lg hover:bg-slate-800 transition-colors">Bursa Kiralık Asansör (Saatlik/Günlük)</a>
+        </div>
       </div>
       <p>Ev taşıma süreçleri, yanlış planlama yapıldığında hem stresli hem de masraflı bir deneyime dönüşebilir. <strong>Asansörlü evden eve nakliyat</strong>, bu zorluğu minimize eden, özellikle yüksek katlı binalar ve teleskopik asansörlerde büyük mobilyaların ve ağır eşyaların güvenli biçimde taşınmasını sağlayan profesyonel bir hizmettir. Bina dışına monte edilen hidrolik veya mekanik <strong>teleskopik asansörler</strong> aracılığıyla eşyalar, merdiven kullanılmaksızın doğrudan istenilen kata ulaştırılır. Bu kapsamda <a href="/osmangazi-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Osmangazi evden eve nakliyat</a> hizmetlerimizden de faydalanabilirsiniz.</p>
       

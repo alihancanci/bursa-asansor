@@ -17,23 +17,28 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Bursa Evden Eve Nakliyat: Asansörlü VIP Taşıma',
-  description: 'Bursa evden eve nakliyat ve VIP taşımacılık. 15. kata kadar dış cephe asansörü, ambalajlı, marangozlu ve hasarsız teslimat: 0505 608 07 00.',
+  title: {
+    absolute: 'Bursa Evden Eve Nakliyat & Asansörlü Nakliyat Fiyatları',
+  },
+  description: 'Bursa evden eve nakliyat ve asansörlü taşımacılık fiyatları. 15. kata kadar mobil evden eve asansör, marangozlu ve sigortalı ev taşıma: 0505 608 07 00.',
   keywords: [
     'bursa evden eve nakliyat',
-    'bursa nakliyat',
-    'bursa vip evden eve nakliyat',
-    'asansörlü evden eve nakliyat bursa',
+    'bursa asansörlü nakliyat',
+    'bursa asansörlü evden eve nakliyat',
+    'asansörlü taşımacılık fiyatları bursa',
+    'bursa evden eve asansör',
+    'bursa asansörlü taşımacılık',
     'bursa ev taşıma',
     'nilüfer evden eve nakliyat',
-    'osmangazi evden eve nakliyat'
+    'osmangazi evden eve nakliyat',
+    'mudanya evden eve nakliyat'
   ],
   alternates: {
     canonical: getCanonicalUrl('/bursa-evden-eve-nakliyat'),
   },
   openGraph: {
-    title: 'Bursa Evden Eve Nakliyat | VIP Güvenceli Asansörlü Taşıma',
-    description: 'Bursa genelinde 7/24 asansörlü, ambalajlı ve hasarsızlık garantili evden eve nakliyat desteği. Kardeş kuruluşumuz Bursa VIP Nakliyat güvencesiyle.',
+    title: 'Bursa Evden Eve Nakliyat & Asansörlü Nakliyat Fiyatları',
+    description: 'Bursa genelinde 15. kata kadar dış cephe asansörlü, marangozlu ve sigortalı evden eve nakliyat. Ücretsiz keşif ve sabit fiyat: 0505 608 07 00.',
     url: getCanonicalUrl('/bursa-evden-eve-nakliyat'),
     type: 'website',
   },
@@ -123,11 +128,11 @@ export default function BursaEvdenEveNakliyatPage() {
             </div>
 
             <h1 className="text-3xl sm:text-4xl md:text-6xl font-black text-white mb-6 leading-tight tracking-tight">
-              Bursa Evden Eve <span className="text-primary">Nakliyat</span>
+              Bursa Evden Eve <span className="text-primary">Nakliyat</span> &amp; Asansörlü Taşımacılık
             </h1>
 
             <p className="text-slate-300 text-base sm:text-lg md:text-xl leading-relaxed mb-8 max-w-3xl mx-auto font-normal">
-              15. kata kadar çıkan hidrolik mobil asansörlerimiz, marangozlu uzman ekibimiz güvencesiyle eşyalarınızı sıfır riskle yeni yuvanıza taşıyoruz.
+              Bursa asansörlü nakliyat ve evden eve taşıma operasyonlarımızda; 15. kata (45-50m) ulaşan özmal mobil evden eve asansör filomuz, marangozlu uzman ekibimiz ve kapalı çelik kasa araçlarımızla eşyalarınızı sıfır hasarla yeni yuvanıza taşıyoruz.
             </p>
 
             <div className="max-w-xl mx-auto">
@@ -239,15 +244,15 @@ export default function BursaEvdenEveNakliyatPage() {
           {/* Detailed Editorial Section with Organic Backlink */}
           <section className="bg-white dark:bg-slate-800 rounded-3xl p-8 sm:p-10 border border-slate-200/80 dark:border-slate-700 space-y-6">
             <h2 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">
-              Bursa&apos;da Güvenilir ve Profesyonel Evden Eve Nakliyat Rehberi
+              Bursa Asansörlü Evden Eve Nakliyat ve Taşımacılık Fiyatları (2026)
             </h2>
 
             <div className="prose dark:prose-invert max-w-none text-slate-600 dark:text-slate-300 leading-relaxed space-y-4 text-base">
               <p>
-                Bursa hızla büyüyen konut projeleri, Nilüfer&apos;in yüksek katlı rezidansları ve Osmangazi ile Yıldırım&apos;ın geleneksel dar sokaklarıyla ev taşıma süreçlerinde yüksek teknik donanım gerektirir. Klasik merdiven taşıma yöntemleri hem bina duvarlarında hasarlara hem de eşyaların sürtünerek deforme olmasına yol açmaktadır.
+                <strong>Bursa asansörlü nakliyat</strong> ve <strong>Bursa evden eve nakliyat</strong> süreçlerinde Nilüfer&apos;in yüksek katlı siteleri, Mudanya ve Güzelyalı&apos;nın sahil apartmanları ile Osmangazi ve Yıldırım&apos;ın dar sokakları profesyonel dış cephe ekipmanı gerektirir. Klasik merdiven taşıma yöntemleri hem apartman duvarlarında hasara hem de eşyaların sürtünerek çizilmesine yol açarken, <strong>Bursa evden eve asansör</strong> sistemimiz eşyalarınızı doğrudan balkondan kapalı çelik kasa nakliye kamyonumuza indirir.
               </p>
               <p>
-                Bu noktada devreye giren modern mobil asansör sistemimiz, eşyalarınızı doğrudan dairenizin penceresinden kapalı kasa nakliyat kamyonumuza taşır. Ev taşımacılığında en üst segmentte hizmet arayan müşterilerimiz için kardeş firmamız olan{' '}
+                <strong>Asansörlü taşımacılık fiyatları Bursa</strong> genelinde; taşınacak evin oda sayısına (1+1, 2+1, 3+1, 4+1 veya villa), iki adres arasındaki ilçe/mahalle mesafesine, kaçıncı kata (2. kattan 15. kata kadar) asansör kurulacağına ve marangozlu ambalaj kapsamına göre belirlenir. Yalnızca dış cephe asansörü kiralamak isteyen müşterilerimiz için <Link href="/" className="text-primary font-bold hover:underline">Bursa kiralık asansör</Link> saatlik/günlük kiralama seçeneğimiz; komple anahtar teslim ev taşıma arayan müşterilerimiz için ise kardeş kuruluşumuz{' '}
                 <a
                   href="https://bursavipevdeneve.com"
                   target="_blank"
@@ -256,11 +261,47 @@ export default function BursaEvdenEveNakliyatPage() {
                 >
                   Bursa VIP Evden Eve Nakliyat
                 </a>
-                , özel ambalajlama ve anahtar teslim montaj çözümleri sunmaktadır.
+                {' '}ile entegre tam paket çözümlerimiz mevcuttur.
               </p>
-              <p>
-                Hem mobil asansör ihtiyaçlarınızda hem de komple evden eve nakliyat operasyonlarınızda tek numara üzerinden (<strong>0505 608 07 00</strong>) doğrudan bizlere ulaşabilir, ücretsiz ekspertiz talep edebilirsiniz.
-              </p>
+            </div>
+
+            <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-700">
+              <table className="w-full text-left text-xs sm:text-sm">
+                <thead className="bg-slate-100 dark:bg-slate-900 text-slate-900 dark:text-white font-bold">
+                  <tr>
+                    <th className="p-3.5 border-b border-slate-200 dark:border-slate-700">Hizmet &amp; Konut Tipi</th>
+                    <th className="p-3.5 border-b border-slate-200 dark:border-slate-700">Dış Cephe Asansörü</th>
+                    <th className="p-3.5 border-b border-slate-200 dark:border-slate-700">Personel &amp; Marangoz</th>
+                    <th className="p-3.5 border-b border-slate-200 dark:border-slate-700">Ortalama Süre</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-200 dark:divide-slate-700 text-slate-700 dark:text-slate-300">
+                  <tr>
+                    <td className="p-3.5 font-bold text-slate-900 dark:text-white">Sadece Mobil Asansör Kiralama</td>
+                    <td className="p-3.5">2. – 15. Kat (45-50m) + Operatör</td>
+                    <td className="p-3.5">Operatör Dahil (Saatlik / Günlük)</td>
+                    <td className="p-3.5">1 – 3 Saat</td>
+                  </tr>
+                  <tr>
+                    <td className="p-3.5 font-bold text-slate-900 dark:text-white">1+1 / 2+1 Asansörlü Ev Taşıma</td>
+                    <td className="p-3.5">Çift Yönlü Mobil Asansör</td>
+                    <td className="p-3.5">3-4 Kişilik Ekip + Usta Marangoz</td>
+                    <td className="p-3.5">3 – 4 Saat</td>
+                  </tr>
+                  <tr>
+                    <td className="p-3.5 font-bold text-slate-900 dark:text-white">3+1 Asansörlü Evden Eve Nakliyat</td>
+                    <td className="p-3.5">15. Kat Teleskopik Asansör</td>
+                    <td className="p-3.5">4-5 Kişilik Ekip + Marangoz + Ambalaj</td>
+                    <td className="p-3.5">4 – 6 Saat</td>
+                  </tr>
+                  <tr>
+                    <td className="p-3.5 font-bold text-slate-900 dark:text-white">4+1 Daire &amp; Villa Taşımacılığı</td>
+                    <td className="p-3.5">Yüksek/Yatay Erişimli Asansör</td>
+                    <td className="p-3.5">5-6 Kişilik VIP Ekip + Çift Marangoz</td>
+                    <td className="p-3.5">6 – 8 Saat</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
 
             <div className="pt-4 border-t border-slate-100 dark:border-slate-700 flex flex-wrap items-center gap-4 text-sm text-slate-500 dark:text-slate-400">
@@ -274,7 +315,7 @@ export default function BursaEvdenEveNakliyatPage() {
               </span>
               <span className="flex items-center gap-1.5">
                 <CheckCircle className="w-4 h-4 text-emerald-500" />
-                VIP Güvenceli Teslimat
+                Sabit Fiyat &amp; VIP Güvence
               </span>
             </div>
           </section>
@@ -357,8 +398,8 @@ export default function BursaEvdenEveNakliyatPage() {
                     <Link href={`/${d.slug}-kiralik-asansor`} className="text-slate-600 dark:text-slate-300 hover:text-primary transition-colors">
                       → {d.name} Kiralık Asansör
                     </Link>
-                    <Link href={`/${d.slug}-evden-eve-asansorlu-nakliyat`} className="text-slate-600 dark:text-slate-300 hover:text-primary transition-colors">
-                      → {d.name} Asansörlü Nakliyat
+                    <Link href={`/${d.slug}-saatlik-asansor-kiralama`} className="text-slate-600 dark:text-slate-300 hover:text-primary transition-colors">
+                      → {d.name} Saatlik Asansör
                     </Link>
                   </div>
                 </div>
