@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { DISTRICTS, SERVICES } from '@/data';
-import { FOCUS_DISTRICTS, FOCUS_DISTRICT_SERVICES, CORE_SERVICES_ALL_DISTRICTS, BURSA_MERKEZ_B2B_SERVICES } from '@/app/sitemap';
+import { FOCUS_DISTRICTS, FOCUS_DISTRICT_SERVICES, BURSA_MERKEZ_B2B_SERVICES } from '@/app/sitemap';
 import ServicePageClient from './ServicePageClient';
 
 export const revalidate = 604800; // Sayfaları arka planda haftada 1 kez (7 gün) otomatik yenileyerek taze tutar.
@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title = `${district.name} ${service.name} | En Uygun Fiyat & Hızlı Hizmet`;
   }
 
-  const priorityDistricts = ["nilufer", "yildirim", "mudanya", "osmangazi", "gursu", "inegol", "gemlik", "yenisehir", "orhangazi"];
+  const priorityDistricts = ["nilufer", "yildirim", "mudanya", "osmangazi", "gursu", "gemlik"];
   if (priorityDistricts.includes(district.slug)) {
     const districtServiceMetadata: Record<string, string> = {
       "kiralik-asansor": `${district.name} Kiralık Asansör & Asansör Kiralama`,
@@ -104,15 +104,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
   }
 
-  if (district.slug === "inegol") {
-    const inegolTitles: Record<string, string> = {
-      "kiralik-asansor": "İnegöl Kiralık Asansör & Asansör Kiralama (Mobilya & Ev)",
-      "evden-eve-nakliyat": "İnegöl Evden Eve Nakliyat & Asansörlü Ev Taşıma",
-      "saatlik-asansor-kiralama": "İnegöl Saatlik Asansör Kiralama | 15. Kata Kadar 7/24",
-      "kiralik-asansor-fiyatlari": "İnegöl Kiralık Asansör Fiyatları 2026 | Saatlik & Günlük",
+  if (district.slug === "gemlik") {
+    const gemlikTitles: Record<string, string> = {
+      "kiralik-asansor": "Gemlik Kiralık Asansör & Asansör Kiralama (Kumla & Merkez)",
+      "evden-eve-nakliyat": "Gemlik Evden Eve Nakliyat & Asansörlü Ev Taşıma",
+      "saatlik-asansor-kiralama": "Gemlik Saatlik Asansör Kiralama | 15. Kata Kadar 7/24",
+      "kiralik-asansor-fiyatlari": "Gemlik Kiralık Asansör Fiyatları 2026 | Saatlik & Günlük",
     };
-    if (inegolTitles[service.slug]) {
-      title = inegolTitles[service.slug];
+    if (gemlikTitles[service.slug]) {
+      title = gemlikTitles[service.slug];
     }
   }
 
@@ -157,6 +157,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       "kiralik-asansor-fiyatlari": "Mudanya kiralık asansör fiyatları ve saatlik kiralama ücretleri. Güzelyalı, Bademli, Burgaz'da 15. kata kadar net fiyat teklifi: 0505 608 07 00.",
     };
     description = mudanyaServiceDescriptions[service.slug] ?? description;
+  } else if (district.slug === "gemlik") {
+    const gemlikServiceDescriptions: Record<string, string> = {
+      "evden-eve-nakliyat": "Gemlik evden eve nakliyat ve asansörlü ev taşıma. Kumla, Kurşunlu, Umurbey, Hisar ve Eşref Dinçer'de sigortalı nakliye fiyatı: 0505 608 07 00.",
+      "saatlik-asansor-kiralama": "Gemlik saatlik asansör kiralama ve operatörlü dış cephe asansörü. Kumla, Hisar, Cumhuriyet ve Kurşunlu'da 15. kata kadar kurulum: 0505 608 07 00.",
+      "kiralik-asansor-fiyatlari": "Gemlik kiralık asansör fiyatları 2026. Gemlik merkez, Kumla ve Kurşunlu'da saatlik/günlük mobil asansör kiralama ücretleri: 0505 608 07 00.",
+    };
+    description = gemlikServiceDescriptions[service.slug] ?? description;
   } else if (priorityDistricts.includes(district.slug) || district.slug === "bursa-merkez") {
     const districtServiceDescriptions: Record<string, string> = {
       "evden-eve-nakliyat": `${district.name} evden eve nakliyat ve asansörlü ev taşıma. ${topHoods} genelinde 15. kata kadar dış cephe asansörlü nakliye teklifi: 0505 608 07 00.`,
@@ -173,14 +180,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description = description.substring(0, 152) + "...";
   }
 
-  // Zayıf ve arama hacmi olmayan tali kombinasyonları Google indeksinden çıkarıp (noindex)
-  // sitenin tüm otoritesini Bursa ve Ana İlçelerin çekirdek sayfalarına odaklıyoruz.
+  // Uzak ilçeleri (İnegöl, Orhangazi, Kestel, Karacabey, Yenişehir vb.) ve zayıf kombinasyonları noindex yaparak
+  // sitenin tüm otoritesini Bursa Merkez ve 6 Ana Hedef İlçenin (Mudanya, Nilüfer, Osmangazi, Yıldırım, Gürsu, Gemlik) sayfalarına odaklıyoruz.
   const isFocusDistrict = FOCUS_DISTRICTS.includes(district.slug);
   const allowedServices = district.slug === "bursa-merkez"
     ? [...FOCUS_DISTRICT_SERVICES, ...BURSA_MERKEZ_B2B_SERVICES]
     : isFocusDistrict
     ? FOCUS_DISTRICT_SERVICES
-    : CORE_SERVICES_ALL_DISTRICTS;
+    : [];
   const isCannibalizingNakliyat = ["mudanya", "inegol", "gemlik"].includes(district.slug) && service.slug === "evden-eve-asansorlu-nakliyat";
   const shouldIndex = allowedServices.includes(service.slug) && !isCannibalizingNakliyat;
 

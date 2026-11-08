@@ -90,7 +90,7 @@ export default function HomePageClient() {
               </h1>
 
               <p className="text-lg sm:text-xl text-slate-100/90 mb-10 leading-relaxed max-w-2xl">
-                {t('hero.subtitle', "Bursa ev taşıma asansörü ve saatlik eşya taşıma asansörü kiralama hizmetiyle 15. kata kadar güvenli kurulum. Nilüfer, Mudanya, Osmangazi, Yıldırım ve Gürsu başta olmak üzere tüm Bursa'da 7/24 operatörlü, net fiyat ve ücretsiz keşif garantisi.")}
+                {t('hero.subtitle', "Bursa ev taşıma asansörü ve saatlik eşya taşıma asansörü kiralama hizmetiyle 15. kata kadar güvenli kurulum. Nilüfer, Mudanya, Osmangazi, Yıldırım, Gürsu ve Gemlik başta olmak üzere Bursa merkezde 7/24 operatörlü, net fiyat ve ücretsiz keşif garantisi.")}
               </p>
 
               <CTASection className="max-w-xl" />
@@ -141,11 +141,11 @@ export default function HomePageClient() {
               </h2>
             </div>
             <p className="text-sm text-slate-700 dark:text-slate-300 mt-2 md:mt-0 max-w-md">
-              Öncelikli hizmet ilçelerimiz Nilüfer, Mudanya, Osmangazi, Yıldırım ve Gürsu’dur. Bursa’nın tüm ilçelerine 15. kata kadar mobil asansör hizmeti veriyoruz.
+              Öncelikli hizmet ilçelerimiz Nilüfer, Mudanya, Osmangazi, Yıldırım, Gürsu ve Gemlik’tir. Bursa merkez konuşlu araç filomuzla 15. kata kadar hızlı kurulum sağlıyoruz.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
               {
                 slug: "nilufer",
@@ -186,6 +186,14 @@ export default function HomePageClient() {
                 desc: "Kurtuluş, Yenidoğan, İstiklal, Zafer ve çevresinde adrese göre kurulum değerlendirmesi.",
                 hoods: ["Kurtuluş", "Yenidoğan", "İstiklal", "Zafer"],
                 slugPrefix: "gursu"
+              },
+              {
+                slug: "gemlik",
+                name: "Gemlik",
+                title: "Gemlik Kiralık Asansör",
+                desc: "Hisar, Eşref Dinçer, Kumla, Kurşunlu ve Umurbey'de 15. kata kadar dış cephe kurulumu.",
+                hoods: ["Gemlik Merkez", "Kumla", "Kurşunlu", "Umurbey"],
+                slugPrefix: "gemlik"
               }
             ].map((d) => (
               <div key={d.slug} className="bg-slate-50 dark:bg-navy-light/60 border border-slate-200 dark:border-white/10 rounded-2xl p-5 hover:border-primary transition-all flex flex-col justify-between group shadow-sm hover:shadow-md">
@@ -226,27 +234,6 @@ export default function HomePageClient() {
                 </div>
               </div>
             ))}
-          </div>
-
-          <div className="mt-6 pt-5 border-t border-slate-200 dark:border-white/10 flex flex-wrap items-center justify-between gap-3 text-xs sm:text-sm">
-            <span className="font-bold text-secondary dark:text-white">Dış İlçeler &amp; Sanayi Hatlarımız:</span>
-            <div className="flex flex-wrap items-center gap-2">
-              <Link href="/inegol-kiralik-asansor" className="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-navy-light hover:bg-primary hover:text-white text-slate-700 dark:text-slate-200 font-semibold transition-colors">
-                İnegöl Kiralık Asansör &amp; Mobilya Vinci
-              </Link>
-              <Link href="/inegol-evden-eve-nakliyat" className="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-navy-light hover:bg-primary hover:text-white text-slate-700 dark:text-slate-200 font-semibold transition-colors">
-                İnegöl Evden Eve Nakliyat
-              </Link>
-              <Link href="/gemlik-kiralik-asansor" className="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-navy-light hover:bg-primary hover:text-white text-slate-700 dark:text-slate-200 font-semibold transition-colors">
-                Gemlik &amp; Kumla Kiralık Asansör
-              </Link>
-              <Link href="/yenisehir-evden-eve-nakliyat" className="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-navy-light hover:bg-primary hover:text-white text-slate-700 dark:text-slate-200 font-semibold transition-colors">
-                Yenişehir Evden Eve Nakliyat
-              </Link>
-              <Link href="/orhangazi-evden-eve-nakliyat" className="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-navy-light hover:bg-primary hover:text-white text-slate-700 dark:text-slate-200 font-semibold transition-colors">
-                Orhangazi Evden Eve Nakliyat
-              </Link>
-            </div>
           </div>
         </div>
       </section>
@@ -430,12 +417,13 @@ export default function HomePageClient() {
                   {' '}ile ortak çağrı merkezimiz (<a href="tel:05056080700" className="text-white font-bold hover:text-primary underline">0505 608 07 00</a>) üzerinden 7/24 koordineli çalışmaktayız.
                 </p>
                 <div className="flex flex-wrap items-center gap-2.5 text-xs font-semibold">
-                  <span className="text-slate-400 py-1">5 Ana İlçe Nakliyat &amp; Asansör Sayfalarımız:</span>
+                  <span className="text-slate-400 py-1">6 Ana İlçe Nakliyat &amp; Asansör Sayfalarımız:</span>
                   <Link href="/nilufer-evden-eve-nakliyat" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Nilüfer Evden Eve Nakliyat</Link>
                   <Link href="/osmangazi-evden-eve-nakliyat" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Osmangazi Evden Eve Nakliyat</Link>
                   <Link href="/yildirim-evden-eve-nakliyat" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Yıldırım Evden Eve Nakliyat</Link>
                   <Link href="/mudanya-evden-eve-nakliyat" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Mudanya Evden Eve Nakliyat</Link>
                   <Link href="/gursu-evden-eve-nakliyat" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Gürsu Evden Eve Nakliyat</Link>
+                  <Link href="/gemlik-evden-eve-nakliyat" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Gemlik Evden Eve Nakliyat</Link>
                   <Link href="/bursa-evden-eve-nakliyat" className="px-3 py-1.5 bg-white/10 hover:bg-primary text-slate-200 hover:text-white rounded-lg transition-colors border border-white/10">Bursa Asansörlü Evden Eve Nakliyat</Link>
                 </div>
               </div>
@@ -618,7 +606,7 @@ export default function HomePageClient() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">{t('home.service_network', 'Hizmet Ağımız')}</h2>
-            <p className="dark:text-slate-300 text-lg text-slate-700">{t('home.service_network_desc', "Bursa’nın 17 ilçesinde hizmet veriyoruz. Öncelikli bölgelerimiz Nilüfer, Mudanya, Osmangazi, Yıldırım ve Gürsu’dur.")}</p>
+            <p className="dark:text-slate-300 text-lg text-slate-700">{t('home.service_network_desc', "Bursa merkez konuşlu filomuzla öncelikli olarak Nilüfer, Mudanya, Osmangazi, Yıldırım, Gürsu ve Gemlik ilçelerinde aktif hizmet veriyoruz.")}</p>
           </div>
           <div ref={mapSentinelRef}>
             {shouldLoadMap ? (
@@ -641,18 +629,18 @@ export default function HomePageClient() {
       <section className="py-20 bg-slate-50 dark:bg-navy/30 border-t border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">{t('nav.districts', 'Hizmet Bölgelerimiz')}</h2>
-            <p className="dark:text-slate-300 text-lg text-slate-700">{t('home.districts_desc', "Bursa'nın tüm ilçelerine en kısa sürede mobil asansör ulaştırıyoruz.")}</p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">{t('nav.districts', 'Aktif Hizmet Bölgelerimiz')}</h2>
+            <p className="dark:text-slate-300 text-lg text-slate-700">{t('home.districts_desc', "Nilüfer, Mudanya, Osmangazi, Yıldırım, Gürsu ve Gemlik bölgelerine 25-30 dakikada mobil asansör ulaştırıyoruz.")}</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
               <h3 className="text-xl font-bold mb-6 flex items-center gap-2 text-secondary dark:text-white">
                 <ArrowUpToLine className="w-5 h-5 text-primary" />
-                Asansör Kiralama Bölgelerimiz
+                Asansör Kiralama &amp; Saatlik Kiralama
               </h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                {DISTRICTS.map(district => (
+                {DISTRICTS.filter(d => ["nilufer", "mudanya", "osmangazi", "yildirim", "gursu", "gemlik"].includes(d.slug)).map(district => (
                   <Link
                     key={`${district.slug}-asansor`}
                     href={`/${district.slug}-kiralik-asansor`}
@@ -661,21 +649,39 @@ export default function HomePageClient() {
                     {district.name} Kiralık Asansör
                   </Link>
                 ))}
+                {DISTRICTS.filter(d => ["nilufer", "mudanya", "osmangazi", "yildirim", "gursu", "gemlik"].includes(d.slug)).map(district => (
+                  <Link
+                    key={`${district.slug}-fiyat`}
+                    href={`/${district.slug}-kiralik-asansor-fiyatlari`}
+                    className="bg-white dark:bg-navy-light text-secondary dark:text-white py-3 px-2 rounded-xl text-center border border-border dark:border-white/10 hover:border-primary hover:text-primary transition-all font-medium text-xs sm:text-sm shadow-sm"
+                  >
+                    {district.name} Asansör Fiyatları
+                  </Link>
+                ))}
               </div>
             </div>
             <div>
               <h3 className="text-xl font-bold mb-6 flex items-center gap-2 text-secondary dark:text-white">
                 <Truck className="w-5 h-5 text-primary" />
-                Evden Eve Nakliyat Bölgelerimiz
+                Evden Eve Nakliyat &amp; Saatlik Kurulum
               </h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                {DISTRICTS.map(district => (
+                {DISTRICTS.filter(d => ["nilufer", "mudanya", "osmangazi", "yildirim", "gursu", "gemlik"].includes(d.slug)).map(district => (
                   <Link
                     key={`${district.slug}-nakliyat`}
                     href={`/${district.slug}-evden-eve-nakliyat`}
                     className="bg-white dark:bg-navy-light text-secondary dark:text-white py-3 px-2 rounded-xl text-center border border-border dark:border-white/10 hover:border-primary hover:text-primary transition-all font-medium text-xs sm:text-sm shadow-sm"
                   >
                     {district.name} Evden Eve Nakliyat
+                  </Link>
+                ))}
+                {DISTRICTS.filter(d => ["nilufer", "mudanya", "osmangazi", "yildirim", "gursu", "gemlik"].includes(d.slug)).map(district => (
+                  <Link
+                    key={`${district.slug}-saatlik`}
+                    href={`/${district.slug}-saatlik-asansor-kiralama`}
+                    className="bg-white dark:bg-navy-light text-secondary dark:text-white py-3 px-2 rounded-xl text-center border border-border dark:border-white/10 hover:border-primary hover:text-primary transition-all font-medium text-xs sm:text-sm shadow-sm"
+                  >
+                    {district.name} Saatlik Asansör
                   </Link>
                 ))}
               </div>

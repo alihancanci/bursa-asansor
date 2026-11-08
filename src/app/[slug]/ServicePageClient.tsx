@@ -36,7 +36,7 @@ export default function ServicePageClient() {
   const serviceName = t(`services.${service.slug}.name`, service.name);
   const serviceShortDesc = t(`services.${service.slug}.shortDesc`, service.shortDesc);
   const serviceTemplate = t(`services.${service.slug}.template`, service.template);
-  const priorityDistricts = ["nilufer", "yildirim", "mudanya", "osmangazi", "gursu", "inegol", "gemlik", "yenisehir", "orhangazi"];
+  const priorityDistricts = ["nilufer", "yildirim", "mudanya", "osmangazi", "gursu", "gemlik"];
   const districtServiceSlugs = ["kiralik-asansor", "kiralik-asansor-fiyatlari", "evden-eve-nakliyat", "evden-eve-asansorlu-nakliyat", "saatlik-asansor-kiralama"];
   const hasDistrictSearchContent = priorityDistricts.includes(district.slug) && districtServiceSlugs.includes(service.slug);
 
@@ -125,24 +125,24 @@ export default function ServicePageClient() {
         <li><strong>Cephe ve Yanaşma Mesafesi:</strong> Aracın binaya doğrudan yanaşabildiği sokaklar ile Bademli/Güzelyalı gibi bahçe mesafesi aşılması gereken cepheler WhatsApp üzerinden gönderilen fotoğrafla 5 dakikada ücretsiz değerlendirilir.</li>
         <li><strong>Hizmet Kapsamı (Sadece Asansör vs. Komple Nakliyat):</strong> Yalnızca operatörlü asansör kiralama ile <a href="/mudanya-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Mudanya evden eve nakliyat</a> (kamyon + taşıma ekibi + ambalaj + marangoz) ayrı olarak fiyatlandırılır.</li>
       </ul>`;
-  } else if (district.slug === "inegol" && (service.slug === "kiralik-asansor" || service.slug === "saatlik-asansor-kiralama")) {
-    htmlContent = `<p><strong>İnegöl kiralık asansör</strong> ve <strong>İnegöl asansör kiralama</strong> hizmetimizde; Ertuğrulgazi, Kemalpaşa, Alanyurt, Yeniceköy, Mahmudiye, Orhaniye, Mesudiye ve Akhisar mahalleleri ile <strong>İnegöl Mobilya İhtisas OSB</strong> hattında <strong>15. kata (45-50 metreye) kadar</strong> operatörlü dış cephe eşya taşıma asansörü kiralıyoruz. Mobilya üreticileri, mağaza sevkiyatları, şehir dışından İnegöl'e gelen nakliye firmaları ve bireysel ev taşıyanlar için saatlik veya günlük kiralama seçeneğimiz mevcuttur.</p>
-      <h2>İnegöl'de Neden Dış Cephe Mobil Asansör Tercih Ediliyor?</h2>
+  } else if (district.slug === "gemlik" && (service.slug === "kiralik-asansor" || service.slug === "saatlik-asansor-kiralama" || service.slug === "kiralik-asansor-fiyatlari")) {
+    htmlContent = `<p><strong>Gemlik kiralık asansör</strong>, <strong>Gemlik saatlik asansör kiralama</strong> ve <strong>Gemlik kiralık asansör fiyatları</strong> taleplerinizde; Hisar, Eşref Dinçer, Balıkpazarı, Cumhuriyet, Demirsubaşı, Osmaniye, <strong>Kumla (Küçükkumla)</strong>, <strong>Kurşunlu</strong> ve <strong>Umurbey</strong> mahallelerinde <strong>15. kata (45-50 metreye) kadar</strong> sertifikalı operatör dahil mobil dış cephe asansörü kiralıyoruz. Bursa merkez konuşlu filomuzla Gemlik ve sahil hattına hızla ulaşıyor; ev eşyası, beyaz eşya, mobilya, cam balkon ve inşaat malzemelerini dar merdivenlere sokmadan balkondan taşıyoruz.</p>
+      <h2>Gemlik, Kumla ve Kurşunlu'da Neden Mobil Asansör Kiralanmalı?</h2>
       <ul>
-        <li><strong>Mobilya Mağazaları &amp; Üreticilere Özel Sevkiyat Vinci:</strong> İnegöl mobilya fabrikalarından ve showroomlardan çıkan L koltuk, masif yemek masası, gardırop ve yatak odası takımlarını dar bina merdivenlerinde çizilmeden doğrudan balkondan daire içine çıkarıyoruz.</li>
-        <li><strong>Alanyurt, Ertuğrulgazi ve Yeni Toki Sitelerinde Yüksek Kat Erişimi:</strong> Site yönetimlerinin bina içi yolcu asansörü yasaklarına takılmadan 15. kata kadar 25 dakikada güvenli dış cephe kurulumu sağlıyoruz.</li>
-        <li><strong>Şehir Dışından Gelen Nakliyecilere Saatlik Operatörlü Destek:</strong> Türkiye'nin dört bir yanından İnegöl'e ev eşyası veya mobilya yüklemeye/indirmeye gelen meslektaşlarımıza sertifikalı operatör dahil saatlik kiralık asansör yönlendiriyoruz.</li>
+        <li><strong>Hisar ve Umurbey Yamaç Sitelerinde Yüksek Kat Erişimi:</strong> Gemlik'in deprem yönetmeliğine uygun yeni yapılan Hisar, Cihatlı ve Umurbey toplu konut/site projelerinde bina içi yolcu asansörünü kullanmadan 15. kata kadar güvenli dış cephe kurulumu sağlıyoruz.</li>
+        <li><strong>Kumla &amp; Kurşunlu Yazlık Dairelerde Hızlı Taşıma:</strong> Yazlık sezon geçişlerinde dar apartman merdivenlerinde eşya çizilmesini önlemek için 25 dakikada kurulan teleskopik asansörümüzle 2-3 saatte yükleme/indirme yapıyoruz.</li>
+        <li><strong>Eğimli Sokak Terazisi ve Körfez Rüzgar Sensörü:</strong> Gemlik'in yokuşlu sokaklarına ve körfez rüzgarına karşı 4 noktalı hidrolik denge ayaklarımız (outrigger) elektronik teraziyle sabitlenir; operatörümüz rüzgar hızını anlık kontrol eder.</li>
       </ul>
-      <p>Komple anahtar teslim taşınma için <a href="/inegol-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">İnegöl evden eve nakliyat</a> sayfamızı, güncel ücretlendirme detayları için <a href="/inegol-kiralik-asansor-fiyatlari" class="text-primary font-semibold hover:underline">İnegöl kiralık asansör fiyatları</a> rehberimizi inceleyebilirsiniz.</p>`;
-  } else if (district.slug === "inegol" && service.slug === "evden-eve-nakliyat") {
-    htmlContent = `<p><strong>İnegöl evden eve nakliyat</strong> ve <strong>İnegöl asansörlü nakliyat</strong> operasyonlarımızda; Alanyurt, Ertuğrulgazi, Kemalpaşa, Mahmudiye, Mesudiye, Orhaniye ve Akhisar mahallelerindeki daire ve siteler için sigortalı, uzman marangozlu ve 15. kata kadar dış cephe asansörlü komple ev taşıma hizmeti veriyoruz.</p>
-      <h2>İnegöl Ev Taşıma Sürecimizde Neler Dahil?</h2>
+      <p>Komple anahtar teslim taşınma için <a href="/gemlik-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Gemlik evden eve nakliyat</a> sayfamızı, saatlik kurulumlar için <a href="/gemlik-saatlik-asansor-kiralama" class="text-primary font-semibold hover:underline">Gemlik saatlik asansör kiralama</a> ve <a href="/gemlik-kiralik-asansor-fiyatlari" class="text-primary font-semibold hover:underline">Gemlik kiralık asansör fiyatları</a> sayfalarımızı inceleyebilirsiniz.</p>`;
+  } else if (district.slug === "gemlik" && service.slug === "evden-eve-nakliyat") {
+    htmlContent = `<p><strong>Gemlik evden eve nakliyat</strong> ve <strong>Gemlik asansörlü ev taşıma</strong> operasyonlarımızda; Hisar, Eşref Dinçer, Cumhuriyet, Balıkpazarı, Umurbey, <strong>Kumla</strong> ve <strong>Kurşunlu</strong> mahallelerindeki apartman, site ve yazlık konutlar için sigortalı, uzman marangozlu ve 15. kata kadar dış cephe asansörlü komple nakliyat sunuyoruz.</p>
+      <h2>Gemlik Ev Taşıma Sürecimizde Neler Dahil?</h2>
       <ul>
-        <li><strong>İnegöl Mobilya Uzmanlığıyla Marangozlu Söküm &amp; Kurulum:</strong> Sürgülü gardırop, yemek odası, TV ünitesi ve beyaz eşyalarınız mobilya montajında deneyimli ustalarımız tarafından sökülüp yeni adresinizde eksiksiz kurulur.</li>
-        <li><strong>Çift Katmanlı Patpat Ambalaj &amp; Kapalı Çelik Kasa Araç:</strong> Tüm eşyalarınız balonlu naylon ve kraft koruyucularla sarılır; dış cephe mobil asansörümüzle merdiven boşluğuna hiç girmeden doğrudan balkondan araca yüklenir.</li>
-        <li><strong>İnegöl İçi, Bursa Merkez ve Şehirler Arası Nakliyat:</strong> İnegöl – Nilüfer – Osmangazi – Yıldırım arası veya şehirler arası taşınmalarda ücretsiz ekspertiz ve sabit fiyat garantisi sunuyoruz.</li>
+        <li><strong>Bursa Merkez – Gemlik – Kumla Koordineli Filo:</strong> Gemlik içi taşınmaların yanı sıra Gemlik – Nilüfer – Osmangazi – Yıldırım – Mudanya arası taşınmalarda kendi kapalı çelik kasa araçlarımız ve mobil asansörümüzle tek elden hizmet veriyoruz.</li>
+        <li><strong>Marangozlu Demontaj/Montaj &amp; Patpat Ambalaj:</strong> Gardırop, yatak odası, yemek masası ve beyaz eşyalarınız uzman marangozumuz tarafından sökülür, çift katmanlı balonlu naylonla paketlenir ve yeni evinizde kurulur.</li>
+        <li><strong>15. Kata Kadar Dış Cephe Asansörlü Yükleme:</strong> Eşyalarınız bina merdivenlerine veya dar site koridorlarına hiç girmeden doğrudan balkondan kapalı kasa kamyonumuza indirilir ve yeni adresinizde balkondan dairenize çıkarılır.</li>
       </ul>
-      <p>Yalnızca dış cephe asansörü kiralamak istiyorsanız <a href="/inegol-kiralik-asansor" class="text-primary font-semibold hover:underline">İnegöl kiralık asansör</a> ve <a href="/inegol-saatlik-asansor-kiralama" class="text-primary font-semibold hover:underline">İnegöl saatlik asansör kiralama</a> sayfalarımıza göz atabilirsiniz.</p>`;
+      <p>Sadece operatörlü dış cephe asansörü kiralamak istiyorsanız <a href="/gemlik-kiralik-asansor" class="text-primary font-semibold hover:underline">Gemlik kiralık asansör</a> ve <a href="/gemlik-kiralik-asansor-fiyatlari" class="text-primary font-semibold hover:underline">Gemlik kiralık asansör fiyatları</a> sayfalarımıza göz atabilirsiniz.</p>`;
   } else if (hasDistrictSearchContent && service.slug === "evden-eve-nakliyat") {
     htmlContent = `<p>${district.name} evden eve nakliyat talebinizde taşınacak eşya miktarı, iki adres arasındaki mesafe, katlar ve bina erişimi değerlendirilir. Evden eve taşıma için süre bazlı asansör kiralaması yerine, taşınmanın kapsamına göre ayrıca fiyat teklifi hazırlanır. Ücretsiz ekspertiz ve keşif ile ihtiyaç duyulan nakliye aracı, taşıma personeli ve asansör planlanır.</p>
       <h2>${district.name} ev taşıma teklifi için gerekli bilgiler</h2>
@@ -652,7 +652,7 @@ export default function ServicePageClient() {
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {DISTRICTS
-                  .filter(d => d.slug !== district.slug)
+                  .filter(d => d.slug !== district.slug && ["mudanya", "nilufer", "osmangazi", "yildirim", "gursu", "gemlik"].includes(d.slug))
                   .map(d => ({
                     ...d,
                     distance: Math.sqrt(Math.pow(d.latitude - district.latitude, 2) + Math.pow(d.longitude - district.longitude, 2))
@@ -740,12 +740,12 @@ export default function ServicePageClient() {
             </div>
 
             <div className="bg-white dark:bg-navy-light rounded-2xl p-5 border-2 border-gray-200 dark:border-white/10">
-              <h3 className="font-display font-bold text-base text-gray-900 dark:text-white mb-4 pb-3 border-b-2 border-gray-200 dark:border-white/10">{t('service_page.nearby_districts', 'Yakın İlçeler')}</h3>
+              <h3 className="font-display font-bold text-base text-gray-900 dark:text-white mb-4 pb-3 border-b-2 border-gray-200 dark:border-white/10">{t('service_page.nearby_districts', 'Öncelikli Hizmet İlçelerimiz')}</h3>
               <div className="flex flex-wrap gap-2">
-                {DISTRICTS.filter(d => d.slug !== district.slug).slice(0, 8).map(d => (
+                {DISTRICTS.filter(d => d.slug !== district.slug && ["mudanya", "nilufer", "osmangazi", "yildirim", "gursu", "gemlik"].includes(d.slug)).map(d => (
                   <Link key={d.slug} href={`/${d.slug}-${service.slug}`} className="inline-block px-3 py-1.5 bg-gray-50 dark:bg-navy border-2 border-gray-200 dark:border-white/10 hover:bg-primary hover:border-primary text-xs font-semibold rounded-lg text-gray-700 dark:text-slate-300 hover:text-white transition-colors">{d.name}</Link>
                 ))}
-                <Link href="/" className="inline-block px-3 py-1.5 bg-primary/10 border-2 border-primary/30 text-xs font-semibold rounded-lg text-primary hover:bg-primary hover:text-white transition-colors">{t('common.view_all', 'Tümünü Gör')}</Link>
+                <Link href="/" className="inline-block px-3 py-1.5 bg-primary/10 border-2 border-primary/30 text-xs font-semibold rounded-lg text-primary hover:bg-primary hover:text-white transition-colors">{t('common.view_all', 'Ana Sayfa')}</Link>
               </div>
             </div>
           </div>

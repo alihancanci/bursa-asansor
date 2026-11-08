@@ -9,7 +9,7 @@ const SITE_LAST_UPDATED = new Date("2026-11-08");
 const BLOG_LAST_UPDATED = new Date("2026-11-08");
 const SERVICE_PAGES_UPDATED = new Date("2026-11-08");
 
-// 9 Ana Hedef İlçe + Bursa Merkez
+// 6 Ana Hedef İlçe (Merkez + Yakın Çevre) + Bursa Merkez
 export const FOCUS_DISTRICTS = [
   "bursa-merkez",
   "nilufer",
@@ -17,10 +17,7 @@ export const FOCUS_DISTRICTS = [
   "yildirim",
   "mudanya",
   "gursu",
-  "inegol",
   "gemlik",
-  "yenisehir",
-  "orhangazi",
 ];
 
 // Ana Hedef İlçelerde İndekslenecek Ticari Hizmetler
@@ -83,17 +80,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  // Ana İlçe En Yüksek Otorite Sayfaları
+  // 6 Ana İlçe En Yüksek Otorite Sayfaları
   const PRIMARY_AUTHORITY_SLUGS = [
     "nilufer-kiralik-asansor",
     "osmangazi-kiralik-asansor",
     "yildirim-kiralik-asansor",
     "mudanya-kiralik-asansor",
     "gursu-kiralik-asansor",
-    "inegol-kiralik-asansor",
     "gemlik-kiralik-asansor",
-    "yenisehir-kiralik-asansor",
-    "orhangazi-kiralik-asansor",
   ];
 
   const SECONDARY_PRIORITY_SLUGS = [
@@ -103,37 +97,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "yildirim-kiralik-asansor-fiyatlari",
     "mudanya-kiralik-asansor-fiyatlari",
     "gursu-kiralik-asansor-fiyatlari",
-    "inegol-kiralik-asansor-fiyatlari",
     "gemlik-kiralik-asansor-fiyatlari",
-    "yenisehir-kiralik-asansor-fiyatlari",
-    "orhangazi-kiralik-asansor-fiyatlari",
     "nilufer-saatlik-asansor-kiralama",
     "osmangazi-saatlik-asansor-kiralama",
     "yildirim-saatlik-asansor-kiralama",
     "mudanya-saatlik-asansor-kiralama",
     "gursu-saatlik-asansor-kiralama",
-    "inegol-saatlik-asansor-kiralama",
     "gemlik-saatlik-asansor-kiralama",
     "nilufer-evden-eve-nakliyat",
     "osmangazi-evden-eve-nakliyat",
     "yildirim-evden-eve-nakliyat",
     "mudanya-evden-eve-nakliyat",
     "gursu-evden-eve-nakliyat",
-    "inegol-evden-eve-nakliyat",
     "gemlik-evden-eve-nakliyat",
-    "yenisehir-evden-eve-nakliyat",
-    "orhangazi-evden-eve-nakliyat",
   ];
 
   // Sadece gerçek arama değeri olan kombinasyonları sitemap'e dahil et
   const servicePages: MetadataRoute.Sitemap = [];
   for (const district of DISTRICTS) {
     const isFocusDistrict = FOCUS_DISTRICTS.includes(district.slug);
+    // Uzak ilçeleri (İnegöl, Orhangazi, Kestel, Yenişehir, Dağ ilçeleri vb.) indeks ve sitemap dışı bırakarak
+    // tüm Google tarama bütçesini ve yerel otoriteyi 6 ana hedef ilçeye (Mudanya, Nilüfer, Osmangazi, Yıldırım, Gürsu, Gemlik) odaklıyoruz.
     const allowedServices = district.slug === "bursa-merkez"
       ? [...FOCUS_DISTRICT_SERVICES, ...BURSA_MERKEZ_B2B_SERVICES]
       : isFocusDistrict
       ? FOCUS_DISTRICT_SERVICES
-      : CORE_SERVICES_ALL_DISTRICTS;
+      : [];
 
     for (const service of SERVICES) {
       if (!allowedServices.includes(service.slug)) {

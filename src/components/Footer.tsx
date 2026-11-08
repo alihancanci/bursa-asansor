@@ -167,6 +167,12 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/gemlik-kiralik-asansor" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2 font-semibold">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                  Gemlik Kiralık Asansör
+                </Link>
+              </li>
+              <li>
                 <Link href="/" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2 font-semibold">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
                   Bursa Kiralık Asansör
@@ -200,6 +206,12 @@ export function Footer() {
                 <Link href="/gursu-evden-eve-nakliyat" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
                   Gürsu Evden Eve Nakliyat
+                </Link>
+              </li>
+              <li>
+                <Link href="/gemlik-evden-eve-nakliyat" className="text-slate-300 hover:text-primary transition-colors text-sm flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
+                  Gemlik Evden Eve Nakliyat
                 </Link>
               </li>
             </ul>
