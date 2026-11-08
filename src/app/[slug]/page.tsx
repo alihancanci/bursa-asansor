@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { DISTRICTS, SERVICES } from '@/data';
-import { FOCUS_DISTRICTS, FOCUS_DISTRICT_SERVICES, CORE_SERVICES_ALL_DISTRICTS } from '@/app/sitemap';
+import { FOCUS_DISTRICTS, FOCUS_DISTRICT_SERVICES, CORE_SERVICES_ALL_DISTRICTS, BURSA_MERKEZ_B2B_SERVICES } from '@/app/sitemap';
 import ServicePageClient from './ServicePageClient';
 
 export const revalidate = 604800; // Sayfaları arka planda haftada 1 kez (7 gün) otomatik yenileyerek taze tutar.
@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title = `${district.name} ${service.name} | En Uygun Fiyat & Hızlı Hizmet`;
   }
 
-  const priorityDistricts = ["nilufer", "yildirim", "mudanya", "osmangazi", "gursu"];
+  const priorityDistricts = ["nilufer", "yildirim", "mudanya", "osmangazi", "gursu", "inegol", "gemlik", "yenisehir", "orhangazi"];
   if (priorityDistricts.includes(district.slug)) {
     const districtServiceMetadata: Record<string, string> = {
       "kiralik-asansor": `${district.name} Kiralık Asansör & Asansör Kiralama`,
@@ -71,6 +71,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const metadata = districtServiceMetadata[service.slug];
     if (metadata) {
       title = metadata;
+    }
+  }
+
+  if (district.slug === "bursa-merkez") {
+    const merkezB2BTitles: Record<string, string> = {
+      "insaat-malzemesi-tasima-asansoru": "Bursa İnşaat Malzemesi Taşıma Asansörü Kiralama",
+      "moloz-indirme-asansoru": "Bursa Moloz İndirme Asansörü Kiralama (Saatlik/Günlük)",
+      "cam-ve-pencere-tasima-asansoru": "Bursa Cam Balkon & Pencere Taşıma Asansörü Kiralama",
+      "beyaz-esya-tasima-asansoru": "Bursa Beyaz Eşya & Mobilya Taşıma Asansörü Kiralama",
+      "ofis-tasimaciligi": "Bursa Ofis ve Büro Taşımacılığı | Asansörlü Nakliyat",
+      "parca-esya-tasima": "Bursa Parça Eşya Taşıma & Az Eşya Nakliye (Asansörlü)",
+    };
+    if (merkezB2BTitles[service.slug]) {
+      title = merkezB2BTitles[service.slug];
     }
   }
 
@@ -87,6 +101,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
     if (mudanyaTitles[service.slug]) {
       title = mudanyaTitles[service.slug];
+    }
+  }
+
+  if (district.slug === "inegol") {
+    const inegolTitles: Record<string, string> = {
+      "kiralik-asansor": "İnegöl Kiralık Asansör & Asansör Kiralama (Mobilya & Ev)",
+      "evden-eve-nakliyat": "İnegöl Evden Eve Nakliyat & Asansörlü Ev Taşıma",
+      "saatlik-asansor-kiralama": "İnegöl Saatlik Asansör Kiralama | 15. Kata Kadar 7/24",
+      "kiralik-asansor-fiyatlari": "İnegöl Kiralık Asansör Fiyatları 2026 | Saatlik & Günlük",
+    };
+    if (inegolTitles[service.slug]) {
+      title = inegolTitles[service.slug];
     }
   }
 
@@ -107,8 +133,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       yildirim: "Yıldırım kiralık asansör ve saatlik mobil asansör kiralama. Millet, Erikli, Mesken, Teleferik'te 15. kata kadar taşıma: 0505 608 07 00.",
       mudanya: "Mudanya kiralık asansör ve saatlik asansör kiralama. Güzelyalı, Burgaz, Bademli, Halitpaşa'da 15. kata kadar operatörlü kurulum: 0505 608 07 00.",
       gursu: "Gürsu kiralık asansör ve mobil asansör kiralama. Kurtuluş, Yenidoğan, Zafer mahallelerinde 15. kata kadar güvenli kurulum: 0505 608 07 00.",
+      inegol: "İnegöl kiralık asansör ve saatlik asansör kiralama. Mobilya OSB, Ertuğrulgazi, Alanyurt ve Kemalpaşa'da 15. kata kadar kurulum: 0505 608 07 00.",
+      gemlik: "Gemlik kiralık asansör ve saatlik asansör kiralama. Kumla, Kurşunlu, Hisar ve Eşref Dinçer'de 15. kata kadar operatörlü taşıma: 0505 608 07 00.",
+      yenisehir: "Yenişehir kiralık asansör ve saatlik asansör kiralama. Yenigün, Kurtuluş, Çayır mahallelerinde 15. kata kadar güvenli kurulum: 0505 608 07 00.",
+      orhangazi: "Orhangazi kiralık asansör ve saatlik asansör kiralama. Arapzade, Muradiye, Hürriyet mahallelerinde 15. kata kadar kurulum: 0505 608 07 00.",
     };
     description = districtDescriptions[district.slug] ?? `${district.name} kiralık asansör ve saatlik mobil asansör kiralama. 15. kata kadar güvenli kurulum ve fiyat için arayın: 0505 608 07 00.`;
+  } else if (district.slug === "bursa-merkez" && BURSA_MERKEZ_B2B_SERVICES.includes(service.slug)) {
+    const merkezB2BDescriptions: Record<string, string> = {
+      "insaat-malzemesi-tasima-asansoru": "Bursa inşaat malzemesi taşıma asansörü kiralama. Şantiye, parke, seramik, alçıpan, fayans ve çatı malzemeleri için 15. kata kadar saatlik/günlük asansör.",
+      "moloz-indirme-asansoru": "Bursa moloz indirme asansörü kiralama. Daire tadilatı ve kentsel dönüşümde 15. kata kadar çuvallı moloz ve yıkım malzemesi indirme: 0505 608 07 00.",
+      "cam-ve-pencere-tasima-asansoru": "Bursa cam balkon ve pencere taşıma asansörü kiralama. PVC doğrama, kış bahçesi ve büyük cephe camlarını 15. kata sarsıntısız çıkarma: 0505 608 07 00.",
+      "beyaz-esya-tasima-asansoru": "Bursa beyaz eşya ve mobilya taşıma asansörü. Merdivenden dönmeyen buzdolabı, çamaşır makinesi ve L koltuklar için saatlik ev taşıma vinci: 0505 608 07 00.",
+      "ofis-tasimaciligi": "Bursa ofis ve büro taşımacılığı. Plaza, iş merkezi ve kurumsal firmalar için 15. kata kadar dış cephe asansörlü, sigortalı ofis nakliyesi: 0505 608 07 00.",
+      "parca-esya-tasima": "Bursa parça eşya taşıma ve az eşya nakliye. Öğrenci evi, yazlık eşyası, tek koltuk veya beyaz eşya için ekonomik asansörlü nakliyat: 0505 608 07 00.",
+    };
+    description = merkezB2BDescriptions[service.slug] ?? description;
   } else if (district.slug === "mudanya") {
     const mudanyaServiceDescriptions: Record<string, string> = {
       "evden-eve-nakliyat": "Mudanya evden eve nakliyat, asansörlü ev taşıma ve nakliye fiyatları. Güzelyalı, Bademli, Burgaz ve Halitpaşa'da sigortalı taşıma: 0505 608 07 00.",
@@ -134,11 +174,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   // Zayıf ve arama hacmi olmayan tali kombinasyonları Google indeksinden çıkarıp (noindex)
-  // sitenin tüm otoritesini Bursa ve 5 Ana İlçenin çekirdek sayfalarına odaklıyoruz.
+  // sitenin tüm otoritesini Bursa ve Ana İlçelerin çekirdek sayfalarına odaklıyoruz.
   const isFocusDistrict = FOCUS_DISTRICTS.includes(district.slug);
-  const allowedServices = isFocusDistrict ? FOCUS_DISTRICT_SERVICES : CORE_SERVICES_ALL_DISTRICTS;
-  const isCannibalizingMudanyaNakliyat = district.slug === "mudanya" && service.slug === "evden-eve-asansorlu-nakliyat";
-  const shouldIndex = allowedServices.includes(service.slug) && !isCannibalizingMudanyaNakliyat;
+  const allowedServices = district.slug === "bursa-merkez"
+    ? [...FOCUS_DISTRICT_SERVICES, ...BURSA_MERKEZ_B2B_SERVICES]
+    : isFocusDistrict
+    ? FOCUS_DISTRICT_SERVICES
+    : CORE_SERVICES_ALL_DISTRICTS;
+  const isCannibalizingNakliyat = ["mudanya", "inegol", "gemlik"].includes(district.slug) && service.slug === "evden-eve-asansorlu-nakliyat";
+  const shouldIndex = allowedServices.includes(service.slug) && !isCannibalizingNakliyat;
 
   return {
     title,

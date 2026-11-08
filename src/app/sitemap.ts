@@ -9,7 +9,7 @@ const SITE_LAST_UPDATED = new Date("2026-11-08");
 const BLOG_LAST_UPDATED = new Date("2026-11-08");
 const SERVICE_PAGES_UPDATED = new Date("2026-11-08");
 
-// 5 Ana Hedef İlçe + Bursa Merkez
+// 9 Ana Hedef İlçe + Bursa Merkez
 export const FOCUS_DISTRICTS = [
   "bursa-merkez",
   "nilufer",
@@ -17,6 +17,10 @@ export const FOCUS_DISTRICTS = [
   "yildirim",
   "mudanya",
   "gursu",
+  "inegol",
+  "gemlik",
+  "yenisehir",
+  "orhangazi",
 ];
 
 // Ana Hedef İlçelerde İndekslenecek Ticari Hizmetler
@@ -29,6 +33,16 @@ export const FOCUS_DISTRICT_SERVICES = [
   "dis-cephe-esya-asansoru",
   "asansorlu-ev-tasima",
   "mobilya-tasima-asansoru",
+];
+
+// Bursa Merkezde Şirketler, Ustalar ve Bireyler İçin İndekslenecek B2B & Özel Hizmetler
+export const BURSA_MERKEZ_B2B_SERVICES = [
+  "insaat-malzemesi-tasima-asansoru",
+  "moloz-indirme-asansoru",
+  "cam-ve-pencere-tasima-asansoru",
+  "beyaz-esya-tasima-asansoru",
+  "ofis-tasimaciligi",
+  "parca-esya-tasima",
 ];
 
 // Diğer İlçelerde Sadece Gerçekten Aranan 4 Çekirdek Hizmet İndekslenir
@@ -69,13 +83,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  // 5 Ana İlçe En Yüksek Otorite Sayfaları
+  // Ana İlçe En Yüksek Otorite Sayfaları
   const PRIMARY_AUTHORITY_SLUGS = [
     "nilufer-kiralik-asansor",
     "osmangazi-kiralik-asansor",
     "yildirim-kiralik-asansor",
     "mudanya-kiralik-asansor",
     "gursu-kiralik-asansor",
+    "inegol-kiralik-asansor",
+    "gemlik-kiralik-asansor",
+    "yenisehir-kiralik-asansor",
+    "orhangazi-kiralik-asansor",
   ];
 
   const SECONDARY_PRIORITY_SLUGS = [
@@ -85,25 +103,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "yildirim-kiralik-asansor-fiyatlari",
     "mudanya-kiralik-asansor-fiyatlari",
     "gursu-kiralik-asansor-fiyatlari",
+    "inegol-kiralik-asansor-fiyatlari",
+    "gemlik-kiralik-asansor-fiyatlari",
+    "yenisehir-kiralik-asansor-fiyatlari",
+    "orhangazi-kiralik-asansor-fiyatlari",
     "nilufer-saatlik-asansor-kiralama",
     "osmangazi-saatlik-asansor-kiralama",
     "yildirim-saatlik-asansor-kiralama",
     "mudanya-saatlik-asansor-kiralama",
     "gursu-saatlik-asansor-kiralama",
     "inegol-saatlik-asansor-kiralama",
+    "gemlik-saatlik-asansor-kiralama",
     "nilufer-evden-eve-nakliyat",
     "osmangazi-evden-eve-nakliyat",
     "yildirim-evden-eve-nakliyat",
     "mudanya-evden-eve-nakliyat",
     "gursu-evden-eve-nakliyat",
+    "inegol-evden-eve-nakliyat",
+    "gemlik-evden-eve-nakliyat",
     "yenisehir-evden-eve-nakliyat",
+    "orhangazi-evden-eve-nakliyat",
   ];
 
   // Sadece gerçek arama değeri olan kombinasyonları sitemap'e dahil et
   const servicePages: MetadataRoute.Sitemap = [];
   for (const district of DISTRICTS) {
     const isFocusDistrict = FOCUS_DISTRICTS.includes(district.slug);
-    const allowedServices = isFocusDistrict ? FOCUS_DISTRICT_SERVICES : CORE_SERVICES_ALL_DISTRICTS;
+    const allowedServices = district.slug === "bursa-merkez"
+      ? [...FOCUS_DISTRICT_SERVICES, ...BURSA_MERKEZ_B2B_SERVICES]
+      : isFocusDistrict
+      ? FOCUS_DISTRICT_SERVICES
+      : CORE_SERVICES_ALL_DISTRICTS;
 
     for (const service of SERVICES) {
       if (!allowedServices.includes(service.slug)) {
@@ -112,7 +142,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
       const pageSlug = `${district.slug}-${service.slug}`;
 
-      // bursa-merkez ve mudanya kopya sayfaları ana otorite sayfalarına 301 yönlendirildiği için sitemap e ekleme
+      // bursa-merkez ve ilçe kopya sayfaları ana otorite sayfalarına 301 yönlendirildiği için sitemap e ekleme
       if (
         [
           "bursa-merkez-kiralik-asansor",
@@ -121,6 +151,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
           "bursa-merkez-asansorlu-ev-tasima",
           "mudanya-evden-eve-asansorlu-nakliyat",
           "mudanya-asansorlu-ev-tasima",
+          "inegol-evden-eve-asansorlu-nakliyat",
+          "gemlik-evden-eve-asansorlu-nakliyat",
         ].includes(pageSlug)
       ) {
         continue;

@@ -227,6 +227,27 @@ export default function HomePageClient() {
               </div>
             ))}
           </div>
+
+          <div className="mt-6 pt-5 border-t border-slate-200 dark:border-white/10 flex flex-wrap items-center justify-between gap-3 text-xs sm:text-sm">
+            <span className="font-bold text-secondary dark:text-white">Dış İlçeler &amp; Sanayi Hatlarımız:</span>
+            <div className="flex flex-wrap items-center gap-2">
+              <Link href="/inegol-kiralik-asansor" className="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-navy-light hover:bg-primary hover:text-white text-slate-700 dark:text-slate-200 font-semibold transition-colors">
+                İnegöl Kiralık Asansör &amp; Mobilya Vinci
+              </Link>
+              <Link href="/inegol-evden-eve-nakliyat" className="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-navy-light hover:bg-primary hover:text-white text-slate-700 dark:text-slate-200 font-semibold transition-colors">
+                İnegöl Evden Eve Nakliyat
+              </Link>
+              <Link href="/gemlik-kiralik-asansor" className="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-navy-light hover:bg-primary hover:text-white text-slate-700 dark:text-slate-200 font-semibold transition-colors">
+                Gemlik &amp; Kumla Kiralık Asansör
+              </Link>
+              <Link href="/yenisehir-evden-eve-nakliyat" className="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-navy-light hover:bg-primary hover:text-white text-slate-700 dark:text-slate-200 font-semibold transition-colors">
+                Yenişehir Evden Eve Nakliyat
+              </Link>
+              <Link href="/orhangazi-evden-eve-nakliyat" className="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-navy-light hover:bg-primary hover:text-white text-slate-700 dark:text-slate-200 font-semibold transition-colors">
+                Orhangazi Evden Eve Nakliyat
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -282,6 +303,101 @@ export default function HomePageClient() {
               <ArrowRight className="w-4 h-4" />
             </Link>
             <p className="mt-3 text-sm text-gray-600 dark:text-slate-300">{SERVICES.length} farklı hizmet · Bursa&apos;nın tüm ilçelerine</p>
+          </div>
+
+          {/* Kurumsal Şirketlere, Ustalara & Bireylere Özel Kiralık Asansör & Ev Taşıma Vinci Çözümleri (B2B + B2C) */}
+          <div className="mt-16 bg-white dark:bg-navy-light rounded-3xl p-6 sm:p-10 border border-slate-200 dark:border-white/10 shadow-sm">
+            <div className="max-w-3xl mb-8">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-3">
+                Şirketlere, Ustalara &amp; Bireylere Saatlik / Günlük Kiralama
+              </div>
+              <h2 className="text-2xl sm:text-3xl font-display font-bold text-secondary dark:text-white mb-3">
+                Şirketler, Esnaflar ve Ev Taşıyanlar İçin Kiralık Asansör &amp; Ev Taşıma Vinci
+              </h2>
+              <p className="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+                Halk arasında <strong>ev taşıma vinç</strong>, <strong>evden eve vinç</strong>, <strong>eşya taşıma vinç</strong>, <strong>asansörlü vinç</strong> veya <strong>nakliye asansörü</strong> olarak da bilinen 15. kata (45-50 metre) erişimli <strong>evden eve mobil asansör</strong> filomuz; yalnızca komple ev taşınmalarında değil, Bursa&apos;daki inşaat firmaları, mobilya mağazaları, cam balkon ustaları, beyaz eşya servisleri ve şehir dışından Bursa&apos;ya gelen nakliyat şirketleri için de saatlik veya günlük operatörlü olarak kiralanmaktadır.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <Link
+                href="/bursa-merkez-insaat-malzemesi-tasima-asansoru"
+                className="p-5 rounded-2xl bg-slate-50 dark:bg-navy border border-slate-200 dark:border-white/10 hover:border-primary transition-all group"
+              >
+                <div className="font-bold text-secondary dark:text-white group-hover:text-primary mb-1.5 flex items-center justify-between">
+                  <span>İnşaat &amp; Yapı Malzemesi Asansörü</span>
+                  <ArrowRight className="w-4 h-4 text-primary shrink-0" />
+                </div>
+                <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Şantiye ve tadilatlarda alçıpan, parke, seramik, mermer, çimento, çelik kapı ve güneş panelini 15. kata kadar vinç/mobil asansörle çıkarma.
+                </p>
+              </Link>
+
+              <Link
+                href="/bursa-merkez-cam-ve-pencere-tasima-asansoru"
+                className="p-5 rounded-2xl bg-slate-50 dark:bg-navy border border-slate-200 dark:border-white/10 hover:border-primary transition-all group"
+              >
+                <div className="font-bold text-secondary dark:text-white group-hover:text-primary mb-1.5 flex items-center justify-between">
+                  <span>Cam Balkon &amp; PVC Pencere Asansörü</span>
+                  <ArrowRight className="w-4 h-4 text-primary shrink-0" />
+                </div>
+                <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Cam balkon firmaları ve doğrama ustaları için temperli cam, pimapen, alüminyum doğrama ve pergola sistemlerinin sarsıntısız dış cephe sevkiyatı.
+                </p>
+              </Link>
+
+              <Link
+                href="/bursa-merkez-moloz-indirme-asansoru"
+                className="p-5 rounded-2xl bg-slate-50 dark:bg-navy border border-slate-200 dark:border-white/10 hover:border-primary transition-all group"
+              >
+                <div className="font-bold text-secondary dark:text-white group-hover:text-primary mb-1.5 flex items-center justify-between">
+                  <span>Tadilat &amp; Çuvallı Moloz İndirme</span>
+                  <ArrowRight className="w-4 h-4 text-primary shrink-0" />
+                </div>
+                <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Üst kat daire ve ofis tadilatlarında bina asansörünü kirletmeden çuvallı moloz ve yıkım atıklarını doğrudan kamyona indirme.
+                </p>
+              </Link>
+
+              <Link
+                href="/bursa-merkez-beyaz-esya-tasima-asansoru"
+                className="p-5 rounded-2xl bg-slate-50 dark:bg-navy border border-slate-200 dark:border-white/10 hover:border-primary transition-all group"
+              >
+                <div className="font-bold text-secondary dark:text-white group-hover:text-primary mb-1.5 flex items-center justify-between">
+                  <span>Mobilya &amp; Beyaz Eşya Taşıma Vinci</span>
+                  <ArrowRight className="w-4 h-4 text-primary shrink-0" />
+                </div>
+                <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Merdivenden dönmeyen gardırop tipi buzdolabı, L koltuk takımı, masif masa, piyano ve çelik kasalar için tek seferlik / saatlik asansör.
+                </p>
+              </Link>
+
+              <Link
+                href="/bursa-merkez-ofis-tasimaciligi"
+                className="p-5 rounded-2xl bg-slate-50 dark:bg-navy border border-slate-200 dark:border-white/10 hover:border-primary transition-all group"
+              >
+                <div className="font-bold text-secondary dark:text-white group-hover:text-primary mb-1.5 flex items-center justify-between">
+                  <span>Kurumsal Ofis &amp; İş Yeri Taşıma</span>
+                  <ArrowRight className="w-4 h-4 text-primary shrink-0" />
+                </div>
+                <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Plaza, klinik, banka, muhasebe bürosu ve kurumsal şirketler için faturalı, sigortalı ve dış cephe asansörlü hızlı ofis nakliyesi.
+                </p>
+              </Link>
+
+              <Link
+                href="/bursa-merkez-parca-esya-tasima"
+                className="p-5 rounded-2xl bg-slate-50 dark:bg-navy border border-slate-200 dark:border-white/10 hover:border-primary transition-all group"
+              >
+                <div className="font-bold text-secondary dark:text-white group-hover:text-primary mb-1.5 flex items-center justify-between">
+                  <span>Parça Eşya &amp; Nakliyecilere Asansör</span>
+                  <ArrowRight className="w-4 h-4 text-primary shrink-0" />
+                </div>
+                <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Şehir dışından Bursa&apos;ya gelen nakliye firmalarına kiralık operatörlü asansör desteği ve öğrenci/bekar evi az eşya taşıma çözümleri.
+                </p>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -446,9 +562,9 @@ export default function HomePageClient() {
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-100 dark:bg-green-500/10 text-green-700 dark:text-green-400 text-xs font-bold uppercase tracking-wider mb-6">
                   {t('features.f4_title', 'Fiyatlandırma & Detaylar')}
                 </div>
-                <h3 className="text-2xl md:text-3xl font-display font-bold text-secondary dark:text-white mb-6 leading-tight">
-                  {t('home.pricing_title', 'Bursa Kiralık Asansör Fiyatları ve Hizmet Detayları')}
-                </h3>
+                <h2 className="text-2xl md:text-3xl font-display font-bold text-secondary dark:text-white mb-6 leading-tight">
+                  {t('home.pricing_title', 'Bursa Asansör Kiralama Fiyatları ve Kiralık Asansör Ücretleri')}
+                </h2>
                 <div className="space-y-6">
                   <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-lg">
                     {t('home.pricing_desc', "Kiralık mobil asansör ücretlerimiz; kurulum yapılacak katın yüksekliği (15. kata kadar), taşınacak eşyanın veya malzemenin miktarı ve operasyonun tahmini süresine göre şeffaf bir şekilde belirlenir. Binanın önündeki ağaç, elektrik teli gibi engeller operatörümüz tarafından değerlendirilir ve en güvenli kurulum sağlanır. İhtiyaç halinde eşya taşıma personeli (hamal) ve nakliye aracı da fiyat teklifine dahil edilebilir. Gizli ücret veya sürpriz maliyet yoktur.")}

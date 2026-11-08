@@ -36,7 +36,7 @@ export default function ServicePageClient() {
   const serviceName = t(`services.${service.slug}.name`, service.name);
   const serviceShortDesc = t(`services.${service.slug}.shortDesc`, service.shortDesc);
   const serviceTemplate = t(`services.${service.slug}.template`, service.template);
-  const priorityDistricts = ["nilufer", "yildirim", "mudanya", "osmangazi", "gursu"];
+  const priorityDistricts = ["nilufer", "yildirim", "mudanya", "osmangazi", "gursu", "inegol", "gemlik", "yenisehir", "orhangazi"];
   const districtServiceSlugs = ["kiralik-asansor", "kiralik-asansor-fiyatlari", "evden-eve-nakliyat", "evden-eve-asansorlu-nakliyat", "saatlik-asansor-kiralama"];
   const hasDistrictSearchContent = priorityDistricts.includes(district.slug) && districtServiceSlugs.includes(service.slug);
 
@@ -125,6 +125,24 @@ export default function ServicePageClient() {
         <li><strong>Cephe ve Yanaşma Mesafesi:</strong> Aracın binaya doğrudan yanaşabildiği sokaklar ile Bademli/Güzelyalı gibi bahçe mesafesi aşılması gereken cepheler WhatsApp üzerinden gönderilen fotoğrafla 5 dakikada ücretsiz değerlendirilir.</li>
         <li><strong>Hizmet Kapsamı (Sadece Asansör vs. Komple Nakliyat):</strong> Yalnızca operatörlü asansör kiralama ile <a href="/mudanya-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Mudanya evden eve nakliyat</a> (kamyon + taşıma ekibi + ambalaj + marangoz) ayrı olarak fiyatlandırılır.</li>
       </ul>`;
+  } else if (district.slug === "inegol" && (service.slug === "kiralik-asansor" || service.slug === "saatlik-asansor-kiralama")) {
+    htmlContent = `<p><strong>İnegöl kiralık asansör</strong> ve <strong>İnegöl asansör kiralama</strong> hizmetimizde; Ertuğrulgazi, Kemalpaşa, Alanyurt, Yeniceköy, Mahmudiye, Orhaniye, Mesudiye ve Akhisar mahalleleri ile <strong>İnegöl Mobilya İhtisas OSB</strong> hattında <strong>15. kata (45-50 metreye) kadar</strong> operatörlü dış cephe eşya taşıma asansörü kiralıyoruz. Mobilya üreticileri, mağaza sevkiyatları, şehir dışından İnegöl'e gelen nakliye firmaları ve bireysel ev taşıyanlar için saatlik veya günlük kiralama seçeneğimiz mevcuttur.</p>
+      <h2>İnegöl'de Neden Dış Cephe Mobil Asansör Tercih Ediliyor?</h2>
+      <ul>
+        <li><strong>Mobilya Mağazaları &amp; Üreticilere Özel Sevkiyat Vinci:</strong> İnegöl mobilya fabrikalarından ve showroomlardan çıkan L koltuk, masif yemek masası, gardırop ve yatak odası takımlarını dar bina merdivenlerinde çizilmeden doğrudan balkondan daire içine çıkarıyoruz.</li>
+        <li><strong>Alanyurt, Ertuğrulgazi ve Yeni Toki Sitelerinde Yüksek Kat Erişimi:</strong> Site yönetimlerinin bina içi yolcu asansörü yasaklarına takılmadan 15. kata kadar 25 dakikada güvenli dış cephe kurulumu sağlıyoruz.</li>
+        <li><strong>Şehir Dışından Gelen Nakliyecilere Saatlik Operatörlü Destek:</strong> Türkiye'nin dört bir yanından İnegöl'e ev eşyası veya mobilya yüklemeye/indirmeye gelen meslektaşlarımıza sertifikalı operatör dahil saatlik kiralık asansör yönlendiriyoruz.</li>
+      </ul>
+      <p>Komple anahtar teslim taşınma için <a href="/inegol-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">İnegöl evden eve nakliyat</a> sayfamızı, güncel ücretlendirme detayları için <a href="/inegol-kiralik-asansor-fiyatlari" class="text-primary font-semibold hover:underline">İnegöl kiralık asansör fiyatları</a> rehberimizi inceleyebilirsiniz.</p>`;
+  } else if (district.slug === "inegol" && service.slug === "evden-eve-nakliyat") {
+    htmlContent = `<p><strong>İnegöl evden eve nakliyat</strong> ve <strong>İnegöl asansörlü nakliyat</strong> operasyonlarımızda; Alanyurt, Ertuğrulgazi, Kemalpaşa, Mahmudiye, Mesudiye, Orhaniye ve Akhisar mahallelerindeki daire ve siteler için sigortalı, uzman marangozlu ve 15. kata kadar dış cephe asansörlü komple ev taşıma hizmeti veriyoruz.</p>
+      <h2>İnegöl Ev Taşıma Sürecimizde Neler Dahil?</h2>
+      <ul>
+        <li><strong>İnegöl Mobilya Uzmanlığıyla Marangozlu Söküm &amp; Kurulum:</strong> Sürgülü gardırop, yemek odası, TV ünitesi ve beyaz eşyalarınız mobilya montajında deneyimli ustalarımız tarafından sökülüp yeni adresinizde eksiksiz kurulur.</li>
+        <li><strong>Çift Katmanlı Patpat Ambalaj &amp; Kapalı Çelik Kasa Araç:</strong> Tüm eşyalarınız balonlu naylon ve kraft koruyucularla sarılır; dış cephe mobil asansörümüzle merdiven boşluğuna hiç girmeden doğrudan balkondan araca yüklenir.</li>
+        <li><strong>İnegöl İçi, Bursa Merkez ve Şehirler Arası Nakliyat:</strong> İnegöl – Nilüfer – Osmangazi – Yıldırım arası veya şehirler arası taşınmalarda ücretsiz ekspertiz ve sabit fiyat garantisi sunuyoruz.</li>
+      </ul>
+      <p>Yalnızca dış cephe asansörü kiralamak istiyorsanız <a href="/inegol-kiralik-asansor" class="text-primary font-semibold hover:underline">İnegöl kiralık asansör</a> ve <a href="/inegol-saatlik-asansor-kiralama" class="text-primary font-semibold hover:underline">İnegöl saatlik asansör kiralama</a> sayfalarımıza göz atabilirsiniz.</p>`;
   } else if (hasDistrictSearchContent && service.slug === "evden-eve-nakliyat") {
     htmlContent = `<p>${district.name} evden eve nakliyat talebinizde taşınacak eşya miktarı, iki adres arasındaki mesafe, katlar ve bina erişimi değerlendirilir. Evden eve taşıma için süre bazlı asansör kiralaması yerine, taşınmanın kapsamına göre ayrıca fiyat teklifi hazırlanır. Ücretsiz ekspertiz ve keşif ile ihtiyaç duyulan nakliye aracı, taşıma personeli ve asansör planlanır.</p>
       <h2>${district.name} ev taşıma teklifi için gerekli bilgiler</h2>
@@ -157,6 +175,10 @@ export default function ServicePageClient() {
       nilufer: "Nilüfer'de site veya apartman içindeki taşımalarda yönetimin izin ve çalışma saati koşullarını önceden öğrenin. Adres, kat, cephe fotoğrafı ve planlanan tarih; kurulum uygunluğu ile fiyatın değerlendirilmesini kolaylaştırır.",
       osmangazi: "Osmangazi'de yoğun cadde veya dar sokak üzerindeki adreslerde aracın duracağı alanı önceden değerlendirmek gerekir. Mahalle/adres, kat ve bina cephesinin fotoğrafını ileterek kurulum alanı ile fiyat hakkında bilgi isteyin.",
       mudanya: "Mudanya'da mahalleye göre sokak ve bina cephesi koşulları değişebilir. Güzelyalı, Burgaz, Bademli veya başka bir adresteki talebiniz için konumu, katı ve aracın yaklaşacağı alanın fotoğrafını paylaşın.",
+      inegol: "İnegöl'de Alanyurt, Ertuğrulgazi, Kemalpaşa veya Mobilya OSB bölgesindeki taleplerinizde; taşınacak mobilya/eşya miktarını, katı ve bina cephesinin fotoğrafını WhatsApp üzerinden paylaşarak 5 dakikada net fiyat alabilirsiniz.",
+      gemlik: "Gemlik'te Kumla, Umurbey, Hisar veya sahil mahallelerindeki eğimli sokaklar ve yazlık siteler için bina cephesi fotoğrafını, kat bilgisini ve çalışma süresini paylaşarak hızlı fiyat teklifi isteyin.",
+      yenisehir: "Yenişehir merkez mahalleleri ve yeni konut sitelerindeki asansör veya ev taşıma talepleriniz için mahalle, kat ve taşınacak yük bilgisini ileterek net fiyat alabilirsiniz.",
+      orhangazi: "Orhangazi Arapzade, Hürriyet, Muradiye ve Camikebir mahallelerindeki apartman ve iş yerleri için kat yüksekliği ve cephe fotoğrafını paylaşarak kurulum uygunluğunu hemen öğrenin."
     };
     const localSetupNote = localSetupNotes[district.slug];
 
@@ -179,6 +201,10 @@ export default function ServicePageClient() {
       osmangazi: "Hamitler, Yunuseli, Emek, Geçit, Dikkaldırım, Çekirge ve Demirtaş bölgelerinde dar sokaklara ve yoğun caddelere uyumlu mobil asansör filomuzla hizmet veriyoruz.",
       yildirim: "Millet, Erikli, Ertuğrulgazi, Mesken, Teleferik ve Esenevler mahallelerinde eğimli sokak koşullarına uygun denge ayaklarıyla güvenli asansör kurulumu gerçekleştiriyoruz.",
       gursu: "Kurtuluş, Yenidoğan, Zafer ve İstiklal mahallelerindeki apartman ve sitelerde ev eşyası, mobilya ve yapı malzemesi taşımacılığı için saatlik veya günlük asansör kiralama sunuyoruz.",
+      inegol: "Ertuğrulgazi, Kemalpaşa, Alanyurt, Yeniceköy, Mahmudiye, Orhaniye, Mesudiye ve Akhisar mahalleleri ile İnegöl Mobilya OSB'de 15. kata kadar operatörlü mobil asansör ve evden eve nakliyat hizmeti veriyoruz.",
+      gemlik: "Kumla, Umurbey, Kurşunlu, Hisar, Eşref Dinçer, Balıkpazarı ve Cumhuriyet mahallelerinde sahil ve yamaç sitelerine uygun 15. kata kadar dış cephe asansör kiralama ve nakliyat sağlıyoruz.",
+      yenisehir: "Yenigün, Çayır, Kurtuluş, Yüzüncüyıl, Ulucami ve Hidirbali mahallelerindeki apartman ve sitelerde asansörlü evden eve nakliyat ve saatlik mobil asansör kurulumu yapıyoruz.",
+      orhangazi: "Arapzade, Hürriyet, Muradiye, Camikebir ve Tekke mahallelerinde 15. kata kadar dış cephe eşya taşıma asansörü kiralama ve sigortalı evden eve nakliyat sunuyoruz.",
       "bursa-merkez": "Heykel, Setbaşı, Altıparmak, Çekirge, Kükürtlü ve Muradiye başta olmak üzere Bursa merkezdeki tüm mahallelere 7/24 operatörlü mobil asansör yönlendiriyoruz."
     };
 
@@ -202,6 +228,10 @@ export default function ServicePageClient() {
       osmangazi: "Osmangazi'nin Hamitler, Yunuseli, Emek ve Dikkaldırım gibi yoğun cadde ve bitişik nizam apartmanlarının bulunduğu sokaklarda, trafiği aksatmayan kompakt şasili mobil asansör araçlarımızla 25-30 dakikada kurulum tamamlanır.",
       yildirim: "Yıldırım'ın Millet, Erikli, Teleferik ve Esenevler mahallelerindeki dar veya yokuşlu sokak yapısına uygun manevra kabiliyeti yüksek araçlarımızla, dar merdiven boşluklarında eşya çizilme riskini tamamen ortadan kaldırıyoruz.",
       gursu: "Gürsu'nun Kurtuluş, Yenidoğan ve Zafer mahallelerindeki yeni konut projelerinde ve çok katlı apartmanlarda hem evden eve nakliyat hem de mobilya, beyaz eşya ve inşaat malzemesi çıkarımı için hızlı saatlik/günlük kurulum sağlıyoruz.",
+      inegol: "İnegöl'ün mobilya sevkiyat trafiğine ve Alanyurt/Ertuğrulgazi'deki yüksek katlı site mimarisine uygun geniş sepetli (400 kg kapasiteli) teleskopik asansörlerimizle; büyük koltuk takımları, masif mobilyalar ve ev eşyaları çizilmeden balkondan taşınır.",
+      gemlik: "Gemlik merkez, Hisar ve Kumla sahil hattındaki rüzgarlı ve eğimli sokaklarda 4 noktalı hidrolik denge ayaklarımızla tam terazi kurulumu yapıyor; yazlık ve kışlık daire taşımalarını 2-3 saatte tamamlıyoruz.",
+      yenisehir: "Yenişehir'deki çok katlı apartmanlarda, TOKİ konutlarında ve dar merdivenli binalarda dış cephe mobil asansörümüzle eşyaları bina içine sokmadan doğrudan balkondan kapalı kasa araçlarımıza aktarıyoruz.",
+      orhangazi: "Orhangazi merkez mahallelerinde ve Göl Yolu çevresindeki konut ile iş yerlerinde; ev eşyası, beyaz eşya, cam balkon ve inşaat malzemesi çıkarımı için 25 dakikada güvenli dış cephe kurulumu gerçekleştiriyoruz.",
       "bursa-merkez": "Bursa merkezdeki tarihi ve yoğun yapılaşmalı mahallelerde sokak genişliğine uygun araç seçimiyle 15. kata kadar hasarsız dış cephe erişimi sunuyoruz."
     };
     const engSpecText = districtEngineeringSpecs[district.slug] || "";
@@ -431,7 +461,7 @@ export default function ServicePageClient() {
                 <h2 className="text-lg font-bold mb-3">{district.name} için hizmet seçenekleri</h2>
                 <ul className="flex flex-wrap gap-x-5 gap-y-2">
                   {service.slug !== "evden-eve-nakliyat" && <li><Link className="text-primary underline underline-offset-4" href={`/${district.slug}-evden-eve-nakliyat`}>{district.name} evden eve nakliyat</Link></li>}
-                  {district.slug !== "mudanya" && service.slug !== "evden-eve-asansorlu-nakliyat" && <li><Link className="text-primary underline underline-offset-4" href={`/${district.slug}-evden-eve-asansorlu-nakliyat`}>{district.name} asansörlü nakliyat</Link></li>}
+                  {!["mudanya", "inegol", "gemlik"].includes(district.slug) && service.slug !== "evden-eve-asansorlu-nakliyat" && <li><Link className="text-primary underline underline-offset-4" href={`/${district.slug}-evden-eve-asansorlu-nakliyat`}>{district.name} asansörlü nakliyat</Link></li>}
                   {service.slug !== "saatlik-asansor-kiralama" && <li><Link className="text-primary underline underline-offset-4" href={`/${district.slug}-saatlik-asansor-kiralama`}>{district.name} saatlik asansör kiralama</Link></li>}
                   {service.slug !== "kiralik-asansor" && <li><Link className="text-primary underline underline-offset-4" href={`/${district.slug}-kiralik-asansor`}>{district.name} kiralık asansör</Link></li>}
                   {service.slug !== "kiralik-asansor-fiyatlari" && <li><Link className="text-primary underline underline-offset-4" href={`/${district.slug}-kiralik-asansor-fiyatlari`}>{district.name} kiralık asansör fiyatları</Link></li>}
@@ -695,7 +725,10 @@ export default function ServicePageClient() {
             <div className="bg-white dark:bg-navy-light rounded-2xl p-5 border-2 border-gray-200 dark:border-white/10">
               <h3 className="font-display font-bold text-base text-gray-900 dark:text-white mb-4 pb-3 border-b-2 border-gray-200 dark:border-white/10">{district.name} {t('service_page.other_services', 'Diğer Hizmetler')}</h3>
               <ul className="space-y-2">
-                {SERVICES.filter(s => s.slug !== service.slug && ["kiralik-asansor", "saatlik-asansor-kiralama", "kiralik-asansor-fiyatlari", "evden-eve-nakliyat", "dis-cephe-esya-asansoru", "mobilya-tasima-asansoru"].includes(s.slug)).map(s => (
+                {SERVICES.filter(s => s.slug !== service.slug && (
+                  ["kiralik-asansor", "saatlik-asansor-kiralama", "kiralik-asansor-fiyatlari", "evden-eve-nakliyat", "dis-cephe-esya-asansoru", "mobilya-tasima-asansoru"].includes(s.slug) ||
+                  (district.slug === "bursa-merkez" && ["insaat-malzemesi-tasima-asansoru", "moloz-indirme-asansoru", "cam-ve-pencere-tasima-asansoru", "beyaz-esya-tasima-asansoru", "ofis-tasimaciligi", "parca-esya-tasima"].includes(s.slug))
+                )).map(s => (
                   <li key={s.slug}>
                     <Link href={`/${district.slug}-${s.slug}`} className="flex items-center justify-between group py-1.5 text-gray-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium">
                       <span className="truncate pr-4">{t(`services.${s.slug}.name`, s.name)}</span>
