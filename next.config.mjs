@@ -79,6 +79,46 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/nilufer-evden-eve-asansorlu-nakliyat",
+        destination: "/nilufer-evden-eve-nakliyat",
+        permanent: true,
+      },
+      {
+        source: "/nilufer-asansorlu-ev-tasima",
+        destination: "/nilufer-evden-eve-nakliyat",
+        permanent: true,
+      },
+      {
+        source: "/osmangazi-evden-eve-asansorlu-nakliyat",
+        destination: "/osmangazi-evden-eve-nakliyat",
+        permanent: true,
+      },
+      {
+        source: "/osmangazi-asansorlu-ev-tasima",
+        destination: "/osmangazi-evden-eve-nakliyat",
+        permanent: true,
+      },
+      {
+        source: "/yildirim-evden-eve-asansorlu-nakliyat",
+        destination: "/yildirim-evden-eve-nakliyat",
+        permanent: true,
+      },
+      {
+        source: "/yildirim-asansorlu-ev-tasima",
+        destination: "/yildirim-evden-eve-nakliyat",
+        permanent: true,
+      },
+      {
+        source: "/gursu-evden-eve-asansorlu-nakliyat",
+        destination: "/gursu-evden-eve-nakliyat",
+        permanent: true,
+      },
+      {
+        source: "/gursu-asansorlu-ev-tasima",
+        destination: "/gursu-evden-eve-nakliyat",
+        permanent: true,
+      },
+      {
         source: "/inegol-evden-eve-asansorlu-nakliyat",
         destination: "/inegol-evden-eve-nakliyat",
         permanent: true,

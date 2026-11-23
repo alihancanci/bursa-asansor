@@ -143,6 +143,242 @@ export default function ServicePageClient() {
         <li><strong>15. Kata Kadar Dış Cephe Asansörlü Yükleme:</strong> Eşyalarınız bina merdivenlerine veya dar site koridorlarına hiç girmeden doğrudan balkondan kapalı kasa kamyonumuza indirilir ve yeni adresinizde balkondan dairenize çıkarılır.</li>
       </ul>
       <p>Sadece operatörlü dış cephe asansörü kiralamak istiyorsanız <a href="/gemlik-kiralik-asansor" class="text-primary font-semibold hover:underline">Gemlik kiralık asansör</a> ve <a href="/gemlik-kiralik-asansor-fiyatlari" class="text-primary font-semibold hover:underline">Gemlik kiralık asansör fiyatları</a> sayfalarımıza göz atabilirsiniz.</p>`;
+  } else if (district.slug === "nilufer" && service.slug === "kiralik-asansor") {
+    htmlContent = `<p><strong>Nilüfer kiralık asansör</strong> ve <strong>Nilüfer asansör kiralama</strong> hizmetimizde; Özlüce, Balat, 23 Nisan, Ataevler, Beşevler, Görükle, İhsaniye, Ertuğrul, Altınşehir, Yüzüncüyıl ve Kayapa mahallelerindeki modern sitelerde <strong>15. kata (45-50 metre) kadar</strong> sertifikalı operatörlü dış cephe mobil asansörü kuruyoruz. Nilüfer'deki site yönetimlerinin bina içi yolcu asansörü yasaklarına takılmadan ev eşyası, mobilya, beyaz eşya, cam balkon ve tadilat malzemelerinizi doğrudan balkondan taşıyoruz.</p>
+      <h2>Nilüfer Yüksek Katlı Sitelerde Dış Cephe Asansör Kurulumu</h2>
+      <ul>
+        <li><strong>Özlüce, Balat ve 23 Nisan Rezidans Kriterleri:</strong> Site içi otopark giriş yükseklikleri, peyzaj alanları ve blok önü mesafeleri önceden incelenir; yeşil alana ve zemin taşlarına zarar vermeyen kompakt hidrolik araçlarla kurulum yapılır.</li>
+        <li><strong>Görükle Öğrenci &amp; 1+1 Daire Hızlı Kurulum:</strong> Görükle, Dumlupınar ve Kurtuluş bölgelerinde tek parça beyaz eşya, koltuk veya 1+1 daire eşyaları için ekonomik saatlik asansör kiralama sunuyoruz.</li>
+        <li><strong>15. Kata Kadar Sarsıntısız Teleskopik Bom:</strong> Ataevler, Beşevler ve İhsaniye'deki yüksek katlı bloklarda 400 kg taşıma kapasiteli sepetimizle eşyalar merdiven duvarlarına sürtmeden güvenle indirilir veya çıkarılır.</li>
+      </ul>
+      <div class="my-6 overflow-x-auto rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-light">
+        <table class="w-full text-left text-xs sm:text-sm my-0">
+          <thead class="bg-slate-100 dark:bg-navy text-slate-800 dark:text-slate-200 font-bold">
+            <tr>
+              <th class="p-3 border-b border-slate-200 dark:border-white/10">Nilüfer Bölgesi</th>
+              <th class="p-3 border-b border-slate-200 dark:border-white/10">Tipik Bina Yapısı</th>
+              <th class="p-3 border-b border-slate-200 dark:border-white/10">Önerilen Asansör</th>
+              <th class="p-3 border-b border-slate-200 dark:border-white/10">Kurulum Süresi</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 dark:divide-white/10">
+            <tr>
+              <td class="p-3 font-semibold">Özlüce, Balat, 23 Nisan</td>
+              <td class="p-3">8 – 15 Katlı Modern Siteler</td>
+              <td class="p-3">45-50m Teleskopik Hidrolik</td>
+              <td class="p-3">30 – 40 Dakika</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-semibold">Ataevler, İhsaniye, Beşevler</td>
+              <td class="p-3">5 – 10 Katlı Site &amp; Apartman</td>
+              <td class="p-3">32-40m Kompakt Mobil Asansör</td>
+              <td class="p-3">20 – 30 Dakika</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-semibold">Görükle, Kayapa, Hasanağa</td>
+              <td class="p-3">3 – 7 Katlı Rezidans &amp; Blok</td>
+              <td class="p-3">Hızlı Saatlik Mobil Asansör</td>
+              <td class="p-3">15 – 25 Dakika</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Saatlik kurulum detayları için <a href="/nilufer-saatlik-asansor-kiralama" class="text-primary font-semibold hover:underline">Nilüfer saatlik asansör kiralama</a>, güncel ücretlendirme için <a href="/nilufer-kiralik-asansor-fiyatlari" class="text-primary font-semibold hover:underline">Nilüfer kiralık asansör fiyatları</a> ve anahtar teslim taşıma için <a href="/nilufer-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Nilüfer evden eve nakliyat</a> sayfamızı inceleyebilirsiniz.</p>`;
+  } else if (district.slug === "nilufer" && service.slug === "evden-eve-nakliyat") {
+    htmlContent = `<p><strong>Nilüfer evden eve nakliyat</strong> ve <strong>Nilüfer asansörlü ev taşıma</strong> operasyonlarımızda; Özlüce, Balat, Ertuğrul, 23 Nisan, Ataevler, Beşevler, İhsaniye, Altınşehir, Fethiye ve Görükle mahallelerindeki site, rezidans ve villalarda sigortalı, marangozlu ve 15. kata kadar özmal dış cephe asansörlü taşıma sunuyoruz.</p>
+      <h2>Nilüfer Evden Eve Nakliyat Operasyonumuz Nasıl Planlanır?</h2>
+      <ul>
+        <li><strong>Site Yönetimi ve Çalışma Saati Uyumu:</strong> Nilüfer sitelerinin belirlediği taşınma saatlerine (genellikle 09:00–18:00) tam uyum sağlanır; bina içi asansör ve ortak koridorlar hiç kullanılmadığı için yönetim cezası veya depozito kesintisi riski ortadan kalkar.</li>
+        <li><strong>Çift Katmanlı Ambalaj ve Usta Marangoz:</strong> Mobilyalarınız, ankastre/beyaz eşyalarınız ve cam yüzeyler balonlu patpat naylon + kraft kağıtla sarılır; gardırop ve üniteler marangozumuz tarafından sökülüp yeni evinizde kurulur.</li>
+        <li><strong>Özmal 15. Kat Mobil Asansör Avantajı:</strong> Aracı komisyoncu olmadan kendi mobil asansör filomuz ve kapalı çelik kasa kamyonlarımızla aynı gün içinde 3-5 saatte komple taşınma tamamlanır.</li>
+      </ul>
+      <p>Sadece dış cephe asansörü kiralamak isterseniz <a href="/nilufer-kiralik-asansor" class="text-primary font-semibold hover:underline">Nilüfer kiralık asansör</a> ve <a href="/nilufer-kiralik-asansor-fiyatlari" class="text-primary font-semibold hover:underline">Nilüfer kiralık asansör fiyatları</a> sayfalarımızı, il geneli nakliyat detayları için <a href="/bursa-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Bursa evden eve nakliyat</a> sayfamızı ziyaret edebilirsiniz.</p>`;
+  } else if (district.slug === "nilufer" && (service.slug === "saatlik-asansor-kiralama" || service.slug === "kiralik-asansor-fiyatlari")) {
+    htmlContent = `<p><strong>Nilüfer saatlik asansör kiralama</strong> ve <strong>Nilüfer kiralık asansör fiyatları</strong>; kurulum yapılacak mahalle (Özlüce, Balat, Ataevler, Beşevler, Görükle, İhsaniye vb.), kat yüksekliği (2. kattan 15. kata kadar), çalışma süresi ve taşınacak yük türüne göre belirlenir. <strong>Sertifikalı operatör ve kurulum kiralama bedeline dahildir.</strong></p>
+      <h2>Nilüfer'de Saatlik ve Günlük Asansör Kiralama Kullanım Alanları</h2>
+      <ul>
+        <li><strong>Şehir Dışından Nilüfer'e Gelen Nakliye Firmaları:</strong> Farklı illerden Özlüce, Balat veya Ataevler'e yük getiren meslektaşlarımıza 25 dakikada adrese ulaşan operatörlü saatlik mobil asansör desteği veriyoruz.</li>
+        <li><strong>Tek Parça Mobilya ve Beyaz Eşya Çıkarma:</strong> Merdivenden veya site asansöründen sığmayan gardırop tipi buzdolabı, L koltuk, piyano ve masif yemek masaları için tek seferlik/saatlik kurulum yapılır.</li>
+        <li><strong>Tadilat, Cam Balkon ve Parke Sevkiyatı:</strong> Üst kat daire tadilatlarında parke, seramik, cam balkon panelleri ve çuvallı moloz indirme işlemleri bina asansörünü kirletmeden dış cepheden yapılır.</li>
+      </ul>
+      <p>WhatsApp üzerinden bina cephesi fotoğrafı ve kat bilginizi göndererek 5 dakikada net fiyat alabilirsiniz. Komple taşıma için <a href="/nilufer-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Nilüfer evden eve nakliyat</a>, genel bilgi için <a href="/nilufer-kiralik-asansor" class="text-primary font-semibold hover:underline">Nilüfer kiralık asansör</a> sayfamıza göz atabilirsiniz.</p>`;
+  } else if (district.slug === "osmangazi" && service.slug === "kiralik-asansor") {
+    htmlContent = `<p><strong>Osmangazi kiralık asansör</strong> ve <strong>Osmangazi asansör kiralama</strong> hizmetimizde; Hamitler, Yunuseli, Emek, Geçit, Dikkaldırım, Hüdavendigar, Çekirge, Kükürtlü, Demirtaş, Panayır ve Altıparmak mahallelerinde <strong>dar sokaklara ve bitişik nizam apartmanlara uyumlu</strong> 15. kata kadar mobil dış cephe asansörü kiralıyoruz.</p>
+      <h2>Osmangazi Dar Sokak ve Yoğun Caddelerde Güvenli Kurulum</h2>
+      <ul>
+        <li><strong>Kompakt Şasili Dar Sokak Araçları:</strong> Çekirge, Kükürtlü, Altıparmak, Muradiye ve Çarşamba gibi dar ve tek yönlü sokaklara rahatlıkla girebilen 3.5 ton kompakt şasili mobil asansörlerimizle trafiği tıkamadan 25 dakikada kurulum yapıyoruz.</li>
+        <li><strong>Hamitler, Yunuseli ve Demirtaş Yeni Siteleri:</strong> Osmangazi'nin hızla gelişen Hamitler, Yunuseli, Emek ve Demirtaş bölgelerindeki yüksek katlı bloklarda 45-50 metre (15. kat) teleskopik erişim sunuyoruz.</li>
+        <li><strong>Havai Hat ve Ağaç Kontrolü:</strong> Eski yerleşim sokaklarındaki elektrik/internet kabloları ve ağaç dalları deneyimli operatörümüz tarafından kurulum öncesi kontrol edilerek güvenli yanaşma açısı belirlenir.</li>
+      </ul>
+      <div class="my-6 overflow-x-auto rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-light">
+        <table class="w-full text-left text-xs sm:text-sm my-0">
+          <thead class="bg-slate-100 dark:bg-navy text-slate-800 dark:text-slate-200 font-bold">
+            <tr>
+              <th class="p-3 border-b border-slate-200 dark:border-white/10">Osmangazi Bölgesi</th>
+              <th class="p-3 border-b border-slate-200 dark:border-white/10">Sokak &amp; Bina Özelliği</th>
+              <th class="p-3 border-b border-slate-200 dark:border-white/10">Kullanılan Ekipman</th>
+              <th class="p-3 border-b border-slate-200 dark:border-white/10">Kurulum Süresi</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 dark:divide-white/10">
+            <tr>
+              <td class="p-3 font-semibold">Hamitler, Yunuseli, Demirtaş</td>
+              <td class="p-3">6 – 14 Katlı Yeni Siteler</td>
+              <td class="p-3">45-50m Teleskopik Asansör</td>
+              <td class="p-3">25 – 35 Dakika</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-semibold">Dikkaldırım, Hüdavendigar, Emek</td>
+              <td class="p-3">4 – 8 Katlı Bitişik Nizam</td>
+              <td class="p-3">Kompakt Mobil Asansör</td>
+              <td class="p-3">20 – 30 Dakika</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-semibold">Çekirge, Kükürtlü, Altıparmak</td>
+              <td class="p-3">Dar &amp; Eğimli Sokaklar</td>
+              <td class="p-3">3.5 Ton Dar Şasi + Hidrolik Terazi</td>
+              <td class="p-3">25 – 35 Dakika</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Saatlik kiralama için <a href="/osmangazi-saatlik-asansor-kiralama" class="text-primary font-semibold hover:underline">Osmangazi saatlik asansör kiralama</a>, fiyat detayları için <a href="/osmangazi-kiralik-asansor-fiyatlari" class="text-primary font-semibold hover:underline">Osmangazi kiralık asansör fiyatları</a> ve komple ev taşıma için <a href="/osmangazi-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Osmangazi evden eve nakliyat</a> sayfalarımıza bakabilirsiniz.</p>`;
+  } else if (district.slug === "osmangazi" && service.slug === "evden-eve-nakliyat") {
+    htmlContent = `<p><strong>Osmangazi evden eve nakliyat</strong> ve <strong>Osmangazi asansörlü ev taşıma</strong> hizmetimizde; Hamitler, Yunuseli, Emek, Geçit, Demirtaş, Dikkaldırım, Çekirge, Kükürtlü, Soğanlı ve Küçükbalıklı mahallelerinde sigortalı, marangozlu ve dış cephe asansörlü anahtar teslim taşımacılık sağlıyoruz.</p>
+      <h2>Osmangazi'de Hasarsız Evden Eve Nakliyat Avantajlarımız</h2>
+      <ul>
+        <li><strong>Dar Merdivenlere Son:</strong> Osmangazi'nin eski ve bitişik nizam apartmanlarında dar merdiven boşlukları mobilya ve duvar hasarının başlıca sebebidir. Dış cephe asansörümüzle eşyalar doğrudan balkondan kapalı çelik kasa aracımıza aktarılır.</li>
+        <li><strong>Marangozlu Söküm-Kurulum &amp; Patpat Paketleme:</strong> Beyaz eşya, koltuk takımı, yemek masası ve gardıroplar uzman ekibimizle özenle ambalajlanır; yeni adresinizde odalarınıza yerleştirilip monte edilir.</li>
+        <li><strong>Osmangazi İçi ve Tüm Bursa'ya Sabit Fiyat:</strong> Ücretsiz keşif veya WhatsApp video ekspertizi sonrasında belirlenen tutar sabittir; taşınma günü sürpriz ek ücret çıkmaz.</li>
+      </ul>
+      <p>Yalnızca operatörlü asansör kiralamak için <a href="/osmangazi-kiralik-asansor" class="text-primary font-semibold hover:underline">Osmangazi kiralık asansör</a>, ücretlendirme kriterleri için <a href="/osmangazi-kiralik-asansor-fiyatlari" class="text-primary font-semibold hover:underline">Osmangazi kiralık asansör fiyatları</a> ve il geneli hizmetimiz için <a href="/bursa-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Bursa evden eve nakliyat</a> sayfamızı inceleyebilirsiniz.</p>`;
+  } else if (district.slug === "osmangazi" && (service.slug === "saatlik-asansor-kiralama" || service.slug === "kiralik-asansor-fiyatlari")) {
+    htmlContent = `<p><strong>Osmangazi saatlik asansör kiralama</strong> ve <strong>Osmangazi kiralık asansör fiyatları</strong>; Hamitler, Yunuseli, Emek, Demirtaş, Çekirge ve Dikkaldırım başta olmak üzere tüm mahallelerde kat yüksekliği (2–15. kat), çalışma süresi ve sokak yanaşma durumuna göre şeffaf şekilde hesaplanır. <strong>Sertifikalı operatör fiyata dahildir.</strong></p>
+      <h2>Osmangazi'de Saatlik Asansör Kiralama Neleri Kapsar?</h2>
+      <ul>
+        <li><strong>Kentsel Dönüşüm ve Tadilat Lojistiği:</strong> Dikkaldırım, Soğanlı, Altıparmak ve Çekirge'deki daire tadilatlarında parke, fayans, alçıpan, pencere doğrama çıkarımı ve çuvallı moloz indirme için saatlik/günlük kiralama.</li>
+        <li><strong>Nakliye Firmalarına Operatörlü Destek:</strong> Osmangazi'ye şehir dışından yük getiren nakliyeciler için bekleme yaptırmadan hızlı kurulum.</li>
+        <li><strong>Mobilya &amp; Beyaz Eşya Teslimatı:</strong> Apartman merdiveninden dönmeyen büyük buzdolabı, L koltuk ve çelik kapıların 30-45 dakikada üst kata çıkarılması.</li>
+      </ul>
+      <p>Bina cephesi fotoğrafı ve kat bilginizi WhatsApp'tan paylaşarak 5 dakikada net teklif alabilirsiniz. Detaylar için <a href="/osmangazi-kiralik-asansor" class="text-primary font-semibold hover:underline">Osmangazi kiralık asansör</a> ve <a href="/osmangazi-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Osmangazi evden eve nakliyat</a> sayfalarımıza göz atın.</p>`;
+  } else if (district.slug === "yildirim" && service.slug === "kiralik-asansor") {
+    htmlContent = `<p><strong>Yıldırım kiralık asansör</strong> ve <strong>Yıldırım asansör kiralama</strong> hizmetimizde; Millet Mahallesi, Erikli, Ertuğrulgazi, Mesken, Teleferik, Esenevler, Bağlaraltı, Yavuzselim, Duaçınarı, Şükraniye ve Yeşilyayla mahallelerinde <strong>15. kata kadar</strong> eğimli araziye tam uyumlu hidrolik mobil asansör kiralıyoruz.</p>
+      <h2>Yıldırım'ın Yokuşlu Sokaklarına ve Yüksek Sitelerine Özel Teknoloji</h2>
+      <ul>
+        <li><strong>4 Bağımsız Hidrolik Terazi Ayakları:</strong> Teleferik, Yeşilyayla, Namazgah, Mollaarap ve Mesken gibi yamaç ve eğimli sokaklarda 4 noktalı hidrolik denge ayaklarımız (outrigger) aracı tam teraziye alarak kayma riskini sıfırlar.</li>
+        <li><strong>Millet Mahallesi &amp; Erikli Yüksek Blokları:</strong> Yıldırım'ın en yoğun yeni konut bölgeleri olan Millet, Erikli, Esenevler ve Yunusemre'deki çok katlı sitelerde 45-50 metre (15. kat) teleskopik erişim sağlıyoruz.</li>
+        <li><strong>Dar Spiral Merdivenlerde Hasarsız Çözüm:</strong> Eski apartmanların dar merdiven boşluklarına hiç girmeden koltuk, beyaz eşya, mobilya ve inşaat malzemelerini doğrudan balkondan taşıyoruz.</li>
+      </ul>
+      <div class="my-6 overflow-x-auto rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-light">
+        <table class="w-full text-left text-xs sm:text-sm my-0">
+          <thead class="bg-slate-100 dark:bg-navy text-slate-800 dark:text-slate-200 font-bold">
+            <tr>
+              <th class="p-3 border-b border-slate-200 dark:border-white/10">Yıldırım Bölgesi</th>
+              <th class="p-3 border-b border-slate-200 dark:border-white/10">Arazi &amp; Bina Tipi</th>
+              <th class="p-3 border-b border-slate-200 dark:border-white/10">Asansör Konfigürasyonu</th>
+              <th class="p-3 border-b border-slate-200 dark:border-white/10">Kurulum Süresi</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 dark:divide-white/10">
+            <tr>
+              <td class="p-3 font-semibold">Millet Mah., Erikli, Esenevler</td>
+              <td class="p-3">7 – 15 Katlı Siteler</td>
+              <td class="p-3">45-50m Yüksek Erişimli Bom</td>
+              <td class="p-3">25 – 35 Dakika</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-semibold">Teleferik, Mesken, Yeşilyayla</td>
+              <td class="p-3">Dik Yokuşlu &amp; Eğimli Sokak</td>
+              <td class="p-3">Hidrolik Terazili Dar Şasi</td>
+              <td class="p-3">25 – 35 Dakika</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-semibold">Ertuğrulgazi, Yavuzselim, Bağlaraltı</td>
+              <td class="p-3">4 – 7 Katlı Apartmanlar</td>
+              <td class="p-3">Kompakt Saatlik Mobil Asansör</td>
+              <td class="p-3">20 – 30 Dakika</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Kısa süreli işler için <a href="/yildirim-saatlik-asansor-kiralama" class="text-primary font-semibold hover:underline">Yıldırım saatlik asansör kiralama</a>, fiyat bilgileri için <a href="/yildirim-kiralik-asansor-fiyatlari" class="text-primary font-semibold hover:underline">Yıldırım kiralık asansör fiyatları</a> ve komple taşınma için <a href="/yildirim-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Yıldırım evden eve nakliyat</a> sayfamızı inceleyebilirsiniz.</p>`;
+  } else if (district.slug === "yildirim" && service.slug === "evden-eve-nakliyat") {
+    htmlContent = `<p><strong>Yıldırım evden eve nakliyat</strong> ve <strong>Yıldırım asansörlü ev taşıma</strong> operasyonlarımızda; Millet Mahallesi, Erikli, Ertuğrulgazi, Mesken, Teleferik, Esenevler, Bağlaraltı, Yavuzselim ve Duaçınarı genelinde özmal dış cephe asansörü, marangozlu montaj ekibi ve kapalı çelik kasa kamyonlarla sigortalı taşıma sunuyoruz.</p>
+      <h2>Yıldırım'da Asansörlü Evden Eve Nakliyat Süreci</h2>
+      <ul>
+        <li><strong>Ücretsiz Cephe ve Eğim Keşfi:</strong> Yıldırım'ın eğimli veya dar sokaklı mahallelerinde aracın duracağı nokta ve balkon yanaşma açısı taşınma öncesi ücretsiz olarak teyit edilir.</li>
+        <li><strong>Tam Ambalajlama ve Marangozluk:</strong> Tüm beyaz eşya ve mobilyalar darbe emici patpat naylonlarla sarılır; gardırop ve üniteler marangozumuz tarafından sökülüp yeni evinizde kurulur.</li>
+        <li><strong>Hızlı ve Ekonomik Taşınma:</strong> Dış cephe asansörü sayesinde 3+1 bir dairenin yükleme ve indirme süresi yarıya iner, eşya hasarı riski sıfırlanır.</li>
+      </ul>
+      <p>Sadece asansör kiralamak istiyorsanız <a href="/yildirim-kiralik-asansor" class="text-primary font-semibold hover:underline">Yıldırım kiralık asansör</a> ve <a href="/yildirim-kiralik-asansor-fiyatlari" class="text-primary font-semibold hover:underline">Yıldırım kiralık asansör fiyatları</a> sayfalarımıza, Bursa geneli için <a href="/bursa-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Bursa evden eve nakliyat</a> sayfamıza bakabilirsiniz.</p>`;
+  } else if (district.slug === "yildirim" && (service.slug === "saatlik-asansor-kiralama" || service.slug === "kiralik-asansor-fiyatlari")) {
+    htmlContent = `<p><strong>Yıldırım saatlik asansör kiralama</strong> ve <strong>Yıldırım kiralık asansör fiyatları</strong>; Millet, Erikli, Mesken, Teleferik, Ertuğrulgazi ve tüm Yıldırım mahallelerinde kat yüksekliğine, kiralama süresine (tek parça, saatlik veya günlük) ve sokak erişimine göre netleştirilir. <strong>Operatör hizmeti fiyata dahildir.</strong></p>
+      <h2>Yıldırım'da Saatlik Asansör Kiralama Kimlere Avantaj Sağlar?</h2>
+      <ul>
+        <li><strong>Kendi Aracıyla Taşınan Aileler:</strong> Nakliye kamyonunu kendisi ayarlayan müşterilerimiz sadece dış cephe asansörünü saatlik kiralayarak merdiven işçiliğinden ve hasar riskinden kurtulur.</li>
+        <li><strong>İnşaat, Mobilya ve Cam Balkon Ustaları:</strong> Yıldırım'daki şantiye ve kentsel dönüşüm projelerinde alçıpan, seramik, cam balkon ve çuvallı moloz transferi için saatlik/günlük ekonomik kiralama yapılır.</li>
+        <li><strong>Şehirler Arası Nakliye Ekipleri:</strong> İl dışından Yıldırım'a gelen nakliye araçlarına 25-30 dakikada operatörlü mobil asansör desteği sağlanır.</li>
+      </ul>
+      <p>Detaylı bilgi için <a href="/yildirim-kiralik-asansor" class="text-primary font-semibold hover:underline">Yıldırım kiralık asansör</a> ve <a href="/yildirim-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Yıldırım evden eve nakliyat</a> sayfalarımızı inceleyebilirsiniz.</p>`;
+  } else if (district.slug === "gursu" && service.slug === "kiralik-asansor") {
+    htmlContent = `<p><strong>Gürsu kiralık asansör</strong> ve <strong>Gürsu asansör kiralama</strong> hizmetimizde; Kurtuluş, Yenidoğan, Zafer, İstiklal, Adaköy ve Gürsu TOKİ/yeni konut projelerinde <strong>15. kata kadar</strong> sertifikalı operatör dahil dış cephe mobil asansörü kuruyoruz. Ev eşyası, mobilya, beyaz eşya ve inşaat malzemelerinizi hızlı ve hasarsız şekilde üst katlara çıkarıyoruz.</p>
+      <h2>Gürsu'da Mobil Asansör Kiralama Avantajları</h2>
+      <ul>
+        <li><strong>Kurtuluş, Yenidoğan ve Zafer Yeni Konutları:</strong> Gürsu'da hızla artan çok katlı yeni apartman ve sitelerde, bina içi sıfır asansörlere zarar vermeden doğrudan balkondan yükleme yapılır.</li>
+        <li><strong>Gürsu OSB ve Esnafa B2B Destek:</strong> Sanayi bölgesi ve ilçe merkezindeki mobilya, beyaz eşya, PVC doğrama ve tadilat ustalarına saatlik veya günlük hızlı kurulum sağlıyoruz.</li>
+        <li><strong>25 Dakikada Adrese Ulaşım:</strong> Ankara Yolu ve doğu aksına yakın konuşlu filomuzla Gürsu'daki tüm mahallelere aynı gün, acil durumlarda 25-30 dakikada ulaşıyoruz.</li>
+      </ul>
+      <div class="my-6 overflow-x-auto rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-light">
+        <table class="w-full text-left text-xs sm:text-sm my-0">
+          <thead class="bg-slate-100 dark:bg-navy text-slate-800 dark:text-slate-200 font-bold">
+            <tr>
+              <th class="p-3 border-b border-slate-200 dark:border-white/10">Gürsu Bölgesi</th>
+              <th class="p-3 border-b border-slate-200 dark:border-white/10">Hizmet Odağı</th>
+              <th class="p-3 border-b border-slate-200 dark:border-white/10">Erişim Kapasitesi</th>
+              <th class="p-3 border-b border-slate-200 dark:border-white/10">Kiralama Modeli</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 dark:divide-white/10">
+            <tr>
+              <td class="p-3 font-semibold">Kurtuluş &amp; Yenidoğan Mah.</td>
+              <td class="p-3">Ev Taşıma &amp; Yeni Daire Yerleşimi</td>
+              <td class="p-3">2. – 15. Kat (45-50m)</td>
+              <td class="p-3">Saatlik / Komple Nakliyat</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-semibold">Zafer &amp; İstiklal Mah.</td>
+              <td class="p-3">Mobilya, Beyaz Eşya &amp; Tadilat</td>
+              <td class="p-3">2. – 12. Kat (400 kg)</td>
+              <td class="p-3">Tek Sefer / Saatlik</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-semibold">Gürsu TOKİ &amp; Çevre Projeler</td>
+              <td class="p-3">Site Taşınması &amp; Malzeme Çıkarma</td>
+              <td class="p-3">15. Kata Kadar Teleskopik</td>
+              <td class="p-3">Saatlik / Günlük</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Saatlik kurulum için <a href="/gursu-saatlik-asansor-kiralama" class="text-primary font-semibold hover:underline">Gürsu saatlik asansör kiralama</a>, güncel ücretlendirme için <a href="/gursu-kiralik-asansor-fiyatlari" class="text-primary font-semibold hover:underline">Gürsu kiralık asansör fiyatları</a> ve komple ev taşıma için <a href="/gursu-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Gürsu evden eve nakliyat</a> sayfalarımızı inceleyebilirsiniz.</p>`;
+  } else if (district.slug === "gursu" && service.slug === "evden-eve-nakliyat") {
+    htmlContent = `<p><strong>Gürsu evden eve nakliyat</strong> ve <strong>Gürsu asansörlü ev taşıma</strong> hizmetimizde; Kurtuluş, Yenidoğan, Zafer, İstiklal ve tüm Gürsu mahallelerinde sigortalı, marangozlu, patpat ambalajlı ve 15. kata kadar dış cephe asansörlü komple ev taşımacılığı sunuyoruz.</p>
+      <h2>Gürsu Evden Eve Nakliyat Hizmet Kapsamımız</h2>
+      <ul>
+        <li><strong>Gürsu İçi ve Bursa Geneli Koordineli Taşıma:</strong> Gürsu'dan Yıldırım, Osmangazi, Nilüfer, Kestel ve Mudanya'ya veya şehir dışından Gürsu'ya taşınmalarda özmal kapalı kasa araçlarımız ve mobil asansörümüzle tek elden hizmet veriyoruz.</li>
+        <li><strong>Yeni Binalarda Sıfır Hasar Prensibi:</strong> Yeni teslim alınan apartmanlarda duvar ve bina asansörü hasarı riskini dış cephe mobil asansörümüzle tamamen ortadan kaldırıyoruz.</li>
+        <li><strong>Marangozlu Montaj ve Sabit Fiyat:</strong> Gardırop, yatak odası ve yemek masalarınız uzman marangozumuzca sökülüp kurulur; keşifte belirlenen tutar dışında ekstra ücret talep edilmez.</li>
+      </ul>
+      <p>Yalnızca asansör kiralamak için <a href="/gursu-kiralik-asansor" class="text-primary font-semibold hover:underline">Gürsu kiralık asansör</a>, fiyat kriterleri için <a href="/gursu-kiralik-asansor-fiyatlari" class="text-primary font-semibold hover:underline">Gürsu kiralık asansör fiyatları</a> ve il geneli hizmetimiz için <a href="/bursa-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Bursa evden eve nakliyat</a> sayfamızı ziyaret edebilirsiniz.</p>`;
+  } else if (district.slug === "gursu" && (service.slug === "saatlik-asansor-kiralama" || service.slug === "kiralik-asansor-fiyatlari")) {
+    htmlContent = `<p><strong>Gürsu saatlik asansör kiralama</strong> ve <strong>Gürsu kiralık asansör fiyatları</strong>; Kurtuluş, Yenidoğan, Zafer ve İstiklal mahallelerinde kurulacak kat yüksekliği (2–15. kat), çalışma süresi ve taşınacak eşya/malzeme hacmine göre şeffaf olarak belirlenir. <strong>Operatör ve kurulum kiralama bedeline dahildir.</strong></p>
+      <h2>Gürsu'da Saatlik Kiralama ile Hangi İşler Yapılır?</h2>
+      <ul>
+        <li><strong>Ev Eşyası ve Çeyiz Çıkarma:</strong> Yeni ev kuran çiftlerin çeyiz, beyaz eşya ve mobilya teslimatlarında tek seferlik veya saatlik ekonomik dış cephe asansörü.</li>
+        <li><strong>İnşaat ve Tadilat Malzemeleri:</strong> Alçıpan, parke, seramik, cam balkon ve çuvallı moloz indirme işlemlerinde iş gücünden ve zamandan tasarruf.</li>
+        <li><strong>Komşu İlçelerden Gelen Nakliyecilere Destek:</strong> Gürsu'ya şehir dışından yük getiren nakliye firmalarına 25 dakikada operatörlü mobil asansör temini.</li>
+      </ul>
+      <p>Net fiyat almak için WhatsApp'tan bina cephesi ve kat bilginizi paylaşabilirsiniz. İlgili sayfalar: <a href="/gursu-kiralik-asansor" class="text-primary font-semibold hover:underline">Gürsu kiralık asansör</a> ve <a href="/gursu-evden-eve-nakliyat" class="text-primary font-semibold hover:underline">Gürsu evden eve nakliyat</a>.</p>`;
   } else if (hasDistrictSearchContent && service.slug === "evden-eve-nakliyat") {
     htmlContent = `<p>${district.name} evden eve nakliyat talebinizde taşınacak eşya miktarı, iki adres arasındaki mesafe, katlar ve bina erişimi değerlendirilir. Evden eve taşıma için süre bazlı asansör kiralaması yerine, taşınmanın kapsamına göre ayrıca fiyat teklifi hazırlanır. Ücretsiz ekspertiz ve keşif ile ihtiyaç duyulan nakliye aracı, taşıma personeli ve asansör planlanır.</p>
       <h2>${district.name} ev taşıma teklifi için gerekli bilgiler</h2>

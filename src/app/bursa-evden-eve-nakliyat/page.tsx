@@ -69,21 +69,16 @@ const jsonLd = {
       "@type": "Service",
       "@id": "https://bursakiralikasansor.com/bursa-evden-eve-nakliyat#service",
       "name": "Bursa Evden Eve Nakliyat",
-      "description": "Bursa genelinde asansörlü, marangozlu, hijyenik ambalajlı ve VIP güvenceli evden eve nakliyat hizmetleri.",
+      "description": "Bursa genelinde asansörlü, marangozlu, hijyenik ambalajlı ve güvenceli evden eve nakliyat hizmetleri.",
       "provider": { "@id": "https://bursakiralikasansor.com/#organization" },
-      "areaServed": {
-        "@type": "City",
-        "name": "Bursa",
-        "addressCountry": "TR"
-      }
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://bursavipevdeneve.com/#organization",
-      "name": "Bursa VIP Evden Eve Nakliyat",
-      "url": "https://bursavipevdeneve.com",
-      "telephone": "+905056080700",
-      "description": "Bursa VIP Evden Eve Nakliyat - Lüks ambalajlama, marangozlu demontaj-montaj ve asansörlü VIP ev taşıma hizmetleri."
+      "areaServed": [
+        { "@type": "City", "name": "Bursa", "addressCountry": "TR" },
+        { "@type": "AdministrativeArea", "name": "Nilüfer", "containedInPlace": { "@type": "City", "name": "Bursa" } },
+        { "@type": "AdministrativeArea", "name": "Osmangazi", "containedInPlace": { "@type": "City", "name": "Bursa" } },
+        { "@type": "AdministrativeArea", "name": "Yıldırım", "containedInPlace": { "@type": "City", "name": "Bursa" } },
+        { "@type": "AdministrativeArea", "name": "Mudanya", "containedInPlace": { "@type": "City", "name": "Bursa" } },
+        { "@type": "AdministrativeArea", "name": "Gürsu", "containedInPlace": { "@type": "City", "name": "Bursa" } }
+      ]
     }
   ]
 };
@@ -138,43 +133,6 @@ export default function BursaEvdenEveNakliyatPage() {
             <div className="max-w-xl mx-auto">
               <CTASection locationName="Bursa Evden Eve Nakliyat Hero" />
             </div>
-          </div>
-        </section>
-
-        {/* Sister Brand Backlink Highlight Card */}
-        <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-20">
-          <div className="bg-white dark:bg-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl border-2 border-primary/30 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="space-y-2 text-left">
-              <div className="inline-flex items-center gap-2 bg-orange-500/10 text-primary text-xs font-bold px-3 py-1 rounded-lg">
-                <ShieldCheck className="w-4 h-4" />
-                Resmi Kardeş Kuruluş &amp; VIP Taşımacılık
-              </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
-                Bursa VIP Evden Eve Nakliyat
-              </h2>
-              <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl">
-                Aynı kurumsal çatıda ve aynı iletişim hattında (<strong>0505 608 07 00</strong>) buluştuğumuz kardeş firmamız{' '}
-                <a 
-                  href="https://bursavipevdeneve.com" 
-                  target="_blank" 
-                  rel="noopener"
-                  className="text-primary font-bold hover:underline inline-flex items-center gap-1"
-                >
-                  Bursa VIP Evden Eve Nakliyat
-                  <ExternalLink className="w-3.5 h-3.5 inline" />
-                </a>
-                , özel ambalajlama, dezenfekte edilmiş araç filosu ve anahtar teslim VIP taşımacılık hizmeti vermektedir.
-              </p>
-            </div>
-            <a
-              href="https://bursavipevdeneve.com"
-              target="_blank"
-              rel="noopener"
-              className="shrink-0 inline-flex items-center gap-2 bg-slate-900 hover:bg-black text-white dark:bg-primary dark:hover:bg-orange-600 font-bold px-6 py-3.5 rounded-xl transition-all shadow-md text-sm sm:text-base"
-            >
-              <span>VIP Nakliyat Sitesini Ziyaret Et</span>
-              <ArrowRight className="w-4 h-4" />
-            </a>
           </div>
         </section>
 
@@ -444,6 +402,43 @@ export default function BursaEvdenEveNakliyatPage() {
                   </p>
                 </div>
               ))}
+            </div>
+          </section>
+
+          {/* Sister Brand Reference Card (Moved below core content to preserve page authority) */}
+          <section>
+            <div className="bg-white dark:bg-slate-800 rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="space-y-2 text-left">
+                <div className="inline-flex items-center gap-2 bg-orange-500/10 text-primary text-xs font-bold px-3 py-1 rounded-lg">
+                  <ShieldCheck className="w-4 h-4" />
+                  Kardeş Kuruluş &amp; VIP Paket Desteği
+                </div>
+                <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
+                  Bursa VIP Evden Eve Nakliyat
+                </h2>
+                <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl">
+                  Aynı kurumsal çatıda ve aynı iletişim hattında (<strong>0505 608 07 00</strong>) çalıştığımız kardeş markamız{' '}
+                  <a 
+                    href="https://bursavipevdeneve.com" 
+                    target="_blank" 
+                    rel="noopener"
+                    className="text-primary font-bold hover:underline inline-flex items-center gap-1"
+                  >
+                    Bursa VIP Evden Eve Nakliyat
+                    <ExternalLink className="w-3.5 h-3.5 inline" />
+                  </a>
+                  , lüks ambalajlama ve anahtar teslim VIP taşımacılık paketlerinde çözüm ortağımızdır.
+                </p>
+              </div>
+              <a
+                href="https://bursavipevdeneve.com"
+                target="_blank"
+                rel="noopener"
+                className="shrink-0 inline-flex items-center gap-2 bg-slate-900 hover:bg-black text-white dark:bg-primary dark:hover:bg-orange-600 font-bold px-6 py-3.5 rounded-xl transition-all shadow-md text-sm sm:text-base"
+              >
+                <span>VIP Nakliyat Detayları</span>
+                <ArrowRight className="w-4 h-4" />
+              </a>
             </div>
           </section>
 

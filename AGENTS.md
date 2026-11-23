@@ -44,7 +44,7 @@ The agent MUST activate the following skills automatically based on task type:
 ### When Creating Blog Posts or Landing Pages
 1. Activate `content-creator` skill for structure and tone
 2. Activate `avoid-ai-writing` skill — content must NOT sound AI-generated
-3. Every blog post MUST include: FAQPage schema, HowTo or Article schema, minimum 3 internal links to district pages
+3. Every blog post MUST include: Article schema, visible HTML Q&A headings (`<h2>` + concise direct answers, NO `FAQPage` or `HowTo` JSON-LD per current Google rich-result policy), and minimum 3 internal links to district pages
 4. Target keyword must appear in: H1, first paragraph, one H2, meta title, meta description, and URL slug
 
 ### When Making UI/UX Changes

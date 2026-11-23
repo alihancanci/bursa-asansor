@@ -188,7 +188,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : isFocusDistrict
     ? FOCUS_DISTRICT_SERVICES
     : [];
-  const isCannibalizingNakliyat = ["mudanya", "inegol", "gemlik"].includes(district.slug) && service.slug === "evden-eve-asansorlu-nakliyat";
+  const isCannibalizingNakliyat =
+    ["mudanya", "nilufer", "osmangazi", "yildirim", "gursu", "inegol", "gemlik"].includes(district.slug) &&
+    ["evden-eve-asansorlu-nakliyat", "asansorlu-ev-tasima"].includes(service.slug);
   const shouldIndex = allowedServices.includes(service.slug) && !isCannibalizingNakliyat;
 
   return {
